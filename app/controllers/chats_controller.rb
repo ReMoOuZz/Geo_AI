@@ -48,6 +48,7 @@ class ChatsController < ApplicationController
     @chat = Chat.find(params[:id])
     # Itération sur les question/réponse avec vérification entre les questions pour éviter les doublons
     @assistant_message = @chat.messages.first
+    @user_message = Message.new
   end
 
   private
