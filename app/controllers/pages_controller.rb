@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
   def home
-    @chat = Chat.new
+    @chat = Chat.new 
   end
 end

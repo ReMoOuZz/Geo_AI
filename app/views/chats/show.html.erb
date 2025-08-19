@@ -1,1 +1,6 @@
 <%= @assistant_message.content %>
+
+<%= simple_form_for [@chat, @user_message] do |f| %>
+<%= f.input :content %>
+<%= f.button :submit %>
+<% end %>
