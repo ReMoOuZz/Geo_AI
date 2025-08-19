@@ -1,1 +1,45 @@
-<%= @assistant_message.content %>
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Bonjour, je suis GÉO, ton GÉO-IA</h1>
+    <p>Entraîne-toi à la géographie avec un quiz adaptatif de 15 questions.</p>
+  </div>
+
+  <!-- LOG / DIALOGUE -->
+  <div class="messages">
+    <% if @chat && @chat.messages.any? %>
+      <% @chat.messages.order(:created_at).each do |m| %>
+        <div class="card">
+          <% if m.role == "user" %>
+            <div class="small">Toi</div>
+            <div class="bubble user"><%= m.content %></div>
+          <% else %>
+            <div class="small">GÉO-IA</div>
+            <div class="bubble assistant"><%= simple_format(m.content) %></div>
+          <% end %>
+        </div>
+      <% end %>
+    <% else %>
+      <div class="card">
+        <div class="bubble assistant">
+          Clique sur « Commencer le quiz » et je te poserai la première question avec 4 choix de réponse.
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- FORMULAIRE -->
+  <div class="card" style="margin-top:16px;">
+    <%= form_with url: chats_path, method: :post, local: true, html: { class: "chat-form" } do %>
+      <%= text_field_tag :message, nil, placeholder: "Ta réponse (1–4 ou texte de l’option)…" %>
+      <%= submit_tag "Envoyer", class: "btn" %>
+    <% end %>
+
+    <div class="actions">
+      <%= button_to "Commencer le quiz", chats_path, method: :post, form: { class: "inline" }, class: "btn secondary" %>
+      <div class="small">Astuce : s’il n’y a pas encore de questions, clique sur « Commencer le quiz ».</div>
+    </div>
+  </div>
+
+</div>
