@@ -19,14 +19,14 @@ class ChatsController < ApplicationController
    # score :
 
   def create
-    @quiz = Quiz.create(score: 0) # ajouter les autres params si nécessaire
-    @chat = Chat.new(title: "Quiz test", quiz: @quiz, user: current_user)
+    @quiz = Quiz.create!(score: 0) # ajouter les autres params si nécessaire
+    @chat = Chat.new(title: "Quiz test", quiz: @quiz, user: current_user) # ??? nil
     if @chat.save!
       @chat_llm = RubyLLM.chat
-#   Tu lui passes son système prompt / instructions. PERSONA, CONTEXT, TASK, FORMAT  et tu récupéres la réponse du LLM dans une variable.
+      # Tu lui passes son système prompt / instructions. PERSONA, CONTEXT, TASK, FORMAT  et tu récupéres la réponse du LLM dans une variable.
       question_prompt = "Pose moi une question avec les suggestions sans indiquer les paramètres ni la bonne réponse avant la réponse de l'utilisateur"
       @response = @chat_llm.with_instructions(SYSTEM_PROMPT).ask(question_prompt)
-      Question.create(content: @response.content, chat: @chat)
+      Message.create(role: "assistant", content: @response.content, chat: @chat)
       redirect_to chat_path(@chat)
     else
       render "/"
@@ -47,7 +47,7 @@ class ChatsController < ApplicationController
   def show
     @chat = Chat.find(params[:id])
     # Itération sur les question/réponse avec vérification entre les questions pour éviter les doublons
-    @question = @chat.questions.first
+    @assistant_message = @chat.messages.first
   end
 
   private
