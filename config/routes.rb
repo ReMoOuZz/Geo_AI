@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: "pages#home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :chats, only: [:create, :show] do
-    resources :answers, only: [:create]
+    resources :messages, only: [:create]
   end
   resources :quizzes, only: [:show]
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
