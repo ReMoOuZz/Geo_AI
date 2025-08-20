@@ -1,20 +1,82 @@
-<h2>Log in</h2>
+<div class="auth-container">
+  <div class="brand-box">GeoAI</div>
+  <h2>Log in</h2>
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-    <%= f.input :password,
-                required: false,
-                input_html: { autocomplete: "current-password" } %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="form-inputs">
+      <%= f.input :email, autofocus: true, input_html: { autocomplete: "email" } %>
+      <%= f.input :password, input_html: { autocomplete: "current-password" } %>
+      <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit, "Log in", class: "btn" %>
+    </div>
+  <% end %>
+
+  <div class="links">
+    <%= render "devise/shared/links" %>
   </div>
+</div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
-<% end %>
+<style>
+.auth-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: sans-serif;
+}
 
-<%= render "devise/shared/links" %>
+.brand-box {
+  display: inline-block;
+  background: #20c997; /* зелёная плашка GeoAI */
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-inputs {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #20c997; /* зелёная кнопка GeoAI */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #198f6e; /* чуть темнее зелёный */
+}
+
+.links {
+  margin-top: 15px;
+  font-size: 14px;
+}
+</style>
