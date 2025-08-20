@@ -14,7 +14,9 @@
     </div>
   <% end %>
 
-  <%= render "devise/shared/links" %>
+  <div class="links">
+    <%= render "devise/shared/links" %>
+  </div>
 </div>
 
 <style>
@@ -31,7 +33,7 @@
 
 .brand-box {
   display: inline-block;
-  background: #20c997; 
+  background: #20c997; /* зелёная плашка GeoAI */
   color: #fff;
   font-weight: bold;
   font-size: 20px;
@@ -63,13 +65,18 @@ input[type="password"] {
   padding: 12px;
   border: none;
   border-radius: 6px;
-  background: #007bff; /* аккуратный синий */
+  background: #20c997; /* зелёная кнопка GeoAI */
   color: white;
   font-weight: bold;
   cursor: pointer;
 }
 
 .btn:hover {
-  background: #0056b3;
+  background: #198f6e; /* чуть темнее зелёный */
+}
+
+.links {
+  margin-top: 15px;
+  font-size: 14px;
 }
 </style>
