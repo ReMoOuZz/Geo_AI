@@ -1,3 +1,11 @@
-<h1>Hello World</h1>
 
-<%= link_to "le chat commence", chats_path, data: { turbo_method: :post } %>
+<div class="d-flex min-vh-100 justify-content-center align-items-center" style="background-image: url('https://static-cse.canva.com/blob/1149387/BlueandGreyWorldMapChartPresentation.png'); background-size: cover, background-position: center;">
+  <div class="container p-4 rounded-3 border shadow text-center d-flex flex-column align-items-center">
+    <h1 class="bg-success w-25 p-3 shadow rounded-3 fw-bold">GeoAI</h1>
+    <p class="fs-2 fw-bold">Bienvenue</p>
+    <p class="fs-4">Vous allez passer un test de geographie, avec des questions génerées par notre LLM</p>
+  
+    <%= link_to "Start Quizz", chats_path,class: "btn btn-primary rounded-3 px-4", data:{ turbo_method: :post} %>
+  </div>
+</div>
+
