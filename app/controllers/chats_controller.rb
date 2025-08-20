@@ -20,34 +20,27 @@ class ChatsController < ApplicationController
 
   def create
     @quiz = Quiz.create!(score: 0) # ajouter les autres params si nécessaire
-    @chat = Chat.new(title: "Quiz test", quiz: @quiz, user: current_user) # ??? nil
+    @chat = Chat.new(title: "Quiz test", quiz: @quiz, user: current_user)
     if @chat.save!
       @chat_llm = RubyLLM.chat
-      # Tu lui passes son système prompt / instructions. PERSONA, CONTEXT, TASK, FORMAT  et tu récupéres la réponse du LLM dans une variable.
       question_prompt = "Pose moi une question avec les suggestions sans indiquer les paramètres ni la bonne réponse avant la réponse de l'utilisateur"
       @response = @chat_llm.with_instructions(SYSTEM_PROMPT).ask(question_prompt)
-      Message.create(role: "assistant", content: @response.content, chat: @chat)
-      redirect_to chat_path(@chat)
+      @message = Message.create!(role: "assistant", content: @response.content, chat: @chat)
+      @questions = @quiz.messages
+      @questions << @message.content
+      redirect_to quiz_chat_path(@quiz, @chat)
     else
       render "/"
     end
-    # système prompt à faire:
-    # question.create avec ruby LLM pour générer des questions
-    # réponse du ruby LLM à récupérer pour créer la réponse
-
-    ### Initialiser le chat
-    #@chat = RubyLLM.chat
-    #@chat.with_instructions(SYSTEM_PROMPT)
-    #   Tu récupéres la réponse du LLM dans une variable.
-    #@response = @chat.ask("Génère moi des questions et des suggestions de réponses.")
-    #   Tu crées la question à partir de la réponse du LLM.
-    #   Question.create!(content: @response.content)
   end
 
   def show
     @chat = Chat.find(params[:id])
+    @quiz = Quiz.find(params[:quiz_id])
+    @questions = @quiz.messages
     # Itération sur les question/réponse avec vérification entre les questions pour éviter les doublons
     @assistant_message = @chat.messages.first
+    # @assistant_response = @chat.find(params[])
     @user_message = Message.new
   end
 
