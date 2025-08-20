@@ -1,4 +1,7 @@
 class ChatsController < ApplicationController
+
+  before_action :authenticate_user!
+  
   SYSTEM_PROMPT = <<-PROMPT
   Tu es un expert en géographie et tu es capable de poser 15 questions sous un format de quiz.
   Je suis un débutant dans le domaine de la géographie donc ta première question doit etre simple.
