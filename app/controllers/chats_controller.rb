@@ -28,6 +28,7 @@ class ChatsController < ApplicationController
       @message = Message.create!(role: "assistant", content: @response.content, chat: @chat)
       @questions = @quiz.messages
       @questions << @message.content
+      @quiz.update!(messages: @questions)
       redirect_to quiz_chat_path(@quiz, @chat)
     else
       render "/"
