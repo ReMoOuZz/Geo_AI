@@ -20,8 +20,8 @@ class MessagesController < ApplicationController
       @chat_llm = RubyLLM.chat
       question_prompt = "Pose moi une question avec les suggestions sans indiquer les paramètres ni la bonne réponse avant la réponse de l'utilisateur"
       @response = @chat_llm.with_instructions(SYSTEM_PROMPT).ask(question_prompt)
-      Message.create(role: "assistant", content: @response.content, chat: @chat)
-      redirect_to chat_path(@chat)
+      Message.create!(role: "assistant", content: @response.content, chat: @chat)
+      redirect_to chat_messages_path(@chat)
     end
   end
 end

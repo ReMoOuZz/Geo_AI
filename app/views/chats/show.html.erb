@@ -1,6 +1,14 @@
-<%= @assistant_message.content %>
+<% @chat.messages.each do |message| %>
+  <% if message.role == "user" %>
+    <%= message.content %>
+  <% elsif message.role == "assistant" %>
+    <%= message.content %>
+  <% end  %>
+<%end %>
 
 <%= simple_form_for [@chat, @user_message] do |f| %>
 <%= f.input :content %>
 <%= f.button :submit %>
 <% end %>
+
+<%= @questions  %>
