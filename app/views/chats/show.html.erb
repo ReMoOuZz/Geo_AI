@@ -7,6 +7,7 @@
         <p><span class="fw-bold text-primary">Proposition</span>: <%= message.content.capitalize %></p>
       </div>
 
+
       <% elsif message.role == "assistant" %>
       <div class="container">
         <p><span class="fw-bold text-danger">Question:</span> <%= message.content %></p>
@@ -20,3 +21,10 @@
     <% end %>
   </div>
 </div>
+
+<%= @questions  %>
+
+<% if user_signed_in? %>
+  <%= link_to "Log out", destroy_user_session_path, class: "dropdown-item", data: {turbo_method: :delete} %>
+<% end %>
+
