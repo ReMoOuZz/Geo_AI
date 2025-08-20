@@ -20,7 +20,7 @@ class MessagesController < ApplicationController
     if @message.save!
       @chat_llm = RubyLLM.chat
       question_prompt = "Pose moi une question avec les suggestions sans indiquer les paramètres ni la bonne réponse avant la réponse de l'utilisateur"
-      @response = @chat_llm.with_instructions(SYSTEM_PROMPT).ask(question_prompt)
+      @response = @chat_llm.with_instructions(instructions).ask(question_prompt)
       @assistant_message = Message.create!(role: "assistant", content: @response.content, chat: @chat)
       @questions = @quiz.messages
       @questions << @assistant_message.content
