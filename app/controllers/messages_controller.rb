@@ -15,13 +15,27 @@ class MessagesController < ApplicationController
 
   def create
     @chat = Chat.find(params[:chat_id])
+    @quiz = @chat.quiz
     @message = Message.new(role: "user", content: params[:message][:content], chat: @chat)
     if @message.save!
       @chat_llm = RubyLLM.chat
       question_prompt = "Pose moi une question avec les suggestions sans indiquer les paramètres ni la bonne réponse avant la réponse de l'utilisateur"
       @response = @chat_llm.with_instructions(SYSTEM_PROMPT).ask(question_prompt)
-      Message.create!(role: "assistant", content: @response.content, chat: @chat)
+      @assistant_message = Message.create!(role: "assistant", content: @response.content, chat: @chat)
+      @questions = @quiz.messages
+      @questions << @assistant_message.content
+      @quiz.update!(messages: @questions)
       redirect_to chat_messages_path(@chat)
     end
+  end
+
+  private
+
+  def question_prompt
+    "Voici l'array initial des questions déjà posées: #{@quiz.messages}"
+  end
+
+  def instructions
+    [SYSTEM_PROMPT, question_prompt].compact.join("\n\n")
   end
 end
