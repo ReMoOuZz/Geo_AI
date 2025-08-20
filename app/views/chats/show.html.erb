@@ -1,14 +1,22 @@
-<% @chat.messages.each do |message| %>
-  <% if message.role == "user" %>
-    <%= message.content %>
-  <% elsif message.role == "assistant" %>
-    <%= message.content %>
-  <% end  %>
-<%end %>
+<div class="d-flex min-vh-100 justify-content-center align-items-center" style="background-image: url('https://static-cse.canva.com/blob/1149387/BlueandGreyWorldMapChartPresentation.png'); background-size: cover, background-position: center; ">
 
-<%= simple_form_for [@chat, @user_message] do |f| %>
-<%= f.input :content %>
-<%= f.button :submit %>
-<% end %>
+  <div class="container shadow p-3">
+    <% @chat.messages.each do |message| %>
+      <% if message.role == "user" %>
+      <div class="container">
+        <p><span class="fw-bold text-primary">Proposition</span>: <%= message.content.capitalize %></p>
+      </div>
 
-<%= @questions  %>
+      <% elsif message.role == "assistant" %>
+      <div class="container">
+        <p><span class="fw-bold text-danger">Question:</span> <%= message.content %></p>
+      </div>
+      <% end  %>
+    <%end %>
+
+    <%= simple_form_for [@chat, @user_message] do |f| %>
+    <%= f.input :content, placeholder: "Votre réponse...", label:false %>
+    <%= f.button :submit, value: "Répondre", class:"btn btn-success rounded-3" %>
+    <% end %>
+  </div>
+</div>
