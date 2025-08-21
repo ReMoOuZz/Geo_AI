@@ -1,9 +1,9 @@
 class ChatsController < ApplicationController
 
   before_action :authenticate_user!
-  
+
   SYSTEM_PROMPT = <<-PROMPT
-  Tu es un expert en géographie et tu es capable de poser 15 questions sous un format de quiz.
+  Tu es un expert en géographie et tu es capable de poser des questions sous un format de quiz.
   Je suis un débutant dans le domaine de la géographie donc ta première question doit etre simple.
 
   Tu me proposes 4 suggestions de réponse à la suite de la question dont une suggestion est la bonne réponse, deux suggestions qui peuvent induire en erreur,  une hors contexte (qui reste dans le theme). Si ma réponse est bonne, la question suivante est un peu plus difficile, si ma réponse est mauvaise le niveau des questions reste le même. A chaque réponse (bonne ou mauvaise), tu me proposes un petit paragraphe (10 à 15 mots max) qui explicite la réponse.
@@ -23,12 +23,10 @@ class ChatsController < ApplicationController
 
   def create
     @quiz = Quiz.create!(score: 0) # ajouter les autres params si nécessaire
-    @chat = Chat.new(title: "Quiz test", quiz: @quiz, user: current_user)
+    @chat = Chat.new(title: "Quiz test", quiz: @quiz, user: current_user, model_id: "gpt-4.1-nano")
     if @chat.save!
-      @chat_llm = RubyLLM.chat
-      question_prompt = "Pose moi une question avec les suggestions sans indiquer les paramètres ni la bonne réponse avant la réponse de l'utilisateur"
-      @response = @chat_llm.with_instructions(SYSTEM_PROMPT).ask(question_prompt)
-      @message = Message.create!(role: "assistant", content: @response.content, chat: @chat)
+      @response = @chat.with_instructions(SYSTEM_PROMPT).ask("commence le quiz")
+      @message = @chat.messages.where(role: "assistant").last
       @questions = @quiz.messages
       @questions << @message.content
       @quiz.update!(messages: @questions)

@@ -28,6 +28,9 @@ gem "jbuilder"
 
 gem "ruby_llm"
 
+gem "kramdown"
+gem "kramdown-parser-gfm"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
