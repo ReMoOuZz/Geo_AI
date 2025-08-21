@@ -168,6 +168,10 @@ GEM
       actionview (>= 7.0.0)
       activesupport (>= 7.0.0)
     json (2.13.2)
+    kramdown (2.5.1)
+      rexml (>= 3.3.9)
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     logger (1.7.0)
     loofah (2.24.1)
       crass (~> 1.0.2)
@@ -363,6 +367,8 @@ DEPENDENCIES
   font-awesome-sass (~> 6.1)
   importmap-rails
   jbuilder
+  kramdown
+  kramdown-parser-gfm
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.1.5, >= 7.1.5.2)
