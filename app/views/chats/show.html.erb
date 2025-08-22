@@ -24,7 +24,7 @@
           placeholder: "Votre réponse...",
           label:false,
           input_html: {
-            data: { action: "keyup->actionquiz#enterValidation", actionquiz_target: "input" }
+          data: { action: "keyup->actionquiz#enterValidation", actionquiz_target: "input" }
           } %>
 
           <%= f.button :submit, class:"btn btn-success rounded-3" %>
@@ -37,8 +37,3 @@
     </div>
   </div>
 </div>
-
-
-<% if user_signed_in? %>
-  <%= link_to "Log out", destroy_user_session_path, class: "dropdown-item", data: {turbo_method: :delete} %>
-<% end %>
