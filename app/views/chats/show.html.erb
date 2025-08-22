@@ -7,8 +7,6 @@
       <div class="container">
         <p><span class="fw-bold text-primary">Proposition</span>: <%= message.content.capitalize %></p>
       </div>
-
-
       <% elsif message.role == "assistant" %>
       <div class="container">
         <p><span class="fw-bold text-danger">Question:</span> <%= raw(render_markdown message.content) %></p>
@@ -16,10 +14,27 @@
       <% end  %>
     <%end %>
 
-    <%= simple_form_for [@chat, @user_message] do |f| %>
-    <%= f.input :content, placeholder: "Votre réponse...", label:false %>
-    <%= f.button :submit, value: "Répondre", class:"btn btn-success rounded-3" %>
-    <% end %>
+    <div data-controller="actionquiz"
+         data-actionquiz-total-value="<%= Quiz::TOTAL %>"
+         data-actionquiz-messagesnumber-value="<%= @response_count %>">
+
+        <%= simple_form_for [@chat, @user_message], data:{ actionquiz_target: "form" } do |f| %>
+
+          <%= f.input :content,
+          placeholder: "Votre réponse...",
+          label:false,
+          input_html: {
+            data: { action: "keyup->actionquiz#enterValidation", actionquiz_target: "input" }
+          } %>
+
+          <%= f.button :submit, class:"btn btn-success rounded-3" %>
+        <% end %>
+
+        <div data-actionquiz-target="replace" class="d-none d-flex justify-content-center ">
+          <%= link_to "Resultats", quiz_path(@quiz), class: "text-white btn btn-primary rounded-3 p-3 fw-bold"%>
+        </div>
+
+    </div>
   </div>
 </div>
 
