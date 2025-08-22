@@ -12,7 +12,7 @@ class MessagesController < ApplicationController
       Pose moi une question avec les suggestions sans indiquer les parametres ni la bonne réponse avant la réponse de l'utilisateur.
       Le format doit etre une question avec les suggestions en dessous sous forme de cards.
 
-
+z
       PROMPT
 
   def create

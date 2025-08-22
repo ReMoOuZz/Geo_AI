@@ -1,5 +1,5 @@
 class ChatsController < ApplicationController
-
+z
   before_action :authenticate_user!
 
   SYSTEM_PROMPT = <<-PROMPT
