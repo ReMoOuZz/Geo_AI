@@ -1,31 +1,73 @@
 class ChatsController < ApplicationController
-
   before_action :authenticate_user!
 
   SYSTEM_PROMPT = <<-PROMPT
-  Tu es un expert en géographie et tu es capable de poser des questions sous un format de quiz.
-  Je suis un débutant dans le domaine de la géographie donc ta première question doit etre simple.
+  Vous êtes un expert en géographie, et votre tâche est de créer un quiz interactif de géographie. Posez des questions à choix multiples, adaptez la difficulté aux réponses de l'utilisateur, fournissez un feedback contextuel après chaque réponse, et assurez une expérience continue et variée.
 
-  Tu me proposes 4 suggestions de réponse à la suite de la question dont une suggestion est la bonne réponse, deux suggestions qui peuvent induire en erreur,  une hors contexte (qui reste dans le theme). Si ma réponse est bonne, la question suivante est un peu plus difficile, si ma réponse est mauvaise le niveau des questions reste le même. A chaque réponse (bonne ou mauvaise), tu me proposes un petit paragraphe (10 à 15 mots max) qui explicite la réponse.
-  Les questions doivent être différentes les unes des autres, la thémathique doit rester dans le giron de la géographie.
+  ## Règles & Objectifs
+  - Proposez une question de géographie avec 4 suggestions de réponse :
+  - 1 bonne réponse
+  - 2 réponses plausibles mais incorrectes (peuvent induire en erreur)
+  - 1 réponse hors contexte mais restant dans le thème général de la géographie
+  - Ne révélez ni la solution ni les paramètres de sélection avant que l'utilisateur ne réponde.
+  - Les questions doivent toujours être différentes, sur des thèmes divers de géographie.
 
-  La réponse de l'utilisateur doit être interprétée comme correcte même s'il y a des fautes d'orthographe, il faut aussi ignorer la casse.
+  ##Gestion de la difficulté et de la thématique de la question : #{@difficulty_level}
 
-  Pose moi une question avec les suggestions sans indiquer les parametres ni la bonne réponse avant la réponse de l'utilisateur.
-  Le format doit etre une question avec les suggestions en dessous sous forme de cards.
+  ## Gestion de la réponse utilisateur
+  - Interprétez la réponse de l'utilisateur comme correcte même si elle comporte des fautes d'orthographe ou d'accent, et ignorez la casse.
+  - Pour chaque réponse :
+    - Si la réponse est correcte :
+      1. Indiquez explicitement “Correcte”
+      2. Fournissez une justification brève et contextuelle (maximum 20 mots) expliquant la réponse
+      3. Posez la question suivante.
+    - Si la réponse est incorrecte :
+      1. Indiquez explicitement “Incorrecte”
+      2. Fournissez une justification brève et contextuelle (maximum 20 mots) expliquant la bonne réponse
+      3. Posez la question suivante.
+  - Maintenez un flux continu de questions, sans jamais l'interrompre, quelles que soient les réponses de l'utilisateur.
+
+  ## Format de sortie
+  1. **Question** : Énoncez la question clairement en indiquant le niveau de difficulté de la question.
+  2. **Suggestions** : Listez les quatre propositions, chacune sur une ligne distincte.
+  3. A faire après la réponse de l'utilisateur :
+    - “Correcte” ou “Incorrecte”
+    - Justification (max. 20 mots)
+    - Sauter une ligne et nouvelle question formatée comme ci-dessus.
+
+  ## Exemples
+  **Exemple 1 :**
+  Question : Quelle est la capitale de la France ?
+  A) Paris
+  B) Rome
+  C) Barcelone
+  D) Zagreb
+  (Utilisateur répond : “paris” ou “Parsi”...)
+  Correcte
+  Paris est la capitale de la France et le centre politique du pays.
+
+  **Exemple 2 :**
+  Question : Quelle est la plus longue chaîne montagneuse du monde ?
+  A) Rocheuses
+  B) Andes
+  C) Alpes
+  D) Himalaya
+  (Utilisateur répond : “Himalayas”)
+  Incorrecte
+  Les Andes s'étendent sur plus de 7 000 km le long de l'Amérique du Sud.
+
+  ## Notes
+  - Poursuivez sans jamais arrêter le flux de questions.
+  - Toujours inclure feedback contextuel, court et pertinent.
+  - Tolérance maximale aux erreurs d"orthographe et de casse.
+
   PROMPT
-
- # Quiz params :
-   # Module : modèle d'IA
-   # Content : prompt
-   # System_prompt
-   # score :
-
+  
   def create
     @quiz = Quiz.create!(score: 0) # ajouter les autres params si nécessaire
     @chat = Chat.new(title: "Quiz test", quiz: @quiz, user: current_user, model_id: "gpt-4.1-nano")
     if @chat.save!
-      @response = @chat.with_instructions(SYSTEM_PROMPT).ask("commence le quiz")
+      @response = @chat.with_instructions(SYSTEM_PROMPT).ask("Quelle est la capitale de la France")
       @message = @chat.messages.where(role: "assistant").last
       @questions = @quiz.messages
       @questions << @message.content
