@@ -1,0 +1,122 @@
+.quiz-results-page {
+  padding-top: 70px;
+  padding-bottom: 120px;
+  min-height: calc(100vh - 170px);
+  font-family: 'arial, sans-serif';
+  background-image: url('https://static-cse.canva.com/blob/1149387/BlueandGreyWorldMapChartPresentation.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+  }
+
+  .results-container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .trophy {
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+
+  h1.score-display {
+    font-size: 48px;
+    font-weight: bold;
+    color: #667eea;
+    margin: 20px 0;
+  }
+  
+  .congratulations {
+    font-size: 28px;
+    color: #333;
+    margin: 20px 0;
+    
+  }
+
+  .percentage {
+    font-size: 40px;
+    margin: 10px 0;
+    display: inline-block;
+    font-weight: bold;
+    background-color:#41e39a;
+    border-radius: 20px;
+  }
+
+  .message {
+    font-size: 18px;
+    color: #666;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-out 1.5s both;
+  }
+
+  .restart-btn {
+    background-color: #40E29A ;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+      transform: scale(1.05);
+      color: white;
+      text-decoration: none;
+    }
+
+    .stars {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      
+  }
+
+    // Confettis
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: #f0f;
+      animation: confetti-fall 3s linear infinite;
+    }
+  
+    @keyframes confetti-fall {
+      0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+      }
+  
+      100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+      }
+    }
+  }
+}
