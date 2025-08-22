@@ -16,10 +16,17 @@
       <% end  %>
     <%end %>
 
-    <%= simple_form_for [@chat, @user_message] do |f| %>
-    <%= f.input :content, placeholder: "Votre réponse...", label:false %>
-    <%= f.button :submit, value: "Répondre", class:"btn btn-success rounded-3" %>
-    <% end %>
+    <div data-controller="actionquiz"
+         data-actionquiz-total-value="<%= Quiz::TOTAL %>"
+         data-actionquiz-messagesnumber-value="<%= @response_count %>">
+      <%= simple_form_for [@chat, @user_message], data: { actionquiz_target: "form" } do |f| %>
+        <%= f.input :content, placeholder: "Votre réponse...", label:false %>
+        <%= f.button :submit, class:"btn btn-success rounded-3", data: { action: "click->actionquiz#changeText" } do %>
+          <div data-actionquiz-target="label">Répondre</div>
+        <% end %>
+      <% end %>
+    </div>
+
   </div>
 </div>
 

@@ -25,10 +25,12 @@ class MessagesController < ApplicationController
 
         @quiz.increment!(:score) if @chat.messages.last.content =~ /\bcorrect\b/i
 
-        if @chat.messages.where(role: "assistant").count > Quiz::TOTAL
-          redirect_to quiz_path(@quiz)
-          return
-        end
+        @response_count = @chat.messages.where(role: "assistant").count
+
+        # if @response_count > Quiz::TOTAL
+        #   redirect_to quiz_path(@quiz)
+        #   return
+        # end
 
         @questions << @assistant_message.content
         @quiz.update!(messages: @questions)

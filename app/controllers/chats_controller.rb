@@ -39,6 +39,7 @@ class ChatsController < ApplicationController
   def show
     @chat = Chat.find(params[:id])
     @quiz = Quiz.find(params[:quiz_id])
+    @response_count = @chat.messages.where(role: "assistant").count
     @questions = @quiz.messages
     # Itération sur les question/réponse avec vérification entre les questions pour éviter les doublons
     @assistant_message = @chat.messages.first
