@@ -29,7 +29,7 @@ export default class extends Controller {
         else if (percentage >=30) {
         this.trophyTarget.innerHTML = '<i class="fa-solid fa-medal" style="color: #614e1a;"></i>'
         this.messageTarget.textContent = "Pas mal ! Un peu de révision et ce sera parfait !"
-        }
+        
       } else {
         this.trophyTarget.innerHTML = '<i class="fa-solid fa-poo" style="color: #FFD43B;"></i>'
         this.messageTarget.textContent = "Bravo tu as gagné le golden de nullité en Geographie..."
