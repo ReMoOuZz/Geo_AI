@@ -8,13 +8,12 @@ class MessagesController < ApplicationController
       Les questions doivent être différentes les unes des autres, la thémathique doit rester dans le giron de la géographie.
 
       La réponse de l'utilisateur doit être interprétée comme correcte même s'il y a des fautes d'orthographe, il faut aussi ignorer la casse.
+      Si elle est correcte, tu dois absolument lui dire "correct" dans ta réponse.
 
       Pose moi une question avec les suggestions sans indiquer les parametres ni la bonne réponse avant la réponse de l'utilisateur.
       Le format doit etre une question avec les suggestions en dessous sous forme de cards.
 
-z
       PROMPT
-
   def create
     @chat = Chat.find(params[:chat_id])
     @quiz = @chat.quiz
@@ -23,7 +22,10 @@ z
         @response = @chat.with_instructions(instructions).ask(@message.content)
         @assistant_message = @chat.messages.where(role: "assistant").last
         @questions = @quiz.messages
-        if @chat.messages.where(role: "assistant").count > 3
+
+        @quiz.increment!(:score) if @chat.messages.last.content =~ /\bcorrect\b/i
+
+        if @chat.messages.where(role: "assistant").count > Quiz::TOTAL
           redirect_to quiz_path(@quiz)
           return
         end
