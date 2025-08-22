@@ -34,7 +34,7 @@ class MessagesController < ApplicationController
 
         @questions << @assistant_message.content
         @quiz.update!(messages: @questions)
-        redirect_to chat_messages_path(@chat)
+        redirect_to quiz_chat_path(@quiz, @chat)
       else
         render "chats/show"
       end

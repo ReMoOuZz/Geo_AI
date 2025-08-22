@@ -1,23 +1,29 @@
-import { Controller } from "@hotwired/stimulus"
-
+import { Controller } from '@hotwired/stimulus';
 // Connects to data-controller="actionquiz"
 export default class extends Controller {
+
   static values = {
     total: Number,
     messagesnumber: Number,
-  }
+  };
 
-  static targets = ["label", "form"]
+  static targets = ['replace', 'form', 'input'];
 
-  connect() {
-    // console.log(this.labelTarget)
-    console.log(this.formTarget.action)
-  }
+    connect() {
+      setTimeout(() => {
+        if (this.messagesnumberValue > this.totalValue) {
+          this.formTarget.classList.add('d-none');
+          this.replaceTarget.classList.remove('d-none');
+        }
+        this.element.scrollIntoView({behavior: "smooth", block: "center"})
+        this.inputTarget.focus();
+      }, 50);
+    }
 
-  changeText() {
-    if (this.messagesnumberValue === this.totalValue) {
-      this.element.textContent = "Terminer le quiz"
-      console.log(this.messagesnumberValue, this.totalValue)
+    enterValidation(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        this.formTarget.requestSubmit();
+      }
     }
   }
-}
