@@ -644,9 +644,8 @@ questions_data = [
     contexte: "Aigle de Skanderbeg, héros national résistant aux Ottomans."
   },
 
-  # SEEDS DRAPEAUX GEMINI > NON VERIFIEES
+  # SEEDS DRAPEAUX via GEMINI 2.5 PRO > NON VERIFIEES
 
-  [
   {
     content: "À quel pays appartient ce drapeau tricolore vertical bleu, blanc, rouge ?",
     difficulty: "facile",
@@ -1051,9 +1050,10 @@ questions_data = [
     correct_answer: "Serbie",
     incorrect_answers: ["Russie", "Slovaquie", "Slovénie"],
     contexte: "Il utilise les couleurs panslaves, mais dans un ordre inversé par rapport à la Russie. Le blason représente l'aigle bicéphale serbe."
-  }
+  },
 
-  [
+  # Asie
+
   {
     content: "Ce drapeau rouge avec cinq étoiles jaunes (une grande et quatre petites) est celui de quel pays ?",
     difficulty: "facile",
@@ -1449,1239 +1449,947 @@ questions_data = [
     correct_answer: "Émirats arabes unis",
     incorrect_answers: ["Koweït", "Jordanie", "Syrie"],
     contexte: "Ce drapeau utilise les couleurs panarabes, représentant l'unité des nations arabes. Chaque couleur symbolise une dynastie ou une époque historique."
-  }
-
-  # Océanie - Facile (91-105)
-  {
-    content: "Quel pays d'Océanie possède un drapeau avec la constellation de la Croix du Sud ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "La Nouvelle-Zélande",
-    incorrect_answers: ["L'Australie", "Les Fidji", "La Papouasie-Nouvelle-Guinée"],
-    contexte: "Le drapeau de la Nouvelle-Zélande a une constellation de la Croix du Sud, qui symbolise la nation et la religion."
-  },
-  {
-    content: "Quel pays d'Océanie a un drapeau qui inclut une étoile à sept branches ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "Les Fidji", "La Papouasie-Nouvelle-Guinée"],
-    contexte: "Le drapeau australien a une grande étoile à sept branches, représentant les six États et les territoires."
-  },
-  {
-    content: "Le drapeau de quel pays est un drapeau à damier rouge et blanc au centre ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "La Croatie",
-    incorrect_answers: ["La Slovénie", "La Bosnie-Herzégovine", "La Serbie"],
-    contexte: "Le drapeau de la Croatie est un drapeau national qui symbolise le pays et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec un aigle à deux têtes sur fond rouge ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "L'Albanie",
-    incorrect_answers: ["La Grèce", "La Serbie", "La Pologne"],
-    contexte: "L'aigle noir sur fond rouge symbolise les guerriers de l'Albanie, un emblème datant du XVe siècle."
-  },
-  {
-    content: "Le drapeau de quel pays est composé d'une croix nordique rouge sur un fond blanc ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Danemark",
-    incorrect_answers: ["La Suède", "La Norvège", "La Finlande"],
-    contexte: "Le Dannebrog, drapeau danois, est le plus ancien drapeau national encore utilisé au monde, datant de 1219."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge au centre d'un cercle jaune sur fond bleu ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Viêt Nam",
-    incorrect_answers: ["La Chine", "La Corée du Nord", "Cuba"],
-    contexte: "L'étoile jaune sur le drapeau vietnamien symbolise la direction du Parti Communiste, et le peuple est l'étoile."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond vert ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Maroc",
-    incorrect_answers: ["L'Algérie", "La Tunisie", "La Libye"],
-    contexte: "Le drapeau du Maroc est un drapeau national avec un pentagramme vert au centre."
-  },
-  {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
-  },
-  {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une croix rouge sur fond blanc ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "La Suisse",
-    incorrect_answers: ["Le Danemark", "La Norvège", "La Finlande"],
-    contexte: "Le drapeau de la Suisse est un drapeau national qui symbolise la liberté et l'indépendance."
-  },
-  {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
-  },
-  {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
   },
 
-  # Océanie - Intermédiaire (106-120)
+  # Amérique
   {
-    content: "Quel pays d'Océanie a un drapeau qui inclut une étoile à sept branches ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "Les Fidji", "La Papouasie-Nouvelle-Guinée"],
-    contexte: "Le drapeau australien a une grande étoile à sept branches, représentant les six États et les territoires."
-  },
-  {
-    content: "Quel pays d'Océanie présente une étoile rouge sur fond blanc ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec un aigle à deux têtes sur fond rouge ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "L'Albanie",
-    incorrect_answers: ["La Grèce", "La Serbie", "La Pologne"],
-    contexte: "L'aigle noir sur fond rouge symbolise les guerriers de l'Albanie, un emblème datant du XVe siècle."
-  },
-  {
-    content: "Le drapeau de quel pays est composé d'une croix nordique rouge sur un fond blanc ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Danemark",
-    incorrect_answers: ["La Suède", "La Norvège", "La Finlande"],
-    contexte: "Le Dannebrog, drapeau danois, est le plus ancien drapeau national encore utilisé au monde, datant de 1219."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge au centre d'un cercle jaune sur fond bleu ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Viêt Nam",
-    incorrect_answers: ["La Chine", "La Corée du Nord", "Cuba"],
-    contexte: "L'étoile jaune sur le drapeau vietnamien symbolise la direction du Parti Communiste, et le peuple est l'étoile."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond vert ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Maroc",
-    incorrect_answers: ["L'Algérie", "La Tunisie", "La Libye"],
-    contexte: "Le drapeau du Maroc est un drapeau national avec un pentagramme vert au centre."
-  },
-  {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
-  },
-  {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une croix rouge sur fond blanc ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "La Suisse",
-    incorrect_answers: ["Le Danemark", "La Norvège", "La Finlande"],
-    contexte: "Le drapeau de la Suisse est un drapeau national qui symbolise la liberté et l'indépendance."
-  },
-  {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
-  },
-  {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
-  },
-
-  # Océanie - Difficile (121-135)
-  {
-    content: "Le drapeau de quel pays d'Océanie présente une étoile blanche à sept branches et une croix du Sud ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "Les Fidji", "La Papouasie-Nouvelle-Guinée"],
-    contexte: "Le drapeau australien a une grande étoile à sept branches, représentant les six États et les territoires."
-  },
-  {
-    content: "Le drapeau de quel pays est un drapeau à damier rouge et blanc au centre ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "La Croatie",
-    incorrect_answers: ["La Slovénie", "La Bosnie-Herzégovine", "La Serbie"],
-    contexte: "Le drapeau de la Croatie est un drapeau national qui symbolise le pays et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec un aigle à deux têtes sur fond rouge ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "L'Albanie",
-    incorrect_answers: ["La Grèce", "La Serbie", "La Pologne"],
-    contexte: "L'aigle noir sur fond rouge symbolise les guerriers de l'Albanie, un emblème datant du XVe siècle."
-  },
-  {
-    content: "Le drapeau de quel pays est composé d'une croix nordique rouge sur un fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Danemark",
-    incorrect_answers: ["La Suède", "La Norvège", "La Finlande"],
-    contexte: "Le Dannebrog, drapeau danois, est le plus ancien drapeau national encore utilisé au monde, datant de 1219."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge au centre d'un cercle jaune sur fond bleu ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Viêt Nam",
-    incorrect_answers: ["La Chine", "La Corée du Nord", "Cuba"],
-    contexte: "L'étoile jaune sur le drapeau vietnamien symbolise la direction du Parti Communiste, et le peuple est l'étoile."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond vert ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Maroc",
-    incorrect_answers: ["L'Algérie", "La Tunisie", "La Libye"],
-    contexte: "Le drapeau du Maroc est un drapeau national avec un pentagramme vert au centre."
-  },
-  {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
-  },
-  {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une croix rouge sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "La Suisse",
-    incorrect_answers: ["Le Danemark", "La Norvège", "La Finlande"],
-    contexte: "Le drapeau de la Suisse est un drapeau national qui symbolise la liberté et l'indépendance."
-  },
-  {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
-  },
-  {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Océanie",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
-  },
-
-  # Amérique - Facile (136-150)
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge au centre d'un drapeau blanc ?",
+    content: "Ce drapeau a 13 bandes rouges et blanches et un canton bleu avec 50 étoiles. De quel pays s'agit-il ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
+    correct_answer: "États-Unis",
+    incorrect_answers: ["Royaume-Uni", "Liberia", "Malaisie"],
+    contexte: "Les 13 bandes représentent les treize colonies d'origine. Les 50 étoiles symbolisent les 50 États actuels de l'Union."
   },
   {
-    content: "Quel pays a un drapeau avec un aigle royal au centre d'un drapeau rouge et vert ?",
+    content: "Quel pays a un drapeau rouge avec une feuille d'érable blanche à onze pointes au centre ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "Le Mexique",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "L'aigle royal est l'emblème national du Mexique. Il symbolise le pays et la religion."
+    correct_answer: "Canada",
+    incorrect_answers: ["Liban", "Suisse", "Pérou"],
+    contexte: "La feuille d'érable est un symbole national du Canada depuis le 18e siècle, représentant la nature et l'environnement du pays."
   },
   {
-    content: "Le drapeau de quel pays est composé d'une feuille d'érable rouge au centre d'un drapeau blanc et rouge ?",
+    content: "Ce drapeau tricolore vertical vert, blanc et rouge avec un aigle au centre est celui de quel pays ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "Le Canada",
-    incorrect_answers: ["Les États-Unis", "Le Mexique", "Le Groenland"],
-    contexte: "La feuille d'érable est l'emblème national du Canada, symbolisant la nature et l'unité."
+    correct_answer: "Mexique",
+    incorrect_answers: ["Italie", "Hongrie", "Iran"],
+    contexte: "L'aigle dévorant un serpent sur un cactus est une référence à la légende de la fondation de Tenochtitlan, la capitale aztèque."
   },
   {
-    content: "Quel drapeau national est bleu, blanc et rouge avec une étoile à cinq branches au centre ?",
+    content: "Un drapeau vert et jaune avec un globe bleu et la devise 'Ordem e Progresso'. De quel pays s'agit-il ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Brésil",
+    incorrect_answers: ["Portugal", "Guyana", "Colombie"],
+    contexte: "Le vert représente les forêts, le jaune l'or et les richesses. Le ciel étoilé représente la vue depuis Rio de Janeiro lors de la proclamation de la république."
+  },
+  {
+    content: "Quel pays a un drapeau bleu clair et blanc avec un soleil doré au centre ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Argentine",
+    incorrect_answers: ["Uruguay", "Grèce", "Nicaragua"],
+    contexte: "Les couleurs symbolisent le ciel et les nuages. Le 'Sol de Mayo' (Soleil de Mai) est un emblème de l'indépendance du pays."
+  },
+  {
+    content: "Ce drapeau tricolore horizontal jaune, bleu et rouge est celui de quel pays sud-américain ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Colombie",
+    incorrect_answers: ["Venezuela", "Équateur", "Roumanie"],
+    contexte: "Le jaune représente la richesse, le bleu les deux océans qui bordent le pays, et le rouge le sang versé pour l'indépendance."
+  },
+  {
+    content: "À quel pays des Caraïbes appartient un drapeau avec un triangle rouge, deux triangles bleus et des bandes blanches ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Amérique",
     correct_answer: "Cuba",
-    incorrect_answers: ["Porto Rico", "Le Mexique", "Le Chili"],
-    contexte: "Le drapeau de Cuba est un drapeau national qui symbolise le pays et la religion."
+    incorrect_answers: ["Porto Rico", "République Dominicaine", "Philippines"],
+    contexte: "Le triangle rouge symbolise le sang des patriotes. L'étoile blanche, 'La Estrella Solitaria', représente l'indépendance et la liberté."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond vert ?",
+    content: "Un drapeau avec deux bandes rouges et une bande blanche, avec un blason au centre. De quel pays s'agit-il ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "Le Maroc",
-    incorrect_answers: ["L'Algérie", "La Tunisie", "La Libye"],
-    contexte: "Le drapeau du Maroc est un drapeau national avec un pentagramme vert au centre."
+    correct_answer: "Pérou",
+    incorrect_answers: ["Canada", "Autriche", "Pologne"],
+    contexte: "Selon la légende, les couleurs ont été inspirées par des flamants roses vus par le libérateur José de San Martín."
   },
   {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
+    content: "Quel pays a un drapeau bleu avec une bande diagonale rouge bordée de blanc ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
+    correct_answer: "Trinité-et-Tobago",
+    incorrect_answers: ["République Dominicaine", "Jamaïque", "Namibie"],
+    contexte: "Le rouge symbolise la vitalité du peuple et du soleil, le blanc la mer, et le noir la force et l'unité du peuple."
   },
   {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
+    content: "Ce drapeau a une croix blanche qui divise le champ en quatre rectangles, deux rouges et deux bleus. De quel pays s'agit-il ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
+    correct_answer: "République Dominicaine",
+    incorrect_answers: ["Cuba", "Haïti", "Panama"],
+    contexte: "La croix blanche symbolise la foi et le sacrifice. Le bleu représente la liberté et le rouge le sang des héros."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
+    content: "Quel pays d'Amérique du Sud a un drapeau blanc avec une étoile rouge au centre ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
+    correct_answer: "Chili",
+    incorrect_answers: ["Paraguay", "États-Unis", "Panama"],
+    contexte: "Le bleu symbolise le ciel, le blanc la neige des Andes, et le rouge le sang des patriotes. L'étoile guide vers le progrès."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
+    content: "Un sautoir (croix en X) doré sur un fond vert est le drapeau de quelle île des Caraïbes ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
+    correct_answer: "Jamaïque",
+    incorrect_answers: ["Brésil", "Afrique du Sud", "Écosse"],
+    contexte: "Le noir symbolise la force et la créativité du peuple, le vert l'espoir et les richesses agricoles, et l'or le soleil."
   },
   {
-    content: "Quel pays a un drapeau avec une croix rouge sur fond blanc ?",
+    content: "Ce drapeau est similaire à celui de l'Argentine mais le soleil a un visage. De quel pays s'agit-il ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "La Suisse",
-    incorrect_answers: ["Le Danemark", "La Norvège", "La Finlande"],
-    contexte: "Le drapeau de la Suisse est un drapeau national qui symbolise la liberté et l'indépendance."
+    correct_answer: "Uruguay",
+    incorrect_answers: ["Argentine", "Paraguay", "Pérou"],
+    contexte: "Les neuf bandes représentent les neuf départements originaux. Le 'Sol de Mayo' avec un visage est également un symbole d'indépendance."
   },
   {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
+    content: "Le drapeau du Panama est divisé en quatre quadrants. Quelles sont ses couleurs ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
+    correct_answer: "Rouge, blanc et bleu",
+    incorrect_answers: ["Vert, jaune et bleu", "Noir, rouge et blanc", "Orange, blanc et vert"],
+    contexte: "Le rouge et le bleu représentent les partis conservateur et libéral. Le blanc symbolise la paix entre eux. Les étoiles représentent la pureté et la force."
   },
   {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
+    content: "Quel pays a un drapeau tricolore horizontal jaune, bleu et rouge avec huit étoiles en arc ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
+    correct_answer: "Venezuela",
+    incorrect_answers: ["Colombie", "Équateur", "Arménie"],
+    contexte: "Les couleurs sont celles de la Grande Colombie. Les étoiles représentent les provinces qui ont signé l'acte d'indépendance contre l'Espagne."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "facile",
+    content: "Quel est le seul drapeau au monde à avoir deux faces différentes ?",
+    difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
+    correct_answer: "Paraguay",
+    incorrect_answers: ["Uruguay", "Brésil", "Moldavie"],
+    contexte: "L'avers porte les armoiries nationales, et le revers le sceau du Trésor, avec la devise 'Paz y Justicia' (Paix et Justice)."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
-    difficulty: "facile",
+    content: "Un drapeau bleu et blanc à cinq bandes horizontales, avec cinq volcans et un bonnet phrygien. De quel pays s'agit-il ?",
+    difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
+    correct_answer: "Salvador",
+    incorrect_answers: ["Nicaragua", "Honduras", "Costa Rica"],
+    contexte: "Les couleurs s'inspirent du drapeau des Provinces-Unies d'Amérique centrale. Les volcans représentent les cinq États membres de la fédération."
   },
   {
-    content: "Quel pays a un drapeau avec une croix rouge sur fond blanc ?",
-    difficulty: "facile",
+    content: "Ce drapeau tricolore jaune, bleu et rouge porte le blason national avec un condor. De quel pays s'agit-il ?",
+    difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Amérique",
-    correct_answer: "La Suisse",
-    incorrect_answers: ["Le Danemark", "La Norvège", "La Finlande"],
-    contexte: "Le drapeau de la Suisse est un drapeau national qui symbolise la liberté et l'indépendance."
+    correct_answer: "Équateur",
+    incorrect_answers: ["Colombie", "Venezuela", "Bolivie"],
+    contexte: "Similaire à celui de la Colombie, il s'en distingue par l'ajout du blason, qui représente la richesse naturelle et la beauté du pays."
+  },
+  {
+    content: "Un drapeau avec trois bandes horizontales : deux bleues et une blanche au milieu, avec cinq étoiles bleues. De quel pays s'agit-il ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Honduras",
+    incorrect_answers: ["Salvador", "Nicaragua", "Argentine"],
+    contexte: "Les cinq étoiles symbolisent les cinq nations des anciennes Provinces-Unies d'Amérique centrale et l'espoir qu'elles puissent à nouveau former une union."
+  },
+  {
+    content: "Le drapeau du Costa Rica a cinq bandes horizontales. Quelles sont leurs couleurs de haut en bas ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Bleu, blanc, rouge, blanc, bleu",
+    incorrect_answers: ["Rouge, blanc, bleu, blanc, rouge", "Bleu, blanc, bleu", "Blanc, rouge, blanc"],
+    contexte: "Le bleu représente le ciel, le blanc la paix, et le rouge (plus large) la chaleur du peuple et le sang versé pour la liberté."
+  },
+  {
+    content: "Quel pays d'Amérique du Sud a un drapeau tricolore horizontal rouge, jaune et vert ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Bolivie",
+    incorrect_answers: ["Lituanie", "Ghana", "Éthiopie"],
+    contexte: "Le rouge symbolise le sang des héros nationaux, le jaune la richesse minérale, et le vert l'immense richesse naturelle du pays."
+  },
+  {
+    content: "Un trident noir sur un fond bleu et or est le symbole du drapeau de quel pays insulaire ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Barbade",
+    incorrect_answers: ["Sainte-Lucie", "Bahamas", "Ukraine"],
+    contexte: "Le trident brisé symbolise la rupture avec le passé colonial. Chaque pointe représente un principe de la démocratie. Le bleu est la mer, l'or le sable."
+  },
+  {
+    content: "Ce drapeau bleu et blanc est très similaire à celui du Honduras et du Salvador. Quel pays est-ce ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Nicaragua",
+    incorrect_answers: ["Guatemala", "Costa Rica", "Grèce"],
+    contexte: "Comme ses voisins, il s'inspire de l'ancien drapeau centre-américain. Le blason central est presque identique à celui du Salvador."
+  },
+  {
+    content: "Le drapeau de quel pays est bleu ciel et blanc, avec un quetzal (oiseau national) au centre ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Guatemala",
+    incorrect_answers: ["Mexique", "Costa Rica", "Panama"],
+    contexte: "Les bandes verticales symbolisent les deux océans. Le quetzal, oiseau qui ne peut vivre en captivité, est un symbole de liberté."
+  },
+  {
+    content: "Un drapeau bicolore bleu et rouge, séparé en diagonale, avec le blason national. De quel pays s'agit-il ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Haïti",
+    incorrect_answers: ["République Dominicaine", "Liechtenstein", "France"],
+    contexte: "Les couleurs sont issues du drapeau français, dont la partie blanche a été enlevée pour symboliser l'expulsion des colons."
+  },
+  {
+    content: "Quel pays a un drapeau avec un triangle noir, deux triangles jaunes et deux triangles verts, séparés par un sautoir noir et blanc ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Guyana",
+    incorrect_answers: ["Brésil", "Suriname", "Afrique du Sud"],
+    contexte: "Appelé 'La Pointe de Flèche Dorée', il symbolise la nature (vert), les richesses minérales (jaune), et la persévérance (noir)."
+  },
+  {
+    content: "Ce drapeau est bleu clair avec un triangle jaune et deux triangles noirs. De quel pays insulaire s'agit-il ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Sainte-Lucie",
+    incorrect_answers: ["Bahamas", "Barbade", "Saint-Vincent-et-les-Grenadines"],
+    contexte: "Le dessin représente les Pitons, deux montagnes volcaniques emblématiques de l'île, s'élevant de la mer (bleu)."
+  },
+  {
+    content: "Un drapeau avec trois bandes horizontales : deux bleues et une jaune. De quel archipel s'agit-il ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Bahamas",
+    incorrect_answers: ["Barbade", "Sainte-Lucie", "Colombie"],
+    contexte: "Le triangle noir représente la force du peuple. La couleur aigue-marine (bleu) symbolise l'océan, et l'or le soleil et le sable."
+  },
+  {
+    content: "Ce drapeau a une bande rouge diagonale sur un fond vert, avec une étoile jaune. De quel pays s'agit-il ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Saint-Kitts-et-Nevis",
+    incorrect_answers: ["Dominique", "Grenade", "Suriname"],
+    contexte: "Le vert représente la fertilité, le rouge la lutte pour l'indépendance, le noir l'héritage africain, et les deux étoiles l'espoir et la liberté."
+  },
+  {
+    content: "Le drapeau du Belize est bleu avec deux fines bandes rouges. Qu'est-ce qui le rend unique parmi les drapeaux nationaux ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Il représente des personnages humains",
+    incorrect_answers: ["Il a 12 couleurs", "Il est parfaitement carré", "Il n'a pas de blason"],
+    contexte: "Le blason central, très complexe, est le seul drapeau national à représenter des humains (deux bûcherons), soulignant l'importance de l'industrie du bois."
+  },
+  {
+    content: "Un drapeau vert, blanc et vert avec un perroquet Sisserou au centre. De quel pays s'agit-il ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Dominique",
+    incorrect_answers: ["Sainte-Lucie", "Saint-Vincent-et-les-Grenadines", "Grenade"],
+    contexte: "Le fond vert représente les forêts. La croix tricolore symbolise la Trinité et la foi chrétienne. Le perroquet est l'oiseau national, endémique de l'île."
+  },
+  {
+    content: "Quel pays a un drapeau avec cinq bandes de couleurs verte, blanche, rouge, blanche et verte, et une grande étoile jaune ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Suriname",
+    incorrect_answers: ["Guyana", "Togo", "Bénin"],
+    contexte: "Le vert symbolise la fertilité, le blanc la justice et la liberté, et le rouge le progrès. L'étoile jaune représente l'unité des groupes ethniques."
+  },
+  {
+    content: "Ce drapeau a un cercle rouge contenant sept étoiles sur un fond jaune et vert. De quel pays s'agit-il ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Grenade",
+    incorrect_answers: ["Dominique", "Saint-Kitts-et-Nevis", "Guyana"],
+    contexte: "Le jaune représente la sagesse et le soleil, le vert l'agriculture. Les sept étoiles symbolisent les sept paroisses du pays. Le symbole à gauche est la noix de muscade."
+  },
+  {
+    content: "Un drapeau tricolore bleu, jaune et vert avec trois losanges verts au centre. De quel pays s'agit-il ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Saint-Vincent-et-les-Grenadines",
+    incorrect_answers: ["Sainte-Lucie", "Dominique", "Brésil"],
+    contexte: "Les losanges forment un 'V' pour Vincent et sont appelés les 'Gemmes des Antilles'. Le bleu est le ciel, le jaune le sable, et le vert la végétation."
+  },
+  {
+    content: "Quel pays a un drapeau avec un sautoir rouge sur fond blanc, et une bande bleue et blanche diagonale ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Amérique",
+    correct_answer: "Antigua-et-Barbuda",
+    incorrect_answers: ["Grenade", "Saint-Kitts-et-Nevis", "Jamaïque"],
+    contexte: "Le soleil levant symbolise l'aube d'une nouvelle ère. Le noir représente les ancêtres africains, le bleu l'espoir, et le rouge l'énergie."
+  },
+  {
+    content: "Quel pays a un drapeau bleu avec l'Union Jack et une grande étoile à sept branches sous le canton ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Australie",
+    incorrect_answers: ["Nouvelle-Zélande", "Fidji", "Tuvalu"],
+    contexte: "La grande étoile est l'Étoile du Commonwealth. Les autres étoiles forment la Croix du Sud, une constellation visible dans l'hémisphère sud."
+  },
+  {
+    content: "Ce drapeau bleu porte l'Union Jack et quatre étoiles rouges à cinq branches. De quel pays s'agit-il ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Nouvelle-Zélande",
+    incorrect_answers: ["Australie", "Îles Cook", "Samoa"],
+    contexte: "Les quatre étoiles rouges représentent la constellation de la Croix du Sud. Il est très similaire au drapeau australien qui a des étoiles blanches."
+  },
+  {
+    content: "Quel pays est représenté par un drapeau divisé en diagonale, avec un oiseau de paradis et la Croix du Sud ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Papouasie-Nouvelle-Guinée",
+    incorrect_answers: ["Îles Salomon", "Vanuatu", "Timor oriental"],
+    contexte: "Le rouge et le noir sont des couleurs traditionnelles. L'oiseau de paradis est un symbole national, et la Croix du Sud indique sa position géographique."
+  },
+  {
+    content: "Ce drapeau bleu ciel est orné d'un grand disque jaune légèrement décentré. De quel pays insulaire s'agit-il ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Palaos",
+    incorrect_answers: ["Japon", "Bangladesh", "Micronésie"],
+    contexte: "Le bleu représente l'océan Pacifique. Le disque jaune ne symbolise pas le soleil mais la pleine lune, considérée comme un moment propice."
+  },
+  {
+    content: "Un drapeau rouge avec un canton blanc contenant une croix rouge est l'emblème de quel royaume du Pacifique ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Tonga",
+    incorrect_answers: ["Suisse", "Danemark", "Géorgie"],
+    contexte: "Le rouge symbolise le sang du Christ, et la croix la chrétienté. Sa constitution stipule que ce drapeau ne devra jamais être changé."
+  },
+  {
+    content: "Quel pays a un drapeau bleu clair avec quatre étoiles blanches à cinq branches disposées en losange ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Micronésie",
+    incorrect_answers: ["Somalie", "Palaos", "Nauru"],
+    contexte: "Le fond bleu clair représente l'océan Pacifique. Les quatre étoiles symbolisent les quatre États de la fédération : Chuuk, Pohnpei, Kosrae et Yap."
+  },
+  {
+    content: "Ce drapeau est divisé en diagonale par une bande jaune, avec un champ bleu en haut et vert en bas. De quel pays s'agit-il ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Îles Salomon",
+    incorrect_answers: ["Vanuatu", "Papouasie-Nouvelle-Guinée", "Tanzanie"],
+    contexte: "Le bleu représente l'eau, le vert la terre, et la bande jaune le soleil. Les cinq étoiles symbolisaient les cinq districts initiaux."
+  },
+  {
+    content: "Quel drapeau montre un oiseau frégate doré volant au-dessus d'un soleil levant sur un fond de vagues bleues et blanches ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Kiribati",
+    incorrect_answers: ["Nauru", "Palaos", "Seychelles"],
+    contexte: "Ce dessin est tiré des armoiries accordées à la colonie en 1937. La frégate symbolise le pouvoir et la liberté, et le soleil levant l'océan Pacifique."
+  },
+  {
+    content: "Un drapeau rouge avec un canton bleu contenant la Croix du Sud. De quel pays s'agit-il ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Samoa",
+    incorrect_answers: ["Taïwan", "Chili", "Australie"],
+    contexte: "Le rouge symbolise le courage, le blanc la pureté, et le bleu la liberté. La Croix du Sud représente la position du pays dans le Pacifique."
+  },
+  {
+    content: "Ce drapeau bleu ciel porte l'Union Jack dans le canton et neuf étoiles jaunes. Quel pays représente-t-il ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Tuvalu",
+    incorrect_answers: ["Australie", "Nouvelle-Zélande", "Fidji"],
+    contexte: "Le fond bleu clair symbolise l'océan. Les neuf étoiles jaunes représentent la disposition géographique des neuf îles de l'archipel."
+  },
+  {
+    content: "Un champ bleu, une fine bande jaune et une étoile blanche à 12 branches. De quel pays s'agit-il ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Nauru",
+    incorrect_answers: ["Somalie", "Kiribati", "Micronésie"],
+    contexte: "La bande jaune représente l'équateur, situé juste au-dessus de l'étoile. Les 12 branches de l'étoile symbolisent les 12 tribus originelles de l'île."
+  },
+  {
+    content: "Quel pays a un drapeau bleu clair avec un blason représentant une colombe et des symboles de paix ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Fidji",
+    incorrect_answers: ["Nouvelle-Zélande", "Australie", "Tonga"],
+    contexte: "Le blason contient une colombe de la paix, de la canne à sucre, un cocotier et des bananes, reflétant l'agriculture de l'île."
+  },
+  {
+    content: "Ce drapeau est divisé horizontalement en rouge et vert par un 'Y' noir bordé de jaune, avec un emblème au centre. De quel pays s'agit-il ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Vanuatu",
+    incorrect_answers: ["Afrique du Sud", "Guyana", "Îles Salomon"],
+    contexte: "L'emblème est une défense de sanglier, symbole de prospérité, entourant deux feuilles de fougère. Le 'Y' représente la disposition des îles."
+  },
+  {
+    content: "Un champ bleu avec des bandes diagonales orange et blanche et une grande étoile blanche. De quel pays s'agit-il ?",
+    difficulty: "facile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Îles Marshall",
+    incorrect_answers: ["Micronésie", "Nauru", "Philippines"],
+    contexte: "Les bandes représentent l'équateur. L'orange symbolise le courage et la richesse, et le blanc la paix. Les 24 pointes de l'étoile représentent les 24 municipalités."
+  },
+  {
+    content: "Le drapeau de quelle dépendance néo-zélandaise est un 'Blue Ensign' avec 15 étoiles blanches disposées en cercle ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Îles Cook",
+    incorrect_answers: ["Niue", "Tokelau", "Samoa"],
+    contexte: "Les 15 étoiles représentent les 15 îles qui composent l'archipel. Le cercle symbolise l'unité et la force."
+  },
+  {
+    content: "Quel est le seul pays ou territoire au monde à avoir un drapeau national de type 'Yellow Ensign' (jaune avec l'Union Jack) ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Niue",
+    incorrect_answers: ["Australie", "Vatican", "Brunei"],
+    contexte: "Le jaune symbolise le soleil et la chaleur des relations avec la Nouvelle-Zélande. Les étoiles sur l'Union Jack sont une modification unique."
+  },
+  {
+    content: "Le drapeau des Samoa américaines représente un aigle tenant deux symboles traditionnels. Quels sont-ils ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Un chasse-mouches et un bâton de guerre",
+    incorrect_answers: ["Une lance et un bouclier", "Une rame et un harpon", "Une fleur et une conque"],
+    contexte: "L'aigle est un symbole américain. Le 'uatogi' (bâton de guerre) et le 'fue' (chasse-mouches) sont des symboles de pouvoir des chefs samoans."
+  },
+  {
+    content: "Le drapeau de la Polynésie française est composé de trois bandes horizontales rouge, blanche, rouge, avec un emblème au centre. Que représente cet emblème ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Une pirogue polynésienne",
+    incorrect_answers: ["Une fleur d'hibiscus", "Une montagne volcanique", "Un tiki sculpté"],
+    contexte: "L'emblème représente une pirogue naviguant sous le soleil avec des vagues en dessous, symbolisant la culture et l'histoire maritime de la région."
+  },
+  {
+    content: "Quel territoire français du Pacifique utilise officiellement à la fois le drapeau tricolore français et un drapeau indépendantiste local ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Nouvelle-Calédonie",
+    incorrect_answers: ["Polynésie française", "Wallis-et-Futuna", "Clipperton"],
+    contexte: "Depuis 2010, le drapeau Kanak (dit 'Kanaky') flotte aux côtés du drapeau français sur les édifices publics, symbolisant la double légitimité du pays."
+  },
+  {
+    content: "Le drapeau de quel territoire américain présente une forme d'amande au centre, représentant une pierre de fronde ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Guam",
+    incorrect_answers: ["Samoa américaines", "Porto Rico", "Îles Vierges américaines"],
+    contexte: "Le sceau central représente une plage de la baie d'Agaña, avec un cocotier et un 'proa' (bateau local), encapsulé dans une forme de pierre de fronde Chamorro."
+  },
+  {
+    content: "Le drapeau de Tokelau, adopté en 2009, représente une pirogue stylisée. Que symbolisent les quatre étoiles à ses côtés ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "La Croix du Sud",
+    incorrect_answers: ["Les quatre îles de l'archipel", "Les quatre villages principaux", "Les quatre piliers de la foi"],
+    contexte: "La pirogue symbolise le voyage et la direction. Les étoiles de la Croix du Sud aident à la navigation et confirment la position géographique du territoire."
+  },
+  {
+    content: "Le drapeau des Îles Pitcairn, un 'Blue Ensign', porte un blason. Que contient ce blason ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Une ancre, une bible et une brouette",
+    incorrect_answers: ["Un navire, un canon et une carte", "Un poisson, un cocotier et une croix", "Un mutin, un sabre et une île"],
+    contexte: "L'ancre et la bible proviennent du HMS Bounty. La brouette et la plante (miro) symbolisent la vie et la fertilité sur l'île."
+  },
+  {
+    content: "Le drapeau de Wallis-et-Futuna est rouge et comporte un élément unique dans son canton. Quel est-il ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Le drapeau français",
+    incorrect_answers: ["Le drapeau du Vatican", "L'Union Jack", "Une croix blanche"],
+    contexte: "Le drapeau français dans le canton symbolise l'appartenance du territoire à la France. La croix rouge pattée est un symbole local."
+  },
+  {
+    content: "Le drapeau des Îles Mariannes du Nord est bleu, avec une étoile blanche surmontant un symbole culturel. Quel est ce symbole ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Une pierre latte",
+    incorrect_answers: ["Un coquillage", "Une statue moai", "Un masque tribal"],
+    contexte: "La pierre latte est un pilier de pierre ancien, fondation des maisons traditionnelles Chamorro, symbolisant la culture et l'héritage du peuple."
+  },
+  {
+    content: "Quel est le principal point de différenciation visuelle entre les drapeaux de l'Australie et de la Nouvelle-Zélande ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "La couleur et le nombre d'étoiles de la Croix du Sud",
+    incorrect_answers: ["La couleur de fond du drapeau", "La position de l'Union Jack", "La présence d'une grande étoile"],
+    contexte: "La Nouvelle-Zélande a quatre étoiles rouges à 5 branches, tandis que l'Australie a quatre étoiles blanches à 7 branches et une plus petite à 5 branches."
+  },
+  {
+    content: "Le drapeau de l'île Norfolk, un territoire australien, représente un arbre emblématique de l'île. Quel est cet arbre ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Le Pin de Norfolk",
+    incorrect_answers: ["L'Eucalyptus", "Le Cocotier", "Le Banyan"],
+    contexte: "Le Pin de Norfolk (Araucaria heterophylla) est une espèce endémique et un symbole majeur de l'île, figurant au centre du drapeau vert et blanc."
+  },
+  {
+    content: "Le drapeau de l'Île de Pâques (Rapa Nui) est blanc avec un emblème rouge au centre. Que représente cet emblème ?",
+    difficulty: "intermédiaire",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Un Reimiro, un pectoral en bois",
+    incorrect_answers: ["Une statue Moai", "Un volcan en éruption", "L'homme-oiseau Tangata manu"],
+    contexte: "Le Reimiro est un ornement pectoral traditionnel en forme de croissant, un symbole de royauté et de noblesse pour le peuple Rapa Nui."
+  },
+  {
+    content: "Le drapeau de l'État de Chuuk, en Micronésie, représente un cocotier sur une île. Combien d'étoiles l'entourent ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "38",
+    incorrect_answers: ["4", "12", "50"],
+    contexte: "Les 38 étoiles représentent les 38 municipalités de l'État, soulignant l'unité dans la diversité de ce groupe d'îles et d'atolls."
+  },
+  {
+    content: "Le drapeau de l'État de Pohnpei, en Micronésie, est bleu avec une coupe de sakau à moitié pleine et des étoiles. Que symbolise la coupe à moitié pleine ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Le partage et la générosité",
+    incorrect_answers: ["Une cérémonie inachevée", "La modération", "Une récolte moyenne"],
+    contexte: "Le sakau (kava) est une boisson cérémonielle. La coupe à moitié pleine est offerte, symbolisant l'hospitalité et la générosité de la culture pohnpéienne."
+  },
+  {
+    content: "L'étoile sur le drapeau des Îles Marshall a 24 pointes. Que représentent les quatre grandes pointes ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Les quatre plus grandes villes/atolls",
+    incorrect_answers: ["Les quatre points cardinaux", "Les quatre évangiles", "Les quatre principales familles royales"],
+    contexte: "Les quatre grandes pointes symbolisent les principaux centres culturels et politiques : Majuro, Ebeye, Jaluit et Wotje. Les 20 autres représentent les autres municipalités."
+  },
+  {
+    content: "Le drapeau de l'État de Yap, en Micronésie, représente une pirogue à balancier et un symbole culturel unique. Lequel ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Une pierre rai (monnaie de pierre)",
+    incorrect_answers: ["Un masque de danse", "Un hameçon en nacre", "Un tatouage facial"],
+    contexte: "La pierre rai, un grand disque de pierre, est une forme de monnaie traditionnelle unique à Yap, symbolisant la richesse et l'héritage culturel."
+  },
+  {
+    content: "Le drapeau du Territoire australien de l'Île Christmas est divisé en diagonale. Que représente l'oiseau doré au centre ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Un Phaéton à bec jaune (Golden Bosun)",
+    incorrect_answers: ["Une Frégate", "Un Fou à pieds rouges", "Un Gorfou sauteur"],
+    contexte: "Le Golden Bosun est un oiseau marin emblématique et endémique de l'île. La Croix du Sud est également présente sur le champ bleu."
+  },
+  {
+    content: "Le drapeau des Îles Cocos (Keeling) est vert avec un cocotier dans un disque doré, un croissant de lune et la Croix du Sud. Que symbolise le croissant ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "La population malaise et musulmane",
+    incorrect_answers: ["La lune guidant les marins", "La forme de l'atoll principal", "La récolte de coprah"],
+    contexte: "Le croissant de lune est un symbole de l'Islam, religion de la majorité de la population malaise des îles Cocos (Cocos Malays)."
+  },
+  {
+    content: "Pourquoi le disque jaune sur le drapeau de Palaos est-il légèrement décentré vers le guindant (côté du mât) ?",
+    difficulty: "difficile",
+    category: "drapeaux",
+    region: "Océanie",
+    correct_answer: "Pour une illusion d'optique",
+    incorrect_answers: ["Pour représenter le lever de la lune", "Pour des raisons religieuses", "C'est une erreur de conception"],
+    contexte: "Lorsque le drapeau flotte au vent, ce décalage donne l'illusion que la lune est parfaitement centrée, un détail de conception visuelle subtil."
   },
 
-  # Amérique - Intermédiaire (151-165)
-  {
-    content: "Quel drapeau national présente une bande diagonale blanche et bleue ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Honduras",
-    incorrect_answers: ["Le Salvador", "Le Nicaragua", "Le Costa Rica"],
-    contexte: "Le drapeau du Honduras est un drapeau national qui symbolise le pays et la religion."
-  },
-  {
-    content: "Le drapeau de quel pays d'Amérique du Sud arbore un soleil levant au centre ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "L'Argentine",
-    incorrect_answers: ["Le Brésil", "L'Uruguay", "Le Chili"],
-    contexte: "Le drapeau argentin présente le 'Sol de Mayo', un symbole historique de l'indépendance de l'Argentine."
-  },
-  {
-    content: "Le drapeau de quel pays présente un drapeau à damier rouge et blanc au centre ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "La Croatie",
-    incorrect_answers: ["La Slovénie", "La Bosnie-Herzégovine", "La Serbie"],
-    contexte: "Le drapeau de la Croatie est un drapeau national qui symbolise le pays et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec un aigle à deux têtes sur fond rouge ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "L'Albanie",
-    incorrect_answers: ["La Grèce", "La Serbie", "La Pologne"],
-    contexte: "L'aigle noir sur fond rouge symbolise les guerriers de l'Albanie, un emblème datant du XVe siècle."
-  },
-  {
-    content: "Le drapeau de quel pays est composé d'une croix nordique rouge sur un fond blanc ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Danemark",
-    incorrect_answers: ["La Suède", "La Norvège", "La Finlande"],
-    contexte: "Le Dannebrog, drapeau danois, est le plus ancien drapeau national encore utilisé au monde, datant de 1219."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge au centre d'un cercle jaune sur fond bleu ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Viêt Nam",
-    incorrect_answers: ["La Chine", "La Corée du Nord", "Cuba"],
-    contexte: "L'étoile jaune sur le drapeau vietnamien symbolise la direction du Parti Communiste, et le peuple est l'étoile."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond vert ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Maroc",
-    incorrect_answers: ["L'Algérie", "La Tunisie", "La Libye"],
-    contexte: "Le drapeau du Maroc est un drapeau national avec un pentagramme vert au centre."
-  },
-  {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
-  },
-  {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une croix rouge sur fond blanc ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "La Suisse",
-    incorrect_answers: ["Le Danemark", "La Norvège", "La Finlande"],
-    contexte: "Le drapeau de la Suisse est un drapeau national qui symbolise la liberté et l'indépendance."
-  },
-  {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
-  },
-  {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
-  },
+  # Afrique
 
-  # Amérique - Difficile (166-180)
   {
-    content: "Le drapeau de quel pays d'Amérique centrale présente un quetzal (oiseau national) sur une bande blanche ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Guatemala",
-    incorrect_answers: ["Le Costa Rica", "Le Panama", "Le Nicaragua"],
-    contexte: "Le drapeau du Guatemala est un drapeau national qui symbolise le pays et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec un aigle noir sur fond rouge ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "L'Albanie",
-    incorrect_answers: ["La Grèce", "La Serbie", "La Pologne"],
-    contexte: "L'aigle noir sur fond rouge symbolise les guerriers de l'Albanie, un emblème datant du XVe siècle."
-  },
-  {
-    content: "Le drapeau de quel pays est composé d'une croix nordique rouge sur un fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Danemark",
-    incorrect_answers: ["La Suède", "La Norvège", "La Finlande"],
-    contexte: "Le Dannebrog, drapeau danois, est le plus ancien drapeau national encore utilisé au monde, datant de 1219."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge au centre d'un cercle jaune sur fond bleu ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Viêt Nam",
-    incorrect_answers: ["La Chine", "La Corée du Nord", "Cuba"],
-    contexte: "L'étoile jaune sur le drapeau vietnamien symbolise la direction du Parti Communiste, et le peuple est l'étoile."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond vert ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Maroc",
-    incorrect_answers: ["L'Algérie", "La Tunisie", "La Libye"],
-    contexte: "Le drapeau du Maroc est un drapeau national avec un pentagramme vert au centre."
-  },
-  {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
-  },
-  {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une croix rouge sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "La Suisse",
-    incorrect_answers: ["Le Danemark", "La Norvège", "La Finlande"],
-    contexte: "Le drapeau de la Suisse est un drapeau national qui symbolise la liberté et l'indépendance."
-  },
-  {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
-  },
-  {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une croix rouge sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Amérique",
-    correct_answer: "La Suisse",
-    incorrect_answers: ["Le Danemark", "La Norvège", "La Finlande"],
-    contexte: "Le drapeau de la Suisse est un drapeau national qui symbolise la liberté et l'indépendance."
-  },
-
-  # Afrique - Facile (181-195)
-  {
-    content: "Le drapeau de quel pays africain est composé de trois bandes horizontales, rouge, jaune et vert ?",
+    content: "Quel pays a un drapeau composé de trois bandes verticales verte, jaune et rouge ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Ghana",
-    incorrect_answers: ["Le Mali", "Le Sénégal", "L'Éthiopie"],
-    contexte: "Le drapeau du Ghana symbolise le pays, la religion et l'unité de la nation."
+    correct_answer: "Sénégal",
+    incorrect_answers: ["Mali", "Guinée", "Cameroun"],
+    contexte: "Ce drapeau utilise les couleurs panafricaines. L'étoile verte au centre représente l'unité et l'espoir."
   },
   {
-    content: "Quel pays africain a un drapeau avec un pentagramme vert au centre d'un fond rouge ?",
+    content: "Ce drapeau a trois bandes horizontales : noire, rouge et verte. De quel pays s'agit-il ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Maroc",
-    incorrect_answers: ["L'Algérie", "La Tunisie", "La Libye"],
-    contexte: "Le drapeau du Maroc est un drapeau national qui symbolise le pays et la religion."
+    correct_answer: "Kenya",
+    incorrect_answers: ["Malawi", "Libye", "Soudan"],
+    contexte: "Le noir représente le peuple, le rouge le sang versé pour l'indépendance, et le vert le paysage. Le bouclier et les lances Massaï symbolisent la défense de la liberté."
   },
   {
-    content: "Le drapeau de quel pays africain présente un aigle sur fond noir et rouge ?",
+    content: "Un drapeau vert, jaune et rouge avec une étoile jaune au centre est celui de quel pays ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "La Zambie",
-    incorrect_answers: ["Le Ghana", "Le Nigéria", "Le Kenya"],
-    contexte: "Le drapeau de la Zambie est un drapeau national qui symbolise le pays et la religion."
+    correct_answer: "Ghana",
+    incorrect_answers: ["Éthiopie", "Cameroun", "Togo"],
+    contexte: "Le Ghana a été le premier pays d'Afrique subsaharienne à adopter les couleurs panafricaines. L'étoile noire est 'l'étoile de la liberté africaine'."
   },
   {
-    content: "Quel pays a un drapeau avec un aigle noir sur fond rouge ?",
+    content: "Quel pays a un drapeau tricolore horizontal vert, jaune et rouge ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "L'Albanie",
-    incorrect_answers: ["La Grèce", "La Serbie", "La Pologne"],
-    contexte: "L'aigle noir sur fond rouge symbolise les guerriers de l'Albanie, un emblème datant du XVe siècle."
+    correct_answer: "Éthiopie",
+    incorrect_answers: ["Ghana", "Sénégal", "Mali"],
+    contexte: "L'Éthiopie est à l'origine des couleurs panafricaines, symbolisant la foi, l'espoir et la charité. L'emblème central a été ajouté en 1996."
   },
   {
-    content: "Le drapeau de quel pays est composé d'une croix nordique rouge sur un fond blanc ?",
+    content: "Ce drapeau est divisé en deux bandes horizontales, bleue en haut et verte en bas, avec un soleil rouge. De quel pays s'agit-il ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Danemark",
-    incorrect_answers: ["La Suède", "La Norvège", "La Finlande"],
-    contexte: "Le Dannebrog, drapeau danois, est le plus ancien drapeau national encore utilisé au monde, datant de 1219."
+    correct_answer: "Maroc",
+    incorrect_answers: ["Tunisie", "Algérie", "Turquie"],
+    contexte: "Le fond rouge représente la bravoure et la force. Le pentagramme vert (Sceau de Salomon) symbolise la vie, la santé et la sagesse."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile rouge au centre d'un cercle jaune sur fond bleu ?",
+    content: "Un drapeau rouge avec un croissant de lune et une étoile blancs au centre est celui de quel pays d'Afrique du Nord ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Viêt Nam",
-    incorrect_answers: ["La Chine", "La Corée du Nord", "Cuba"],
-    contexte: "L'étoile jaune sur le drapeau vietnamien symbolise la direction du Parti Communiste, et le peuple est l'étoile."
+    correct_answer: "Tunisie",
+    incorrect_answers: ["Algérie", "Maroc", "Turquie"],
+    contexte: "Le rouge et le blanc ont été adoptés de l'Empire ottoman. Le croissant et l'étoile sont des symboles de l'Islam, représentant aussi la chance."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond vert ?",
+    content: "Quel pays a un drapeau vert, blanc et vert, avec une bande rouge verticale sur le côté ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Maroc",
-    incorrect_answers: ["L'Algérie", "La Tunisie", "La Libye"],
-    contexte: "Le drapeau du Maroc est un drapeau national avec un pentagramme vert au centre."
+    correct_answer: "Algérie",
+    incorrect_answers: ["Pakistan", "Arabie Saoudite", "Italie"],
+    contexte: "Le vert représente l'Islam, le blanc la pureté. Le croissant et l'étoile rouges sont des symboles islamiques, le rouge symbolisant le sang des martyrs."
   },
   {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
+    content: "Un drapeau tricolore horizontal bleu, blanc et vert est celui de quel petit pays côtier ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
+    correct_answer: "Sierra Leone",
+    incorrect_answers: ["Gabon", "Gambie", "Nigeria"],
+    contexte: "Le vert symbolise l'agriculture et les montagnes, le blanc l'unité et la justice, et le bleu le port naturel de Freetown."
   },
   {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
+    content: "Quel pays est représenté par deux bandes verticales verte et blanche ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
+    correct_answer: "Nigeria",
+    incorrect_answers: ["Irlande", "Côte d'Ivoire", "Niger"],
+    contexte: "Le vert représente la richesse agricole et les forêts, tandis que le blanc symbolise la paix et l'unité."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
+    content: "Un drapeau tricolore vertical orange, blanc et vert est celui de quel pays d'Afrique de l'Ouest ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
+    correct_answer: "Côte d'Ivoire",
+    incorrect_answers: ["Irlande", "Niger", "Inde"],
+    contexte: "L'orange représente la savane du nord, le vert les forêts du sud, et le blanc la paix et l'unité entre eux."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
+    content: "Ce drapeau est bleu avec un grand disque jaune au centre. De quel pays s'agit-il ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
+    correct_answer: "Rwanda",
+    incorrect_answers: ["Palaos", "République démocratique du Congo", "Somalie"],
+    contexte: "Le bleu représente le bonheur et la paix, le jaune la richesse, et le vert l'espoir et la prospérité. Le soleil symbolise la lumière et l'unité."
   },
   {
-    content: "Quel pays a un drapeau avec une croix rouge sur fond blanc ?",
+    content: "Quel pays a un drapeau bleu ciel avec une seule étoile blanche à cinq branches au centre ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "La Suisse",
-    incorrect_answers: ["Le Danemark", "La Norvège", "La Finlande"],
-    contexte: "Le drapeau de la Suisse est un drapeau national qui symbolise la liberté et l'indépendance."
+    correct_answer: "Somalie",
+    incorrect_answers: ["Vietnam", "Micronésie", "Ghana"],
+    contexte: "Le bleu est inspiré du drapeau de l'ONU. L'étoile de l'unité représente les cinq régions où vivent les peuples somalis."
   },
   {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
+    content: "Ce drapeau a trois bandes horizontales : rouge, blanche et noire. À quel pays appartient-il ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
+    correct_answer: "Égypte",
+    incorrect_answers: ["Syrie", "Yémen", "Allemagne"],
+    contexte: "Les couleurs sont celles du panarabisme. L'Aigle de Saladin au centre est un symbole de puissance et d'unité arabe."
   },
   {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
+    content: "Quel pays a un drapeau avec six couleurs, souvent appelé le 'drapeau arc-en-ciel' ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
+    correct_answer: "Afrique du Sud",
+    incorrect_answers: ["Seychelles", "Maurice", "Madagascar"],
+    contexte: "Le 'Y' symbolise la convergence des diverses cultures en une seule nation. Les couleurs n'ont pas de symbolisme officiel mais représentent l'unité post-apartheid."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "facile",
-    category: "drapeaux",
-    region: "Afrique",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
-  },
-
-  # Afrique - Intermédiaire (196-210)
-  {
-    content: "Le drapeau de quel pays africain présente un bouclier et deux lances ?",
+    content: "Ce drapeau est bleu clair avec une bande noire diagonale bordée de jaune. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Kenya",
-    incorrect_answers: ["La Tanzanie", "L'Ouganda", "L'Éthiopie"],
-    contexte: "Le bouclier et les lances du drapeau kényan symbolisent la défense de la liberté et de l'indépendance."
+    correct_answer: "Tanzanie",
+    incorrect_answers: ["Namibie", "Trinité-et-Tobago", "Botswana"],
+    contexte: "Le drapeau combine les couleurs des drapeaux du Tanganyika (vert et noir) et de Zanzibar (bleu et noir) qui ont fusionné pour former la Tanzanie."
   },
   {
-    content: "Quel pays africain possède un drapeau composé de trois bandes verticales, vert, blanc et rouge ?",
+    content: "Quel pays a un drapeau bleu ciel avec une bande noire horizontale au milieu, bordée de blanc ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Nigéria",
-    incorrect_answers: ["L'Algérie", "Le Sénégal", "Le Kenya"],
-    contexte: "Le drapeau du Nigéria est un drapeau national qui symbolise le pays et la religion."
+    correct_answer: "Botswana",
+    incorrect_answers: ["Estonie", "Kenya", "Sierra Leone"],
+    contexte: "Le bleu représente l'eau et la pluie, une ressource rare et précieuse. Le noir et le blanc symbolisent l'harmonie entre les peuples."
   },
   {
-    content: "Quel pays a un drapeau avec un aigle noir sur fond rouge ?",
+    content: "Un drapeau avec une bande rouge verticale et trois bandes horizontales (jaune, verte, bleue). De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "L'Albanie",
-    incorrect_answers: ["La Grèce", "La Serbie", "La Pologne"],
-    contexte: "L'aigle noir sur fond rouge symbolise les guerriers de l'Albanie, un emblème datant du XVe siècle."
+    correct_answer: "République démocratique du Congo",
+    incorrect_answers: ["Congo-Brazzaville", "Togo", "Bénin"],
+    contexte: "Le bleu ciel représente la paix. Le rouge le sang des martyrs, et le jaune la richesse. L'étoile symbolise un avenir radieux pour le pays."
   },
   {
-    content: "Le drapeau de quel pays est composé d'une croix nordique rouge sur un fond blanc ?",
+    content: "Ce drapeau est divisé en diagonale par une bande jaune, avec un champ vert en haut et rouge en bas. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Danemark",
-    incorrect_answers: ["La Suède", "La Norvège", "La Finlande"],
-    contexte: "Le Dannebrog, drapeau danois, est le plus ancien drapeau national encore utilisé au monde, datant de 1219."
+    correct_answer: "Congo-Brazzaville",
+    incorrect_answers: ["Sénégal", "Ghana", "Cameroun"],
+    contexte: "Ce drapeau est le seul à utiliser les couleurs panafricaines (vert, jaune, rouge) dans un format diagonal."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile rouge au centre d'un cercle jaune sur fond bleu ?",
+    content: "Quel pays a un drapeau rouge avec une roue dentée, une machette et une étoile ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Viêt Nam",
-    incorrect_answers: ["La Chine", "La Corée du Nord", "Cuba"],
-    contexte: "L'étoile jaune sur le drapeau vietnamien symbolise la direction du Parti Communiste, et le peuple est l'étoile."
+    correct_answer: "Angola",
+    incorrect_answers: ["Mozambique", "Chine", "Vietnam"],
+    contexte: "Les symboles s'inspirent de l'imagerie communiste : la roue dentée pour les travailleurs industriels et la machette pour les paysans."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond vert ?",
+    content: "Ce drapeau comporte un livre ouvert, une houe et un AK-47. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Maroc",
-    incorrect_answers: ["L'Algérie", "La Tunisie", "La Libye"],
-    contexte: "Le drapeau du Maroc est un drapeau national avec un pentagramme vert au centre."
+    correct_answer: "Mozambique",
+    incorrect_answers: ["Angola", "Zimbabwe", "Ouganda"],
+    contexte: "L'AK-47 symbolise la défense et la vigilance, le livre l'éducation, et la houe l'agriculture, piliers de la nation."
   },
   {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
+    content: "Le drapeau de l'Ouganda a six bandes horizontales et un oiseau au centre. Quel est cet oiseau ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
+    correct_answer: "Une grue royale grise",
+    incorrect_answers: ["Un aigle", "Un flamant rose", "Un perroquet"],
+    contexte: "La grue royale est l'oiseau national. Les couleurs noir, jaune et rouge symbolisent le peuple africain, le soleil et la fraternité."
   },
   {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
+    content: "Quel pays a un drapeau avec deux bandes horizontales, rouge en haut et verte en bas, avec une étoile jaune au centre ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
+    correct_answer: "Burkina Faso",
+    incorrect_answers: ["Sénégal", "Togo", "Cameroun"],
+    contexte: "Le rouge symbolise la révolution et le vert la richesse naturelle. L'étoile jaune est le guide de la révolution."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
+    content: "Ce drapeau a trois bandes horizontales de couleurs orange, blanche et verte. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
+    correct_answer: "Niger",
+    incorrect_answers: ["Côte d'Ivoire", "Inde", "Irlande"],
+    contexte: "L'orange représente le désert du Sahara, le blanc la pureté, et le vert les régions fertiles. Le disque orange symbolise le soleil."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
+    content: "Un drapeau avec un triangle bleu, une bande rouge et des bandes verte et jaune. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
+    correct_answer: "Comores",
+    incorrect_answers: ["Seychelles", "Maurice", "Djibouti"],
+    contexte: "Les quatre bandes et les quatre étoiles représentent les quatre îles de l'archipel. Le croissant est un symbole de l'Islam."
   },
   {
-    content: "Quel pays a un drapeau avec une croix rouge sur fond blanc ?",
+    content: "Quel pays a un drapeau rouge, blanc et noir avec deux étoiles vertes ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "La Suisse",
-    incorrect_answers: ["Le Danemark", "La Norvège", "La Finlande"],
-    contexte: "Le drapeau de la Suisse est un drapeau national qui symbolise la liberté et l'indépendance."
+    correct_answer: "Syrie",
+    incorrect_answers: ["Égypte", "Irak", "Yémen"],
+    contexte: "Bien que géographiquement en Asie, il partage les couleurs panarabes de nombreux pays africains. Les deux étoiles représentaient l'Égypte et la Syrie dans l'ancienne République Arabe Unie."
   },
   {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
+    content: "Ce drapeau est divisé en quatre rectangles de couleurs rouge, jaune, verte et noire. De quel pays insulaire s'agit-il ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
+    correct_answer: "Maurice",
+    incorrect_answers: ["Madagascar", "Seychelles", "Comores"],
+    contexte: "Le rouge représente la lutte pour l'indépendance, le bleu l'océan Indien, le jaune le soleil, et le vert l'agriculture."
   },
   {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
+    content: "Un drapeau bleu ciel et vert, séparés par un triangle blanc avec une étoile rouge. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
+    correct_answer: "Djibouti",
+    incorrect_answers: ["Érythrée", "Somalie", "Éthiopie"],
+    contexte: "Le bleu représente la mer, le vert la terre. Le blanc symbolise la paix, et l'étoile rouge l'unité et la lutte pour l'indépendance."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
+    content: "Quel pays a un drapeau avec une bande blanche verticale et deux bandes horizontales (rouge et verte) ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
+    correct_answer: "Madagascar",
+    incorrect_answers: ["Biélorussie", "Pologne", "Indonésie"],
+    contexte: "Le rouge et le blanc étaient les couleurs du royaume Merina, et le vert a été ajouté pour représenter le peuple côtier."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
-    difficulty: "intermédiaire",
-    category: "drapeaux",
-    region: "Afrique",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
-  },
-
-  # Afrique - Difficile (211-225)
-  {
-    content: "Quel pays africain arbore un drapeau composé de 7 bandes horizontales et d'un disque au centre ?",
+    content: "Ce drapeau a des bandes diagonales bleues, jaunes, rouges, blanches et vertes. De quel archipel s'agit-il ?",
     difficulty: "difficile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Les Comores",
-    incorrect_answers: ["Le Djibouti", "L'Érythrée", "L'Ouganda"],
-    contexte: "Le drapeau des Comores est un drapeau national qui symbolise le pays et la religion."
+    correct_answer: "Seychelles",
+    incorrect_answers: ["Maurice", "Comores", "Cap-Vert"],
+    contexte: "Les bandes obliques symbolisent un pays dynamique tourné vers l'avenir. Les couleurs représentent le ciel, le soleil, le peuple, la nature et l'harmonie."
   },
   {
-    content: "Le drapeau de quel pays africain présente un bouclier et deux lances ?",
+    content: "Un drapeau avec un triangle noir et des bandes verte, rouge et bleue, séparées par de fines lignes jaunes. De quel pays s'agit-il ?",
     difficulty: "difficile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Kenya",
-    incorrect_answers: ["La Tanzanie", "L'Ouganda", "L'Éthiopie"],
-    contexte: "Le bouclier et les lances du drapeau kényan symbolisent la défense de la liberté et de l'indépendance."
+    correct_answer: "Soudan du Sud",
+    incorrect_answers: ["Kenya", "Soudan", "Éthiopie"],
+    contexte: "Le drapeau est similaire à celui du Kenya mais avec un triangle bleu et une étoile jaune, symbolisant les eaux du Nil et l'unité."
   },
   {
-    content: "Quel pays a un drapeau avec un aigle noir sur fond rouge ?",
+    content: "Quel pays a un drapeau bleu avec 10 étoiles jaunes disposées en cercle ?",
     difficulty: "difficile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "L'Albanie",
-    incorrect_answers: ["La Grèce", "La Serbie", "La Pologne"],
-    contexte: "L'aigle noir sur fond rouge symbolise les guerriers de l'Albanie, un emblème datant du XVe siècle."
+    correct_answer: "Cap-Vert",
+    incorrect_answers: ["Union Européenne", "Brésil", "Comores"],
+    contexte: "Les 10 étoiles représentent les 10 îles principales de l'archipel. Le bleu symbolise l'océan et le ciel."
   },
   {
-    content: "Le drapeau de quel pays est composé d'une croix nordique rouge sur un fond blanc ?",
+    content: "Le drapeau du Lesotho est tricolore (bleu, blanc, vert) avec un chapeau traditionnel au centre. Quel est le nom de ce chapeau ?",
     difficulty: "difficile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Danemark",
-    incorrect_answers: ["La Suède", "La Norvège", "La Finlande"],
-    contexte: "Le Dannebrog, drapeau danois, est le plus ancien drapeau national encore utilisé au monde, datant de 1219."
+    correct_answer: "Un mokorotlo",
+    incorrect_answers: ["Un fez", "Un kente", "Un dashiki"],
+    contexte: "Le mokorotlo est un chapeau de paille conique, symbole national du Lesotho. Le drapeau symbolise un triptyque : la pluie (bleu), la paix (blanc) et la prospérité (vert)."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile rouge au centre d'un cercle jaune sur fond bleu ?",
+    content: "Quel pays anciennement appelé Swaziland a un drapeau avec un grand bouclier Nguni et deux lances ?",
     difficulty: "difficile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Viêt Nam",
-    incorrect_answers: ["La Chine", "La Corée du Nord", "Cuba"],
-    contexte: "L'étoile jaune sur le drapeau vietnamien symbolise la direction du Parti Communiste, et le peuple est l'étoile."
+    correct_answer: "Eswatini",
+    incorrect_answers: ["Lesotho", "Botswana", "Afrique du Sud"],
+    contexte: "Le bouclier et les lances symbolisent la protection contre les ennemis. Les plumes 'injobo' qui le décorent sont réservées au roi."
   },
   {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond vert ?",
+    content: "Un drapeau avec un rameau d'olivier vert sur un fond vert, rouge et bleu. De quel pays s'agit-il ?",
     difficulty: "difficile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Maroc",
-    incorrect_answers: ["L'Algérie", "La Tunisie", "La Libye"],
-    contexte: "Le drapeau du Maroc est un drapeau national avec un pentagramme vert au centre."
+    correct_answer: "Érythrée",
+    incorrect_answers: ["Djibouti", "Éthiopie", "Chypre"],
+    contexte: "Le rameau d'olivier symbolise la paix. Le rouge représente le sang versé, le vert la fertilité et le bleu la mer Rouge."
   },
   {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
+    content: "Le drapeau du Zimbabwe comporte sept bandes horizontales et un oiseau emblématique. Quel est cet oiseau ?",
     difficulty: "difficile",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
-  },
-  {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Afrique",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Afrique",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Afrique",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une croix rouge sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Afrique",
-    correct_answer: "La Suisse",
-    incorrect_answers: ["Le Danemark", "La Norvège", "La Finlande"],
-    contexte: "Le drapeau de la Suisse est un drapeau national qui symbolise la liberté et l'indépendance."
-  },
-  {
-    content: "Quel pays a un drapeau avec un drapeau national et un drapeau de la monarchie ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Afrique",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Espagne", "La France", "L'Allemagne"],
-    contexte: "Le drapeau du Royaume-Uni est un drapeau national qui symbolise le pouvoir royal et l'unité de la monarchie."
-  },
-  {
-    content: "Quel pays a un drapeau avec un tricolore noir, jaune et rouge en bandes verticales ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Afrique",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La Belgique", "Le Luxembourg", "Les Pays-Bas"],
-    contexte: "Le drapeau de l'Allemagne est un drapeau national qui symbolise l'unité et la liberté de la nation."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Afrique",
-    correct_answer: "La Turquie",
-    incorrect_answers: ["La Tunisie", "L'Algérie", "Le Maroc"],
-    contexte: "Le drapeau de la Turquie est un drapeau national qui symbolise la nation et la religion."
-  },
-  {
-    content: "Quel pays a un drapeau avec une étoile bleue sur fond blanc ?",
-    difficulty: "difficile",
-    category: "drapeaux",
-    region: "Afrique",
-    correct_answer: "Le Chili",
-    incorrect_answers: ["L'Argentine", "Le Brésil", "L'Uruguay"],
-    contexte: "Le drapeau du Chili est un drapeau national qui symbolise le pays et la religion."
+    correct_answer: "L'Oiseau de Zimbabwe",
+    incorrect_answers: ["Le Secrétaire", "L'Aigle pêcheur", "La Grue royale"],
+    contexte: "L'Oiseau de Zimbabwe est une statuette trouvée dans les ruines du Grand Zimbabwe, symbole de l'histoire et du patrimoine du pays."
   },
 
   # RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
@@ -5605,52 +5313,7 @@ questions_data = [
     incorrect_answers: ["Mutsamudu", "Fomboni", "Domoni"],
     contexte: "56 000 habitants, Grande Comore, archipel des parfums."
   }
-]
-
-# Création des questions
-questions_data.each_with_index do |data, index|
-  question = Question.create!(
-    content: data[:content],
-    difficulty: data[:difficulty],
-    category: data[:category],
-    region: data[:region],
-    correct_answer: data[:correct_answer],
-    incorrect_answers: data[:incorrect_answers],
-    contexte: data[:contexte]
-  )
-
-  print "."
-  puts " Question #{index + 1}/#{questions_data.length} créée" if (index + 1) % 25 == 0
-end
-
-puts "\n✅ #{questions_data.length} questions 'Régions, États, Villes et Capitales' créées!"
-
-# Statistiques détaillées
-puts "\n📊 RÉPARTITION DÉTAILLÉE:"
-puts "=" * 50
-
-puts "\n🌍 Par région:"
-Question.group(:region).count.each do |region, count|
-  puts "  • #{region}: #{count} questions"
-end
-
-puts "\n📈 Par difficulté:"
-Question.group(:difficulty).count.each do |difficulty, count|
-  puts "  • #{difficulty}: #{count} questions"
-end
-
-puts "\n🏗️ Répartition région × difficulté:"
-Question.group(:region, :difficulty).count.each do |(region, difficulty), count|
-  puts "  • #{region} #{difficulty}: #{count} questions"
-end
-
-puts "\n✅ VÉRIFICATION:"
-total_expected = 5 * 3 * 15  # 5 régions × 3 difficultés × 15 questions
-puts "  • Total attendu: #{total_expected} questions"
-puts "  • Total créé: #{questions_data.length} questions"
-puts "  • ✓ Répartition parfaite!" if questions_data.length == total_expected
-
-puts "\n🎯 Seed terminé! Base parfaitement équilibrée pour le quiz de géographie!"  {
+  {
     content: "Quelle est la capitale de l'Irak ?",
     difficulty: "intermédiaire",
     category: "régions, états, villes et capitales",
@@ -6254,20 +5917,7 @@ puts "\n🎯 Seed terminé! Base parfaitement équilibrée pour le quiz de géog
     incorrect_answers: ["Burnt Pine", "Cascade", "Steeles Point"],
     contexte: "200 habitants, territoire extérieur australien, descendants du Bounty."
   },
-  {
-    content: "Dans quelle région se trouve Rotorua ?",
-    difficulty: "difficile",
-    category: "régions, états, villes et capitales",
-    region:# db/seeds.rb - 225 Questions Régions, États, Villes et Capitales
-# Répartition : 5 régions × 3 difficultés × 15 questions = 225 questions
 
-# Nettoyage des données existantes (optionnel - décommenter si nécessaire)
-# Question.destroy_all
-
-puts "🏙️ Création des 225 questions Régions, États, Villes et Capitales..."
-puts "📊 Répartition : 5 régions × 3 difficultés × 15 questions"
-
-questions_data = [
   # EUROPE - 45 questions (15 faciles + 15 intermédiaires + 15 difficiles)
 
   # EUROPE - FACILE (15 questions)
@@ -8924,2062 +8574,1870 @@ questions_data = [
     contexte: "Le couscous est un plat de semoule de blé dur cuite à la vapeur, originaire de l'Algérie."
   },
 
-  # POLITIQUE ET GEOPOLITIQUE via Gemini 2.5 Flash
-Question.create!([
-  # Europe - Facile (1-15)
+  # CONFLITS, POLITIQUE ET GEOPOLITIQUE via Gemini 2.5 Pro
+
   {
-    content: "Quel est le siège politique et administratif de l'OTAN ?",
+    content: "Quelle organisation politique et économique, regroupant 27 pays, utilise l'euro comme monnaie commune pour la plupart de ses membres ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Bruxelles",
-    incorrect_answers: ["Strasbourg", "Londres", "Paris"],
-    contexte: "Le siège de l'Organisation du Traité de l'Atlantique Nord est situé à Bruxelles, la capitale de la Belgique."
+    correct_answer: "L'Union Européenne (UE)",
+    incorrect_answers: ["L'OTAN", "L'AELE", "Le Conseil de l'Europe"],
+    contexte: "Fondée pour favoriser la paix et la coopération, l'Union Européenne est une union économique et politique unique entre 27 États membres."
   },
   {
-    content: "Quel pays a quitté l'Union européenne en 2020 ?",
+    content: "Quel mur, symbole de la Guerre Froide, a divisé une capitale européenne de 1961 à 1989 ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "Le Mur de Berlin",
+    incorrect_answers: ["Le Mur d'Hadrien", "Le Mur d'Antonin", "La Ligne Maginot"],
+    contexte: "Le Mur de Berlin séparait Berlin-Ouest de Berlin-Est. Sa chute en 1989 a symbolisé la fin de la Guerre Froide en Europe."
+  },
+  {
+    content: "Quel traité, signé en 1992, a officiellement donné son nom à l'Union Européenne et pavé la voie à l'euro ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "Le Traité de Maastricht",
+    incorrect_answers: ["Le Traité de Rome", "Le Traité de Lisbonne", "Le Traité de Versailles"],
+    contexte: "Le Traité de Maastricht a transformé la Communauté Économique Européenne en Union Européenne, établissant les piliers de sa structure actuelle."
+  },
+  {
+    content: "Quelle alliance militaire défensive, incluant de nombreux pays européens et nord-américains, a été créée en 1949 face au bloc soviétique ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "L'OTAN (Organisation du Traité de l'Atlantique Nord)",
+    incorrect_answers: ["Le Pacte de Varsovie", "L'OSCE", "L'Eurocorps"],
+    contexte: "L'OTAN a été fondée après la Seconde Guerre mondiale pour assurer une défense collective contre une éventuelle agression."
+  },
+  {
+    content: "Le 'Brexit' fait référence à la sortie de quel pays de l'Union Européenne en 2020 ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
     correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["La Suisse", "La Norvège", "L'Islande"],
-    contexte: "Le Royaume-Uni a officiellement quitté l'Union européenne le 31 janvier 2020, à la suite du référendum sur le Brexit."
+    incorrect_answers: ["L'Irlande", "La Suisse", "La Norvège"],
+    contexte: "Le terme 'Brexit' est la contraction de 'British Exit'. Le Royaume-Uni a quitté l'UE suite à un référendum tenu en 2016."
   },
   {
-    content: "Quel est le parlement bicaméral de l'Allemagne ?",
+    content: "Quel conflit mondial a commencé en 1939 avec l'invasion de la Pologne et s'est terminé en 1945 ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Le Bundestag et le Bundesrat",
-    incorrect_answers: ["La Chambre des communes et la Chambre des lords", "Le Reichstag et le Reichskanzler", "Le Parlement et le Sénat"],
-    contexte: "Le Bundestag est le parlement fédéral d'Allemagne, tandis que le Bundesrat représente les 16 États fédérés."
+    correct_answer: "La Seconde Guerre mondiale",
+    incorrect_answers: ["La Première Guerre mondiale", "La Guerre Froide", "La Guerre d'Espagne"],
+    contexte: "Ce fut le conflit le plus vaste de l'histoire, impliquant la majorité des nations du monde, y compris toutes les grandes puissances."
   },
   {
-    content: "Quelle est la capitale politique de l'Union européenne ?",
+    content: "Dans quelle ville belge se trouve le siège de la Commission européenne et du Conseil de l'Union européenne ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
     correct_answer: "Bruxelles",
-    incorrect_answers: ["Strasbourg", "Luxembourg", "Genève"],
-    contexte: "Bruxelles, en Belgique, est le siège de la Commission européenne et du Conseil de l'Union européenne."
+    incorrect_answers: ["Strasbourg", "Luxembourg", "Francfort"],
+    contexte: "Bruxelles est souvent considérée comme la capitale de facto de l'Union Européenne en raison de la présence de ses principales institutions exécutives."
   },
   {
-    content: "Quel pays est l'un des membres fondateurs de la Communauté économique européenne (CEE) ?",
+    content: "Quelle monnaie a été remplacée par l'euro dans de nombreux pays européens en 2002 ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "La France",
-    incorrect_answers: ["Le Royaume-Uni", "La Suisse", "La Suède"],
-    contexte: "La France, l'Allemagne de l'Ouest, l'Italie, la Belgique, les Pays-Bas et le Luxembourg ont fondé la CEE en 1957."
+    correct_answer: "Les monnaies nationales (Franc, Mark, Lire, etc.)",
+    incorrect_answers: ["Le Dollar", "La Livre Sterling", "Le Franc suisse"],
+    contexte: "Le passage à l'euro a été la plus grande conversion monétaire de l'histoire, unifiant économiquement une grande partie du continent."
   },
   {
-    content: "Le chef d'État de l'Espagne porte le titre de...",
+    content: "Quel pays a été divisé en deux (RFA et RDA) après la Seconde Guerre mondiale et réunifié en 1990 ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "Roi",
-    incorrect_answers: ["Président", "Chancelier", "Prince"],
-    contexte: "L'Espagne est une monarchie parlementaire, où le roi est le chef d'État et le Premier ministre est le chef du gouvernement."
-  },
-  {
-    content: "Le Royaume-Uni est un membre permanent de quel organe de l'ONU ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "Le Conseil de sécurité",
-    incorrect_answers: ["L'Assemblée générale", "Le Conseil économique et social", "La Cour internationale de justice"],
-    contexte: "Le Royaume-Uni est l'un des cinq membres permanents du Conseil de sécurité de l'ONU, disposant d'un droit de veto."
-  },
-  {
-    content: "Quel pays européen est connu pour sa politique de neutralité militaire ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "La Suisse",
-    incorrect_answers: ["La France", "L'Allemagne", "L'Italie"],
-    contexte: "La Suisse est célèbre pour sa neutralité armée, une politique qui dure depuis des siècles."
-  },
-  {
-    content: "Quel pays nordique est membre de l'OTAN mais pas de l'UE ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "La Norvège",
-    incorrect_answers: ["La Finlande", "La Suède", "Le Danemark"],
-    contexte: "La Norvège, un des membres fondateurs de l'OTAN, a refusé son adhésion à l'Union européenne par référendum."
-  },
-  {
-    content: "Quel est le chef de l'État de la Finlande ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de la Finlande est le chef de l'État et le commandant en chef des forces armées finlandaises."
-  },
-  {
-    content: "Quel est le chef du gouvernement de la Norvège ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre norvégien est le chef du gouvernement et l'autorité exécutive du pays."
-  },
-  {
-    content: "Quel est le pays le plus peuplé de l'Union européenne ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
     correct_answer: "L'Allemagne",
-    incorrect_answers: ["La France", "L'Italie", "L'Espagne"],
-    contexte: "L'Allemagne est le pays le plus peuplé de l'Union européenne, avec plus de 83 millions d'habitants."
+    incorrect_answers: ["La Pologne", "L'Autriche", "La Corée"],
+    contexte: "La réunification de l'Allemagne, avec l'intégration de la République Démocratique Allemande (RDA) dans la République Fédérale d'Allemagne (RFA), a marqué un tournant majeur."
   },
   {
-    content: "Quel pays de l'Est est un membre de l'UE et de l'OTAN depuis 2004 ?",
+    content: "Comment nomme-t-on la période de tensions géopolitiques entre le bloc de l'Est (soviétique) et le bloc de l'Ouest (américain) de 1947 à 1991 ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "La Pologne",
-    incorrect_answers: ["La Biélorussie", "La Serbie", "La Russie"],
-    contexte: "La Pologne a rejoint l'OTAN en 1999 et l'UE en 2004, marquant son intégration dans les structures occidentales."
+    correct_answer: "La Guerre Froide",
+    incorrect_answers: ["La Drôle de Guerre", "La Guerre des Étoiles", "La Détente"],
+    contexte: "Caractérisée par une course aux armements et des conflits par procuration, elle a profondément divisé l'Europe sans affrontement militaire direct."
   },
   {
-    content: "Le chef de l'État de l'Autriche porte le titre de...",
+    content: "Quel pays a connu une guerre civile de 1936 à 1939, qui a servi de prélude à la Seconde Guerre mondiale ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Président",
-    incorrect_answers: ["Chancelier", "Empereur", "Premier ministre"],
-    contexte: "Le président fédéral autrichien est le chef de l'État, tandis que le chancelier est le chef du gouvernement."
+    correct_answer: "L'Espagne",
+    incorrect_answers: ["Le Portugal", "L'Italie", "La Grèce"],
+    contexte: "La Guerre d'Espagne a opposé les Républicains, soutenus par l'URSS, et les Nationalistes dirigés par Franco, soutenus par l'Allemagne et l'Italie."
   },
   {
-    content: "Quel est le siège de la Cour européenne des droits de l'homme ?",
+    content: "Le Parlement européen, l'organe législatif de l'UE, tient principalement ses sessions plénières dans quelle ville française ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
     correct_answer: "Strasbourg",
-    incorrect_answers: ["Bruxelles", "Genève", "La Haye"],
-    contexte: "Le siège de la Cour européenne des droits de l'homme se trouve à Strasbourg, en France."
+    incorrect_answers: ["Paris", "Bruxelles", "Lyon"],
+    contexte: "Le choix de Strasbourg comme siège du Parlement européen est un symbole de la réconciliation franco-allemande."
   },
-
-  # Europe - Intermédiaire (16-30)
   {
-    content: "Quel traité européen a mis fin à la guerre froide et à la division de l'Allemagne ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    content: "Quelle péninsule européenne a été le théâtre de guerres violentes dans les années 1990 suite à l'éclatement de la Yougoslavie ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Le Traité 2+4",
-    incorrect_answers: ["Le Traité de Lisbonne", "Le Traité de Paris", "Le Traité de Maastricht"],
-    contexte: "Le Traité '2+4', signé en 1990, a permis la réunification de l'Allemagne en mettant fin aux droits des puissances alliées."
+    correct_answer: "Les Balkans",
+    incorrect_answers: ["La Péninsule Ibérique", "La Péninsule Scandinave", "La Péninsule Italienne"],
+    contexte: "Les guerres des Balkans ont entraîné la fragmentation de la Yougoslavie en plusieurs États indépendants, sur fond de conflits ethniques."
   },
   {
-    content: "L'Irlande a-t-elle le droit de veto au Conseil de sécurité de l'ONU ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    content: "Quel pays, bien que géographiquement en Europe et entouré par l'UE, n'est pas membre de l'Union Européenne ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Non",
-    incorrect_answers: ["Oui, en tant que membre de l'UE", "Oui, en tant que membre de l'OTAN", "Oui, en tant que membre permanent"],
-    contexte: "Seuls les cinq membres permanents (États-Unis, Russie, Chine, France, Royaume-Uni) disposent du droit de veto."
+    correct_answer: "La Suisse",
+    incorrect_answers: ["L'Autriche", "La Finlande", "Le Danemark"],
+    contexte: "La Suisse maintient une politique de neutralité et de non-adhésion, préférant des accords bilatéraux avec l'UE."
   },
   {
-    content: "Quel pays est un membre de l'Espace économique européen (EEE) mais pas de l'Union européenne ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    content: "Le traité qui a mis fin à la Première Guerre mondiale et imposé de lourdes sanctions à l'Allemagne est le Traité de... ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "La Norvège",
-    incorrect_answers: ["La Suisse", "Le Royaume-Uni", "L'Islande"],
-    contexte: "La Norvège fait partie de l'Espace économique européen (EEE), qui lui permet de participer au marché unique de l'UE sans être membre."
+    correct_answer: "Versailles",
+    incorrect_answers: ["Trianon", "Sèvres", "Saint-Germain"],
+    contexte: "Signé en 1919 dans la galerie des Glaces du château de Versailles, il est souvent considéré comme une des causes de la Seconde Guerre mondiale."
   },
   {
-    content: "Quel est le nom de l'organe de l'UE qui partage le pouvoir législatif avec le Parlement européen ?",
+    content: "Comment appelle-t-on l'espace de libre circulation des personnes entre 27 pays européens, dont certains non-membres de l'UE ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Le Conseil de l'Union européenne",
-    incorrect_answers: ["Le Conseil européen", "La Commission européenne", "La Cour de justice de l'UE"],
-    contexte: "Le Conseil de l'Union européenne, composé des ministres des États membres, est co-législateur avec le Parlement."
+    correct_answer: "L'Espace Schengen",
+    incorrect_answers: ["La Zone Euro", "L'Espace Économique Européen", "Le Marché Commun"],
+    contexte: "Créé par l'Accord de Schengen en 1985, il permet la suppression des contrôles aux frontières intérieures des États signataires."
   },
   {
-    content: "Quel Premier ministre britannique a mené la politique de l'austérité après la crise financière de 2008 ?",
+    content: "Quel conflit politico-religieux a opposé principalement les communautés protestante et catholique en Irlande du Nord de 1968 à 1998 ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "David Cameron",
-    incorrect_answers: ["Tony Blair", "Gordon Brown", "Theresa May"],
-    contexte: "David Cameron a été Premier ministre du Royaume-Uni de 2010 à 2016 et a mis en œuvre des politiques d'austérité."
+    correct_answer: "Les Troubles (The Troubles)",
+    incorrect_answers: ["La Guerre des Deux Roses", "La Révolte de Pâques", "La Guerre Civile Irlandaise"],
+    contexte: "Ce conflit complexe portait sur le statut constitutionnel de l'Irlande du Nord et a pris fin avec l'Accord du Vendredi Saint."
   },
   {
-    content: "Quel pays de la Méditerranée orientale a été au cœur de tensions géopolitiques liées à l'exploration de gaz naturel ?",
+    content: "Le 'Rideau de Fer' est une expression popularisée par Winston Churchill pour décrire la division de l'Europe durant quelle période ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Chypre",
-    incorrect_answers: ["Malte", "La Sicile", "La Sardaigne"],
-    contexte: "Le conflit pour les droits d'exploration de gaz naturel en Méditerranée orientale a impliqué Chypre, la Grèce et la Turquie."
+    correct_answer: "La Guerre Froide",
+    incorrect_answers: ["La Seconde Guerre mondiale", "L'entre-deux-guerres", "Les Guerres Napoléoniennes"],
+    contexte: "Cette barrière idéologique et physique séparait les États sous influence soviétique des pays de l'Ouest, de la Baltique à l'Adriatique."
   },
   {
-    content: "Quel pays scandinave a historiquement maintenu une politique de non-alignement militaire ?",
+    content: "Quel pays a été créé suite à la 'Révolution de velours' qui a mis fin pacifiquement au régime communiste en 1989 ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "La Suède",
-    incorrect_answers: ["La Norvège", "Le Danemark", "La Finlande"],
-    contexte: "La Suède a longtemps été neutre, mais a récemment rejoint l'OTAN après l'invasion de l'Ukraine par la Russie."
+    correct_answer: "La République Tchèque (et la Slovaquie)",
+    incorrect_answers: ["La Pologne", "La Hongrie", "La Roumanie"],
+    contexte: "La Révolution de Velours en Tchécoslovaquie a mené à la démocratie, puis à la séparation pacifique du pays en République Tchèque et Slovaquie en 1993."
   },
   {
-    content: "Le chef de l'État en Allemagne est un titre de...",
+    content: "Le massacre de Srebrenica, considéré comme un génocide, a eu lieu pendant la guerre de quel pays des Balkans ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Président",
-    incorrect_answers: ["Chancelier", "Premier ministre", "Roi"],
-    contexte: "En Allemagne, le président a un rôle principalement cérémoniel, le pouvoir exécutif réel étant exercé par le chancelier."
+    correct_answer: "La Bosnie-Herzégovine",
+    incorrect_answers: ["La Croatie", "La Serbie", "Le Kosovo"],
+    contexte: "En juillet 1995, plus de 8 000 hommes et garçons bosniaques musulmans ont été tués par les forces serbes de Bosnie."
   },
   {
-    content: "Quel est le nom du Parlement de l'Italie ?",
+    content: "Quelle institution financière, basée à Francfort, est responsable de la politique monétaire de la zone euro ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Le Sénat et la Chambre des députés",
-    incorrect_answers: ["Le Parlement européen", "Le Congrès", "L'Assemblée nationale"],
-    contexte: "Le Parlement italien est composé de deux chambres, le Sénat et la Chambre des députés."
+    correct_answer: "La Banque Centrale Européenne (BCE)",
+    incorrect_answers: ["La Banque Européenne d'Investissement (BEI)", "Le Fonds Monétaire International (FMI)", "La Banque des Règlements Internationaux (BRI)"],
+    contexte: "La BCE a pour principal objectif de maintenir la stabilité des prix et de préserver le pouvoir d'achat de l'euro."
   },
   {
-    content: "Quel est le nom du traité de paix signé en 1919, qui a mis fin à la Première Guerre mondiale ?",
+    content: "Quel pays a connu une dictature fasciste dirigée par Benito Mussolini de 1922 à 1943 ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Le traité de Versailles",
-    incorrect_answers: ["Le traité de Paris", "Le traité de Londres", "Le traité de Locarno"],
-    contexte: "Le traité de Versailles est un traité de paix signé en 1919. Il a mis fin à la Première Guerre mondiale."
+    correct_answer: "L'Italie",
+    incorrect_answers: ["L'Espagne", "Le Portugal", "L'Allemagne"],
+    contexte: "Le régime fasciste de Mussolini a servi de modèle à d'autres dictatures en Europe et a été un allié clé de l'Allemagne nazie."
   },
   {
-    content: "Quel est le nom de la ville qui abrite la Cour pénale internationale ?",
+    content: "L'annexion de la Crimée en 2014 par la Russie a déclenché un conflit avec quel autre pays européen ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "La Haye",
-    incorrect_answers: ["Genève", "Bruxelles", "Strasbourg"],
-    contexte: "La Cour pénale internationale a son siège à La Haye, aux Pays-Bas. C'est une juridiction internationale."
+    correct_answer: "L'Ukraine",
+    incorrect_answers: ["La Géorgie", "La Pologne", "La Turquie"],
+    contexte: "Suite à la révolution ukrainienne de 2014, la Russie a annexé la péninsule de Crimée, un acte non reconnu par la majeure partie de la communauté internationale."
   },
   {
-    content: "Quel est le nom du traité qui a créé la Communauté économique européenne (CEE) ?",
+    content: "Quelle organisation intergouvernementale, incluant la Russie, promeut la sécurité, la coopération et les droits de l'homme en Europe ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Le traité de Rome",
-    incorrect_answers: ["Le traité de Maastricht", "Le traité de Lisbonne", "Le traité de Nice"],
-    contexte: "Le traité de Rome, signé en 1957, a créé la CEE, le précurseur de l'Union européenne."
+    correct_answer: "L'Organisation pour la Sécurité et la Coopération en Europe (OSCE)",
+    incorrect_answers: ["Le Conseil de l'Europe", "L'OTAN", "L'Union Européenne"],
+    contexte: "Issue de la Conférence d'Helsinki de 1975, l'OSCE a servi de forum de dialogue Est-Ouest pendant la Guerre Froide et continue ce rôle aujourd'hui."
   },
   {
-    content: "Quel pays a le droit de veto au Conseil de sécurité de l'ONU ?",
+    content: "La 'Guerre d'Hiver' (1939-1940) a opposé l'Union Soviétique à quel pays nordique, qui a résisté vaillamment malgré sa petite taille ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Le Royaume-Uni",
-    incorrect_answers: ["L'Allemagne", "L'Italie", "L'Espagne"],
-    contexte: "Le Royaume-Uni est un des cinq membres permanents du Conseil de sécurité de l'ONU. Il a le droit de veto."
+    correct_answer: "La Finlande",
+    incorrect_answers: ["La Suède", "La Norvège", "Le Danemark"],
+    contexte: "Bien que contrainte de céder des territoires, la Finlande a infligé de lourdes pertes à l'Armée Rouge et a préservé son indépendance."
   },
   {
-    content: "Quel est le chef de l'État du Portugal ?",
+    content: "Quel pays du Caucase a été le théâtre d'une guerre avec la Russie en 2008 au sujet de ses régions séparatistes d'Ossétie du Sud et d'Abkhazie ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Portugal est le chef de l'État. C'est une fonction principalement honorifique."
+    correct_answer: "La Géorgie",
+    incorrect_answers: ["L'Arménie", "L'Azerbaïdjan", "La Tchétchénie"],
+    contexte: "Ce bref conflit a conduit à la reconnaissance par la Russie de l'indépendance de ces deux régions, gelant ainsi le conflit."
   },
   {
-    content: "Quel est le chef du gouvernement du Portugal ?",
+    content: "Le conflit pour l'indépendance du Kosovo à la fin des années 1990 l'a opposé à quel pays ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre du Portugal est le chef du gouvernement. Il dirige l'administration du pays."
+    correct_answer: "La Serbie (alors partie de la Yougoslavie)",
+    incorrect_answers: ["L'Albanie", "La Macédoine du Nord", "La Bosnie-Herzégovine"],
+    contexte: "Le conflit a conduit à une intervention de l'OTAN en 1999 et à la déclaration d'indépendance du Kosovo en 2008, non reconnue par la Serbie."
   },
-
-  # Europe - Difficile (31-45)
   {
-    content: "Quel est le nom de l'organe de l'Union européenne qui représente les intérêts des États membres ?",
+    content: "Quelle doctrine de politique étrangère américaine visait à contenir l'expansion du communisme en Europe après la Seconde Guerre mondiale ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "La doctrine Truman",
+    incorrect_answers: ["La doctrine Monroe", "Le Plan Marshall", "La doctrine de l'endiguement"],
+    contexte: "Annoncée en 1947, elle a fourni un soutien économique et militaire à la Grèce et à la Turquie pour éviter qu'elles ne tombent sous l'influence soviétique."
+  },
+  {
+    content: "Comment s'appelle le mouvement séparatiste armé qui a lutté pour l'indépendance du Pays basque en Espagne et en France ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "ETA (Euskadi Ta Askatasuna)",
+    incorrect_answers: ["IRA", "FLNC", "Hezbollah"],
+    contexte: "Fondé en 1959, ETA a mené une campagne d'attentats pendant des décennies avant de déclarer un cessez-le-feu permanent en 2011 et sa dissolution en 2018."
+  },
+  {
+    content: "L'Accord de Dayton, signé en 1995, a mis fin à la guerre dans quel pays en le divisant en deux entités principales ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "La Bosnie-Herzégovine",
+    incorrect_answers: ["La Croatie", "La Slovénie", "Le Kosovo"],
+    contexte: "Cet accord a créé une structure politique complexe avec la Fédération de Bosnie-et-Herzégovine et la Republika Srpska."
+  },
+  {
+    content: "Quel article du traité de l'OTAN stipule qu'une attaque contre un membre est considérée comme une attaque contre tous ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Le Conseil de l'Union européenne",
-    incorrect_answers: ["Le Parlement européen", "La Commission européenne", "Le Conseil européen"],
-    contexte: "Le Conseil de l'Union européenne est l'organe de l'UE qui représente les intérêts des États membres."
+    correct_answer: "L'Article 5",
+    incorrect_answers: ["L'Article 10", "L'Article 3", "L'Article 7"],
+    contexte: "L'Article 5 est la pierre angulaire de la défense collective de l'OTAN. Il n'a été invoqué qu'une seule fois, après les attentats du 11 septembre 2001."
   },
   {
-    content: "Quel est le nom du traité qui a créé la monnaie unique, l'euro ?",
+    content: "La Cour de justice de l'Union européenne, qui assure le respect du droit de l'UE, siège dans quelle ville ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "Le traité de Maastricht",
-    incorrect_answers: ["Le traité de Rome", "Le traité de Lisbonne", "Le traité de Nice"],
-    contexte: "Le traité de Maastricht, signé en 1992, a créé l'euro. Il a également créé l'Union européenne."
-  },
-  {
-    content: "Quel pays est membre de l'OTAN, mais pas de l'Union européenne ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "La Norvège",
-    incorrect_answers: ["La Suède", "La Finlande", "L'Autriche"],
-    contexte: "La Norvège est un membre fondateur de l'OTAN, mais a refusé à deux reprises d'adhérer à l'UE par référendum."
-  },
-  {
-    content: "Quel est le pays le plus peuplé de l'Union européenne ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La France", "L'Italie", "L'Espagne"],
-    contexte: "L'Allemagne est le pays le plus peuplé de l'Union européenne, avec plus de 83 millions d'habitants."
-  },
-  {
-    content: "Quel est le siège de la Cour de justice de l'Union européenne ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
     correct_answer: "Luxembourg",
-    incorrect_answers: ["Bruxelles", "Strasbourg", "Genève"],
-    contexte: "Le Luxembourg est le siège de la Cour de justice de l'Union européenne. C'est la plus haute juridiction de l'UE."
+    incorrect_answers: ["La Haye", "Strasbourg", "Bruxelles"],
+    contexte: "À ne pas confondre avec la Cour européenne des droits de l'homme (Strasbourg) ou la Cour internationale de justice (La Haye), la CJUE est l'autorité judiciaire suprême de l'UE."
   },
   {
-    content: "Quel est le chef de l'État de la Russie ?",
+    content: "Quel territoire russe, une exclave située entre la Pologne et la Lituanie, a une importance stratégique majeure en mer Baltique ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de la Russie est le chef de l'État. C'est une fonction principalement honorifique."
+    correct_answer: "Kaliningrad",
+    incorrect_answers: ["La Carélie", "Sakhaline", "La Transnistrie"],
+    contexte: "Anciennement Königsberg en Prusse-Orientale, Kaliningrad abrite la flotte russe de la Baltique et des systèmes de missiles avancés."
   },
   {
-    content: "Quel est le chef du gouvernement de l'Allemagne ?",
+    content: "Le 'processus de Bologne' est une initiative intergouvernementale visant à harmoniser quoi à travers l'Europe ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
-    correct_answer: "Le chancelier",
-    incorrect_answers: ["Le président", "Le roi", "Le Premier ministre"],
-    contexte: "Le chancelier de l'Allemagne est le chef du gouvernement. Il dirige l'administration du pays."
+    correct_answer: "Les systèmes d'enseignement supérieur",
+    incorrect_answers: ["Les politiques fiscales", "Les normes ferroviaires", "Les procédures judiciaires"],
+    contexte: "Lancé en 1999, il a créé l'Espace européen de l'enseignement supérieur pour faciliter la reconnaissance des diplômes et la mobilité des étudiants."
   },
   {
-    content: "Quel pays a le droit de veto au Conseil de sécurité de l'ONU ?",
+    content: "Quelle région séparatiste de Moldavie, soutenue par la Russie, constitue un 'conflit gelé' depuis 1992 ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Europe",
+    correct_answer: "La Transnistrie",
+    incorrect_answers: ["La Gagaouzie", "Le Haut-Karabakh", "L'Ossétie du Sud"],
+    contexte: "Cette étroite bande de terre à l'est du fleuve Dniestr a autoproclamé son indépendance mais n'est reconnue par aucun État membre de l'ONU."
+  },
+  {
+    content: "Les Accords d'Helsinki de 1975 ont établi des principes fondamentaux pour les relations Est-Ouest, notamment...",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "L'inviolabilité des frontières et le respect des droits de l'homme",
+    incorrect_answers: ["La dissolution des blocs militaires", "La création d'une monnaie commune", "L'interdiction des armes nucléaires"],
+    contexte: "Ces accords ont été un moment clé de la Détente, reconnaissant les frontières post-Seconde Guerre mondiale en échange d'engagements sur les droits humains."
+  },
+  {
+    content: "Quel conflit oppose l'Arménie et l'Azerbaïdjan depuis la fin des années 1980 pour le contrôle d'une enclave montagneuse ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "Le conflit du Haut-Karabakh",
+    incorrect_answers: ["Le conflit en Tchétchénie", "Le conflit en Abkhazie", "Le conflit en Transnistrie"],
+    contexte: "Ce conflit complexe, mêlant des aspects ethniques, historiques et territoriaux, a connu plusieurs phases de guerre ouverte, la dernière en 2023."
+  },
+  {
+    content: "Le 'scandale du Watergate' a eu un impact majeur sur la politique américaine, mais quel événement similaire en Allemagne a conduit à la démission du chancelier Willy Brandt en 1974 ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "L'affaire Guillaume",
+    incorrect_answers: ["L'affaire du Spiegel", "L'affaire Flick", "L'affaire Barschel"],
+    contexte: "Günter Guillaume, l'un des plus proches collaborateurs de Brandt, a été démasqué comme un espion de la Stasi, la police secrète est-allemande."
+  },
+  {
+    content: "Quelle crise a paralysé les institutions de la Communauté Économique Européenne en 1965, initiée par Charles de Gaulle ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "La crise de la chaise vide",
+    incorrect_answers: ["Le refus de l'entrée du Royaume-Uni", "La crise de l'euro", "La crise des missiles de Cuba"],
+    contexte: "La France a boycotté les institutions européennes pendant sept mois pour protester contre une proposition de vote à la majorité qualifiée, défendant le droit de veto national."
+  },
+  {
+    content: "Le 'Groupe de Visegrád' est une alliance culturelle et politique de quatre pays d'Europe centrale. Lesquels ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "La Pologne, la Hongrie, la République Tchèque et la Slovaquie",
+    incorrect_answers: ["L'Autriche, la Slovénie, la Croatie et la Hongrie", "La Pologne, la Lituanie, la Lettonie et l'Estonie", "La Roumanie, la Bulgarie, la Hongrie et la Serbie"],
+    contexte: "Créé en 1991, ce groupe (V4) vise à faire avancer leur intégration européenne et à coopérer sur des questions d'intérêt commun."
+  },
+  {
+    content: "Le 'Schisme de 1054' a divisé la chrétienté européenne en deux branches principales. Lesquelles ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "L'Église catholique romaine et l'Église orthodoxe orientale",
+    incorrect_answers: ["Le Catholicisme et le Protestantisme", "L'Arianisme et le Catholicisme", "Le Sunnisme et le Chiisme"],
+    contexte: "Cette séparation, ou Grand Schisme, a formalisé des siècles de divergences théologiques et politiques entre Rome et Constantinople, influençant profondément la géopolitique européenne."
+  },
+  {
+    content: "Quel terme désigne la politique de neutralité armée adoptée par la Suède et la Finlande pendant la Guerre Froide, avant leur adhésion à l'OTAN ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "La Finlandisation (pour la Finlande)",
+    incorrect_answers: ["La Doctrine Paasikivi-Kekkonen", "La Neutralité scandinave", "L'Isolationnisme nordique"],
+    contexte: "La 'finlandisation' décrit la politique d'un pays qui, bien que neutre, subit l'influence d'un voisin puissant, comme la Finlande vis-à-vis de l'URSS."
+  },
+  {
+    content: "La 'Guerre des Harengs' est un surnom pour un conflit naval qui a opposé le Royaume-Uni à quel autre pays au sujet des droits de pêche ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "L'Islande",
+    incorrect_answers: ["La Norvège", "Le Danemark", "La France"],
+    contexte: "Les 'Cod Wars' (Guerres de la morue) des années 1950-1970 ont vu l'Islande étendre progressivement ses eaux territoriales, provoquant des affrontements avec les chalutiers britanniques."
+  },
+  {
+    content: "Le concept de 'souveraineté westphalienne', base des relations internationales modernes, est issu de traités ayant mis fin à quel conflit européen ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "La Guerre de Trente Ans",
+    incorrect_answers: ["Les Guerres Napoléoniennes", "La Guerre de Cent Ans", "La Guerre de Succession d'Espagne"],
+    contexte: "Les Traités de Westphalie de 1648 ont établi le principe de la souveraineté de l'État-nation et de la non-ingérence dans les affaires intérieures."
+  },
+  {
+    content: "Quelle organisation terroriste d'extrême-gauche a semé la terreur en Allemagne de l'Ouest dans les années 1970-1980 ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Europe",
+    correct_answer: "La Fraction Armée Rouge (Bande à Baader)",
+    incorrect_answers: ["Les Brigades Rouges (Italie)", "Action Directe (France)", "L'IRA (Irlande du Nord)"],
+    contexte: "Ce groupe, issu du mouvement étudiant radical, a mené des attentats, des enlèvements et des assassinats contre ce qu'il considérait comme le système capitaliste et impérialiste."
+  }
+
+  # ASIE - CONFLITS GEOPO
+  {
+    content: "Quel conflit a opposé le Nord communiste et le Sud soutenu par les États-Unis, divisant le pays au niveau du 38e parallèle de 1950 à 1953 ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La Guerre de Corée",
+    incorrect_answers: ["La Guerre du Vietnam", "La Guerre Civile Chinoise", "La Guerre Froide"],
+    contexte: "Ce conflit a abouti à un armistice mais jamais à un traité de paix, créant la Zone Démilitarisée (DMZ) qui sépare encore la Corée du Nord et la Corée du Sud."
+  },
+  {
+    content: "Quel long conflit a opposé le Nord-Vietnam communiste, soutenu par la Chine et l'URSS, et le Sud-Vietnam, soutenu par les États-Unis ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La Guerre du Vietnam",
+    incorrect_answers: ["La Guerre de Corée", "La Guerre du Cambodge", "La Révolution Culturelle"],
+    contexte: "Ce conflit, qui a duré près de 20 ans, s'est terminé en 1975 avec la chute de Saïgon et la réunification du Vietnam sous le régime communiste."
+  },
+  {
+    content: "Quelle ligne de démarcation sépare l'Inde et le Pakistan et est au cœur d'un conflit territorial majeur dans la région du Cachemire ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La Ligne de Contrôle (Line of Control - LoC)",
+    incorrect_answers: ["La Ligne McMahon", "La Ligne Durand", "La Ligne Curzon"],
+    contexte: "La Ligne de Contrôle est la frontière militaire de facto entre les parties du Cachemire contrôlées par l'Inde et le Pakistan."
+  },
+  {
+    content: "En 1949, quel leader a proclamé la naissance de la République populaire de Chine après la victoire des communistes dans la guerre civile ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Mao Zedong",
+    incorrect_answers: ["Chiang Kai-shek", "Deng Xiaoping", "Sun Yat-sen"],
+    contexte: "La proclamation a eu lieu sur la place Tian'anmen à Pékin, tandis que les nationalistes de Chiang Kai-shek se retiraient à Taïwan."
+  },
+  {
+    content: "Le dalaï-lama est le chef spirituel de quelle région autonome de Chine, source de tensions politiques et de revendications d'indépendance ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Le Tibet",
+    incorrect_answers: ["Le Xinjiang", "La Mongolie-Intérieure", "Hong Kong"],
+    contexte: "Suite à l'intervention chinoise en 1950, le 14e dalaï-lama s'est exilé en Inde en 1959, où il dirige un gouvernement en exil."
+  },
+  {
+    content: "Quel pays, anciennement connu sous le nom de Perse, a connu une révolution islamique en 1979 qui a renversé la monarchie ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "L'Iran",
+    incorrect_answers: ["L'Irak", "L'Arabie Saoudite", "La Turquie"],
+    contexte: "La Révolution iranienne a conduit à l'instauration d'une république islamique dirigée par l'ayatollah Ruhollah Khomeini."
+  },
+  {
+    content: "Quel pays est une monarchie absolue et l'un des plus grands producteurs de pétrole au monde, abritant les villes saintes de La Mecque et Médine ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "L'Arabie Saoudite",
+    incorrect_answers: ["Les Émirats arabes unis", "Le Qatar", "L'Iran"],
+    contexte: "Dirigée par la dynastie des Saoud, l'Arabie Saoudite joue un rôle géopolitique majeur au Moyen-Orient et dans le monde musulman."
+  },
+  {
+    content: "Quelle association de 10 pays d'Asie du Sud-Est promeut la coopération économique, politique et sécuritaire ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "L'ASEAN (Association des Nations de l'Asie du Sud-Est)",
+    incorrect_answers: ["L'APEC", "La SAARC", "L'OCS"],
+    contexte: "Fondée en 1967, l'ASEAN est un acteur clé dans la géopolitique de la région Asie-Pacifique."
+  },
+  {
+    content: "Comment nomme-t-on la division de l'Inde britannique en 1947, qui a créé les États indépendants de l'Inde et du Pakistan ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La Partition",
+    incorrect_answers: ["La Décolonisation", "Le Raj", "L'Indépendance"],
+    contexte: "La Partition a été basée sur des critères religieux (hindouisme et islam) et a provoqué des déplacements de population massifs et des violences extrêmes."
+  },
+  {
+    content: "Quel pays a été envahi par l'Union Soviétique en 1979, conduisant à une guerre de dix ans et à l'émergence des moudjahidines ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "L'Afghanistan",
+    incorrect_answers: ["L'Iran", "Le Pakistan", "L'Irak"],
+    contexte: "L'invasion soviétique visait à soutenir le régime communiste local, mais a entraîné une longue et coûteuse guerre par procuration de la Guerre Froide."
+  },
+  {
+    content: "Quel pays a été envahi par l'Irak en 1990, déclenchant la première Guerre du Golfe ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Le Koweït",
+    incorrect_answers: ["L'Arabie Saoudite", "L'Iran", "La Jordanie"],
+    contexte: "L'invasion, motivée par des différends pétroliers et territoriaux, a conduit à une intervention militaire d'une coalition internationale dirigée par les États-Unis."
+  },
+  {
+    content: "Hiroshima et Nagasaki sont deux villes japonaises connues pour avoir été les cibles de quel événement en 1945 ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Les bombardements atomiques",
+    incorrect_answers: ["Des tsunamis dévastateurs", "Des tremblements de terre majeurs", "Des batailles navales"],
+    contexte: "Ces bombardements par les États-Unis ont précipité la capitulation du Japon et la fin de la Seconde Guerre mondiale."
+  },
+  {
+    content: "Le détroit qui sépare la Chine continentale de Taïwan est une zone de fortes tensions géopolitiques. Quel est son nom ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Le détroit de Taïwan",
+    incorrect_answers: ["Le détroit de Malacca", "Le détroit de Corée", "Le détroit de Luçon"],
+    contexte: "Ce détroit est au cœur du conflit sur le statut de Taïwan, que la Chine considère comme une province renégate."
+  },
+  {
+    content: "Quel pays est le seul État juif au monde et est au centre du conflit israélo-palestinien ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Israël",
+    incorrect_answers: ["Le Liban", "La Jordanie", "La Syrie"],
+    contexte: "Créé en 1948, Israël est en conflit avec les Palestiniens et plusieurs nations arabes voisines au sujet du territoire et de la souveraineté."
+  },
+  {
+    content: "Quelle organisation, dirigée par Yasser Arafat pendant de nombreuses années, a lutté pour la création d'un État palestinien ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "L'Organisation de Libération de la Palestine (OLP)",
+    incorrect_answers: ["Le Hamas", "Le Hezbollah", "Le Fatah"],
+    contexte: "L'OLP est reconnue internationalement comme le représentant officiel du peuple palestinien."
+  },
+  {
+    content: "Quel régime totalitaire, dirigé par Pol Pot, a été responsable d'un génocide au Cambodge entre 1975 et 1979 ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Les Khmers rouges",
+    incorrect_answers: ["Le Viet Minh", "Le Pathet Lao", "La Junte militaire birmane"],
+    contexte: "Le régime des Khmers rouges a tenté d'imposer une utopie agraire radicale, entraînant la mort d'environ 1,7 million de personnes."
+  },
+  {
+    content: "Comment nomme-t-on le statut politique de Hong Kong, qui lui garantit une large autonomie vis-à-vis de la Chine jusqu'en 2047 ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Un pays, deux systèmes",
+    incorrect_answers: ["Région administrative spéciale", "Province autonome", "Zone économique exclusive"],
+    contexte: "Ce principe, négocié lors de la rétrocession par le Royaume-Uni en 1997, permet à Hong Kong de conserver son système capitaliste et ses libertés."
+  },
+  {
+    content: "Quelle campagne lancée par Mao Zedong de 1966 à 1976 visait à purger la société chinoise des éléments capitalistes et traditionnels ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La Révolution culturelle",
+    incorrect_answers: ["Le Grand Bond en avant", "La Longue Marche", "Les Cent Fleurs"],
+    contexte: "Cette période a été marquée par un chaos social et économique extrême, des purges violentes et la destruction du patrimoine culturel."
+  },
+  {
+    content: "Le conflit en mer de Chine méridionale oppose principalement la Chine à plusieurs pays de l'ASEAN au sujet de quoi ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La souveraineté sur des zones maritimes",
+    incorrect_answers: ["Des droits de pêche", "Des routes commerciales", "Des ressources pétrolières"],
+    contexte: "La Chine revendique la quasi-totalité de cette mer stratégique via la 'ligne en neuf traits', ce que contestent le Vietnam, les Philippines, la Malaisie et Brunei."
+  },
+  {
+    content: "Quel pays, anciennement connu sous le nom de Birmanie, est dirigé par une junte militaire qui a renversé le gouvernement démocratiquement élu d'Aung San Suu Kyi ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Le Myanmar",
+    incorrect_answers: ["La Thaïlande", "Le Laos", "Le Bangladesh"],
+    contexte: "Depuis le coup d'État de 2021, le pays est en proie à une guerre civile opposant l'armée à de nombreuses forces de résistance ethniques et pro-démocratie."
+  },
+  {
+    content: "Quel pays a été créé en 1971 après une guerre de libération sanglante qui l'a séparé du Pakistan occidental ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Le Bangladesh",
+    incorrect_answers: ["Le Sri Lanka", "Le Népal", "Le Bhoutan"],
+    contexte: "Anciennement connu sous le nom de Pakistan oriental, le Bangladesh a fait sécession avec le soutien de l'Inde."
+  },
+  {
+    content: "La 'Révolution des parapluies' en 2014 était un mouvement de protestation pro-démocratie dans quelle ville asiatique ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Hong Kong",
+    incorrect_answers: ["Shanghai", "Taipei", "Séoul"],
+    contexte: "Les manifestants réclamaient le suffrage universel pour l'élection du chef de l'exécutif de la ville, sans l'ingérence de Pékin."
+  },
+  {
+    content: "Le conflit entre les Tigres tamouls et le gouvernement a déchiré quel pays insulaire pendant près de 30 ans ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Le Sri Lanka",
+    incorrect_answers: ["Les Maldives", "L'Indonésie", "Les Philippines"],
+    contexte: "Les Tigres de libération de l'Eelam tamoul (LTTE) luttaient pour un État tamoul indépendant jusqu'à leur défaite militaire en 2009."
+  },
+  {
+    content: "Quel traité de 1951 a officiellement mis fin à la Seconde Guerre mondiale dans le Pacifique et défini le statut du Japon d'après-guerre ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Le Traité de San Francisco",
+    incorrect_answers: ["Le Traité de Versailles", "Les Accords de Genève", "La Déclaration de Potsdam"],
+    contexte: "Ce traité a mis fin à l'occupation américaine du Japon, qui a en retour renoncé à ses revendications sur de nombreux territoires, dont la Corée et Taïwan."
+  },
+  {
+    content: "La 'Ligne Durand' est une frontière internationale contestée, tracée en 1893, qui sépare quels deux pays ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "L'Afghanistan et le Pakistan",
+    incorrect_answers: ["L'Inde et le Pakistan", "L'Iran et le Pakistan", "La Chine et l'Afghanistan"],
+    contexte: "L'Afghanistan n'a jamais officiellement reconnu cette frontière, qui divise la communauté pachtoune et est une source de tensions récurrentes."
+  },
+  {
+    content: "L'Organisation de Coopération de Shanghai (OCS) est une alliance politique, économique et sécuritaire eurasienne. Quels sont ses deux membres fondateurs les plus influents ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La Chine et la Russie",
+    incorrect_answers: ["L'Inde et le Pakistan", "Le Kazakhstan et l'Ouzbékistan", "La Chine et l'Inde"],
+    contexte: "Souvent perçue comme un contrepoids à l'influence de l'OTAN, l'OCS s'est élargie pour inclure l'Inde, le Pakistan et l'Iran."
+  },
+  {
+    content: "Quelle guerre a opposé l'Iran et l'Irak de 1980 à 1988, faisant plus d'un million de victimes ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La Guerre Iran-Irak",
+    incorrect_answers: ["La Guerre du Golfe", "La Guerre des Six Jours", "La Guerre civile libanaise"],
+    contexte: "Déclenchée par l'Irak de Saddam Hussein, cette guerre de tranchées a été l'un des conflits les plus longs et les plus meurtriers du 20e siècle."
+  },
+  {
+    content: "La politique de 'neutralité permanente' de quel pays d'Asie centrale est reconnue par les Nations Unies ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Le Turkménistan",
+    incorrect_answers: ["L'Ouzbékistan", "Le Kazakhstan", "Le Tadjikistan"],
+    contexte: "Cette politique d'isolationnisme, adoptée en 1995, vise à maintenir le pays à l'écart des alliances militaires et des conflits régionaux."
+  },
+  {
+    content: "Le concept de 'Panchsheel', ou les Cinq Principes de Coexistence Pacifique, a été formulé conjointement par quels deux pays dans les années 1950 ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "L'Inde et la Chine",
+    incorrect_answers: ["L'Inde et le Pakistan", "La Chine et l'Union Soviétique", "L'Indonésie et l'Inde"],
+    contexte: "Ces principes devaient guider les relations sino-indiennes, mais ont été mis à mal par la guerre sino-indienne de 1962."
+  },
+  {
+    content: "Quelle guerre de 1962 a opposé les deux pays les plus peuplés du monde au sujet d'un différend frontalier dans l'Himalaya ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La Guerre sino-indienne",
+    incorrect_answers: ["La Guerre du Cachemire", "La Guerre de Corée", "La Guerre sino-vietnamienne"],
+    contexte: "Ce bref mais violent conflit a été une défaite pour l'Inde et a durablement gelé les relations entre New Delhi et Pékin."
+  },
+  {
+    content: "Quel article de la constitution japonaise d'après-guerre contraint le pays à renoncer à la guerre comme moyen de résoudre les conflits internationaux ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "L'Article 9",
+    incorrect_answers: ["L'Article 1", "L'Article 51", "L'Article 23"],
+    contexte: "L'Article 9 est au cœur du pacifisme japonais, bien que son interprétation évolue pour permettre des capacités d'autodéfense de plus en plus robustes."
+  },
+  {
+    content: "Le 'Mouvement des non-alignés', une alternative aux blocs de la Guerre Froide, a été fondé lors de quelle conférence en 1955 ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La Conférence de Bandung",
+    incorrect_answers: ["La Conférence de Yalta", "La Conférence de Genève", "La Conférence de Belgrade"],
+    contexte: "Tenue en Indonésie, cette conférence a rassemblé 29 pays d'Asie et d'Afrique pour promouvoir la coopération et s'opposer au colonialisme."
+  },
+  {
+    content: "Quelle île, au cœur d'un différend de souveraineté entre le Japon, la Chine et Taïwan, est connue sous le nom de Senkaku en japonais et Diaoyu en chinois ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Les îles Senkaku/Diaoyu",
+    incorrect_answers: ["Les îles Kouriles/Territoires du Nord", "Les rochers de Liancourt/Dokdo/Takeshima", "Les îles Paracels"],
+    contexte: "Ces îles inhabitées en mer de Chine orientale sont stratégiquement situées et pourraient receler des réserves d'hydrocarbures."
+  },
+  {
+    content: "La 'juche' est l'idéologie officielle de quel État asiatique, prônant l'autosuffisance et un nationalisme extrême ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La Corée du Nord",
+    incorrect_answers: ["La Chine de Mao", "Le Vietnam", "Le Cambodge des Khmers rouges"],
+    contexte: "Développée par Kim Il-sung, cette idéologie a servi à justifier l'isolement et le contrôle total du régime sur la population."
+  },
+  {
+    content: "Quelle politique, mise en œuvre de 1979 à 2015, a strictement contrôlé la démographie en Chine ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La politique de l'enfant unique",
+    incorrect_answers: ["La politique des deux enfants", "Le Grand Bond en avant", "La politique de la porte ouverte"],
+    contexte: "Cette politique a eu des conséquences démographiques profondes, notamment un vieillissement rapide de la population et un déséquilibre hommes-femmes."
+  },
+  {
+    content: "Quel accord de paix de 1978, négocié par les États-Unis, a mis fin à l'état de guerre entre l'Égypte et Israël ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Les Accords de Camp David",
+    incorrect_answers: ["Les Accords d'Oslo", "Le Traité de paix israélo-jordanien", "La Résolution 242 de l'ONU"],
+    contexte: "Ces accords ont conduit à un traité de paix historique en 1979, le premier entre Israël et un pays arabe, et à la restitution du Sinaï à l'Égypte."
+  },
+  {
+    content: "Le 'Grand Jeu' était une rivalité stratégique au 19e siècle pour le contrôle de l'Asie centrale entre quels deux empires ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "L'Empire britannique et l'Empire russe",
+    incorrect_answers: ["L'Empire ottoman et l'Empire perse", "L'Empire français et l'Empire britannique", "L'Empire chinois et l'Empire russe"],
+    contexte: "Cette lutte d'influence, d'espionnage et d'exploration a façonné les frontières et la géopolitique de l'Afghanistan et des régions environnantes."
+  },
+  {
+    content: "Quel terme désigne la politique de réformes économiques initiée par Deng Xiaoping en Chine à partir de 1978 ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Le Socialisme de marché",
+    incorrect_answers: ["La Révolution culturelle", "Le Grand Bond en avant", "Les Quatre Modernisations"],
+    contexte: "Cette politique a ouvert la Chine à l'investissement étranger et à l'économie de marché tout en maintenant le contrôle politique du Parti communiste."
+  },
+  {
+    content: "Le massacre de Gwangju en 1980 a été un tournant dans la lutte pour la démocratie dans quel pays asiatique ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La Corée du Sud",
+    incorrect_answers: ["Taïwan", "Les Philippines", "L'Indonésie"],
+    contexte: "La répression brutale d'un soulèvement pro-démocratie par la junte militaire a galvanisé l'opposition et conduit à la fin du régime autoritaire en 1987."
+  },
+  {
+    content: "L'Opération 'Tempête du désert' était la phase de combat de quel conflit au Moyen-Orient ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La Guerre du Golfe (1990-1991)",
+    incorrect_answers: ["La Guerre d'Irak (2003)", "La Guerre Iran-Irak", "La Guerre du Kippour"],
+    contexte: "C'était la campagne militaire menée par la coalition internationale pour libérer le Koweït de l'occupation irakienne."
+  },
+  {
+    content: "Quelle doctrine de sécurité japonaise, formulée en 1977, visait à renforcer les liens avec l'Asie du Sud-Est par la coopération économique plutôt que par la puissance militaire ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "La doctrine Fukuda",
+    incorrect_answers: ["La doctrine Yoshida", "La doctrine Abe", "La doctrine Ikeda"],
+    contexte: "Cette doctrine a marqué un tournant dans la politique étrangère du Japon, cherchant à établir des relations de 'cœur à cœur' avec les pays de l'ASEAN."
+  },
+  {
+    content: "Le 'Triangle d'or' est une région montagneuse à cheval sur quels trois pays, connue pour être l'une des plus grandes zones de production d'opium au monde ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "Le Myanmar, le Laos et la Thaïlande",
+    incorrect_answers: ["L'Afghanistan, le Pakistan et l'Iran", "Le Vietnam, le Cambodge et le Laos", "La Chine, le Myanmar et l'Inde"],
+    contexte: "La production de drogue dans cette région a financé de nombreuses insurrections armées et groupes criminels, posant un défi de sécurité majeur."
+  },
+  {
+    content: "La 'Guerre de la Morue' est un surnom pour un conflit naval qui a opposé le Royaume-Uni à quel autre pays au sujet des droits de pêche ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Asie",
+    correct_answer: "L'Islande",
+    incorrect_answers: ["La Norvège", "Le Danemark", "La France"],
+    contexte: "Les 'Cod Wars' (Guerres de la morue) des années 1950-1970 ont vu l'Islande étendre progressivement ses eaux territoriales, provoquant des affrontements avec les chalutiers britanniques."
+  },
+  {
+    content: "Quelle guerre a opposé les 13 colonies britanniques à la Grande-Bretagne, menant à la création des États-Unis d'Amérique ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La Guerre d'indépendance américaine (Révolution américaine)",
+    incorrect_answers: ["La Guerre de 1812", "La Guerre de Sécession", "La Guerre de Sept Ans"],
+    contexte: "Ce conflit, qui a eu lieu de 1775 à 1783, a abouti au Traité de Paris et à la reconnaissance de l'indépendance des États-Unis."
+  },
+  {
+    content: "Quel conflit a déchiré les États-Unis de 1861 à 1865, opposant l'Union aux États confédérés au sujet de l'esclavage et des droits des États ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La Guerre de Sécession (Guerre Civile Américaine)",
+    incorrect_answers: ["La Révolution américaine", "La Guerre américano-mexicaine", "La Conquête de l'Ouest"],
+    contexte: "Cette guerre a abouti à l'abolition de l'esclavage, à la préservation de l'Union et a affirmé la suprématie du gouvernement fédéral."
+  },
+  {
+    content: "Quelle crise de 1962 a amené les États-Unis et l'Union Soviétique au bord de la guerre nucléaire à cause de missiles installés à Cuba ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La crise des missiles de Cuba",
+    incorrect_answers: ["L'invasion de la Baie des Cochons", "La crise du canal de Suez", "Le blocus de Berlin"],
+    contexte: "Pendant 13 jours, le monde a retenu son souffle jusqu'à ce qu'un accord soit trouvé pour retirer les missiles soviétiques en échange du retrait de missiles américains en Turquie."
+  },
+  {
+    content: "Quel accord de libre-échange, remplacé en 2020, unissait le Canada, les États-Unis et le Mexique ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "L'ALENA (Accord de Libre-Échange Nord-Américain)",
+    incorrect_answers: ["Le MERCOSUR", "L'Union Européenne", "L'APEC"],
+    contexte: "Signé en 1994, l'ALENA a créé l'une des plus grandes zones de libre-échange du monde. Il a été remplacé par l'ACEUM (Accord Canada–États-Unis–Mexique)."
+  },
+  {
+    content: "Quel pays a été dirigé par le leader communiste Fidel Castro pendant plusieurs décennies après la révolution de 1959 ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Cuba",
+    incorrect_answers: ["Le Venezuela", "Le Nicaragua", "La Bolivie"],
+    contexte: "La révolution cubaine a renversé le dictateur Batista, soutenu par les États-Unis, et a instauré un régime communiste, un acteur clé de la Guerre Froide."
+  },
+  {
+    content: "La doctrine Monroe, énoncée en 1823, visait à s'opposer à toute intervention de quelle puissance sur le continent américain ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Européenne",
+    incorrect_answers: ["Asiatique", "Africaine", "Russe"],
+    contexte: "Cette doctrine a jeté les bases de la politique étrangère américaine, considérant le continent américain comme sa sphère d'influence exclusive."
+  },
+  {
+    content: "Quelle voie navigable artificielle, reliant les océans Atlantique et Pacifique, a été sous contrôle américain jusqu'en 1999 ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Le Canal de Panama",
+    incorrect_answers: ["Le Canal de Suez", "Le Détroit de Magellan", "Le Passage du Nord-Ouest"],
+    contexte: "La construction et le contrôle du canal ont été des enjeux géopolitiques majeurs du 20e siècle, avant son transfert à la République du Panama."
+  },
+  {
+    content: "Quel pays d'Amérique du Sud a été dirigé par une dictature militaire brutale de 1976 à 1983, période connue sous le nom de 'Guerre Sale' ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "L'Argentine",
+    incorrect_answers: ["Le Brésil", "Le Chili", "L'Uruguay"],
+    contexte: "Durant cette période, la junte militaire a fait 'disparaître' des milliers d'opposants politiques, laissant une profonde cicatrice dans la société."
+  },
+  {
+    content: "La 'Révolution tranquille' est une période de changements sociaux et politiques rapides qui a eu lieu dans quelle province canadienne dans les années 1960 ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Le Québec",
+    incorrect_answers: ["L'Ontario", "La Colombie-Britannique", "L'Alberta"],
+    contexte: "Cette période a vu la sécularisation de la société, la montée du nationalisme québécois et la création de l'État-providence."
+  },
+  {
+    content: "Quel pays a connu une dictature dirigée par Augusto Pinochet de 1973 à 1990, suite à un coup d'État contre le président Salvador Allende ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Le Chili",
+    incorrect_answers: ["L'Argentine", "Le Pérou", "La Bolivie"],
+    contexte: "Le coup d'État de 1973, soutenu par la CIA, a marqué le début d'un régime autoritaire caractérisé par la répression politique et des réformes économiques néolibérales."
+  },
+  {
+    content: "Quel terme désigne la politique de ségrégation raciale qui a existé aux États-Unis, en particulier dans les États du Sud, jusqu'aux années 1960 ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La ségrégation (ou les lois Jim Crow)",
+    incorrect_answers: ["L'Apartheid", "Le Ghetto", "La Réserve"],
+    contexte: "Cette politique a été combattue par le Mouvement des droits civiques, qui a abouti à des lois majeures comme le Civil Rights Act de 1964."
+  },
+  {
+    content: "Le MERCOSUR est un bloc commercial et une union douanière entre plusieurs pays de quelle région ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Amérique du Sud",
+    incorrect_answers: ["Amérique du Nord", "Amérique Centrale", "Les Caraïbes"],
+    contexte: "Ses membres fondateurs sont l'Argentine, le Brésil, le Paraguay et l'Uruguay. Il vise à promouvoir le libre-échange et la circulation des biens."
+  },
+  {
+    content: "Quel pays a été le théâtre d'un conflit armé de plus de 50 ans entre le gouvernement et des guérillas marxistes comme les FARC ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La Colombie",
+    incorrect_answers: ["Le Pérou", "Le Mexique", "Le Venezuela"],
+    contexte: "Ce conflit complexe, alimenté par le trafic de drogue, a fait des centaines de milliers de victimes avant un accord de paix historique en 2016."
+  },
+  {
+    content: "L'Organisation des États Américains (OEA) est une organisation continentale dont le siège est dans quelle ville ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Washington, D.C.",
+    incorrect_answers: ["Mexico", "Brasilia", "Bogota"],
+    contexte: "Fondée en 1948, l'OEA a pour objectifs la paix, la sécurité, la démocratie et le développement dans les Amériques."
+  },
+  {
+    content: "Quel pays d'Amérique centrale a été dirigé par la dynastie des Somoza pendant plus de 40 ans avant la révolution sandiniste de 1979 ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Le Nicaragua",
+    incorrect_answers: ["Le Honduras", "Le Salvador", "Le Guatemala"],
+    contexte: "La révolution a porté au pouvoir le Front sandiniste de libération nationale (FSLN), qui a ensuite affronté les Contras soutenus par les États-Unis."
+  },
+  {
+    content: "Quelle tentative d'invasion de Cuba par des exilés cubains, soutenue par la CIA, a échoué lamentablement en 1961 ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Le débarquement de la baie des Cochons",
+    incorrect_answers: ["L'opération Mongoose", "La crise des missiles de Cuba", "L'opération Urgent Fury"],
+    contexte: "Cet échec a renforcé le régime de Fidel Castro et a été une humiliation majeure pour l'administration du président Kennedy."
+  },
+  {
+    content: "Le scandale 'Iran-Contra' dans les années 1980 a impliqué la vente secrète d'armes à l'Iran par l'administration Reagan pour financer quel groupe ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Les Contras au Nicaragua",
+    incorrect_answers: ["Les moudjahidines en Afghanistan", "La junte en Argentine", "Les rebelles au Salvador"],
+    contexte: "Cette affaire a révélé des opérations secrètes et illégales visant à contourner les interdictions du Congrès américain."
+  },
+  {
+    content: "Quelle guerre a opposé l'Argentine et le Royaume-Uni en 1982 pour la souveraineté d'un archipel de l'Atlantique Sud ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La Guerre des Malouines (Falklands War)",
+    incorrect_answers: ["La Guerre du Chaco", "La Guerre du Pacifique", "La Guerre de la Triple-Alliance"],
+    contexte: "Le conflit a commencé par une invasion argentine et s'est terminé par une victoire britannique, mais la revendication de souveraineté argentine persiste."
+  },
+  {
+    content: "Comment nomme-t-on le plan de coopération et de répression des opposants politiques mis en place par les dictatures d'Amérique du Sud dans les années 1970 ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "L'Opération Condor",
+    incorrect_answers: ["L'Alliance pour le Progrès", "La Doctrine de la Sécurité Nationale", "L'Opération Just Cause"],
+    contexte: "Coordonnée par le Chili de Pinochet, cette campagne d'assassinats et de renseignements a visé des dissidents politiques à travers le continent."
+  },
+  {
+    content: "Quel mouvement de guérilla indigène a lancé une insurrection dans l'État du Chiapas, au Mexique, le jour de l'entrée en vigueur de l'ALENA en 1994 ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "L'Armée zapatiste de libération nationale (EZLN)",
+    incorrect_answers: ["Le Sentier lumineux", "Les FARC", "Les Tupamaros"],
+    contexte: "Les zapatistes s'opposent à la mondialisation néolibérale et luttent pour les droits et l'autonomie des peuples indigènes."
+  },
+  {
+    content: "Quelle politique américaine des années 1930, initiée par Franklin D. Roosevelt, visait à réduire l'interventionnisme militaire en Amérique latine ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La politique de bon voisinage (Good Neighbor Policy)",
+    incorrect_answers: ["La doctrine Monroe", "La diplomatie du dollar", "La politique du Big Stick"],
+    contexte: "Cette politique a mis fin à l'occupation de plusieurs pays par les Marines américains, mais n'a pas empêché l'influence économique et politique."
+  },
+  {
+    content: "Le 'Sentier Lumineux' (Sendero Luminoso) était un groupe terroriste maoïste qui a mené une insurrection sanglante dans quel pays andin ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Le Pérou",
+    incorrect_answers: ["La Colombie", "La Bolivie", "L'Équateur"],
+    contexte: "Actif principalement dans les années 1980 et 1990, le conflit a causé des dizaines de milliers de morts et de graves violations des droits humains."
+  },
+  {
+    content: "Quel traité de 1977, signé par Jimmy Carter et Omar Torrijos, a organisé le transfert progressif du Canal de Panama au Panama ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Les Traités Torrijos-Carter",
+    incorrect_answers: ["Le Traité Hay-Bunau-Varilla", "L'Accord de Panama", "Le Traité du Canal Interocéanique"],
+    contexte: "Ces traités ont mis fin à des décennies de tensions et ont abouti au contrôle total du canal par le Panama le 31 décembre 1999."
+  },
+  {
+    content: "Quelle guerre a opposé la Bolivie et le Paraguay de 1932 à 1935 pour le contrôle d'une région aride, supposée riche en pétrole ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La Guerre du Chaco",
+    incorrect_answers: ["La Guerre du Pacifique", "La Guerre de la Triple-Alliance", "La Guerre des Malouines"],
+    contexte: "Ce fut la guerre la plus meurtrière d'Amérique du Sud au 20e siècle. Le Paraguay a finalement obtenu la plus grande partie du territoire contesté."
+  },
+  {
+    content: "Le 'Maccarthysme' était une période de peur et de répression anticommuniste intense dans quel pays au début des années 1950 ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Les États-Unis",
+    incorrect_answers: ["Le Canada", "Le Mexique", "L'Argentine"],
+    contexte: "Menée par le sénateur Joseph McCarthy, cette 'chasse aux sorcières' a ruiné de nombreuses carrières par des accusations souvent infondées."
+  },
+  {
+    content: "Quelle résolution de l'ONU, adoptée après la Guerre des Six Jours, est une pierre angulaire des négociations de paix au Moyen-Orient mais a été proposée par un pays américain ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La Résolution 242",
+    incorrect_answers: ["La Résolution 338", "La Résolution 181", "La Résolution 425"],
+    contexte: "Proposée par le Royaume-Uni mais fortement soutenue par les États-Unis, elle appelle au 'retrait des forces armées israéliennes des territoires occupés' en échange de la paix."
+  },
+  {
+    content: "L'apartheid est associé à l'Afrique du Sud, mais quel pays américain a vu sa politique étrangère influencée par son opposition à ce régime, notamment sous le gouvernement de Brian Mulroney ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Le Canada",
+    incorrect_answers: ["Le Brésil", "Le Mexique", "L'Argentine"],
+    contexte: "Le Canada a été l'un des leaders au sein du Commonwealth dans l'imposition de sanctions contre l'Afrique du Sud pour faire pression contre l'apartheid."
+  },
+  {
+    content: "Quelle guerre (1846-1848) a abouti à la cession par le Mexique de vastes territoires qui forment aujourd'hui le sud-ouest des États-Unis ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La Guerre américano-mexicaine",
+    incorrect_answers: ["La Révolution texane", "La Guerre hispano-américaine", "La Guerre des Pâtisseries"],
+    contexte: "Suite au Traité de Guadalupe Hidalgo, le Mexique a perdu la Californie, le Nevada, l'Utah, et des parties de plusieurs autres États."
+  },
+  {
+    content: "L'ALBA (Alliance Bolivarienne pour les Amériques) est une organisation intergouvernementale créée en opposition à la politique américaine. Quels en sont les deux principaux fondateurs ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Le Venezuela (Hugo Chávez) et Cuba (Fidel Castro)",
+    incorrect_answers: ["Le Brésil et l'Argentine", "La Bolivie et l'Équateur", "Le Mexique et la Colombie"],
+    contexte: "Fondée en 2004, l'ALBA promeut une coopération basée sur la solidarité et la complémentarité économique, en opposition au néolibéralisme."
+  },
+  {
+    content: "Quel coup d'État de 1954, orchestré par la CIA sous le nom de code 'Opération PBSUCCESS', a renversé le gouvernement démocratiquement élu de Jacobo Árbenz ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Le coup d'État au Guatemala",
+    incorrect_answers: ["Le coup d'État au Chili", "Le coup d'État en Iran", "Le coup d'État au Congo"],
+    contexte: "Ce coup d'État, motivé par la réforme agraire qui menaçait les intérêts de la United Fruit Company, a plongé le pays dans des décennies de guerre civile."
+  },
+  {
+    content: "Quelle loi américaine de 1996, connue sous le nom de loi Helms-Burton, a renforcé l'embargo contre Cuba en pénalisant les entreprises étrangères qui y commercent ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La loi sur la liberté et la solidarité démocratique cubaine",
+    incorrect_answers: ["L'amendement Platt", "La loi Torricelli", "L'embargo commercial"],
+    contexte: "Cette loi a une portée extraterritoriale, ce qui a provoqué des tensions avec de nombreux alliés des États-Unis, dont le Canada et l'Union Européenne."
+  },
+  {
+    content: "La 'Guerre du Pacifique' (1879-1884) a opposé le Chili à une alliance entre quels deux pays, privant l'un d'eux de son accès à la mer ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Le Pérou et la Bolivie",
+    incorrect_answers: ["L'Argentine et l'Uruguay", "L'Équateur et la Colombie", "Le Brésil et le Paraguay"],
+    contexte: "À l'issue de cette guerre, le Chili a annexé de riches territoires miniers, et la Bolivie a perdu sa seule province côtière, une perte encore contestée aujourd'hui."
+  },
+  {
+    content: "Quelle crise politique canadienne de 1970 a vu le gouvernement fédéral invoquer la Loi sur les mesures de guerre en réponse aux enlèvements du Front de libération du Québec (FLQ) ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La Crise d'Octobre",
+    incorrect_answers: ["La Crise du Lac Meech", "La Crise d'Oka", "Le Référendum de 1980"],
+    contexte: "C'est la seule fois que cette loi a été appliquée en temps de paix, suspendant les libertés civiles et déployant l'armée au Québec."
+  },
+  {
+    content: "Quel terme désigne la politique de l'administration Nixon visant à transférer la responsabilité des combats aux forces sud-vietnamiennes ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La vietnamisation",
+    incorrect_answers: ["La doctrine Nixon", "L'endiguement", "La détente"],
+    contexte: "Cette stratégie visait à permettre un retrait progressif des troupes américaines du Vietnam tout en maintenant un Sud-Vietnam non communiste."
+  },
+  {
+    content: "Le 'Corollaire Roosevelt' à la doctrine Monroe affirmait le droit des États-Unis d'agir comme...",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Une 'puissance de police internationale' en Amérique latine",
+    incorrect_answers: ["Un partenaire commercial égal", "Un médiateur neutre", "Un observateur non-interventionniste"],
+    contexte: "Cette extension a justifié de nombreuses interventions militaires américaines en Amérique centrale et dans les Caraïbes au début du 20e siècle."
+  },
+  {
+    content: "Quelle guerre (1864-1870) a opposé le Paraguay à une alliance du Brésil, de l'Argentine et de l'Uruguay, et a dévasté la population paraguayenne ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "La Guerre de la Triple-Alliance",
+    incorrect_answers: ["La Guerre du Chaco", "La Guerre du Pacifique", "La Guerre de Cisplatine"],
+    contexte: "Ce conflit est le plus sanglant de l'histoire de l'Amérique du Sud. Le Paraguay a perdu une grande partie de sa population masculine et de son territoire."
+  },
+  {
+    content: "La 'United Fruit Company', une multinationale américaine, a joué un rôle politique et économique si dominant en Amérique centrale qu'elle a inspiré le terme...",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "République bananière",
+    incorrect_answers: ["État client", "État satellite", "Colonie économique"],
+    contexte: "Ce terme péjoratif décrit un pays politiquement instable dont l'économie dépend de l'exportation d'une seule ressource, contrôlée par des intérêts étrangers."
+  },
+  {
+    content: "L'Amendement Platt de 1901 était une clause insérée dans la constitution de quel pays, autorisant l'intervention des États-Unis dans ses affaires ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "Cuba",
+    incorrect_answers: ["Le Panama", "Les Philippines", "Le Nicaragua"],
+    contexte: "Cet amendement a transformé Cuba en un protectorat de fait des États-Unis et a conduit à la concession de la base navale de Guantánamo."
+  },
+  {
+    content: "Quelle opération militaire américaine de 1989 a envahi le Panama pour déposer le dictateur Manuel Noriega ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Amérique",
+    correct_answer: "L'Opération Just Cause",
+    incorrect_answers: ["L'Opération Urgent Fury", "L'Opération Eagle Claw", "L'Opération Mongoose"],
+    contexte: "Justifiée par la lutte contre le trafic de drogue et la protection des citoyens américains, cette invasion a été controversée sur le plan du droit international."
+  },
+
+  # OCEANIE - CONFLITS - GEOPO
+
+  {
+    content: "Quel pacte de sécurité mutuelle lie l'Australie, la Nouvelle-Zélande et les États-Unis depuis 1951 ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Le traité ANZUS",
+    incorrect_answers: ["L'OTAN", "Le Pacte de Manille (SEATO)", "L'APEC"],
+    contexte: "Ce traité de défense collective a été un pilier de la sécurité dans le Pacifique, bien que les obligations envers la Nouvelle-Zélande aient été suspendues en 1986."
+  },
+  {
+    content: "Quel pays a pour chef d'État le monarque britannique, représenté par un gouverneur général ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "L'Australie (et la Nouvelle-Zélande, PNG, etc.)",
+    incorrect_answers: ["Fidji", "Samoa", "Vanuatu"],
+    contexte: "En tant que monarchie constitutionnelle et membre du Commonwealth, l'Australie reconnaît le monarque du Royaume-Uni comme son souverain."
+  },
+  {
+    content: "La Nouvelle-Zélande a suspendu sa participation au traité ANZUS en raison de sa politique contre quoi ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Les armes et l'énergie nucléaires",
+    incorrect_answers: ["L'apartheid", "La chasse à la baleine", "Les essais atmosphériques"],
+    contexte: "Dans les années 1980, la Nouvelle-Zélande a interdit l'entrée de navires à propulsion ou armement nucléaire dans ses eaux, ce qui a créé des tensions avec les États-Unis."
+  },
+  {
+    content: "Dans quelle ville australienne se trouve le siège du Parlement fédéral ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Canberra",
+    incorrect_answers: ["Sydney", "Melbourne", "Brisbane"],
+    contexte: "Canberra a été choisie comme capitale en 1908 comme un compromis entre les deux villes rivales que sont Sydney et Melbourne."
+  },
+  {
+    content: "Quel pays a administré la Papouasie-Nouvelle-Guinée jusqu'à son indépendance en 1975 ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "L'Australie",
+    incorrect_answers: ["Le Royaume-Uni", "L'Allemagne", "Les Pays-Bas"],
+    contexte: "Après la Première Guerre mondiale, l'Australie a pris le contrôle de l'ancienne colonie allemande et a géré le territoire jusqu'à son indépendance pacifique."
+  },
+  {
+    content: "Quel pays européen possède plusieurs territoires en Océanie, dont la Nouvelle-Calédonie et la Polynésie française ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
     correct_answer: "La France",
-    incorrect_answers: ["L'Allemagne", "L'Italie", "L'Espagne"],
-    contexte: "La France est un des cinq membres permanents du Conseil de sécurité de l'ONU. Elle a le droit de veto."
+    incorrect_answers: ["Le Royaume-Uni", "L'Espagne", "Le Portugal"],
+    contexte: "La France maintient une présence significative dans le Pacifique à travers ses collectivités d'outre-mer, qui ont des statuts d'autonomie variés."
   },
   {
-    content: "Quel est le chef de l'État de l'Autriche ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le chancelier", "Le roi", "Le Premier ministre"],
-    contexte: "Le président de l'Autriche est le chef de l'État. C'est une fonction principalement honorifique."
+    content: "Le Traité de Waitangi, signé en 1840, est le document fondateur de quel pays ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "La Nouvelle-Zélande",
+    incorrect_answers: ["L'Australie", "Fidji", "Tonga"],
+    contexte: "Ce traité a été signé entre la Couronne britannique et les chefs maoris. Son interprétation est encore une source de débats politiques et juridiques."
   },
   {
-    content: "Quel est le chef du gouvernement de la Norvège ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de la Norvège est le chef du gouvernement. Il dirige l'administration du pays."
+    content: "Quel pays du Pacifique est une république mais était une monarchie jusqu'à un coup d'État militaire en 1987 ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Fidji",
+    incorrect_answers: ["Tonga", "Samoa", "Îles Salomon"],
+    contexte: "Fidji a connu plusieurs coups d'État, souvent liés aux tensions entre la population indigène iTaukei et les Indo-Fidjiens."
   },
   {
-    content: "Quel pays est membre de l'OTAN, mais pas de l'Union européenne ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "La Norvège",
-    incorrect_answers: ["La Suède", "La Finlande", "L'Autriche"],
-    contexte: "La Norvège est un membre fondateur de l'OTAN, mais a refusé à deux reprises d'adhérer à l'UE par référendum."
+    content: "Le 'Forum des îles du Pacifique' est la principale organisation intergouvernementale de la région. Quel en est l'un des enjeux majeurs ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Le changement climatique",
+    incorrect_answers: ["La piraterie", "Les conflits frontaliers", "La course aux armements"],
+    contexte: "Pour de nombreux petits États insulaires, la montée du niveau de la mer due au changement climatique représente une menace existentielle."
   },
   {
-    content: "Quel est le pays le plus peuplé de l'Union européenne ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "L'Allemagne",
-    incorrect_answers: ["La France", "L'Italie", "L'Espagne"],
-    contexte: "L'Allemagne est le pays le plus peuplé de l'Union européenne, avec plus de 83 millions d'habitants."
+    content: "Nauru, l'une des plus petites républiques du monde, a été au centre de quelle politique controversée de l'Australie ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "La détention de demandeurs d'asile",
+    incorrect_answers: ["L'extraction de phosphate", "Les essais nucléaires", "L'installation de bases militaires"],
+    contexte: "Dans le cadre de la 'Solution du Pacifique', l'Australie a utilisé Nauru pour traiter et détenir les demandeurs d'asile arrivant par bateau."
   },
   {
-    content: "Quel est le siège de la Cour de justice de l'Union européenne ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "Luxembourg",
-    incorrect_answers: ["Bruxelles", "Strasbourg", "Genève"],
-    contexte: "Le Luxembourg est le siège de la Cour de justice de l'Union européenne. C'est la plus haute juridiction de l'UE."
+    content: "Quel est le seul royaume encore existant en Polynésie ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Tonga",
+    incorrect_answers: ["Fidji", "Hawaï", "Tahiti"],
+    contexte: "Tonga est une monarchie constitutionnelle qui n'a jamais été formellement colonisée par une puissance européenne."
   },
   {
-    content: "Quel est le chef de l'État de la Russie ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de la Russie est le chef de l'État. C'est une fonction principalement honorifique."
+    content: "L'Australie et le Timor oriental ont eu un long différend concernant quoi ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Le partage des revenus pétroliers et gaziers en mer",
+    incorrect_answers: ["Les droits de pêche", "Des revendications territoriales terrestres", "Le statut des réfugiés"],
+    contexte: "Le différend sur la frontière maritime en mer de Timor a été résolu en 2018 par un traité fixant une frontière permanente."
   },
   {
-    content: "Quel est le chef du gouvernement de l'Allemagne ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Europe",
-    correct_answer: "Le chancelier",
-    incorrect_answers: ["Le président", "Le roi", "Le Premier ministre"],
-    contexte: "Le chancelier de l'Allemagne est le chef du gouvernement. Il dirige l'administration du pays."
+    content: "Quel pays du Pacifique n'a pas d'armée et sa défense est assurée par la Nouvelle-Zélande en libre association ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Les Îles Cook (et Niue)",
+    incorrect_answers: ["Fidji", "Vanuatu", "Samoa"],
+    contexte: "Les Îles Cook sont un État souverain en libre association avec la Nouvelle-Zélande, qui reste responsable de sa défense et de sa politique étrangère sur demande."
   },
+  {
+    content: "Comment nomme-t-on la population aborigène de la Nouvelle-Zélande ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Les Maoris",
+    incorrect_answers: ["Les Aborigènes", "Les Kanaks", "Les Papous"],
+    contexte: "Les Maoris sont le peuple autochtone de Nouvelle-Zélande et leur culture a une influence significative sur tous les aspects de la société."
+  },
+  {
+    content: "Le Bikini Atoll, dans les Îles Marshall, est célèbre pour avoir été le site de quoi après la Seconde Guerre mondiale ?",
+    difficulty: "facile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Des essais nucléaires américains",
+    incorrect_answers: ["La signature d'un traité de paix", "Une bataille navale décisive", "La découverte d'une nouvelle espèce"],
+    contexte: "Les États-Unis y ont mené plus de 20 essais d'armes nucléaires, déplaçant la population locale et provoquant une contamination radioactive durable."
+  },
+  {
+    content: "Quel territoire français a tenu trois référendums sur son indépendance en 2018, 2020 et 2021, tous rejetés ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "La Nouvelle-Calédonie",
+    incorrect_answers: ["La Polynésie française", "Wallis-et-Futuna", "L'Île de la Réunion"],
+    contexte: "Prévus par l'Accord de Nouméa de 1998, ces référendums ont été marqués par une forte polarisation entre les partisans de l'indépendance (principalement Kanaks) et les loyalistes."
+  },
+  {
+    content: "Quel conflit sécessionniste (1988-1998) a opposé l'île de Bougainville au gouvernement de Papouasie-Nouvelle-Guinée, principalement à cause d'une mine ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "La guerre civile de Bougainville",
+    incorrect_answers: ["La crise des Salomon", "Le conflit du Timor oriental", "La rébellion de la Nouvelle-Guinée occidentale"],
+    contexte: "Le conflit, déclenché par des griefs environnementaux et économiques liés à la mine de cuivre de Panguna, a fait des milliers de morts et a mené à une autonomie accrue."
+  },
+  {
+    content: "L'affaire du 'Rainbow Warrior' en 1985 a impliqué le sabotage d'un navire de Greenpeace dans le port d'Auckland par des agents de quel pays ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "La France",
+    incorrect_answers: ["Les États-Unis", "Le Royaume-Uni", "L'Union Soviétique"],
+    contexte: "Les agents français ont coulé le navire pour l'empêcher de protester contre les essais nucléaires français sur l'atoll de Moruroa, provoquant un scandale international."
+  },
+  {
+    content: "Quelle politique australienne, souvent critiquée, visait à assimiler de force les enfants aborigènes en les retirant de leur famille ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Les Générations volées (Stolen Generations)",
+    incorrect_answers: ["La politique de l'Australie blanche", "La Solution du Pacifique", "Le Plan Colombo"],
+    contexte: "Cette politique, menée du début du 20e siècle jusque dans les années 1970, a eu des conséquences traumatisantes et durables sur les communautés indigènes."
+  },
+  {
+    content: "RAMSI (Regional Assistance Mission to Solomon Islands) était une mission internationale de maintien de la paix dirigée par quel pays ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "L'Australie",
+    incorrect_answers: ["La Nouvelle-Zélande", "Les Nations Unies", "Les États-Unis"],
+    contexte: "Lancée en 2003 à la demande des Îles Salomon, RAMSI a réussi à restaurer l'ordre après des années de conflit ethnique et d'effondrement de l'État."
+  },
+  {
+    content: "La 'politique de l'Australie blanche', abolie progressivement après la Seconde Guerre mondiale, visait à restreindre quoi ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "L'immigration des non-Européens",
+    incorrect_answers: ["Le droit de vote des Aborigènes", "Les investissements étrangers", "Les mariages mixtes"],
+    contexte: "Cette politique a façonné la démographie australienne pendant des décennies avant d'être remplacée par une politique d'immigration multiculturelle."
+  },
+  {
+    content: "Quel pays est au cœur de la rivalité géopolitique entre la Chine et Taïwan dans le Pacifique, les deux cherchant à obtenir sa reconnaissance diplomatique ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Les nations insulaires du Pacifique (ex: Îles Salomon, Kiribati)",
+    incorrect_answers: ["L'Australie", "La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée"],
+    contexte: "La 'diplomatie du chéquier' a vu plusieurs nations insulaires changer leur reconnaissance de Taïwan à la Chine, et vice-versa, en échange d'aide économique."
+  },
+  {
+    content: "Quel est le principal enjeu géopolitique du détroit de Torres, qui sépare l'Australie de la Nouvelle-Guinée ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "La gestion de la frontière et des droits traditionnels",
+    incorrect_answers: ["La présence de pirates", "La dispute sur la souveraineté des îles", "La construction d'un pont"],
+    contexte: "Un traité unique permet aux habitants traditionnels des deux côtés de circuler librement sans passeport pour maintenir leurs liens culturels et familiaux."
+  },
+  {
+    content: "En 2000, un coup d'État civil à Fidji a été mené par George Speight pour quelles raisons principales ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Pour renforcer la suprématie politique des indigènes iTaukei",
+    incorrect_answers: ["Pour protester contre la corruption", "Pour instaurer une république islamique", "Pour nationaliser l'industrie sucrière"],
+    contexte: "Le coup d'État a renversé le Premier ministre indo-fidjien Mahendra Chaudhry, exacerbant les tensions ethniques dans le pays."
+  },
+  {
+    content: "L'Indonésie fait face à un mouvement séparatiste de longue date dans quelle région de l'île de Nouvelle-Guinée ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "La Papouasie occidentale",
+    incorrect_answers: ["Aceh", "Les Moluques", "Le Timor oriental"],
+    contexte: "Le Mouvement pour une Papouasie libre (OPM) mène une lutte armée de faible intensité depuis l'intégration de la région à l'Indonésie dans les années 1960."
+  },
+  {
+    content: "Le 'Pacific Islands Forum Fisheries Agency' (FFA) a été créé pour aider les nations insulaires à gérer et conserver quelle ressource précieuse ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Les stocks de thon",
+    incorrect_answers: ["Les récifs coralliens", "Les minéraux des fonds marins", "Les réserves d'eau douce"],
+    contexte: "Cette coopération permet aux petits États d'augmenter leurs revenus et de lutter contre la pêche illégale dans leurs vastes zones économiques exclusives."
+  },
+  {
+    content: "Quelle crise constitutionnelle australienne de 1975 a vu le gouverneur général démettre de ses fonctions le Premier ministre élu ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "La crise constitutionnelle de 1975 ('The Dismissal')",
+    incorrect_answers: ["L'affaire Mabo", "Le schisme du parti travailliste", "L'affaire des 'spy papers'"],
+    contexte: "Le gouverneur général John Kerr a révoqué le Premier ministre Gough Whitlam, un événement sans précédent qui a suscité un débat intense sur le rôle de la Couronne."
+  },
+  {
+    content: "Quel pays du Pacifique a connu une 'guerre civile' de faible intensité connue sous le nom de 'Tanna Wars' dans les années 1980 ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Vanuatu",
+    incorrect_answers: ["Fidji", "Îles Salomon", "Papouasie-Nouvelle-Guinée"],
+    contexte: "Juste avant l'indépendance, des mouvements sécessionnistes, comme celui de Jimmy Stevens sur l'île d'Espiritu Santo, ont menacé l'unité du nouvel État."
+  },
+  {
+    content: "Quel pays, en libre association avec les États-Unis, abrite le site d'essais de missiles balistiques Ronald Reagan ?",
+    difficulty: "intermédiaire",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Les Îles Marshall",
+    incorrect_answers: ["Palaos", "La Micronésie", "Guam"],
+    contexte: "L'atoll de Kwajalein est une installation militaire américaine cruciale pour les tests de défense antimissile et les opérations spatiales."
+  },
+  {
+    content: "La 'Canberra Commission on the Elimination of Nuclear Weapons' a été une initiative de quel pays en 1995 ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "L'Australie",
+    incorrect_answers: ["La Nouvelle-Zélande", "Le Japon", "Le Canada"],
+    contexte: "Cette commission internationale, convoquée par le gouvernement australien, a produit un rapport influent sur les étapes pratiques du désarmement nucléaire."
+  },
+  {
+    content: "Quelle décision de la Haute Cour d'Australie en 1992 a annulé la doctrine de 'terra nullius' et reconnu pour la première fois les titres fonciers autochtones ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "La décision Mabo (Mabo v Queensland)",
+    incorrect_answers: ["La décision Wik", "La décision Koowarta", "La décision Franklin Dam"],
+    contexte: "Cette décision historique a renversé le principe juridique selon lequel l'Australie était une terre n'appartenant à personne avant la colonisation britannique."
+  },
+  {
+    content: "Le 'Traité de Rabaul' de 1947 est un accord informel qui a influencé la politique étrangère de quel pays pendant la Guerre Froide ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "L'Australie",
+    incorrect_answers: ["La Nouvelle-Zélande", "L'Indonésie", "Les Philippines"],
+    contexte: "L'accord secret entre l'Australie, les États-Unis et le Royaume-Uni définissait les responsabilités stratégiques dans la région en cas de conflit."
+  },
+  {
+    content: "La constitution de quel pays du Pacifique contient une 'clause d'incapacité', utilisée pour démettre des présidents lors de crises politiques ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Nauru",
+    incorrect_answers: ["Palaos", "Kiribati", "Vanuatu"],
+    contexte: "Cette clause, relative à l'incapacité du président de gouverner, a été invoquée à plusieurs reprises dans le contexte de l'instabilité politique chronique de Nauru."
+  },
+  {
+    content: "Quel pays a été le premier au monde à accorder le droit de vote aux femmes en 1893 ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "La Nouvelle-Zélande",
+    incorrect_answers: ["L'Australie", "La Finlande", "Le Royaume-Uni"],
+    contexte: "Ce jalon progressiste a été le résultat d'années de campagne menée par le mouvement des suffragettes, dirigé par des figures comme Kate Sheppard."
+  },
+  {
+    content: "Le 'groupe de pointe mélanésien' (MSG) est une organisation sous-régionale visant à promouvoir la coopération. Quel en est un membre observateur controversé ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Le Mouvement uni pour la libération de la Papouasie occidentale (ULMWP)",
+    incorrect_answers: ["Le Timor oriental", "La Nouvelle-Calédonie (FLNKS)", "L'Indonésie"],
+    contexte: "L'inclusion de l'ULMWP est une source de tension avec l'Indonésie, qui est un membre associé et s'oppose aux mouvements séparatistes papous."
+  },
+  {
+    content: "La 'crise des lettres d'or' ('Gold Letter Crisis') en 1987 à Palaos était liée à la pression pour approuver quel accord avec les États-Unis ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Le Pacte de libre association (Compact of Free Association)",
+    incorrect_answers: ["Un accord sur l'établissement d'une base navale", "Un traité d'extradition", "Un accord de pêche"],
+    contexte: "Le pacte entrait en conflit avec la constitution anti-nucléaire de Palaos, nécessitant un vote à 75% difficile à obtenir, ce qui a mené à une crise politique intense."
+  },
+  {
+    content: "Quel scandale politique a éclaté en Australie en 2004, impliquant des allégations d'espionnage contre le cabinet du Timor oriental pendant les négociations sur les frontières maritimes ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "L'affaire des écoutes du Timor oriental (Australia-East Timor spying scandal)",
+    incorrect_answers: ["L'affaire 'Children Overboard'", "L'affaire AWB", "Le scandale de l'huile de Mórcomo"],
+    contexte: "Il a été révélé que les services secrets australiens avaient placé des micros pour obtenir un avantage dans les négociations sur les ressources pétrolières et gazières."
+  },
+  {
+    content: "La 'doctrine Howard', du nom d'un Premier ministre australien, affirmait le droit de l'Australie à mener quoi dans la région ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Des frappes préventives contre des menaces terroristes",
+    incorrect_answers: ["Des interventions humanitaires sans l'aval de l'ONU", "Un blocus économique contre les États en faillite", "L'annexion de territoires non réclamés"],
+    contexte: "Annoncée après les attentats de Bali en 2002, cette doctrine a suscité de vives réactions de la part de ses voisins d'Asie du Sud-Est, qui y ont vu une menace pour leur souveraineté."
+  },
+  {
+    content: "Le 'Fono' est le nom du parlement national de quel pays polynésien ?",
+    difficulty: "difficile",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Océanie",
+    correct_answer: "Samoa (et Tokelau)",
+    incorrect_answers: ["Tonga", "Tuvalu", "Niue"],
+    contexte: "Le Fono samoan a été le théâtre d'une crise constitutionnelle majeure en 2021, lorsque le parti au pouvoir a refusé de céder le pouvoir après une défaite électorale."
+  }
 
-  # Asie - Facile (46-60)
-  {
-    content: "Quel pays est le siège de l'Organisation de coopération de Shanghai ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Chine",
-    incorrect_answers: ["Japon", "Inde", "Russie"],
-    contexte: "La Chine est le siège de l'Organisation de coopération de Shanghai, une organisation régionale axée sur la sécurité."
-  },
-  {
-    content: "Quel pays est le plus peuplé du monde ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'Inde",
-    incorrect_answers: ["La Chine", "Les États-Unis", "Le Brésil"],
-    contexte: "L'Inde a dépassé la Chine en tant que pays le plus peuplé du monde, avec plus de 1,4 milliard d'habitants."
-  },
-  {
-    content: "Quel est le chef de l'État du Japon ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'empereur",
-    incorrect_answers: ["Le Premier ministre", "Le président", "Le roi"],
-    contexte: "L'empereur du Japon est le chef de l'État. Sa fonction est principalement cérémonielle."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Japon ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["L'empereur", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre du Japon est le chef du gouvernement et dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Asie ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "La Russie",
-    incorrect_answers: ["La Chine", "L'Inde", "Le Brésil"],
-    contexte: "Bien que transcontinentale, la majeure partie du territoire de la Russie se trouve en Asie, ce qui en fait le plus grand pays du continent."
-  },
-  {
-    content: "Quel est le chef de l'État de l'Inde ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Inde est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de l'Inde ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de l'Inde est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre du G7 ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le Japon",
-    incorrect_answers: ["La Chine", "L'Inde", "La Corée du Sud"],
-    contexte: "Le Japon est un des sept membres du G7, un groupe des pays les plus industrialisés du monde."
-  },
-  {
-    content: "Quel pays est le plus grand producteur de riz au monde ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "La Chine",
-    incorrect_answers: ["L'Inde", "Le Vietnam", "La Thaïlande"],
-    contexte: "La Chine est le plus grand producteur de riz au monde, avec une production annuelle de plus de 200 millions de tonnes."
-  },
-  {
-    content: "Quel est le chef de l'État de l'Arabie Saoudite ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi de l'Arabie Saoudite est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel pays est un membre fondateur de l'ANASE (Association des nations de l'Asie du Sud-Est) ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "La Thaïlande",
-    incorrect_answers: ["Le Cambodge", "Le Vietnam", "La Birmanie"],
-    contexte: "La Thaïlande est l'un des cinq membres fondateurs de l'ANASE, créée en 1967."
-  },
-  {
-    content: "Quel pays est le plus peuplé d'Asie du Sud-Est ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'Indonésie",
-    incorrect_answers: ["Le Vietnam", "Les Philippines", "La Thaïlande"],
-    contexte: "L'Indonésie est le pays le plus peuplé d'Asie du Sud-Est, avec plus de 270 millions d'habitants."
-  },
-  {
-    content: "Quel pays est le plus grand producteur de pétrole au monde ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'Arabie Saoudite",
-    incorrect_answers: ["La Russie", "Les États-Unis", "Le Brésil"],
-    contexte: "L'Arabie Saoudite est le plus grand producteur de pétrole au monde, avec une production journalière de plus de 10 millions de barils."
-  },
-  {
-    content: "Quel est le chef de l'État de la Chine ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de la Chine est le chef de l'État. Il est également le chef du Parti communiste chinois."
-  },
-  {
-    content: "Quel pays a signé l'accord de libre-échange avec l'Union européenne en 2018 ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le Japon",
-    incorrect_answers: ["La Chine", "L'Inde", "La Corée du Sud"],
-    contexte: "L'Union européenne et le Japon ont signé un accord de libre-échange en 2018 pour faciliter les échanges commerciaux."
-  },
+  # AFRIQUE - CONFLITS - GEOPO
 
-  # Asie - Intermédiaire (61-75)
   {
-    content: "Quel est le nom du Parlement de la Chine ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le Congrès national du peuple",
-    incorrect_answers: ["L'Assemblée populaire nationale", "Le Conseil d'État", "Le Parlement de Chine"],
-    contexte: "Le Congrès national du peuple est l'organe législatif suprême de la Chine. Il est le plus grand parlement du monde."
-  },
-  {
-    content: "Quel est le nom du traité qui a créé l'Association des nations de l'Asie du Sud-Est (ANASE) ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le traité de Bangkok",
-    incorrect_answers: ["Le traité de Manille", "Le traité de Singapour", "Le traité de Kuala Lumpur"],
-    contexte: "Le traité de Bangkok, signé en 1967, a créé l'ANASE, une organisation intergouvernementale régionale."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Asie du Sud-Est ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'Indonésie",
-    incorrect_answers: ["Le Vietnam", "La Thaïlande", "Le Cambodge"],
-    contexte: "L'Indonésie est le plus grand pays d'Asie du Sud-Est en superficie, avec plus de 1,9 million de km²."
-  },
-  {
-    content: "Quel est le chef de l'État de la Corée du Sud ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de la Corée du Sud est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de la Corée du Sud ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de la Corée du Sud est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel est le nom de la zone économique spéciale créée en 1980 en Chine pour attirer les investissements étrangers ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Shenzhen",
-    incorrect_answers: ["Shanghai", "Pékin", "Hong Kong"],
-    contexte: "Shenzhen est la première zone économique spéciale de Chine. C'est une ville de plus de 12 millions d'habitants."
-  },
-  {
-    content: "Quel est le chef de l'État de l'Iran ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Iran est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de l'Iran ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Iran est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est un membre permanent du Conseil de sécurité de l'ONU ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "La Chine",
-    incorrect_answers: ["Le Japon", "L'Inde", "La Corée du Sud"],
-    contexte: "La Chine est l'un des cinq membres permanents du Conseil de sécurité de l'ONU, avec un droit de veto."
-  },
-  {
-    content: "Quel pays est le plus peuplé d'Asie du Sud-Est ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'Indonésie",
-    incorrect_answers: ["Le Vietnam", "La Thaïlande", "Le Cambodge"],
-    contexte: "L'Indonésie est le pays le plus peuplé d'Asie du Sud-Est, avec plus de 270 millions d'habitants."
-  },
-  {
-    content: "Quel pays est le plus grand producteur de pétrole au monde ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'Arabie Saoudite",
-    incorrect_answers: ["La Russie", "Les États-Unis", "Le Brésil"],
-    contexte: "L'Arabie Saoudite est le plus grand producteur de pétrole au monde, avec une production journalière de plus de 10 millions de barils."
-  },
-  {
-    content: "Quel est le chef de l'État du Japon ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'empereur",
-    incorrect_answers: ["Le Premier ministre", "Le président", "Le chancelier"],
-    contexte: "L'empereur du Japon est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Japon ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["L'empereur", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre du Japon est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel est le pays le plus peuplé du monde ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'Inde",
-    incorrect_answers: ["La Chine", "Les États-Unis", "Le Brésil"],
-    contexte: "L'Inde a dépassé la Chine en tant que pays le plus peuplé du monde, avec plus de 1,4 milliard d'habitants."
-  },
-  {
-    content: "Quel est le chef de l'État de l'Inde ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Inde est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-
-  # Asie - Difficile (76-90)
-  {
-    content: "Quel est le nom du Parlement de l'Inde ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le Parlement de l'Inde",
-    incorrect_answers: ["Le Congrès national du peuple", "Le Conseil d'État", "L'Assemblée populaire nationale"],
-    contexte: "Le Parlement de l'Inde est l'organe législatif de l'Inde. Il est composé de deux chambres, la Lok Sabha et la Rajya Sabha."
-  },
-  {
-    content: "Quel est le nom du traité qui a créé l'Association des nations de l'Asie du Sud-Est (ANASE) ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le traité de Bangkok",
-    incorrect_answers: ["Le traité de Manille", "Le traité de Singapour", "Le traité de Kuala Lumpur"],
-    contexte: "Le traité de Bangkok, signé en 1967, a créé l'ANASE. C'est une organisation intergouvernementale régionale de l'Asie du Sud-Est."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Asie du Sud-Est ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'Indonésie",
-    incorrect_answers: ["Le Vietnam", "La Thaïlande", "Le Cambodge"],
-    contexte: "L'Indonésie est le plus grand pays d'Asie du Sud-Est en superficie. Il a une superficie de 1,9 million de km²."
-  },
-  {
-    content: "Quel est le chef de l'État de la Corée du Sud ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de la Corée du Sud est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de la Corée du Sud ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de la Corée du Sud est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est le plus grand producteur de riz au monde ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "La Chine",
-    incorrect_answers: ["L'Inde", "Le Vietnam", "La Thaïlande"],
-    contexte: "La Chine est le plus grand producteur de riz au monde. Il a une production annuelle de plus de 200 millions de tonnes."
-  },
-  {
-    content: "Quel est le chef de l'État de l'Arabie Saoudite ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi de l'Arabie Saoudite est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de l'Arabie Saoudite ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de l'Arabie Saoudite est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre de l'OPEP ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'Arabie Saoudite",
-    incorrect_answers: ["La Chine", "L'Inde", "Le Brésil"],
-    contexte: "L'Arabie Saoudite est un des 13 membres de l'OPEP. Elle est le plus grand producteur de pétrole au monde."
-  },
-  {
-    content: "Quel est le pays le plus peuplé d'Asie du Sud-Est ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'Indonésie",
-    incorrect_answers: ["Le Vietnam", "La Thaïlande", "Le Cambodge"],
-    contexte: "L'Indonésie est le pays le plus peuplé d'Asie du Sud-Est. Il a plus de 270 millions d'habitants."
-  },
-  {
-    content: "Quel pays est le plus grand producteur de pétrole au monde ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'Arabie Saoudite",
-    incorrect_answers: ["La Russie", "Les États-Unis", "Le Brésil"],
-    contexte: "L'Arabie Saoudite est le plus grand producteur de pétrole au monde. Elle a une production annuelle de plus de 10 millions de barils par jour."
-  },
-  {
-    content: "Quel est le chef de l'État du Japon ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'empereur",
-    incorrect_answers: ["Le Premier ministre", "Le président", "Le chancelier"],
-    contexte: "L'empereur du Japon est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Japon ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["L'empereur", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre du Japon est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel est le pays le plus peuplé du monde ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "L'Inde",
-    incorrect_answers: ["La Chine", "Les États-Unis", "Le Brésil"],
-    contexte: "L'Inde est le pays le plus peuplé du monde. Il a plus de 1,4 milliard d'habitants."
-  },
-  {
-    content: "Quel est le chef de l'État de l'Inde ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Asie",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Inde est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-
-  # Océanie - Facile (91-105)
-  {
-    content: "Quel est le chef de l'État de l'Australie ?",
+    content: "Quel système de ségrégation raciale a été officiellement mis en place en Afrique du Sud de 1948 à 1991 ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi d'Australie est le chef de l'État. C'est une fonction principalement honorifique."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "L'apartheid",
+    incorrect_answers: ["La ségrégation", "Le colonialisme", "L'esclavage"],
+    contexte: "L'apartheid était un système de développement séparé qui a institutionnalisé la discrimination raciale, maintenant la domination de la minorité blanche."
   },
   {
-    content: "Quel est le chef du gouvernement de l'Australie ?",
+    content: "Quel leader anti-apartheid est devenu le premier président noir d'Afrique du Sud en 1994 après 27 ans de prison ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre d'Australie est le chef du gouvernement. Il dirige l'administration du pays."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "Nelson Mandela",
+    incorrect_answers: ["Desmond Tutu", "F.W. de Klerk", "Thabo Mbeki"],
+    contexte: "Figure emblématique de la lutte pour l'égalité, Nelson Mandela a mené la transition de l'Afrique du Sud vers une démocratie multiraciale."
   },
   {
-    content: "Quel est le pays le plus peuplé de l'Océanie ?",
+    content: "Quel génocide de 1994 a vu le massacre d'environ 800 000 Tutsis et Hutus modérés par des extrémistes Hutus ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est le pays le plus peuplé de l'Océanie. Il a plus de 25 millions d'habitants."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "Le génocide des Tutsis au Rwanda",
+    incorrect_answers: ["Le génocide arménien", "Le génocide au Darfour", "Le génocide cambodgien"],
+    contexte: "Ce massacre de masse s'est déroulé sur une période de 100 jours et reste l'un des génocides les plus rapides de l'histoire."
   },
   {
-    content: "Quel est le chef de l'État de la Nouvelle-Zélande ?",
+    content: "Quelle est la principale organisation intergouvernementale panafricaine, dont le siège est à Addis-Abeba ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi de la Nouvelle-Zélande est le chef de l'État. C'est une fonction principalement honorifique."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "L'Union Africaine (UA)",
+    incorrect_answers: ["L'ONU", "La CEDEAO", "L'Union Européenne"],
+    contexte: "Succédant à l'Organisation de l'Unité Africaine (OUA), l'UA vise à promouvoir la paix, la sécurité et le développement économique du continent."
   },
   {
-    content: "Quel est le chef du gouvernement de la Nouvelle-Zélande ?",
+    content: "Quel pays a été le premier d'Afrique subsaharienne à obtenir son indépendance en 1957, sous la direction de Kwame Nkrumah ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre de la Nouvelle-Zélande est le chef du gouvernement. Il dirige l'administration du pays."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "Le Ghana",
+    incorrect_answers: ["Le Nigeria", "Le Kenya", "L'Éthiopie"],
+    contexte: "L'indépendance du Ghana a inspiré de nombreux autres mouvements de libération à travers le continent africain."
   },
   {
-    content: "Quel pays est membre du G7 ?",
+    content: "Le 'Printemps arabe' de 2011 a commencé dans quel pays d'Afrique du Nord, entraînant la chute du président Ben Ali ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est un des sept membres du G7. Il est un des pays les plus riches du monde."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "La Tunisie",
+    incorrect_answers: ["L'Égypte", "La Libye", "Le Maroc"],
+    contexte: "Ce mouvement de protestation populaire contre les régimes autoritaires s'est rapidement propagé à d'autres pays du monde arabe."
   },
   {
-    content: "Quel pays est le plus grand en superficie de l'Océanie ?",
+    content: "Quelle guerre a opposé la France à un mouvement de libération nationale de 1954 à 1962, menant à l'indépendance du pays ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est le plus grand pays d'Océanie en superficie. Il a une superficie de 7,7 millions de km²."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "La Guerre d'Algérie",
+    incorrect_answers: ["La Guerre d'Indochine", "La Crise de Suez", "La Guerre du Maroc"],
+    contexte: "Ce conflit violent, mené par le Front de Libération Nationale (FLN), a mis fin à 132 ans de colonisation française en Algérie."
   },
   {
-    content: "Quel est le chef de l'État de la Papouasie-Nouvelle-Guinée ?",
+    content: "Quel désert, le plus grand du monde, est une zone d'instabilité géopolitique et de lutte contre les groupes djihadistes ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi de la Papouasie-Nouvelle-Guinée est le chef de l'État. C'est une fonction principalement honorifique."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "Le Sahara",
+    incorrect_answers: ["Le Kalahari", "Le Namib", "Le Gobi"],
+    contexte: "La région du Sahel, en bordure sud du Sahara, est particulièrement touchée par les activités de groupes comme Al-Qaïda et l'État Islamique."
   },
   {
-    content: "Quel est le chef du gouvernement de la Papouasie-Nouvelle-Guinée ?",
+    content: "Quel pays a été dirigé par le colonel Mouammar Kadhafi pendant 42 ans avant son renversement et sa mort en 2011 ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre de la Papouasie-Nouvelle-Guinée est le chef du gouvernement. Il dirige l'administration du pays."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "La Libye",
+    incorrect_answers: ["L'Égypte", "L'Algérie", "Le Soudan"],
+    contexte: "La chute de Kadhafi, soutenue par une intervention de l'OTAN, a plongé la Libye dans une longue période de guerre civile et d'instabilité."
   },
   {
-    content: "Quel pays est le plus grand producteur de bauxite au monde ?",
+    content: "Boko Haram est un groupe terroriste islamiste qui sévit principalement dans quel pays ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est le plus grand producteur de bauxite au monde. Il a une production annuelle de plus de 100 millions de tonnes."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "Le Nigeria",
+    incorrect_answers: ["La Somalie", "Le Mali", "Le Kenya"],
+    contexte: "Actif dans le nord-est du Nigeria et les pays voisins, Boko Haram est connu pour ses enlèvements de masse, dont celui des lycéennes de Chibok."
   },
   {
-    content: "Quel est le chef de l'État de Fidji ?",
+    content: "Quel pays est le plus jeune du monde, ayant obtenu son indépendance du Soudan en 2011 après des décennies de guerre civile ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de Fidji est le chef de l'État. C'est une fonction principalement honorifique."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "Le Soudan du Sud",
+    incorrect_answers: ["L'Érythrée", "La Namibie", "Le Kosovo"],
+    contexte: "Malgré l'indépendance, le Soudan du Sud a rapidement sombré dans sa propre guerre civile, marquée par des violences ethniques."
   },
   {
-    content: "Quel est le chef du gouvernement de Fidji ?",
+    content: "Quel fleuve est au cœur de tensions géopolitiques entre l'Égypte, le Soudan et l'Éthiopie en raison de la construction d'un grand barrage ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de Fidji est le chef du gouvernement. Il dirige l'administration du pays."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "Le Nil",
+    incorrect_answers: ["Le Congo", "Le Niger", "Le Zambèze"],
+    contexte: "Le Grand barrage de la Renaissance éthiopienne suscite des craintes en Égypte et au Soudan quant à leur approvisionnement en eau."
   },
   {
-    content: "Quel pays est le plus grand en superficie de l'Océanie ?",
+    content: "La 'Conférence de Berlin' de 1884-1885 a formalisé quoi ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est le plus grand pays d'Océanie en superficie. Il a une superficie de 7,7 millions de km²."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "Le partage de l'Afrique entre les puissances coloniales européennes",
+    incorrect_answers: ["L'abolition de l'esclavage", "La création de l'ONU", "La fin de la Première Guerre mondiale"],
+    contexte: "Cette conférence a établi les règles de la colonisation, accélérant la 'course à l'Afrique' sans la participation d'aucun dirigeant africain."
   },
   {
-    content: "Quel est le chef de l'État de la Nouvelle-Zélande ?",
+    content: "Quel pays a été fondé par des esclaves américains affranchis au 19e siècle ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi de la Nouvelle-Zélande est le chef de l'État. C'est une fonction principalement honorifique."
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    region: "Afrique",
+    correct_answer: "Le Liberia",
+    incorrect_answers: ["La Sierra Leone", "Le Ghana", "Le Sénégal"],
+    contexte: "Sa capitale, Monrovia, est nommée en l'honneur du président américain James Monroe. Le pays a connu deux guerres civiles dévastatrices."
   },
   {
-    content: "Quel est le chef du gouvernement de la Nouvelle-Zélande ?",
+    content: "Quel mouvement idéologique prône l'unité et la solidarité des peuples africains, et a été porté par des leaders comme Kwame Nkrumah ?",
     difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre de la Nouvelle-Zélande est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-
-  # Océanie - Intermédiaire (106-120)
-  {
-    content: "Quel est le nom du Parlement de l'Australie ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Parlement d'Australie",
-    incorrect_answers: ["Le Sénat", "La Chambre des représentants", "Le Congrès"],
-    contexte: "Le Parlement d'Australie est l'organe législatif de l'Australie. Il est composé de deux chambres, le Sénat et la Chambre des représentants."
-  },
-  {
-    content: "Quel est le nom du traité qui a créé la Communauté du Pacifique (SPC) ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Accord de Canberra",
-    incorrect_answers: ["L'Accord de Nouméa", "L'Accord de Nadi", "L'Accord de Suva"],
-    contexte: "L'Accord de Canberra, signé en 1947, a créé la Communauté du Pacifique. C'est une organisation intergouvernementale régionale de l'Océanie."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Océanie ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est le plus grand pays d'Océanie en superficie. Il a une superficie de 7,7 millions de km²."
-  },
-  {
-    content: "Quel est le chef de l'État de la Papouasie-Nouvelle-Guinée ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi de la Papouasie-Nouvelle-Guinée est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de la Papouasie-Nouvelle-Guinée ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre de la Papouasie-Nouvelle-Guinée est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est le plus grand producteur de bauxite au monde ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est le plus grand producteur de bauxite au monde. Il a une production annuelle de plus de 100 millions de tonnes."
-  },
-  {
-    content: "Quel est le chef de l'État de Fidji ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de Fidji est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de Fidji ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de Fidji est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Océanie ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est le plus grand pays d'Océanie en superficie. Il a une superficie de 7,7 millions de km²."
-  },
-  {
-    content: "Quel est le chef de l'État de la Nouvelle-Zélande ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi de la Nouvelle-Zélande est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de la Nouvelle-Zélande ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre de la Nouvelle-Zélande est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre de l'APEC ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est un des 21 membres de l'APEC. C'est une organisation intergouvernementale régionale de l'Asie-Pacifique."
-  },
-  {
-    content: "Quel est le chef de l'État des îles Salomon ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi des îles Salomon est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement des îles Salomon ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre des îles Salomon est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Océanie ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est le plus grand pays d'Océanie en superficie. Il a une superficie de 7,7 millions de km²."
-  },
-
-  # Océanie - Difficile (121-135)
-  {
-    content: "Quel est le nrégime politique de la Nouvelle-Zélande ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Monarchie constitutionnelle",
-    incorrect_answers: ["Le Sénat", "La Chambre des représentants", "Le Congrès"],
-    contexte: "Le Parlement de la Nouvelle-Zélande est l'organe législatif de la Nouvelle-Zélande. Il est composé de deux chambres, le Sénat et la Chambre des représentants."
-  },
-  {
-    content: "Quel est le nom du traité qui a créé la Communauté du Pacifique (SPC) ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Accord de Canberra",
-    incorrect_answers: ["L'Accord de Nouméa", "L'Accord de Nadi", "L'Accord de Suva"],
-    contexte: "L'Accord de Canberra, signé en 1947, a créé la Communauté du Pacifique. C'est une organisation intergouvernementale régionale de l'Océanie."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Océanie ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est le plus grand pays d'Océanie en superficie. Il a une superficie de 7,7 millions de km²."
-  },
-  {
-    content: "Quel est le chef de l'État de la Papouasie-Nouvelle-Guinée ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi de la Papouasie-Nouvelle-Guinée est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de la Papouasie-Nouvelle-Guinée ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre de la Papouasie-Nouvelle-Guinée est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est le plus grand producteur de bauxite au monde ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est le plus grand producteur de bauxite au monde. Il a une production annuelle de plus de 100 millions de tonnes."
-  },
-  {
-    content: "Quel est le chef de l'État de Fidji ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de Fidji est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de Fidji ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de Fidji est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Océanie ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est le plus grand pays d'Océanie en superficie. Il a une superficie de 7,7 millions de km²."
-  },
-  {
-    content: "Quel est le chef de l'État de la Nouvelle-Zélande ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi de la Nouvelle-Zélande est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de la Nouvelle-Zélande ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre de la Nouvelle-Zélande est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre de l'APEC ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est un des 21 membres de l'APEC. C'est une organisation intergouvernementale régionale de l'Asie-Pacifique."
-  },
-  {
-    content: "Quel est le chef de l'État des îles Salomon ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi des îles Salomon est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement des îles Salomon ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre des îles Salomon est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Océanie ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Océanie",
-    correct_answer: "L'Australie",
-    incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
-    contexte: "L'Australie est le plus grand pays d'Océanie en superficie. Il a une superficie de 7,7 millions de km²."
-  },
-
-  # Amérique - Facile (136-150)
-  {
-    content: "Quel est le chef de l'État du Canada ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi du Canada est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Canada ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre du Canada est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel est le pays le plus peuplé de l'Amérique ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Les États-Unis",
-    incorrect_answers: ["Le Brésil", "Le Mexique", "Le Canada"],
-    contexte: "Les États-Unis sont le pays le plus peuplé de l'Amérique. Il a plus de 330 millions d'habitants."
-  },
-  {
-    content: "Quel est le chef de l'État des États-Unis ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président des États-Unis est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement des États-Unis ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président des États-Unis est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre du G7 ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Canada",
-    incorrect_answers: ["Le Brésil", "Le Mexique", "L'Argentine"],
-    contexte: "Le Canada est un des sept membres du G7. Il est un des pays les plus riches du monde."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Amérique ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Canada",
-    incorrect_answers: ["Les États-Unis", "Le Brésil", "Le Mexique"],
-    contexte: "Le Canada est le plus grand pays d'Amérique en superficie. Il a une superficie de 9,9 millions de km²."
-  },
-  {
-    content: "Quel est le chef de l'État du Mexique ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Mexique est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Mexique ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Mexique est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre de l'ALENA ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Canada",
-    incorrect_answers: ["Le Brésil", "Le Mexique", "L'Argentine"],
-    contexte: "Le Canada est un des trois membres de l'ALENA. C'est un accord de libre-échange entre le Canada, le Mexique et les États-Unis."
-  },
-  {
-    content: "Quel est le chef de l'État du Brésil ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Brésil est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Brésil ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Brésil est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre du Mercosur ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Brésil",
-    incorrect_answers: ["Le Canada", "Le Mexique", "Les États-Unis"],
-    contexte: "Le Brésil est un des quatre membres du Mercosur. C'est un marché commun de l'Amérique du Sud."
-  },
-  {
-    content: "Quel est le pays le plus peuplé de l'Amérique du Sud ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Brésil",
-    incorrect_answers: ["Le Mexique", "Le Pérou", "La Colombie"],
-    contexte: "Le Brésil est le pays le plus peuplé de l'Amérique du Sud. Il a plus de 210 millions d'habitants."
-  },
-  {
-    content: "Quel est le chef de l'État de l'Argentine ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Argentine est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-
-  # Amérique - Intermédiaire (151-165)
-  {
-    content: "Quel est le nom du Parlement du Canada ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Parlement du Canada",
-    incorrect_answers: ["Le Sénat", "La Chambre des représentants", "Le Congrès"],
-    contexte: "Le Parlement du Canada est l'organe législatif du Canada. Il est composé de deux chambres, le Sénat et la Chambre des communes."
-  },
-  {
-    content: "Quel est le nom du traité qui a créé l'Accord de libre-échange nord-américain (ALENA) ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "L'Accord de libre-échange nord-américain",
-    incorrect_answers: ["L'Accord de libre-échange nord-américain", "L'Accord de libre-échange nord-américain", "L'Accord de libre-échange nord-américain"],
-    contexte: "L'Accord de libre-échange nord-américain, signé en 1994, a créé l'ALENA. C'est un accord de libre-échange entre le Canada, le Mexique et les États-Unis."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Amérique ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Canada",
-    incorrect_answers: ["Les États-Unis", "Le Brésil", "Le Mexique"],
-    contexte: "Le Canada est le plus grand pays d'Amérique en superficie. Il a une superficie de 9,9 millions de km²."
-  },
-  {
-    content: "Quel est le chef de l'État des États-Unis ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président des États-Unis est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement des États-Unis ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président des États-Unis est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre du G7 ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Canada",
-    incorrect_answers: ["Le Brésil", "Le Mexique", "L'Argentine"],
-    contexte: "Le Canada est un des sept membres du G7. Il est un des pays les plus riches du monde."
-  },
-  {
-    content: "Quel est le chef de l'État du Mexique ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Mexique est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Mexique ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Mexique est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre de l'ALENA ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Canada",
-    incorrect_answers: ["Le Brésil", "Le Mexique", "L'Argentine"],
-    contexte: "Le Canada est un des trois membres de l'ALENA. C'est un accord de libre-échange entre le Canada, le Mexique et les États-Unis."
-  },
-  {
-    content: "Quel est le chef de l'État du Brésil ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Brésil est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Brésil ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Brésil est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre du Mercosur ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Brésil",
-    incorrect_answers: ["Le Canada", "Le Mexique", "Les États-Unis"],
-    contexte: "Le Brésil est un des quatre membres du Mercosur. C'est un marché commun de l'Amérique du Sud."
-  },
-  {
-    content: "Quel est le pays le plus peuplé de l'Amérique du Sud ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Brésil",
-    incorrect_answers: ["Le Mexique", "Le Pérou", "La Colombie"],
-    contexte: "Le Brésil est le pays le plus peuplé de l'Amérique du Sud. Il a plus de 210 millions d'habitants."
-  },
-  {
-    content: "Quel est le chef de l'État de l'Argentine ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Argentine est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de l'Argentine ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Argentine est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-
-  # Amérique - Difficile (166-180)
-  {
-    content: "Quel est le nom du Parlement des États-Unis ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Congrès des États-Unis",
-    incorrect_answers: ["Le Sénat", "La Chambre des représentants", "Le Parlement"],
-    contexte: "Le Congrès des États-Unis est l'organe législatif des États-Unis. Il est composé de deux chambres, le Sénat et la Chambre des représentants."
-  },
-  {
-    content: "Quel est le nom du traité qui a créé le marché commun de l'Amérique du Sud (Mercosur) ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le traité d'Asunción",
-    incorrect_answers: ["Le traité de Montevidéo", "Le traité de Brasília", "Le traité de Buenos Aires"],
-    contexte: "Le traité d'Asunción, signé en 1991, a créé le Mercosur. C'est un marché commun de l'Amérique du Sud."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Amérique ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Canada",
-    incorrect_answers: ["Les États-Unis", "Le Brésil", "Le Mexique"],
-    contexte: "Le Canada est le plus grand pays d'Amérique en superficie. Il a une superficie de 9,9 millions de km²."
-  },
-  {
-    content: "Quel est le chef de l'État du Mexique ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Mexique est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Mexique ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Mexique est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre de l'ALENA ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Canada",
-    incorrect_answers: ["Le Brésil", "Le Mexique", "L'Argentine"],
-    contexte: "Le Canada est un des trois membres de l'ALENA. C'est un accord de libre-échange entre le Canada, le Mexique et les États-Unis."
-  },
-  {
-    content: "Quel est le chef de l'État du Brésil ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Brésil est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Brésil ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Brésil est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre du Mercosur ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Brésil",
-    incorrect_answers: ["Le Canada", "Le Mexique", "Les États-Unis"],
-    contexte: "Le Brésil est un des quatre membres du Mercosur. C'est un marché commun de l'Amérique du Sud."
-  },
-  {
-    content: "Quel est le pays le plus peuplé de l'Amérique du Sud ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Brésil",
-    incorrect_answers: ["Le Mexique", "Le Pérou", "La Colombie"],
-    contexte: "Le Brésil est le pays le plus peuplé de l'Amérique du Sud. Il a plus de 210 millions d'habitants."
-  },
-  {
-    content: "Quel est le chef de l'État de l'Argentine ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Argentine est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de l'Argentine ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Argentine est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays a le droit de veto au Conseil de sécurité de l'ONU ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Les États-Unis",
-    incorrect_answers: ["Le Canada", "Le Brésil", "Le Mexique"],
-    contexte: "Les États-Unis sont un des cinq membres permanents du Conseil de sécurité de l'ONU. Ils ont le droit de veto."
-  },
-  {
-    content: "Quel est le chef de l'État du Canada ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi du Canada est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Canada ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Amérique",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre du Canada est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-
-  # Afrique - Facile (181-195)
-  {
-    content: "Quel pays est le plus peuplé de l'Afrique ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Nigéria",
-    incorrect_answers: ["L'Égypte", "L'Éthiopie", "La République démocratique du Congo"],
-    contexte: "Le Nigéria est le pays le plus peuplé de l'Afrique. Il a plus de 200 millions d'habitants."
+    correct_answer: "Le panafricanisme",
+    incorrect_answers: ["Le socialisme", "Le communisme", "Le nationalisme"],
+    contexte: "Le panafricanisme a été une force motrice derrière les mouvements d'indépendance et la création de l'Organisation de l'Unité Africaine."
   },
   {
-    content: "Quel est le chef de l'État du Nigéria ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Nigéria est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Nigéria ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Nigéria est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre de l'Union africaine ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le Nigéria",
-    incorrect_answers: ["La Chine", "L'Inde", "Le Brésil"],
-    contexte: "Le Nigéria est un des 55 membres de l'Union africaine. C'est une organisation intergouvernementale régionale de l'Afrique."
-  },
-  {
-    content: "Quel est le chef de l'État de l'Afrique du Sud ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Afrique du Sud est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de l'Afrique du Sud ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Afrique du Sud est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Afrique ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "L'Algérie",
-    incorrect_answers: ["La République démocratique du Congo", "Le Soudan", "Le Nigéria"],
-    contexte: "L'Algérie est le plus grand pays d'Afrique en superficie. Il a une superficie de 2,3 millions de km²."
-  },
-  {
-    content: "Quel est le chef de l'État de l'Algérie ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Algérie est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de l'Algérie ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de l'Algérie est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est membre de l'Union africaine ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le Nigéria",
-    incorrect_answers: ["La Chine", "L'Inde", "Le Brésil"],
-    contexte: "Le Nigéria est un des 55 membres de l'Union africaine. C'est une organisation intergouvernementale régionale de l'Afrique."
-  },
-  {
-    content: "Quel est le chef de l'État de l'Égypte ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Égypte est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement de l'Égypte ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de l'Égypte est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel est le pays le plus grand en superficie de l'Afrique ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "L'Algérie",
-    incorrect_answers: ["La République démocratique du Congo", "Le Soudan", "Le Nigéria"],
-    contexte: "L'Algérie est le plus grand pays d'Afrique en superficie. Il a une superficie de 2,3 millions de km²."
-  },
-  {
-    content: "Quel est le chef de l'État du Maroc ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi du Maroc est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Maroc ?",
-    difficulty: "facile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre du Maroc est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-
-  # Afrique - Intermédiaire (196-210)
-  {
-    content: "Quel est le régime politique de l'Afrique du Sud ?",
+    content: "La guerre du Biafra (1967-1970) était une tentative de sécession d'une région de quel pays ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "République parlementaire",
-    incorrect_answers: ["Régime militaire", "Autocratie", "Royauté"],
-    contexte: "Le Parlement d'Afrique du Sud est l'organe législatif de l'Afrique du Sud. Il est composé de deux chambres, le Sénat et la Chambre des représentants."
+    correct_answer: "Le Nigeria",
+    incorrect_answers: ["Le Cameroun", "Le Ghana", "L'Éthiopie"],
+    contexte: "La tentative de création de la République du Biafra, principalement par le peuple Igbo, a conduit à une guerre civile et une famine dévastatrices."
   },
   {
-    content: "Quel est le nom du traité qui a créé l'Union africaine ?",
+    content: "Comment nomme-t-on les deux conflits qui ont ravagé la République Démocratique du Congo de 1996 à 2003, impliquant de nombreux pays voisins ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le traité d'Addis-Abeba",
-    incorrect_answers: ["Le traité de l'OUA", "Le traité de l'Union africaine", "Le traité de Tripoli"],
-    contexte: "Le traité d'Addis-Abeba, signé en 2002, a créé l'Union africaine. C'est une organisation intergouvernementale régionale de l'Afrique."
+    correct_answer: "La Première et la Deuxième Guerre du Congo",
+    incorrect_answers: ["La Guerre du Kivu", "La Crise Congolaise", "La Guerre des Grands Lacs"],
+    contexte: "Parfois appelée la 'Guerre Mondiale Africaine', elle a fait des millions de morts, principalement de maladies et de malnutrition."
   },
   {
-    content: "Quel pays est le plus peuplé de l'Afrique ?",
+    content: "Quel pays a été le théâtre de l'intervention américaine 'Black Hawk Down' en 1993, lors d'une mission de maintien de la paix de l'ONU ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Nigéria",
-    incorrect_answers: ["L'Égypte", "L'Éthiopie", "La République démocratique du Congo"],
-    contexte: "Le Nigéria est le pays le plus peuplé de l'Afrique. Il a plus de 200 millions d'habitants."
+    correct_answer: "La Somalie",
+    incorrect_answers: ["Le Soudan", "L'Éthiopie", "Le Kenya"],
+    contexte: "La bataille de Mogadiscio a été un échec pour les forces américaines et a conduit à un retrait précipité de la Somalie, alors en pleine guerre civile."
   },
   {
-    content: "Quel pays est le 7ème producteur de gaz naturel au monde ?",
+    content: "La CEDEAO (Communauté Économique des États de l'Afrique de l'Ouest) est une organisation régionale qui intervient souvent dans quoi ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "L'Algérie",
-    incorrect_answers: ["Le Nigéria", "L'Ouganda", "Le Maroc"],
-    contexte: "L'Algérie, membre de l'OPEP est un plus grands producteurs de pétrole et de gaz au monde."
+    correct_answer: "La résolution de crises politiques et de coups d'État",
+    incorrect_answers: ["La gestion de la monnaie unique", "La lutte contre la piraterie", "La protection de l'environnement"],
+    contexte: "La CEDEAO a déployé des forces de maintien de la paix et imposé des sanctions pour restaurer l'ordre constitutionnel dans des pays comme le Mali ou la Gambie."
   },
   {
-    content: "Quel est le chef du gouvernement de l'Algérie ?",
+    content: "Quel territoire désertique est au cœur d'un conflit de souveraineté entre le Maroc et le Front Polisario soutenu par l'Algérie ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de l'Algérie est le chef du gouvernement. Il dirige l'administration du pays."
+    correct_answer: "Le Sahara Occidental",
+    incorrect_answers: ["Le Sinaï", "Le Darfour", "Le Caprivi"],
+    contexte: "Ancienne colonie espagnole, son statut final est en suspens depuis 1975, l'ONU appelant à un référendum d'autodétermination."
   },
   {
-    content: "Quel pays est membre de l'Union africaine ?",
+    content: "Quelle politique économique, promue par le FMI et la Banque Mondiale dans les années 1980-1990, a eu des conséquences sociales profondes en Afrique ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Nigéria",
-    incorrect_answers: ["La Chine", "L'Inde", "Le Brésil"],
-    contexte: "Le Nigéria est un des 55 membres de l'Union africaine. C'est une organisation intergouvernementale régionale de l'Afrique."
+    correct_answer: "Les Programmes d'Ajustement Structurel (PAS)",
+    incorrect_answers: ["Le Plan Marshall", "La Négritude", "Le Socialisme Africain"],
+    contexte: "Ces programmes imposaient des privatisations et des coupes dans les dépenses publiques en échange de prêts, souvent au détriment des services de santé et d'éducation."
   },
   {
-    content: "Quel régime politique est en place en Egypte en 2025 ?",
+    content: "Quel leader a dirigé le Zimbabwe de son indépendance en 1980 jusqu'à sa démission forcée en 2017 ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "République Démocratique",
-    incorrect_answers: ["Autocratie", "Régime parlementaire", "Royauté"],
-    contexte: "Le président de l'Égypte est le chef de l'État. C'est une fonction principalement honorifique."
+    correct_answer: "Robert Mugabe",
+    incorrect_answers: ["Morgan Tsvangirai", "Joshua Nkomo", "Emmerson Mnangagwa"],
+    contexte: "Son long règne a été marqué par la lutte de libération, mais aussi par une réforme agraire controversée, l'hyperinflation et la répression politique."
   },
   {
-    content: "Quel est le chef du gouvernement de l'Égypte ?",
+    content: "La 'Françafrique' est un terme péjoratif désignant quoi ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de l'Égypte est le chef du gouvernement. Il dirige l'administration du pays."
+    correct_answer: "Le réseau d'influence politique, économique et militaire de la France dans ses anciennes colonies",
+    incorrect_answers: ["Une alliance culturelle francophone", "Un programme d'aide au développement", "Une zone de libre-échange"],
+    contexte: "Ce terme évoque des relations néocoloniales, des ingérences politiques et le soutien à des régimes autoritaires pour préserver les intérêts français."
   },
   {
-    content: "Quel pays est le plus grand en superficie de l'Afrique ?",
+    content: "Quel pays a connu une guerre civile de 1991 à 2002, tristement célèbre pour l'utilisation de 'diamants de sang' pour financer le conflit ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "L'Algérie",
-    incorrect_answers: ["La République démocratique du Congo", "Le Soudan", "Le Nigéria"],
-    contexte: "L'Algérie est le plus grand pays d'Afrique en superficie. Il a une superficie de 2,3 millions de km²."
+    correct_answer: "La Sierra Leone",
+    incorrect_answers: ["Le Liberia", "L'Angola", "La République Démocratique du Congo"],
+    contexte: "Le conflit a opposé le gouvernement au Revolutionary United Front (RUF), connu pour sa brutalité et l'enrôlement d'enfants soldats."
   },
   {
-    content: "Quel est le chef de l'État du Maroc ?",
+    content: "Le conflit du Darfour, qui a débuté en 2003, a opposé des groupes rebelles à des milices soutenues par le gouvernement. Dans quel pays se situe le Darfour ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi du Maroc est le chef de l'État. C'est une fonction principalement honorifique."
+    correct_answer: "Le Soudan",
+    incorrect_answers: ["Le Tchad", "La Libye", "Le Soudan du Sud"],
+    contexte: "Le conflit a été qualifié de génocide par certains, avec des accusations de nettoyage ethnique contre les populations non-arabes par les milices Janjawid."
   },
   {
-    content: "Quel est le chef du gouvernement de l'Afrique du Sud ?",
+    content: "Quel pays a été le seul à ne jamais avoir été colonisé, repoussant une invasion italienne à la bataille d'Adoua en 1896 ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Président",
-    incorrect_answers: ["Le roi", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le Premier ministre du Maroc est le chef du gouvernement. Il dirige l'administration du pays."
+    correct_answer: "L'Éthiopie",
+    incorrect_answers: ["Le Liberia", "L'Égypte", "Le Maroc"],
+    contexte: "Cette victoire a fait de l'Éthiopie un symbole de la résistance africaine au colonialisme. (Le Liberia n'a pas été colonisé mais fondé par les USA)."
   },
   {
-    content: "Quel pays est membre de l'Union africaine ?",
+    content: "La 'Négritude' était un mouvement littéraire et politique fondé par des intellectuels noirs francophones. Qui en était l'une des figures de proue ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Nigéria",
-    incorrect_answers: ["La Chine", "L'Inde", "Le Brésil"],
-    contexte: "Le Nigéria est un des 55 membres de l'Union africaine. C'est une organisation intergouvernementale régionale de l'Afrique."
+    correct_answer: "Léopold Sédar Senghor",
+    incorrect_answers: ["Kwame Nkrumah", "Jomo Kenyatta", "Patrice Lumumba"],
+    contexte: "Ce mouvement visait à rejeter l'assimilation culturelle et à revendiquer l'identité et la culture noires. Senghor est devenu le premier président du Sénégal."
   },
   {
-    content: "Quel est le chef de l'État du Nigéria ?",
+    content: "Quelle organisation politique et paramilitaire a été créée par Nelson Mandela et d'autres pour lutter contre l'apartheid ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Nigéria est le chef de l'État. C'est une fonction principalement honorifique."
+    correct_answer: "Le Congrès National Africain (ANC)",
+    incorrect_answers: ["Le Congrès Panafricaniste d'Azanie (PAC)", "Le Parti de la Liberté Inkatha (IFP)", "Le Parti National"],
+    contexte: "Initialement non-violent, l'ANC a créé une branche armée, Umkhonto we Sizwe, après le massacre de Sharpeville. Il est le parti au pouvoir depuis 1994."
   },
   {
-    content: "Quel est le chef du gouvernement du Maroc ?",
+    content: "La Crise de Suez en 1956 a été déclenchée par la nationalisation du canal par quel leader égyptien ?",
     difficulty: "intermédiaire",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le président du Nigéria est le chef du gouvernement. Il dirige l'administration du pays."
+    correct_answer: "Gamal Abdel Nasser",
+    incorrect_answers: ["Anouar el-Sadate", "Hosni Moubarak", "Le roi Farouk"],
+    contexte: "Cette décision a provoqué une intervention militaire d'Israël, de la France et du Royaume-Uni, qui a échoué sous la pression des États-Unis et de l'URSS."
   },
   {
-    content: "Quel pays est le plus grand en superficie de l'Afrique ?",
-    difficulty: "intermédiaire",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "L'Algérie",
-    incorrect_answers: ["La République démocratique du Congo", "Le Soudan", "Le Nigéria"],
-    contexte: "L'Algérie est le plus grand pays d'Afrique en superficie. Il a une superficie de 2,3 millions de km²."
-  },
-
-  # Afrique - Difficile (211-225)
-  {
-    content: "Quel est le nom du Parlement du Nigéria ?",
+    content: "Les Accords d'Arusha, signés en 1993, visaient à mettre fin à la guerre civile et à partager le pouvoir dans quel pays ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Sénat et la Chambre des représentants",
-    incorrect_answers: ["Le Parlement", "Le Congrès", "L'Assemblée nationale"],
-    contexte: "Le Parlement du Nigéria est l'organe législatif du Nigéria. Il est composé de deux chambres, le Sénat et la Chambre des représentants."
+    correct_answer: "Le Rwanda",
+    incorrect_answers: ["Le Burundi", "L'Ouganda", "La Tanzanie"],
+    contexte: "L'assassinat du président Habyarimana, qui revenait de négociations, a été le déclencheur du génocide des Tutsis, rendant les accords caducs."
   },
   {
-    content: "Quel est le nom du traité qui a créé l'Union africaine ?",
+    content: "Quelle guerre a opposé l'Éthiopie et la Somalie en 1977-1978 pour le contrôle d'une région frontalière ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le traité d'Addis-Abeba",
-    incorrect_answers: ["Le traité de l'OUA", "Le traité de l'Union africaine", "Le traité de Tripoli"],
-    contexte: "Le traité d'Addis-Abeba, signé en 2002, a créé l'Union africaine. C'est une organisation intergouvernementale régionale de l'Afrique."
+    correct_answer: "La Guerre de l'Ogaden",
+    incorrect_answers: ["La Guerre d'indépendance de l'Érythrée", "La Guerre du Shaba", "La Guerre civile éthiopienne"],
+    contexte: "Ce conflit a été une guerre par procuration de la Guerre Froide, avec l'URSS et Cuba changeant d'alliance pour soutenir l'Éthiopie contre la Somalie."
   },
   {
-    content: "Quel pays est le plus peuplé de l'Afrique ?",
+    content: "Quel pays d'Afrique australe a connu une longue guerre civile après son indépendance du Portugal, opposant le MPLA (soutenu par l'URSS) à l'UNITA (soutenue par les USA et l'Afrique du Sud) ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Nigéria",
-    incorrect_answers: ["L'Égypte", "L'Éthiopie", "La République démocratique du Congo"],
-    contexte: "Le Nigéria est le pays le plus peuplé de l'Afrique. Il a plus de 200 millions d'habitants."
+    correct_answer: "L'Angola",
+    incorrect_answers: ["Le Mozambique", "La Guinée-Bissau", "Le Cap-Vert"],
+    contexte: "La guerre civile angolaise a duré de 1975 à 2002 et a été l'un des conflits les plus longs et les plus internationalisés de la Guerre Froide en Afrique."
   },
   {
-    content: "Quel est le chef de l'État de l'Algérie ?",
+    content: "La 'Commission Vérité et Réconciliation', présidée par l'archevêque Desmond Tutu, a été mise en place dans quel pays pour faire face aux crimes du passé ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Algérie est le chef de l'État. C'est une fonction principalement honorifique."
+    correct_answer: "L'Afrique du Sud",
+    incorrect_answers: ["Le Rwanda", "Le Liberia", "La Sierra Leone"],
+    contexte: "Cette commission offrait l'amnistie aux auteurs de crimes politiquement motivés en échange d'un témoignage complet, favorisant la justice réparatrice plutôt que punitive."
   },
   {
-    content: "Quel est le chef du gouvernement de l'Algérie ?",
+    content: "Le 'Katanga' est une riche province minière qui a tenté de faire sécession de quel pays juste après son indépendance en 1960 ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de l'Algérie est le chef du gouvernement. Il dirige l'administration du pays."
+    correct_answer: "La République Démocratique du Congo (alors Congo-Léopoldville)",
+    incorrect_answers: ["La Zambie", "L'Angola", "Le Congo-Brazzaville"],
+    contexte: "La crise du Katanga, soutenue par des intérêts miniers belges, a été au cœur de la 'Crise Congolaise' qui a conduit à l'assassinat de Patrice Lumumba."
   },
   {
-    content: "Quel pays est membre de l'Union africaine ?",
+    content: "La Cour Pénale Internationale (CPI) a été critiquée par certains dirigeants africains pour...",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Nigéria",
-    incorrect_answers: ["La Chine", "L'Inde", "Le Brésil"],
-    contexte: "Le Nigéria est un des 55 membres de l'Union africaine. C'est une organisation intergouvernementale régionale de l'Afrique."
+    correct_answer: "Cibler de manière disproportionnée des dirigeants africains",
+    incorrect_answers: ["Être trop lente dans ses jugements", "Manquer de pouvoir coercitif", "Avoir son siège en Europe"],
+    contexte: "Cette critique a conduit à des menaces de retrait massif de l'Union Africaine, accusant la CPI d'être un instrument néocolonial."
   },
   {
-    content: "Quel est le chef de l'État de l'Égypte ?",
+    content: "Quel pays a connu la 'Révolution de Zanzibar' en 1964, qui a renversé le sultanat arabe et conduit à son union avec le Tanganyika ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président de l'Égypte est le chef de l'État. C'est une fonction principalement honorifique."
+    correct_answer: "La Tanzanie (formée par l'union)",
+    incorrect_answers: ["Le Kenya", "Oman", "Les Comores"],
+    contexte: "La révolution a mis fin à des siècles de domination arabe et a conduit à la création de la République-Unie de Tanzanie."
   },
   {
-    content: "Quel est le chef du gouvernement de l'Égypte ?",
+    content: "L'Ujamaa, ou 'socialisme africain', était la politique économique et sociale de quel leader et pays ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le président", "Le roi", "Le chancelier"],
-    contexte: "Le Premier ministre de l'Égypte est le chef du gouvernement. Il dirige l'administration du pays."
+    correct_answer: "Julius Nyerere en Tanzanie",
+    incorrect_answers: ["Léopold Senghor au Sénégal", "Sékou Touré en Guinée", "Jomo Kenyatta au Kenya"],
+    contexte: "Cette politique visait à créer un modèle de développement autosuffisant basé sur la collectivisation agricole et les villages communautaires."
   },
   {
-    content: "Quel pays est le plus grand en superficie de l'Afrique ?",
+    content: "Le procès de Rivonia (1963-1964) a condamné à la prison à vie plusieurs leaders de la lutte anti-apartheid. Qui était l'accusé le plus célèbre ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "L'Algérie",
-    incorrect_answers: ["La République démocratique du Congo", "Le Soudan", "Le Nigéria"],
-    contexte: "L'Algérie est le plus grand pays d'Afrique en superficie. Il a une superficie de 2,3 millions de km²."
+    correct_answer: "Nelson Mandela",
+    incorrect_answers: ["Walter Sisulu", "Govan Mbeki", "Ahmed Kathrada"],
+    contexte: "Lors de ce procès, Mandela a prononcé son célèbre discours 'I Am Prepared to Die', justifiant la lutte armée contre le régime de l'apartheid."
   },
   {
-    content: "Quel est le chef de l'État du Maroc ?",
+    content: "Quelle bataille de 1988 en Angola, impliquant les forces cubaines, angolaises et sud-africaines, est considérée comme un tournant ayant accéléré la fin de l'apartheid ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le roi",
-    incorrect_answers: ["Le président", "Le Premier ministre", "Le chancelier"],
-    contexte: "Le roi du Maroc est le chef de l'État. C'est une fonction principalement honorifique."
+    correct_answer: "La bataille de Cuito Cuanavale",
+    incorrect_answers: ["La bataille de Cassinga", "La bataille du Pont 14", "L'opération Savannah"],
+    contexte: "La défaite tactique de l'armée sud-africaine a brisé le mythe de son invincibilité et a conduit à l'indépendance de la Namibie."
   },
   {
-    content: "Quel est le chef du gouvernement du Maroc ?",
+    content: "La 'Guerre des Sables' de 1963 était un conflit frontalier qui a opposé quels deux pays d'Afrique du Nord ?",
     difficulty: "difficile",
-    category: "politique et géopolitique",
+    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le Premier ministre",
-    incorrect_answers: ["Le roi", "Le président", "Le chancelier"],
-    contexte: "Le Premier ministre du Maroc est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est suspendu de l'Union africaine ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le Mali",
-    incorrect_answers: ["La Mauritanie", "L'Afrique du Sud", "L'Angola"],
-    contexte: "Le pays est suspendu à la suite du coup d'État de 2020"
-  },
-  {
-    content: "Quel est le chef de l'État du Nigéria ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Nigéria est le chef de l'État. C'est une fonction principalement honorifique."
-  },
-  {
-    content: "Quel est le chef du gouvernement du Nigéria ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "Le président",
-    incorrect_answers: ["Le Premier ministre", "Le roi", "Le chancelier"],
-    contexte: "Le président du Nigéria est le chef du gouvernement. Il dirige l'administration du pays."
-  },
-  {
-    content: "Quel pays est le plus grand en superficie de l'Afrique ?",
-    difficulty: "difficile",
-    category: "politique et géopolitique",
-    region: "Afrique",
-    correct_answer: "L'Algérie",
-    incorrect_answers: ["La République démocratique du Congo", "Le Soudan", "Le Nigéria"],
-    contexte: "L'Algérie est le plus grand pays d'Afrique en superficie. Il a une superficie de 2,3 millions de km²."
-  },
+    correct_answer: "L'Algérie et le Maroc",
+    incorrect_answers: ["La Tunisie et la Libye", "L'Égypte et la Libye", "L'Algérie et la Tunisie"],
+    contexte: "Ce conflit, né de revendications territoriales marocaines sur des zones du Sahara algérien, a jeté les bases d'une longue rivalité régionale."
+  }
 ]
 
 questions_data.each_with_index do |data, index|
