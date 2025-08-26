@@ -13,3 +13,29 @@
 .navbar-lewagon .nav-link {
   color: white !important;
 }
+
+.gb-navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  width: 100%;
+
+}
+
+.gb-navbar img {
+  height: 130px;
+  width: auto;
+  margin-left: 36px;
+
+}
+
+.gb-icon {
+  color: white;
+  font-size: 1,5rem;
+  text-decoration: none;
+  margin-right: 44px;
+  margin-left: -26px;
+}
+
+.gb-icon:hover {
+  color: #FFD966;
+}
