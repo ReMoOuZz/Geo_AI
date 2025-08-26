@@ -67,21 +67,14 @@ class MessagesController < ApplicationController
     @quiz = @chat.quiz
     @message = Message.new(role: "user", content: params[:message][:content], chat: @chat)
 
-  if @message.valid?
+    if @message.valid?
       @response = @chat.with_instructions(instructions).with_temperature(0.3).ask(@message.content)
       @assistant_message = @chat.messages.where(role: "assistant").last
       @questions = @quiz.messages
 
-        @quiz.increment!(:score) if @chat.messages.last.content =~ /\bCorrecte\b/i
+      @quiz.increment!(:score) if @chat.messages.last.content =~ /\bCorrecte\b/i
 
-        @response_count = @chat.messages.where(role: "assistant").count
-
-        @questions << @assistant_message.content
-        @quiz.update!(messages: @questions)
-        redirect_to quiz_chat_path(@quiz, @chat)
-      else
-        render "chats/show"
-      end
+      @response_count = @chat.messages.where(role: "assistant").count
 
       @questions << @assistant_message.content
       @quiz.update!(messages: @questions)
