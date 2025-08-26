@@ -9,8 +9,8 @@ Rails.application.routes.draw do
     resources :chats, only: [:show]
   end
   resources :games, only: [:new, :create, :show] do
-    resources :user_answers, [:show, :create]
-    resources :score, only: [:show]
+    resources :user_answers, only: [:show, :create]
+    resources :scores, only: [:show]
   end
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.
