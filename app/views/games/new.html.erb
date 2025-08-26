@@ -1,0 +1,40 @@
+<div class="container d-flex flex-column justify-content-center align-items-center vh-100" >
+  <%= form_with model: @game do |f| %>
+
+    <div class="game_card">
+
+      <p>Mode de jeu</p>
+      <div class="button_game_mode_container">
+        <button class="button" id="solo" data-value="solo">Solo</button>
+        <button class="button" id="multi" data-value="multi">Multijoueur</button>
+      </div>
+
+      <p>Zone</p>
+      <div class="button_zone_container">
+        <%= f.select :region,
+        options_for_select([["Europe", "europe"], ["Amérique", "amérique"], ["Océanie", "océanie"], ["Afrique", "afrique"], ["Asie", "asie"]]),
+        { prompt: "Choisir" },
+        class: "select_game_newregion" %>
+        <button class="button" id="random" data-value="random">Random</button>
+      </div>
+
+
+      <p>Choisir une catégorie</p>
+      <%= f.select :category,
+      options_for_select([["Régions, villes et capitales", "régions, villes et capitales"], ["Fleuves et océans", "fleuves et océans"], ["Reliefs", "reliefs"], ["Langues et coutumes", "langues et coutumes"], ["Drapeaux", "drapeaux"]]),
+      { prompt: "Choisir dans la liste" },
+      class: "select_game_new" %>
+
+
+      <p>Difficulté</p>
+      <%= f.select :difficulty,
+      options_for_select([["Facile", "facile"], ["Moyen", "moyen"], ["Difficile", "difficile"]]),
+      { prompt: "Choisir dans la liste" },
+      class: "select_game_new" %>
+
+      <%= f.submit value: "Lancer la partie", class: "button_game" %>
+
+    <% end %>
+    </div>
+
+</div>a
