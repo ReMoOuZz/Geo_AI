@@ -1,13 +1,8 @@
-<div class="home-green">
-  <div class="home-blue d-flex align-items-center justify-content-center">
-    <div class="home-map" >
-
-      <h1 class="geo-title">GeoBattle</h1>
-      <p class="geo-subtitle">Testez vos connaissances en géographie</p>
-      <div class="geo-buttons">
-        <%= link_to "Commencer", chats_path, data: { turbo_method: :post }, class: "btn btn-start" %>
-        <%= link_to "A propos de GeoBattle", "#", class: "btn btn-about" %>
-      </div>
-    </div>
+<div class="home-content">
+  <h1 class="geo-title">GeoBattle</h1>
+  <p class="geo-subtitle">Testez vos connaissances en géographie</p>
+  <div class="geo-buttons">
+    <%= link_to "Commencer", chats_path, data: { turbo_method: :post }, class: "btn btn-start" %>
+    <%= link_to "A propos de GeoBattle", "#", class: "btn btn-about" %>
   </div>
 </div>
