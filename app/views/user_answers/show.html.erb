@@ -1,0 +1,18 @@
+<div class="quiz-container">
+  <div class="progress-bar">
+    Question <%= @current_question_number %> / <%= @total_questions %>
+  </div>
+
+  <h2 class="question_title"><%= @question.content %></h2>
+  
+  <%= form_with model: [@game, @user_answer] do |form| %>
+    <div class="answers-grid">
+      <% @question.answers.each do |answer| %>
+        <button type="submit" name="user_answer[content]" value="<%= answer %>" class="answer-btn">
+          <%= answer %>
+        </button>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
