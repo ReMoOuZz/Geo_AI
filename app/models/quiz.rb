@@ -1,5 +1,5 @@
 class Quiz < ApplicationRecord
   has_many :chats
 
-  TOTAL = 15
+  TOTAL = 5
 end
