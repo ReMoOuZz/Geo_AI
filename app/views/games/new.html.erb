@@ -1,12 +1,14 @@
 <div class="container d-flex flex-column justify-content-center align-items-center vh-100" >
   <%= form_with model: @game do |f| %>
 
-    <div class="game_card">
+    <div class="game_card" data-controller="setup-game">
 
       <p>Mode de jeu</p>
       <div class="button_game_mode_container">
-        <button class="button" id="solo" data-value="solo">Solo</button>
-        <button class="button" id="multi" data-value="multi">Multijoueur</button>
+        <input name="game[game_type]" type="radio" class="button" id="solo" value="solo">
+        <label for="solo">solo</label>
+        <input name="game[game_type]" type="radio" class="button" id="multi" value="Multijoueur">
+        <label for="multi">Multi</label>
       </div>
 
       <p>Zone</p>
@@ -15,7 +17,8 @@
         options_for_select([["Europe", "europe"], ["Amérique", "amérique"], ["Océanie", "océanie"], ["Afrique", "afrique"], ["Asie", "asie"]]),
         { prompt: "Choisir" },
         class: "select_game_newregion" %>
-        <button class="button" id="random" data-value="random">Random</button>
+        <input name="game[region]" type="radio" class="button" id="random" value="Random">
+        <label for="random">Random</label>
       </div>
 
 

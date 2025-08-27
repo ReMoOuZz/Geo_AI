@@ -22,18 +22,22 @@
   margin-bottom: 0.5em;
 }
 
+.button_game_mode_container input[type="radio"] {
+  display: none;
+}
+
 .button_zone_container {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 1em;
 }
 
-#random {
-  margin: 0;
-  width: 48%;
-  height: 48px;
+.button_zone_container input[type="radio"] {
+  display: none;
 }
 
-.button {
+.button_game_mode_container label {
   height: 50px;
   width: 48%;
   padding: 0.5em;
@@ -42,17 +46,17 @@
   border-radius: 12px;
   color: white;
   font-size: 20px;
+  text-align: center;
   font-weight: 700;
   box-shadow: 2px 6px 6px 0px rgba(0,0,0,0.2);
-  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-button:hover {
-  transform: scale(1.05);
-}
 
-button:active {
-  box-shadow: inset 2px 6px 6px 0px rgba(0,0,0,0.2);
+.button_game_mode_container input[type="radio"]:checked + label {
+  box-shadow:
+  inset 2px 8px 12px rgba(0,0,0,0.4),   /* ombre interne principale */
+  inset -2px -4px 6px rgba(255,255,255,0.3);
 }
 
 .select_game_new {
@@ -66,20 +70,45 @@ button:active {
   width: 100%;
 }
 
-#game_difficulty {
-  margin-bottom: 2.5em;
-}
-
-#game_region {
+.select_game_newregion {
   display: block;
-  margin: 1em 0;
+  margin: 0 auto;
   padding: 0.5em;
   border: none;
   font-size: 20px;
   border-radius: 12px;
   box-shadow: 2px 6px 6px 0px rgba(0,0,0,0.2);
   width: 48%;
-  margin-top: 0px;
+}
+
+.select_game_new:hover,
+#game_region:hover {
+  box-shadow: 0px 0px 10px 2px #75ccf2;
+}
+
+#game_difficulty {
+  margin-bottom: 2.5em;
+}
+
+.button_zone_container label {
+  height: 50px;
+  width: 48%;
+  padding: 0.5em;
+  background-color: #268db6;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 2px 6px 6px 0px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.button_zone_container input[type="radio"]:checked + label {
+  box-shadow:
+  inset 2px 8px 12px rgba(0,0,0,0.4),   /* ombre interne principale */
+  inset -2px -4px 6px rgba(255,255,255,0.3);
 }
 
 .button_game {

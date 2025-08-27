@@ -7,7 +7,8 @@ class GamesController < ApplicationController
   def create
     @game = Game.new(game_params)
     if @game.save
-      redirect_to Something_path
+      @question = Question.where(difficulty: @game.difficulty, category: @game.category, region: @game.region, game_type: @game.game_type)
+      redirect_to game_path(@game)
     else
       render :new, status:  :unprocessable_entity
     end
@@ -20,6 +21,6 @@ class GamesController < ApplicationController
   private
 
   def game_params
-    params.require(:game).permit(:difficulty, :category, :region)
+    params.require(:game).permit(:difficulty, :category, :region, :game_type)
   end
 end
