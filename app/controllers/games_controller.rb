@@ -7,7 +7,20 @@ class GamesController < ApplicationController
   def create
     @game = Game.new(game_params)
     if @game.save
-      @question = Question.where(difficulty: @game.difficulty, category: @game.category, region: @game.region, game_type: @game.game_type)
+
+      @find_question = Question.where(
+          difficulty: @game.difficulty,
+          category: @game.category,
+          region: @game.region
+          # game_type: @game.game_type
+        ).order("RANDOM()").first
+
+      @questions = Question.create!(
+        difficulty: @find_question.difficulty,
+        category: @find_question.category,
+        region: @find_question.region
+        # game_type: @find_question.game_type
+      )
       redirect_to game_path(@game)
     else
       render :new, status:  :unprocessable_entity

@@ -14,7 +14,7 @@
       <p>Zone</p>
       <div class="button_zone_container">
         <%= f.select :region,
-        options_for_select([["Europe", "europe"], ["Amérique", "amérique"], ["Océanie", "océanie"], ["Afrique", "afrique"], ["Asie", "asie"]]),
+        options_for_select([["Europe", "Europe"], ["Amérique", "Amérique"], ["Océanie", "Océanie"], ["Afrique", "Afrique"], ["Asie", "Asie"]]),
         { prompt: "Choisir" },
         class: "select_game_newregion" %>
         <input name="game[region]" type="radio" class="button" id="random" value="Random">
@@ -31,7 +31,7 @@
 
       <p>Difficulté</p>
       <%= f.select :difficulty,
-      options_for_select([["Facile", "facile"], ["Moyen", "moyen"], ["Difficile", "difficile"]]),
+      options_for_select([["Facile", "facile"], ["Intermédiaire", "intermédiaire"], ["Difficile", "difficile"]]),
       { prompt: "Choisir dans la liste" },
       class: "select_game_new" %>
 

@@ -1,1 +1,9 @@
 <h1>Hello la show du game_controller</h1>
+
+<% @questions.each do |q| %>
+  <%= q.content %>
+  <%= q.correct_answer %>
+  <% q.incorrect_answers.each do |answer| %>
+    <%= answer %>
+  <% end %>
+<% end %>
