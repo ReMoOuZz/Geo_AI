@@ -1,12 +1,41 @@
+
 .navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+
+.navbar-lewagon .navbar-brand,
+.navbar-lewagon .nav-link {
+  color: white !important;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.gb-navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  width: 100%;
+
+}
+
+.gb-navbar img {
+  height: 130px;
+  width: auto;
+  margin-left: 36px;
+
+}
+
+.gb-icon {
+  color: white;
+  font-size: 1,5rem;
+  text-decoration: none;
+  margin-right: 44px;
+  margin-left: -26px;
+}
+
+.gb-icon:hover {
+  color: #FFD966;
 }

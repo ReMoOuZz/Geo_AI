@@ -64,6 +64,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_08_27_091602) do
     t.string "region"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "game_type"
   end
 
   create_table "messages", force: :cascade do |t|
