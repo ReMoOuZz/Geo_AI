@@ -2176,12 +2176,12 @@ questions_data = [
     contexte: "L'orange représente la savane du nord, le vert les forêts du sud, et le blanc la paix et l'unité entre eux."
   },
   {
-    content: "Ce drapeau est bleu avec un grand disque jaune au centre. De quel pays s'agit-il ?",
+    content: "Ce drapeau est bleu avec deux bandes jaune et verte. De quel pays s'agit-il ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Afrique",
     correct_answer: "Rwanda",
-    incorrect_answers: ["Palaos", "République démocratique du Congo", "Somalie"],
+    incorrect_answers: ["Maroc", "République démocratique du Congo", "Somalie"],
     contexte: "Le bleu représente le bonheur et la paix, le jaune la richesse, et le vert l'espoir et la prospérité. Le soleil symbolise la lumière et l'unité."
   },
   {
@@ -2302,13 +2302,13 @@ questions_data = [
     contexte: "Les quatre bandes et les quatre étoiles représentent les quatre îles de l'archipel. Le croissant est un symbole de l'Islam."
   },
   {
-    content: "Quel pays a un drapeau rouge, blanc et noir avec deux étoiles vertes ?",
+    content: "Quel drapeau partage deux de ses couleurs avec le drapeau de l'Ukraine ?",
     difficulty: "intermédiaire",
     category: "drapeaux",
     region: "Afrique",
-    correct_answer: "Syrie",
-    incorrect_answers: ["Égypte", "Irak", "Yémen"],
-    contexte: "Bien que géographiquement en Asie, il partage les couleurs panarabes de nombreux pays africains. Les deux étoiles représentaient l'Égypte et la Syrie dans l'ancienne République Arabe Unie."
+    correct_answer: "Rwanda",
+    incorrect_answers: ["Égypte", "Ouganda", "Burundi"],
+    contexte: "Adopté en 2002. Le bleu symbolise le bonheur et la paix ; le jaune, le développement économique; le vert, la confiance en la prospérité future"
   },
   {
     content: "Ce drapeau est divisé en quatre rectangles de couleurs rouge, jaune, verte et noire. De quel pays insulaire s'agit-il ?",
@@ -3501,7 +3501,7 @@ questions_data = [
     contexte: "Avant le Canal de Panama, ce détroit était la principale route pour contourner l'Amérique du Sud, malgré sa navigation difficile."
   },
   {
-    content: "La 'ceinture de feu du Pacifique', une zone de forte activité sismique et volcanique, borde toute la côte ouest des Amériques. Quel est son point culminant volcanique en Amérique du Nord ?",
+    content: "La 'ceinture de feu' est une zone de forte activité sismique et volcanique. Quel est son point culminant volcanique en Amérique du Nord",
     difficulty: "difficile",
     category: "reliefs, fleuves et océans",
     region: "Amérique",
@@ -3792,7 +3792,7 @@ questions_data = [
     contexte: "Ce lagon et ses récifs-barrières sont inscrits au patrimoine mondial de l'UNESCO pour leur biodiversité exceptionnelle."
   },
   {
-    content: "Le mont Erebus, le volcan actif le plus austral de la Terre, est situé sur le continent Antarctique mais est administré par quel pays dans le cadre de sa revendication territoriale ?",
+    content: "Le mont Erebus, volcan actif le plus austral, est situé sur l'Antarctique mais est administré par quel pays ?",
     difficulty: "difficile",
     category: "reliefs, fleuves et océans",
     region: "Océanie",
@@ -7645,9 +7645,9 @@ questions_data = [
     difficulty: "facile",
     category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
-    correct_answer: "Le génocide des Tutsis au Rwanda",
+    correct_answer: "Le génocide au Rwanda",
     incorrect_answers: ["Le génocide arménien", "Le génocide au Darfour", "Le génocide cambodgien"],
-    contexte: "Ce massacre de masse s'est déroulé sur une période de 100 jours et reste l'un des génocides les plus rapides de l'histoire."
+    contexte: "Ce massacre de masse s'est déroulé sur une période de 100 jours, il reste l'un des génocides les plus rapides et sanglants de l'histoire."
   },
   {
     content: "Quelle est la principale organisation intergouvernementale panafricaine, dont le siège est à Addis-Abeba ?",
@@ -9428,7 +9428,7 @@ questions_data = [
     contexte: "Bien que le Bön ait intégré de nombreux aspects du bouddhisme, il conserve ses propres divinités et rituels chamaniques."
   },
 
-  # OCEANIE - Ethnies, langues, religions, coutumes (VERFIEES)
+  # OCEANIE - Ethnies, langues, religions, coutumes (VERIFIEES)
 
   {
     content: "Quel est le nom du peuple autochtone de la Nouvelle-Zélande, célèbre pour sa danse du haka ?",
