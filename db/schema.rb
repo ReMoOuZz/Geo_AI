@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_08_25_150523) do
+ActiveRecord::Schema[7.1].define(version: 2025_08_27_091602) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -54,6 +54,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_08_25_150523) do
     t.text "incorrect_answers", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "contexte"
     t.index ["game_id"], name: "index_game_questions_on_game_id"
   end
 
@@ -88,6 +89,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_08_25_150523) do
     t.text "incorrect_answers", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "contexte"
   end
 
   create_table "quizzes", force: :cascade do |t|

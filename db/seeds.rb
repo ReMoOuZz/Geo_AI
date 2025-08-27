@@ -17,16 +17,20 @@
 # 1 correct_answer (string d'une bonne réponse)
 # 3 incorrect_answers (un array de 3 mauvaises réponses)
 # Contexte : texte de 25 mots max expliquant la bonne réponse  Propose moi 150questions sur la catégorie "reliefs, fleuves et océans"
+Question.destroy_all
 
 questions_data = [
   # SEEDS DRAPEAUX (60) via Claude Sonnet 4.0
+
+  # 60 questions sur Europe, Océanie, Amérique, Asie, Afrique
+
   {
     content: "Quel pays a ce drapeau : bandes horizontales rouge, jaune et noire ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Europe",
     correct_answer: "Allemagne",
-    incorrect_answers: ["France", "Russie", "Luxembourg"]
+    incorrect_answers: ["France", "Russie", "Luxembourg"],
     contexte: "Ce drapeau est resté celui de l'Allemagne après sa réunification, le 3 octobre 1990"
   },
   {
@@ -35,7 +39,7 @@ questions_data = [
     category: "drapeaux",
     region: "Amérique",
     correct_answer: "Canada",
-    incorrect_answers: ["États-Unis", "Mexique", "Brésil"]
+    incorrect_answers: ["États-Unis", "Mexique", "Brésil"],
     contexte: "La feuille d'érable est devenue le symbole national du Canada en 1965."
   },
   {
@@ -44,7 +48,7 @@ questions_data = [
     category: "drapeaux",
     region: "Asie",
     correct_answer: "Japon",
-    incorrect_answers: ["Chine", "Corée du Sud", "Thaïlande"]
+    incorrect_answers: ["Chine", "Corée du Sud", "Thaïlande"],
     contexte: "Le cercle rouge représente le soleil levant, symbole du Japon."
   },
   {
@@ -53,7 +57,7 @@ questions_data = [
     category: "drapeaux",
     region: "Europe",
     correct_answer: "Danemark",
-    incorrect_answers: ["Suède", "Norvège", "Finlande"]
+    incorrect_answers: ["Suède", "Norvège", "Finlande"],
     contexte: "Le Dannebrog danois est considéré comme le plus ancien drapeau national."
   },
   {
@@ -62,7 +66,7 @@ questions_data = [
     category: "drapeaux",
     region: "Afrique",
     correct_answer: "Zambie",
-    incorrect_answers: ["Égypte", "Nigeria", "Kenya"]
+    incorrect_answers: ["Égypte", "Nigeria", "Kenya"],
     contexte: "L'aigle zambien symbolise la capacité à s'élever au-dessus des difficultés."
   },
   {
@@ -71,7 +75,7 @@ questions_data = [
     category: "drapeaux",
     region: "Amérique",
     correct_answer: "États-Unis",
-    incorrect_answers: ["Canada", "Mexique", "Argentine"]
+    incorrect_answers: ["Canada", "Mexique", "Argentine"],
     contexte: "Les 50 étoiles représentent les États, les 13 bandes les colonies."
   },
   {
@@ -80,7 +84,7 @@ questions_data = [
     category: "drapeaux",
     region: "Asie",
     correct_answer: "Pakistan",
-    incorrect_answers: ["Bangladesh", "Arabie Saoudite", "Iran"]
+    incorrect_answers: ["Bangladesh", "Arabie Saoudite", "Iran"],
     contexte: "Le vert représente l'islam, le croissant et l'étoile l'unité musulmane."
   },
   {
@@ -89,7 +93,7 @@ questions_data = [
     category: "drapeaux",
     region: "Europe",
     correct_answer: "Suède",
-    incorrect_answers: ["Norvège", "Finlande", "Danemark"]
+    incorrect_answers: ["Norvège", "Finlande", "Danemark"],
     contexte: "Les couleurs bleue et jaune sont traditionnelles de la Suède royale."
   },
   {
@@ -98,7 +102,7 @@ questions_data = [
     category: "drapeaux",
     region: "Asie",
     correct_answer: "Bhoutan",
-    incorrect_answers: ["Chine", "Mongolie", "Tibet"]
+    incorrect_answers: ["Chine", "Mongolie", "Tibet"],
     contexte: "Le dragon du tonnerre symbolise la spiritualité bhoutanaise traditionnelle."
   },
   {
@@ -107,7 +111,7 @@ questions_data = [
     category: "drapeaux",
     region: "Europe",
     correct_answer: "Italie",
-    incorrect_answers: ["Irlande", "Mexique", "Iran"]
+    incorrect_answers: ["Irlande", "Mexique", "Iran"],
     contexte: "Inspiré du drapeau français, adopté lors de l'unification italienne."
   },
   {
@@ -116,7 +120,7 @@ questions_data = [
     category: "drapeaux",
     region: "Océanie",
     correct_answer: "Nouvelle-Zélande",
-    incorrect_answers: ["Ecosse", "Tahiti", "Canada"]
+    incorrect_answers: ["Ecosse", "Tahiti", "Canada"],
     contexte: "L'Union Jack rappelle l'héritage britannique de la Nouvelle-Zélande."
   },
   {
@@ -125,7 +129,7 @@ questions_data = [
     category: "drapeaux",
     region: "Amérique",
     correct_answer: "Chili",
-    incorrect_answers: ["Cuba", "Porto Rico", "Texas"]
+    incorrect_answers: ["Cuba", "Porto Rico", "Texas"],
   },
   {
     content: "Quel pays a un drapeau avec un cèdre vert au centre ?",
@@ -133,7 +137,7 @@ questions_data = [
     category: "drapeaux",
     region: "Asie",
     correct_answer: "Liban",
-    incorrect_answers: ["Syrie", "Jordanie", "Irak"]
+    incorrect_answers: ["Syrie", "Jordanie", "Irak"],
     contexte: "L'étoile représente l'unité du pays, le rouge le sang versé."
   },
   {
@@ -142,7 +146,7 @@ questions_data = [
     category: "drapeaux",
     region: "Europe",
     correct_answer: "Suisse",
-    incorrect_answers: ["Suède", "Angleterre", "Géorgie"]
+    incorrect_answers: ["Suède", "Angleterre", "Géorgie"],
     contexte: "Seul drapeau national carré au monde avec le Vatican."
   },
   {
@@ -151,7 +155,7 @@ questions_data = [
     category: "drapeaux",
     region: "Amérique",
     correct_answer: "Argentine",
-    incorrect_answers: ["Uruguay", "Brésil", "Chili"]
+    incorrect_answers: ["Uruguay", "Brésil", "Chili"],
     contexte: "Le soleil de Mai commémore la révolution de mai 1810."
 
   },
@@ -161,7 +165,7 @@ questions_data = [
     category: "drapeaux",
     region: "Asie",
     correct_answer: "Turquie",
-    incorrect_answers: ["Maroc", "Algérie", "Pakistan"]
+    incorrect_answers: ["Maroc", "Algérie", "Pakistan"],
     contexte: "Symboles islamiques adoptés par l'Empire ottoman historique."
   },
   {
@@ -170,7 +174,7 @@ questions_data = [
     category: "drapeaux",
     region: "Europe",
     correct_answer: "Belgique",
-    incorrect_answers: ["Italie", "Autriche", "Espagne"]
+    incorrect_answers: ["Italie", "Autriche", "Espagne"],
     contexte: "Le 30 septembre 1830, le gouvernement provisoire adopte le drapeau national"
   },
   {
@@ -179,7 +183,7 @@ questions_data = [
     category: "drapeaux",
     region: "Amérique",
     correct_answer: "Pérou",
-    incorrect_answers: ["Venezuela", "Équateur", "Colombie"]
+    incorrect_answers: ["Venezuela", "Équateur", "Colombie"],
     contexte: "Ces couleurs sont l'héritage de la Grande Colombie de Bolívar, le Pérou est exclu."
   },
   {
@@ -188,7 +192,7 @@ questions_data = [
     category: "drapeaux",
     region: "Asie",
     correct_answer: "Chine",
-    incorrect_answers: ["Vietnam", "Corée du Nord", "Laos"]
+    incorrect_answers: ["Vietnam", "Corée du Nord", "Laos"],
     contexte: "Rouge communiste, grande étoile pour le parti, 4 petites pour classes."
   },
   {
@@ -197,7 +201,7 @@ questions_data = [
     category: "drapeaux",
     region: "Asie",
     correct_answer: "Sri Lanka",
-    incorrect_answers: ["Myanmar", "Thaïlande", "Cambodge"]
+    incorrect_answers: ["Myanmar", "Thaïlande", "Cambodge"],
     contexte: "Lion singhalais traditionnel symbolisant la bravoure nationale."
   },
   {
@@ -206,7 +210,7 @@ questions_data = [
     category: "drapeaux",
     region: "Afrique",
     correct_answer: "Algérie",
-    incorrect_answers: ["Maroc", "Tunisie", "Libye"]
+    incorrect_answers: ["Maroc", "Tunisie", "Libye"],
     contexte: "Vert pour l'islam, blanc pour la paix, rouge pour liberté."
   },
   {
@@ -215,7 +219,7 @@ questions_data = [
     category: "drapeaux",
     region: "Asie",
     correct_answer: "Inde",
-    incorrect_answers: ["Bangladesh", "Pakistan", "Sri Lanka"]
+    incorrect_answers: ["Bangladesh", "Pakistan", "Sri Lanka"],
     contexte: "La roue d'Ashoka représente le dharma et le progrès."
   },
   {
@@ -224,7 +228,7 @@ questions_data = [
     category: "drapeaux",
     region: "Océanie",
     correct_answer: "Nouvelle-Zélande",
-    incorrect_answers: ["Australie", "Samoa", "Fidji"]
+    incorrect_answers: ["Australie", "Samoa", "Fidji"],
     contexte: "La Croix du Sud guide la navigation dans l'hémisphère sud."
   },
   {
@@ -233,7 +237,7 @@ questions_data = [
     category: "drapeaux",
     region: "Amérique",
     correct_answer: "Mexique",
-    incorrect_answers: ["Guatemala", "Équateur", "Pérou"]
+    incorrect_answers: ["Guatemala", "Équateur", "Pérou"],
     contexte: "Légende aztèque de la fondation de Tenochtitlan."
   },
   {
@@ -242,7 +246,7 @@ questions_data = [
     category: "drapeaux",
     region: "Asie",
     correct_answer: "Vietnam",
-    incorrect_answers: ["Chine", "Corée du Nord", "Laos"]
+    incorrect_answers: ["Chine", "Corée du Nord", "Laos"],
     contexte: "Étoile à cinq branches symbolisant les classes sociales unies."
   },
   {
@@ -251,7 +255,7 @@ questions_data = [
     category: "drapeaux",
     region: "Amérique",
     correct_answer: "Barbade",
-    incorrect_answers: ["Jamaïque", "Trinité-et-Tobago", "Bahamas"]
+    incorrect_answers: ["Jamaïque", "Trinité-et-Tobago", "Bahamas"],
     contexte: "Trident brisé symbolisant l'indépendance des liens coloniaux."
   },
   {
@@ -260,7 +264,7 @@ questions_data = [
     category: "drapeaux",
     region: "Afrique",
     correct_answer: "Mozambique",
-    incorrect_answers: ["Angola", "Zimbabwe", "Zambie"]
+    incorrect_answers: ["Angola", "Zimbabwe", "Zambie"],
     contexte: "Seul drapeau national avec une arme moderne représentant la lutte."
   },
   {
@@ -269,7 +273,7 @@ questions_data = [
     category: "drapeaux",
     region: "Amérique",
     correct_answer: "Guatemala",
-    incorrect_answers: ["Honduras", "Costa Rica", "Nicaragua"]
+    incorrect_answers: ["Honduras", "Costa Rica", "Nicaragua"],
     contexte: "Quetzal oiseau sacré maya symbolisant la liberté."
   },
   {
@@ -278,7 +282,7 @@ questions_data = [
     category: "drapeaux",
     region: "Europe",
     correct_answer: "Kosovo",
-    incorrect_answers: ["Serbie", "Macédoine du Nord", "Monténégro"]
+    incorrect_answers: ["Serbie", "Macédoine du Nord", "Monténégro"],
     contexte: "L'indépendance du Kosovo a été proclamée unilatéralement le 17 février 2008"
   },
   {
@@ -287,7 +291,7 @@ questions_data = [
     category: "drapeaux",
     region: "Afrique",
     correct_answer: "Madagascar",
-    incorrect_answers: ["Cap-Vert", "Mauritius", "Les Comores"]
+    incorrect_answers: ["Cap-Vert", "Mauritius", "Les Comores"],
     contexte: "Les couleurs du drapeau représentent des principes vénérés toujours"
   },
   {
@@ -296,7 +300,7 @@ questions_data = [
     category: "drapeaux",
     region: "Europe",
     correct_answer: "République tchèque",
-    incorrect_answers: ["Slovaquie", "Slovénie", "Pologne"]
+    incorrect_answers: ["Slovaquie", "Slovénie", "Pologne"],
     contexte: "Triangle bleu distinctif le démarquant du drapeau polonais."
   },
   {
@@ -305,7 +309,7 @@ questions_data = [
     category: "drapeaux",
     region: "Europe",
     correct_answer: "Liechtenstein",
-    incorrect_answers: ["Monaco", "Luxembourg", "Andorre"]
+    incorrect_answers: ["Monaco", "Luxembourg", "Andorre"],
     contexte: "Couronne princière ajoutée pour le distinguer du drapeau haïtien."
 
   },
@@ -315,7 +319,7 @@ questions_data = [
     category: "drapeaux",
     region: "Amérique",
     correct_answer: "Vénézuela",
-    incorrect_answers: ["Colombie", "Équateur", "Bolivie"]
+    incorrect_answers: ["Colombie", "Équateur", "Bolivie"],
     contexte: "Le condor représente la liberté andine, le Vénézuela n'est pas dans les Andes."
   },
   {
@@ -324,7 +328,7 @@ questions_data = [
     category: "drapeaux",
     region: "Asie",
     correct_answer: "Brunei",
-    incorrect_answers: ["Malaisie", "Indonésie", "Singapour"]
+    incorrect_answers: ["Malaisie", "Indonésie", "Singapour"],
     contexte: "Deux mains qui personnifient l'engagement du gouvernement à promouvoir la sérénité"
   },
   {
@@ -333,7 +337,7 @@ questions_data = [
     category: "drapeaux",
     region: "Asie",
     correct_answer: "Corée du Sud",
-    incorrect_answers: ["Corée du Nord", "Mongolie", "Tibet"]
+    incorrect_answers: ["Corée du Nord", "Mongolie", "Tibet"],
     contexte: "Taegeuk représente l'équilibre des forces cosmiques."
   },
   {
@@ -342,7 +346,7 @@ questions_data = [
     category: "drapeaux",
     region: "Afrique",
     correct_answer: "Ouganda",
-    incorrect_answers: ["Kenya", "Tanzanie", "Rwanda"]
+    incorrect_answers: ["Kenya", "Tanzanie", "Rwanda"],
     contexte: "Grue royale, oiseau national symbolisant la beauté ougandaise."
   },
   {
@@ -351,7 +355,7 @@ questions_data = [
     category: "drapeaux",
     region: "Amérique",
     correct_answer: "50",
-    incorrect_answers: ["41", "51", "40"]
+    incorrect_answers: ["41", "51", "40"],
     contexte: "Les 50 étoiles représentent les États, Puerto Rico n'est pas un état des Etats-Unis"
 
   },
@@ -361,7 +365,7 @@ questions_data = [
     category: "drapeaux",
     region: "Afrique",
     correct_answer: "Kenya",
-    incorrect_answers: ["Tanzanie", "Ouganda", "Éthiopie"]
+    incorrect_answers: ["Tanzanie", "Ouganda", "Éthiopie"],
     contexte: "Les Masaï sont un peuple d'éleveurs et de guerriers d'Afrique de l'Est"
   },
   {
@@ -370,7 +374,7 @@ questions_data = [
     category: "drapeaux",
     region: "Océanie",
     correct_answer: "Marshall",
-    incorrect_answers: ["Palau", "Nauru", "Tuvalu"]
+    incorrect_answers: ["Palau", "Nauru", "Tuvalu"],
     contexte: "Cet archipel est formé d'îles volcaniques et d'atolls coralliens."
   },
   {
@@ -379,7 +383,7 @@ questions_data = [
     category: "drapeaux",
     region: "Amérique",
     correct_answer: "Brésil",
-    incorrect_answers: ["Venezuela", "Guyana", "Suriname"]
+    incorrect_answers: ["Venezuela", "Guyana", "Suriname"],
     contexte: "Les étoiles représentent la constellation de la Croix du Sud et les États du pays"
   },
   {
@@ -646,14 +650,16 @@ questions_data = [
 
   # SEEDS DRAPEAUX via GEMINI 2.5 PRO > NON VERIFIEES
 
+  # EUROPE - DRAPEAUX
+
   {
-    content: "À quel pays appartient ce drapeau tricolore vertical bleu, blanc, rouge ?",
+    content: "À quel pays appartient le drapeau tricolore vertical bleu, blanc, rouge ?",
     difficulty: "facile",
     category: "drapeaux",
     region: "Europe",
     correct_answer: "France",
     incorrect_answers: ["Italie", "Belgique", "Pays-Bas"],
-    contexte: "Le drapeau français, ou 'drapeau tricolore', est l'emblème national de la France depuis la Révolution française. Ses couleurs symbolisent liberté, égalité, fraternité."
+    contexte: "Le drapeau français est l'emblème national de la France depuis la Révolution française."
   },
   {
     content: "Ce drapeau avec des bandes horizontales noire, rouge et or est celui de quel pays ?",
@@ -662,7 +668,7 @@ questions_data = [
     region: "Europe",
     correct_answer: "Allemagne",
     incorrect_answers: ["Belgique", "Autriche", "Espagne"],
-    contexte: "Le drapeau de l'Allemagne, adopté en 1949, représente l'unité et la liberté. Les couleurs proviennent des uniformes des soldats durant les guerres napoléoniennes."
+    contexte: "Lcouleurs du drapeau proviennent des uniformes des soldats durant les guerres napoléoniennes."
   },
   {
     content: "Quel pays est représenté par un drapeau aux bandes verticales verte, blanche et rouge ?",
@@ -697,7 +703,7 @@ questions_data = [
     category: "drapeaux",
     region: "Europe",
     correct_answer: "Russie",
-    incorrect_answers: ["Pays-Bas", "Slovénie", "Serbie"],
+    incorrect_answers: ["Belgique", "Lettonie", "Biélorussie"],
     contexte: "Ce drapeau a été adopté par Pierre le Grand. Le blanc symbolise la noblesse, le bleu la fidélité et le rouge le courage."
   },
   {
@@ -1052,7 +1058,7 @@ questions_data = [
     contexte: "Il utilise les couleurs panslaves, mais dans un ordre inversé par rapport à la Russie. Le blason représente l'aigle bicéphale serbe."
   },
 
-  # Asie
+  # ASIE - DRAPEAUX
 
   {
     content: "Ce drapeau rouge avec cinq étoiles jaunes (une grande et quatre petites) est celui de quel pays ?",
@@ -1451,7 +1457,7 @@ questions_data = [
     contexte: "Ce drapeau utilise les couleurs panarabes, représentant l'unité des nations arabes. Chaque couleur symbolise une dynastie ou une époque historique."
   },
 
-  # Amérique
+  # AMERIQUE - DRAPEAUX
   {
     content: "Ce drapeau a 13 bandes rouges et blanches et un canton bleu avec 50 étoiles. De quel pays s'agit-il ?",
     difficulty: "facile",
@@ -1767,6 +1773,9 @@ questions_data = [
     incorrect_answers: ["Grenade", "Saint-Kitts-et-Nevis", "Jamaïque"],
     contexte: "Le soleil levant symbolise l'aube d'une nouvelle ère. Le noir représente les ancêtres africains, le bleu l'espoir, et le rouge l'énergie."
   },
+
+  # OCEANIE - DRAPEAUX
+
   {
     content: "Quel pays a un drapeau bleu avec l'Union Jack et une grande étoile à sept branches sous le canton ?",
     difficulty: "facile",
@@ -2074,7 +2083,7 @@ questions_data = [
     contexte: "Lorsque le drapeau flotte au vent, ce décalage donne l'illusion que la lune est parfaitement centrée, un détail de conception visuelle subtil."
   },
 
-  # Afrique
+  # AFRIQUE - DRAPEAUX
 
   {
     content: "Quel pays a un drapeau composé de trois bandes verticales verte, jaune et rouge ?",
@@ -2392,13 +2401,14 @@ questions_data = [
     contexte: "L'Oiseau de Zimbabwe est une statuette trouvée dans les ruines du Grand Zimbabwe, symbole de l'histoire et du patrimoine du pays."
   },
 
-  # RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
+  # RELIEFS, FLEUVES ET OCEANS
 
-  # Afrique - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
+  # AFRIQUE - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Pro (NON VERIFIEES)
+
   {
     content: "Quel est le plus long fleuve du monde, qui traverse une grande partie de l'Afrique du Nord-Est ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Nil",
     incorrect_answers: ["Le Congo", "Le Niger", "Le Zambèze"],
@@ -2407,7 +2417,7 @@ questions_data = [
   {
     content: "Quel est le plus grand désert chaud du monde, couvrant la majeure partie de l'Afrique du Nord ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Sahara",
     incorrect_answers: ["Le Kalahari", "Le Namib", "Le Karoo"],
@@ -2416,7 +2426,7 @@ questions_data = [
   {
     content: "Quelle est la plus haute montagne d'Afrique, située en Tanzanie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Kilimandjaro",
     incorrect_answers: ["Le Mont Kenya", "Le Mont Blanc", "Le Ras Dashen"],
@@ -2425,7 +2435,7 @@ questions_data = [
   {
     content: "Quel océan borde la côte ouest de l'Afrique ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "L'Océan Atlantique",
     incorrect_answers: ["L'Océan Indien", "L'Océan Pacifique", "L'Océan Arctique"],
@@ -2434,7 +2444,7 @@ questions_data = [
   {
     content: "Quel océan borde la côte est de l'Afrique ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "L'Océan Indien",
     incorrect_answers: ["L'Océan Atlantique", "L'Océan Pacifique", "La Mer Rouge"],
@@ -2443,7 +2453,7 @@ questions_data = [
   {
     content: "Les Chutes Victoria, l'une des plus spectaculaires au monde, se trouvent sur quel fleuve ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Zambèze",
     incorrect_answers: ["Le Nil", "Le Congo", "Le Niger"],
@@ -2452,7 +2462,7 @@ questions_data = [
   {
     content: "Quel est le plus grand lac d'Afrique en superficie, bordé par l'Ouganda, le Kenya et la Tanzanie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Lac Victoria",
     incorrect_answers: ["Le Lac Tanganyika", "Le Lac Malawi", "Le Lac Tchad"],
@@ -2461,7 +2471,7 @@ questions_data = [
   {
     content: "Quelle mer sépare l'Afrique du Nord-Est de la péninsule arabique ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "La Mer Rouge",
     incorrect_answers: ["La Mer Méditerranée", "La Mer Noire", "Le Golfe Persique"],
@@ -2470,7 +2480,7 @@ questions_data = [
   {
     content: "Quelle grande île est située dans l'Océan Indien, à l'est du continent africain ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Madagascar",
     incorrect_answers: ["La Sicile", "La Crète", "Les Seychelles"],
@@ -2479,7 +2489,7 @@ questions_data = [
   {
     content: "Quelle mer borde toute la côte nord de l'Afrique ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "La Mer Méditerranée",
     incorrect_answers: ["La Mer Rouge", "La Mer Adriatique", "L'Océan Atlantique"],
@@ -2488,16 +2498,16 @@ questions_data = [
   {
     content: "Quelle chaîne de montagnes s'étend sur le Maroc, l'Algérie et la Tunisie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "L'Atlas",
     incorrect_answers: ["Les Alpes", "Les Pyrénées", "Le Drakensberg"],
     contexte: "L'Atlas sépare la côte méditerranéenne et atlantique du désert du Sahara."
   },
   {
-    content: "Le fleuve Congo, le deuxième plus long d'Afrique, se jette dans quel océan ?",
+    content: "Le fleuve Congo, le deuxième plus puissant du monde, se jette dans quel océan ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "L'Océan Atlantique",
     incorrect_answers: ["L'Océan Indien", "La Mer Méditerranée", "La Mer Rouge"],
@@ -2506,7 +2516,7 @@ questions_data = [
   {
     content: "Le cap de Bonne-Espérance est une pointe rocheuse célèbre située à l'extrémité sud de quel pays ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "L'Afrique du Sud",
     incorrect_answers: ["La Namibie", "Le Mozambique", "Madagascar"],
@@ -2515,7 +2525,7 @@ questions_data = [
   {
     content: "Quel désert s'étend sur une grande partie du Botswana, de la Namibie et de l'Afrique du Sud ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Kalahari",
     incorrect_answers: ["Le Sahara", "Le Namib", "Le Karoo"],
@@ -2524,7 +2534,7 @@ questions_data = [
   {
     content: "Le delta de l'Okavango, un vaste delta intérieur, se trouve dans quel pays ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Botswana",
     incorrect_answers: ["Le Zimbabwe", "La Zambie", "L'Angola"],
@@ -2533,7 +2543,7 @@ questions_data = [
   {
     content: "Quelle formation géologique massive s'étend sur des milliers de kilomètres, de la Syrie au Mozambique ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "La Vallée du Grand Rift",
     incorrect_answers: ["La Fosse des Mariannes", "Le Grand Canyon", "La Cordillère des Andes"],
@@ -2542,7 +2552,7 @@ questions_data = [
   {
     content: "Quel fleuve, le principal d'Afrique de l'Ouest, forme une grande boucle à travers le Mali ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Niger",
     incorrect_answers: ["Le Sénégal", "La Volta", "Le Congo"],
@@ -2551,7 +2561,7 @@ questions_data = [
   {
     content: "Quel est le lac le plus profond d'Afrique et le deuxième plus profond du monde ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Lac Tanganyika",
     incorrect_answers: ["Le Lac Victoria", "Le Lac Malawi", "Le Lac Kivu"],
@@ -2560,7 +2570,7 @@ questions_data = [
   {
     content: "Quelle chaîne de montagnes constitue la principale formation montagneuse d'Afrique du Sud ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Drakensberg",
     incorrect_answers: ["L'Atlas", "Les Monts Rwenzori", "Le Kilimandjaro"],
@@ -2569,7 +2579,7 @@ questions_data = [
   {
     content: "Le Canal de Suez, une voie navigable artificielle, relie la Mer Méditerranée à quelle autre mer ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "La Mer Rouge",
     incorrect_answers: ["La Mer Noire", "La Mer d'Arabie", "L'Océan Indien"],
@@ -2578,7 +2588,7 @@ questions_data = [
   {
     content: "Quel désert côtier, l'un des plus anciens du monde, s'étend le long de la côte de la Namibie ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le désert du Namib",
     incorrect_answers: ["Le Sahara", "Le Kalahari", "Le Karoo"],
@@ -2587,7 +2597,7 @@ questions_data = [
   {
     content: "Le lac Tchad, vital pour des millions de personnes, est bordé par quels quatre pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Tchad, le Niger, le Nigeria et le Cameroun",
     incorrect_answers: ["Le Soudan, la Libye, l'Égypte et le Tchad", "Le Mali, le Burkina Faso, le Niger et le Bénin", "L'Algérie, la Libye, le Niger et le Tchad"],
@@ -2596,7 +2606,7 @@ questions_data = [
   {
     content: "Quelle est la source principale du Nil Bleu, qui fournit la majorité de l'eau du Nil ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Lac Tana (en Éthiopie)",
     incorrect_answers: ["Le Lac Victoria (en Ouganda)", "Les Monts Rwenzori (en Ouganda)", "Le Lac Albert (en Ouganda)"],
@@ -2605,7 +2615,7 @@ questions_data = [
   {
     content: "Le mont Kenya est le deuxième plus haut sommet d'Afrique. Dans quel pays se trouve-t-il ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Kenya",
     incorrect_answers: ["La Tanzanie", "L'Ouganda", "L'Éthiopie"],
@@ -2614,7 +2624,7 @@ questions_data = [
   {
     content: "Quel canal sépare Madagascar du continent africain ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Canal du Mozambique",
     incorrect_answers: ["Le Canal de Suez", "Le Détroit de Gibraltar", "Le Détroit de Bab-el-Mandeb"],
@@ -2623,7 +2633,7 @@ questions_data = [
   {
     content: "Le bassin du Congo abrite la deuxième plus grande forêt tropicale du monde. Quel fleuve le draine ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Congo",
     incorrect_answers: ["Le Niger", "Le Zambèze", "L'Ogooué"],
@@ -2632,7 +2642,7 @@ questions_data = [
   {
     content: "Le cratère du Ngorongoro, une vaste caldeira volcanique intacte, se trouve dans quel pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "La Tanzanie",
     incorrect_answers: ["Le Kenya", "L'Éthiopie", "L'Afrique du Sud"],
@@ -2641,7 +2651,7 @@ questions_data = [
   {
     content: "Quel fleuve marque une partie de la frontière entre l'Afrique du Sud et la Namibie ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le fleuve Orange",
     incorrect_answers: ["Le Limpopo", "Le Zambèze", "Le Vaal"],
@@ -2650,7 +2660,7 @@ questions_data = [
   {
     content: "La 'Porte des Enfers' (Bab-el-Mandeb) est un détroit stratégique qui relie la Mer Rouge à quel golfe ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Golfe d'Aden",
     incorrect_answers: ["Le Golfe Persique", "Le Golfe d'Oman", "Le Golfe de Guinée"],
@@ -2659,7 +2669,7 @@ questions_data = [
   {
     content: "Quel lac, partagé entre le Malawi, le Mozambique et la Tanzanie, est connu pour son incroyable diversité de poissons cichlidés ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Lac Malawi (ou Lac Nyasa)",
     incorrect_answers: ["Le Lac Victoria", "Le Lac Tanganyika", "Le Lac Turkana"],
@@ -2668,7 +2678,7 @@ questions_data = [
   {
     content: "La dépression de Danakil, l'un des endroits les plus chauds et les plus bas de la planète, se trouve principalement dans quel pays ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "L'Éthiopie",
     incorrect_answers: ["L'Érythrée", "Djibouti", "La Somalie"],
@@ -2677,7 +2687,7 @@ questions_data = [
   {
     content: "Quel massif montagneux, parfois appelé les 'Montagnes de la Lune', se trouve à la frontière de l'Ouganda et de la RDC ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Les Monts Rwenzori",
     incorrect_answers: ["Les Monts Virunga", "Le Massif de l'Adamaoua", "Le Massif du Tibesti"],
@@ -2686,7 +2696,7 @@ questions_data = [
   {
     content: "Le 'Grand Escarpement' est une caractéristique topographique majeure qui borde quel grand plateau ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le plateau sud-africain",
     incorrect_answers: ["Le plateau éthiopien", "Le plateau de Jos", "Le plateau du Fouta-Djalon"],
@@ -2695,7 +2705,7 @@ questions_data = [
   {
     content: "Quel fleuve prend sa source dans le massif du Fouta-Djalon en Guinée et se jette dans l'Atlantique au Sénégal ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le fleuve Sénégal",
     incorrect_answers: ["Le fleuve Gambie", "La Volta", "Le Niger"],
@@ -2704,7 +2714,7 @@ questions_data = [
   {
     content: "Le Lac Assal, le point le plus bas d'Afrique, est un lac salé situé dans quel pays ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Djibouti",
     incorrect_answers: ["L'Éthiopie", "L'Érythrée", "Le Kenya"],
@@ -2713,7 +2723,7 @@ questions_data = [
   {
     content: "Quel courant océanique froid remonte le long de la côte sud-ouest de l'Afrique, contribuant à l'aridité du désert du Namib ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le courant de Benguela",
     incorrect_answers: ["Le courant des Aiguilles", "Le courant de Guinée", "Le courant des Canaries"],
@@ -2722,7 +2732,7 @@ questions_data = [
   {
     content: "Le massif du Tibesti, une chaîne de volcans majoritairement inactifs, se trouve dans le désert du Sahara, principalement dans quel pays ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Tchad",
     incorrect_answers: ["La Libye", "Le Niger", "L'Algérie"],
@@ -2731,7 +2741,7 @@ questions_data = [
   {
     content: "Quel fleuve, formant la frontière entre la RDC et le Congo-Brazzaville, est le plus profond du monde ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Congo",
     incorrect_answers: ["Le Nil", "Le Zambèze", "Le Niger"],
@@ -2740,7 +2750,7 @@ questions_data = [
   {
     content: "La 'Côte des Squelettes' est le nom donné au littoral de quel pays, en raison de ses nombreux naufrages et de son climat inhospitalier ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "La Namibie",
     incorrect_answers: ["L'Angola", "L'Afrique du Sud", "La Somalie"],
@@ -2749,14 +2759,15 @@ questions_data = [
   {
     content: "Quel lac volcanique du Cameroun a libéré une grande quantité de CO2 en 1986, causant la mort de près de 1 800 personnes ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Reliefs, fleuves et océans",
     region: "Afrique",
     correct_answer: "Le Lac Nyos",
     incorrect_answers: ["Le Lac Kivu", "Le Lac Manoun", "Le Lac Tana"],
     contexte: "Ce phénomène rare, appelé éruption limnique, a conduit à la mise en place de systèmes de dégazage pour prévenir de futures catastrophes."
-  }
+  },
 
-  # Europe - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
+  # EUROPE - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
+
   {
     content: "Quelle est la plus haute chaîne de montagnes d'Europe, s'étendant sur huit pays dont la France, la Suisse et l'Italie ?",
     difficulty: "facile",
@@ -3152,9 +3163,9 @@ questions_data = [
     correct_answer: "La Grèce",
     incorrect_answers: ["L'Italie", "L'Espagne", "La Turquie"],
     contexte: "Situés en Thessalie, ces piliers de grès sont un site du patrimoine mondial de l'UNESCO, combinant merveille naturelle et réalisation humaine."
-  }
+  },
 
-  # Amérique - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
+  # AMERIQUE - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
 
   {
     content: "Quel est le plus long fleuve d'Amérique du Sud, et le plus puissant du monde en termes de débit ?",
@@ -3515,9 +3526,9 @@ questions_data = [
     correct_answer: "Le Salvador",
     incorrect_answers: ["Le Belize", "Le Honduras", "Le Nicaragua"],
     contexte: "Le Salvador est le plus petit pays d'Amérique centrale et ne possède qu'une côte sur l'océan Pacifique."
-  }
+  },
 
-  # Océanie - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
+  # OCEANIE - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
 
   {
     content: "Quel est le plus grand système de récifs coralliens du monde, visible depuis l'espace, situé au large de la côte australienne ?",
@@ -3878,9 +3889,9 @@ questions_data = [
     correct_answer: "La Nouvelle-Zélande",
     incorrect_answers: ["L'Australie", "La Tasmanie", "La Papouasie-Nouvelle-Guinée"],
     contexte: "Il prend sa source sur les pentes du mont Ruapehu et traverse l'Île du Nord, jouant un rôle crucial dans la production d'hydroélectricité."
-  }
+  },
 
-  # Asie - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
+  # ASIE - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Pro (NON VERIFIEES)
 
   {
     content: "Quelle est la plus haute chaîne de montagnes du monde, abritant le mont Everest ?",
@@ -4241,11 +4252,11 @@ questions_data = [
     correct_answer: "Bali et Lombok",
     incorrect_answers: ["Java et Sumatra", "Bornéo et Célèbes", "Sumatra et Java"],
     contexte: "Cette ligne correspond à un chenal en eau profonde qui a agi comme une barrière pour les espèces, même lorsque le niveau de la mer était plus bas."
-  }
+  },
 
-  # RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Flash (NON VERIFIEES)
+  # RÉGIONS, VILLES ET CAPITALES
 
-  # Océanie - RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Flash (NON VERIFIEES)
+  # OCEANIE - RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Pro (NON VERIFIEES)
 
   {
     content: "Quelle est la capitale de l'Australie ?",
@@ -4642,7 +4653,7 @@ questions_data = [
     correct_answer: "Les Territoires de l'Île Christmas et des Îles Cocos (Keeling)",
     incorrect_answers: ["Les Îles Ashmore et Cartier", "L'Île Norfolk", "Les Îles Heard et McDonald"],
     contexte: "Ces territoires sont administrés par l'Australie mais sont géographiquement plus proches de l'Asie."
-  }
+  },
 
   # Amérique - RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Flash (NON VERIFIEES)
 
@@ -5005,7 +5016,7 @@ questions_data = [
     correct_answer: "Le Brésil",
     incorrect_answers: ["Le Pérou", "La Colombie", "Le Venezuela"],
     contexte: "Environ 60% de la forêt amazonienne est située à l'intérieur des frontières du Brésil."
-  }
+  },
 
   # Afrique - RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Flash (NON VERIFIEES)
 
@@ -5368,9 +5379,9 @@ questions_data = [
     correct_answer: "Elle abrite de nombreuses bases militaires étrangères",
     incorrect_answers: ["C'est un centre financier majeur", "C'est un site du patrimoine mondial", "C'est le plus grand port d'Afrique"],
     contexte: "En raison de sa position stratégique près du détroit de Bab-el-Mandeb, Djibouti accueille des bases militaires des États-Unis, de la Chine, de la France, etc."
-  }
+  },
 
-  # Europe - RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Flash (DEJA VERIFIEES)
+  # EUROPE - RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Flash (DEJA VERIFIEES)
 
   {
     content: "Quelle est la capitale de la France, célèbre pour la Tour Eiffel et le musée du Louvre ?",
@@ -5740,9 +5751,9 @@ questions_data = [
     correct_answer: "La Moldavie",
     incorrect_answers: ["La Biélorussie", "La Macédoine du Nord", "L'Albanie"],
     contexte: "Chișinău est connue pour son architecture de l'époque soviétique et ses nombreux parcs."
-  }
+  },
 
-  # Asie - RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Flash (DEJA VERIFIEES)
+  # ASIE - RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Flash (DEJA VERIFIEES)
 
   {
     content: "Quelle est la capitale de la Chine, célèbre pour la Cité Interdite et la Place Tian'anmen ?",
@@ -5786,7 +5797,7 @@ questions_data = [
     category: "RÉGIONS, VILLES ET CAPITALES",
     region: "Asie",
     correct_answer: "Séoul",
-    incorrect_answers: ["Busan", "Incheon", "Daegu"],
+    incorrect_answers: ["Busan", "Incheon", "Pyongyang"],
     contexte: "Séoul est une mégapole moderne où la technologie de pointe côtoie des palais et des temples historiques."
   },
   {
@@ -6096,14 +6107,14 @@ questions_data = [
     contexte: "Le nom 'Douchanbé' signifie 'lundi' en persan, en référence au marché qui s'y tenait ce jour-là."
   },
   {
-    content: "Bandar Seri Begawan est la capitale de quel riche sultanat de l'île de Bornéo ?",
+    content: "Bandar Seri Begawan est la capitale de quel pays situé sur l'île de Bornéo ?",
     difficulty: "difficile",
     category: "RÉGIONS, VILLES ET CAPITALES",
     region: "Asie",
     correct_answer: "Brunei",
     incorrect_answers: ["La Malaisie", "L'Indonésie", "Singapour"],
     contexte: "La ville est célèbre pour ses mosquées opulentes et son village sur pilotis, Kampong Ayer."
-  }
+  },
 
   # CONFLITS, POLITIQUE ET GEOPOLITIQUE via Gemini 2.5 Pro
 
@@ -6513,7 +6524,7 @@ questions_data = [
     correct_answer: "La Fraction Armée Rouge (Bande à Baader)",
     incorrect_answers: ["Les Brigades Rouges (Italie)", "Action Directe (France)", "L'IRA (Irlande du Nord)"],
     contexte: "Ce groupe, issu du mouvement étudiant radical, a mené des attentats, des enlèvements et des assassinats contre ce qu'il considérait comme le système capitaliste et impérialiste."
-  }
+  },
 
   # ASIE - CONFLITS GEOPO
   {
@@ -7607,7 +7618,7 @@ questions_data = [
     correct_answer: "Samoa (et Tokelau)",
     incorrect_answers: ["Tonga", "Tuvalu", "Niue"],
     contexte: "Le Fono samoan a été le théâtre d'une crise constitutionnelle majeure en 2021, lorsque le parti au pouvoir a refusé de céder le pouvoir après une défaite électorale."
-  }
+  },
 
   # AFRIQUE - CONFLITS - GEOPO
 
@@ -7963,14 +7974,1822 @@ questions_data = [
     contexte: "La défaite tactique de l'armée sud-africaine a brisé le mythe de son invincibilité et a conduit à l'indépendance de la Namibie."
   },
   {
-    content: "La 'Guerre des Sables' de 1963 était un conflit frontalier qui a opposé quels deux pays d'Afrique du Nord ?",
+    content: "La 'Guerre des Sables' de 1963 était un conflit frontalier qui a opposé quels pays d'Afrique ?",
     difficulty: "difficile",
     category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
     region: "Afrique",
     correct_answer: "L'Algérie et le Maroc",
     incorrect_answers: ["La Tunisie et la Libye", "L'Égypte et la Libye", "L'Algérie et la Tunisie"],
     contexte: "Ce conflit, né de revendications territoriales marocaines sur des zones du Sahara algérien, a jeté les bases d'une longue rivalité régionale."
-  }
+  },
+
+  # ETHNIES, LANGUES, RELIGIONS, COUTUMES
+
+  # EUROPE - ETHNIES, LANGUES, RELIGIONS, COUTUMES via Gemini 2.5 Pro (VERIFEES)
+
+  {
+    content: "Quelle est la religion majoritaire dans des pays comme l'Espagne, l'Italie et la Pologne ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Le Catholicisme",
+    incorrect_answers: ["Le Protestantisme", "L'Orthodoxie", "L'Islam"],
+    contexte: "Le catholicisme romain est la plus grande branche du christianisme en Europe, avec le Pape au Vatican comme chef spirituel."
+  },
+  {
+    content: "Quelle famille de langues regroupe le français, l'espagnol, l'italien et le portugais ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Les langues romanes",
+    incorrect_answers: ["Les langues germaniques", "Les langues slaves", "Les langues celtiques"],
+    contexte: "Les langues romanes descendent toutes du latin vulgaire parlé dans l'Empire romain."
+  },
+  {
+    content: "Quelle famille de langues regroupe l'allemand, l'anglais et le suédois ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Les langues germaniques",
+    incorrect_answers: ["Les langues romanes", "Les langues slaves", "Les langues finno-ougriennes"],
+    contexte: "Les langues germaniques sont principalement parlées en Europe du Nord et de l'Ouest."
+  },
+  {
+    content: "L'Oktoberfest est une célèbre fête de la bière qui a lieu chaque année dans quelle ville allemande ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Munich",
+    incorrect_answers: ["Berlin", "Hambourg", "Cologne"],
+    contexte: "L'Oktoberfest est la plus grande fête populaire du monde, attirant des millions de visiteurs en Bavière."
+  },
+  {
+    content: "Quelle religion est majoritaire en Grèce, en Russie et en Serbie ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Le Christianisme orthodoxe",
+    incorrect_answers: ["Le Catholicisme", "Le Protestantisme", "Le Judaïsme"],
+    contexte: "L'Église orthodoxe s'est séparée de l'Église catholique lors du Grand Schisme de 1054."
+  },
+  {
+    content: "Le sauna est une tradition de bain de vapeur profondément ancrée dans la culture de quel pays nordique ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "La Finlande",
+    incorrect_answers: ["L'Allemagne", "Le Royaume-Uni", "La Biélorussie"],
+    contexte: "En Finlande, le sauna est un lieu de socialisation, de détente et de bien-être, considéré comme une nécessité nationale."
+  },
+  {
+    content: "Le flamenco est une danse et une musique traditionnelles de quelle région d'Espagne ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'Andalousie",
+    incorrect_answers: ["La Catalogne", "Le Pays Basque", "La Galice"],
+    contexte: "Le flamenco est un art complexe associé au peuple gitan (gitano) d'Andalousie."
+  },
+  {
+    content: "Quelle est la principale branche du christianisme en Scandinavie et au nord de l'Allemagne ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Le Protestantisme",
+    incorrect_answers: ["Le Catholicisme", "Les Coptes", "L'Orthodoxie"],
+    contexte: "La Réforme protestante, initiée par Martin Luther, a profondément remodelé le paysage religieux de l'Europe du Nord."
+  },
+  {
+    content: "La cornemuse est l'instrument de musique emblématique de quel pays ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'Écosse",
+    incorrect_answers: ["L'Irlande", "Le Pays de Galles", "La France (Bretagne)"],
+    contexte: "La grande cornemuse des Highlands est un symbole puissant de l'identité et de la culture écossaises."
+  },
+  {
+    content: "Le russe, le polonais et le tchèque appartiennent à quelle grande famille de langues ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Les langues slaves",
+    incorrect_answers: ["Les langues germaniques", "Les langues romanes", "Les langues baltes"],
+    contexte: "Les langues slaves sont parlées par une grande partie de la population d'Europe de l'Est et des Balkans."
+  },
+  {
+    content: "La corrida, ou course de taureaux, est une tradition controversée principalement associée à quel pays ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'Espagne",
+    incorrect_answers: ["Le Portugal", "L'Italie", "La France"],
+    contexte: "Considérée comme un art par ses partisans et comme un acte de cruauté par ses détracteurs, la corrida est une tradition ancienne."
+  },
+  {
+    content: "Quel peuple autochtone vit principalement dans le nord de la Norvège, de la Suède, de la Finlande et en Russie ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Les Lapons",
+    incorrect_answers: ["Les Basques", "Les Bretons", "Les Inuits"],
+    contexte: "Les Samis sont le seul peuple autochtone reconnu en Europe, traditionnellement connu pour l'élevage de rennes."
+  },
+  {
+    content: "La fête de la Saint-Patrick, célébrée avec des défilés et la couleur verte, est la fête nationale de quel pays ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'Irlande",
+    incorrect_answers: ["L'Écosse", "Le Royaume-Uni", "Les États-Unis"],
+    contexte: "Célébrée le 17 mars, elle commémore le saint patron de l'Irlande et est devenue une célébration mondiale de la culture irlandaise."
+  },
+  {
+    content: "Le 'fado' est un genre musical mélancolique, chanté avec une guitare portugaise, typique de quelle ville ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Lisbonne",
+    incorrect_answers: ["Porto", "Madrid", "Barcelone"],
+    contexte: "Le fado exprime la 'saudade', un sentiment de nostalgie et de désir, et est inscrit au patrimoine culturel immatériel de l'UNESCO."
+  },
+  {
+    content: "Quel alphabet est utilisé pour écrire le russe, le serbe et le bulgare ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'alphabet cyrillique",
+    incorrect_answers: ["L'alphabet latin", "L'alphabet grec", "L'alphabet arabe"],
+    contexte: "L'alphabet cyrillique a été développé au IXe siècle et est utilisé par de nombreuses langues slaves orientales et méridionales."
+  },
+  {
+    content: "La langue basque (Euskara), parlée dans les Pyrénées, est unique en Europe parce que...",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Elle n'a aucun lien de parenté avec d'autres langues",
+    incorrect_answers: ["Elle n'a pas de forme écrite", "Plus de 10M de personnes l'utilisent", "Elle descend directement du latin"],
+    contexte: "Le basque est un isolat linguistique, un mystère pour les linguistes, sans lien avec les familles indo-européennes."
+  },
+  {
+    content: "Les Roms sont un groupe ethnique nomade originaire de quelle région ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'Inde",
+    incorrect_answers: ["L'Égypte", "La Roumanie", "La Perse"],
+    contexte: "Les Roms ont migré vers l'Europe au Moyen Âge et forment aujourd'hui l'une des plus grandes minorités ethniques du continent."
+  },
+  {
+    content: "Le hongrois, le finnois et l'estonien appartiennent à quelle famille de langues non indo-européenne ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Les langues finno-ougriennes",
+    incorrect_answers: ["Les langues turques", "Les langues sémitiques", "Les langues baltes"],
+    contexte: "Cette famille linguistique est l'une des rares en Europe à ne pas appartenir au grand groupe indo-européen."
+  },
+  {
+    content: "Le 'Walpurgisnacht', célébré avec des feux de joie, est une fête traditionnelle dans quels pays pour accueillir le printemps ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'Allemagne et la Suède",
+    incorrect_answers: ["L'Espagne et le Portugal", "La Grèce et l'Italie", "L'Irlande et l'Écosse"],
+    contexte: "Célébrée la veille du 1er mai, cette fête païenne visait à éloigner les sorcières et les mauvais esprits."
+  },
+  {
+    content: "La division entre catholiques et protestants a été au cœur d'un long conflit politique en quel lieu ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'Irlande du Nord",
+    incorrect_answers: ["La Suisse", "Les Pays-Bas", "L'Allemagne"],
+    contexte: "Le conflit des 'Troubles' opposait les unionistes aux nationalistes."
+  },
+  {
+    content: "Quelle est la plus grande religion minoritaire en France et en Allemagne ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'Islam",
+    incorrect_answers: ["Le Judaïsme", "Le Bouddhisme", "L'Hindouisme"],
+    contexte: "L'immigration en provenance de pays musulmans, notamment de Turquie et d'Afrique du Nord, a fait de l'Islam la deuxième religion."
+  },
+  {
+    content: "Le 'schisme de 1054' a officiellement divisé quelles deux grandes branches du christianisme ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'Église catholique  et l'Église orthodoxe ",
+    incorrect_answers: ["Le Catholicisme et le Protestantisme", "L'Arianisme et le Catholicisme", "Le Sunnisme et le Chiisme"],
+    contexte: "Cette séparation, ou Grand Schisme, a formalisé des siècles de divergences théologiques et politiques entre Rome et Constantinople."
+  },
+  {
+    content: "Les langues gaéliques font partie de quelle famille linguistique ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Les langues celtiques",
+    incorrect_answers: ["Les langues germaniques", "Les langues romanes", "Les langues nordiques"],
+    contexte: "Les langues celtiques, autrefois parlées dans une grande partie de l'Europe, ne survivent aujourd'hui qu'aux franges atlantiques."
+  },
+  {
+    content: "Le 'Midsommar' est une fête majeure en Suède célébrant quoi ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Le solstice d'été",
+    incorrect_answers: ["Le début du printemps", "La fête nationale", "Les récoltes d'automne"],
+    contexte: "C'est l'une des fêtes les plus importantes de l'année en Suède, célébrée avec des danses autour d'un mât fleuri."
+  },
+  {
+    content: "La Sorabe est une langue minoritaire slave parlée dans quelle région d'Allemagne ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "La Lusace (Saxe et Brandebourg)",
+    incorrect_answers: ["La Bavière", "La Forêt-Noire", "La Frise"],
+    contexte: "Les Sorabes sont une minorité slave occidentale reconnue qui a préservé sa langue et ses coutumes uniques."
+  },
+  {
+    content: "La 'Sinterklaas', une fête où Saint Nicolas distribue des cadeaux, est une tradition majeure dans quel pays ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Les Pays-Bas",
+    incorrect_answers: ["L'Allemagne", "La Pologne", "La Norvège"],
+    contexte: "Célébrée début décembre, cette fête est plus importante que Noël pour de nombreuses familles néerlandaises."
+  },
+  {
+    content: "En Suisse, quelle n'est PAS l'une des quatre langues nationales ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'anglais",
+    incorrect_answers: ["L'allemand", "Le français", "Le romanche"],
+    contexte: "Les quatre langues nationales de la Suisse sont l'allemand, le français, l'italien et le romanche."
+  },
+  {
+    content: "Le 'Krampus' est une figure folklorique bestiale qui accompagne Saint Nicolas pour punir les enfants désobéissants, dans quelle région alpine ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'Autriche et la Bavière",
+    incorrect_answers: ["La Suisse", "La France", "L'Italie du Nord"],
+    contexte: "Cette tradition païenne a été intégrée dans les célébrations chrétiennes et connaît un regain de popularité."
+  },
+  {
+    content: "Quelle est la religion d'État de l'Islande, du Danemark et de la Norvège ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Le luthéranisme",
+    incorrect_answers: ["Le catholicisme", "Aucune", "L'orthodoxie"],
+    contexte: "Ces pays ont des Églises nationales luthériennes, bien que la liberté de religion soit garantie et que la sécularisation progresse."
+  },
+  {
+    content: "Le frison est une langue germanique minoritaire parlée principalement dans quelle région des Pays-Bas ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "La Frise (Fryslân)",
+    incorrect_answers: ["La Hollande", "La Zélande", "Le Brabant"],
+    contexte: "Le frison est la langue vivante la plus proche de l'anglais ancien et est reconnu comme langue officielle dans la province de Frise."
+  },
+  {
+    content: "La 'Tarentelle' est une danse folklorique rapide du sud de l'Italie qui, selon la légende, était censée guérir quoi ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "La morsure d'une tarentule",
+    incorrect_answers: ["Le chagrin d'amour", "La peste", "La folie"],
+    contexte: "On croyait que la danse frénétique permettait d'expulser le venin de l'araignée par la transpiration."
+  },
+  {
+    content: "Les Cathares étaient les adeptes d'un mouvement chrétien considéré comme hérétique et anéanti lors d'une croisade. Dans quelle région de France vivaient-ils ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Le Languedoc",
+    incorrect_answers: ["La Bretagne", "La Provence", "La Normandie"],
+    contexte: "La croisade des Albigeois (1209-1229) a brutalement mis fin au catharisme, une forme de dualisme gnostique."
+  },
+  {
+    content: "Quel est l'un des seuls pays d'Europe à majorité musulmane ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'Albanie",
+    incorrect_answers: ["La Serbie", "La Bulgarie", "La Grèce"],
+    contexte: "L'héritage de l'Empire ottoman a laissé une importante population musulmane dans les Balkans, notamment en Albanie, au Kosovo et en Bosnie-Herzégovine."
+  },
+  {
+    content: "Le ladin et le frioulan sont deux langues romanes minoritaires parlées dans quelle région montagneuse d'Italie ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Les Dolomites et le Frioul",
+    incorrect_answers: ["La Sicile", "La Sardaigne", "La Toscane"],
+    contexte: "Ces langues rhéto-romanes sont des vestiges de dialectes latins alpins et sont reconnues comme langues minoritaires."
+  },
+  {
+    content: "La 'Sizain', ou chant polyphonique géorgien, est unique et a été reconnue par l'UNESCO. Qu'est-ce qui la caractérise ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Une technique de yodel et des harmonies complexes",
+    incorrect_answers: ["L'utilisation d'un seul instrument", "Le chant à une seule voix", "Des paroles uniquement religieuses"],
+    contexte: "Cette tradition de chant polyphonique est l'une des plus anciennes au monde, antérieure à l'introduction du christianisme en Géorgie."
+  },
+  {
+    content: "L'aroumain est une langue romane orientale parlée par des communautés dispersées dans quelle région ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Les Balkans (Grèce, Albanie, Macédoine du Nord)",
+    incorrect_answers: ["L'Espagne", "Le sud de la France", "La Roumanie"],
+    contexte: "Les Aroumains, ou Valaques, sont considérés comme des descendants de populations locales romanisées. Leur langue est en voie de disparition."
+  },
+  {
+    content: "Le 'calcio storico' est une forme ancienne et violente de football jouée chaque année dans quelle ville italienne ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "Florence",
+    incorrect_answers: ["Rome", "Sienne", "Vérone"],
+    contexte: "Ce sport combine des éléments de football, de rugby et de lutte. Les équipes représentent les quatre quartiers historiques de Florence."
+  },
+  {
+    content: "Les Vieux-croyants sont un groupe religieux qui s'est séparé de l'Église orthodoxe de quel pays au 17e siècle ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "La Russie",
+    incorrect_answers: ["La Grèce", "La Serbie", "La Roumanie"],
+    contexte: "Ils ont rejeté les réformes liturgiques du patriarche Nikon et ont été persécutés pendant des siècles, formant des communautés isolées."
+  },
+  {
+    content: "Le manx, une langue celtique, a connu une renaissance après la mort de son dernier locuteur natif en 1974. Sur quelle île est-elle parlée ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Europe",
+    correct_answer: "L'île de Man",
+    incorrect_answers: ["L'île de Wight", "Les Hébrides", "Les îles Anglo-Normandes"],
+    contexte: "L'île de Man, une dépendance de la Couronne britannique, a mené des efforts couronnés de succès pour faire revivre sa langue indigène."
+  },
+
+  # AFRIQUE - Ethnies, langues, religions, coutumes (VERIFIEES)
+
+  {
+    content: "Quelle est la religion majoritaire en Afrique du Nord, notamment en Égypte, en Algérie et au Maroc ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "L'Islam",
+    incorrect_answers: ["Le Christianisme", "Le Judaïsme", "L'Animisme"],
+    contexte: "L'Islam s'est répandu en Afrique du Nord avec les conquêtes arabes à partir du VIIe siècle et est aujourd'hui la foi prédominante dans la région."
+  },
+  {
+    content: "Le swahili est une langue bantoue largement parlée dans quelle région d'Afrique ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "L'Afrique de l'Est",
+    incorrect_answers: ["L'Afrique de l'Ouest", "L'Afrique du Nord", "L'Afrique australe"],
+    contexte: "Le swahili est la langue officielle de la Tanzanie, du Kenya et de l'Ouganda, et sert de lingua franca dans une grande partie de la région des Grands Lacs."
+  },
+  {
+    content: "Quel groupe ethnique est principalement associé à la région du KwaZulu-Natal en Afrique du Sud ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Les Zoulous",
+    incorrect_answers: ["Les Xhosa", "Les Sotho", "Les Afrikaners"],
+    contexte: "Les Zoulous sont le plus grand groupe ethnique d'Afrique du Sud, célèbres pour leur histoire militaire et leur roi Chaka."
+  },
+  {
+    content: "Quelle religion est majoritaire dans la majeure partie de l'Afrique subsaharienne ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Le Christianisme",
+    incorrect_answers: ["L'Islam", "L'Animisme", "L'Hindouisme"],
+    contexte: "Le christianisme, introduit par les missionnaires européens, est aujourd'hui la religion la plus répandue au sud du Sahara, souvent mêlé à des croyances traditionnelles."
+  },
+  {
+    content: "L'arabe est la langue officielle de nombreux pays situés dans quelle grande région africaine ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "L'Afrique du Nord",
+    incorrect_answers: ["L'Afrique de l'Ouest", "L'Afrique Centrale", "L'Afrique australe"],
+    contexte: "L'arabe est la langue de l'administration et de la religion dans des pays comme l'Égypte, l'Algérie, le Maroc et la Tunisie."
+  },
+  {
+    content: "Les Massaïs sont un groupe ethnique semi-nomade célèbre pour ses guerriers et son élevage de bétail. Dans quels deux pays vivent-ils principalement ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Le Kenya et la Tanzanie",
+    incorrect_answers: ["L'Éthiopie et la Somalie", "L'Afrique du Sud et le Zimbabwe", "Le Nigeria et le Ghana"],
+    contexte: "Les Massaïs sont connus pour leurs vêtements rouges distinctifs (shuka) et leurs traditions culturelles préservées."
+  },
+  {
+    content: "Le 'fufu' (ou 'ugali') est un aliment de base, une sorte de pâte ou de purée, consommé dans de vastes régions de quelle partie de l'Afrique ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "L'Afrique de l'Ouest et Centrale",
+    incorrect_answers: ["L'Afrique du Nord", "L'Afrique australe", "La Corne de l'Afrique"],
+    contexte: "Fabriqué à partir de manioc, d'igname ou de maïs, le fufu est généralement consommé avec des soupes et des ragoûts."
+  },
+  {
+    content: "Quelle langue est la langue officielle de l'Angola et du Mozambique ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Le portugais",
+    incorrect_answers: ["L'espagnol", "Le français", "L'anglais"],
+    contexte: "Ces deux pays sont d'anciennes colonies du Portugal et font partie de la Communauté des pays de langue portugaise."
+  },
+  {
+    content: "La culture du vaudou est une culture traditionnelle originaire de quelle région d'Afrique ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "L'Afrique de l'Ouest (notamment le Bénin et le Togo)",
+    incorrect_answers: ["L'Afrique de l'Est", "L'Afrique du Nord", "L'Afrique Centrale"],
+    contexte: "Le vaudou s'est ensuite propagé dans les Amériques (notamment en Haïti) avec la traite négrière."
+  },
+  {
+    content: "Les Berbères (Amazighs) sont le peuple autochtone de quelle région ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "L'Afrique du Nord (Maghreb)",
+    incorrect_answers: ["Le Sahel", "La Corne de l'Afrique", "L'Afrique de l'Ouest"],
+    contexte: "Les Berbères ont leur propre langue (le tamazight) et leur propre culture, antérieures à l'arrivée des Arabes."
+  },
+  {
+    content: "Le 'kente' est un tissu coloré aux motifs complexes, tissé à la main par quel groupe ethnique ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Les Ashantis (au Ghana)",
+    incorrect_answers: ["Les Yorubas (au Nigeria)", "Les Zoulous (en Afrique du Sud)", "Les Wolofs (au Sénégal)"],
+    contexte: "Le kente était autrefois réservé à la royauté et est aujourd'hui un symbole important de l'identité ghanéenne et africaine."
+  },
+  {
+    content: "Quel instrument de musique, une harpe-luth à 21 cordes, est emblématique de la culture mandingue en Afrique de l'Ouest ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "La kora",
+    incorrect_answers: ["Le djembé", "Le balafon", "La mbira"],
+    contexte: "La kora est traditionnellement jouée par les griots, qui sont des conteurs, des historiens et des musiciens."
+  },
+  {
+    content: "Quelle grande famille linguistique regroupe des centaines de langues parlées dans la majeure partie de l'Afrique subsaharienne, dont le zoulou et le swahili ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Les langues bantoues",
+    incorrect_answers: ["Les langues nilo-sahariennes", "Les langues afro-asiatiques", "Les langues khoïsan"],
+    contexte: "L'expansion bantoue est l'une des migrations les plus importantes de l'histoire africaine, diffusant l'agriculture et la métallurgie."
+  },
+  {
+    content: "L'injera, une grande crêpe aigre, est l'aliment de base et le plat national de quels deux pays de la Corne de l'Afrique ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "L'Éthiopie et l'Érythrée",
+    incorrect_answers: ["La Somalie et Djibouti", "Le Soudan et le Soudan du Sud", "Le Kenya et la Tanzanie"],
+    contexte: "L'injera est fabriquée à partir de la farine de teff, une céréale ancienne, et sert à la fois d'assiette et d'ustensile."
+  },
+  {
+    content: "Quelle langue européenne est largement utilisée comme langue officielle et de communication en Afrique de l'Ouest et Centrale ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Le français",
+    incorrect_answers: ["L'anglais", "Le portugais", "L'espagnol"],
+    contexte: "L'héritage colonial français a laissé le français comme langue officielle dans de nombreux pays comme le Sénégal, la Côte d'Ivoire et la RDC."
+  },
+  {
+    content: "Les Xhosa sont un groupe ethnique d'Afrique du Sud. Leur langue est célèbre pour...",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Ses consonnes à clics",
+    incorrect_answers: ["N'avoir que trois voyelles", "Être une langue tonale", "N'avoir pas de pluriel"],
+    contexte: "Le xhosa, comme le zoulou, a incorporé des sons à clics des langues khoïsan voisines. Nelson Mandela était un Xhosa."
+  },
+  {
+    content: "L'Église éthiopienne orthodoxe est l'une des plus anciennes Églises chrétiennes du monde. Quelle est sa particularité ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Elle a son propre pape et des traditions juives",
+    incorrect_answers: ["Elle ne reconnaît pas Jésus", "Elle n'utilise pas de croix", "Ses services sont en latin"],
+    contexte: "Elle fait partie des Églises orthodoxes orientales et conserve des pratiques comme la circoncision et des restrictions alimentaires."
+  },
+  {
+    content: "Le 'wolof' est la langue principale de quel pays d'Afrique de l'Ouest ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Le Sénégal",
+    incorrect_answers: ["Le Nigeria", "Le Ghana", "La Côte d'Ivoire"],
+    contexte: "Bien que le français soit la langue officielle, le wolof sert de lingua franca et est parlé par la majorité de la population."
+  },
+  {
+    content: "Le 'braai' est une coutume sociale importante en Afrique du Sud. De quoi s'agit-il ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Un barbecue",
+    incorrect_answers: ["Une danse traditionnelle", "Une cérémonie de mariage", "La lecture pour aveugles"],
+    contexte: "Le braai est plus qu'un simple barbecue ; c'est un événement social qui rassemble les gens de toutes les communautés."
+  },
+  {
+    content: "Quel peuple nomade du Sahara et du Sahel est célèbre pour ses hommes portant un voile indigo, les 'hommes bleus' ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Les Touaregs",
+    incorrect_answers: ["Les Peuls", "Les Berbères", "Les Maures"],
+    contexte: "Les Touaregs sont un peuple berbère avec une société matrilinéaire et leur propre écriture, le tifinagh."
+  },
+  {
+    content: "L'afrikaans est une langue germanique dérivée principalement de quelle langue européenne ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Le néerlandais",
+    incorrect_answers: ["L'allemand", "L'anglais", "Le français"],
+    contexte: "Parlé en Afrique du Sud et en Namibie, l'afrikaans s'est développé parmi les descendants des colons néerlandais (les Boers)."
+  },
+  {
+    content: "Le 'Grand Zimbabwe' était la capitale d'un grand royaume médiéval construit par quel peuple ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Le peuple Shona",
+    incorrect_answers: ["Le peuple Zoulou", "Le peuple Swazi", "Le peuple Ndebele"],
+    contexte: "Les ruines de pierre du Grand Zimbabwe témoignent de la sophistication de cette civilisation qui a prospéré grâce au commerce de l'or."
+  },
+  {
+    content: "Le 'Nollywood' est le surnom de l'industrie cinématographique prolifique de quel pays ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Le Nigeria",
+    incorrect_answers: ["L'Afrique du Sud", "La Namibie", "L'Égypte"],
+    contexte: "Nollywood est la deuxième plus grande industrie cinématographique au monde en termes de nombre de films produits, après Bollywood."
+  },
+  {
+    content: "Les Dogons sont un peuple du Mali célèbre pour...",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Leurs connaissances astronomiques et leurs masques de cérémonie",
+    incorrect_answers: ["Leurs pyramides en terre", "Leurs compétences en navigation", "Leur musique polyphonique"],
+    contexte: "La cosmogonie complexe des Dogons, qui inclurait des connaissances sur l'étoile Sirius B, a fasciné les anthropologues."
+  },
+  {
+    content: "La religion rastafari, bien que développée en Jamaïque, vénère quel empereur éthiopien comme une figure messianique ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Haïlé Sélassié Ier",
+    incorrect_answers: ["Ménélik II", "Théodros II", "Bob Marley"],
+    contexte: "Les rastafaris considéraient Haïlé Sélassié comme une incarnation de Dieu (Jah), en raison de son titre de 'Roi des Rois'."
+  },
+  {
+    content: "Le 'lobola' ou 'dot' est une coutume dans de nombreuses cultures d'Afrique australe. Qu'est-ce que c'est ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Le prix de la fiancée, souvent payé en bétail",
+    incorrect_answers: ["Un rite de passage à l'âge adulte", "Une cérémonie de funérailles", "Un festival des récoltes"],
+    contexte: "Le lobola est considéré comme un moyen d'unir les familles de la mariée et du marié."
+  },
+  {
+    content: "Les Yorubas sont l'un des plus grands groupes ethniques d'Afrique, vivant principalement dans quels deux pays ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Le Nigeria et le Bénin",
+    incorrect_answers: ["Le Ghana et le Togo", "Le Cameroun et le Gabon", "Le Sénégal et la Gambie"],
+    contexte: "La religion yoruba et ses divinités (Orishas) ont eu une influence majeure sur des religions des Amériques comme la Santería."
+  },
+  {
+    content: "Quel est le seul pays d'Afrique où l'espagnol est une langue officielle ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "La Guinée Équatoriale",
+    incorrect_answers: ["Le Sahara Occidental", "Le Maroc", "L'Angola"],
+    contexte: "Ancienne colonie espagnole, la Guinée Équatoriale a également adopté le français et le portugais comme langues officielles."
+  },
+  {
+    content: "Les Coptes sont la principale minorité religieuse de quel pays ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "L'Égypte",
+    incorrect_answers: ["L'Éthiopie", "Le Soudan", "La Libye"],
+    contexte: "Les Coptes sont les descendants des anciens Égyptiens et forment l'une des plus anciennes communautés chrétiennes au monde."
+  },
+  {
+    content: "Les San (ou Bochimans) sont un peuple indigène d'Afrique australe connu pour...",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Leur mode de vie de chasseurs-cueilleurs et leurs langues à clics",
+    incorrect_answers: ["Leur agriculture en terrasses", "Leurs empires centralisés", "Leur tradition de momification"],
+    contexte: "Considérés comme l'un des plus anciens peuples du monde, leur art rupestre et leur connaissance de l'environnement sont exceptionnels."
+  },
+  {
+    content: "L'amharique est la langue de travail officielle et une langue sémitique parlée dans quel pays ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "L'Éthiopie",
+    incorrect_answers: ["L'Érythrée", "La Somalie", "Le Soudan"],
+    contexte: "L'amharique s'écrit avec son propre alphabet, le Ge'ez, qui est un alphasyllabaire."
+  },
+  {
+    content: "Le 'griot' est une figure sociale importante en Afrique de l'Ouest. Quel est son rôle ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Un poète, musicien et gardien de la tradition orale",
+    incorrect_answers: ["Un chef de guerre", "Un prêtre animiste", "Un juge de village"],
+    contexte: "Les griots sont des 'bibliothèques vivantes', transmettant l'histoire, la généalogie et les contes de génération en génération."
+  },
+  {
+    content: "Les Pygmées sont des peuples de chasseurs-cueilleurs caractérisés par leur petite taille, qui vivent principalement dans...",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "La forêt tropicale du bassin du Congo",
+    incorrect_answers: ["Le désert du Kalahari", "Les hauts plateaux éthiopiens", "La savane d'Afrique de l'Est"],
+    contexte: "Des groupes comme les Baka et les Mbuti sont confrontés à de graves menaces, notamment la déforestation et la discrimination."
+  },
+  {
+    content: "Quelle est la particularité du calendrier éthiopien ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Il compte 13 mois et a environ 7 ans de retard sur le calendrier grégorien",
+    incorrect_answers: ["Il est purement lunaire", "Il ne compte que 10 mois", "Il n'est pas utilisé en Ethiopie"],
+    contexte: "Le calendrier éthiopien est basé sur l'ancien calendrier copte. Le 13ème mois ne compte que 5 ou 6 jours."
+  },
+  {
+    content: "Le malgache, la langue de Madagascar, n'est pas apparentée aux langues africaines mais à quelle famille de langues ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Les langues austronésiennes (comme le malais)",
+    incorrect_answers: ["Les langues bantoues", "Les langues indo-européennes", "Les langues sémitiques"],
+    contexte: "Cela reflète le peuplement de l'île par des marins venus d'Asie du Sud-Est il y a plus de 1500 ans."
+  },
+  {
+    content: "La 'Cérémonie du thé' est une coutume majeure au Japon, mais quel pays africain a une cérémonie du thé tout aussi complexe et socialement importante ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "La Mauritanie (et une grande partie du Sahel)",
+    incorrect_answers: ["Le Rwanda", "L'Afrique du Sud", "Le Kenya"],
+    contexte: "La cérémonie du thé mauritanien implique la préparation et la dégustation de trois verres de thé à la menthe, chacun avec une signification différente."
+  },
+  {
+    content: "Les 'falashas' ou 'Beta Israel' sont une communauté juive originaire de quel pays ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "L'Éthiopie",
+    incorrect_answers: ["Le Maroc", "La Tunisie", "L'Afrique du Sud"],
+    contexte: "La majorité de cette communauté a été transportée par avion en Israël dans les années 1980 et 1990 lors d'opérations secrètes."
+  },
+  {
+    content: "L'art des bronzes d'Ifé et du Bénin, d'une grande sophistication technique, est associé à quels peuples et pays ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Les peuples Yoruba et Edo (Nigeria)",
+    incorrect_answers: ["Les peuples Ashanti et Fanti (Ghana)", "Les peuples Bamoun et Bamiléké (Cameroun)", "Les peuples Dogon et Bambara (Mali)"],
+    contexte: "Ces sculptures en laiton et en bronze, dont beaucoup ont été pillées par les Britanniques, sont considérées comme des chefs-d'œuvre de l'art mondial."
+  },
+  {
+    content: "Les langues khoïsan, parlées par les San et les Khoikhoi, sont presque uniques au monde en raison de leur utilisation intensive de quoi ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "Les consonnes à clics comme phonèmes de base",
+    incorrect_answers: ["Un système de voyelles à 12 tons", "L'absence de verbes", "Une grammaire basée sur les gestes"],
+    contexte: "Ces sons, souvent transcrits par '!', 'ǂ' ou '//', sont fondamentaux dans ces langues mais n'ont été adoptés que secondairement par quelques langues bantoues."
+  },
+  {
+    content: "Le 'Zar' est un culte de possession spirituelle pratiqué principalement par les femmes dans quels pays ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Afrique",
+    correct_answer: "L'Égypte, le Soudan et l'Éthiopie",
+    incorrect_answers: ["Le Nigeria, le Ghana et le Bénin", "L'Afrique du Sud, le Lesotho et Eswatini", "Le Maroc, l'Algérie et la Tunisie"],
+    contexte: "À travers des cérémonies de musique et de danse, les adeptes cherchent à apaiser les esprits qui les possèdent pour guérir des maladies."
+  },
+
+  # AMERIQUE - Ethnies, langues, religions, coutumes
+
+  {
+    content: "Quelle est la religion majoritaire sur le continent américain, introduite par la colonisation européenne ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le Christianisme",
+    incorrect_answers: ["L'Islam", "Le Judaïsme", "Les religions autochtones"],
+    contexte: "Le christianisme, principalement le catholicisme en Amérique latine et le protestantisme en Amérique du Nord, est la foi prédominante."
+  },
+  {
+    content: "Quelle langue romane est la plus parlée en Amérique du Sud ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "L'espagnol",
+    incorrect_answers: ["Le portugais", "Le français", "L'italien"],
+    contexte: "À l'exception notable du Brésil, la plupart des pays d'Amérique du Sud ont l'espagnol comme langue officielle, héritage de la colonisation."
+  },
+  {
+    content: "Quelle langue germanique est la langue la plus parlée aux États-Unis et au Canada ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "L'anglais",
+    incorrect_answers: ["L'allemand", "Le néerlandais", "Le français"],
+    contexte: "L'anglais est la langue de facto des États-Unis et l'une des deux langues officielles du Canada."
+  },
+  {
+    content: "Thanksgiving (Action de grâce) est une fête majeure célébrée principalement dans quels deux pays ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Les États-Unis et le Canada",
+    incorrect_answers: ["Le Mexique et le Brésil", "Le Royaume-Uni et l'Australie", "L'Argentine et le Chili"],
+    contexte: "Célébrée en octobre au Canada et en novembre aux États-Unis, cette fête commémore traditionnellement les récoltes et la gratitude."
+  },
+  {
+    content: "Le Carnaval de Rio, avec ses défilés de samba grandioses, est une célébration célèbre dans quel pays ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le Brésil",
+    incorrect_answers: ["L'Argentine", "La Colombie", "Le Mexique"],
+    contexte: "Le Carnaval est la plus grande fête du Brésil, un mélange de traditions européennes, africaines et indigènes."
+  },
+  {
+    content: "Quelle langue romane est la langue officielle du Brésil ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le portugais",
+    incorrect_answers: ["L'espagnol", "Le français", "L'italien"],
+    contexte: "Le Brésil est le plus grand pays lusophone du monde, avec une population bien plus importante que celle du Portugal."
+  },
+  {
+    content: "Le 'Día de los Muertos' (Jour des Morts) est une fête colorée célébrant les défunts, principalement associée à quel pays ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le Mexique",
+    incorrect_answers: ["L'Espagne", "Le Pérou", "La Colombie"],
+    contexte: "Cette tradition syncrétique mélange les croyances catholiques avec les rituels indigènes préhispaniques."
+  },
+  {
+    content: "Les Inuits sont le peuple autochtone des régions arctiques de quels territoires ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le Canada, le Groenland et l'Alaska",
+    incorrect_answers: ["La Patagonie", "La Sibérie", "La Scandinavie"],
+    contexte: "Les Inuits ont développé des techniques de survie uniques adaptées à l'un des environnements les plus hostiles de la planète."
+  },
+  {
+    content: "La 'Pampa' est une vaste plaine associée à la figure du 'gaucho', le cow-boy de quel pays ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "L'Argentine",
+    incorrect_answers: ["Le Brésil", "Le Mexique", "Les États-Unis"],
+    contexte: "Les gauchos sont un symbole de la culture argentine, célèbres pour leur habileté à cheval et leur indépendance."
+  },
+  {
+    content: "Quelle langue est, aux côtés de l'anglais, l'une des deux langues officielles du Canada ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le français",
+    incorrect_answers: ["L'espagnol", "L'allemand", "Le gaélique"],
+    contexte: "Le français est la langue majoritaire dans la province de Québec et est parlé par des communautés à travers le pays."
+  },
+  {
+    content: "La 'Santería' et le 'Candomblé' sont des religions syncrétiques qui mélangent le catholicisme avec les croyances traditionnelles de quel groupe ethnique ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Les Yorubas (d'Afrique de l'Ouest)",
+    incorrect_answers: ["Les Incas", "Les Aztèques", "Les Mayas"],
+    contexte: "Ces religions se sont développées parmi les esclaves africains à Cuba (Santería) et au Brésil (Candomblé)."
+  },
+  {
+    content: "Le 'pow-wow' est un rassemblement social et cérémoniel important pour quels peuples ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Les peuples autochtones d'Amérique du Nord (Amérindiens)",
+    incorrect_answers: ["Les Maoris", "Les Samis", "Les Aborigènes d'Australie"],
+    contexte: "Les pow-wows sont des occasions de célébrer la culture à travers le chant, la danse et la socialisation."
+  },
+  {
+    content: "La 'Mardi Gras' est une grande célébration de carnaval qui a lieu dans quelle ville américaine, célèbre pour son héritage français ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "La Nouvelle-Orléans (New Orleans)",
+    incorrect_answers: ["Miami", "Las Vegas", "Chicago"],
+    contexte: "Le Mardi Gras de la Nouvelle-Orléans est célèbre pour ses défilés, ses bals masqués et ses traditions uniques."
+  },
+  {
+    content: "Le 'hockey sur glace' est considéré comme le sport national de quel pays ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le Canada",
+    incorrect_answers: ["Les États-Unis", "La Russie", "La Suède"],
+    contexte: "Le hockey est une passion nationale au Canada, du niveau amateur à la ligue professionnelle (LNH)."
+  },
+  {
+    content: "Le Quechua est une langue indigène encore largement parlée dans quelle chaîne de montagnes ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "La Cordillère des Andes",
+    incorrect_answers: ["Les Montagnes Rocheuses", "La Sierra Madre", "Les Appalaches"],
+    contexte: "Le quechua était la langue de l'Empire inca et est aujourd'hui une langue officielle au Pérou et en Bolivie."
+  },
+  {
+    content: "Les Mennonites et les Amish sont des communautés religieuses anabaptistes qui parlent un dialecte de quelle langue ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "L'allemand (allemand de Pennsylvanie)",
+    incorrect_answers: ["Le néerlandais", "L'anglais", "Le suisse allemand"],
+    contexte: "Ces communautés, principalement aux États-Unis et au Canada, sont connues pour leur mode de vie simple et leur refus de la technologie moderne."
+  },
+  {
+    content: "La Capoeira est un art martial afro-brésilien qui combine des éléments de danse et d'acrobatie. Par qui a-t-elle été développée ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Par les esclaves africains au Brésil",
+    incorrect_answers: ["Par les indigènes d'Amazonie", "Par les immigrants portugais", "Par les moines bouddhistes"],
+    contexte: "La Capoeira était une façon pour les esclaves de dissimuler la pratique du combat sous une apparence de danse."
+  },
+  {
+    content: "Quelle est la deuxième langue la plus parlée aux États-Unis ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "L'espagnol",
+    incorrect_answers: ["Le chinois", "Le français", "L'allemand"],
+    contexte: "En raison d'une importante immigration en provenance d'Amérique latine, l'espagnol est parlé par des dizaines de millions d'Américains."
+  },
+  {
+    content: "Le 'calypso' et le 'soca' sont des genres musicaux qui trouvent leur origine dans quel pays insulaire des Caraïbes ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Trinité-et-Tobago",
+    incorrect_answers: ["La Jamaïque", "Cuba", "Haïti"],
+    contexte: "Le calypso est connu pour ses paroles satiriques et ses commentaires sociaux, tandis que la soca est plus axée sur la danse."
+  },
+  {
+    content: "Le peuple 'Garifuna', qui a une culture et une langue uniques, est issu du métissage entre quels groupes ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Les Arawaks, les Kalinagos et les Africains",
+    incorrect_answers: ["Les Espagnols et les Mayas", "Les Français et les Aztèques", "Les Incas et les Portugais"],
+    contexte: "Les Garifunas vivent principalement sur la côte caraïbe de l'Amérique centrale (Honduras, Belize, Guatemala)."
+  },
+  {
+    content: "Le 'vaudou haïtien' est une religion syncrétique qui combine les croyances d'Afrique de l'Ouest avec quel autre système de croyance ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le Catholicisme romain",
+    incorrect_answers: ["Le Protestantisme", "L'Islam", "Le Judaïsme"],
+    contexte: "Les esclaves ont associé leurs esprits (lwas) aux saints catholiques pour pouvoir continuer à pratiquer leur religion en secret."
+  },
+  {
+    content: "Les 'cinco de Mayo' est une fête qui commémore une victoire militaire mexicaine contre quelle puissance européenne ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "La France",
+    incorrect_answers: ["L'Espagne", "L'Angleterre", "L'Autriche"],
+    contexte: "Elle célèbre la victoire inattendue du Mexique à la bataille de Puebla en 1862. Elle est plus célébrée aux États-Unis qu'au Mexique."
+  },
+  {
+    content: "Quel peuple autochtone a formé un grand empire dans les Andes avant l'arrivée des Espagnols ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Les Incas",
+    incorrect_answers: ["Les Aztèques", "Les Mayas", "Les Mapuches"],
+    contexte: "L'Empire inca était le plus grand empire de l'Amérique précolombienne, avec Cusco comme capitale."
+  },
+  {
+    content: "Le protestantisme évangélique connaît une croissance très rapide, en particulier dans quelle région des Amériques ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "L'Amérique centrale et le Brésil",
+    incorrect_answers: ["Le Canada", "Les Caraïbes", "L'Argentine"],
+    contexte: "Dans des pays comme le Guatemala et le Honduras, le protestantisme évangélique concurrence désormais le catholicisme."
+  },
+  {
+    content: "Le créole haïtien est une langue basée principalement sur quelle langue européenne ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le français",
+    incorrect_answers: ["L'espagnol", "Le portugais", "L'anglais"],
+    contexte: "Le créole haïtien a également été influencé par des langues d'Afrique de l'Ouest et des langues indigènes."
+  },
+  {
+    content: "La 'Pachamama' est une divinité importante, représentant la Terre-Mère, pour quels peuples ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Les peuples andins (Quechuas, Aymaras)",
+    incorrect_answers: ["Les peuples amazoniens", "Les peuples d'Amérique du Nord", "Les peuples des Caraïbes"],
+    contexte: "Le culte de la Pachamama reste très vivant en Bolivie, au Pérou et en Équateur, souvent en syncrétisme avec le christianisme."
+  },
+  {
+    content: "Le 'reggae' est un style musical mondialement connu qui a émergé dans quel pays des Caraïbes ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "La Jamaïque",
+    incorrect_answers: ["Cuba", "Haïti", "Trinité-et-Tobago"],
+    contexte: "Popularisé par des artistes comme Bob Marley, le reggae est étroitement lié au mouvement religieux et social rastafari."
+  },
+  {
+    content: "Quel groupe indigène était dominant dans la vallée de Mexico au moment de l'arrivée des conquistadors espagnols ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Les Aztèques",
+    incorrect_answers: ["Les Mayas", "Les Incas", "Les Zapotèques"],
+    contexte: "L'Empire aztèque, avec sa capitale Tenochtitlan, était une puissance militaire et politique majeure."
+  },
+  {
+    content: "La 'cabane à sucre' est une tradition printanière associée à la récolte de la sève d'érable dans quelle province canadienne ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le Québec",
+    incorrect_answers: ["L'Ontario", "La Colombie-Britannique", "L'Alberta"],
+    contexte: "C'est une tradition sociale où les familles se réunissent pour manger des repas copieux arrosés de sirop d'érable frais."
+  },
+  {
+    content: "Le 'Spanglish' est un sociolecte qui mélange quelles deux langues ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "L'espagnol (Spanish) et l'anglais (English)",
+    incorrect_answers: ["L'espagnol et le portugais", "L'espagnol et le français", "L'espagnol et le néerlandais"],
+    contexte: "Le Spanglish est couramment parlé dans les communautés hispaniques des États-Unis, reflétant un bilinguisme dynamique."
+  },
+  {
+    content: "Le peuple 'Mapuche' est le principal groupe indigène du sud de quels deux pays ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le Chili et l'Argentine",
+    incorrect_answers: ["Le Pérou et la Bolivie", "Le Brésil et le Paraguay", "L'Équateur et la Colombie"],
+    contexte: "Les Mapuches sont connus pour avoir résisté avec succès à l'expansion de l'Empire inca puis de l'Empire espagnol pendant des siècles."
+  },
+  {
+    content: "Le 'Gullah' ou 'Geechee' est une langue créole parlée par des communautés afro-américaines dans quelle région des États-Unis ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Les 'Lowcountry' de Caroline du Sud et de Géorgie",
+    incorrect_answers: ["La Louisiane", "Le delta du Mississippi", "Les Appalaches"],
+    contexte: "Cette langue créole a conservé plus d'éléments linguistiques africains que toute autre en raison de l'isolement relatif de ses locuteurs."
+  },
+  {
+    content: "La civilisation 'maya', connue pour son écriture, son art et son astronomie, a prospéré dans une région qui couvre le sud du Mexique et quels autres pays ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le Guatemala, le Belize, le Honduras et le Salvador",
+    incorrect_answers: ["Le Costa Rica et le Panama", "Le Nicaragua et le Honduras", "Cuba et la Jamaïque"],
+    contexte: "Contrairement aux Aztèques et aux Incas, les Mayas n'ont jamais formé un empire unifié mais un réseau de cités-États."
+  },
+  {
+    content: "Quelle est la religion non chrétienne la plus pratiquée aux États-Unis ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le Judaïsme",
+    incorrect_answers: ["L'Islam", "Le Bouddhisme", "L'Hindouisme"],
+    contexte: "Les États-Unis abritent la deuxième plus grande communauté juive au monde après Israël."
+  },
+  {
+    content: "Le 'Guarani' est une langue amérindienne qui a le statut de langue officielle aux côtés de l'espagnol dans quel pays ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Le Paraguay",
+    incorrect_answers: ["L'Uruguay", "La Bolivie", "L'Argentine"],
+    contexte: "Le Paraguay est l'un des rares pays des Amériques où la majorité de la population non indigène parle une langue autochtone."
+  },
+  {
+    content: "Les 'Métis' au Canada sont un groupe autochtone reconnu, issu de l'union de quels peuples ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Des colons européens (principalement français) et des femmes des Premières Nations",
+    incorrect_answers: ["Des Inuits et des Européens", "Des Africains et des Européens", "Des Asiatiques et des Européens"],
+    contexte: "Les Métis ont développé leur propre culture, leurs propres traditions et leur propre langue (le michif)."
+  },
+  {
+    content: "Quelle coutume de potlatch, impliquant des festins et des dons de cadeaux somptueux, était une caractéristique centrale des sociétés autochtones de quelle région ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "La côte du Pacifique Nord-Ouest (Colombie-Britannique, Alaska)",
+    incorrect_answers: ["Les Grandes Plaines", "L'Amazonie", "Les Andes"],
+    contexte: "Le potlatch était un mécanisme de redistribution des richesses et de renforcement du statut social, interdit par les gouvernements canadien et américain."
+  },
+  {
+    content: "Le 'Lunfardo' est un argot qui s'est développé à la fin du 19e siècle dans la classe ouvrière de quelle ville, avec une forte influence italienne ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Buenos Aires",
+    incorrect_answers: ["São Paulo", "New York", "Montréal"],
+    contexte: "Initialement un argot de prisonniers, le lunfardo a été immortalisé dans les paroles des tangos."
+  },
+  {
+    content: "Quelle est la plus grande communauté religieuse au Canada après le christianisme ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "Les personnes sans affiliation religieuse ('sans religion')",
+    incorrect_answers: ["L'Islam", "Le Judaïsme", "L'Hindouisme"],
+    contexte: "Comme dans de nombreux pays occidentaux, la sécularisation est une tendance démographique majeure au Canada."
+  },
+  {
+    content: "La 'Mormon Corridor' est une région où la majorité des habitants sont membres de l'Église de Jésus-Christ des Saints des Derniers Jours. Elle s'étend principalement dans quel État américain ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Amérique",
+    correct_answer: "L'Utah",
+    incorrect_answers: ["Le Texas", "La Californie", "La Floride"],
+    contexte: "Cette région a été colonisée par les pionniers mormons au 19e siècle, sous la direction de Brigham Young."
+  },
+
+  # ASIE - Ethnies, langues, religions, coutumes
+
+{
+    content: "Quelle est la religion majoritaire en Inde, connue pour ses concepts de karma et de réincarnation ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'Hindouisme",
+    incorrect_answers: ["Le Bouddhisme", "L'Islam", "Le Sikhisme"],
+    contexte: "L'Hindouisme est l'une des plus anciennes religions du monde, avec des divinités comme Brahma, Vishnu et Shiva."
+  },
+  {
+    content: "Quelle religion, fondée par Siddhartha Gautama, est prédominante en Thaïlande, au Cambodge et au Myanmar ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Le Bouddhisme",
+    incorrect_answers: ["L'Hindouisme", "Le Shintoïsme", "Le Jaïnisme"],
+    contexte: "Le Bouddhisme enseigne la voie vers l'illumination (Nirvana) à travers la méditation et le détachement."
+  },
+  {
+    content: "Quelle est la religion la plus pratiquée en Indonésie, le plus grand pays musulman du monde ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'Islam",
+    incorrect_answers: ["Le Bouddhisme", "Le Christianisme", "L'Hindouisme"],
+    contexte: "L'Islam, principalement sunnite, a été introduit en Indonésie par des marchands à partir du XIIIe siècle."
+  },
+  {
+    content: "Le 'kimono' est un vêtement traditionnel emblématique de quel pays ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Le Japon",
+    incorrect_answers: ["La Chine", "La Corée", "Le Vietnam"],
+    contexte: "Le kimono, une robe en forme de T, est porté lors d'occasions spéciales comme les mariages et les cérémonies du thé."
+  },
+  {
+    content: "Le 'hanbok' est le vêtement traditionnel coloré de quel pays de la péninsule asiatique ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "La Corée",
+    incorrect_answers: ["Le Japon", "La Chine", "La Thaïlande"],
+    contexte: "Le hanbok est caractérisé par ses couleurs vives, ses lignes simples et l'absence de poches."
+  },
+  {
+    content: "Quel animal est considéré comme sacré dans la religion hindoue ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "La vache",
+    incorrect_answers: ["Le singe", "Le tigre", "L'éléphant"],
+    contexte: "La vache est vénérée comme un symbole de vie et de générosité, et il est traditionnellement interdit de la tuer ou de manger sa viande."
+  },
+  {
+    content: "Quelle est la langue la plus parlée au monde en termes de locuteurs natifs ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Le mandarin",
+    incorrect_answers: ["L'anglais", "L'hindi", "L'espagnol"],
+    contexte: "Le mandarin est la langue officielle de la Chine et l'une des langues officielles de Singapour."
+  },
+  {
+    content: "La fête de 'Diwali', le festival des lumières, est l'une des fêtes les plus importantes de quelle religion ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'Hindouisme",
+    incorrect_answers: ["Le Bouddhisme", "L'Islam", "Le Shintoïsme"],
+    contexte: "Diwali symbolise la victoire de la lumière sur les ténèbres et du bien sur le mal."
+  },
+  {
+    content: "Les 'baguettes' sont les principaux ustensiles de repas dans de nombreux pays de quelle région ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'Asie de l'Est",
+    incorrect_answers: ["L'Asie du Sud", "Le Moyen-Orient", "L'Asie Centrale"],
+    contexte: "Les baguettes sont utilisées quotidiennement en Chine, au Japon, en Corée et au Vietnam."
+  },
+  {
+    content: "Le 'shintoïsme' est la religion ethnique indigène de quel pays ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Le Japon",
+    incorrect_answers: ["La Chine", "La Thaïlande", "L'Inde"],
+    contexte: "Le shintoïsme implique le culte des 'kami' (divinités ou esprits) et coexiste souvent avec le bouddhisme."
+  },
+  {
+    content: "Quelle ville sainte, destination du pèlerinage du 'Hajj', se trouve en Arabie Saoudite ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "La Mecque",
+    incorrect_answers: ["Jérusalem", "Médine", "Dubaï"],
+    contexte: "Le Hajj à La Mecque est l'un des cinq piliers de l'Islam, un devoir que tout musulman doit accomplir s'il en a les moyens."
+  },
+  {
+    content: "Le 'sari' est un vêtement féminin drapé, traditionnel de quel pays ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'Inde",
+    incorrect_answers: ["La Thaïlande", "Le Japon", "L'Indonésie"],
+    contexte: "Le sari est une longue bande de tissu, généralement de 5 à 9 mètres, portée de différentes manières selon la région."
+  },
+  {
+    content: "Le 'Ramadan' est un mois de jeûne, de prière et de réflexion observé par les adeptes de quelle religion ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'Islam",
+    incorrect_answers: ["Le Judaïsme", "L'Hindouisme", "Le Bouddhisme"],
+    contexte: "Pendant le Ramadan, les musulmans s'abstiennent de manger et de boire de l'aube au crépuscule."
+  },
+  {
+    content: "Quel groupe ethnique constitue la majorité de la population chinoise ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Les Hans",
+    incorrect_answers: ["Les Mongols", "Les Tibétains", "Les Ouïghours"],
+    contexte: "Les Hans représentent plus de 90% de la population de la Chine et sont le plus grand groupe ethnique du monde."
+  },
+  {
+    content: "Le 'yoga', une pratique spirituelle et physique, a ses origines dans quel pays ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'Inde",
+    incorrect_answers: ["La Chine", "Le Japon", "La Thaïlande"],
+    contexte: "Le yoga est une discipline ancienne de l'hindouisme qui est devenue populaire dans le monde entier."
+  },
+  {
+    content: "Le sikhisme est une religion monothéiste fondée au 15e siècle dans quelle région de l'Inde ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Le Pendjab",
+    incorrect_answers: ["Le Cachemire", "Le Rajasthan", "Le Bengale"],
+    contexte: "Les sikhs sont reconnaissables à leurs turbans et sont tenus de porter les 'Cinq K', dont le 'kesh' (cheveux non coupés)."
+  },
+  {
+    content: "La 'Cérémonie du thé' (Chanoyu) est un rituel traditionnel et esthétique de quel pays ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Le Japon",
+    incorrect_answers: ["La Chine", "L'Inde", "Le Sri Lanka"],
+    contexte: "Cette cérémonie codifiée, influencée par le bouddhisme zen, consiste à préparer et à servir du thé vert matcha."
+  },
+  {
+    content: "Quelle langue a donné naissance à de nombreuses langues d'Asie du Sud et du Sud-Est, et est la langue des textes sacrés de l'hindouisme ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Le sanskrit",
+    incorrect_answers: ["Le pali", "Le tamoul", "Le prakrit"],
+    contexte: "Le sanskrit est une langue indo-européenne ancienne qui joue un rôle similaire à celui du latin en Europe."
+  },
+  {
+    content: "Le 'Songkran' est le festival du Nouvel An traditionnel de quel pays, célèbre pour ses batailles d'eau géantes ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "La Thaïlande",
+    incorrect_answers: ["Le Vietnam", "L'Indonésie", "Les Philippines"],
+    contexte: "Célébré en avril, le fait de se jeter de l'eau symbolise la purification et l'éloignement des péchés de l'année précédente."
+  },
+  {
+    content: "Le 'judaïsme' est la religion principale de quel pays du Moyen-Orient ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Israël",
+    incorrect_answers: ["Le Liban", "La Jordanie", "La Syrie"],
+    contexte: "Israël est le seul État au monde où la population est majoritairement juive."
+  },
+  {
+    content: "Le 'Dalai Lama' est le chef spirituel de quelle branche du bouddhisme ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Le bouddhisme tibétain",
+    incorrect_answers: ["Le bouddhisme zen", "Le bouddhisme theravada", "Le bouddhisme mahayana"],
+    contexte: "Le Dalaï Lama est considéré comme la réincarnation du bodhisattva de la compassion, Avalokiteshvara."
+  },
+  {
+    content: "Les Bédouins sont un peuple nomade qui vit traditionnellement dans quel type d'environnement ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Les déserts du Moyen-Orient",
+    incorrect_answers: ["Les jungles d'Asie du Sud-Est", "Les steppes d'Asie centrale", "Les montagnes de l'Himalaya"],
+    contexte: "Le mode de vie bédouin, basé sur l'élevage de chameaux et de chèvres, s'est largement sédentarisé au 20e siècle."
+  },
+  {
+    content: "Le 'système des castes' est une hiérarchie sociale traditionnelle associée à quelle religion et pays ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'Hindouisme, en Inde",
+    incorrect_answers: ["Le Bouddhisme, en Thaïlande", "L'Islam, en Indonésie", "Le Shintoïsme, au Japon"],
+    contexte: "Bien qu'officiellement abolie, la discrimination fondée sur les castes persiste dans certaines parties de la société indienne."
+  },
+  {
+    content: "Quelle est la langue officielle du Pakistan, bien que l'anglais soit également largement utilisé ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'ourdou",
+    incorrect_answers: ["Le pendjabi", "Le pachto", "Le sindhi"],
+    contexte: "L'ourdou est très similaire à l'hindi, mais s'écrit avec l'alphabet arabo-persan."
+  },
+  {
+    content: "Les Ouïghours sont un groupe ethnique turcophone, majoritairement musulman, qui vit principalement dans quelle région de Chine ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Le Xinjiang",
+    incorrect_answers: ["Le Tibet", "La Mongolie-Intérieure", "Le Yunnan"],
+    contexte: "La culture ouïghoure est au centre de tensions politiques et de préoccupations internationales en matière de droits de l'homme."
+  },
+  {
+    content: "Le 'kebaya' est une blouse traditionnelle portée par les femmes dans quels pays d'Asie du Sud-Est ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'Indonésie et la Malaisie",
+    incorrect_answers: ["Le Vietnam et la Thaïlande", "Les Philippines et le Cambodge", "Le Japon et la Corée"],
+    contexte: "Le kebaya, souvent porté avec un sarong, est considéré comme un vêtement national dans de nombreuses cultures de la région."
+  },
+  {
+    content: "Quelle est la principale différence entre l'Islam sunnite et l'Islam chiite ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "La succession du prophète Mahomet",
+    incorrect_answers: ["Le nombre de prières quotidiennes", "Le livre saint utilisé", "L'interdiction de l'alcool"],
+    contexte: "Les chiites croient que le gendre du prophète, Ali, était son successeur légitime, tandis que les sunnites ont suivi les califes élus."
+  },
+  {
+    content: "Le 'Galungan' est une fête balinaise importante qui célèbre la victoire du 'dharma' (le bien) sur l' 'adharma' (le mal). Quelle religion est pratiquée à Bali ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'Hindouisme",
+    incorrect_answers: ["Le Bouddhisme", "L'Animisme", "L'Islam"],
+    contexte: "Bali est une enclave majoritairement hindouiste dans l'Indonésie majoritairement musulmane."
+  },
+  {
+    content: "Le 'sumo' est un sport de lutte traditionnel et un rituel religieux de quel pays ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Le Japon",
+    incorrect_answers: ["La Chine", "La Mongolie", "La Corée"],
+    contexte: "Le sumo est imprégné de traditions shintoïstes, avec de nombreux rituels de purification avant chaque combat."
+  },
+  {
+    content: "Le zoroastrisme, l'une des plus anciennes religions monothéistes du monde, est originaire de quelle région ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'ancienne Perse (Iran)",
+    incorrect_answers: ["L'Inde", "La Mésopotamie", "L'Égypte"],
+    contexte: "Bien que peu nombreux aujourd'hui, les zoroastriens (dont les Parsis en Inde) ont eu une influence majeure sur le judaïsme, le christianisme et l'islam."
+  },
+  {
+    content: "Le 'Gamelan' est un ensemble musical traditionnel composé principalement d'instruments de percussion comme des gongs et des métallophones. D'où vient-il ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Les îles de Java et Bali (Indonésie)",
+    incorrect_answers: ["La Thaïlande", "Le Cambodge", "Les Philippines"],
+    contexte: "La musique de Gamelan est centrale dans de nombreuses cérémonies religieuses et formes de théâtre traditionnelles."
+  },
+  {
+    content: "Le 'jaïnisme' est une religion ancienne de l'Inde qui met un accent extrême sur quel principe ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "La non-violence (Ahimsa) envers tous les êtres vivants",
+    incorrect_answers: ["Le polythéisme", "Le sacrifice d'animaux", "La conquête militaire"],
+    contexte: "Les jaïns les plus stricts portent un masque pour ne pas avaler d'insectes et balayent le sol devant eux pour ne pas les écraser."
+  },
+  {
+    content: "Quelle est la particularité des langues dravidiennes (comme le tamoul, le télougou) parlées dans le sud de l'Inde ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Elles ne sont pas apparentées à la famille indo-européenne",
+    incorrect_answers: ["Elles n'ont pas de voyelles", "Elles sont parlées par plus d'un milliard de personnes", "Elles utilisent un alphabet idéographique"],
+    contexte: "Les langues dravidiennes constituent une famille linguistique distincte, antérieure à l'arrivée des langues indo-aryennes en Inde."
+  },
+  {
+    content: "Les Druzes sont une communauté religieuse ésotérique et fermée, vivant principalement au Liban, en Syrie et en Israël. De quelle religion se sont-ils séparés ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "De l'Islam chiite (ismaélisme)",
+    incorrect_answers: ["Du Christianisme orthodoxe", "Du Judaïsme", "Du Zoroastrisme"],
+    contexte: "Les Druzes ne se considèrent pas comme musulmans et leurs croyances, qui incluent la réincarnation, ne sont pas révélées aux étrangers."
+  },
+  {
+    content: "Le 'théâtre d'ombres' (Wayang Kulit) est une forme d'art traditionnel sophistiqué utilisant des marionnettes en cuir. Dans quel pays est-il le plus emblématique ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'Indonésie (Java et Bali)",
+    incorrect_answers: ["La Chine", "La Thaïlande", "L'Inde"],
+    contexte: "Les spectacles, souvent basés sur les épopées hindoues du Ramayana et du Mahabharata, peuvent durer toute la nuit."
+  },
+  {
+    content: "Les Aïnous sont le peuple autochtone de quelle île du nord du Japon ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Hokkaido",
+    incorrect_answers: ["Okinawa", "Shikoku", "Kyushu"],
+    contexte: "Physiquement et culturellement distincts des Japonais, les Aïnous ont leur propre langue et leurs propres traditions animistes."
+  },
+  {
+    content: "Le 'Yarsanisme' est une religion syncrétique pratiquée par certains Kurdes en Iran et en Irak, qui croient en quoi ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "La réincarnation et les manifestations successives de la divinité",
+    incorrect_answers: ["Un seul prophète après Mahomet", "La stricte observance de la charia", "L'absence totale de divinité"],
+    contexte: "Cette religion combine des éléments de zoroastrisme, d'islam chiite et d'anciennes croyances kurdes."
+  },
+  {
+    content: "Quelle langue sémitique, autrefois la lingua franca du Moyen-Orient et parlée par Jésus, est encore utilisée par les communautés assyriennes ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'araméen",
+    incorrect_answers: ["L'hébreu", "Le phénicien", "L'akkadien"],
+    contexte: "Des dialectes néo-araméens sont encore parlés par de petites communautés chrétiennes et mandéennes en Irak, en Syrie et en Iran."
+  },
+  {
+    content: "Les 'Hazaras' sont un groupe ethnique de langue persane en Afghanistan, leur confession religieuse a conduit à leur persécution, quelle est-elle ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "L'Islam chiite",
+    incorrect_answers: ["L'Islam sunnite", "Le Bouddhisme", "Le Zoroastrisme"],
+    contexte: "Les Hazaras se distinguent par leurs traits asiatiques, qui suggèrent une descendance mongole, et ont été historiquement marginalisés."
+  },
+  {
+    content: "Le 'Bön' est une religion tibétaine qui a précédé et influencé quelle autre grande religion de la région ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Asie",
+    correct_answer: "Le bouddhisme",
+    incorrect_answers: ["L'Hindouisme", "Le Taoïsme", "Le Jaïnisme"],
+    contexte: "Bien que le Bön ait intégré de nombreux aspects du bouddhisme, il conserve ses propres divinités et rituels chamaniques."
+  },
+
+  # OCEANIE - Ethnies, langues, religions, coutumes (VERFIEES)
+
+  {
+    content: "Quel est le nom du peuple autochtone de la Nouvelle-Zélande, célèbre pour sa danse du haka ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Les Maoris",
+    incorrect_answers: ["Les Aborigènes", "Les Samis", "Les Inuits"],
+    contexte: "Les Maoris sont un peuple polynésien dont la culture, la langue et les traditions jouent un rôle majeur dans l'identité néo-zélandaise."
+  },
+  {
+    content: "Quel est le nom du peuple autochtone de l'Australie ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Les Aborigènes",
+    incorrect_answers: ["Les Maoris", "Les Papous", "Les Kanaks"],
+    contexte: "Les Aborigènes d'Australie possèdent l'une des plus anciennes cultures continues au monde, avec une histoire de plus de 60 000 ans."
+  },
+  {
+    content: "Quelle est la langue la plus parlée en Australie et en Nouvelle-Zélande ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "L'anglais",
+    incorrect_answers: ["Le français", "Le maori", "Le néerlandais"],
+    contexte: "L'anglais a été introduit par la colonisation britannique et est la langue dominante dans la plupart des aspects de la vie."
+  },
+  {
+    content: "Quelle est la religion la plus répandue en Océanie ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Le Christianisme",
+    incorrect_answers: ["Le Bouddhisme", "L'Islam", "L'Hindouisme"],
+    contexte: "Les missionnaires européens ont converti une grande partie de la population, bien que les croyances traditionnelles restent influentes."
+  },
+  {
+    content: "Le 'luau' est un festin traditionnel accompagné de musique et de danses, originaire de quelle île polynésienne ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Hawaï",
+    incorrect_answers: ["Tahiti", "Fidji", "Samoa"],
+    contexte: "Le luau est un symbole de l'hospitalité hawaïenne, souvent organisé pour célébrer des occasions spéciales."
+  },
+  {
+    content: "Le didgeridoo est un instrument à vent emblématique de quel groupe autochtone ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Les Aborigènes d'Australie",
+    incorrect_answers: ["Les Maoris", "Les Papous", "Les Hawaïens"],
+    contexte: "Fabriqué traditionnellement en bois d'eucalyptus creusé par les termites, le didgeridoo produit un son bourdonnant caractéristique."
+  },
+  {
+    content: "Le 'surf' est un sport et un mode de vie qui a été popularisé dans le monde entier à partir de quelle région ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Hawaï et l'Australie",
+    incorrect_answers: ["La Nouvelle-Zélande et Fidji", "Tahiti et Samoa", "Le Japon et la Californie"],
+    contexte: "Le surf était une pratique culturelle importante dans l'ancienne Polynésie avant de devenir un sport mondial."
+  },
+  {
+    content: "L'Océanie est traditionnellement divisée en trois grandes régions culturelles. Laquelle des suivantes n'en est pas une ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "L'Australasie",
+    incorrect_answers: ["La Polynésie", "La Mélanésie", "La Micronésie"],
+    contexte: "La Polynésie, la Mélanésie et la Micronésie sont les trois principales subdivisions basées sur la géographie et l'ethnographie."
+  },
+  {
+    content: "Le 'barbecue' (ou 'barbie') est une coutume sociale extrêmement populaire dans quel pays ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "L'Australie",
+    incorrect_answers: ["La Papouasie-Nouvelle-Guinée", "Fidji", "Les Samoa"],
+    contexte: "Le barbecue est un élément central du mode de vie australien, en particulier pendant les mois d'été."
+  },
+  {
+    content: "Le 'haka' est une danse traditionnelle et un chant de guerre de quel peuple ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Les Maoris",
+    incorrect_answers: ["Les Samoans", "Les Tongiens", "Les Fidjiens"],
+    contexte: "Rendu célèbre par l'équipe de rugby de Nouvelle-Zélande, les All Blacks, le haka est exécuté pour impressionner et défier."
+  },
+  {
+    content: "Quel sport est considéré comme une véritable 'religion' en Australie, en particulier dans l'État de Victoria ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Le football australien",
+    incorrect_answers: ["Le football", "Le rugby à XV", "Le cricket"],
+    contexte: "Le football australien est un sport unique avec ses propres règles, joué sur un terrain ovale."
+  },
+  {
+    content: "Quelle langue polynésienne est une langue officielle de la Nouvelle-Zélande, aux côtés de l'anglais ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Le maori",
+    incorrect_answers: ["Le samoan", "Le tongien", "Le tahitien"],
+    contexte: "Aussi appelé 'Te Reo Māori', des efforts  sont faits pour revitaliser la langue maorie, qui est enseignée dans les écoles."
+  },
+  {
+    content: "Le rugby est le sport national de facto dans de nombreux pays du Pacifique, y compris la Nouvelle-Zélande, Fidji, Samoa et quel autre royaume ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Tonga",
+    incorrect_answers: ["Vanuatu", "Kiribati", "Palaos"],
+    contexte: "Le rugby est une source immense de fierté nationale et une voie de réussite pour de nombreux athlètes insulaires."
+  },
+  {
+    content: "Le 'boomerang' est un objet de chasse et de jeu associé à quel peuple ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Les Aborigènes d'Australie",
+    incorrect_answers: ["Les Maoris", "Les Papous", "Les Hawaïens"],
+    contexte: "Il existe de nombreux types de boomerangs ; seuls certains sont conçus pour revenir à leur lanceur."
+  },
+  {
+    content: "L'Anzac Day, le 25 avril, est un jour de commémoration important en Australie et en Nouvelle-Zélande. Que commémore-t-il ?",
+    difficulty: "facile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Les soldats morts au combat (Australian and New Zealand Army Corps)",
+    incorrect_answers: ["L'indépendance nationale", "La signature d'un traité de paix", "La découverte du pays"],
+    contexte: "Il commémore initialement le débarquement de Gallipoli en 1915 et honore aujourd'hui tous les militaires."
+  },
+  {
+    content: "La 'kava' (ou 'yaqona') est une boisson traditionnelle à effet relaxant, consommée lors de cérémonies importantes dans quel pays ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Fidji",
+    incorrect_answers: ["L'Australie", "La Nouvelle-Zélande", "Hawaï"],
+    contexte: "Fabriquée à partir de la racine d'un poivrier, la kava est au cœur de la vie sociale et cérémonielle en Mélanésie."
+  },
+  {
+    content: "Le 'Temps du Rêve' (Dreamtime) est un concept spirituel central pour quel peuple ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Les Aborigènes d'Australie",
+    incorrect_answers: ["Les Maoris", "Les Rapa Nui (Île de Pâques)", "Les Samoans"],
+    contexte: "Le Rêve décrit à la fois le temps de la création du monde par les Esprits Ancêtres et la réalité spirituelle actuelle."
+  },
+  {
+    content: "Quel pays d'Océanie possède la plus grande diversité linguistique au monde, avec plus de 800 langues distinctes ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "La Papouasie-Nouvelle-Guinée",
+    incorrect_answers: ["L'Australie", "L'Indonésie", "La Nouvelle-Zélande"],
+    contexte: "Le terrain montagneux et l'isolement des tribus ont permis le développement de cette extraordinaire diversité linguistique."
+  },
+  {
+    content: "Le 'tok pisin' est une langue créole parlée comme lingua franca dans quel pays ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "La Papouasie-Nouvelle-Guinée",
+    incorrect_answers: ["Les Îles Salomon", "Vanuatu", "Fidji"],
+    contexte: "Le tok pisin est basé sur l'anglais mais avec une grammaire et un vocabulaire locaux, ce qui lui permet de servir de pont entre les centaines de langues du pays."
+  },
+  {
+    content: "Le 'tapu' (ou 'tabu') est un concept polynésien important qui signifie quoi ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Sacré ou interdit",
+    incorrect_answers: ["Bienvenue", "Famille", "Océan"],
+    contexte: "Le mot 'tabou' en français vient directement de ce concept, qui régit les interactions sociales et religieuses."
+  },
+  {
+    content: "Quel groupe ethnique est le plus important en Nouvelle-Calédonie ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Les Kanaks",
+    incorrect_answers: ["Les Caldoches (Européens)", "Les Wallisiens", "Les Tahitiens"],
+    contexte: "Les Kanaks sont le peuple autochtone mélanésien de Nouvelle-Calédonie et sont au cœur du mouvement pour l'indépendance."
+  },
+  {
+    content: "Le 'tā moko' est l'art traditionnel du tatouage facial pratiqué par quel peuple ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Les Maoris",
+    incorrect_answers: ["Les Aborigènes", "Les Papous", "Les Fidjiens"],
+    contexte: "Le tā moko est unique car il est sculpté dans la peau plutôt que piqué. Il raconte l'histoire et la généalogie de la personne."
+  },
+  {
+    content: "Quelle est la principale minorité ethnique à Fidji, dont la présence a été une source de tensions politiques ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Les Indo-Fidjiens",
+    incorrect_answers: ["Les Chinois", "Les Européens", "Les Polynésiens"],
+    contexte: "Les Indo-Fidjiens sont les descendants de travailleurs indiens amenés par les Britanniques pour travailler dans les plantations de canne à sucre."
+  },
+  {
+    content: "Le 'umu' (ou 'hāngi') est une méthode de cuisson traditionnelle en Océanie qui utilise...",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Un four en terre avec des pierres chaudes",
+    incorrect_answers: ["Des feuilles de bananier sur un feu ouvert", "De l'eau de mer bouillante", "La fumaison à froid"],
+    contexte: "Cette méthode de cuisson lente est utilisée dans toute la Polynésie pour préparer de grands festins communautaires."
+  },
+  {
+    content: "Le 'cargo cult' est un mouvement religieux qui a émergé en Mélanésie après quel événement ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Le contact avec les soldats de la Seconde Guerre mondiale",
+    incorrect_answers: ["L'arrivée des missionnaires chrétiens", "Des éruptions volcaniques", "L'indépendance nationale"],
+    contexte: "Les insulaires ont observé les soldats recevoir d'immenses richesses ('cargo') et ont développé des rituels pour attirer ces biens."
+  },
+  {
+    content: "Les statues 'moai' de l'Île de Pâques ont été sculptées par quel peuple polynésien ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Le peuple Rapa Nui",
+    incorrect_answers: ["Les Maoris", "Les Hawaïens", "Les Tahitiens"],
+    contexte: "Ces statues monumentales représentent des ancêtres divinisés. Le mystère de leur transport fascine encore les chercheurs."
+  },
+  {
+    content: "Le Bislama est une langue créole à base d'anglais, l'une des langues officielles de quel pays ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Vanuatu",
+    incorrect_answers: ["Fidji", "Le Maroc", "La Papouasie-Nouvelle-Guinée"],
+    contexte: "Le Bislama permet la communication entre les locuteurs des plus de 100 langues indigènes du Vanuatu."
+  },
+  {
+    content: "Quelle est la religion la plus pratiquée par les Indo-Fidjiens ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "L'Hindouisme",
+    incorrect_answers: ["L'Islam", "Le Christianisme", "Le Sikhisme"],
+    contexte: "Les temples hindous sont une caractéristique importante du paysage culturel de Fidji."
+  },
+  {
+    content: "L'Emu et le kangourou figurent sur les armoiries de l'Australie. Pourquoi ont-ils été choisis ?",
+    difficulty: "intermédiaire",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Ils ne peuvent pas reculer facilement",
+    incorrect_answers: ["Ce sont les animaux les plus communs", "Ils sont sacrés pour les Aborigènes", "Ils n'existent nulle part ailleurs"],
+    contexte: "Cette caractéristique est censée symboliser une nation qui va toujours de l'avant."
+  },
+  {
+    content: "Le 'fa'afafine' à Samoa est un exemple de...",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Un troisième genre culturel",
+    incorrect_answers: ["Un chef de tribu", "Une cérémonie de mariage", "Un plat traditionnel"],
+    contexte: "Les fa'afafine sont des personnes assignées hommes à la naissance qui adoptent un rôle de genre féminin. Ils sont une partie intégrante de la société samoane."
+  },
+  {
+    content: "Quelle est la particularité linguistique des langues aborigènes australiennes en ce qui concerne les chiffres ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Souvent pas de mot pour les nombres au-delà de 2 ou 3",
+    incorrect_answers: ["Elles utilisent un système en base 20", "Des mots différents pour compter les humains et les animaux", "Elles n'ont pas de nombres impairs"],
+    contexte: "Traditionnellement, le comptage se faisait par des concepts comme 'un', 'deux', 'quelques-uns' et 'beaucoup'."
+  },
+  {
+    content: "La 'Maison des esprits' (ou 'haus tambaran') est un lieu de culte et de réunion pour les hommes dans quelle région ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "La région du fleuve Sepik en Papouasie-Nouvelle-Guinée",
+    incorrect_answers: ["L'Outback australien", "L'Île du Nord de la Nouvelle-Zélande", "Les îles de la Société"],
+    contexte: "Ces maisons richement décorées sont au centre de la vie spirituelle et des rites d'initiation masculins."
+  },
+  {
+    content: "Le 'marn grook' est un jeu de balle aborigène qui aurait influencé le développement de quel sport moderne ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Le football australien",
+    incorrect_answers: ["Le rugby", "Le cricket", "Le football (soccer)"],
+    contexte: "Le débat sur l'influence exacte du marn grook est en cours, mais il met en lumière les racines indigènes possibles du sport."
+  },
+  {
+    content: "Le 'Rattenfest' (Festival du Rat) à Kirkstall, en Australie, est une coutume locale qui implique...",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Le lancer de rats morts dans un concours de distance",
+    incorrect_answers: ["L'adoration de rats sacrés", "Une course de rats de compagnie", "La dégustation de plats à base de rats"],
+    contexte: "Cette tradition inhabituelle, issue de la communauté d'origine allemande, célèbre la fin de la récolte de foin."
+  },
+  {
+    content: "Le 'mana' est un concept polynésien fondamental qui se réfère à...",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Une force ou un pouvoir spirituel",
+    incorrect_answers: ["Un code de l'honneur", "Une lignée généalogique", "La terre ancestrale"],
+    contexte: "Le mana peut résider dans des personnes, des lieux ou des objets. Il est associé à l'autorité, au prestige et au pouvoir."
+  },
+  {
+    content: "La religion du Prince Philip est un 'cargo cult' pratiqué sur l'île de Tanna. Dans quel pays se trouve cette île ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Vanuatu",
+    incorrect_answers: ["Fidji", "Les Îles Salomon", "La Papouasie-Nouvelle-Guinée"],
+    contexte: "Les adeptes croyaient que le duc d'Édimbourg était un être divin qui accomplirait une prophétie locale."
+  },
+  {
+    content: "Le 'pidgin' nigérian est une lingua franca, mais quel est le seul pays au monde où une langue pidgin (le tok pisin) a le statut de langue officielle ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "La Papouasie-Nouvelle-Guinée",
+    incorrect_answers: ["Le Nigeria", "La Sierra Leone", "Haïti"],
+    contexte: "Le tok pisin, le hiri motu et l'anglais sont les trois langues officielles de ce pays linguistiquement divers."
+  },
+  {
+    content: "Les 'Palawa' sont le peuple aborigène de quelle île australienne ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "La Tasmanie",
+    incorrect_answers: ["L'île Kangourou", "L'île Walibi", "L'île Fraser"],
+    contexte: "Les Palawa ont été décimés par la colonisation, mais leurs descendants luttent aujourd'hui pour la reconnaissance de leur culture et de leur langue."
+  },
+  {
+    content: "Le 'kiri' ou don de nattes finement tressées, est la forme de richesse la plus prestigieuse dans quelle culture polynésienne ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "La culture tongienne",
+    incorrect_answers: ["La culture hawaïenne", "La culture maorie", "La culture tahitienne"],
+    contexte: "Ces nattes ('kie hingoa') sont des objets de cérémonie essentiels, échangés lors des mariages, des funérailles et des événements royaux."
+  },
+  {
+    content: "La langue des signes néo-zélandaise (NZSL) est une langue officielle du pays. Quelle est sa particularité ?",
+    difficulty: "difficile",
+    category: "Ethnies, langues, religions, coutumes",
+    region: "Océanie",
+    correct_answer: "Elle est complètement différente des autres langues des signes anglosaxonnes",
+    incorrect_answers: ["Elle n'a pas de signes pour les couleurs", "Elle est uniquement utilisée par les Maoris", "Elle est basée sur la langue des signes australienne"],
+    contexte: "La NZSL s'est développée de manière isolée et est un mélange de la langue des signes britannique et de signes locaux."
+  },
 ]
 
 questions_data.each_with_index do |data, index|
@@ -7980,23 +9799,7 @@ questions_data.each_with_index do |data, index|
     category: data[:category],
     region: data[:region],
     correct_answer: data[:correct_answer],
-    incorrect_answers: data[:incorrect_answers]
+    incorrect_answers: data[:incorrect_answers],
+    contexte: data[:contexte]
   )
-    puts " Question #{index + 1}/#{questions_data.length} créée" if (index + 1) % 10 == 0
-end
-
-# Statistiques
-puts "\n📊 Répartition par difficulté:"
-Question.group(:difficulty).count.each do |difficulty, count|
-  puts "  • #{difficulty}: #{count} questions"
-end
-
-puts "\n🌍 Répartition par région:"
-Question.group(:region).count.each do |region, count|
-  puts "  • #{region}: #{count} questions"
-end
-
-puts "\n📚 Répartition par catégorie:"
-Question.group(:category).count.each do |category, count|
-  puts "  • #{category}: #{count} questions"
 end
