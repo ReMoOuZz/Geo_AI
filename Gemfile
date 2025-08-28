@@ -28,6 +28,8 @@ gem "jbuilder"
 
 gem "ruby_llm"
 
+gem "cloudinary"
+
 gem "kramdown"
 gem "kramdown-parser-gfm"
 

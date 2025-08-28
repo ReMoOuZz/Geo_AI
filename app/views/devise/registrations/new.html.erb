@@ -1,85 +1,89 @@
-<div class="auth-container">
-  <div class="brand-box">GeoAI</div>
-  <h2>Sign up</h2>
+<div class="d-flex min-vh-100 justify-content-center align-items-center" style="background-image: url('https://static-cse.canva.com/blob/1149387/BlueandGreyWorldMapChartPresentation.png'); background-size: cover, background-position: center; ">
 
-  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%= f.error_notification %>
+  <div class="auth-container">
+    <div class="brand-box">GeoAI</div>
+    <h2>Sign up</h2>
 
-    <div class="form-inputs">
-      <%= f.input :email, required: true, autofocus: true, input_html: { autocomplete: "email" } %>
-      <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), input_html: { autocomplete: "new-password" } %>
-      <%= f.input :password_confirmation, required: true, input_html: { autocomplete: "new-password" } %>
+    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= f.error_notification %>
+
+      <div class="form-inputs">
+        <%= f.input :pseudo, required: true, autofocus: true, input_html: { autocomplete: "pseudo" } %>
+        <%= f.input :email, required: true, autofocus: true, input_html: { autocomplete: "email" } %>
+        <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), input_html: { autocomplete: "new-password" } %>
+        <%= f.input :password_confirmation, required: true, input_html: { autocomplete: "new-password" } %>
+      </div>
+
+      <div class="form-actions">
+        <%= f.button :submit, "Sign up", class: "btn" %>
+      </div>
+    <% end %>
+
+    <div class="links">
+      <%= render "devise/shared/links" %>
     </div>
-
-    <div class="form-actions">
-      <%= f.button :submit, "Sign up", class: "btn" %>
-    </div>
-  <% end %>
-
-  <div class="links">
-    <%= render "devise/shared/links" %>
   </div>
+
+  <style>
+  .auth-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .brand-box {
+    display: inline-block;
+    background: #20c997;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .auth-container h2 {
+    margin-bottom: 20px;
+  }
+
+  .form-inputs {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #20c997;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background: #198f6e;
+  }
+
+  .links {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  </style>
 </div>
-
-<style>
-.auth-container {
-  max-width: 400px;
-  margin: 80px auto;
-  padding: 30px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
-  font-family: sans-serif;
-}
-
-.brand-box {
-  display: inline-block;
-  background: #20c997;
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 8px 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.auth-container h2 {
-  margin-bottom: 20px;
-}
-
-.form-inputs {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-input[type="email"],
-input[type="password"],
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin: 6px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-.btn {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  background: #20c997;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #198f6e;
-}
-
-.links {
-  margin-top: 15px;
-  font-size: 14px;
-}
-</style>
