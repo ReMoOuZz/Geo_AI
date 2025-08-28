@@ -36,12 +36,13 @@ class GamesController < ApplicationController
 
   def show
     @game = Game.find(params[:id])
+    @user_answer = UserAnswer.new
     @questions = @game.game_questions
   end
 
   private
 
   def game_params
-    params.require(:game).permit(:difficulty, :category, :region, :game_type)
+    params.require(:game).permit(:order, :difficulty, :category, :region, :game_type)
   end
 end
