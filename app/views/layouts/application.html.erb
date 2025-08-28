@@ -7,34 +7,23 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": Rails.env.production? ? "reload" : "" %>
     <%= javascript_importmap_tags %>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
-  <body class="bg-body">
-
-    <nav class="navbar navbar-expand gb-navbar fixed-top">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
-
-        <%= link_to root_path, class: "navbar-brand d-flex align-items-center" do %>
-          <%= image_tag "logo.png", alt: "GeoBattle", height: 48, class: "brand-logo" %>
-        <% end %>
-
-
-        <div class="d-flex align-items-center">
-          <%= link_to "#", class: "gb-icon" do %>
-            <i class="fa-solid fa-award"></i>
-          <% end %>
-          <%= link_to "#", class: "gb-icon" do %>
-            <i class="fa-solid fa-user"></i>
-          <% end %>
+  <body>
+    <%=render "shared/navbar"%>
+      <main class="gb-page">
+        <div class="home-green">
+          <div class="home-blue">
+            <div class="home-map">
+              <div class="page-content">
+                <%= yield %>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <main class="gb-page">
-      <%= yield %>
-    </main>
+      </main>
   </body>
 </html>

@@ -6,8 +6,29 @@ class GamesController < ApplicationController
 
   def create
     @game = Game.new(game_params)
-    if @game.save
-      redirect_to Something_path
+    if @game.save!
+
+      @find_question = Question.where(
+        difficulty: @game.difficulty,
+        category: @game.category,
+        region: @game.region
+        # game_type: @game.game_type
+      ).order("RANDOM()").first
+
+      GameQuestion.create!(
+        game: @game,
+        order: 1,
+        content: @find_question.content,
+        correct_answer: @find_question.correct_answer,
+        incorrect_answers: @find_question.incorrect_answers,
+        difficulty: @find_question.difficulty,
+        category: @find_question.category,
+        contexte: @find_question.contexte,
+        region: @find_question.region
+        # game_type: @find_question.game_type
+      )
+
+      redirect_to game_path(@game)
     else
       render :new, status:  :unprocessable_entity
     end
@@ -15,11 +36,12 @@ class GamesController < ApplicationController
 
   def show
     @game = Game.find(params[:id])
+    @questions = @game.game_questions
   end
 
   private
 
   def game_params
-    params.require(:game).permit(:difficulty, :category, :region)
+    params.require(:game).permit(:difficulty, :category, :region, :game_type)
   end
 end
