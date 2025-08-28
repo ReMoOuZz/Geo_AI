@@ -1,0 +1,35 @@
+
+<aside class="gb-sidebar">
+
+  <div class="gb-sidebar__avatar">
+    <%= image_tag "avatar.png", alt: "Profil", class: "gb-avatar" %>
+  </div>
+
+
+  <nav class="gb-sidebar__menu">
+    <%= link_to "#", class: "gb-sideitem active" do %>
+      <i class="fa-solid fa-user"></i>
+      <span class="label">Profil</span>
+    <% end %>
+
+    <%= link_to "#", class: "gb-sideitem" do %>
+      <i class="fa-solid fa-trophy"></i>
+      <span class="label">Recompences</span>
+    <% end %>
+
+    <%= link_to "#", class: "gb-sideitem" do %>
+      <i class="fa-solid fa-chart-simple"></i>
+      <span class="label">Statistiques</span>
+    <% end %>
+
+    <%= link_to "#", class: "gb-sideitem" do %>
+      <i class="fa-solid fa-users"></i>
+      <span class="label">Vos amis</span>
+    <% end %>
+
+    <%= link_to "#", class: "gb-sideitem" do %>
+      <i class="fa-solid fa-right-from-bracket"></i>
+      <span class="label">Déconnexion</span>
+    <% end %>
+  </nav>
+</aside>
