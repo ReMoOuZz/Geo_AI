@@ -1,0 +1,40 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.profile-card {
+  background: #FFEC99;
+  border-radius: 16px;
+  padding: 24px;
+  width: 300px;
+  height: 450px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.btn-save {
+  background: #1B8EAD;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 75px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.btn-save:hover {
+  background: #177b97;
+}

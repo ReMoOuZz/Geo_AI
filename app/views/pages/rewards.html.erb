@@ -1,0 +1,118 @@
+
+
+<aside class="gb-sidebar">
+
+<div class="gb-sidebar_logo">
+  <%= link_to root_path do %>
+    <%= image_tag "littlelogo.png", alt: "GeoBattle small logo", class: "gb-logo small" %>
+    <%= image_tag "logo.png",        alt: "GeoBattle big logo",   class: "gb-logo big" %>
+  <% end %>
+</div>
+
+  <div class="gb-sidebar__avatar">
+    <%= image_tag "avatar.png", alt: "Profil", class: "gb-avatar" %>
+  </div>
+
+
+
+  <nav class="gb-sidebar__menu">
+    <%= link_to pages_profile_path, class: "gb-sideitem active" do %>
+      <i class="fa-solid fa-user"></i>
+      <span class="label">Profil</span>
+    <% end %>
+
+    <%= link_to pages_rewards_path, class: "gb-sideitem" do %>
+      <i class="fa-solid fa-trophy"></i>
+      <span class="label">Recompences</span>
+    <% end %>
+
+    <%= link_to pages_stats_path, class: "gb-sideitem" do %>
+      <i class="fa-solid fa-chart-simple"></i>
+      <span class="label">Statistiques</span>
+    <% end %>
+
+    <%= link_to pages_friends_path, class: "gb-sideitem" do %>
+      <i class="fa-solid fa-users"></i>
+      <span class="label">Vos amis</span>
+    <% end %>
+
+    <%= link_to "#", class: "gb-sideitem" do %>
+      <i class="fa-solid fa-right-from-bracket"></i>
+      <span class="label">Déconnexion</span>
+    <% end %>
+  </nav>
+</aside>
+
+
+<!-- FR : section Succès -->
+<section class="achv">
+  <!-- FR : titre-pilule centré -->
+  <h2 class="achv-title">Retrouvez ici vos succès en géographie</h2>
+
+  <!-- FR : grille 2 colonnes -->
+  <div class="achv-grid">
+    <!-- FR : Colonne gauche -->
+    <ul class="achv-col">
+      <li class="achv-card">
+        <span class="achv-ico"><i class="fa-solid fa-gem" style="color: #74C0FC;"></i></span>
+        <span class="achv-text">0 diamant brut</span>
+      </li>
+      <li class="achv-card">
+        <span class="achv-ico"><i class="fa-solid fa-medal" style="color: #FFD43B;"></i></span>
+        <span class="achv-text">5 médailles d’Or</span>
+      </li>
+      <li class="achv-card">
+        <span class="achv-ico gray"><i class="fa-solid fa-medal" style="color: #757575ff;"></i></span>
+        <span class="achv-text">12 médailles d’Argent</span>
+      </li>
+      <li class="achv-card">
+        <span class="achv-ico bronze"><i class="fa-solid fa-medal" style="color: #9a7f1fff;"></i></span>
+        <span class="achv-text">7 médailles de Bronze</span>
+      </li>
+      <li class="achv-card">
+        <span class="achv-ico poop"><i class="fa-solid fa-poo" style="color: #513c1f;"></i></span>
+        <span class="achv-text">6 crottes</span>
+      </li>
+    </ul>
+
+    <!-- FR : Colonne droite -->
+    <ul class="achv-col">
+      <li class="achv-card achv-card--right">
+        <span class="achv-ico green"><i class="fa-solid fa-person-hiking" style="color: #32b38c;"></i></span>
+        <span class="achv-text small">
+          Vous avez obtenu 3 fois le badge<br>“Montagnard”
+        </span>
+      </li>
+      <li class="achv-card achv-card--right">
+        <span class="achv-ico red"><i class="fa-solid fa-flag" style="color: #e11414;"></i></span>
+        <span class="achv-text small">
+          Vous avez obtenu 1 fois le badge<br>“Roi de la colline”
+        </span>
+      </li>
+      <li class="achv-card achv-card--right">
+        <span class="achv-ico"><i class=""></i></span>
+        <span class="achv-text small">
+          Vous n’avez pas encore obtenu ce badge
+        </span>
+      </li>
+      <li class="achv-card achv-card--right">
+        <span class="achv-ico yellow"><i class=""></i></span>
+        <span class="achv-text small">
+          Vous n’avez pas encore obtenu ce badge
+        </span>
+      </li>
+      <li class="achv-card achv-card--right">
+        <span class="achv-ico violet"><i class=""></i></span>
+        <span class="achv-text small">
+          Vous n’avez pas encore obtenu ce badge
+        </span>
+      </li>
+      <li class="achv-card achv-card--right">
+        <span class="achv-ico poop"><i class="fa-solid fa-poo-storm" style="color: #7e702a;"></i></span>
+        <span class="achv-text small">
+          Vous avez déjà trop obtenu le badge “Serial crotteur”
+        </span>
+      </li>
+    </ul>
+  </div>
+</section>
