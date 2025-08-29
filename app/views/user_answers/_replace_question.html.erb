@@ -1,0 +1,32 @@
+<div id="question_card" class="quiz-container " data-question-response-target="question">
+
+<div class="progress-bar"><p>Question n° <%= game_question.order %>/10 </p></div>
+
+<div class="content_question question_title">
+<%= game_question.content %>
+</div>
+
+  <% answers = [game_question.correct_answer] + game_question.incorrect_answers %>
+  <%= form_with model: [game, user_answer],
+    data: {
+      action: "submit->question-response#onSubmit",
+      "question-response-duration-value": (game_question.respond_to?(:duration_seconds) ? game_question.duration_seconds : 30)
+    } do |f| %>
+
+    <input type="hidden" id="" name="game_question" value="<%= game_question.id %>">
+
+    <div class="answers-grid">
+      <% answers.shuffle.each_with_index do |answer, i| %>
+      <% input_id = "answer_#{i}" %>
+          <div class="answers_container">
+            <input name="user_answer[content]" type="radio" class="button" id="<%= input_id %>" value="<%= answer %>">
+            <label for="<%= input_id %>"><%= answer %></label>
+          </div>
+      <% end %>
+    </div>
+
+    <div class="submit_container">
+      <%= f.submit value: "Répondre", class: "response_btn" %>
+    </div>
+  <% end %>
+ </div>

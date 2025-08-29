@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema[7.1].define(version: 2025_08_29_120144) do
+=======
 ActiveRecord::Schema[7.1].define(version: 2025_08_28_143836) do
+>>>>>>> master
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -132,13 +136,22 @@ ActiveRecord::Schema[7.1].define(version: 2025_08_28_143836) do
   end
 
   create_table "scores", force: :cascade do |t|
-    t.text "content"
+    t.integer "value", default: 0
     t.bigint "user_id", null: false
     t.bigint "game_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["game_id"], name: "index_scores_on_game_id"
     t.index ["user_id"], name: "index_scores_on_user_id"
+  end
+
+  create_table "solid_cable_messages", force: :cascade do |t|
+    t.text "channel"
+    t.text "payload"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["channel"], name: "index_solid_cable_messages_on_channel"
+    t.index ["created_at"], name: "index_solid_cable_messages_on_created_at"
   end
 
   create_table "tool_calls", force: :cascade do |t|

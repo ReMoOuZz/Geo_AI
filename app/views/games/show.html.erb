@@ -1,11 +1,21 @@
-<h1>Hello la show du game_controller</h1>
+<%= turbo_stream_from @game %>
 
+<div class="container d-flex flex-column justify-content-center align-items-center" data-controller="question-response">
 
-<% @questions.each do |q| %>
-  <p><%= q.content %></p>
+    <%= render "user_answers/replace_question", game_question: @questions.last, game: @game, user_answer: UserAnswer.new %>
 
-  <% answers = [q.correct_answer] + q.incorrect_answers %>
-  <% answers.shuffle.each do |answer| %>
-    <p><%= answer %></p>
-  <% end %>
-<% end %>
+  <div class="result_container result_container_hidden" data-question-response-target="answer">
+    <div class="response_container" >
+      <h2>La Bonne réponse est :</h2>
+      <div class="question_title">
+        <p><%= @game.game_questions.last.correct_answer %></p>
+        <div class="contexte_container">
+          <p><%= @game.game_questions.last.contexte %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="quiz-toolbar quiz-toolbar-hidden" data-question-response-target="timerContainer">
+    Temps restant : <span data-question-response-target="timer">--:--</span>
+  </div>
+</div>

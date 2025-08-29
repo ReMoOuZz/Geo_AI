@@ -7,6 +7,8 @@ class GamesController < ApplicationController
   def create
     @game = Game.new(game_params)
     if @game.save!
+      @user = current_user
+      @score = Score.create!(game: @game, user: @user)
 
       @find_question = Question.where(
         difficulty: @game.difficulty,
@@ -36,12 +38,13 @@ class GamesController < ApplicationController
 
   def show
     @game = Game.find(params[:id])
+    @user_answer = UserAnswer.new
     @questions = @game.game_questions
   end
 
   private
 
   def game_params
-    params.require(:game).permit(:difficulty, :category, :region, :game_type)
+    params.require(:game).permit(:order, :difficulty, :category, :region, :game_type)
   end
 end
