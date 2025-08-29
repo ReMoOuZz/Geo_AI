@@ -2,10 +2,7 @@
 
 <div class="container d-flex flex-column justify-content-center align-items-center" data-controller="question-response">
 
-  <div id="question_card" class="quiz-container-hidden quiz-container " data-question-response-target="question">
     <%= render "user_answers/replace_question", game_question: @questions.last, game: @game, user_answer: UserAnswer.new %>
-    <p><%= @result_message %></p>
-  </div>
 
   <div class="result_container result_container_hidden" data-question-response-target="answer">
     <div class="response_container" >

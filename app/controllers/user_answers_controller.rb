@@ -15,16 +15,19 @@ class UserAnswersController < ApplicationController
       @user_response = @user_answer.content
 
       @is_correct = check_answer(@user_response)
+      set_score
 
       if @is_correct
-        @result_message = "Correct ! #{@game_question.contexte}"
-        new_question
-      else
-        @result_message = "Incorrect, la bonne réponse était #{@game_question.correct_answer} ! #{@game_question.contexte}"
-        new_question
+        @score.value += 1
+        @score.save
       end
 
-      redirect_to game_path(@game)
+      if @user_answer.game_question.order == 2
+        redirect_to game_score_path(@game, @score)
+      else
+        new_question
+        redirect_to game_path(@game)
+      end
     else
       render :new, status:  :unprocessable_entity
     end
@@ -56,5 +59,16 @@ class UserAnswersController < ApplicationController
     region: @find_question.region
     # game_type: @find_question.game_type
   )
+  end
+
+  def limit_questions
+    if @user_answer.game_question.order == 2
+      redirect_to game_score_path(@game, @score); return
+    end
+  end
+
+
+  def set_score
+    @score = Score.find_by(user: current_user, game: @game)
   end
 end

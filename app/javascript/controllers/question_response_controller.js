@@ -13,16 +13,11 @@ export default class extends Controller {
     this.remaining = this.durationValue || 10
     this.renderTimer()
     this.startTimer()
-
     this.answerTarget.classList.add("result_container_hidden")
-    this.questionTarget.classList.remove("quiz-container-hidden")
     this.timerContainerTarget.classList.remove("quiz-toolbar-hidden")
-
-    console.log("[question-response] connect", this.element)
   }
   disconnect() {
      this.stopTimer()
-    console.log("[question-response] disconnect", this.element)
   }
 
   startTimer() {
@@ -73,6 +68,7 @@ export default class extends Controller {
 
   submitNow() {
     if (this.submitted) return
+    this.form = this.element.querySelector('form')
     this.submitted = true
     this.autoSubmitting = true
     this.form.requestSubmit()
