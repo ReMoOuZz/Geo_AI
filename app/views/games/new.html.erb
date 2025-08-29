@@ -1,34 +1,53 @@
 <div class="container d-flex flex-column justify-content-center align-items-center vh-100" >
   <%= form_with model: @game do |f| %>
 
-    <div class="game_card">
+    <div class="game_card" data-controller="setup-game">
 
       <p>Mode de jeu</p>
       <div class="button_game_mode_container">
-        <button class="button" id="solo" data-value="solo">Solo</button>
-        <button class="button" id="multi" data-value="multi">Multijoueur</button>
+        <input name="game[game_type]" type="radio" class="button" id="solo" value="solo">
+        <label for="solo">solo</label>
+        <input name="game[game_type]" type="radio" class="button" id="multi" value="Multijoueur">
+        <label for="multi">Multi</label>
       </div>
 
       <p>Zone</p>
       <div class="button_zone_container">
         <%= f.select :region,
-        options_for_select([["Europe", "europe"], ["Amérique", "amérique"], ["Océanie", "océanie"], ["Afrique", "afrique"], ["Asie", "asie"]]),
+        options_for_select([
+          ["Europe", "Europe"],
+          ["Amérique", "Amérique"],
+          ["Océanie", "Océanie"],
+          ["Afrique", "Afrique"],
+          ["Asie", "Asie"]
+        ]),
         { prompt: "Choisir" },
         class: "select_game_newregion" %>
-        <button class="button" id="random" data-value="random">Random</button>
+        <input name="game[region]" type="radio" class="button" id="random" value="Random">
+        <label for="random">Random</label>
       </div>
 
 
       <p>Choisir une catégorie</p>
       <%= f.select :category,
-      options_for_select([["Régions, villes et capitales", "régions, villes et capitales"], ["Fleuves et océans", "fleuves et océans"], ["Reliefs", "reliefs"], ["Langues et coutumes", "langues et coutumes"], ["Drapeaux", "drapeaux"]]),
+      options_for_select([
+        ["Hydrographie et reliefs","Hydrographie et reliefs"],
+        ["Régions et villes du monde", "Régions et villes du monde"],
+        ["Cultures", "Cultures"],
+        ["Géopolitique", "Géopolitique"],
+        ["Drapeaux", "Drapeaux"]
+      ]),
       { prompt: "Choisir dans la liste" },
       class: "select_game_new" %>
 
 
       <p>Difficulté</p>
       <%= f.select :difficulty,
-      options_for_select([["Facile", "facile"], ["Moyen", "moyen"], ["Difficile", "difficile"]]),
+      options_for_select([
+        ["Facile", "facile"],
+        ["Intermédiaire", "intermédiaire"],
+        ["Difficile", "difficile"]
+      ]),
       { prompt: "Choisir dans la liste" },
       class: "select_game_new" %>
 

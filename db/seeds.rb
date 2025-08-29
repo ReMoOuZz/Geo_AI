@@ -12,22 +12,22 @@
 
 # content : question
 # difficulty : facile, intermédiaire, difficile
-# category : reliefs, fleuves et océans / régions, états, villes et capitales / ethnies, religions, langues et coutumes /  politique et géopolitique
+# category : Hydrographie et reliefs / régions, états, villes et capitales / ethnies, religions, langues et coutumes /  politique et géopolitique
 # region : Europe, Océanie, Amérique, Afrique, Asie (un array de 5 continents)
 # 1 correct_answer (string d'une bonne réponse)
 # 3 incorrect_answers (un array de 3 mauvaises réponses)
-# Contexte : texte de 25 mots max expliquant la bonne réponse  Propose moi 150questions sur la catégorie "reliefs, fleuves et océans"
+# Contexte : texte de 25 mots max expliquant la bonne réponse  Propose moi 150questions sur la catégorie "Hydrographie et reliefs"
 Question.destroy_all
 
 questions_data = [
-  # SEEDS DRAPEAUX (60) via Claude Sonnet 4.0
 
+  # SEEDS Drapeaux (60) via Claude Sonnet 4.0
   # 60 questions sur Europe, Océanie, Amérique, Asie, Afrique
 
   {
     content: "Quel pays a ce drapeau : bandes horizontales rouge, jaune et noire ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Allemagne",
     incorrect_answers: ["France", "Russie", "Luxembourg"],
@@ -36,7 +36,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec une feuille d'érable rouge ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Canada",
     incorrect_answers: ["États-Unis", "Mexique", "Brésil"],
@@ -45,7 +45,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un cercle rouge sur fond blanc ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Japon",
     incorrect_answers: ["Chine", "Corée du Sud", "Thaïlande"],
@@ -54,7 +54,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec une croix blanche sur fond rouge ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Danemark",
     incorrect_answers: ["Suède", "Norvège", "Finlande"],
@@ -63,7 +63,7 @@ questions_data = [
   {
     content: "Quel pays africain a un drapeau avec un aigle au centre ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Zambie",
     incorrect_answers: ["Égypte", "Nigeria", "Kenya"],
@@ -72,7 +72,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec 50 étoiles et 13 bandes ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "États-Unis",
     incorrect_answers: ["Canada", "Mexique", "Argentine"],
@@ -81,7 +81,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau entièrement vert avec un croissant et une étoile blancs ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Pakistan",
     incorrect_answers: ["Bangladesh", "Arabie Saoudite", "Iran"],
@@ -90,7 +90,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec une croix jaune sur fond bleu ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Suède",
     incorrect_answers: ["Norvège", "Finlande", "Danemark"],
@@ -99,7 +99,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un dragon au centre ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Bhoutan",
     incorrect_answers: ["Chine", "Mongolie", "Tibet"],
@@ -108,7 +108,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau tricolore vertical vert, blanc et rouge ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Italie",
     incorrect_answers: ["Irlande", "Mexique", "Iran"],
@@ -117,7 +117,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec l'Union Jack dans le coin supérieur gauche ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Nouvelle-Zélande",
     incorrect_answers: ["Ecosse", "Tahiti", "Canada"],
@@ -126,7 +126,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec une étoile blanche sur fond rouge, blanc, bleu ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Chili",
     incorrect_answers: ["Cuba", "Porto Rico", "Texas"],
@@ -134,7 +134,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un cèdre vert au centre ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Liban",
     incorrect_answers: ["Syrie", "Jordanie", "Irak"],
@@ -143,7 +143,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec une croix blanche sur fond rouge ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Suisse",
     incorrect_answers: ["Suède", "Angleterre", "Géorgie"],
@@ -152,7 +152,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un soleil au centre sur fond bleu et blanc ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Argentine",
     incorrect_answers: ["Uruguay", "Brésil", "Chili"],
@@ -162,7 +162,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec une lune croissante et une étoile sur fond rouge ?",
     difficulty: "Difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Turquie",
     incorrect_answers: ["Maroc", "Algérie", "Pakistan"],
@@ -171,7 +171,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau noir, rouge et jaune en bandes verticales ?",
     difficulty: "Facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Belgique",
     incorrect_answers: ["Italie", "Autriche", "Espagne"],
@@ -180,7 +180,7 @@ questions_data = [
   {
     content: "Lequel de ces pays n'a pas de bandes bleue, jaune et rouge dans son drapeau?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Pérou",
     incorrect_answers: ["Venezuela", "Équateur", "Colombie"],
@@ -189,7 +189,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau entièrement rouge avec 5 étoiles jaunes ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Chine",
     incorrect_answers: ["Vietnam", "Corée du Nord", "Laos"],
@@ -198,7 +198,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un lion tenant une épée ?",
     difficulty: "Difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Sri Lanka",
     incorrect_answers: ["Myanmar", "Thaïlande", "Cambodge"],
@@ -207,7 +207,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec une étoile rouge sur fond blanc et vert ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Algérie",
     incorrect_answers: ["Maroc", "Tunisie", "Libye"],
@@ -216,7 +216,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec des bandes orange, blanche et verte avec une roue au centre ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Inde",
     incorrect_answers: ["Bangladesh", "Pakistan", "Sri Lanka"],
@@ -225,7 +225,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec quatre étoiles représentant la Croix du Sud ?",
     difficulty: "Difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Nouvelle-Zélande",
     incorrect_answers: ["Australie", "Samoa", "Fidji"],
@@ -234,7 +234,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un aigle dévorant un serpent sur un cactus ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Mexique",
     incorrect_answers: ["Guatemala", "Équateur", "Pérou"],
@@ -243,7 +243,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec une unique étoile dorée sur fond rouge ?",
     difficulty: "Intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Vietnam",
     incorrect_answers: ["Chine", "Corée du Nord", "Laos"],
@@ -252,7 +252,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un trident au centre ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Barbade",
     incorrect_answers: ["Jamaïque", "Trinité-et-Tobago", "Bahamas"],
@@ -261,7 +261,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec une kalashnikov ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Mozambique",
     incorrect_answers: ["Angola", "Zimbabwe", "Zambie"],
@@ -270,7 +270,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un quetzal (oiseau) sur la déclaration d'indépendance au centre ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Guatemala",
     incorrect_answers: ["Honduras", "Costa Rica", "Nicaragua"],
@@ -279,7 +279,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec 5 étoiles et la carte du pays sur fond bleu ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Kosovo",
     incorrect_answers: ["Serbie", "Macédoine du Nord", "Monténégro"],
@@ -288,7 +288,7 @@ questions_data = [
   {
     content: "Quel pays d'Afrique porte un drapeau avec les couleurs verte, rouge, blanche ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Madagascar",
     incorrect_answers: ["Cap-Vert", "Mauritius", "Les Comores"],
@@ -297,7 +297,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec des bandes blanche et rouge + un triangle bleu à gauche ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "République tchèque",
     incorrect_answers: ["Slovaquie", "Slovénie", "Pologne"],
@@ -306,7 +306,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec une couronne royale dans le coin supérieur gauche ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Liechtenstein",
     incorrect_answers: ["Monaco", "Luxembourg", "Andorre"],
@@ -316,7 +316,7 @@ questions_data = [
   {
     content: "Quel pays n'a pas de condor des Andes sur son drapeau ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Vénézuela",
     incorrect_answers: ["Colombie", "Équateur", "Bolivie"],
@@ -325,7 +325,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec deux mains vers le ciel en son centre ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Brunei",
     incorrect_answers: ["Malaisie", "Indonésie", "Singapour"],
@@ -334,7 +334,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un yin-yang au centre ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Corée du Sud",
     incorrect_answers: ["Corée du Nord", "Mongolie", "Tibet"],
@@ -343,7 +343,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec une grue couronnée (oiseau) au centre ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Ouganda",
     incorrect_answers: ["Kenya", "Tanzanie", "Rwanda"],
@@ -352,7 +352,7 @@ questions_data = [
   {
     content: "Combien y a-t-il d'étoiles sur le drapeau des Etats-Unis ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "50",
     incorrect_answers: ["41", "51", "40"],
@@ -362,7 +362,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un bouclier masaï traditionnel ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Kenya",
     incorrect_answers: ["Tanzanie", "Ouganda", "Éthiopie"],
@@ -371,7 +371,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un makatea (atoll) stylisé ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Marshall",
     incorrect_answers: ["Palau", "Nauru", "Tuvalu"],
@@ -380,7 +380,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec une constellation d'étoiles ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Brésil",
     incorrect_answers: ["Venezuela", "Guyana", "Suriname"],
@@ -389,7 +389,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau bleu avec l'Union Jack et 4 étoiles ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Nouvelle-Zélande",
     incorrect_answers: ["Australie", "Fidji", "Tuvalu"],
@@ -398,7 +398,7 @@ questions_data = [
   {
     content: "Quel pays océanien a un drapeau bleu clair avec des étoiles dorées ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Tuvalu",
     incorrect_answers: ["Samoa", "Palau", "Nauru"],
@@ -407,7 +407,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un cercle jaune sur fond bleu ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Palau",
     incorrect_answers: ["Nauru", "Kiribati", "Samoa"],
@@ -416,7 +416,7 @@ questions_data = [
   {
     content: "Quel drapeau océanien est rouge avec un carré bleu et des étoiles ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Samoa",
     incorrect_answers: ["Tonga", "Fidji", "Vanuatu"],
@@ -425,7 +425,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau rouge avec une croix blanche ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Tonga",
     incorrect_answers: ["Samoa", "Fidji", "Vanuatu"],
@@ -434,7 +434,7 @@ questions_data = [
   {
     content: "Quel archipel a un drapeau bleu clair avec l'Union Jack et armoiries ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Fidji",
     incorrect_answers: ["Tuvalu", "Îles Cook", "Nauru"],
@@ -443,7 +443,7 @@ questions_data = [
   {
     content: "Quel pays océanien a un drapeau avec un triangle noir et jaune ?",
     difficulty: "Difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Vanuatu",
     incorrect_answers: ["Samoa", "Tonga", "Palau"],
@@ -452,7 +452,7 @@ questions_data = [
   {
     content: "Quel micro-État (île) a un drapeau bleu avec une bande jaune horizontale ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Nauru",
     incorrect_answers: ["Palau", "Tuvalu", "Kiribati"],
@@ -461,7 +461,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec soleil levant et oiseau-frégate ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Kiribati",
     incorrect_answers: ["Nauru", "Tuvalu", "Palau"],
@@ -470,7 +470,7 @@ questions_data = [
   {
     content: "Quel territoire a l'Union Jack avec cercle d'étoiles blanches ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Îles Cook",
     incorrect_answers: ["Niue", "Tokelau", "Samoa américaines"],
@@ -479,7 +479,7 @@ questions_data = [
   {
     content: "Quel état Australien a un drapeau bleu avec l'Union Jack et un lion ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Tasmanie",
     incorrect_answers: ["Îles Cook", "Tokelau", "Pitcairn"],
@@ -488,7 +488,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau rouge et blanc avec triangle vert ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Îles Salomon",
     incorrect_answers: ["Vanuatu", "Fidji", "Papouasie"],
@@ -497,7 +497,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau noir, rouge et jaune avec oiseau-paradis ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Papouasie-Nouvelle-Guinée",
     incorrect_answers: ["Îles Salomon", "Vanuatu", "Fidji"],
@@ -506,7 +506,7 @@ questions_data = [
   {
     content: "Quel archipel américain a un triangle rouge et blanc avec un aigle ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Samoa américaines",
     incorrect_answers: ["Guam", "Îles Mariannes", "Îles Marshall"],
@@ -515,7 +515,7 @@ questions_data = [
   {
     content: "Quel territoire américain a un drapeau bleu foncé avec armoiries ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Guam",
     incorrect_answers: ["Samoa américaines", "Îles Mariannes", "Wake"],
@@ -524,7 +524,7 @@ questions_data = [
   {
     content: "Quel drapeau a des bandes blanche et orange avec étoile blanche ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Îles Marshall",
     incorrect_answers: ["Palau", "Nauru", "Kiribati"],
@@ -533,7 +533,7 @@ questions_data = [
   {
     content: "Quel micro-État a un drapeau bleu avec triangle rouge et étoiles ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "États fédérés de Micronésie",
     incorrect_answers: ["Palau", "Îles Marshall", "Nauru"],
@@ -542,7 +542,7 @@ questions_data = [
   {
     content: "Quel territoire français a trois bandes verticales avec emblème ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Nouvelle-Calédonie",
     incorrect_answers: ["Polynésie française", "Wallis-et-Futuna", "Tahiti"],
@@ -551,7 +551,7 @@ questions_data = [
   {
     content: "Quel pays africain a un drapeau vert avec croissant et étoile ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Algérie",
     incorrect_answers: ["Pakistan", "Tunisie", "Mauritanie"],
@@ -560,7 +560,7 @@ questions_data = [
   {
     content: "Quel drapeau possède des bandes noire, blanche, verte avec un triangle et une étoile ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Jordanie",
     incorrect_answers: ["Syrie", "Liban", "Palestine"],
@@ -569,7 +569,7 @@ questions_data = [
   {
     content: "Quel pays a deux bandes rouges et une bande blanche ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Autriche",
     incorrect_answers: ["Suisse", "Luxembourg", "Allemagne"],
@@ -578,7 +578,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau bleu et blanc avec un soleil ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Uruguay",
     incorrect_answers: ["Chili", "Paraguay", "Bolivie"],
@@ -587,7 +587,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau bleu ciel avec soleil et aigle ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Kazakhstan",
     incorrect_answers: ["Azerbaïdjan", "Turkménistan", "Turquie"],
@@ -596,7 +596,7 @@ questions_data = [
   {
     content: "Quel pays africain a des bandes verte, jaune et rouge avec étoile ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Ghana",
     incorrect_answers: ["Liberia", "Mali", "Burkina Faso"],
@@ -605,7 +605,7 @@ questions_data = [
   {
     content: "Quel pays européen a un drapeau rouge avec une croix bleue et blanche ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Norvège",
     incorrect_answers: ["Suède", "Finlande", "Islande"],
@@ -614,7 +614,7 @@ questions_data = [
   {
     content: "Quel pays  a un drapeau vert avec losange jaune ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Brésil",
     incorrect_answers: ["Bolivie", "Pérou", "Colombie"],
@@ -623,7 +623,7 @@ questions_data = [
   {
     content: "Quel pays asiatique a un drapeau blanc et rouge horizontal, sans motif?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Indonésie",
     incorrect_answers: ["Pologne", "Monaco", "Singapour"],
@@ -632,7 +632,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau à 5 couleurs avec un croissant ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Comores",
     incorrect_answers: ["Mauritanie", "Algérie", "Tunisie"],
@@ -641,21 +641,21 @@ questions_data = [
   {
     content: "Quel pays européen a un drapeau rouge avec aigle noir bicéphale ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Albanie",
     incorrect_answers: ["Serbie", "Monténégro", "Macédoine"],
     contexte: "Aigle de Skanderbeg, héros national résistant aux Ottomans."
   },
 
-  # SEEDS DRAPEAUX via GEMINI 2.5 PRO > NON VERIFIEES
+  # SEEDS Drapeaux via GEMINI 2.5 PRO > NON VERIFIEES
 
-  # EUROPE - DRAPEAUX
+  # EUROPE - Drapeaux
 
   {
     content: "À quel pays appartient le drapeau tricolore vertical bleu, blanc, rouge ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "France",
     incorrect_answers: ["Italie", "Belgique", "Pays-Bas"],
@@ -664,7 +664,7 @@ questions_data = [
   {
     content: "Ce drapeau avec des bandes horizontales noire, rouge et or est celui de quel pays ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Allemagne",
     incorrect_answers: ["Belgique", "Autriche", "Espagne"],
@@ -673,7 +673,7 @@ questions_data = [
   {
     content: "Quel pays est représenté par un drapeau aux bandes verticales verte, blanche et rouge ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Italie",
     incorrect_answers: ["France", "Irlande", "Hongrie"],
@@ -682,16 +682,16 @@ questions_data = [
   {
     content: "Ce drapeau, connu sous le nom d'Union Jack, est l'emblème de quel État ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Royaume-Uni",
     incorrect_answers: ["Irlande", "Islande", "Finlande"],
-    contexte: "L'Union Jack est une superposition des drapeaux de l'Angleterre, de l'Écosse et de l'Irlande du Nord, symbolisant l'union de ces royaumes."
+    contexte: "L'Union Jack est une superposition des Drapeaux de l'Angleterre, de l'Écosse et de l'Irlande du Nord, symbolisant l'union de ces royaumes."
   },
   {
     content: "À quel pays correspond le drapeau rouge et jaune avec un blason au centre ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Espagne",
     incorrect_answers: ["Portugal", "Andorre", "Vatican"],
@@ -700,7 +700,7 @@ questions_data = [
   {
     content: "Quel pays utilise un drapeau à bandes horizontales blanche, bleue et rouge ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Russie",
     incorrect_answers: ["Belgique", "Lettonie", "Biélorussie"],
@@ -709,16 +709,16 @@ questions_data = [
   {
     content: "Ce drapeau est bleu avec une croix scandinave jaune. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Suède",
     incorrect_answers: ["Norvège", "Danemark", "Finlande"],
-    contexte: "Le drapeau suédois est l'un des plus anciens. La croix nordique symbolise le christianisme et se retrouve sur de nombreux drapeaux scandinaves."
+    contexte: "Le drapeau suédois est l'un des plus anciens. La croix nordique symbolise le christianisme et se retrouve sur de nombreux Drapeaux scandinaves."
   },
   {
     content: "Un fond rouge avec une croix blanche en son centre caractérise le drapeau de quel pays ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Suisse",
     incorrect_answers: ["Danemark", "Malte", "Autriche"],
@@ -727,7 +727,7 @@ questions_data = [
   {
     content: "Quel pays est représenté par un drapeau aux bandes verticales noire, jaune et rouge ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Belgique",
     incorrect_answers: ["Allemagne", "France", "Roumanie"],
@@ -736,7 +736,7 @@ questions_data = [
   {
     content: "Ce drapeau est rouge avec une croix scandinave blanche. À quel pays appartient-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Danemark",
     incorrect_answers: ["Suisse", "Suède", "Norvège"],
@@ -745,7 +745,7 @@ questions_data = [
   {
     content: "Quel pays arbore un drapeau blanc traversé par une croix scandinave bleue ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Finlande",
     incorrect_answers: ["Grèce", "Islande", "Suède"],
@@ -754,7 +754,7 @@ questions_data = [
   {
     content: "Ce drapeau est rouge, avec une croix scandinave bleue bordée de blanc. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Norvège",
     incorrect_answers: ["Islande", "Danemark", "Suède"],
@@ -763,7 +763,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau composé de neuf bandes horizontales bleues et blanches avec une croix blanche dans un carré bleu en haut à gauche ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Grèce",
     incorrect_answers: ["Finlande", "Chypre", "Portugal"],
@@ -772,7 +772,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau bicolore vert et rouge avec les armoiries nationales au centre ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Portugal",
     incorrect_answers: ["Espagne", "Hongrie", "Italie"],
@@ -781,16 +781,16 @@ questions_data = [
   {
     content: "Le drapeau des Pays-Bas est composé de trois bandes horizontales. Quelles sont leurs couleurs de haut en bas ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Rouge, blanc, bleu",
     incorrect_answers: ["Bleu, blanc, rouge", "Rouge, jaune, noir", "Blanc, bleu, rouge"],
-    contexte: "C'est l'un des plus anciens drapeaux tricolores. La bande orange originelle a été remplacée par du rouge pour une meilleure visibilité en mer."
+    contexte: "C'est l'un des plus anciens Drapeaux tricolores. La bande orange originelle a été remplacée par du rouge pour une meilleure visibilité en mer."
   },
   {
     content: "Quel pays a un drapeau tricolore vertical vert, blanc et orange ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Irlande",
     incorrect_answers: ["Italie", "Côte d'Ivoire", "Hongrie"],
@@ -799,7 +799,7 @@ questions_data = [
   {
     content: "Un drapeau à deux bandes horizontales, blanche en haut et rouge en bas, appartient à quel pays ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Pologne",
     incorrect_answers: ["Monaco", "Autriche", "Malte"],
@@ -808,7 +808,7 @@ questions_data = [
   {
     content: "À quel pays correspond un drapeau à bandes horizontales bleue et jaune ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Ukraine",
     incorrect_answers: ["Suède", "Estonie", "Kazakhstan"],
@@ -817,7 +817,7 @@ questions_data = [
   {
     content: "Quel pays utilise un drapeau à trois bandes horizontales rouges, blanches et vertes ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Hongrie",
     incorrect_answers: ["Bulgarie", "Italie", "Mexique"],
@@ -826,7 +826,7 @@ questions_data = [
   {
     content: "Ce drapeau est composé de trois bandes horizontales rouge, blanche et rouge. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Autriche",
     incorrect_answers: ["Pologne", "Lettonie", "Liban"],
@@ -835,7 +835,7 @@ questions_data = [
   {
     content: "Un drapeau bleu, noir et blanc en bandes horizontales est l'emblème de quel État balte ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Estonie",
     incorrect_answers: ["Lettonie", "Lituanie", "Finlande"],
@@ -844,7 +844,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau rouge avec un aigle noir à deux têtes au centre ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Albanie",
     incorrect_answers: ["Serbie", "Monténégro", "Russie"],
@@ -853,7 +853,7 @@ questions_data = [
   {
     content: "Quel pays est représenté par un drapeau tricolore horizontal blanc, vert et rouge ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Bulgarie",
     incorrect_answers: ["Hongrie", "Italie", "Iran"],
@@ -862,7 +862,7 @@ questions_data = [
   {
     content: "Ce drapeau est bleu avec une croix scandinave rouge bordée de blanc. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Islande",
     incorrect_answers: ["Norvège", "Finlande", "Îles Féroé"],
@@ -871,7 +871,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau à bandes horizontales rouge, blanc et bleu clair ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Luxembourg",
     incorrect_answers: ["Pays-Bas", "Russie", "France"],
@@ -880,7 +880,7 @@ questions_data = [
   {
     content: "Un drapeau à bandes verticales bleu, jaune et rouge est celui de quel pays ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Roumanie",
     incorrect_answers: ["Tchad", "Andorre", "Moldavie"],
@@ -889,7 +889,7 @@ questions_data = [
   {
     content: "À quel pays appartient le drapeau tricolore horizontal rouge, blanc et bleu avec un blason représentant un échiquier ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Croatie",
     incorrect_answers: ["Serbie", "Slovénie", "Slovaquie"],
@@ -898,7 +898,7 @@ questions_data = [
   {
     content: "Ce drapeau est composé de trois bandes horizontales jaune, verte et rouge. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Lituanie",
     incorrect_answers: ["Estonie", "Lettonie", "Bulgarie"],
@@ -907,16 +907,16 @@ questions_data = [
   {
     content: "Un drapeau avec deux bandes horizontales, lie-de-vin en haut et en bas, séparées par une bande blanche plus fine. Quel pays représente-t-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Lettonie",
     incorrect_answers: ["Autriche", "Liban", "Pologne"],
-    contexte: "L'un des plus anciens drapeaux du monde. La légende dit qu'il représente un drap blanc taché du sang d'un chef letton blessé."
+    contexte: "L'un des plus anciens Drapeaux du monde. La légende dit qu'il représente un drap blanc taché du sang d'un chef letton blessé."
   },
   {
     content: "Quel pays a un drapeau blanc et rouge avec un triangle bleu sur le côté du guindant ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "République Tchèque",
     incorrect_answers: ["Pologne", "Slovaquie", "Philippines"],
@@ -925,16 +925,16 @@ questions_data = [
   {
     content: "Quel pays a un drapeau tricolore blanc, bleu, rouge avec un blason représentant trois pics et une croix patriarcale ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Slovaquie",
     incorrect_answers: ["Slovénie", "Serbie", "Russie"],
-    contexte: "Similaire aux drapeaux russe et slovène, il se distingue par son blason : le mont Tatra et la double croix de la tradition chrétienne byzantine."
+    contexte: "Similaire aux Drapeaux russe et slovène, il se distingue par son blason : le mont Tatra et la double croix de la tradition chrétienne byzantine."
   },
   {
     content: "À quel micro-État appartient un drapeau à bandes verticales bleu, jaune, rouge avec un blason au centre ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Andorre",
     incorrect_answers: ["Roumanie", "Moldavie", "Tchad"],
@@ -943,7 +943,7 @@ questions_data = [
   {
     content: "Ce drapeau est identique à celui de la Roumanie, mais avec un blason (aigle tenant une croix) au centre de la bande jaune. De quel pays s'agit-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Moldavie",
     incorrect_answers: ["Andorre", "Roumanie", "Belgique"],
@@ -952,7 +952,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau tricolore blanc, bleu, rouge avec un blason représentant le mont Triglav, le plus haut sommet du pays ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Slovénie",
     incorrect_answers: ["Slovaquie", "Croatie", "Serbie"],
@@ -961,7 +961,7 @@ questions_data = [
   {
     content: "Un drapeau blanc avec une carte de l'île en couleur cuivre et deux rameaux d'olivier en dessous est celui de quel pays insulaire ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Chypre",
     incorrect_answers: ["Malte", "Crète", "Kosovo"],
@@ -970,7 +970,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau bleu et rouge avec une couronne princière dorée dans le coin supérieur gauche ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Liechtenstein",
     incorrect_answers: ["Luxembourg", "Monaco", "Andorre"],
@@ -979,7 +979,7 @@ questions_data = [
   {
     content: "Ce drapeau est bicolore, blanc et rouge en bandes verticales, avec une Croix de George dans le canton blanc. Quel pays est-ce ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Malte",
     incorrect_answers: ["Pologne", "Monaco", "Suisse"],
@@ -988,7 +988,7 @@ questions_data = [
   {
     content: "À quel pays correspond un drapeau bleu avec un triangle jaune et une rangée d'étoiles blanches ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Bosnie-Herzégovine",
     incorrect_answers: ["Kosovo", "Albanie", "Macédoine du Nord"],
@@ -997,7 +997,7 @@ questions_data = [
   {
     content: "Un fond rouge avec un soleil d'or à huit rayons est le drapeau de quel pays des Balkans ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Macédoine du Nord",
     incorrect_answers: ["Albanie", "Monténégro", "Kirghizistan"],
@@ -1006,7 +1006,7 @@ questions_data = [
   {
     content: "Quel micro-État a un drapeau à deux bandes horizontales, blanche en haut et bleue en bas, avec ses armoiries au centre ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Saint-Marin",
     incorrect_answers: ["Vatican", "Andorre", "Liechtenstein"],
@@ -1015,7 +1015,7 @@ questions_data = [
   {
     content: "Ce drapeau est rouge avec une bordure dorée et le blason national (un aigle bicéphale) au centre. À quel pays appartient-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Monténégro",
     incorrect_answers: ["Albanie", "Serbie", "Russie"],
@@ -1024,7 +1024,7 @@ questions_data = [
   {
     content: "Un drapeau rouge et vert, avec un motif ornemental blanc et rouge sur le côté du guindant, représente quel pays d'Europe de l'Est ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Biélorussie",
     incorrect_answers: ["Lituanie", "Moldavie", "Ukraine"],
@@ -1033,7 +1033,7 @@ questions_data = [
   {
     content: "Ce drapeau est bicolore rouge et blanc, en deux bandes horizontales. Attention à ne pas le confondre. De quel pays s'agit-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Monaco",
     incorrect_answers: ["Pologne", "Indonésie", "Malte"],
@@ -1042,7 +1042,7 @@ questions_data = [
   {
     content: "Quel est le seul drapeau national en Europe à être de forme carrée, en dehors de celui de la Suisse ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Vatican",
     incorrect_answers: ["Saint-Marin", "Monaco", "Liechtenstein"],
@@ -1051,19 +1051,19 @@ questions_data = [
   {
     content: "Ce drapeau tricolore horizontal dans l'ordre : rouge, bleu et blanc avec un grand blason est celui de quel pays ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Europe",
     correct_answer: "Serbie",
     incorrect_answers: ["Russie", "Slovaquie", "Slovénie"],
     contexte: "Il utilise les couleurs panslaves, mais dans un ordre inversé par rapport à la Russie. Le blason représente l'aigle bicéphale serbe."
   },
 
-  # ASIE - DRAPEAUX
+  # ASIE - Drapeaux
 
   {
     content: "Ce drapeau rouge avec cinq étoiles jaunes (une grande et quatre petites) est celui de quel pays ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Chine",
     incorrect_answers: ["Vietnam", "Corée du Nord", "Laos"],
@@ -1072,7 +1072,7 @@ questions_data = [
   {
     content: "Un disque rouge plein sur un fond blanc simple caractérise le drapeau de quel pays insulaire ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Japon",
     incorrect_answers: ["Bangladesh", "Palaos", "Laos"],
@@ -1081,7 +1081,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau tricolore horizontal safran, blanc et vert avec une roue bleue au centre ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Inde",
     incorrect_answers: ["Pakistan", "Sri Lanka", "Bangladesh"],
@@ -1090,7 +1090,7 @@ questions_data = [
   {
     content: "À quel pays appartient ce drapeau blanc avec un cercle rouge et bleu (Taegeuk) au centre et quatre trigrammes noirs aux coins ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Corée du Sud",
     incorrect_answers: ["Corée du Nord", "Japon", "Chine"],
@@ -1099,7 +1099,7 @@ questions_data = [
   {
     content: "Ce drapeau vert avec une inscription en arabe blanc et un sabre est celui de quel royaume du Moyen-Orient ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Arabie Saoudite",
     incorrect_answers: ["Iran", "Irak", "Pakistan"],
@@ -1108,7 +1108,7 @@ questions_data = [
   {
     content: "Un drapeau rouge avec une étoile jaune à cinq branches au centre est l'emblème de quel pays d'Asie du Sud-Est ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Vietnam",
     incorrect_answers: ["Chine", "Corée du Nord", "Myanmar"],
@@ -1117,7 +1117,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau rouge avec une étoile blanche et un croissant de lune blanc ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Turquie",
     incorrect_answers: ["Pakistan", "Tunisie", "Algérie"],
@@ -1126,7 +1126,7 @@ questions_data = [
   {
     content: "Ce drapeau est composé de deux bandes horizontales bleues encadrant une bande blanche, avec une Étoile de David bleue au centre. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Israël",
     incorrect_answers: ["Liban", "Grèce", "Argentine"],
@@ -1135,7 +1135,7 @@ questions_data = [
   {
     content: "Quel pays utilise un drapeau vert avec un croissant de lune blanc et une étoile, et une bande blanche verticale sur le côté ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Pakistan",
     incorrect_answers: ["Arabie Saoudite", "Turquie", "Iran"],
@@ -1144,7 +1144,7 @@ questions_data = [
   {
     content: "Un drapeau rouge avec un grand cercle blanc et une étoile rouge à l'intérieur est celui de quel pays ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Corée du Nord",
     incorrect_answers: ["Chine", "Corée du Sud", "Vietnam"],
@@ -1153,7 +1153,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau tricolore horizontal vert, blanc et rouge ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Iran",
     incorrect_answers: ["Irak", "Syrie", "Hongrie"],
@@ -1162,7 +1162,7 @@ questions_data = [
   {
     content: "Ce drapeau a trois bandes horizontales : rouge, noire et blanche, avec trois étoiles vertes. À quel pays appartient-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Irak",
     incorrect_answers: ["Syrie", "Égypte", "Yémen"],
@@ -1171,7 +1171,7 @@ questions_data = [
   {
     content: "Un drapeau avec cinq bandes horizontales (rouge, blanc, bleu, blanc, rouge) est celui de quel royaume d'Asie du Sud-Est ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Thaïlande",
     incorrect_answers: ["Cambodge", "Laos", "Malaisie"],
@@ -1180,7 +1180,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau rouge avec une bande verticale verte contenant une inscription blanche ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Maldives",
     incorrect_answers: ["Bangladesh", "Pakistan", "Arabie Saoudite"],
@@ -1189,7 +1189,7 @@ questions_data = [
   {
     content: "Le drapeau de quel pays est rouge avec un croissant de lune et cinq étoiles blanches ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Singapour",
     incorrect_answers: ["Turquie", "Malaisie", "Indonésie"],
@@ -1198,7 +1198,7 @@ questions_data = [
   {
     content: "Ce drapeau a des bandes horizontales bleues et blanches, un triangle rouge sur le côté et un soleil doré avec trois étoiles. Quel pays est-ce ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Philippines",
     incorrect_answers: ["Cuba", "Porto Rico", "Malaisie"],
@@ -1207,7 +1207,7 @@ questions_data = [
   {
     content: "À quel pays appartient ce drapeau composé de deux bandes horizontales, rouge en haut et blanche en bas ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Indonésie",
     incorrect_answers: ["Pologne", "Monaco", "Singapour"],
@@ -1216,7 +1216,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau bleu avec une représentation du temple d'Angkor Vat en blanc au centre ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Cambodge",
     incorrect_answers: ["Thaïlande", "Laos", "Myanmar"],
@@ -1225,7 +1225,7 @@ questions_data = [
   {
     content: "Un drapeau avec 14 bandes rouges et blanches alternées et un canton bleu avec un croissant et une étoile à 14 branches. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Malaisie",
     incorrect_answers: ["États-Unis", "Liberia", "Singapour"],
@@ -1234,7 +1234,7 @@ questions_data = [
   {
     content: "Le drapeau de quel pays est rouge et blanc, avec un cèdre vert au centre ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Liban",
     incorrect_answers: ["Canada", "Chypre", "Népal"],
@@ -1243,7 +1243,7 @@ questions_data = [
   {
     content: "Un drapeau vert avec un grand disque rouge au centre est celui de quel pays très peuplé ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Bangladesh",
     incorrect_answers: ["Japon", "Pakistan", "Inde"],
@@ -1252,7 +1252,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau bleu clair avec un soleil et un aigle des steppes dorés ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Kazakhstan",
     incorrect_answers: ["Mongolie", "Ouzbékistan", "Kirghizistan"],
@@ -1261,7 +1261,7 @@ questions_data = [
   {
     content: "Ce drapeau a trois bandes horizontales : bleue, blanche et verte, avec un croissant rouge et des étoiles. De quel pays d'Asie centrale s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Ouzbékistan",
     incorrect_answers: ["Tadjikistan", "Turkménistan", "Kazakhstan"],
@@ -1270,7 +1270,7 @@ questions_data = [
   {
     content: "Un drapeau rouge avec un soleil stylisé jaune au centre (ressemblant à un yurt) est celui de quel pays montagneux ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Kirghizistan",
     incorrect_answers: ["Kazakhstan", "Macédoine du Nord", "Mongolie"],
@@ -1279,7 +1279,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau jaune avec deux bandes diagonales noire et blanche et un blason au centre ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Brunei",
     incorrect_answers: ["Malaisie", "Singapour", "Timor oriental"],
@@ -1288,7 +1288,7 @@ questions_data = [
   {
     content: "Ce drapeau a trois bandes verticales : rouge, bleue et rouge, avec un 'soyonbo' doré. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Mongolie",
     incorrect_answers: ["Kazakhstan", "Népal", "Bhoutan"],
@@ -1297,7 +1297,7 @@ questions_data = [
   {
     content: "Le drapeau tricolore horizontal rouge, blanc et vert est celui de quel pays d'Asie Centrale ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Tadjikistan",
     incorrect_answers: ["Iran", "Ouzbékistan", "Hongrie"],
@@ -1306,7 +1306,7 @@ questions_data = [
   {
     content: "Un drapeau à fond rouge, un triangle noir sur le côté, et des bandes jaunes et blanches qui convergent. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Timor oriental",
     incorrect_answers: ["Papouasie-Nouvelle-Guinée", "Brunei", "Philippines"],
@@ -1315,7 +1315,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec deux bandes horizontales, bleue en haut et rouge en bas, séparées par une fine bande verte ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Gambie",
     incorrect_answers: ["Ouzbékistan", "Botswana", "Estonie"],
@@ -1324,7 +1324,7 @@ questions_data = [
   {
     content: "Le drapeau de quel pays est jaune safran avec un lion tenant une épée, et des bandes verte et orange sur le côté ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Sri Lanka",
     incorrect_answers: ["Inde", "Bhoutan", "Myanmar"],
@@ -1333,7 +1333,7 @@ questions_data = [
   {
     content: "Quel est le seul pays au monde dont le drapeau national n'est pas rectangulaire ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Népal",
     incorrect_answers: ["Suisse", "Vatican", "Bhoutan"],
@@ -1342,7 +1342,7 @@ questions_data = [
   {
     content: "Ce drapeau est divisé en diagonale en jaune et orange, avec un grand dragon blanc au centre. De quel royaume s'agit-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Bhoutan",
     incorrect_answers: ["Népal", "Sri Lanka", "Mongolie"],
@@ -1351,7 +1351,7 @@ questions_data = [
   {
     content: "Un drapeau vert avec une bande rouge verticale contenant cinq motifs de tapis traditionnels ('guls'). À quel pays appartient-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Turkménistan",
     incorrect_answers: ["Ouzbékistan", "Tadjikistan", "Kazakhstan"],
@@ -1360,7 +1360,7 @@ questions_data = [
   {
     content: "Le drapeau tricolore noir, blanc et vert, avec un triangle rouge sur le côté, appartient à quel État ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Jordanie",
     incorrect_answers: ["Palestine", "Syrie", "Émirats arabes unis"],
@@ -1369,7 +1369,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau tricolore horizontal jaune, bleu et rouge ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Arménie",
     incorrect_answers: ["Colombie", "Roumanie", "Moldavie"],
@@ -1378,7 +1378,7 @@ questions_data = [
   {
     content: "Ce drapeau a trois bandes horizontales de taille égale, rouge, bleue et rouge, avec un blason au centre. De quel pays s'agit-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Laos",
     incorrect_answers: ["Cambodge", "Corée du Nord", "Autriche"],
@@ -1387,7 +1387,7 @@ questions_data = [
   {
     content: "Un drapeau avec une croix de Saint-Georges rouge sur fond blanc et quatre autres croix plus petites dans chaque quadrant. De quel pays s'agit-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Géorgie",
     incorrect_answers: ["Angleterre", "Malte", "Danemark"],
@@ -1396,7 +1396,7 @@ questions_data = [
   {
     content: "Le drapeau tricolore horizontal bleu, rouge, vert est celui de quel pays du Caucase ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Azerbaïdjan",
     incorrect_answers: ["Arménie", "Géorgie", "Ouzbékistan"],
@@ -1405,7 +1405,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau rouge avec un oiseau de paradis stylisé et la constellation de la Croix du Sud ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Papouasie-Nouvelle-Guinée",
     incorrect_answers: ["Australie", "Nouvelle-Zélande", "Timor oriental"],
@@ -1414,7 +1414,7 @@ questions_data = [
   {
     content: "Ce drapeau est jaune en haut et tricolore (blanc, vert, rouge) en bas. De quel pays s'agit-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Myanmar",
     incorrect_answers: ["Lituanie", "Éthiopie", "Sri Lanka"],
@@ -1423,7 +1423,7 @@ questions_data = [
   {
     content: "Un drapeau avec un fond rouge et deux épées croisées surmontées d'un poignard ('khanjar') est celui de quel sultanat ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Oman",
     incorrect_answers: ["Yémen", "Qatar", "Émirats arabes unis"],
@@ -1432,7 +1432,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau de couleur marron avec un bord dentelé blanc ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Qatar",
     incorrect_answers: ["Bahreïn", "Émirats arabes unis", "Oman"],
@@ -1441,7 +1441,7 @@ questions_data = [
   {
     content: "Le drapeau de Bahreïn est rouge et blanc. Qu'est-ce qui le distingue de celui du Qatar ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Cinq triangles formant une ligne dentelée",
     incorrect_answers: ["Une seule pointe dentelée", "La couleur est rouge vif", "Il n'y a pas de différence"],
@@ -1450,18 +1450,19 @@ questions_data = [
   {
     content: "Quel pays a un drapeau tricolore horizontal noir, blanc, vert, avec une bande verticale rouge sur le côté du guindant ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Asie",
     correct_answer: "Émirats arabes unis",
     incorrect_answers: ["Koweït", "Jordanie", "Syrie"],
     contexte: "Ce drapeau utilise les couleurs panarabes, représentant l'unité des nations arabes. Chaque couleur symbolise une dynastie ou une époque historique."
   },
 
-  # AMERIQUE - DRAPEAUX
+  # Amérique - Drapeaux
+
   {
     content: "Ce drapeau a 13 bandes rouges et blanches et un canton bleu avec 50 étoiles. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "États-Unis",
     incorrect_answers: ["Royaume-Uni", "Liberia", "Malaisie"],
@@ -1470,7 +1471,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau rouge avec une feuille d'érable blanche à onze pointes au centre ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Canada",
     incorrect_answers: ["Liban", "Suisse", "Pérou"],
@@ -1479,7 +1480,7 @@ questions_data = [
   {
     content: "Ce drapeau tricolore vertical vert, blanc et rouge avec un aigle au centre est celui de quel pays ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Mexique",
     incorrect_answers: ["Italie", "Hongrie", "Iran"],
@@ -1488,7 +1489,7 @@ questions_data = [
   {
     content: "Un drapeau vert et jaune avec un globe bleu et la devise 'Ordem e Progresso'. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Brésil",
     incorrect_answers: ["Portugal", "Guyana", "Colombie"],
@@ -1497,7 +1498,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau bleu clair et blanc avec un soleil doré au centre ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Argentine",
     incorrect_answers: ["Uruguay", "Grèce", "Nicaragua"],
@@ -1506,7 +1507,7 @@ questions_data = [
   {
     content: "Ce drapeau tricolore horizontal jaune, bleu et rouge est celui de quel pays sud-américain ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Colombie",
     incorrect_answers: ["Venezuela", "Équateur", "Roumanie"],
@@ -1515,7 +1516,7 @@ questions_data = [
   {
     content: "À quel pays des Caraïbes appartient un drapeau avec un triangle rouge, deux triangles bleus et des bandes blanches ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Cuba",
     incorrect_answers: ["Porto Rico", "République Dominicaine", "Philippines"],
@@ -1524,7 +1525,7 @@ questions_data = [
   {
     content: "Un drapeau avec deux bandes rouges et une bande blanche, avec un blason au centre. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Pérou",
     incorrect_answers: ["Canada", "Autriche", "Pologne"],
@@ -1533,7 +1534,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau bleu avec une bande diagonale rouge bordée de blanc ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Trinité-et-Tobago",
     incorrect_answers: ["République Dominicaine", "Jamaïque", "Namibie"],
@@ -1542,7 +1543,7 @@ questions_data = [
   {
     content: "Ce drapeau a une croix blanche qui divise le champ en quatre rectangles, deux rouges et deux bleus. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "République Dominicaine",
     incorrect_answers: ["Cuba", "Haïti", "Panama"],
@@ -1551,7 +1552,7 @@ questions_data = [
   {
     content: "Quel pays d'Amérique du Sud a un drapeau blanc avec une étoile rouge au centre ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Chili",
     incorrect_answers: ["Paraguay", "États-Unis", "Panama"],
@@ -1560,7 +1561,7 @@ questions_data = [
   {
     content: "Un sautoir (croix en X) doré sur un fond vert est le drapeau de quelle île des Caraïbes ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Jamaïque",
     incorrect_answers: ["Brésil", "Afrique du Sud", "Écosse"],
@@ -1569,7 +1570,7 @@ questions_data = [
   {
     content: "Ce drapeau est similaire à celui de l'Argentine mais le soleil a un visage. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Uruguay",
     incorrect_answers: ["Argentine", "Paraguay", "Pérou"],
@@ -1578,7 +1579,7 @@ questions_data = [
   {
     content: "Le drapeau du Panama est divisé en quatre quadrants. Quelles sont ses couleurs ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Rouge, blanc et bleu",
     incorrect_answers: ["Vert, jaune et bleu", "Noir, rouge et blanc", "Orange, blanc et vert"],
@@ -1587,7 +1588,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau tricolore horizontal jaune, bleu et rouge avec huit étoiles en arc ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Venezuela",
     incorrect_answers: ["Colombie", "Équateur", "Arménie"],
@@ -1596,7 +1597,7 @@ questions_data = [
   {
     content: "Quel est le seul drapeau au monde à avoir deux faces différentes ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Paraguay",
     incorrect_answers: ["Uruguay", "Brésil", "Moldavie"],
@@ -1605,7 +1606,7 @@ questions_data = [
   {
     content: "Un drapeau bleu et blanc à cinq bandes horizontales, avec cinq volcans et un bonnet phrygien. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Salvador",
     incorrect_answers: ["Nicaragua", "Honduras", "Costa Rica"],
@@ -1614,7 +1615,7 @@ questions_data = [
   {
     content: "Ce drapeau tricolore jaune, bleu et rouge porte le blason national avec un condor. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Équateur",
     incorrect_answers: ["Colombie", "Venezuela", "Bolivie"],
@@ -1623,7 +1624,7 @@ questions_data = [
   {
     content: "Un drapeau avec trois bandes horizontales : deux bleues et une blanche au milieu, avec cinq étoiles bleues. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Honduras",
     incorrect_answers: ["Salvador", "Nicaragua", "Argentine"],
@@ -1632,7 +1633,7 @@ questions_data = [
   {
     content: "Le drapeau du Costa Rica a cinq bandes horizontales. Quelles sont leurs couleurs de haut en bas ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Bleu, blanc, rouge, blanc, bleu",
     incorrect_answers: ["Rouge, blanc, bleu, blanc, rouge", "Bleu, blanc, bleu", "Blanc, rouge, blanc"],
@@ -1641,7 +1642,7 @@ questions_data = [
   {
     content: "Quel pays d'Amérique du Sud a un drapeau tricolore horizontal rouge, jaune et vert ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Bolivie",
     incorrect_answers: ["Lituanie", "Ghana", "Éthiopie"],
@@ -1650,7 +1651,7 @@ questions_data = [
   {
     content: "Un trident noir sur un fond bleu et or est le symbole du drapeau de quel pays insulaire ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Barbade",
     incorrect_answers: ["Sainte-Lucie", "Bahamas", "Ukraine"],
@@ -1659,7 +1660,7 @@ questions_data = [
   {
     content: "Ce drapeau bleu et blanc est très similaire à celui du Honduras et du Salvador. Quel pays est-ce ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Nicaragua",
     incorrect_answers: ["Guatemala", "Costa Rica", "Grèce"],
@@ -1668,7 +1669,7 @@ questions_data = [
   {
     content: "Le drapeau de quel pays est bleu ciel et blanc, avec un quetzal (oiseau national) au centre ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Guatemala",
     incorrect_answers: ["Mexique", "Costa Rica", "Panama"],
@@ -1677,7 +1678,7 @@ questions_data = [
   {
     content: "Un drapeau bicolore bleu et rouge, séparé en diagonale, avec le blason national. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Haïti",
     incorrect_answers: ["République Dominicaine", "Liechtenstein", "France"],
@@ -1686,7 +1687,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un triangle noir, deux triangles jaunes et deux triangles verts, séparés par un sautoir noir et blanc ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Guyana",
     incorrect_answers: ["Brésil", "Suriname", "Afrique du Sud"],
@@ -1695,7 +1696,7 @@ questions_data = [
   {
     content: "Ce drapeau est bleu clair avec un triangle jaune et deux triangles noirs. De quel pays insulaire s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Sainte-Lucie",
     incorrect_answers: ["Bahamas", "Barbade", "Saint-Vincent-et-les-Grenadines"],
@@ -1704,7 +1705,7 @@ questions_data = [
   {
     content: "Un drapeau avec trois bandes horizontales : deux bleues et une jaune. De quel archipel s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Bahamas",
     incorrect_answers: ["Barbade", "Sainte-Lucie", "Colombie"],
@@ -1713,16 +1714,16 @@ questions_data = [
   {
     content: "Ce drapeau a une bande rouge diagonale sur un fond vert, avec une étoile jaune. De quel pays s'agit-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Saint-Kitts-et-Nevis",
     incorrect_answers: ["Dominique", "Grenade", "Suriname"],
     contexte: "Le vert représente la fertilité, le rouge la lutte pour l'indépendance, le noir l'héritage africain, et les deux étoiles l'espoir et la liberté."
   },
   {
-    content: "Le drapeau du Belize est bleu avec deux fines bandes rouges. Qu'est-ce qui le rend unique parmi les drapeaux nationaux ?",
+    content: "Le drapeau du Belize est bleu avec deux fines bandes rouges. Qu'est-ce qui le rend unique parmi les Drapeaux nationaux ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Il représente des personnages humains",
     incorrect_answers: ["Il a 12 couleurs", "Il est parfaitement carré", "Il n'a pas de blason"],
@@ -1731,7 +1732,7 @@ questions_data = [
   {
     content: "Un drapeau vert, blanc et vert avec un perroquet Sisserou au centre. De quel pays s'agit-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Dominique",
     incorrect_answers: ["Sainte-Lucie", "Saint-Vincent-et-les-Grenadines", "Grenade"],
@@ -1740,7 +1741,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec cinq bandes de couleurs verte, blanche, rouge, blanche et verte, et une grande étoile jaune ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Suriname",
     incorrect_answers: ["Guyana", "Togo", "Bénin"],
@@ -1749,7 +1750,7 @@ questions_data = [
   {
     content: "Ce drapeau a un cercle rouge contenant sept étoiles sur un fond jaune et vert. De quel pays s'agit-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Grenade",
     incorrect_answers: ["Dominique", "Saint-Kitts-et-Nevis", "Guyana"],
@@ -1758,7 +1759,7 @@ questions_data = [
   {
     content: "Un drapeau tricolore bleu, jaune et vert avec trois losanges verts au centre. De quel pays s'agit-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Saint-Vincent-et-les-Grenadines",
     incorrect_answers: ["Sainte-Lucie", "Dominique", "Brésil"],
@@ -1767,19 +1768,19 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec un sautoir rouge sur fond blanc, et une bande bleue et blanche diagonale ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Amérique",
     correct_answer: "Antigua-et-Barbuda",
     incorrect_answers: ["Grenade", "Saint-Kitts-et-Nevis", "Jamaïque"],
     contexte: "Le soleil levant symbolise l'aube d'une nouvelle ère. Le noir représente les ancêtres africains, le bleu l'espoir, et le rouge l'énergie."
   },
 
-  # OCEANIE - DRAPEAUX
+  # Océanie - DRAPEAUX (NON VERIFIEES)
 
   {
     content: "Quel pays a un drapeau bleu avec l'Union Jack et une grande étoile à sept branches sous le canton ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Australie",
     incorrect_answers: ["Nouvelle-Zélande", "Fidji", "Tuvalu"],
@@ -1788,7 +1789,7 @@ questions_data = [
   {
     content: "Ce drapeau bleu porte l'Union Jack et quatre étoiles rouges à cinq branches. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Nouvelle-Zélande",
     incorrect_answers: ["Australie", "Îles Cook", "Samoa"],
@@ -1797,7 +1798,7 @@ questions_data = [
   {
     content: "Quel pays est représenté par un drapeau divisé en diagonale, avec un oiseau de paradis et la Croix du Sud ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Papouasie-Nouvelle-Guinée",
     incorrect_answers: ["Îles Salomon", "Vanuatu", "Timor oriental"],
@@ -1806,7 +1807,7 @@ questions_data = [
   {
     content: "Ce drapeau bleu ciel est orné d'un grand disque jaune légèrement décentré. De quel pays insulaire s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Palaos",
     incorrect_answers: ["Japon", "Bangladesh", "Micronésie"],
@@ -1815,7 +1816,7 @@ questions_data = [
   {
     content: "Un drapeau rouge avec un canton blanc contenant une croix rouge est l'emblème de quel royaume du Pacifique ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Tonga",
     incorrect_answers: ["Suisse", "Danemark", "Géorgie"],
@@ -1824,7 +1825,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau bleu clair avec quatre étoiles blanches à cinq branches disposées en losange ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Micronésie",
     incorrect_answers: ["Somalie", "Palaos", "Nauru"],
@@ -1833,7 +1834,7 @@ questions_data = [
   {
     content: "Ce drapeau est divisé en diagonale par une bande jaune, avec un champ bleu en haut et vert en bas. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Îles Salomon",
     incorrect_answers: ["Vanuatu", "Papouasie-Nouvelle-Guinée", "Tanzanie"],
@@ -1842,7 +1843,7 @@ questions_data = [
   {
     content: "Quel drapeau montre un oiseau frégate doré volant au-dessus d'un soleil levant sur un fond de vagues bleues et blanches ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Kiribati",
     incorrect_answers: ["Nauru", "Palaos", "Seychelles"],
@@ -1851,7 +1852,7 @@ questions_data = [
   {
     content: "Un drapeau rouge avec un canton bleu contenant la Croix du Sud. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Samoa",
     incorrect_answers: ["Taïwan", "Chili", "Australie"],
@@ -1860,7 +1861,7 @@ questions_data = [
   {
     content: "Ce drapeau bleu ciel porte l'Union Jack dans le canton et neuf étoiles jaunes. Quel pays représente-t-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Tuvalu",
     incorrect_answers: ["Australie", "Nouvelle-Zélande", "Fidji"],
@@ -1869,7 +1870,7 @@ questions_data = [
   {
     content: "Un champ bleu, une fine bande jaune et une étoile blanche à 12 branches. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Nauru",
     incorrect_answers: ["Somalie", "Kiribati", "Micronésie"],
@@ -1878,7 +1879,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau bleu clair avec un blason représentant une colombe et des symboles de paix ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Fidji",
     incorrect_answers: ["Nouvelle-Zélande", "Australie", "Tonga"],
@@ -1887,7 +1888,7 @@ questions_data = [
   {
     content: "Ce drapeau est divisé horizontalement en rouge et vert par un 'Y' noir bordé de jaune, avec un emblème au centre. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Vanuatu",
     incorrect_answers: ["Afrique du Sud", "Guyana", "Îles Salomon"],
@@ -1896,7 +1897,7 @@ questions_data = [
   {
     content: "Un champ bleu avec des bandes diagonales orange et blanche et une grande étoile blanche. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Îles Marshall",
     incorrect_answers: ["Micronésie", "Nauru", "Philippines"],
@@ -1905,7 +1906,7 @@ questions_data = [
   {
     content: "Le drapeau de quelle dépendance néo-zélandaise est un 'Blue Ensign' avec 15 étoiles blanches disposées en cercle ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Îles Cook",
     incorrect_answers: ["Niue", "Tokelau", "Samoa"],
@@ -1914,7 +1915,7 @@ questions_data = [
   {
     content: "Quel est le seul pays ou territoire au monde à avoir un drapeau national de type 'Yellow Ensign' (jaune avec l'Union Jack) ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Niue",
     incorrect_answers: ["Australie", "Vatican", "Brunei"],
@@ -1923,7 +1924,7 @@ questions_data = [
   {
     content: "Le drapeau des Samoa américaines représente un aigle tenant deux symboles traditionnels. Quels sont-ils ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Un chasse-mouches et un bâton de guerre",
     incorrect_answers: ["Une lance et un bouclier", "Une rame et un harpon", "Une fleur et une conque"],
@@ -1932,7 +1933,7 @@ questions_data = [
   {
     content: "Le drapeau de la Polynésie française est composé de trois bandes horizontales rouge, blanche, rouge, avec un emblème au centre. Que représente cet emblème ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Une pirogue polynésienne",
     incorrect_answers: ["Une fleur d'hibiscus", "Une montagne volcanique", "Un tiki sculpté"],
@@ -1941,7 +1942,7 @@ questions_data = [
   {
     content: "Quel territoire français du Pacifique utilise officiellement à la fois le drapeau tricolore français et un drapeau indépendantiste local ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Nouvelle-Calédonie",
     incorrect_answers: ["Polynésie française", "Wallis-et-Futuna", "Clipperton"],
@@ -1950,7 +1951,7 @@ questions_data = [
   {
     content: "Le drapeau de quel territoire américain présente une forme d'amande au centre, représentant une pierre de fronde ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Guam",
     incorrect_answers: ["Samoa américaines", "Porto Rico", "Îles Vierges américaines"],
@@ -1959,7 +1960,7 @@ questions_data = [
   {
     content: "Le drapeau de Tokelau, adopté en 2009, représente une pirogue stylisée. Que symbolisent les quatre étoiles à ses côtés ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "La Croix du Sud",
     incorrect_answers: ["Les quatre îles de l'archipel", "Les quatre villages principaux", "Les quatre piliers de la foi"],
@@ -1968,7 +1969,7 @@ questions_data = [
   {
     content: "Le drapeau des Îles Pitcairn, un 'Blue Ensign', porte un blason. Que contient ce blason ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Une ancre, une bible et une brouette",
     incorrect_answers: ["Un navire, un canon et une carte", "Un poisson, un cocotier et une croix", "Un mutin, un sabre et une île"],
@@ -1977,7 +1978,7 @@ questions_data = [
   {
     content: "Le drapeau de Wallis-et-Futuna est rouge et comporte un élément unique dans son canton. Quel est-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Le drapeau français",
     incorrect_answers: ["Le drapeau du Vatican", "L'Union Jack", "Une croix blanche"],
@@ -1986,16 +1987,16 @@ questions_data = [
   {
     content: "Le drapeau des Îles Mariannes du Nord est bleu, avec une étoile blanche surmontant un symbole culturel. Quel est ce symbole ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Une pierre latte",
     incorrect_answers: ["Un coquillage", "Une statue moai", "Un masque tribal"],
     contexte: "La pierre latte est un pilier de pierre ancien, fondation des maisons traditionnelles Chamorro, symbolisant la culture et l'héritage du peuple."
   },
   {
-    content: "Quel est le principal point de différenciation visuelle entre les drapeaux de l'Australie et de la Nouvelle-Zélande ?",
+    content: "Quel est le principal point de différenciation visuelle entre les Drapeaux de l'Australie et de la Nouvelle-Zélande ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "La couleur et le nombre d'étoiles de la Croix du Sud",
     incorrect_answers: ["La couleur de fond du drapeau", "La position de l'Union Jack", "La présence d'une grande étoile"],
@@ -2004,7 +2005,7 @@ questions_data = [
   {
     content: "Le drapeau de l'île Norfolk, un territoire australien, représente un arbre emblématique de l'île. Quel est cet arbre ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Le Pin de Norfolk",
     incorrect_answers: ["L'Eucalyptus", "Le Cocotier", "Le Banyan"],
@@ -2013,7 +2014,7 @@ questions_data = [
   {
     content: "Le drapeau de l'Île de Pâques (Rapa Nui) est blanc avec un emblème rouge au centre. Que représente cet emblème ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Un Reimiro, un pectoral en bois",
     incorrect_answers: ["Une statue Moai", "Un volcan en éruption", "L'homme-oiseau Tangata manu"],
@@ -2022,7 +2023,7 @@ questions_data = [
   {
     content: "Le drapeau de l'État de Chuuk, en Micronésie, représente un cocotier sur une île. Combien d'étoiles l'entourent ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "38",
     incorrect_answers: ["4", "12", "50"],
@@ -2031,7 +2032,7 @@ questions_data = [
   {
     content: "Le drapeau de l'État de Pohnpei, en Micronésie, est bleu avec une coupe de sakau à moitié pleine et des étoiles. Que symbolise la coupe à moitié pleine ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Le partage et la générosité",
     incorrect_answers: ["Une cérémonie inachevée", "La modération", "Une récolte moyenne"],
@@ -2040,7 +2041,7 @@ questions_data = [
   {
     content: "L'étoile sur le drapeau des Îles Marshall a 24 pointes. Que représentent les quatre grandes pointes ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Les quatre plus grandes villes/atolls",
     incorrect_answers: ["Les quatre points cardinaux", "Les quatre évangiles", "Les quatre principales familles royales"],
@@ -2049,7 +2050,7 @@ questions_data = [
   {
     content: "Le drapeau de l'État de Yap, en Micronésie, représente une pirogue à balancier et un symbole culturel unique. Lequel ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Une pierre rai (monnaie de pierre)",
     incorrect_answers: ["Un masque de danse", "Un hameçon en nacre", "Un tatouage facial"],
@@ -2058,7 +2059,7 @@ questions_data = [
   {
     content: "Le drapeau du Territoire australien de l'Île Christmas est divisé en diagonale. Que représente l'oiseau doré au centre ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Un Phaéton à bec jaune (Golden Bosun)",
     incorrect_answers: ["Une Frégate", "Un Fou à pieds rouges", "Un Gorfou sauteur"],
@@ -2067,7 +2068,7 @@ questions_data = [
   {
     content: "Le drapeau des Îles Cocos (Keeling) est vert avec un cocotier dans un disque doré, un croissant de lune et la Croix du Sud. Que symbolise le croissant ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "La population malaise et musulmane",
     incorrect_answers: ["La lune guidant les marins", "La forme de l'atoll principal", "La récolte de coprah"],
@@ -2076,19 +2077,19 @@ questions_data = [
   {
     content: "Pourquoi le disque jaune sur le drapeau de Palaos est-il légèrement décentré vers le guindant (côté du mât) ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Océanie",
     correct_answer: "Pour une illusion d'optique",
     incorrect_answers: ["Pour représenter le lever de la lune", "Pour des raisons religieuses", "C'est une erreur de conception"],
     contexte: "Lorsque le drapeau flotte au vent, ce décalage donne l'illusion que la lune est parfaitement centrée, un détail de conception visuelle subtil."
   },
 
-  # AFRIQUE - DRAPEAUX
+  # AFRIQUE - Drapeaux
 
   {
     content: "Quel pays a un drapeau composé de trois bandes verticales verte, jaune et rouge ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Sénégal",
     incorrect_answers: ["Mali", "Guinée", "Cameroun"],
@@ -2097,7 +2098,7 @@ questions_data = [
   {
     content: "Ce drapeau a trois bandes horizontales : noire, rouge et verte. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Kenya",
     incorrect_answers: ["Malawi", "Libye", "Soudan"],
@@ -2106,7 +2107,7 @@ questions_data = [
   {
     content: "Un drapeau vert, jaune et rouge avec une étoile jaune au centre est celui de quel pays ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Ghana",
     incorrect_answers: ["Éthiopie", "Cameroun", "Togo"],
@@ -2115,7 +2116,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau tricolore horizontal vert, jaune et rouge ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Éthiopie",
     incorrect_answers: ["Ghana", "Sénégal", "Mali"],
@@ -2124,7 +2125,7 @@ questions_data = [
   {
     content: "Ce drapeau est divisé en deux bandes horizontales, bleue en haut et verte en bas, avec un soleil rouge. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Maroc",
     incorrect_answers: ["Tunisie", "Algérie", "Turquie"],
@@ -2133,7 +2134,7 @@ questions_data = [
   {
     content: "Un drapeau rouge avec un croissant de lune et une étoile blancs au centre est celui de quel pays d'Afrique du Nord ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Tunisie",
     incorrect_answers: ["Algérie", "Maroc", "Turquie"],
@@ -2142,7 +2143,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau vert, blanc et vert, avec une bande rouge verticale sur le côté ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Algérie",
     incorrect_answers: ["Pakistan", "Arabie Saoudite", "Italie"],
@@ -2151,7 +2152,7 @@ questions_data = [
   {
     content: "Un drapeau tricolore horizontal bleu, blanc et vert est celui de quel petit pays côtier ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Sierra Leone",
     incorrect_answers: ["Gabon", "Gambie", "Nigeria"],
@@ -2160,7 +2161,7 @@ questions_data = [
   {
     content: "Quel pays est représenté par deux bandes verticales verte et blanche ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Nigeria",
     incorrect_answers: ["Irlande", "Côte d'Ivoire", "Niger"],
@@ -2169,7 +2170,7 @@ questions_data = [
   {
     content: "Un drapeau tricolore vertical orange, blanc et vert est celui de quel pays d'Afrique de l'Ouest ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Côte d'Ivoire",
     incorrect_answers: ["Irlande", "Niger", "Inde"],
@@ -2178,7 +2179,7 @@ questions_data = [
   {
     content: "Ce drapeau est bleu avec deux bandes jaune et verte. De quel pays s'agit-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Rwanda",
     incorrect_answers: ["Maroc", "République démocratique du Congo", "Somalie"],
@@ -2187,7 +2188,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau bleu ciel avec une seule étoile blanche à cinq branches au centre ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Somalie",
     incorrect_answers: ["Vietnam", "Micronésie", "Ghana"],
@@ -2196,7 +2197,7 @@ questions_data = [
   {
     content: "Ce drapeau a trois bandes horizontales : rouge, blanche et noire. À quel pays appartient-il ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Égypte",
     incorrect_answers: ["Syrie", "Yémen", "Allemagne"],
@@ -2205,7 +2206,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec six couleurs, souvent appelé le 'drapeau arc-en-ciel' ?",
     difficulty: "facile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Afrique du Sud",
     incorrect_answers: ["Seychelles", "Maurice", "Madagascar"],
@@ -2214,16 +2215,16 @@ questions_data = [
   {
     content: "Ce drapeau est bleu clair avec une bande noire diagonale bordée de jaune. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Tanzanie",
     incorrect_answers: ["Namibie", "Trinité-et-Tobago", "Botswana"],
-    contexte: "Le drapeau combine les couleurs des drapeaux du Tanganyika (vert et noir) et de Zanzibar (bleu et noir) qui ont fusionné pour former la Tanzanie."
+    contexte: "Le drapeau combine les couleurs des Drapeaux du Tanganyika (vert et noir) et de Zanzibar (bleu et noir) qui ont fusionné pour former la Tanzanie."
   },
   {
     content: "Quel pays a un drapeau bleu ciel avec une bande noire horizontale au milieu, bordée de blanc ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Botswana",
     incorrect_answers: ["Estonie", "Kenya", "Sierra Leone"],
@@ -2232,7 +2233,7 @@ questions_data = [
   {
     content: "Un drapeau avec une bande rouge verticale et trois bandes horizontales (jaune, verte, bleue). De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "République démocratique du Congo",
     incorrect_answers: ["Congo-Brazzaville", "Togo", "Bénin"],
@@ -2241,7 +2242,7 @@ questions_data = [
   {
     content: "Ce drapeau est divisé en diagonale par une bande jaune, avec un champ vert en haut et rouge en bas. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Congo-Brazzaville",
     incorrect_answers: ["Sénégal", "Ghana", "Cameroun"],
@@ -2250,7 +2251,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau rouge avec une roue dentée, une machette et une étoile ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Angola",
     incorrect_answers: ["Mozambique", "Chine", "Vietnam"],
@@ -2259,7 +2260,7 @@ questions_data = [
   {
     content: "Ce drapeau comporte un livre ouvert, une houe et un AK-47. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Mozambique",
     incorrect_answers: ["Angola", "Zimbabwe", "Ouganda"],
@@ -2268,7 +2269,7 @@ questions_data = [
   {
     content: "Le drapeau de l'Ouganda a six bandes horizontales et un oiseau au centre. Quel est cet oiseau ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Une grue royale grise",
     incorrect_answers: ["Un aigle", "Un flamant rose", "Un perroquet"],
@@ -2277,7 +2278,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec deux bandes horizontales, rouge en haut et verte en bas, avec une étoile jaune au centre ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Burkina Faso",
     incorrect_answers: ["Sénégal", "Togo", "Cameroun"],
@@ -2286,7 +2287,7 @@ questions_data = [
   {
     content: "Ce drapeau a trois bandes horizontales de couleurs orange, blanche et verte. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Niger",
     incorrect_answers: ["Côte d'Ivoire", "Inde", "Irlande"],
@@ -2295,7 +2296,7 @@ questions_data = [
   {
     content: "Un drapeau avec un triangle bleu, une bande rouge et des bandes verte et jaune. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Comores",
     incorrect_answers: ["Seychelles", "Maurice", "Djibouti"],
@@ -2304,7 +2305,7 @@ questions_data = [
   {
     content: "Quel drapeau partage deux de ses couleurs avec le drapeau de l'Ukraine ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Rwanda",
     incorrect_answers: ["Égypte", "Ouganda", "Burundi"],
@@ -2313,7 +2314,7 @@ questions_data = [
   {
     content: "Ce drapeau est divisé en quatre rectangles de couleurs rouge, jaune, verte et noire. De quel pays insulaire s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Maurice",
     incorrect_answers: ["Madagascar", "Seychelles", "Comores"],
@@ -2322,7 +2323,7 @@ questions_data = [
   {
     content: "Un drapeau bleu ciel et vert, séparés par un triangle blanc avec une étoile rouge. De quel pays s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Djibouti",
     incorrect_answers: ["Érythrée", "Somalie", "Éthiopie"],
@@ -2331,7 +2332,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau avec une bande blanche verticale et deux bandes horizontales (rouge et verte) ?",
     difficulty: "intermédiaire",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Madagascar",
     incorrect_answers: ["Biélorussie", "Pologne", "Indonésie"],
@@ -2340,7 +2341,7 @@ questions_data = [
   {
     content: "Ce drapeau a des bandes diagonales bleues, jaunes, rouges, blanches et vertes. De quel archipel s'agit-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Seychelles",
     incorrect_answers: ["Maurice", "Comores", "Cap-Vert"],
@@ -2349,7 +2350,7 @@ questions_data = [
   {
     content: "Un drapeau avec un triangle noir et des bandes verte, rouge et bleue, séparées par de fines lignes jaunes. De quel pays s'agit-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Soudan du Sud",
     incorrect_answers: ["Kenya", "Soudan", "Éthiopie"],
@@ -2358,7 +2359,7 @@ questions_data = [
   {
     content: "Quel pays a un drapeau bleu avec 10 étoiles jaunes disposées en cercle ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Cap-Vert",
     incorrect_answers: ["Union Européenne", "Brésil", "Comores"],
@@ -2367,7 +2368,7 @@ questions_data = [
   {
     content: "Le drapeau du Lesotho est tricolore (bleu, blanc, vert) avec un chapeau traditionnel au centre. Quel est le nom de ce chapeau ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Un mokorotlo",
     incorrect_answers: ["Un fez", "Un kente", "Un dashiki"],
@@ -2376,7 +2377,7 @@ questions_data = [
   {
     content: "Quel pays anciennement appelé Swaziland a un drapeau avec un grand bouclier Nguni et deux lances ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Eswatini",
     incorrect_answers: ["Lesotho", "Botswana", "Afrique du Sud"],
@@ -2385,7 +2386,7 @@ questions_data = [
   {
     content: "Un drapeau avec un rameau d'olivier vert sur un fond vert, rouge et bleu. De quel pays s'agit-il ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "Érythrée",
     incorrect_answers: ["Djibouti", "Éthiopie", "Chypre"],
@@ -2394,7 +2395,7 @@ questions_data = [
   {
     content: "Le drapeau du Zimbabwe comporte sept bandes horizontales et un oiseau emblématique. Quel est cet oiseau ?",
     difficulty: "difficile",
-    category: "drapeaux",
+    category: "Drapeaux",
     region: "Afrique",
     correct_answer: "L'Oiseau de Zimbabwe",
     incorrect_answers: ["Le Secrétaire", "L'Aigle pêcheur", "La Grue royale"],
@@ -2408,7 +2409,7 @@ questions_data = [
   {
     content: "Quel est le plus long fleuve du monde, qui traverse une grande partie de l'Afrique du Nord-Est ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Nil",
     incorrect_answers: ["Le Congo", "Le Niger", "Le Zambèze"],
@@ -2417,7 +2418,7 @@ questions_data = [
   {
     content: "Quel est le plus grand désert chaud du monde, couvrant la majeure partie de l'Afrique du Nord ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Sahara",
     incorrect_answers: ["Le Kalahari", "Le Namib", "Le Karoo"],
@@ -2426,7 +2427,7 @@ questions_data = [
   {
     content: "Quelle est la plus haute montagne d'Afrique, située en Tanzanie ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Kilimandjaro",
     incorrect_answers: ["Le Mont Kenya", "Le Mont Blanc", "Le Ras Dashen"],
@@ -2435,7 +2436,7 @@ questions_data = [
   {
     content: "Quel océan borde la côte ouest de l'Afrique ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "L'Océan Atlantique",
     incorrect_answers: ["L'Océan Indien", "L'Océan Pacifique", "L'Océan Arctique"],
@@ -2444,7 +2445,7 @@ questions_data = [
   {
     content: "Quel océan borde la côte est de l'Afrique ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "L'Océan Indien",
     incorrect_answers: ["L'Océan Atlantique", "L'Océan Pacifique", "La Mer Rouge"],
@@ -2453,7 +2454,7 @@ questions_data = [
   {
     content: "Les Chutes Victoria, l'une des plus spectaculaires au monde, se trouvent sur quel fleuve ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Zambèze",
     incorrect_answers: ["Le Nil", "Le Congo", "Le Niger"],
@@ -2462,7 +2463,7 @@ questions_data = [
   {
     content: "Quel est le plus grand lac d'Afrique en superficie, bordé par l'Ouganda, le Kenya et la Tanzanie ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Lac Victoria",
     incorrect_answers: ["Le Lac Tanganyika", "Le Lac Malawi", "Le Lac Tchad"],
@@ -2471,7 +2472,7 @@ questions_data = [
   {
     content: "Quelle mer sépare l'Afrique du Nord-Est de la péninsule arabique ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "La Mer Rouge",
     incorrect_answers: ["La Mer Méditerranée", "La Mer Noire", "Le Golfe Persique"],
@@ -2480,7 +2481,7 @@ questions_data = [
   {
     content: "Quelle grande île est située dans l'Océan Indien, à l'est du continent africain ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Madagascar",
     incorrect_answers: ["La Sicile", "La Crète", "Les Seychelles"],
@@ -2489,7 +2490,7 @@ questions_data = [
   {
     content: "Quelle mer borde toute la côte nord de l'Afrique ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "La Mer Méditerranée",
     incorrect_answers: ["La Mer Rouge", "La Mer Adriatique", "L'Océan Atlantique"],
@@ -2498,7 +2499,7 @@ questions_data = [
   {
     content: "Quelle chaîne de montagnes s'étend sur le Maroc, l'Algérie et la Tunisie ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "L'Atlas",
     incorrect_answers: ["Les Alpes", "Les Pyrénées", "Le Drakensberg"],
@@ -2507,7 +2508,7 @@ questions_data = [
   {
     content: "Le fleuve Congo, le deuxième plus puissant du monde, se jette dans quel océan ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "L'Océan Atlantique",
     incorrect_answers: ["L'Océan Indien", "La Mer Méditerranée", "La Mer Rouge"],
@@ -2516,7 +2517,7 @@ questions_data = [
   {
     content: "Le cap de Bonne-Espérance est une pointe rocheuse célèbre située à l'extrémité sud de quel pays ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "L'Afrique du Sud",
     incorrect_answers: ["La Namibie", "Le Mozambique", "Madagascar"],
@@ -2525,7 +2526,7 @@ questions_data = [
   {
     content: "Quel désert s'étend sur une grande partie du Botswana, de la Namibie et de l'Afrique du Sud ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Kalahari",
     incorrect_answers: ["Le Sahara", "Le Namib", "Le Karoo"],
@@ -2534,7 +2535,7 @@ questions_data = [
   {
     content: "Le delta de l'Okavango, un vaste delta intérieur, se trouve dans quel pays ?",
     difficulty: "facile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Botswana",
     incorrect_answers: ["Le Zimbabwe", "La Zambie", "L'Angola"],
@@ -2543,7 +2544,7 @@ questions_data = [
   {
     content: "Quelle formation géologique massive s'étend sur des milliers de kilomètres, de la Syrie au Mozambique ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "La Vallée du Grand Rift",
     incorrect_answers: ["La Fosse des Mariannes", "Le Grand Canyon", "La Cordillère des Andes"],
@@ -2552,7 +2553,7 @@ questions_data = [
   {
     content: "Quel fleuve, le principal d'Afrique de l'Ouest, forme une grande boucle à travers le Mali ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Niger",
     incorrect_answers: ["Le Sénégal", "La Volta", "Le Congo"],
@@ -2561,7 +2562,7 @@ questions_data = [
   {
     content: "Quel est le lac le plus profond d'Afrique et le deuxième plus profond du monde ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Lac Tanganyika",
     incorrect_answers: ["Le Lac Victoria", "Le Lac Malawi", "Le Lac Kivu"],
@@ -2570,7 +2571,7 @@ questions_data = [
   {
     content: "Quelle chaîne de montagnes constitue la principale formation montagneuse d'Afrique du Sud ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Drakensberg",
     incorrect_answers: ["L'Atlas", "Les Monts Rwenzori", "Le Kilimandjaro"],
@@ -2579,7 +2580,7 @@ questions_data = [
   {
     content: "Le Canal de Suez, une voie navigable artificielle, relie la Mer Méditerranée à quelle autre mer ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "La Mer Rouge",
     incorrect_answers: ["La Mer Noire", "La Mer d'Arabie", "L'Océan Indien"],
@@ -2588,7 +2589,7 @@ questions_data = [
   {
     content: "Quel désert côtier, l'un des plus anciens du monde, s'étend le long de la côte de la Namibie ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le désert du Namib",
     incorrect_answers: ["Le Sahara", "Le Kalahari", "Le Karoo"],
@@ -2597,7 +2598,7 @@ questions_data = [
   {
     content: "Le lac Tchad, vital pour des millions de personnes, est bordé par quels quatre pays ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Tchad, le Niger, le Nigeria et le Cameroun",
     incorrect_answers: ["Le Soudan, la Libye, l'Égypte et le Tchad", "Le Mali, le Burkina Faso, le Niger et le Bénin", "L'Algérie, la Libye, le Niger et le Tchad"],
@@ -2606,7 +2607,7 @@ questions_data = [
   {
     content: "Quelle est la source principale du Nil Bleu, qui fournit la majorité de l'eau du Nil ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Lac Tana (en Éthiopie)",
     incorrect_answers: ["Le Lac Victoria (en Ouganda)", "Les Monts Rwenzori (en Ouganda)", "Le Lac Albert (en Ouganda)"],
@@ -2615,7 +2616,7 @@ questions_data = [
   {
     content: "Le mont Kenya est le deuxième plus haut sommet d'Afrique. Dans quel pays se trouve-t-il ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Kenya",
     incorrect_answers: ["La Tanzanie", "L'Ouganda", "L'Éthiopie"],
@@ -2624,7 +2625,7 @@ questions_data = [
   {
     content: "Quel canal sépare Madagascar du continent africain ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Canal du Mozambique",
     incorrect_answers: ["Le Canal de Suez", "Le Détroit de Gibraltar", "Le Détroit de Bab-el-Mandeb"],
@@ -2633,7 +2634,7 @@ questions_data = [
   {
     content: "Le bassin du Congo abrite la deuxième plus grande forêt tropicale du monde. Quel fleuve le draine ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Congo",
     incorrect_answers: ["Le Niger", "Le Zambèze", "L'Ogooué"],
@@ -2642,7 +2643,7 @@ questions_data = [
   {
     content: "Le cratère du Ngorongoro, une vaste caldeira volcanique intacte, se trouve dans quel pays ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "La Tanzanie",
     incorrect_answers: ["Le Kenya", "L'Éthiopie", "L'Afrique du Sud"],
@@ -2651,7 +2652,7 @@ questions_data = [
   {
     content: "Quel fleuve marque une partie de la frontière entre l'Afrique du Sud et la Namibie ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le fleuve Orange",
     incorrect_answers: ["Le Limpopo", "Le Zambèze", "Le Vaal"],
@@ -2660,7 +2661,7 @@ questions_data = [
   {
     content: "La 'Porte des Enfers' (Bab-el-Mandeb) est un détroit stratégique qui relie la Mer Rouge à quel golfe ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Golfe d'Aden",
     incorrect_answers: ["Le Golfe Persique", "Le Golfe d'Oman", "Le Golfe de Guinée"],
@@ -2669,7 +2670,7 @@ questions_data = [
   {
     content: "Quel lac, partagé entre le Malawi, le Mozambique et la Tanzanie, est connu pour son incroyable diversité de poissons cichlidés ?",
     difficulty: "intermédiaire",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Lac Malawi (ou Lac Nyasa)",
     incorrect_answers: ["Le Lac Victoria", "Le Lac Tanganyika", "Le Lac Turkana"],
@@ -2678,7 +2679,7 @@ questions_data = [
   {
     content: "La dépression de Danakil, l'un des endroits les plus chauds et les plus bas de la planète, se trouve principalement dans quel pays ?",
     difficulty: "difficile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "L'Éthiopie",
     incorrect_answers: ["L'Érythrée", "Djibouti", "La Somalie"],
@@ -2687,7 +2688,7 @@ questions_data = [
   {
     content: "Quel massif montagneux, parfois appelé les 'Montagnes de la Lune', se trouve à la frontière de l'Ouganda et de la RDC ?",
     difficulty: "difficile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Les Monts Rwenzori",
     incorrect_answers: ["Les Monts Virunga", "Le Massif de l'Adamaoua", "Le Massif du Tibesti"],
@@ -2696,7 +2697,7 @@ questions_data = [
   {
     content: "Le 'Grand Escarpement' est une caractéristique topographique majeure qui borde quel grand plateau ?",
     difficulty: "difficile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le plateau sud-africain",
     incorrect_answers: ["Le plateau éthiopien", "Le plateau de Jos", "Le plateau du Fouta-Djalon"],
@@ -2705,7 +2706,7 @@ questions_data = [
   {
     content: "Quel fleuve prend sa source dans le massif du Fouta-Djalon en Guinée et se jette dans l'Atlantique au Sénégal ?",
     difficulty: "difficile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le fleuve Sénégal",
     incorrect_answers: ["Le fleuve Gambie", "La Volta", "Le Niger"],
@@ -2714,7 +2715,7 @@ questions_data = [
   {
     content: "Le Lac Assal, le point le plus bas d'Afrique, est un lac salé situé dans quel pays ?",
     difficulty: "difficile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Djibouti",
     incorrect_answers: ["L'Éthiopie", "L'Érythrée", "Le Kenya"],
@@ -2723,7 +2724,7 @@ questions_data = [
   {
     content: "Quel courant océanique froid remonte le long de la côte sud-ouest de l'Afrique, contribuant à l'aridité du désert du Namib ?",
     difficulty: "difficile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le courant de Benguela",
     incorrect_answers: ["Le courant des Aiguilles", "Le courant de Guinée", "Le courant des Canaries"],
@@ -2732,7 +2733,7 @@ questions_data = [
   {
     content: "Le massif du Tibesti, une chaîne de volcans majoritairement inactifs, se trouve dans le désert du Sahara, principalement dans quel pays ?",
     difficulty: "difficile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Tchad",
     incorrect_answers: ["La Libye", "Le Niger", "L'Algérie"],
@@ -2741,7 +2742,7 @@ questions_data = [
   {
     content: "Quel fleuve, formant la frontière entre la RDC et le Congo-Brazzaville, est le plus profond du monde ?",
     difficulty: "difficile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Congo",
     incorrect_answers: ["Le Nil", "Le Zambèze", "Le Niger"],
@@ -2750,7 +2751,7 @@ questions_data = [
   {
     content: "La 'Côte des Squelettes' est le nom donné au littoral de quel pays, en raison de ses nombreux naufrages et de son climat inhospitalier ?",
     difficulty: "difficile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "La Namibie",
     incorrect_answers: ["L'Angola", "L'Afrique du Sud", "La Somalie"],
@@ -2759,7 +2760,7 @@ questions_data = [
   {
     content: "Quel lac volcanique du Cameroun a libéré une grande quantité de CO2 en 1986, causant la mort de près de 1 800 personnes ?",
     difficulty: "difficile",
-    category: "Reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Afrique",
     correct_answer: "Le Lac Nyos",
     incorrect_answers: ["Le Lac Kivu", "Le Lac Manoun", "Le Lac Tana"],
@@ -2771,7 +2772,7 @@ questions_data = [
   {
     content: "Quelle est la plus haute chaîne de montagnes d'Europe, s'étendant sur huit pays dont la France, la Suisse et l'Italie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "Les Alpes",
     incorrect_answers: ["Les Pyrénées", "Les Carpates", "L'Oural"],
@@ -2780,7 +2781,7 @@ questions_data = [
   {
     content: "Quel fleuve traverse des capitales comme Vienne, Bratislava, Budapest et Belgrade avant de se jeter dans la mer Noire ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "Le Danube",
     incorrect_answers: ["Le Rhin", "La Volga", "La Seine"],
@@ -2789,7 +2790,7 @@ questions_data = [
   {
     content: "Quelle mer semi-fermée borde le sud de l'Europe, le nord de l'Afrique et l'ouest de l'Asie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Mer Méditerranée",
     incorrect_answers: ["La Mer Noire", "La Mer du Nord", "La Mer Baltique"],
@@ -2798,7 +2799,7 @@ questions_data = [
   {
     content: "Quel est le plus long fleuve d'Europe, qui s'écoule entièrement en Russie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Volga",
     incorrect_answers: ["Le Danube", "Le Dniepr", "Le Rhin"],
@@ -2807,7 +2808,7 @@ questions_data = [
   {
     content: "Quelle chaîne de montagnes forme une frontière naturelle entre la France et l'Espagne ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "Les Pyrénées",
     incorrect_answers: ["Les Alpes", "Les Apennins", "Le Jura"],
@@ -2816,7 +2817,7 @@ questions_data = [
   {
     content: "Quel fleuve traverse Paris, la capitale de la France ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Seine",
     incorrect_answers: ["La Loire", "Le Rhône", "La Garonne"],
@@ -2825,7 +2826,7 @@ questions_data = [
   {
     content: "Quel détroit sépare l'Europe (Espagne) de l'Afrique (Maroc) ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "Le détroit de Gibraltar",
     incorrect_answers: ["Le détroit du Bosphore", "La Manche", "Le détroit de Messine"],
@@ -2834,7 +2835,7 @@ questions_data = [
   {
     content: "Quel océan borde la côte ouest de l'Europe, notamment le Portugal, l'Irlande et la Norvège ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "L'Océan Atlantique",
     incorrect_answers: ["L'Océan Pacifique", "L'Océan Arctique", "L'Océan Indien"],
@@ -2843,7 +2844,7 @@ questions_data = [
   {
     content: "Le Rhin, un fleuve majeur, prend sa source dans quel pays avant de traverser l'Allemagne et les Pays-Bas ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Suisse",
     incorrect_answers: ["L'Autriche", "L'Italie", "La France"],
@@ -2852,7 +2853,7 @@ questions_data = [
   {
     content: "Quel grand lac est partagé entre la France et la Suisse ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "Le Lac Léman (Lac de Genève)",
     incorrect_answers: ["Le Lac de Constance", "Le Lac de Garde", "Le Lac Majeur"],
@@ -2861,7 +2862,7 @@ questions_data = [
   {
     content: "Le Vésuve est un volcan célèbre qui surplombe quelle ville italienne ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "Naples",
     incorrect_answers: ["Rome", "Florence", "Venise"],
@@ -2870,7 +2871,7 @@ questions_data = [
   {
     content: "Quel fleuve traverse la capitale du Royaume-Uni, Londres ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Tamise",
     incorrect_answers: ["La Severn", "Le Trent", "La Clyde"],
@@ -2879,7 +2880,7 @@ questions_data = [
   {
     content: "La mer du Nord est une mer de l'océan Atlantique située entre quels deux territoires ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Grande-Bretagne et l'Europe continentale",
     incorrect_answers: ["L'Irlande et la Grande-Bretagne", "La Scandinavie et la Russie", "L'Italie et les Balkans"],
@@ -2888,7 +2889,7 @@ questions_data = [
   {
     content: "Quelle est la plus grande île d'Europe ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Grande-Bretagne",
     incorrect_answers: ["L'Islande", "L'Irlande", "La Sicile"],
@@ -2897,7 +2898,7 @@ questions_data = [
   {
     content: "Quelle mer sépare l'Italie de la péninsule des Balkans ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Mer Adriatique",
     incorrect_answers: ["La Mer Tyrrhénienne", "La Mer Ionienne", "La Mer Égée"],
@@ -2906,7 +2907,7 @@ questions_data = [
   {
     content: "Quelle chaîne de montagnes forme l'épine dorsale de la péninsule italienne ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "Les Apennins",
     incorrect_answers: ["Les Alpes", "Les Dolomites", "Les Pyrénées"],
@@ -2915,7 +2916,7 @@ questions_data = [
   {
     content: "Le détroit de la Manche sépare la Grande-Bretagne de quel pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La France",
     incorrect_answers: ["L'Irlande", "La Belgique", "Les Pays-Bas"],
@@ -2924,7 +2925,7 @@ questions_data = [
   {
     content: "Quel est le plus grand lac d'Europe, situé au nord-ouest de la Russie ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "Le Lac Ladoga",
     incorrect_answers: ["Le Lac Onega", "Le Lac Vänern", "Le Lac Peïpous"],
@@ -2933,7 +2934,7 @@ questions_data = [
   {
     content: "Les fjords, de profondes vallées glaciaires envahies par la mer, sont particulièrement emblématiques de quel pays scandinave ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Norvège",
     incorrect_answers: ["La Suède", "La Finlande", "Le Danemark"],
@@ -2942,7 +2943,7 @@ questions_data = [
   {
     content: "La mer Noire est reliée à la mer Méditerranée par quel détroit stratégique ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "Le Bosphore",
     incorrect_answers: ["Le détroit de Gibraltar", "Le détroit de Kertch", "Les Dardanelles"],
@@ -2951,7 +2952,7 @@ questions_data = [
   {
     content: "Quelle chaîne de montagnes s'étend en arc de cercle à travers l'Europe centrale et orientale, de la République Tchèque à la Roumanie ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "Les Carpates",
     incorrect_answers: ["Les Alpes", "Les Balkans", "Les Sudètes"],
@@ -2960,7 +2961,7 @@ questions_data = [
   {
     content: "Le Pô est le plus long fleuve de quel pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "L'Italie",
     incorrect_answers: ["L'Espagne", "La France", "La Grèce"],
@@ -2969,7 +2970,7 @@ questions_data = [
   {
     content: "Quel pays est une grande île volcanique située sur la dorsale médio-atlantique, connue pour ses geysers et ses glaciers ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "L'Islande",
     incorrect_answers: ["L'Irlande", "Le Groenland", "Chypre"],
@@ -2978,7 +2979,7 @@ questions_data = [
   {
     content: "La mer Baltique est une mer intérieure connue pour sa faible salinité. Quel pays n'a PAS de côte sur la mer Baltique ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Norvège",
     incorrect_answers: ["La Suède", "La Pologne", "La Finlande"],
@@ -2987,7 +2988,7 @@ questions_data = [
   {
     content: "Le Tage (Tejo) est le plus long fleuve de quelle péninsule ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La péninsule Ibérique",
     incorrect_answers: ["La péninsule Italienne", "La péninsule des Balkans", "La péninsule Scandinave"],
@@ -2996,7 +2997,7 @@ questions_data = [
   {
     content: "Le massif du Jura forme une frontière naturelle entre la France et quel autre pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Suisse",
     incorrect_answers: ["L'Allemagne", "L'Italie", "La Belgique"],
@@ -3005,7 +3006,7 @@ questions_data = [
   {
     content: "Quelle mer, une partie de la Méditerranée, est parsemée de milliers d'îles et borde la Grèce et la Turquie ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Mer Égée",
     incorrect_answers: ["La Mer Ionienne", "La Mer Adriatique", "La Mer Tyrrhénienne"],
@@ -3014,7 +3015,7 @@ questions_data = [
   {
     content: "Quelle est la plus grande île de la mer Méditerranée ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Sicile",
     incorrect_answers: ["La Sardaigne", "Chypre", "La Crète"],
@@ -3023,7 +3024,7 @@ questions_data = [
   {
     content: "Le plateau de la Meseta est la principale caractéristique du relief intérieur de quel pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "L'Espagne",
     incorrect_answers: ["Le Portugal", "La France", "L'Italie"],
@@ -3032,7 +3033,7 @@ questions_data = [
   {
     content: "Quel fleuve prend sa source en Allemagne et se jette dans la mer du Nord à Hambourg ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "L'Elbe",
     incorrect_answers: ["Le Weser", "L'Oder", "Le Danube"],
@@ -3041,7 +3042,7 @@ questions_data = [
   {
     content: "Les polders, des étendues de terre gagnées sur la mer, sont une caractéristique emblématique de quel pays ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "Les Pays-Bas",
     incorrect_answers: ["Le Danemark", "La Belgique", "L'Allemagne"],
@@ -3050,7 +3051,7 @@ questions_data = [
   {
     content: "Quelle chaîne de montagnes est traditionnellement considérée comme la frontière naturelle entre l'Europe et l'Asie ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "L'Oural",
     incorrect_answers: ["Le Caucase", "Les Carpates", "Les Alpes scandinaves"],
@@ -3059,7 +3060,7 @@ questions_data = [
   {
     content: "Le détroit de Messine, connu pour ses courants forts, sépare la Sicile de quelle partie de l'Italie ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La péninsule italienne (Calabre)",
     incorrect_answers: ["La Sardaigne", "La Corse", "Malte"],
@@ -3068,7 +3069,7 @@ questions_data = [
   {
     content: "Le lac Balaton, le plus grand lac d'Europe centrale, est une destination touristique majeure dans quel pays ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Hongrie",
     incorrect_answers: ["L'Autriche", "La Slovaquie", "La Croatie"],
@@ -3077,7 +3078,7 @@ questions_data = [
   {
     content: "Le 'Gulf Stream' est un puissant courant océanique chaud qui a un effet modérateur significatif sur le climat de quelle partie de l'Europe ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "L'Europe de l'Ouest et du Nord",
     incorrect_answers: ["L'Europe de l'Est", "L'Europe du Sud", "L'Europe Centrale"],
@@ -3086,7 +3087,7 @@ questions_data = [
   {
     content: "Les Alpes dinariques sont une chaîne de montagnes qui s'étend le long de la côte de quelle mer ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Mer Adriatique",
     incorrect_answers: ["La Mer Égée", "La Mer Noire", "La Mer Tyrrhénienne"],
@@ -3095,7 +3096,7 @@ questions_data = [
   {
     content: "Quel fleuve, le plus long de Pologne, traverse Varsovie et Cracovie avant de se jeter dans la mer Baltique ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Vistule",
     incorrect_answers: ["L'Oder", "Le Dniepr", "Le Niémen"],
@@ -3104,7 +3105,7 @@ questions_data = [
   {
     content: "Le golfe de Botnie est la partie la plus septentrionale de quelle mer ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Mer Baltique",
     incorrect_answers: ["La Mer du Nord", "La Mer de Barents", "La Mer Blanche"],
@@ -3113,7 +3114,7 @@ questions_data = [
   {
     content: "Quelle région marécageuse du sud de la France, célèbre pour ses chevaux blancs et ses taureaux, est en fait un delta fluvial ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Camargue",
     incorrect_answers: ["Le Marais poitevin", "Les Landes", "La Sologne"],
@@ -3122,7 +3123,7 @@ questions_data = [
   {
     content: "Le Lough Neagh est le plus grand lac d'eau douce de quelles îles ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "Les Îles Britanniques",
     incorrect_answers: ["Les Îles Féroé", "Les Shetland", "Les Baléares"],
@@ -3131,7 +3132,7 @@ questions_data = [
   {
     content: "Le détroit des Dardanelles relie la mer Égée à quelle autre mer ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Mer de Marmara",
     incorrect_answers: ["La Mer Noire", "La Mer d'Azov", "La Mer Méditerranée"],
@@ -3140,7 +3141,7 @@ questions_data = [
   {
     content: "Le plateau du Hardangervidda, le plus grand plateau d'érosion d'Europe, abrite la plus grande population de rennes sauvages. Dans quel pays se trouve-t-il ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Norvège",
     incorrect_answers: ["La Suède", "La Finlande", "L'Écosse"],
@@ -3149,7 +3150,7 @@ questions_data = [
   {
     content: "Le Guadalquivir est un fleuve majeur qui traverse quelle région autonome du sud de l'Espagne ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "L'Andalousie",
     incorrect_answers: ["La Catalogne", "La Castille", "Le Pays Basque"],
@@ -3158,19 +3159,19 @@ questions_data = [
   {
     content: "Les Météores, des formations rocheuses spectaculaires au sommet desquelles des monastères ont été construits, se trouvent dans quel pays ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Grèce",
     incorrect_answers: ["L'Italie", "L'Espagne", "La Turquie"],
     contexte: "Situés en Thessalie, ces piliers de grès sont un site du patrimoine mondial de l'UNESCO, combinant merveille naturelle et réalisation humaine."
   },
 
-  # AMERIQUE - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
+  # Amérique - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
 
   {
     content: "Quel est le plus long fleuve d'Amérique du Sud, et le plus puissant du monde en termes de débit ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "L'Amazone",
     incorrect_answers: ["Le Mississippi", "Le Paraná", "Le Mackenzie"],
@@ -3179,7 +3180,7 @@ questions_data = [
   {
     content: "Quelle est la plus longue chaîne de montagnes du monde, s'étendant sur toute la côte ouest de l'Amérique du Sud ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "La Cordillère des Andes",
     incorrect_answers: ["Les Montagnes Rocheuses", "Les Appalaches", "La Sierra Madre"],
@@ -3188,7 +3189,7 @@ questions_data = [
   {
     content: "Quel est le plus grand fleuve d'Amérique du Nord, drainant une grande partie du centre des États-Unis ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Mississippi",
     incorrect_answers: ["Le Missouri", "Le Colorado", "Le Saint-Laurent"],
@@ -3197,7 +3198,7 @@ questions_data = [
   {
     content: "Quel océan borde la côte ouest des Amériques ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "L'Océan Pacifique",
     incorrect_answers: ["L'Océan Atlantique", "L'Océan Arctique", "L'Océan Indien"],
@@ -3206,7 +3207,7 @@ questions_data = [
   {
     content: "Quel océan borde la côte est des Amériques ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "L'Océan Atlantique",
     incorrect_answers: ["L'Océan Pacifique", "L'Océan Austral", "La Mer des Caraïbes"],
@@ -3215,7 +3216,7 @@ questions_data = [
   {
     content: "Les Chutes du Niagara se trouvent à la frontière entre les États-Unis et quel autre pays ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Canada",
     incorrect_answers: ["Le Mexique", "Le Groenland", "Cuba"],
@@ -3224,7 +3225,7 @@ questions_data = [
   {
     content: "Quel est le plus grand groupe de lacs d'eau douce au monde, situé en Amérique du Nord ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Les Grands Lacs",
     incorrect_answers: ["Le Grand Lac Salé", "Le Lac Titicaca", "Le Lac de Maracaibo"],
@@ -3233,7 +3234,7 @@ questions_data = [
   {
     content: "Quelle chaîne de montagnes s'étend de l'ouest du Canada au Nouveau-Mexique aux États-Unis ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Les Montagnes Rocheuses",
     incorrect_answers: ["Les Appalaches", "La Cordillère des Andes", "La Sierra Nevada"],
@@ -3242,7 +3243,7 @@ questions_data = [
   {
     content: "Quel golfe est situé au sud des États-Unis et à l'est du Mexique ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Golfe du Mexique",
     incorrect_answers: ["Le Golfe de Californie", "La Baie d'Hudson", "La Mer des Caraïbes"],
@@ -3251,7 +3252,7 @@ questions_data = [
   {
     content: "Quel fleuve forme une grande partie de la frontière entre les États-Unis et le Mexique ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Rio Grande",
     incorrect_answers: ["Le Colorado", "Le Mississippi", "Le Gila"],
@@ -3260,7 +3261,7 @@ questions_data = [
   {
     content: "Le Canal de Panama relie l'Océan Atlantique à quel autre océan ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "L'Océan Pacifique",
     incorrect_answers: ["L'Océan Indien", "L'Océan Arctique", "La Mer des Caraïbes"],
@@ -3269,7 +3270,7 @@ questions_data = [
   {
     content: "Quel est le point le plus au sud de l'Amérique du Sud ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Cap Horn",
     incorrect_answers: ["Le Cap de Bonne-Espérance", "Ushuaia", "Le Détroit de Magellan"],
@@ -3278,7 +3279,7 @@ questions_data = [
   {
     content: "La Baie d'Hudson est une très grande baie située dans quelle partie du Canada ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le nord-est",
     incorrect_answers: ["La côte ouest", "Le sud", "Les provinces maritimes"],
@@ -3287,7 +3288,7 @@ questions_data = [
   {
     content: "Quelle mer tropicale est bordée par l'Amérique du Sud au sud et les Grandes Antilles au nord ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "La Mer des Caraïbes",
     incorrect_answers: ["La Mer des Sargasses", "Le Golfe du Mexique", "L'Océan Atlantique Nord"],
@@ -3296,7 +3297,7 @@ questions_data = [
   {
     content: "Quelle est la principale chaîne de montagnes dans l'est de l'Amérique du Nord, s'étendant de Terre-Neuve à l'Alabama ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Les Appalaches",
     incorrect_answers: ["Les Montagnes Rocheuses", "Les Laurentides", "La Sierra Nevada"],
@@ -3305,7 +3306,7 @@ questions_data = [
   {
     content: "Quel fleuve a creusé le Grand Canyon en Arizona ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Colorado",
     incorrect_answers: ["Le Columbia", "Le Snake", "Le Rio Grande"],
@@ -3314,7 +3315,7 @@ questions_data = [
   {
     content: "Le Lac Titicaca, le plus haut lac navigable du monde, est situé dans quelle chaîne de montagnes ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "La Cordillère des Andes",
     incorrect_answers: ["Les Montagnes Rocheuses", "La Sierra Madre", "Les Appalaches"],
@@ -3323,7 +3324,7 @@ questions_data = [
   {
     content: "Quel désert, l'un des plus secs du monde, s'étend le long de la côte du Chili et du Pérou ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le désert d'Atacama",
     incorrect_answers: ["Le désert de Sonora", "Le désert de Mojave", "Le désert de Patagonie"],
@@ -3332,7 +3333,7 @@ questions_data = [
   {
     content: "Le fleuve Saint-Laurent relie les Grands Lacs à quel océan ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "L'Océan Atlantique",
     incorrect_answers: ["L'Océan Arctique", "L'Océan Pacifique", "La Baie d'Hudson"],
@@ -3341,7 +3342,7 @@ questions_data = [
   {
     content: "La Patagonie est une région naturelle partagée entre quels deux pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "L'Argentine et le Chili",
     incorrect_answers: ["Le Brésil et l'Uruguay", "Le Pérou et la Bolivie", "La Colombie et le Venezuela"],
@@ -3350,7 +3351,7 @@ questions_data = [
   {
     content: "Quel est le plus grand lac entièrement situé au Canada ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Grand lac de l'Ours",
     incorrect_answers: ["Le Grand lac des Esclaves", "Le Lac Supérieur", "Le Lac Winnipeg"],
@@ -3359,7 +3360,7 @@ questions_data = [
   {
     content: "Le Salar de Uyuni, le plus grand désert de sel du monde, se trouve dans quel pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "La Bolivie",
     incorrect_answers: ["Le Chili", "L'Argentine", "Le Pérou"],
@@ -3368,7 +3369,7 @@ questions_data = [
   {
     content: "Quel passage maritime dangereux sépare la pointe sud de l'Amérique du Sud de l'Antarctique ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Passage de Drake",
     incorrect_answers: ["Le Détroit de Magellan", "Le Canal de Beagle", "Le Détroit de Béring"],
@@ -3377,7 +3378,7 @@ questions_data = [
   {
     content: "Le bouclier canadien (ou laurentien) est une très grande formation géologique riche en quoi ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Minéraux et lacs",
     incorrect_answers: ["Terres agricoles fertiles", "Pétrole et gaz", "Déserts de sable"],
@@ -3386,7 +3387,7 @@ questions_data = [
   {
     content: "Les chutes d'Iguazú, un ensemble impressionnant de cascades, se trouvent à la frontière de quels trois pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Brésil, l'Argentine et le Paraguay",
     incorrect_answers: ["La Colombie, le Venezuela et le Brésil", "Le Pérou, la Bolivie et le Brésil", "L'Uruguay, l'Argentine et le Brésil"],
@@ -3395,7 +3396,7 @@ questions_data = [
   {
     content: "Le fleuve Orénoque (Orinoco) traverse principalement quels deux pays d'Amérique du Sud ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Venezuela et la Colombie",
     incorrect_answers: ["Le Brésil et le Pérou", "L'Équateur et la Colombie", "Le Guyana et le Suriname"],
@@ -3404,7 +3405,7 @@ questions_data = [
   {
     content: "Quel est le point le plus bas d'Amérique du Nord, situé dans le désert de Mojave ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "La Vallée de la Mort (Death Valley)",
     incorrect_answers: ["Le Grand Lac Salé", "La Mer Salton", "Le Bayou de la Louisiane"],
@@ -3413,7 +3414,7 @@ questions_data = [
   {
     content: "Le plateau des Guyanes est un massif ancien situé au nord de quel grand fleuve ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "L'Amazone",
     incorrect_answers: ["L'Orénoque", "Le Paraná", "Le Magdalena"],
@@ -3422,7 +3423,7 @@ questions_data = [
   {
     content: "Le fleuve Mackenzie, le plus long fleuve du Canada, se jette dans quel océan ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "L'Océan Arctique",
     incorrect_answers: ["L'Océan Pacifique", "L'Océan Atlantique", "La Baie d'Hudson"],
@@ -3431,7 +3432,7 @@ questions_data = [
   {
     content: "L'Aconcagua, le plus haut sommet des Amériques, se trouve dans quelle chaîne de montagnes et dans quel pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Les Andes, en Argentine",
     incorrect_answers: ["Les Andes, au Chili", "Les Rocheuses, aux États-Unis", "La Sierra Nevada, en Colombie"],
@@ -3440,7 +3441,7 @@ questions_data = [
   {
     content: "Quel phénomène naturel unique, un mascaret (vague de marée), remonte le fleuve Amazone depuis l'océan Atlantique ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Pororoca",
     incorrect_answers: ["L'El Niño", "Le mascaret de la Severn", "La vague scélérate"],
@@ -3449,7 +3450,7 @@ questions_data = [
   {
     content: "Le fleuve Paraná et le fleuve Uruguay se rejoignent pour former quel immense estuaire ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Río de la Plata",
     incorrect_answers: ["Le delta de l'Amazone", "L'estuaire du Saint-Laurent", "La baie de Chesapeake"],
@@ -3458,7 +3459,7 @@ questions_data = [
   {
     content: "Le cratère de Chicxulub, trace de l'impact d'astéroïde qui aurait causé l'extinction des dinosaures, est centré sur quelle péninsule ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "La péninsule du Yucatán (au Mexique)",
     incorrect_answers: ["La péninsule de Basse-Californie", "La Floride", "La péninsule du Labrador"],
@@ -3467,7 +3468,7 @@ questions_data = [
   {
     content: "La Fosse des Mariannes, le point le plus profond des océans, se trouve à l'est de quelle chaîne d'îles américaines ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Les Îles Mariannes (territoire américain)",
     incorrect_answers: ["Les Philippines", "Les Îles Aléoutiennes", "Les Hawaï"],
@@ -3476,7 +3477,7 @@ questions_data = [
   {
     content: "Quelle est la particularité hydrographique du canal Casiquiare au Venezuela ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Il relie deux grands bassins fluviaux (Orénoque et Amazone)",
     incorrect_answers: ["Il coule dans les deux sens", "Il est entièrement souterrain", "Il se termine dans un désert de sel"],
@@ -3485,7 +3486,7 @@ questions_data = [
   {
     content: "Le Grand Lac Salé (Great Salt Lake) en Utah est le vestige de quel immense lac préhistorique ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Lac Bonneville",
     incorrect_answers: ["Le Lac Agassiz", "Le Lac Missoula", "Le Lac Lahontan"],
@@ -3494,7 +3495,7 @@ questions_data = [
   {
     content: "Le détroit de Magellan est une voie navigable située à l'extrémité sud de quel pays ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Chili",
     incorrect_answers: ["L'Argentine", "L'Uruguay", "Le Brésil"],
@@ -3503,7 +3504,7 @@ questions_data = [
   {
     content: "La 'ceinture de feu' est une zone de forte activité sismique et volcanique. Quel est son point culminant volcanique en Amérique du Nord",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Pic d'Orizaba (Mexique)",
     incorrect_answers: ["Le Mont Rainier (États-Unis)", "Le Mont St. Helens (États-Unis)", "Le Popocatépetl (Mexique)"],
@@ -3512,7 +3513,7 @@ questions_data = [
   {
     content: "Le Pantanal, la plus grande zone humide tropicale du monde, est principalement situé dans quel pays ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Brésil",
     incorrect_answers: ["La Colombie", "Le Pérou", "L'Argentine"],
@@ -3521,19 +3522,19 @@ questions_data = [
   {
     content: "Quel est le seul pays d'Amérique centrale qui n'a pas de façade sur l'océan Atlantique (mer des Caraïbes) ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Amérique",
     correct_answer: "Le Salvador",
     incorrect_answers: ["Le Belize", "Le Honduras", "Le Nicaragua"],
     contexte: "Le Salvador est le plus petit pays d'Amérique centrale et ne possède qu'une côte sur l'océan Pacifique."
   },
 
-  # OCEANIE - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
+  # Océanie - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
 
   {
     content: "Quel est le plus grand système de récifs coralliens du monde, visible depuis l'espace, situé au large de la côte australienne ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "La Grande Barrière de Corail",
     incorrect_answers: ["Le Récif de Nouvelle-Calédonie", "Le Récif de Ningaloo", "Le Triangle de Corail"],
@@ -3542,7 +3543,7 @@ questions_data = [
   {
     content: "Quel océan entoure la majorité des îles d'Océanie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "L'Océan Pacifique",
     incorrect_answers: ["L'Océan Atlantique", "L'Océan Indien", "L'Océan Austral"],
@@ -3551,7 +3552,7 @@ questions_data = [
   {
     content: "Quel est le plus haut sommet d'Océanie, situé sur l'île de Nouvelle-Guinée ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Le Puncak Jaya (Pyramide Carstensz)",
     incorrect_answers: ["Le Mont Cook", "Le Mont Kosciuszko", "Le Mauna Kea"],
@@ -3560,7 +3561,7 @@ questions_data = [
   {
     content: "Uluru, également connu sous le nom d'Ayers Rock, est un monolithe de grès géant situé dans quel pays ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Fidji"],
@@ -3569,7 +3570,7 @@ questions_data = [
   {
     content: "Quelle chaîne de montagnes est la plus haute de Nouvelle-Zélande ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Les Alpes du Sud",
     incorrect_answers: ["Les Montagnes Rocheuses", "Les Andes", "La Cordillère australienne"],
@@ -3578,7 +3579,7 @@ questions_data = [
   {
     content: "Quel est le plus long fleuve d'Australie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Le Murray",
     incorrect_answers: ["Le Darling", "Le Murrumbidgee", "Le Lachlan"],
@@ -3587,7 +3588,7 @@ questions_data = [
   {
     content: "Quel type de relief, un récif corallien en forme d'anneau, est commun en Polynésie française et dans d'autres parties de l'océan Pacifique ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Un atoll",
     incorrect_answers: ["Un fjord", "Un mesa", "Un inselberg"],
@@ -3596,7 +3597,7 @@ questions_data = [
   {
     content: "Quelle mer sépare l'Australie de la Nouvelle-Zélande ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "La Mer de Tasman",
     incorrect_answers: ["La Mer de Corail", "La Mer d'Arafura", "La Mer de Timor"],
@@ -3605,7 +3606,7 @@ questions_data = [
   {
     content: "Le mont Kosciuszko est le point culminant de quel pays ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Tasmanie"],
@@ -3614,7 +3615,7 @@ questions_data = [
   {
     content: "Quel détroit sépare l'Australie continentale de l'île de Tasmanie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Le détroit de Bass",
     incorrect_answers: ["Le détroit de Cook", "Le détroit de Torres", "Le détroit de Malacca"],
@@ -3623,7 +3624,7 @@ questions_data = [
   {
     content: "Le Milford Sound, un fjord spectaculaire, est une attraction touristique majeure dans quel pays ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "La Nouvelle-Zélande",
     incorrect_answers: ["L'Australie", "La Norvège", "Le Chili"],
@@ -3632,7 +3633,7 @@ questions_data = [
   {
     content: "La 'Nullarbor Plain' est une vaste plaine aride et plate célèbre pour être...",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Le plus grand affleurement de calcaire au monde",
     incorrect_answers: ["Le plus grand désert de sel", "Le plus grand cratère de météorite", "La plus grande forêt d'eucalyptus"],
@@ -3641,7 +3642,7 @@ questions_data = [
   {
     content: "Quel est le plus grand lac d'Océanie, bien qu'il soit souvent à sec ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Le Lac Eyre (Kati Thanda)",
     incorrect_answers: ["Le Lac Taupo", "Le Lac Gairdner", "Le Lac Torrens"],
@@ -3650,7 +3651,7 @@ questions_data = [
   {
     content: "Quel détroit sépare les deux îles principales de la Nouvelle-Zélande ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Le détroit de Cook",
     incorrect_answers: ["Le détroit de Foveaux", "Le détroit de Bass", "Le détroit de Torres"],
@@ -3659,7 +3660,7 @@ questions_data = [
   {
     content: "Quelle mer tropicale est située entre l'Australie, la Nouvelle-Guinée et les Îles Salomon ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "La Mer de Corail",
     incorrect_answers: ["La Mer d'Arafura", "La Mer de Tasman", "La Mer de Banda"],
@@ -3668,7 +3669,7 @@ questions_data = [
   {
     content: "Les Bungle Bungle Range sont des formations de grès en forme de ruches, situées dans quel pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Vanuatu"],
@@ -3677,7 +3678,7 @@ questions_data = [
   {
     content: "Le fleuve Sepik, l'un des plus grands systèmes fluviaux vierges du monde, traverse quel pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "La Papouasie-Nouvelle-Guinée",
     incorrect_answers: ["L'Indonésie", "L'Australie", "Les Îles Salomon"],
@@ -3686,7 +3687,7 @@ questions_data = [
   {
     content: "Le 'Outback' est le nom donné à la vaste région aride et reculée qui couvre l'intérieur de quel pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "Toutes les îles du Pacifique"],
@@ -3695,7 +3696,7 @@ questions_data = [
   {
     content: "La 'Ceinture de feu du Pacifique', une zone de forte activité volcanique et sismique, inclut de nombreux pays d'Océanie. Lequel est particulièrement connu pour ses volcans actifs ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "La Papouasie-Nouvelle-Guinée",
     incorrect_answers: ["L'Australie", "Les Îles Cook", "Samoa"],
@@ -3704,7 +3705,7 @@ questions_data = [
   {
     content: "Le lac Taupo, le plus grand lac de Nouvelle-Zélande, est en fait...",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "La caldeira d'un supervolcan",
     incorrect_answers: ["Un fjord rempli d'eau douce", "Un lac salé", "Un lac artificiel pour l'hydroélectricité"],
@@ -3713,7 +3714,7 @@ questions_data = [
   {
     content: "Quel détroit sépare l'île de Nouvelle-Guinée de la pointe nord de l'Australie ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Le détroit de Torres",
     incorrect_answers: ["Le détroit de Bass", "Le détroit de Cook", "La mer d'Arafura"],
@@ -3722,7 +3723,7 @@ questions_data = [
   {
     content: "Quelle est la particularité géologique de l'île de la Nouvelle-Zélande ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Elle est située à la jonction de deux plaques tectoniques",
     incorrect_answers: ["C'est un continent entièrement submergé", "Elle n'a aucune activité volcanique", "C'est la plus grande île corallienne"],
@@ -3731,7 +3732,7 @@ questions_data = [
   {
     content: "Le 'Grand Désert de Sable' et le 'Grand Désert de Victoria' sont deux des plus grands déserts de quel pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["L'Arabie Saoudite", "La Chine", "Les États-Unis"],
@@ -3740,7 +3741,7 @@ questions_data = [
   {
     content: "La Fosse des Mariannes, le point le plus profond des océans, se trouve dans quelle sous-région d'Océanie ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "La Micronésie",
     incorrect_answers: ["La Polynésie", "La Mélanésie", "L'Australasie"],
@@ -3749,7 +3750,7 @@ questions_data = [
   {
     content: "Qu'est-ce que le 'Triangle de Corail' ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "L'épicentre mondial de la biodiversité marine",
     incorrect_answers: ["Une formation de trois atolls", "Une zone de navigation dangereuse", "Une chaîne de volcans sous-marins"],
@@ -3758,7 +3759,7 @@ questions_data = [
   {
     content: "L'île Fraser, la plus grande île de sable du monde, se trouve au large de la côte de quel pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Nouvelle-Zélande", "L'Indonésie", "Les Philippines"],
@@ -3767,7 +3768,7 @@ questions_data = [
   {
     content: "La plaine de Canterbury est la plus grande étendue de terres agricoles plates de quel pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "La Nouvelle-Zélande",
     incorrect_answers: ["L'Australie", "La Tasmanie", "La Papouasie-Nouvelle-Guinée"],
@@ -3776,7 +3777,7 @@ questions_data = [
   {
     content: "La 'Wave Rock' est une formation rocheuse naturelle qui ressemble à une vague océanique géante. Dans quel pays se trouve-t-elle ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["Les États-Unis", "La Nouvelle-Zélande", "L'Afrique du Sud"],
@@ -3785,7 +3786,7 @@ questions_data = [
   {
     content: "Quel est le plus grand lagon du monde, entourant une île riche en nickel ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Le lagon de Nouvelle-Calédonie",
     incorrect_answers: ["Le lagon de Bora Bora", "L'atoll de Kwajalein", "Le lagon de Marovo"],
@@ -3794,7 +3795,7 @@ questions_data = [
   {
     content: "Le mont Erebus, volcan actif le plus austral, est situé sur l'Antarctique mais est administré par quel pays ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "La Nouvelle-Zélande",
     incorrect_answers: ["L'Australie", "Le Chili", "Le Royaume-Uni"],
@@ -3803,7 +3804,7 @@ questions_data = [
   {
     content: "La 'plaque australienne' est une plaque tectonique majeure qui comprend le continent australien et quel océan ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "L'Océan Indien",
     incorrect_answers: ["L'Océan Pacifique", "L'Océan Atlantique", "L'Océan Austral"],
@@ -3812,7 +3813,7 @@ questions_data = [
   {
     content: "Le détroit de Foveaux sépare l'Île du Sud de la Nouvelle-Zélande de quelle autre île plus petite ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "L'île Stewart (Rakiura)",
     incorrect_answers: ["Les îles Chatham", "L'île d'Urville", "L'île de la Grande Barrière"],
@@ -3821,7 +3822,7 @@ questions_data = [
   {
     content: "Qu'est-ce que le 'Continent Perdu' de Zélandia ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Un microcontinent presque entièrement submergé",
     incorrect_answers: ["Une ancienne île volcanique", "Un mythe aborigène", "Une grande péninsule de l'Antarctique"],
@@ -3830,7 +3831,7 @@ questions_data = [
   {
     content: "Le Mauna Kea à Hawaï, bien que son sommet soit à 4 207 m, est parfois considéré comme la plus haute montagne du monde. Pourquoi ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Sa base se trouve au fond de l'océan",
     incorrect_answers: ["Il continue de grandir rapidement", "C'est un supervolcan", "Il est le plus proche de la lune"],
@@ -3839,7 +3840,7 @@ questions_data = [
   {
     content: "La 'convergence subtropicale' est une zone océanique importante où les eaux froides du sud rencontrent les eaux chaudes du nord. Elle passe près de quel pays ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "La Nouvelle-Zélande",
     incorrect_answers: ["La Papouasie-Nouvelle-Guinée", "L'Australie", "Fidji"],
@@ -3848,7 +3849,7 @@ questions_data = [
   {
     content: "La région de Kimberley en Australie-Occidentale est connue pour quel phénomène de marée extrême ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Les 'Horizontal Falls' (Chutes Horizontales)",
     incorrect_answers: ["Des tsunamis fréquents", "L'absence totale de marées", "Des tourbillons géants"],
@@ -3857,7 +3858,7 @@ questions_data = [
   {
     content: "Le lac Wakatipu en Nouvelle-Zélande est célèbre pour sa forme de 'S' et pour un phénomène de balancement de l'eau. Comment s'appelle ce phénomène ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Une seiche (ou 'pouls' du lac)",
     incorrect_answers: ["Une marée", "Un courant de fond", "Une éruption limnique"],
@@ -3866,7 +3867,7 @@ questions_data = [
   {
     content: "Le 'Great Artesian Basin' est l'une des plus grandes réserves d'eau souterraine au monde. Sous quelle partie de l'Océanie se trouve-t-il ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "L'est de l'Australie",
     incorrect_answers: ["L'Île du Nord de la Nouvelle-Zélande", "La Nouvelle-Guinée", "Le désert de Gibson"],
@@ -3875,7 +3876,7 @@ questions_data = [
   {
     content: "La 'fosse de Tonga', l'une des plus profondes du monde, est située à l'est de quelle nation insulaire ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "Tonga",
     incorrect_answers: ["Fidji", "Samoa", "Nouvelle-Zélande"],
@@ -3884,7 +3885,7 @@ questions_data = [
   {
     content: "Le fleuve Waikato est le plus long de quel pays ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Océanie",
     correct_answer: "La Nouvelle-Zélande",
     incorrect_answers: ["L'Australie", "La Tasmanie", "La Papouasie-Nouvelle-Guinée"],
@@ -3896,7 +3897,7 @@ questions_data = [
   {
     content: "Quelle est la plus haute chaîne de montagnes du monde, abritant le mont Everest ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "L'Himalaya",
     incorrect_answers: ["Les Andes", "Les Alpes", "L'Oural"],
@@ -3905,7 +3906,7 @@ questions_data = [
   {
     content: "Quel est le plus haut sommet du monde, situé dans la chaîne de l'Himalaya ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le Mont Everest",
     incorrect_answers: ["Le K2", "Le Mont Blanc", "Le Kilimandjaro"],
@@ -3914,7 +3915,7 @@ questions_data = [
   {
     content: "Quel est le plus long fleuve d'Asie, s'écoulant entièrement en Chine ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le Yangtsé (Chang Jiang)",
     incorrect_answers: ["Le Fleuve Jaune (Huang He)", "Le Mékong", "Le Gange"],
@@ -3923,7 +3924,7 @@ questions_data = [
   {
     content: "Quel est le plus grand océan du monde, qui borde la côte est de l'Asie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "L'Océan Pacifique",
     incorrect_answers: ["L'Océan Atlantique", "L'Océan Indien", "L'Océan Arctique"],
@@ -3932,7 +3933,7 @@ questions_data = [
   {
     content: "Quel grand désert froid s'étend sur le nord de la Chine et le sud de la Mongolie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le désert de Gobi",
     incorrect_answers: ["Le Sahara", "Le désert d'Atacama", "Le désert d'Arabie"],
@@ -3941,7 +3942,7 @@ questions_data = [
   {
     content: "Quel océan borde la côte sud de l'Asie, notamment l'Inde et l'Indonésie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "L'Océan Indien",
     incorrect_answers: ["L'Océan Pacifique", "L'Océan Atlantique", "L'Océan Austral"],
@@ -3950,7 +3951,7 @@ questions_data = [
   {
     content: "Le mont Fuji est un volcan emblématique et le point culminant de quel pays ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le Japon",
     incorrect_answers: ["La Corée du Sud", "Les Philippines", "La Chine"],
@@ -3959,7 +3960,7 @@ questions_data = [
   {
     content: "Quel fleuve sacré pour les hindous traverse le nord de l'Inde ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le Gange",
     incorrect_answers: ["L'Indus", "Le Brahmapoutre", "Le Yangtsé"],
@@ -3968,7 +3969,7 @@ questions_data = [
   {
     content: "Quelle chaîne de montagnes est traditionnellement considérée comme la frontière entre l'Europe et l'Asie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "L'Oural",
     incorrect_answers: ["Le Caucase", "L'Himalaya", "Les Alpes"],
@@ -3977,7 +3978,7 @@ questions_data = [
   {
     content: "Quelle mer intérieure est située entre l'Europe et l'Asie, au nord de la Turquie ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "La Mer Noire",
     incorrect_answers: ["La Mer Méditerranée", "La Mer Caspienne", "La Mer d'Aral"],
@@ -3986,7 +3987,7 @@ questions_data = [
   {
     content: "Quel golfe sépare l'Iran de la péninsule arabique ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le Golfe Persique",
     incorrect_answers: ["Le Golfe d'Aden", "Le Golfe d'Oman", "La Mer Rouge"],
@@ -3995,7 +3996,7 @@ questions_data = [
   {
     content: "Quel archipel constitue la nation insulaire la plus grande du monde, située en Asie du Sud-Est ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "L'Indonésie",
     incorrect_answers: ["Les Philippines", "Le Japon", "Les Maldives"],
@@ -4004,7 +4005,7 @@ questions_data = [
   {
     content: "Le Fleuve Jaune (Huang He) est le deuxième plus long fleuve de quel pays ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "La Chine",
     incorrect_answers: ["L'Inde", "La Russie", "Le Vietnam"],
@@ -4013,7 +4014,7 @@ questions_data = [
   {
     content: "Quelle est la plus grande mer intérieure du monde, bordée par l'Asie et l'Europe ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "La Mer Caspienne",
     incorrect_answers: ["La Mer Noire", "La Mer d'Aral", "Le Lac Baïkal"],
@@ -4022,7 +4023,7 @@ questions_data = [
   {
     content: "La Sibérie est une immense région qui couvre la majeure partie de la partie asiatique de quel pays ?",
     difficulty: "facile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "La Russie",
     incorrect_answers: ["La Chine", "La Mongolie", "Le Kazakhstan"],
@@ -4031,7 +4032,7 @@ questions_data = [
   {
     content: "Quel fleuve majeur d'Asie du Sud-Est traverse la Chine, le Myanmar, le Laos, la Thaïlande, le Cambodge et le Vietnam ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le Mékong",
     incorrect_answers: ["Le Fleuve Rouge", "L'Irrawaddy", "Le Salouen"],
@@ -4040,7 +4041,7 @@ questions_data = [
   {
     content: "Le lac Baïkal, le plus ancien et le plus profond lac du monde, se trouve dans quelle région ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "La Sibérie (Russie)",
     incorrect_answers: ["La Mongolie", "Le Kazakhstan", "La Chine"],
@@ -4049,7 +4050,7 @@ questions_data = [
   {
     content: "Quel est le point le plus bas de la surface terrestre émergée, situé à la frontière entre Israël et la Jordanie ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Les rives de la Mer Morte",
     incorrect_answers: ["La Vallée de la Mort", "La dépression de Danakil", "La dépression de Tourfan"],
@@ -4058,7 +4059,7 @@ questions_data = [
   {
     content: "Quelle chaîne de montagnes sépare le sous-continent indien du plateau tibétain ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "L'Himalaya",
     incorrect_answers: ["L'Hindou Kouch", "Le Karakoram", "Le Tian Shan"],
@@ -4067,7 +4068,7 @@ questions_data = [
   {
     content: "Le détroit de Malacca, l'une des voies maritimes les plus importantes au monde, sépare la péninsule malaise de quelle île ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Sumatra (Indonésie)",
     incorrect_answers: ["Bornéo", "Java", "Ceylan"],
@@ -4076,7 +4077,7 @@ questions_data = [
   {
     content: "Le plateau du Deccan est une grande formation géologique qui couvre la majeure partie de quelle partie de l'Inde ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le sud de l'Inde",
     incorrect_answers: ["Le nord de l'Inde", "L'est de l'Inde", "L'ouest de l'Inde"],
@@ -4085,7 +4086,7 @@ questions_data = [
   {
     content: "Le fleuve Indus, qui a donné son nom à l'Inde, prend sa source au Tibet et traverse principalement quel pays ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le Pakistan",
     incorrect_answers: ["L'Inde", "L'Afghanistan", "Le Népal"],
@@ -4094,7 +4095,7 @@ questions_data = [
   {
     content: "Quel désert, connu pour ses 'mers de sable' et ses conditions extrêmes, couvre une grande partie du sud de la péninsule arabique ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le Rub al-Khali (le 'Quart Vide')",
     incorrect_answers: ["Le désert de Syrie", "Le désert du Néfoud", "Le désert du Sinaï"],
@@ -4103,7 +4104,7 @@ questions_data = [
   {
     content: "Le K2, le deuxième plus haut sommet du monde, est situé dans quelle chaîne de montagnes ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le Karakoram",
     incorrect_answers: ["L'Himalaya", "L'Hindou Kouch", "Le Pamir"],
@@ -4112,7 +4113,7 @@ questions_data = [
   {
     content: "La mer d'Aral, autrefois le quatrième plus grand lac du monde, a presque disparu à cause de quoi ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le détournement des fleuves pour l'irrigation",
     incorrect_answers: ["Le changement climatique", "L'évaporation naturelle", "Un tremblement de terre"],
@@ -4121,7 +4122,7 @@ questions_data = [
   {
     content: "Le Tigre et l'Euphrate sont deux fleuves qui ont défini une région historique. Laquelle ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "La Mésopotamie",
     incorrect_answers: ["L'Anatolie", "Le Levant", "La Perse"],
@@ -4130,7 +4131,7 @@ questions_data = [
   {
     content: "Quel est le plus grand plateau du monde en termes de superficie et d'altitude ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le plateau Tibétain",
     incorrect_answers: ["Le plateau du Deccan", "Le plateau de Sibérie centrale", "Le plateau d'Anatolie"],
@@ -4139,7 +4140,7 @@ questions_data = [
   {
     content: "Le détroit de Béring sépare la Sibérie (Asie) de quelle région (Amérique) ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "L'Alaska",
     incorrect_answers: ["Le Canada", "Le Groenland", "La Californie"],
@@ -4148,7 +4149,7 @@ questions_data = [
   {
     content: "Le lac Tonlé Sap au Cambodge est unique car...",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le sens de son courant s'inverse chaque année",
     incorrect_answers: ["Il est d'eau salée", "Il est le plus profond du monde", "Il gèle en hiver"],
@@ -4157,7 +4158,7 @@ questions_data = [
   {
     content: "La Fosse des Mariannes, le point le plus profond des océans, est située à l'est de quel archipel ?",
     difficulty: "intermédiaire",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Les Philippines",
     incorrect_answers: ["Le Japon", "L'Indonésie", "Taïwan"],
@@ -4166,7 +4167,7 @@ questions_data = [
   {
     content: "Le désert du Taklamakan, connu pour ses conditions extrêmes, se trouve dans quelle région autonome de Chine ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le Xinjiang",
     incorrect_answers: ["Le Tibet", "La Mongolie-Intérieure", "Le Qinghai"],
@@ -4175,7 +4176,7 @@ questions_data = [
   {
     content: "Quel fleuve, le plus long de Sibérie, se jette dans l'océan Arctique et forme un immense delta ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "La Léna",
     incorrect_answers: ["L'Ob", "L'Ienisseï", "L'Amour"],
@@ -4184,7 +4185,7 @@ questions_data = [
   {
     content: "Le 'Nœud du Pamir' est un carrefour orographique où plusieurs grandes chaînes de montagnes se rencontrent. Laquelle n'en fait PAS partie ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "L'Oural",
     incorrect_answers: ["L'Himalaya", "Le Tian Shan", "L'Hindou Kouch"],
@@ -4193,7 +4194,7 @@ questions_data = [
   {
     content: "Le fleuve Brahmapoutre prend sa source au Tibet, traverse l'Inde, puis entre dans quel pays où il rejoint le Gange ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le Bangladesh",
     incorrect_answers: ["Le Myanmar", "Le Népal", "Le Bhoutan"],
@@ -4202,7 +4203,7 @@ questions_data = [
   {
     content: "La mer d'Andaman est une mer marginale de l'océan Indien séparée du golfe de Thaïlande par quelle péninsule ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "La péninsule malaise",
     incorrect_answers: ["La péninsule indochinoise", "La péninsule coréenne", "La péninsule anatolienne"],
@@ -4211,7 +4212,7 @@ questions_data = [
   {
     content: "Quel est le plus grand volcan de boue du monde, situé sur l'île de Java en Indonésie ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Lusi (Sidoarjo)",
     incorrect_answers: ["Le Krakatoa", "Le Merapi", "Le Tambora"],
@@ -4220,7 +4221,7 @@ questions_data = [
   {
     content: "Les Ghâts occidentaux sont une chaîne de montagnes qui longe quelle côte de l'Inde ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "La côte ouest",
     incorrect_answers: ["La côte est", "La frontière nord", "La pointe sud"],
@@ -4229,7 +4230,7 @@ questions_data = [
   {
     content: "Le détroit d'Ormuz, un point de passage stratégique pour le pétrole, relie le golfe Persique à quel golfe ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le Golfe d'Oman",
     incorrect_answers: ["Le Golfe d'Aden", "Le Golfe de Suez", "Le Golfe d'Aqaba"],
@@ -4238,7 +4239,7 @@ questions_data = [
   {
     content: "Le lac Issyk-Koul est un grand lac endoréique légèrement salé situé dans les montagnes de quel pays d'Asie centrale ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Le Kirghizistan",
     incorrect_answers: ["Le Tadjikistan", "Le Kazakhstan", "L'Ouzbékistan"],
@@ -4247,21 +4248,21 @@ questions_data = [
   {
     content: "La 'Ligne Wallace' est une ligne de division faunique qui sépare les écozones asiatique et australasienne. Elle passe entre quelles îles indonésiennes ?",
     difficulty: "difficile",
-    category: "reliefs, fleuves et océans",
+    category: "Hydrographie et reliefs",
     region: "Asie",
     correct_answer: "Bali et Lombok",
     incorrect_answers: ["Java et Sumatra", "Bornéo et Célèbes", "Sumatra et Java"],
     contexte: "Cette ligne correspond à un chenal en eau profonde qui a agi comme une barrière pour les espèces, même lorsque le niveau de la mer était plus bas."
   },
 
-  # RÉGIONS, VILLES ET CAPITALES
+  # Régions et villes du monde
 
-  # OCEANIE - RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Pro (NON VERIFIEES)
+  # Océanie - Régions et villes du monde via GEMINI 2.5 Pro (NON VERIFIEES)
 
   {
     content: "Quelle est la capitale de l'Australie ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Canberra",
     incorrect_answers: ["Sydney", "Melbourne", "Brisbane"],
@@ -4270,7 +4271,7 @@ questions_data = [
   {
     content: "Quelle est la plus grande ville d'Australie, célèbre pour son opéra et son pont ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Sydney",
     incorrect_answers: ["Melbourne", "Canberra", "Perth"],
@@ -4279,7 +4280,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Nouvelle-Zélande ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Wellington",
     incorrect_answers: ["Auckland", "Christchurch", "Queenstown"],
@@ -4288,7 +4289,7 @@ questions_data = [
   {
     content: "Quelle est la plus grande ville de Nouvelle-Zélande ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Auckland",
     incorrect_answers: ["Wellington", "Christchurch", "Hamilton"],
@@ -4297,7 +4298,7 @@ questions_data = [
   {
     content: "Quelle est la capitale des Fidji ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Suva",
     incorrect_answers: ["Nadi", "Lautoka", "Apia"],
@@ -4306,7 +4307,7 @@ questions_data = [
   {
     content: "L'Océanie est traditionnellement divisée en trois grandes régions. Laquelle n'en fait PAS partie ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "L'Indonésie",
     incorrect_answers: ["La Polynésie", "La Mélanésie", "La Micronésie"],
@@ -4315,7 +4316,7 @@ questions_data = [
   {
     content: "Dans quel pays se trouve la ville de Melbourne, connue pour ses tramways et sa scène artistique ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée", "L'Afrique du Sud"],
@@ -4324,7 +4325,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Papouasie-Nouvelle-Guinée ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Port Moresby",
     incorrect_answers: ["Lae", "Honiara", "Jayapura"],
@@ -4333,7 +4334,7 @@ questions_data = [
   {
     content: "La Polynésie française est un territoire d'outre-mer de quel pays ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "La France",
     incorrect_answers: ["Le Royaume-Uni", "Les États-Unis", "L'Espagne"],
@@ -4342,7 +4343,7 @@ questions_data = [
   {
     content: "Perth est une grande ville isolée située sur la côte ouest de quel pays ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Nouvelle-Zélande", "L'Afrique du Sud", "L'Indonésie"],
@@ -4351,7 +4352,7 @@ questions_data = [
   {
     content: "Quelle est la plus grande ville de l'Île du Sud de la Nouvelle-Zélande ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Christchurch",
     incorrect_answers: ["Dunedin", "Queenstown", "Wellington"],
@@ -4360,7 +4361,7 @@ questions_data = [
   {
     content: "Hawaï, un archipel célèbre, est un État de quel pays ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Les États-Unis",
     incorrect_answers: ["Le Japon", "Le Royaume-Uni", "L'Australie"],
@@ -4369,7 +4370,7 @@ questions_data = [
   {
     content: "La Tasmanie est un État insulaire de quel pays ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Nouvelle-Zélande", "Le Royaume-Uni", "L'Indonésie"],
@@ -4378,7 +4379,7 @@ questions_data = [
   {
     content: "Dans quel pays se trouve Adélaïde, une ville connue pour ses festivals culturels et ses vignobles ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Nouvelle-Zélande", "L'Afrique du Sud", "Le Chili"],
@@ -4387,7 +4388,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Samoa ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Apia",
     incorrect_answers: ["Suva", "Nuku'alofa", "Pago Pago"],
@@ -4396,7 +4397,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du royaume des Tonga ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Nuku'alofa",
     incorrect_answers: ["Apia", "Suva", "Port-Vila"],
@@ -4405,7 +4406,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Vanuatu ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Port-Vila",
     incorrect_answers: ["Luganville", "Honiara", "Nouméa"],
@@ -4414,7 +4415,7 @@ questions_data = [
   {
     content: "Quelle est la capitale des Îles Salomon ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Honiara",
     incorrect_answers: ["Gizo", "Auki", "Port Moresby"],
@@ -4423,7 +4424,7 @@ questions_data = [
   {
     content: "Nouméa est la capitale de quel territoire français ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "La Nouvelle-Calédonie",
     incorrect_answers: ["La Polynésie française", "Wallis-et-Futuna", "L'Île de la Réunion"],
@@ -4432,7 +4433,7 @@ questions_data = [
   {
     content: "Papeete est la capitale de quel territoire français ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "La Polynésie française",
     incorrect_answers: ["La Nouvelle-Calédonie", "Wallis-et-Futuna", "Guam"],
@@ -4441,7 +4442,7 @@ questions_data = [
   {
     content: "Quel État australien est une grande péninsule au nord-est du pays, abritant la Grande Barrière de Corail ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Le Queensland",
     incorrect_answers: ["Le Territoire du Nord", "L'Australie-Occidentale", "La Nouvelle-Galles du Sud"],
@@ -4450,7 +4451,7 @@ questions_data = [
   {
     content: "L'île de Guam, dans l'ouest du Pacifique, est un territoire de quel pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Les États-Unis",
     incorrect_answers: ["Le Japon", "L'Australie", "Les Philippines"],
@@ -4459,7 +4460,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la République de Kiribati ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Tarawa-Sud",
     incorrect_answers: ["Bairiki", "Ambo", "Majuro"],
@@ -4468,7 +4469,7 @@ questions_data = [
   {
     content: "Dans quelle ville australienne se trouve la 'Gold Coast', une célèbre destination touristique pour ses plages et ses parcs à thème ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Le Queensland",
     incorrect_answers: ["La Nouvelle-Galles du Sud", "Victoria", "L'Australie-Occidentale"],
@@ -4477,7 +4478,7 @@ questions_data = [
   {
     content: "Pago Pago est la capitale de quel territoire américain en Polynésie ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Les Samoa américaines",
     incorrect_answers: ["Le Samoa", "Guam", "Les Îles Vierges américaines"],
@@ -4486,7 +4487,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la République de Nauru, le plus petit État insulaire du monde ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Nauru n'a pas de capitale officielle",
     incorrect_answers: ["Yaren", "Aiwo", "Denigomodu"],
@@ -4495,7 +4496,7 @@ questions_data = [
   {
     content: "Queenstown, en Nouvelle-Zélande, est mondialement connue comme la capitale de quoi ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Des sports extrêmes et de l'aventure",
     incorrect_answers: ["De la finance", "De l'agriculture", "De la politique"],
@@ -4504,7 +4505,7 @@ questions_data = [
   {
     content: "Quel est le nom de la région sauvage et aride qui couvre l'intérieur de l'Australie ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "L'Outback",
     incorrect_answers: ["Le Bush", "La Pampa", "La Savane"],
@@ -4513,7 +4514,7 @@ questions_data = [
   {
     content: "Quelle est la capitale des Îles Marshall ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Majuro",
     incorrect_answers: ["Ebeye", "Kwajalein", "Palikir"],
@@ -4522,7 +4523,7 @@ questions_data = [
   {
     content: "Palikir est la capitale de quel pays insulaire du Pacifique ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Les États fédérés de Micronésie",
     incorrect_answers: ["Les Îles Marshall", "Palaos", "Nauru"],
@@ -4531,7 +4532,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de Tuvalu ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Funafuti",
     incorrect_answers: ["Vaiaku", "Fongafale", "Nukulaelae"],
@@ -4540,7 +4541,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la République de Palaos ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Ngerulmud",
     incorrect_answers: ["Koror", "Melekeok", "Airai"],
@@ -4549,7 +4550,7 @@ questions_data = [
   {
     content: "Mata-Utu est la capitale de quel territoire français ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Wallis-et-Futuna",
     incorrect_answers: ["La Nouvelle-Calédonie", "La Polynésie française", "Saint-Pierre-et-Miquelon"],
@@ -4558,7 +4559,7 @@ questions_data = [
   {
     content: "Le Territoire du Nord est une vaste région peu peuplée de quel pays ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Nouvelle-Zélande", "Le Canada", "La Papouasie-Nouvelle-Guinée"],
@@ -4567,7 +4568,7 @@ questions_data = [
   {
     content: "L'Île de Pâques (Rapa Nui), célèbre pour ses statues moai, est un territoire spécial de quel pays américain ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Le Chili",
     incorrect_answers: ["Les États-Unis", "Le Pérou", "L'Équateur"],
@@ -4576,7 +4577,7 @@ questions_data = [
   {
     content: "Quel est le nom de la région qui comprend la Nouvelle-Zélande, la Nouvelle-Calédonie et la Nouvelle-Guinée, qui fait partie d'un continent largement submergé ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Zélandia",
     incorrect_answers: ["Gondwana", "Laurasia", "Pangée"],
@@ -4585,7 +4586,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de Niue, un État en libre association avec la Nouvelle-Zélande ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Alofi",
     incorrect_answers: ["Avatele", "Hakupu", "Avarua"],
@@ -4594,7 +4595,7 @@ questions_data = [
   {
     content: "La région de Kimberley, connue pour ses paysages accidentés et ses peintures rupestres, se trouve dans quel État australien ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "L'Australie-Occidentale",
     incorrect_answers: ["Le Queensland", "Le Territoire du Nord", "L'Australie-Méridionale"],
@@ -4603,7 +4604,7 @@ questions_data = [
   {
     content: "Avarua est la capitale de quel État du Pacifique Sud ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Les Îles Cook",
     incorrect_answers: ["Niue", "Tuvalu", "Samoa"],
@@ -4612,7 +4613,7 @@ questions_data = [
   {
     content: "Le 'Triangle polynésien' est une région du Pacifique dont les sommets sont Hawaï, l'Île de Pâques et quel autre pays ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "La Nouvelle-Zélande",
     incorrect_answers: ["Fidji", "L'Australie", "Tahiti"],
@@ -4621,7 +4622,7 @@ questions_data = [
   {
     content: "Dans quel pays se trouve la ville de Dunedin, fondée par des colons écossais et connue pour son architecture victorienne ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "La Nouvelle-Zélande",
     incorrect_answers: ["L'Écosse", "L'Australie", "Le Canada"],
@@ -4630,7 +4631,7 @@ questions_data = [
   {
     content: "L'île de Bougainville, qui a voté massivement pour son indépendance, fait actuellement partie de quel pays ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "La Papouasie-Nouvelle-Guinée",
     incorrect_answers: ["Les Îles Salomon", "L'Australie", "L'Indonésie"],
@@ -4639,7 +4640,7 @@ questions_data = [
   {
     content: "Saipan est la plus grande île et la capitale de quel territoire américain ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Les Îles Mariannes du Nord",
     incorrect_answers: ["Guam", "Les Samoa américaines", "Palaos"],
@@ -4648,19 +4649,19 @@ questions_data = [
   {
     content: "Quel territoire australien est constitué de deux groupes d'îles tropicales dans l'océan Indien, l'un portant le nom de Noël ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Océanie",
     correct_answer: "Les Territoires de l'Île Christmas et des Îles Cocos (Keeling)",
     incorrect_answers: ["Les Îles Ashmore et Cartier", "L'Île Norfolk", "Les Îles Heard et McDonald"],
     contexte: "Ces territoires sont administrés par l'Australie mais sont géographiquement plus proches de l'Asie."
   },
 
-  # Amérique - RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Flash (NON VERIFIEES)
+  # Amérique - Régions et villes du monde via GEMINI 2.5 Pro (NON VERIFIEES)
 
   {
     content: "Quelle est la capitale des États-Unis ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Washington, D.C.",
     incorrect_answers: ["New York", "Los Angeles", "Chicago"],
@@ -4669,7 +4670,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Canada ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Ottawa",
     incorrect_answers: ["Toronto", "Montréal", "Vancouver"],
@@ -4678,7 +4679,7 @@ questions_data = [
   {
     content: "Quelle est la plus grande ville du Brésil, connue pour être un centre financier majeur ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "São Paulo",
     incorrect_answers: ["Rio de Janeiro", "Brasilia", "Salvador"],
@@ -4687,7 +4688,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Mexique ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Mexico (Ciudad de México)",
     incorrect_answers: ["Guadalajara", "Cancún", "Monterrey"],
@@ -4696,7 +4697,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Argentine, célèbre pour le tango ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Buenos Aires",
     incorrect_answers: ["Córdoba", "Rosario", "Mendoza"],
@@ -4705,7 +4706,7 @@ questions_data = [
   {
     content: "La ville de New York se trouve dans quel État américain ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "New York",
     incorrect_answers: ["New Jersey", "Californie", "Washington"],
@@ -4714,7 +4715,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Pérou ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Lima",
     incorrect_answers: ["Cusco", "Arequipa", "Machu Picchu"],
@@ -4723,7 +4724,7 @@ questions_data = [
   {
     content: "Dans quel pays se trouve la ville de Rio de Janeiro, célèbre pour son carnaval et le Christ Rédempteur ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Le Brésil",
     incorrect_answers: ["L'Argentine", "Le Portugal", "La Colombie"],
@@ -4732,7 +4733,7 @@ questions_data = [
   {
     content: "La province du Québec, majoritairement francophone, se trouve dans quel pays ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Le Canada",
     incorrect_answers: ["La France", "Les États-Unis", "La Belgique"],
@@ -4741,7 +4742,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Colombie ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Bogota",
     incorrect_answers: ["Medellín", "Cali", "Carthagène"],
@@ -4750,7 +4751,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de Cuba ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "La Havane",
     incorrect_answers: ["Santiago de Cuba", "Varadero", "Trinidad"],
@@ -4759,7 +4760,7 @@ questions_data = [
   {
     content: "La Californie (California) est un État situé sur quelle côte des États-Unis ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "La côte ouest",
     incorrect_answers: ["La côte est", "La côte du Golfe du Mexique", "La frontière nord"],
@@ -4768,7 +4769,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Chili ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Santiago",
     incorrect_answers: ["Valparaíso", "Concepción", "Antofagasta"],
@@ -4777,7 +4778,7 @@ questions_data = [
   {
     content: "Toronto est la plus grande ville de quel pays ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Le Canada",
     incorrect_answers: ["Les États-Unis", "Le Royaume-Uni", "L'Australie"],
@@ -4786,7 +4787,7 @@ questions_data = [
   {
     content: "La Patagonie est une région naturelle spectaculaire partagée entre le Chili et quel autre pays ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "L'Argentine",
     incorrect_answers: ["Le Brésil", "Le Pérou", "L'Uruguay"],
@@ -4795,7 +4796,7 @@ questions_data = [
   {
     content: "Quelle ville canadienne, la plus grande de la Colombie-Britannique, est un port majeur sur la côte du Pacifique ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Vancouver",
     incorrect_answers: ["Victoria", "Calgary", "Edmonton"],
@@ -4804,7 +4805,7 @@ questions_data = [
   {
     content: "Quelle est la capitale administrative de la Bolivie, la plus haute du monde ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "La Paz",
     incorrect_answers: ["Sucre", "Santa Cruz de la Sierra", "Cochabamba"],
@@ -4813,7 +4814,7 @@ questions_data = [
   {
     content: "Brasilia a été construite dans les années 1950 pour devenir la nouvelle capitale de quel pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Le Brésil",
     incorrect_answers: ["L'Argentine", "Le Mexique", "Le Venezuela"],
@@ -4822,7 +4823,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Jamaïque ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Kingston",
     incorrect_answers: ["Montego Bay", "Ocho Rios", "Negril"],
@@ -4831,7 +4832,7 @@ questions_data = [
   {
     content: "La 'Nouvelle-Angleterre' (New England) est une région historique située dans quelle partie des États-Unis ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Le Nord-Est",
     incorrect_answers: ["Le Sud-Est", "Le Midwest", "La côte Ouest"],
@@ -4840,7 +4841,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Uruguay ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Montevideo",
     incorrect_answers: ["Punta del Este", "Colonia del Sacramento", "Salto"],
@@ -4849,7 +4850,7 @@ questions_data = [
   {
     content: "Quelle ville américaine est surnommée la 'Cité des Vents' (Windy City) ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Chicago",
     incorrect_answers: ["New York", "San Francisco", "Boston"],
@@ -4858,7 +4859,7 @@ questions_data = [
   {
     content: "Quito, dont le centre historique est classé au patrimoine mondial de l'UNESCO, est la capitale de quel pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "L'Équateur",
     incorrect_answers: ["La Colombie", "Le Pérou", "La Bolivie"],
@@ -4867,7 +4868,7 @@ questions_data = [
   {
     content: "Quelle ville était la capitale de l'Empire Inca, située dans les Andes péruviennes ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Cusco",
     incorrect_answers: ["Lima", "Machu Picchu", "Arequipa"],
@@ -4876,7 +4877,7 @@ questions_data = [
   {
     content: "La péninsule du Yucatán, célèbre pour ses ruines mayas et ses cénotes, appartient principalement à quel pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Le Mexique",
     incorrect_answers: ["Le Guatemala", "Le Belize", "Le Honduras"],
@@ -4885,7 +4886,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Venezuela ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Caracas",
     incorrect_answers: ["Maracaibo", "Valencia", "Mérida"],
@@ -4894,7 +4895,7 @@ questions_data = [
   {
     content: "San Juan est la capitale de quel territoire américain dans les Caraïbes ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Porto Rico",
     incorrect_answers: ["Cuba", "La République Dominicaine", "Les Îles Vierges américaines"],
@@ -4903,7 +4904,7 @@ questions_data = [
   {
     content: "La Terre de Feu (Tierra del Fuego) est un archipel à l'extrême sud du continent, partagé entre le Chili et quel autre pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "L'Argentine",
     incorrect_answers: ["L'Uruguay", "Le Brésil", "Le Paraguay"],
@@ -4912,7 +4913,7 @@ questions_data = [
   {
     content: "Quelle ville de Louisiane, aux États-Unis, est célèbre pour son quartier français et son festival de Mardi Gras ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "La Nouvelle-Orléans (New Orleans)",
     incorrect_answers: ["Bâton-Rouge", "Shreveport", "Lafayette"],
@@ -4921,7 +4922,7 @@ questions_data = [
   {
     content: "Asunción est la capitale de quel pays enclavé d'Amérique du Sud ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Le Paraguay",
     incorrect_answers: ["La Bolivie", "L'Uruguay", "L'Équateur"],
@@ -4930,7 +4931,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Suriname ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Paramaribo",
     incorrect_answers: ["Georgetown", "Cayenne", "Belmopan"],
@@ -4939,7 +4940,7 @@ questions_data = [
   {
     content: "Quel est le nom du district fédéral qui abrite la capitale du Brésil, Brasilia ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Le Distrito Federal",
     incorrect_answers: ["L'État de Brasilia", "Le Territoire de la Capitale", "La Région Centrale"],
@@ -4948,7 +4949,7 @@ questions_data = [
   {
     content: "Belmopan, l'une des plus petites capitales du monde, se trouve dans quel pays d'Amérique centrale ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Le Belize",
     incorrect_answers: ["Le Honduras", "Le Nicaragua", "Le Costa Rica"],
@@ -4957,7 +4958,7 @@ questions_data = [
   {
     content: "Quelle ville n'est PAS une capitale d'État aux États-Unis ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Philadelphie",
     incorrect_answers: ["Sacramento (Californie)", "Albany (New York)", "Tallahassee (Floride)"],
@@ -4966,7 +4967,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Guyane, un département d'outre-mer français ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Cayenne",
     incorrect_answers: ["Kourou", "Saint-Laurent-du-Maroni", "Paramaribo"],
@@ -4975,7 +4976,7 @@ questions_data = [
   {
     content: "Tegucigalpa est la capitale de quel pays d'Amérique centrale ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Le Honduras",
     incorrect_answers: ["Le Salvador", "Le Guatemala", "Le Nicaragua"],
@@ -4984,7 +4985,7 @@ questions_data = [
   {
     content: "Quelle est la capitale la plus septentrionale des Amériques ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Nuuk (Groenland)",
     incorrect_answers: ["Reykjavik (Islande)", "Ottawa (Canada)", "Helsinki (Finlande)"],
@@ -4993,7 +4994,7 @@ questions_data = [
   {
     content: "Le Groenland est un territoire autonome qui fait partie de quel royaume européen ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Le Danemark",
     incorrect_answers: ["Le Royaume-Uni", "La Norvège", "Les Pays-Bas"],
@@ -5002,7 +5003,7 @@ questions_data = [
   {
     content: "Quelle ville était la capitale du Brésil avant la construction de Brasilia ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Rio de Janeiro",
     incorrect_answers: ["Salvador", "São Paulo", "Recife"],
@@ -5011,19 +5012,19 @@ questions_data = [
   {
     content: "L'Amazonie, la plus grande forêt tropicale du monde, s'étend sur neuf pays, mais la majeure partie se trouve dans quel pays ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Amérique",
     correct_answer: "Le Brésil",
     incorrect_answers: ["Le Pérou", "La Colombie", "Le Venezuela"],
     contexte: "Environ 60% de la forêt amazonienne est située à l'intérieur des frontières du Brésil."
   },
 
-  # Afrique - RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Flash (NON VERIFIEES)
+  # Afrique - Régions et villes du monde via GEMINI 2.5 Flash (NON VERIFIEES)
 
   {
     content: "Quelle est la capitale de l'Égypte, la plus grande ville du monde arabe ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Le Caire",
     incorrect_answers: ["Alexandrie", "Louxor", "Gizeh"],
@@ -5032,7 +5033,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Kenya, connue pour son parc national unique en bordure de la ville ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Nairobi",
     incorrect_answers: ["Mombasa", "Kisumu", "Nakuru"],
@@ -5041,7 +5042,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Afrique du Sud ? (Indice : il y en a trois)",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Pretoria (administrative), Le Cap (législative), Bloemfontein (judiciaire)",
     incorrect_answers: ["Johannesburg", "Durban", "Port Elizabeth"],
@@ -5050,7 +5051,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Maroc ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Rabat",
     incorrect_answers: ["Casablanca", "Marrakech", "Fès"],
@@ -5059,7 +5060,7 @@ questions_data = [
   {
     content: "Lagos était l'ancienne capitale de quel pays très peuplé ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Le Nigeria",
     incorrect_answers: ["Le Ghana", "Le Cameroun", "Le Bénin"],
@@ -5068,7 +5069,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Éthiopie et le siège de l'Union Africaine ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Addis-Abeba",
     incorrect_answers: ["Gondar", "Axoum", "Lalibela"],
@@ -5077,7 +5078,7 @@ questions_data = [
   {
     content: "Dans quel pays se trouve la ville de Marrakech, célèbre pour sa place Jemaa el-Fna ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Le Maroc",
     incorrect_answers: ["La Tunisie", "L'Algérie", "L'Égypte"],
@@ -5086,7 +5087,7 @@ questions_data = [
   {
     content: "Le Maghreb est une région qui comprend principalement le Maroc, l'Algérie et quel autre pays ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "La Tunisie",
     incorrect_answers: ["La Libye", "L'Égypte", "Le Soudan"],
@@ -5095,7 +5096,7 @@ questions_data = [
   {
     content: "Dakar est la capitale et la plus grande ville de quel pays d'Afrique de l'Ouest ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Le Sénégal",
     incorrect_answers: ["Le Mali", "La Guinée", "La Gambie"],
@@ -5104,7 +5105,7 @@ questions_data = [
   {
     content: "Le Sahel est une vaste région semi-aride qui borde le sud de quel grand désert ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Le Sahara",
     incorrect_answers: ["Le Kalahari", "Le Namib", "Le Karoo"],
@@ -5113,7 +5114,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Ghana ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Accra",
     incorrect_answers: ["Kumasi", "Cape Coast", "Lomé"],
@@ -5122,7 +5123,7 @@ questions_data = [
   {
     content: "Dans quel pays se trouve la ville du Cap (Cape Town), célèbre pour sa montagne de la Table ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "L'Afrique du Sud",
     incorrect_answers: ["La Namibie", "Le Botswana", "Le Zimbabwe"],
@@ -5131,7 +5132,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Algérie ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Alger",
     incorrect_answers: ["Oran", "Constantine", "Tunis"],
@@ -5140,7 +5141,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la République Démocratique du Congo (RDC) ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Kinshasa",
     incorrect_answers: ["Lubumbashi", "Goma", "Brazzaville"],
@@ -5149,7 +5150,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Tunisie ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Tunis",
     incorrect_answers: ["Sousse", "Sfax", "Carthage"],
@@ -5158,7 +5159,7 @@ questions_data = [
   {
     content: "Abuja a remplacé quelle ville comme capitale du Nigeria en 1991 ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Lagos",
     incorrect_answers: ["Kano", "Ibadan", "Port Harcourt"],
@@ -5167,7 +5168,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Rwanda ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Kigali",
     incorrect_answers: ["Butare", "Gisenyi", "Bujumbura"],
@@ -5176,7 +5177,7 @@ questions_data = [
   {
     content: "Khartoum est la capitale de quel pays, située au confluent du Nil Blanc et du Nil Bleu ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Le Soudan",
     incorrect_answers: ["Le Soudan du Sud", "L'Égypte", "L'Éthiopie"],
@@ -5185,7 +5186,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Ouganda ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Kampala",
     incorrect_answers: ["Entebbe", "Jinja", "Gulu"],
@@ -5194,7 +5195,7 @@ questions_data = [
   {
     content: "Quelle région de la Somalie s'est autoproclamée indépendante mais n'est pas reconnue internationalement ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Le Somaliland",
     incorrect_answers: ["Le Puntland", "Le Jubaland", "Le Galmudug"],
@@ -5203,7 +5204,7 @@ questions_data = [
   {
     content: "Dans quel pays se trouve la ville de Tombouctou, un ancien centre commercial et intellectuel saharien ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Le Mali",
     incorrect_answers: ["Le Niger", "L'Algérie", "Le Maroc"],
@@ -5212,7 +5213,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Angola ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Luanda",
     incorrect_answers: ["Huambo", "Benguela", "Lobito"],
@@ -5221,7 +5222,7 @@ questions_data = [
   {
     content: "La 'Corne de l'Afrique' est une péninsule qui comprend la Somalie, l'Éthiopie, l'Érythrée et quel autre pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Djibouti",
     incorrect_answers: ["Le Soudan", "Le Kenya", "Le Yémen"],
@@ -5230,7 +5231,7 @@ questions_data = [
   {
     content: "Quelle ville n'est PAS une capitale en Afrique du Sud ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Johannesburg",
     incorrect_answers: ["Pretoria", "Le Cap", "Bloemfontein"],
@@ -5239,7 +5240,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Zimbabwe ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Harare",
     incorrect_answers: ["Bulawayo", "Mutare", "Gweru"],
@@ -5248,7 +5249,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Tanzanie ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Dodoma",
     incorrect_answers: ["Dar es Salaam", "Arusha", "Zanzibar"],
@@ -5257,7 +5258,7 @@ questions_data = [
   {
     content: "Zanzibar est un archipel semi-autonome qui fait partie de quel pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "La Tanzanie",
     incorrect_answers: ["Le Kenya", "Le Mozambique", "Les Comores"],
@@ -5266,7 +5267,7 @@ questions_data = [
   {
     content: "Ouagadougou est la capitale de quel pays d'Afrique de l'Ouest ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Le Burkina Faso",
     incorrect_answers: ["Le Mali", "Le Niger", "Le Togo"],
@@ -5275,7 +5276,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Cameroun ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Yaoundé",
     incorrect_answers: ["Douala", "Garoua", "Bafoussam"],
@@ -5284,7 +5285,7 @@ questions_data = [
   {
     content: "Gaborone est la capitale de quel pays d'Afrique australe ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Le Botswana",
     incorrect_answers: ["La Namibie", "Le Lesotho", "Eswatini"],
@@ -5293,7 +5294,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Namibie ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Windhoek",
     incorrect_answers: ["Swakopmund", "Walvis Bay", "Lüderitz"],
@@ -5302,7 +5303,7 @@ questions_data = [
   {
     content: "Yamoussoukro, connue pour sa basilique géante, est la capitale politique de quel pays ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "La Côte d'Ivoire",
     incorrect_answers: ["Le Ghana", "Le Togo", "Le Bénin"],
@@ -5311,7 +5312,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Mozambique ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Maputo",
     incorrect_answers: ["Beira", "Nampula", "Pemba"],
@@ -5320,7 +5321,7 @@ questions_data = [
   {
     content: "Brazzaville est la capitale de quel pays ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "La République du Congo",
     incorrect_answers: ["La République Démocratique du Congo", "Le Gabon", "Le Cameroun"],
@@ -5329,7 +5330,7 @@ questions_data = [
   {
     content: "Maseru est la capitale de quel royaume enclavé dans l'Afrique du Sud ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Le Lesotho",
     incorrect_answers: ["Eswatini (Swaziland)", "Le Botswana", "Le Malawi"],
@@ -5338,7 +5339,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Zambie ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Lusaka",
     incorrect_answers: ["Ndola", "Livingstone", "Kitwe"],
@@ -5347,7 +5348,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Guinée Équatoriale, située sur une île ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Malabo",
     incorrect_answers: ["Bata", "Oyala", "Luba"],
@@ -5356,7 +5357,7 @@ questions_data = [
   {
     content: "Praia est la capitale de quel archipel au large de la côte de l'Afrique de l'Ouest ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Le Cap-Vert",
     incorrect_answers: ["São Tomé-et-Principe", "Les Comores", "Les Seychelles"],
@@ -5365,7 +5366,7 @@ questions_data = [
   {
     content: "Quelle ville est à la fois une capitale et la seule enclave d'un pays à l'intérieur d'un autre en Afrique ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Banjul (Gambie)",
     incorrect_answers: ["Maseru (Lesotho)", "Mbabane (Eswatini)", "Dakar (Sénégal)"],
@@ -5374,19 +5375,19 @@ questions_data = [
   {
     content: "Djibouti (ville) est la capitale de Djibouti. Quelle est sa principale importance géostratégique ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Afrique",
     correct_answer: "Elle abrite de nombreuses bases militaires étrangères",
     incorrect_answers: ["C'est un centre financier majeur", "C'est un site du patrimoine mondial", "C'est le plus grand port d'Afrique"],
     contexte: "En raison de sa position stratégique près du détroit de Bab-el-Mandeb, Djibouti accueille des bases militaires des États-Unis, de la Chine, de la France, etc."
   },
 
-  # EUROPE - RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Flash (DEJA VERIFIEES)
+  # EUROPE - Régions et villes du monde via GEMINI 2.5 Flash (DEJA VERIFIEES)
 
   {
     content: "Quelle est la capitale de la France, célèbre pour la Tour Eiffel et le musée du Louvre ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Paris",
     incorrect_answers: ["Lyon", "Marseille", "Nice"],
@@ -5395,7 +5396,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Allemagne, connue pour la Porte de Brandebourg et les vestiges de son mur ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Berlin",
     incorrect_answers: ["Munich", "Hambourg", "Francfort"],
@@ -5404,7 +5405,7 @@ questions_data = [
   {
     content: "Dans quel pays se trouve la ville de Rome, célèbre pour le Colisée et le Vatican ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "L'Italie",
     incorrect_answers: ["La Grèce", "L'Espagne", "Le Portugal"],
@@ -5413,7 +5414,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Espagne ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Madrid",
     incorrect_answers: ["Barcelone", "Séville", "Valence"],
@@ -5422,7 +5423,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Royaume-Uni ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Londres",
     incorrect_answers: ["Manchester", "Birmingham", "Édimbourg"],
@@ -5431,7 +5432,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Russie ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Moscou",
     incorrect_answers: ["Saint-Pétersbourg", "Novossibirsk", "Kazan"],
@@ -5440,7 +5441,7 @@ questions_data = [
   {
     content: "Amsterdam, célèbre pour ses canaux et ses musées, est la capitale de quel pays ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Les Pays-Bas",
     incorrect_answers: ["La Belgique", "Le Danemark", "La Suède"],
@@ -5449,7 +5450,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Irlande ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Dublin",
     incorrect_answers: ["Belfast", "Cork", "Galway"],
@@ -5458,7 +5459,7 @@ questions_data = [
   {
     content: "Athènes, berceau de la démocratie et de la philosophie occidentale, est la capitale de quel pays ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "La Grèce",
     incorrect_answers: ["L'Italie", "La Turquie", "L'Égypte"],
@@ -5467,7 +5468,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Portugal ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Lisbonne",
     incorrect_answers: ["Porto", "Faro", "Sintra"],
@@ -5476,7 +5477,7 @@ questions_data = [
   {
     content: "Dans quel pays se trouve la ville de Venise, célèbre pour ses gondoles et ses canaux ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "L'Italie",
     incorrect_answers: ["La France", "La Croatie", "L'Autriche"],
@@ -5485,7 +5486,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Suisse ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Berne",
     incorrect_answers: ["Genève", "Zurich", "Lausanne"],
@@ -5494,7 +5495,7 @@ questions_data = [
   {
     content: "La Scandinavie est une région du nord de l'Europe qui comprend principalement la Norvège, la Suède et quel autre pays ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Le Danemark",
     incorrect_answers: ["L'Ukraine", "L'Allemagne", "Les Pays-Bas"],
@@ -5503,7 +5504,7 @@ questions_data = [
   {
     content: "Vienne, célèbre pour son opéra et ses palais impériaux, est la capitale de quel pays ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "L'Autriche",
     incorrect_answers: ["La Hongrie", "La République Tchèque", "L'Allemagne"],
@@ -5512,7 +5513,7 @@ questions_data = [
   {
     content: "Bruxelles est la capitale de la Belgique, mais aussi le siège de quelles organisations importantes ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "L'Union Européenne et l'OTAN",
     incorrect_answers: ["L'ONU et l'UNESCO", "La Banque Mondiale et le FMI", "La Croix-Rouge et l'OMS"],
@@ -5521,7 +5522,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Norvège ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Oslo",
     incorrect_answers: ["Bergen", "Trondheim", "Stavanger"],
@@ -5530,7 +5531,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Suède ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Stockholm",
     incorrect_answers: ["Göteborg", "Malmö", "Uppsala"],
@@ -5539,7 +5540,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Hongrie, traversée par le Danube ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Budapest",
     incorrect_answers: ["Prague", "Vienne", "Bucarest"],
@@ -5548,7 +5549,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la République Tchèque, célèbre pour son pont Charles et son horloge astronomique ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Prague",
     incorrect_answers: ["Brno", "Ostrava", "Plzeň"],
@@ -5557,7 +5558,7 @@ questions_data = [
   {
     content: "Varsovie est la capitale de quel pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "La Pologne",
     incorrect_answers: ["La Hongrie", "L'Ukraine", "La Lituanie"],
@@ -5566,7 +5567,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Finlande ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Helsinki",
     incorrect_answers: ["Tampere", "Turku", "Espoo"],
@@ -5575,7 +5576,7 @@ questions_data = [
   {
     content: "Copenhague, célèbre pour sa statue de la Petite Sirène, est la capitale de quel pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Le Danemark",
     incorrect_answers: ["La Suède", "La Norvège", "Les Pays-Bas"],
@@ -5584,7 +5585,7 @@ questions_data = [
   {
     content: "La Bavière, dont la capitale est Munich, est un Land (État) de quel pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "L'Allemagne",
     incorrect_answers: ["L'Autriche", "La Suisse", "La France"],
@@ -5593,7 +5594,7 @@ questions_data = [
   {
     content: "Quelle est la 'capitale' de l'Écosse ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Édimbourg",
     incorrect_answers: ["Glasgow", "Aberdeen", "Dundee"],
@@ -5602,7 +5603,7 @@ questions_data = [
   {
     content: "Quelle ville n'est PAS située en Italie ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Santorin",
     incorrect_answers: ["Florence", "Milan", "Turin"],
@@ -5611,7 +5612,7 @@ questions_data = [
   {
     content: "La Transylvanie, une région célèbre pour la légende de Dracula, se trouve dans quel pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "La Roumanie",
     incorrect_answers: ["La Hongrie", "La Bulgarie", "La Serbie"],
@@ -5620,7 +5621,7 @@ questions_data = [
   {
     content: "La Catalogne, dont la capitale est Barcelone, est une communauté autonome de quel pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "L'Espagne",
     incorrect_answers: ["La France", "Le Portugal", "L'Italie"],
@@ -5629,7 +5630,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Ukraine ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Kiev (Kyiv)",
     incorrect_answers: ["Lviv", "Kharkiv", "Odessa"],
@@ -5638,7 +5639,7 @@ questions_data = [
   {
     content: "Les pays baltes sont un groupe de trois nations : la Lituanie, la Lettonie et quel autre pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "L'Estonie",
     incorrect_answers: ["La Pologne", "La Finlande", "La Biélorussie"],
@@ -5647,7 +5648,7 @@ questions_data = [
   {
     content: "La Flandre est une région du nord de quel pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "La Belgique",
     incorrect_answers: ["La Suisse", "Le Luxembourg", "L'Allemagne"],
@@ -5656,7 +5657,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Bulgarie ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Sofia",
     incorrect_answers: ["Plovdiv", "Varna", "Bucarest"],
@@ -5665,7 +5666,7 @@ questions_data = [
   {
     content: "Reykjavik, la capitale la plus septentrionale du monde, se trouve dans quel pays ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "L'Islande",
     incorrect_answers: ["La Finlande", "La Norvège", "Le Groenland"],
@@ -5674,7 +5675,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Croatie ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Zagreb",
     incorrect_answers: ["Split", "Dubrovnik", "Ljubljana"],
@@ -5683,7 +5684,7 @@ questions_data = [
   {
     content: "La Valette, une forteresse du XVIe siècle, est la capitale de quel État insulaire de la Méditerranée ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Malte",
     incorrect_answers: ["Chypre", "La Sicile", "La Crète"],
@@ -5692,7 +5693,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Slovénie ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Ljubljana",
     incorrect_answers: ["Maribor", "Zagreb", "Trieste"],
@@ -5701,7 +5702,7 @@ questions_data = [
   {
     content: "Vaduz est la capitale de quelle très petite principauté germanophone ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Le Liechtenstein",
     incorrect_answers: ["Monaco", "Saint-Marin", "Andorre"],
@@ -5710,7 +5711,7 @@ questions_data = [
   {
     content: "Quelle ville est la capitale de la Lettonie ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Riga",
     incorrect_answers: ["Vilnius", "Tallinn", "Minsk"],
@@ -5719,7 +5720,7 @@ questions_data = [
   {
     content: "Andorre-la-Vieille est la capitale de quel micro-État situé dans les Pyrénées ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Andorre",
     incorrect_answers: ["Monaco", "Le Liechtenstein", "Saint-Marin"],
@@ -5728,7 +5729,7 @@ questions_data = [
   {
     content: "Tirana est la capitale de quel pays des Balkans ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "L'Albanie",
     incorrect_answers: ["La Macédoine du Nord", "Le Kosovo", "Le Monténégro"],
@@ -5737,7 +5738,7 @@ questions_data = [
   {
     content: "Quel micro-État est une enclave à l'intérieur de l'Italie ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "Saint-Marin",
     incorrect_answers: ["Monaco", "Andorre", "Malte"],
@@ -5746,19 +5747,19 @@ questions_data = [
   {
     content: "Chișinău est la capitale de quel pays d'Europe ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Europe",
     correct_answer: "La Moldavie",
     incorrect_answers: ["La Biélorussie", "La Macédoine du Nord", "L'Albanie"],
     contexte: "Chișinău est connue pour son architecture de l'époque soviétique et ses nombreux parcs."
   },
 
-  # ASIE - RÉGIONS, VILLES ET CAPITALES via GEMINI 2.5 Flash (DEJA VERIFIEES)
+  # ASIE - Régions et villes du monde via GEMINI 2.5 Flash (DEJA VERIFIEES)
 
   {
     content: "Quelle est la capitale de la Chine, célèbre pour la Cité Interdite et la Place Tian'anmen ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Beijing",
     incorrect_answers: ["Shanghai", "Hong Kong", "Canton"],
@@ -5767,7 +5768,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Japon ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Tokyo",
     incorrect_answers: ["Kyoto", "Osaka", "Hiroshima"],
@@ -5776,7 +5777,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Inde ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "New Delhi",
     incorrect_answers: ["Mumbai", "Calcutta", "Bangalore"],
@@ -5785,7 +5786,7 @@ questions_data = [
   {
     content: "Dans quel pays se trouve la ville de Dubaï, célèbre pour ses gratte-ciels comme le Burj Khalifa ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Les Émirats arabes unis",
     incorrect_answers: ["L'Arabie Saoudite", "Le Qatar", "Oman"],
@@ -5794,7 +5795,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Corée du Sud ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Séoul",
     incorrect_answers: ["Busan", "Incheon", "Pyongyang"],
@@ -5803,7 +5804,7 @@ questions_data = [
   {
     content: "Bangkok, célèbre pour ses temples et sa vie nocturne animée, est la capitale de quel pays ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "La Thaïlande",
     incorrect_answers: ["Le Vietnam", "Le Cambodge", "La Malaisie"],
@@ -5812,7 +5813,7 @@ questions_data = [
   {
     content: "Quelle ville est une cité-État et une île au sud de la Malaisie ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Singapour",
     incorrect_answers: ["Hong Kong", "Macao", "Kuala Lumpur"],
@@ -5821,7 +5822,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Indonésie, située sur l'île de Java ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Jakarta",
     incorrect_answers: ["Bali", "Surabaya", "Bandung"],
@@ -5830,7 +5831,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Iran ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Téhéran",
     incorrect_answers: ["Ispahan", "Chiraz", "Tabriz"],
@@ -5839,7 +5840,7 @@ questions_data = [
   {
     content: "Istanbul est la plus grande ville de quel pays, bien qu'elle n'en soit pas la capitale ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "La Turquie",
     incorrect_answers: ["La Grèce", "L'Iran", "L'Égypte"],
@@ -5848,7 +5849,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Vietnam ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Hanoï",
     incorrect_answers: ["Hô Chi Minh-Ville", "Da Nang", "Hué"],
@@ -5857,7 +5858,7 @@ questions_data = [
   {
     content: "Dans quel pays se trouve Mumbai, le centre de l'industrie cinématographique de Bollywood ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "L'Inde",
     incorrect_answers: ["Le Pakistan", "Le Bangladesh", "Le Sri Lanka"],
@@ -5866,7 +5867,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Malaisie, célèbre pour ses tours Petronas ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Kuala Lumpur",
     incorrect_answers: ["Singapour", "Penang", "Johor Bahru"],
@@ -5875,7 +5876,7 @@ questions_data = [
   {
     content: "Quelle région administrative spéciale de la Chine était une colonie britannique jusqu'en 1997 ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Hong Kong",
     incorrect_answers: ["Macao", "Shanghai", "Taïwan"],
@@ -5884,7 +5885,7 @@ questions_data = [
   {
     content: "Quelle est la capitale des Philippines ?",
     difficulty: "facile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Manille",
     incorrect_answers: ["Cebu", "Davao", "Quezon City"],
@@ -5893,7 +5894,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Népal, point de départ de nombreuses expéditions vers l'Everest ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Katmandou",
     incorrect_answers: ["Pokhara", "Lhassa", "Thimphou"],
@@ -5902,7 +5903,7 @@ questions_data = [
   {
     content: "La Sibérie est une vaste région qui couvre la partie asiatique de quel pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "La Russie",
     incorrect_answers: ["La Chine", "La Mongolie", "Le Kazakhstan"],
@@ -5911,7 +5912,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Pakistan ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Islamabad",
     incorrect_answers: ["Karachi", "Lahore", "Rawalpindi"],
@@ -5920,7 +5921,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Afghanistan ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Kaboul",
     incorrect_answers: ["Kandahar", "Hérat", "Mazar-e Sharif"],
@@ -5929,7 +5930,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Irak, située sur les rives du Tigre ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Bagdad",
     incorrect_answers: ["Bassora", "Mossoul", "Erbil"],
@@ -5938,7 +5939,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Syrie ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Damas",
     incorrect_answers: ["Alep", "Homs", "Lattaquié"],
@@ -5947,7 +5948,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Sri Lanka ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Sri Jayawardenepura Kotte",
     incorrect_answers: ["Colombo", "Kandy", "Galle"],
@@ -5956,7 +5957,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Bangladesh ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Dacca",
     incorrect_answers: ["Chittagong", "Khulna", "Sylhet"],
@@ -5965,7 +5966,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Jordanie ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Amman",
     incorrect_answers: ["Pétra", "Aqaba", "Zarqa"],
@@ -5974,7 +5975,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Liban, souvent surnommée le 'Paris du Moyen-Orient' ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Beyrouth",
     incorrect_answers: ["Tripoli", "Sidon", "Byblos"],
@@ -5983,7 +5984,7 @@ questions_data = [
   {
     content: "Taipei est la capitale de quel État insulaire revendiqué par la Chine ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Taïwan (République de Chine)",
     incorrect_answers: ["Hong Kong", "Les Philippines", "La Corée du Sud"],
@@ -5992,7 +5993,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de la Mongolie ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Oulan-Bator",
     incorrect_answers: ["Erdenet", "Darkhan", "Pékin"],
@@ -6001,7 +6002,7 @@ questions_data = [
   {
     content: "Pyongyang est la capitale de quel pays ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "La Corée du Nord",
     incorrect_answers: ["La Corée du Sud", "La Chine", "Le Japon"],
@@ -6010,7 +6011,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Cambodge, située au confluent des fleuves Mékong et Tonlé Sap ?",
     difficulty: "intermédiaire",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Phnom Penh",
     incorrect_answers: ["Siem Reap", "Battambang", "Sihanoukville"],
@@ -6019,7 +6020,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Arabie Saoudite ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Riyad",
     incorrect_answers: ["La Mecque", "Médine", "Djeddah"],
@@ -6028,7 +6029,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Kazakhstan, connue pour son architecture futuriste ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Astana",
     incorrect_answers: ["Almaty", "Chymkent", "Karaganda"],
@@ -6037,7 +6038,7 @@ questions_data = [
   {
     content: "Thimphou est la capitale de quel royaume himalayen ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Le Bhoutan",
     incorrect_answers: ["Le Népal", "Le Tibet", "Le Sikkim"],
@@ -6046,7 +6047,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Laos ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Vientiane",
     incorrect_answers: ["Luang Prabang", "Pakse", "Vang Vieng"],
@@ -6055,7 +6056,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Qatar ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Doha",
     incorrect_answers: ["Dubaï", "Abou Dabi", "Manama"],
@@ -6064,7 +6065,7 @@ questions_data = [
   {
     content: "Manama est la capitale de quel État insulaire du Golfe Persique ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Bahreïn",
     incorrect_answers: ["Le Qatar", "Le Koweït", "Chypre"],
@@ -6073,7 +6074,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Myanmar ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Naypyidaw",
     incorrect_answers: ["Rangoun (Yangon)", "Mandalay", "Bagan"],
@@ -6082,7 +6083,7 @@ questions_data = [
   {
     content: "Quelle est la capitale de l'Ouzbékistan, une ville clé sur l'ancienne Route de la Soie ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Tachkent",
     incorrect_answers: ["Samarcande", "Boukhara", "Khiva"],
@@ -6091,7 +6092,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Turkménistan, connue pour ses bâtiments en marbre blanc ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Achgabat",
     incorrect_answers: ["Mary", "Türkmenabat", "Balkanabat"],
@@ -6100,7 +6101,7 @@ questions_data = [
   {
     content: "Quelle est la capitale du Tadjikistan ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Douchanbé",
     incorrect_answers: ["Khodjent", "Kulob", "Bichkek"],
@@ -6109,21 +6110,21 @@ questions_data = [
   {
     content: "Bandar Seri Begawan est la capitale de quel pays situé sur l'île de Bornéo ?",
     difficulty: "difficile",
-    category: "RÉGIONS, VILLES ET CAPITALES",
+    category: "Régions et villes du monde",
     region: "Asie",
     correct_answer: "Brunei",
     incorrect_answers: ["La Malaisie", "L'Indonésie", "Singapour"],
     contexte: "La ville est célèbre pour ses mosquées opulentes et son village sur pilotis, Kampong Ayer."
   },
 
-  # CONFLITS, POLITIQUE ET GEOPOLITIQUE via Gemini 2.5 Pro
+  # Géopolitique via Gemini 2.5 Pro
 
-  # EUROPE (NON VERIFEES)
+  # EUROPE - Géopolitique (NON VERIFEES)
 
   {
     content: "Quelle organisation politique et économique, regroupant 27 pays, utilise l'euro comme monnaie commune pour la plupart de ses membres ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "L'Union Européenne (UE)",
     incorrect_answers: ["L'OTAN", "L'AELE", "Le Conseil de l'Europe"],
@@ -6132,7 +6133,7 @@ questions_data = [
   {
     content: "Quel mur, symbole de la Guerre Froide, a divisé une capitale européenne de 1961 à 1989 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "Le Mur de Berlin",
     incorrect_answers: ["Le Mur d'Hadrien", "Le Mur d'Antonin", "La Ligne Maginot"],
@@ -6141,7 +6142,7 @@ questions_data = [
   {
     content: "Quel traité, signé en 1992, a officiellement donné son nom à l'Union Européenne et pavé la voie à l'euro ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "Le Traité de Maastricht",
     incorrect_answers: ["Le Traité de Rome", "Le Traité de Lisbonne", "Le Traité de Versailles"],
@@ -6150,7 +6151,7 @@ questions_data = [
   {
     content: "Quelle alliance militaire défensive, incluant de nombreux pays européens et nord-américains, a été créée en 1949 face au bloc soviétique ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "L'OTAN (Organisation du Traité de l'Atlantique Nord)",
     incorrect_answers: ["Le Pacte de Varsovie", "L'OSCE", "L'Eurocorps"],
@@ -6159,7 +6160,7 @@ questions_data = [
   {
     content: "Le 'Brexit' fait référence à la sortie de quel pays de l'Union Européenne en 2020 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "Le Royaume-Uni",
     incorrect_answers: ["L'Irlande", "La Suisse", "La Norvège"],
@@ -6168,7 +6169,7 @@ questions_data = [
   {
     content: "Quel conflit mondial a commencé en 1939 avec l'invasion de la Pologne et s'est terminé en 1945 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Seconde Guerre mondiale",
     incorrect_answers: ["La Première Guerre mondiale", "La Guerre Froide", "La Guerre d'Espagne"],
@@ -6177,7 +6178,7 @@ questions_data = [
   {
     content: "Dans quelle ville belge se trouve le siège de la Commission européenne et du Conseil de l'Union européenne ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "Bruxelles",
     incorrect_answers: ["Strasbourg", "Luxembourg", "Francfort"],
@@ -6186,7 +6187,7 @@ questions_data = [
   {
     content: "Quelle monnaie a été remplacée par l'euro dans de nombreux pays européens en 2002 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "Les monnaies nationales (Franc, Mark, Lire, etc.)",
     incorrect_answers: ["Le Dollar", "La Livre Sterling", "Le Franc suisse"],
@@ -6195,7 +6196,7 @@ questions_data = [
   {
     content: "Quel pays a été divisé en deux (RFA et RDA) après la Seconde Guerre mondiale et réunifié en 1990 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "L'Allemagne",
     incorrect_answers: ["La Pologne", "L'Autriche", "La Corée"],
@@ -6204,7 +6205,7 @@ questions_data = [
   {
     content: "Comment nomme-t-on la période de tensions géopolitiques entre le bloc de l'Est (soviétique) et le bloc de l'Ouest (américain) de 1947 à 1991 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Guerre Froide",
     incorrect_answers: ["La Drôle de Guerre", "La Guerre des Étoiles", "La Détente"],
@@ -6213,7 +6214,7 @@ questions_data = [
   {
     content: "Quel pays a connu une guerre civile de 1936 à 1939, qui a servi de prélude à la Seconde Guerre mondiale ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "L'Espagne",
     incorrect_answers: ["Le Portugal", "L'Italie", "La Grèce"],
@@ -6222,7 +6223,7 @@ questions_data = [
   {
     content: "Le Parlement européen, l'organe législatif de l'UE, tient principalement ses sessions plénières dans quelle ville française ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "Strasbourg",
     incorrect_answers: ["Paris", "Bruxelles", "Lyon"],
@@ -6231,7 +6232,7 @@ questions_data = [
   {
     content: "Quelle péninsule européenne a été le théâtre de guerres violentes dans les années 1990 suite à l'éclatement de la Yougoslavie ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "Les Balkans",
     incorrect_answers: ["La Péninsule Ibérique", "La Péninsule Scandinave", "La Péninsule Italienne"],
@@ -6240,7 +6241,7 @@ questions_data = [
   {
     content: "Quel pays, bien que géographiquement en Europe et entouré par l'UE, n'est pas membre de l'Union Européenne ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Suisse",
     incorrect_answers: ["L'Autriche", "La Finlande", "Le Danemark"],
@@ -6249,7 +6250,7 @@ questions_data = [
   {
     content: "Le traité qui a mis fin à la Première Guerre mondiale et imposé de lourdes sanctions à l'Allemagne est le Traité de... ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "Versailles",
     incorrect_answers: ["Trianon", "Sèvres", "Saint-Germain"],
@@ -6258,7 +6259,7 @@ questions_data = [
   {
     content: "Comment appelle-t-on l'espace de libre circulation des personnes entre 27 pays européens, dont certains non-membres de l'UE ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "L'Espace Schengen",
     incorrect_answers: ["La Zone Euro", "L'Espace Économique Européen", "Le Marché Commun"],
@@ -6267,7 +6268,7 @@ questions_data = [
   {
     content: "Quel conflit politico-religieux a opposé principalement les communautés protestante et catholique en Irlande du Nord de 1968 à 1998 ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "Les Troubles (The Troubles)",
     incorrect_answers: ["La Guerre des Deux Roses", "La Révolte de Pâques", "La Guerre Civile Irlandaise"],
@@ -6276,7 +6277,7 @@ questions_data = [
   {
     content: "Le 'Rideau de Fer' est une expression popularisée par Winston Churchill pour décrire la division de l'Europe durant quelle période ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Guerre Froide",
     incorrect_answers: ["La Seconde Guerre mondiale", "L'entre-deux-guerres", "Les Guerres Napoléoniennes"],
@@ -6285,7 +6286,7 @@ questions_data = [
   {
     content: "Quel pays a été créé suite à la 'Révolution de velours' qui a mis fin pacifiquement au régime communiste en 1989 ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La République Tchèque (et la Slovaquie)",
     incorrect_answers: ["La Pologne", "La Hongrie", "La Roumanie"],
@@ -6294,7 +6295,7 @@ questions_data = [
   {
     content: "Le massacre de Srebrenica, considéré comme un génocide, a eu lieu pendant la guerre de quel pays des Balkans ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Bosnie-Herzégovine",
     incorrect_answers: ["La Croatie", "La Serbie", "Le Kosovo"],
@@ -6303,7 +6304,7 @@ questions_data = [
   {
     content: "Quelle institution financière, basée à Francfort, est responsable de la politique monétaire de la zone euro ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Banque Centrale Européenne (BCE)",
     incorrect_answers: ["La Banque Européenne d'Investissement (BEI)", "Le Fonds Monétaire International (FMI)", "La Banque des Règlements Internationaux (BRI)"],
@@ -6312,7 +6313,7 @@ questions_data = [
   {
     content: "Quel pays a connu une dictature fasciste dirigée par Benito Mussolini de 1922 à 1943 ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "L'Italie",
     incorrect_answers: ["L'Espagne", "Le Portugal", "L'Allemagne"],
@@ -6321,7 +6322,7 @@ questions_data = [
   {
     content: "L'annexion de la Crimée en 2014 par la Russie a déclenché un conflit avec quel autre pays européen ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "L'Ukraine",
     incorrect_answers: ["La Géorgie", "La Pologne", "La Turquie"],
@@ -6330,7 +6331,7 @@ questions_data = [
   {
     content: "Quelle organisation intergouvernementale, incluant la Russie, promeut la sécurité, la coopération et les droits de l'homme en Europe ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "L'Organisation pour la Sécurité et la Coopération en Europe (OSCE)",
     incorrect_answers: ["Le Conseil de l'Europe", "L'OTAN", "L'Union Européenne"],
@@ -6339,7 +6340,7 @@ questions_data = [
   {
     content: "La 'Guerre d'Hiver' (1939-1940) a opposé l'Union Soviétique à quel pays nordique, qui a résisté vaillamment malgré sa petite taille ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Finlande",
     incorrect_answers: ["La Suède", "La Norvège", "Le Danemark"],
@@ -6348,7 +6349,7 @@ questions_data = [
   {
     content: "Quel pays du Caucase a été le théâtre d'une guerre avec la Russie en 2008 au sujet de ses régions séparatistes d'Ossétie du Sud et d'Abkhazie ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Géorgie",
     incorrect_answers: ["L'Arménie", "L'Azerbaïdjan", "La Tchétchénie"],
@@ -6357,7 +6358,7 @@ questions_data = [
   {
     content: "Le conflit pour l'indépendance du Kosovo à la fin des années 1990 l'a opposé à quel pays ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Serbie (alors partie de la Yougoslavie)",
     incorrect_answers: ["L'Albanie", "La Macédoine du Nord", "La Bosnie-Herzégovine"],
@@ -6366,7 +6367,7 @@ questions_data = [
   {
     content: "Quelle doctrine de politique étrangère américaine visait à contenir l'expansion du communisme en Europe après la Seconde Guerre mondiale ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La doctrine Truman",
     incorrect_answers: ["La doctrine Monroe", "Le Plan Marshall", "La doctrine de l'endiguement"],
@@ -6375,7 +6376,7 @@ questions_data = [
   {
     content: "Comment s'appelle le mouvement séparatiste armé qui a lutté pour l'indépendance du Pays basque en Espagne et en France ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "ETA (Euskadi Ta Askatasuna)",
     incorrect_answers: ["IRA", "FLNC", "Hezbollah"],
@@ -6384,7 +6385,7 @@ questions_data = [
   {
     content: "L'Accord de Dayton, signé en 1995, a mis fin à la guerre dans quel pays en le divisant en deux entités principales ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Bosnie-Herzégovine",
     incorrect_answers: ["La Croatie", "La Slovénie", "Le Kosovo"],
@@ -6393,7 +6394,7 @@ questions_data = [
   {
     content: "Quel article du traité de l'OTAN stipule qu'une attaque contre un membre est considérée comme une attaque contre tous ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "L'Article 5",
     incorrect_answers: ["L'Article 10", "L'Article 3", "L'Article 7"],
@@ -6402,7 +6403,7 @@ questions_data = [
   {
     content: "La Cour de justice de l'Union européenne, qui assure le respect du droit de l'UE, siège dans quelle ville ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "Luxembourg",
     incorrect_answers: ["La Haye", "Strasbourg", "Bruxelles"],
@@ -6411,7 +6412,7 @@ questions_data = [
   {
     content: "Quel territoire russe, une exclave située entre la Pologne et la Lituanie, a une importance stratégique majeure en mer Baltique ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "Kaliningrad",
     incorrect_answers: ["La Carélie", "Sakhaline", "La Transnistrie"],
@@ -6420,7 +6421,7 @@ questions_data = [
   {
     content: "Le 'processus de Bologne' est une initiative intergouvernementale visant à harmoniser quoi à travers l'Europe ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "Les systèmes d'enseignement supérieur",
     incorrect_answers: ["Les politiques fiscales", "Les normes ferroviaires", "Les procédures judiciaires"],
@@ -6429,7 +6430,7 @@ questions_data = [
   {
     content: "Quelle région séparatiste de Moldavie, soutenue par la Russie, constitue un 'conflit gelé' depuis 1992 ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Transnistrie",
     incorrect_answers: ["La Gagaouzie", "Le Haut-Karabakh", "L'Ossétie du Sud"],
@@ -6438,7 +6439,7 @@ questions_data = [
   {
     content: "Les Accords d'Helsinki de 1975 ont établi des principes fondamentaux pour les relations Est-Ouest, notamment...",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "L'inviolabilité des frontières et le respect des droits de l'homme",
     incorrect_answers: ["La dissolution des blocs militaires", "La création d'une monnaie commune", "L'interdiction des armes nucléaires"],
@@ -6447,7 +6448,7 @@ questions_data = [
   {
     content: "Quel conflit oppose l'Arménie et l'Azerbaïdjan depuis la fin des années 1980 pour le contrôle d'une enclave montagneuse ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "Le conflit du Haut-Karabakh",
     incorrect_answers: ["Le conflit en Tchétchénie", "Le conflit en Abkhazie", "Le conflit en Transnistrie"],
@@ -6456,7 +6457,7 @@ questions_data = [
   {
     content: "Le 'scandale du Watergate' a eu un impact majeur sur la politique américaine, mais quel événement similaire en Allemagne a conduit à la démission du chancelier Willy Brandt en 1974 ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "L'affaire Guillaume",
     incorrect_answers: ["L'affaire du Spiegel", "L'affaire Flick", "L'affaire Barschel"],
@@ -6465,7 +6466,7 @@ questions_data = [
   {
     content: "Quelle crise a paralysé les institutions de la Communauté Économique Européenne en 1965, initiée par Charles de Gaulle ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La crise de la chaise vide",
     incorrect_answers: ["Le refus de l'entrée du Royaume-Uni", "La crise de l'euro", "La crise des missiles de Cuba"],
@@ -6474,7 +6475,7 @@ questions_data = [
   {
     content: "Le 'Groupe de Visegrád' est une alliance culturelle et politique de quatre pays d'Europe centrale. Lesquels ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Pologne, la Hongrie, la République Tchèque et la Slovaquie",
     incorrect_answers: ["L'Autriche, la Slovénie, la Croatie et la Hongrie", "La Pologne, la Lituanie, la Lettonie et l'Estonie", "La Roumanie, la Bulgarie, la Hongrie et la Serbie"],
@@ -6483,7 +6484,7 @@ questions_data = [
   {
     content: "Le 'Schisme de 1054' a divisé la chrétienté européenne en deux branches principales. Lesquelles ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "L'Église catholique romaine et l'Église orthodoxe orientale",
     incorrect_answers: ["Le Catholicisme et le Protestantisme", "L'Arianisme et le Catholicisme", "Le Sunnisme et le Chiisme"],
@@ -6492,7 +6493,7 @@ questions_data = [
   {
     content: "Quel terme désigne la politique de neutralité armée adoptée par la Suède et la Finlande pendant la Guerre Froide, avant leur adhésion à l'OTAN ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Finlandisation (pour la Finlande)",
     incorrect_answers: ["La Doctrine Paasikivi-Kekkonen", "La Neutralité scandinave", "L'Isolationnisme nordique"],
@@ -6501,7 +6502,7 @@ questions_data = [
   {
     content: "La 'Guerre des Harengs' est un surnom pour un conflit naval qui a opposé le Royaume-Uni à quel autre pays au sujet des droits de pêche ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "L'Islande",
     incorrect_answers: ["La Norvège", "Le Danemark", "La France"],
@@ -6510,7 +6511,7 @@ questions_data = [
   {
     content: "Le concept de 'souveraineté westphalienne', base des relations internationales modernes, est issu de traités ayant mis fin à quel conflit européen ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Guerre de Trente Ans",
     incorrect_answers: ["Les Guerres Napoléoniennes", "La Guerre de Cent Ans", "La Guerre de Succession d'Espagne"],
@@ -6519,18 +6520,18 @@ questions_data = [
   {
     content: "Quelle organisation terroriste d'extrême-gauche a semé la terreur en Allemagne de l'Ouest dans les années 1970-1980 ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Europe",
     correct_answer: "La Fraction Armée Rouge (Bande à Baader)",
     incorrect_answers: ["Les Brigades Rouges (Italie)", "Action Directe (France)", "L'IRA (Irlande du Nord)"],
     contexte: "Ce groupe, issu du mouvement étudiant radical, a mené des attentats, des enlèvements et des assassinats contre ce qu'il considérait comme le système capitaliste et impérialiste."
   },
 
-  # ASIE - CONFLITS GEOPO
+  # ASIE - GEOPOLITIQUE
   {
     content: "Quel conflit a opposé le Nord communiste et le Sud soutenu par les États-Unis, divisant le pays au niveau du 38e parallèle de 1950 à 1953 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La Guerre de Corée",
     incorrect_answers: ["La Guerre du Vietnam", "La Guerre Civile Chinoise", "La Guerre Froide"],
@@ -6539,7 +6540,7 @@ questions_data = [
   {
     content: "Quel long conflit a opposé le Nord-Vietnam communiste, soutenu par la Chine et l'URSS, et le Sud-Vietnam, soutenu par les États-Unis ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La Guerre du Vietnam",
     incorrect_answers: ["La Guerre de Corée", "La Guerre du Cambodge", "La Révolution Culturelle"],
@@ -6548,7 +6549,7 @@ questions_data = [
   {
     content: "Quelle ligne de démarcation sépare l'Inde et le Pakistan et est au cœur d'un conflit territorial majeur dans la région du Cachemire ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La Ligne de Contrôle (Line of Control - LoC)",
     incorrect_answers: ["La Ligne McMahon", "La Ligne Durand", "La Ligne Curzon"],
@@ -6557,7 +6558,7 @@ questions_data = [
   {
     content: "En 1949, quel leader a proclamé la naissance de la République populaire de Chine après la victoire des communistes dans la guerre civile ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Mao Zedong",
     incorrect_answers: ["Chiang Kai-shek", "Deng Xiaoping", "Sun Yat-sen"],
@@ -6566,7 +6567,7 @@ questions_data = [
   {
     content: "Le dalaï-lama est le chef spirituel de quelle région autonome de Chine, source de tensions politiques et de revendications d'indépendance ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Le Tibet",
     incorrect_answers: ["Le Xinjiang", "La Mongolie-Intérieure", "Hong Kong"],
@@ -6575,7 +6576,7 @@ questions_data = [
   {
     content: "Quel pays, anciennement connu sous le nom de Perse, a connu une révolution islamique en 1979 qui a renversé la monarchie ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "L'Iran",
     incorrect_answers: ["L'Irak", "L'Arabie Saoudite", "La Turquie"],
@@ -6584,7 +6585,7 @@ questions_data = [
   {
     content: "Quel pays est une monarchie absolue et l'un des plus grands producteurs de pétrole au monde, abritant les villes saintes de La Mecque et Médine ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "L'Arabie Saoudite",
     incorrect_answers: ["Les Émirats arabes unis", "Le Qatar", "L'Iran"],
@@ -6593,7 +6594,7 @@ questions_data = [
   {
     content: "Quelle association de 10 pays d'Asie du Sud-Est promeut la coopération économique, politique et sécuritaire ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "L'ASEAN (Association des Nations de l'Asie du Sud-Est)",
     incorrect_answers: ["L'APEC", "La SAARC", "L'OCS"],
@@ -6602,7 +6603,7 @@ questions_data = [
   {
     content: "Comment nomme-t-on la division de l'Inde britannique en 1947, qui a créé les États indépendants de l'Inde et du Pakistan ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La Partition",
     incorrect_answers: ["La Décolonisation", "Le Raj", "L'Indépendance"],
@@ -6611,7 +6612,7 @@ questions_data = [
   {
     content: "Quel pays a été envahi par l'Union Soviétique en 1979, conduisant à une guerre de dix ans et à l'émergence des moudjahidines ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "L'Afghanistan",
     incorrect_answers: ["L'Iran", "Le Pakistan", "L'Irak"],
@@ -6620,7 +6621,7 @@ questions_data = [
   {
     content: "Quel pays a été envahi par l'Irak en 1990, déclenchant la première Guerre du Golfe ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Le Koweït",
     incorrect_answers: ["L'Arabie Saoudite", "L'Iran", "La Jordanie"],
@@ -6629,7 +6630,7 @@ questions_data = [
   {
     content: "Hiroshima et Nagasaki sont deux villes japonaises connues pour avoir été les cibles de quel événement en 1945 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Les bombardements atomiques",
     incorrect_answers: ["Des tsunamis dévastateurs", "Des tremblements de terre majeurs", "Des batailles navales"],
@@ -6638,7 +6639,7 @@ questions_data = [
   {
     content: "Le détroit qui sépare la Chine continentale de Taïwan est une zone de fortes tensions géopolitiques. Quel est son nom ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Le détroit de Taïwan",
     incorrect_answers: ["Le détroit de Malacca", "Le détroit de Corée", "Le détroit de Luçon"],
@@ -6647,7 +6648,7 @@ questions_data = [
   {
     content: "Quel pays est le seul État juif au monde et est au centre du conflit israélo-palestinien ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Israël",
     incorrect_answers: ["Le Liban", "La Jordanie", "La Syrie"],
@@ -6656,7 +6657,7 @@ questions_data = [
   {
     content: "Quelle organisation, dirigée par Yasser Arafat pendant de nombreuses années, a lutté pour la création d'un État palestinien ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "L'Organisation de Libération de la Palestine (OLP)",
     incorrect_answers: ["Le Hamas", "Le Hezbollah", "Le Fatah"],
@@ -6665,7 +6666,7 @@ questions_data = [
   {
     content: "Quel régime totalitaire, dirigé par Pol Pot, a été responsable d'un génocide au Cambodge entre 1975 et 1979 ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Les Khmers rouges",
     incorrect_answers: ["Le Viet Minh", "Le Pathet Lao", "La Junte militaire birmane"],
@@ -6674,7 +6675,7 @@ questions_data = [
   {
     content: "Comment nomme-t-on le statut politique de Hong Kong, qui lui garantit une large autonomie vis-à-vis de la Chine jusqu'en 2047 ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Un pays, deux systèmes",
     incorrect_answers: ["Région administrative spéciale", "Province autonome", "Zone économique exclusive"],
@@ -6683,7 +6684,7 @@ questions_data = [
   {
     content: "Quelle campagne lancée par Mao Zedong de 1966 à 1976 visait à purger la société chinoise des éléments capitalistes et traditionnels ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La Révolution culturelle",
     incorrect_answers: ["Le Grand Bond en avant", "La Longue Marche", "Les Cent Fleurs"],
@@ -6692,7 +6693,7 @@ questions_data = [
   {
     content: "Le conflit en mer de Chine méridionale oppose principalement la Chine à plusieurs pays de l'ASEAN au sujet de quoi ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La souveraineté sur des zones maritimes",
     incorrect_answers: ["Des droits de pêche", "Des routes commerciales", "Des ressources pétrolières"],
@@ -6701,7 +6702,7 @@ questions_data = [
   {
     content: "Quel pays, anciennement connu sous le nom de Birmanie, est dirigé par une junte militaire qui a renversé le gouvernement démocratiquement élu d'Aung San Suu Kyi ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Le Myanmar",
     incorrect_answers: ["La Thaïlande", "Le Laos", "Le Bangladesh"],
@@ -6710,7 +6711,7 @@ questions_data = [
   {
     content: "Quel pays a été créé en 1971 après une guerre de libération sanglante qui l'a séparé du Pakistan occidental ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Le Bangladesh",
     incorrect_answers: ["Le Sri Lanka", "Le Népal", "Le Bhoutan"],
@@ -6719,7 +6720,7 @@ questions_data = [
   {
     content: "La 'Révolution des parapluies' en 2014 était un mouvement de protestation pro-démocratie dans quelle ville asiatique ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Hong Kong",
     incorrect_answers: ["Shanghai", "Taipei", "Séoul"],
@@ -6728,7 +6729,7 @@ questions_data = [
   {
     content: "Le conflit entre les Tigres tamouls et le gouvernement a déchiré quel pays insulaire pendant près de 30 ans ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Le Sri Lanka",
     incorrect_answers: ["Les Maldives", "L'Indonésie", "Les Philippines"],
@@ -6737,7 +6738,7 @@ questions_data = [
   {
     content: "Quel traité de 1951 a officiellement mis fin à la Seconde Guerre mondiale dans le Pacifique et défini le statut du Japon d'après-guerre ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Le Traité de San Francisco",
     incorrect_answers: ["Le Traité de Versailles", "Les Accords de Genève", "La Déclaration de Potsdam"],
@@ -6746,7 +6747,7 @@ questions_data = [
   {
     content: "La 'Ligne Durand' est une frontière internationale contestée, tracée en 1893, qui sépare quels deux pays ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "L'Afghanistan et le Pakistan",
     incorrect_answers: ["L'Inde et le Pakistan", "L'Iran et le Pakistan", "La Chine et l'Afghanistan"],
@@ -6755,7 +6756,7 @@ questions_data = [
   {
     content: "L'Organisation de Coopération de Shanghai (OCS) est une alliance politique, économique et sécuritaire eurasienne. Quels sont ses deux membres fondateurs les plus influents ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La Chine et la Russie",
     incorrect_answers: ["L'Inde et le Pakistan", "Le Kazakhstan et l'Ouzbékistan", "La Chine et l'Inde"],
@@ -6764,7 +6765,7 @@ questions_data = [
   {
     content: "Quelle guerre a opposé l'Iran et l'Irak de 1980 à 1988, faisant plus d'un million de victimes ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La Guerre Iran-Irak",
     incorrect_answers: ["La Guerre du Golfe", "La Guerre des Six Jours", "La Guerre civile libanaise"],
@@ -6773,7 +6774,7 @@ questions_data = [
   {
     content: "La politique de 'neutralité permanente' de quel pays d'Asie centrale est reconnue par les Nations Unies ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Le Turkménistan",
     incorrect_answers: ["L'Ouzbékistan", "Le Kazakhstan", "Le Tadjikistan"],
@@ -6782,7 +6783,7 @@ questions_data = [
   {
     content: "Le concept de 'Panchsheel', ou les Cinq Principes de Coexistence Pacifique, a été formulé conjointement par quels deux pays dans les années 1950 ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "L'Inde et la Chine",
     incorrect_answers: ["L'Inde et le Pakistan", "La Chine et l'Union Soviétique", "L'Indonésie et l'Inde"],
@@ -6791,7 +6792,7 @@ questions_data = [
   {
     content: "Quelle guerre de 1962 a opposé les deux pays les plus peuplés du monde au sujet d'un différend frontalier dans l'Himalaya ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La Guerre sino-indienne",
     incorrect_answers: ["La Guerre du Cachemire", "La Guerre de Corée", "La Guerre sino-vietnamienne"],
@@ -6800,7 +6801,7 @@ questions_data = [
   {
     content: "Quel article de la constitution japonaise d'après-guerre contraint le pays à renoncer à la guerre comme moyen de résoudre les conflits internationaux ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "L'Article 9",
     incorrect_answers: ["L'Article 1", "L'Article 51", "L'Article 23"],
@@ -6809,7 +6810,7 @@ questions_data = [
   {
     content: "Le 'Mouvement des non-alignés', une alternative aux blocs de la Guerre Froide, a été fondé lors de quelle conférence en 1955 ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La Conférence de Bandung",
     incorrect_answers: ["La Conférence de Yalta", "La Conférence de Genève", "La Conférence de Belgrade"],
@@ -6818,7 +6819,7 @@ questions_data = [
   {
     content: "Quelle île, au cœur d'un différend de souveraineté entre le Japon, la Chine et Taïwan, est connue sous le nom de Senkaku en japonais et Diaoyu en chinois ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Les îles Senkaku/Diaoyu",
     incorrect_answers: ["Les îles Kouriles/Territoires du Nord", "Les rochers de Liancourt/Dokdo/Takeshima", "Les îles Paracels"],
@@ -6827,7 +6828,7 @@ questions_data = [
   {
     content: "La 'juche' est l'idéologie officielle de quel État asiatique, prônant l'autosuffisance et un nationalisme extrême ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La Corée du Nord",
     incorrect_answers: ["La Chine de Mao", "Le Vietnam", "Le Cambodge des Khmers rouges"],
@@ -6836,7 +6837,7 @@ questions_data = [
   {
     content: "Quelle politique, mise en œuvre de 1979 à 2015, a strictement contrôlé la démographie en Chine ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La politique de l'enfant unique",
     incorrect_answers: ["La politique des deux enfants", "Le Grand Bond en avant", "La politique de la porte ouverte"],
@@ -6845,7 +6846,7 @@ questions_data = [
   {
     content: "Quel accord de paix de 1978, négocié par les États-Unis, a mis fin à l'état de guerre entre l'Égypte et Israël ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Les Accords de Camp David",
     incorrect_answers: ["Les Accords d'Oslo", "Le Traité de paix israélo-jordanien", "La Résolution 242 de l'ONU"],
@@ -6854,7 +6855,7 @@ questions_data = [
   {
     content: "Le 'Grand Jeu' était une rivalité stratégique au 19e siècle pour le contrôle de l'Asie centrale entre quels deux empires ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "L'Empire britannique et l'Empire russe",
     incorrect_answers: ["L'Empire ottoman et l'Empire perse", "L'Empire français et l'Empire britannique", "L'Empire chinois et l'Empire russe"],
@@ -6863,7 +6864,7 @@ questions_data = [
   {
     content: "Quel terme désigne la politique de réformes économiques initiée par Deng Xiaoping en Chine à partir de 1978 ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Le Socialisme de marché",
     incorrect_answers: ["La Révolution culturelle", "Le Grand Bond en avant", "Les Quatre Modernisations"],
@@ -6872,7 +6873,7 @@ questions_data = [
   {
     content: "Le massacre de Gwangju en 1980 a été un tournant dans la lutte pour la démocratie dans quel pays asiatique ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La Corée du Sud",
     incorrect_answers: ["Taïwan", "Les Philippines", "L'Indonésie"],
@@ -6881,7 +6882,7 @@ questions_data = [
   {
     content: "L'Opération 'Tempête du désert' était la phase de combat de quel conflit au Moyen-Orient ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La Guerre du Golfe (1990-1991)",
     incorrect_answers: ["La Guerre d'Irak (2003)", "La Guerre Iran-Irak", "La Guerre du Kippour"],
@@ -6890,7 +6891,7 @@ questions_data = [
   {
     content: "Quelle doctrine de sécurité japonaise, formulée en 1977, visait à renforcer les liens avec l'Asie du Sud-Est par la coopération économique plutôt que par la puissance militaire ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "La doctrine Fukuda",
     incorrect_answers: ["La doctrine Yoshida", "La doctrine Abe", "La doctrine Ikeda"],
@@ -6899,7 +6900,7 @@ questions_data = [
   {
     content: "Le 'Triangle d'or' est une région montagneuse à cheval sur quels trois pays, connue pour être l'une des plus grandes zones de production d'opium au monde ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "Le Myanmar, le Laos et la Thaïlande",
     incorrect_answers: ["L'Afghanistan, le Pakistan et l'Iran", "Le Vietnam, le Cambodge et le Laos", "La Chine, le Myanmar et l'Inde"],
@@ -6908,34 +6909,37 @@ questions_data = [
   {
     content: "La 'Guerre de la Morue' est un surnom pour un conflit naval qui a opposé le Royaume-Uni à quel autre pays au sujet des droits de pêche ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Asie",
     correct_answer: "L'Islande",
     incorrect_answers: ["La Norvège", "Le Danemark", "La France"],
     contexte: "Les 'Cod Wars' (Guerres de la morue) des années 1950-1970 ont vu l'Islande étendre progressivement ses eaux territoriales, provoquant des affrontements avec les chalutiers britanniques."
   },
+
+  # Amérique - GEOPOLITIQUE (VERIFIEES)
+
   {
     content: "Quelle guerre a opposé les 13 colonies britanniques à la Grande-Bretagne, menant à la création des États-Unis d'Amérique ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
-    correct_answer: "La Guerre d'indépendance américaine (Révolution américaine)",
+    correct_answer: "La Guerre d'indépendance américaine",
     incorrect_answers: ["La Guerre de 1812", "La Guerre de Sécession", "La Guerre de Sept Ans"],
     contexte: "Ce conflit, qui a eu lieu de 1775 à 1783, a abouti au Traité de Paris et à la reconnaissance de l'indépendance des États-Unis."
   },
   {
     content: "Quel conflit a déchiré les États-Unis de 1861 à 1865, opposant l'Union aux États confédérés au sujet de l'esclavage et des droits des États ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
-    correct_answer: "La Guerre de Sécession (Guerre Civile Américaine)",
+    correct_answer: "La Guerre de Sécession",
     incorrect_answers: ["La Révolution américaine", "La Guerre américano-mexicaine", "La Conquête de l'Ouest"],
     contexte: "Cette guerre a abouti à l'abolition de l'esclavage, à la préservation de l'Union et a affirmé la suprématie du gouvernement fédéral."
   },
   {
     content: "Quelle crise de 1962 a amené les États-Unis et l'Union Soviétique au bord de la guerre nucléaire à cause de missiles installés à Cuba ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "La crise des missiles de Cuba",
     incorrect_answers: ["L'invasion de la Baie des Cochons", "La crise du canal de Suez", "Le blocus de Berlin"],
@@ -6944,16 +6948,16 @@ questions_data = [
   {
     content: "Quel accord de libre-échange, remplacé en 2020, unissait le Canada, les États-Unis et le Mexique ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
-    correct_answer: "L'ALENA (Accord de Libre-Échange Nord-Américain)",
+    correct_answer: "L'ALENA",
     incorrect_answers: ["Le MERCOSUR", "L'Union Européenne", "L'APEC"],
     contexte: "Signé en 1994, l'ALENA a créé l'une des plus grandes zones de libre-échange du monde. Il a été remplacé par l'ACEUM (Accord Canada–États-Unis–Mexique)."
   },
   {
     content: "Quel pays a été dirigé par le leader communiste Fidel Castro pendant plusieurs décennies après la révolution de 1959 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Cuba",
     incorrect_answers: ["Le Venezuela", "Le Nicaragua", "La Bolivie"],
@@ -6962,7 +6966,7 @@ questions_data = [
   {
     content: "La doctrine Monroe, énoncée en 1823, visait à s'opposer à toute intervention de quelle puissance sur le continent américain ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Européenne",
     incorrect_answers: ["Asiatique", "Africaine", "Russe"],
@@ -6971,7 +6975,7 @@ questions_data = [
   {
     content: "Quelle voie navigable artificielle, reliant les océans Atlantique et Pacifique, a été sous contrôle américain jusqu'en 1999 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Le Canal de Panama",
     incorrect_answers: ["Le Canal de Suez", "Le Détroit de Magellan", "Le Passage du Nord-Ouest"],
@@ -6980,7 +6984,7 @@ questions_data = [
   {
     content: "Quel pays d'Amérique du Sud a été dirigé par une dictature militaire brutale de 1976 à 1983, période connue sous le nom de 'Guerre Sale' ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "L'Argentine",
     incorrect_answers: ["Le Brésil", "Le Chili", "L'Uruguay"],
@@ -6989,7 +6993,7 @@ questions_data = [
   {
     content: "La 'Révolution tranquille' est une période de changements sociaux et politiques rapides qui a eu lieu dans quelle province canadienne dans les années 1960 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Le Québec",
     incorrect_answers: ["L'Ontario", "La Colombie-Britannique", "L'Alberta"],
@@ -6998,16 +7002,16 @@ questions_data = [
   {
     content: "Quel pays a connu une dictature dirigée par Augusto Pinochet de 1973 à 1990, suite à un coup d'État contre le président Salvador Allende ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Le Chili",
     incorrect_answers: ["L'Argentine", "Le Pérou", "La Bolivie"],
     contexte: "Le coup d'État de 1973, soutenu par la CIA, a marqué le début d'un régime autoritaire caractérisé par la répression politique et des réformes économiques néolibérales."
   },
   {
-    content: "Quel terme désigne la politique de ségrégation raciale qui a existé aux États-Unis, en particulier dans les États du Sud, jusqu'aux années 1960 ?",
+    content: "Quel terme désigne la politique de discrimination raciale qui a existé aux États-Unis, en particulier dans les États du Sud, jusqu'aux années 1960 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "La ségrégation (ou les lois Jim Crow)",
     incorrect_answers: ["L'Apartheid", "Le Ghetto", "La Réserve"],
@@ -7016,7 +7020,7 @@ questions_data = [
   {
     content: "Le MERCOSUR est un bloc commercial et une union douanière entre plusieurs pays de quelle région ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Amérique du Sud",
     incorrect_answers: ["Amérique du Nord", "Amérique Centrale", "Les Caraïbes"],
@@ -7025,7 +7029,7 @@ questions_data = [
   {
     content: "Quel pays a été le théâtre d'un conflit armé de plus de 50 ans entre le gouvernement et des guérillas marxistes comme les FARC ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "La Colombie",
     incorrect_answers: ["Le Pérou", "Le Mexique", "Le Venezuela"],
@@ -7034,7 +7038,7 @@ questions_data = [
   {
     content: "L'Organisation des États Américains (OEA) est une organisation continentale dont le siège est dans quelle ville ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Washington, D.C.",
     incorrect_answers: ["Mexico", "Brasilia", "Bogota"],
@@ -7042,8 +7046,8 @@ questions_data = [
   },
   {
     content: "Quel pays d'Amérique centrale a été dirigé par la dynastie des Somoza pendant plus de 40 ans avant la révolution sandiniste de 1979 ?",
-    difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    difficulty: "intermédiaire",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Le Nicaragua",
     incorrect_answers: ["Le Honduras", "Le Salvador", "Le Guatemala"],
@@ -7051,8 +7055,8 @@ questions_data = [
   },
   {
     content: "Quelle tentative d'invasion de Cuba par des exilés cubains, soutenue par la CIA, a échoué lamentablement en 1961 ?",
-    difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    difficulty: "facile",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Le débarquement de la baie des Cochons",
     incorrect_answers: ["L'opération Mongoose", "La crise des missiles de Cuba", "L'opération Urgent Fury"],
@@ -7061,7 +7065,7 @@ questions_data = [
   {
     content: "Le scandale 'Iran-Contra' dans les années 1980 a impliqué la vente secrète d'armes à l'Iran par l'administration Reagan pour financer quel groupe ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Les Contras au Nicaragua",
     incorrect_answers: ["Les moudjahidines en Afghanistan", "La junte en Argentine", "Les rebelles au Salvador"],
@@ -7070,16 +7074,16 @@ questions_data = [
   {
     content: "Quelle guerre a opposé l'Argentine et le Royaume-Uni en 1982 pour la souveraineté d'un archipel de l'Atlantique Sud ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
-    correct_answer: "La Guerre des Malouines (Falklands War)",
-    incorrect_answers: ["La Guerre du Chaco", "La Guerre du Pacifique", "La Guerre de la Triple-Alliance"],
+    correct_answer: "La Guerre des Malouines",
+    incorrect_answers: ["La Guerre du Chaco", "La Guerre du Pacifique", "La Guerre des Caraïbes"],
     contexte: "Le conflit a commencé par une invasion argentine et s'est terminé par une victoire britannique, mais la revendication de souveraineté argentine persiste."
   },
   {
     content: "Comment nomme-t-on le plan de coopération et de répression des opposants politiques mis en place par les dictatures d'Amérique du Sud dans les années 1970 ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "L'Opération Condor",
     incorrect_answers: ["L'Alliance pour le Progrès", "La Doctrine de la Sécurité Nationale", "L'Opération Just Cause"],
@@ -7088,7 +7092,7 @@ questions_data = [
   {
     content: "Quel mouvement de guérilla indigène a lancé une insurrection dans l'État du Chiapas, au Mexique, le jour de l'entrée en vigueur de l'ALENA en 1994 ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "L'Armée zapatiste de libération nationale (EZLN)",
     incorrect_answers: ["Le Sentier lumineux", "Les FARC", "Les Tupamaros"],
@@ -7097,16 +7101,16 @@ questions_data = [
   {
     content: "Quelle politique américaine des années 1930, initiée par Franklin D. Roosevelt, visait à réduire l'interventionnisme militaire en Amérique latine ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
-    correct_answer: "La politique de bon voisinage (Good Neighbor Policy)",
+    correct_answer: "La politique de bon voisinage",
     incorrect_answers: ["La doctrine Monroe", "La diplomatie du dollar", "La politique du Big Stick"],
     contexte: "Cette politique a mis fin à l'occupation de plusieurs pays par les Marines américains, mais n'a pas empêché l'influence économique et politique."
   },
   {
     content: "Le 'Sentier Lumineux' (Sendero Luminoso) était un groupe terroriste maoïste qui a mené une insurrection sanglante dans quel pays andin ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Le Pérou",
     incorrect_answers: ["La Colombie", "La Bolivie", "L'Équateur"],
@@ -7115,7 +7119,7 @@ questions_data = [
   {
     content: "Quel traité de 1977, signé par Jimmy Carter et Omar Torrijos, a organisé le transfert progressif du Canal de Panama au Panama ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Les Traités Torrijos-Carter",
     incorrect_answers: ["Le Traité Hay-Bunau-Varilla", "L'Accord de Panama", "Le Traité du Canal Interocéanique"],
@@ -7124,7 +7128,7 @@ questions_data = [
   {
     content: "Quelle guerre a opposé la Bolivie et le Paraguay de 1932 à 1935 pour le contrôle d'une région aride, supposée riche en pétrole ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "La Guerre du Chaco",
     incorrect_answers: ["La Guerre du Pacifique", "La Guerre de la Triple-Alliance", "La Guerre des Malouines"],
@@ -7133,7 +7137,7 @@ questions_data = [
   {
     content: "Le 'Maccarthysme' était une période de peur et de répression anticommuniste intense dans quel pays au début des années 1950 ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Les États-Unis",
     incorrect_answers: ["Le Canada", "Le Mexique", "L'Argentine"],
@@ -7142,7 +7146,7 @@ questions_data = [
   {
     content: "Quelle résolution de l'ONU, adoptée après la Guerre des Six Jours, est une pierre angulaire des négociations de paix au Moyen-Orient mais a été proposée par un pays américain ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "La Résolution 242",
     incorrect_answers: ["La Résolution 338", "La Résolution 181", "La Résolution 425"],
@@ -7151,7 +7155,7 @@ questions_data = [
   {
     content: "L'apartheid est associé à l'Afrique du Sud, mais quel pays américain a vu sa politique étrangère influencée par son opposition à ce régime, notamment sous le gouvernement de Brian Mulroney ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Le Canada",
     incorrect_answers: ["Le Brésil", "Le Mexique", "L'Argentine"],
@@ -7160,7 +7164,7 @@ questions_data = [
   {
     content: "Quelle guerre (1846-1848) a abouti à la cession par le Mexique de vastes territoires qui forment aujourd'hui le sud-ouest des États-Unis ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "La Guerre américano-mexicaine",
     incorrect_answers: ["La Révolution texane", "La Guerre hispano-américaine", "La Guerre des Pâtisseries"],
@@ -7169,7 +7173,7 @@ questions_data = [
   {
     content: "L'ALBA (Alliance Bolivarienne pour les Amériques) est une organisation intergouvernementale créée en opposition à la politique américaine. Quels en sont les deux principaux fondateurs ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Le Venezuela (Hugo Chávez) et Cuba (Fidel Castro)",
     incorrect_answers: ["Le Brésil et l'Argentine", "La Bolivie et l'Équateur", "Le Mexique et la Colombie"],
@@ -7178,7 +7182,7 @@ questions_data = [
   {
     content: "Quel coup d'État de 1954, orchestré par la CIA sous le nom de code 'Opération PBSUCCESS', a renversé le gouvernement démocratiquement élu de Jacobo Árbenz ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Le coup d'État au Guatemala",
     incorrect_answers: ["Le coup d'État au Chili", "Le coup d'État en Iran", "Le coup d'État au Congo"],
@@ -7187,7 +7191,7 @@ questions_data = [
   {
     content: "Quelle loi américaine de 1996, connue sous le nom de loi Helms-Burton, a renforcé l'embargo contre Cuba en pénalisant les entreprises étrangères qui y commercent ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "La loi sur la liberté et la solidarité démocratique cubaine",
     incorrect_answers: ["L'amendement Platt", "La loi Torricelli", "L'embargo commercial"],
@@ -7196,7 +7200,7 @@ questions_data = [
   {
     content: "La 'Guerre du Pacifique' (1879-1884) a opposé le Chili à une alliance entre quels deux pays, privant l'un d'eux de son accès à la mer ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Le Pérou et la Bolivie",
     incorrect_answers: ["L'Argentine et l'Uruguay", "L'Équateur et la Colombie", "Le Brésil et le Paraguay"],
@@ -7205,7 +7209,7 @@ questions_data = [
   {
     content: "Quelle crise politique canadienne de 1970 a vu le gouvernement fédéral invoquer la Loi sur les mesures de guerre en réponse aux enlèvements du Front de libération du Québec (FLQ) ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "La Crise d'Octobre",
     incorrect_answers: ["La Crise du Lac Meech", "La Crise d'Oka", "Le Référendum de 1980"],
@@ -7214,7 +7218,7 @@ questions_data = [
   {
     content: "Quel terme désigne la politique de l'administration Nixon visant à transférer la responsabilité des combats aux forces sud-vietnamiennes ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "La vietnamisation",
     incorrect_answers: ["La doctrine Nixon", "L'endiguement", "La détente"],
@@ -7223,7 +7227,7 @@ questions_data = [
   {
     content: "Le 'Corollaire Roosevelt' à la doctrine Monroe affirmait le droit des États-Unis d'agir comme...",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Une 'puissance de police internationale' en Amérique latine",
     incorrect_answers: ["Un partenaire commercial égal", "Un médiateur neutre", "Un observateur non-interventionniste"],
@@ -7232,7 +7236,7 @@ questions_data = [
   {
     content: "Quelle guerre (1864-1870) a opposé le Paraguay à une alliance du Brésil, de l'Argentine et de l'Uruguay, et a dévasté la population paraguayenne ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "La Guerre de la Triple-Alliance",
     incorrect_answers: ["La Guerre du Chaco", "La Guerre du Pacifique", "La Guerre de Cisplatine"],
@@ -7241,7 +7245,7 @@ questions_data = [
   {
     content: "La 'United Fruit Company', une multinationale américaine, a joué un rôle politique et économique si dominant en Amérique centrale qu'elle a inspiré le terme...",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "République bananière",
     incorrect_answers: ["État client", "État satellite", "Colonie économique"],
@@ -7250,7 +7254,7 @@ questions_data = [
   {
     content: "L'Amendement Platt de 1901 était une clause insérée dans la constitution de quel pays, autorisant l'intervention des États-Unis dans ses affaires ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Cuba",
     incorrect_answers: ["Le Panama", "Les Philippines", "Le Nicaragua"],
@@ -7259,19 +7263,19 @@ questions_data = [
   {
     content: "Quelle opération militaire américaine de 1989 a envahi le Panama pour déposer le dictateur Manuel Noriega ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Amérique",
     correct_answer: "L'Opération Just Cause",
     incorrect_answers: ["L'Opération Urgent Fury", "L'Opération Eagle Claw", "L'Opération Mongoose"],
     contexte: "Justifiée par la lutte contre le trafic de drogue et la protection des citoyens américains, cette invasion a été controversée sur le plan du droit international."
   },
 
-  # OCEANIE - CONFLITS - GEOPO
+  # Océanie - GEOPOLITIQUE
 
   {
     content: "Quel pacte de sécurité mutuelle lie l'Australie, la Nouvelle-Zélande et les États-Unis depuis 1951 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Le traité ANZUS",
     incorrect_answers: ["L'OTAN", "Le Pacte de Manille (SEATO)", "L'APEC"],
@@ -7280,7 +7284,7 @@ questions_data = [
   {
     content: "Quel pays a pour chef d'État le monarque britannique, représenté par un gouverneur général ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "L'Australie (et la Nouvelle-Zélande, PNG, etc.)",
     incorrect_answers: ["Fidji", "Samoa", "Vanuatu"],
@@ -7289,7 +7293,7 @@ questions_data = [
   {
     content: "La Nouvelle-Zélande a suspendu sa participation au traité ANZUS en raison de sa politique contre quoi ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Les armes et l'énergie nucléaires",
     incorrect_answers: ["L'apartheid", "La chasse à la baleine", "Les essais atmosphériques"],
@@ -7298,7 +7302,7 @@ questions_data = [
   {
     content: "Dans quelle ville australienne se trouve le siège du Parlement fédéral ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Canberra",
     incorrect_answers: ["Sydney", "Melbourne", "Brisbane"],
@@ -7307,7 +7311,7 @@ questions_data = [
   {
     content: "Quel pays a administré la Papouasie-Nouvelle-Guinée jusqu'à son indépendance en 1975 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["Le Royaume-Uni", "L'Allemagne", "Les Pays-Bas"],
@@ -7316,7 +7320,7 @@ questions_data = [
   {
     content: "Quel pays européen possède plusieurs territoires en Océanie, dont la Nouvelle-Calédonie et la Polynésie française ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "La France",
     incorrect_answers: ["Le Royaume-Uni", "L'Espagne", "Le Portugal"],
@@ -7325,7 +7329,7 @@ questions_data = [
   {
     content: "Le Traité de Waitangi, signé en 1840, est le document fondateur de quel pays ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "La Nouvelle-Zélande",
     incorrect_answers: ["L'Australie", "Fidji", "Tonga"],
@@ -7334,7 +7338,7 @@ questions_data = [
   {
     content: "Quel pays du Pacifique est une république mais était une monarchie jusqu'à un coup d'État militaire en 1987 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Fidji",
     incorrect_answers: ["Tonga", "Samoa", "Îles Salomon"],
@@ -7343,7 +7347,7 @@ questions_data = [
   {
     content: "Le 'Forum des îles du Pacifique' est la principale organisation intergouvernementale de la région. Quel en est l'un des enjeux majeurs ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Le changement climatique",
     incorrect_answers: ["La piraterie", "Les conflits frontaliers", "La course aux armements"],
@@ -7352,7 +7356,7 @@ questions_data = [
   {
     content: "Nauru, l'une des plus petites républiques du monde, a été au centre de quelle politique controversée de l'Australie ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "La détention de demandeurs d'asile",
     incorrect_answers: ["L'extraction de phosphate", "Les essais nucléaires", "L'installation de bases militaires"],
@@ -7361,7 +7365,7 @@ questions_data = [
   {
     content: "Quel est le seul royaume encore existant en Polynésie ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Tonga",
     incorrect_answers: ["Fidji", "Hawaï", "Tahiti"],
@@ -7370,7 +7374,7 @@ questions_data = [
   {
     content: "L'Australie et le Timor oriental ont eu un long différend concernant quoi ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Le partage des revenus pétroliers et gaziers en mer",
     incorrect_answers: ["Les droits de pêche", "Des revendications territoriales terrestres", "Le statut des réfugiés"],
@@ -7379,7 +7383,7 @@ questions_data = [
   {
     content: "Quel pays du Pacifique n'a pas d'armée et sa défense est assurée par la Nouvelle-Zélande en libre association ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Les Îles Cook (et Niue)",
     incorrect_answers: ["Fidji", "Vanuatu", "Samoa"],
@@ -7388,7 +7392,7 @@ questions_data = [
   {
     content: "Comment nomme-t-on la population aborigène de la Nouvelle-Zélande ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Les Maoris",
     incorrect_answers: ["Les Aborigènes", "Les Kanaks", "Les Papous"],
@@ -7397,7 +7401,7 @@ questions_data = [
   {
     content: "Le Bikini Atoll, dans les Îles Marshall, est célèbre pour avoir été le site de quoi après la Seconde Guerre mondiale ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Des essais nucléaires américains",
     incorrect_answers: ["La signature d'un traité de paix", "Une bataille navale décisive", "La découverte d'une nouvelle espèce"],
@@ -7406,7 +7410,7 @@ questions_data = [
   {
     content: "Quel territoire français a tenu trois référendums sur son indépendance en 2018, 2020 et 2021, tous rejetés ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "La Nouvelle-Calédonie",
     incorrect_answers: ["La Polynésie française", "Wallis-et-Futuna", "L'Île de la Réunion"],
@@ -7415,7 +7419,7 @@ questions_data = [
   {
     content: "Quel conflit sécessionniste (1988-1998) a opposé l'île de Bougainville au gouvernement de Papouasie-Nouvelle-Guinée, principalement à cause d'une mine ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "La guerre civile de Bougainville",
     incorrect_answers: ["La crise des Salomon", "Le conflit du Timor oriental", "La rébellion de la Nouvelle-Guinée occidentale"],
@@ -7424,7 +7428,7 @@ questions_data = [
   {
     content: "L'affaire du 'Rainbow Warrior' en 1985 a impliqué le sabotage d'un navire de Greenpeace dans le port d'Auckland par des agents de quel pays ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "La France",
     incorrect_answers: ["Les États-Unis", "Le Royaume-Uni", "L'Union Soviétique"],
@@ -7433,7 +7437,7 @@ questions_data = [
   {
     content: "Quelle politique australienne, souvent critiquée, visait à assimiler de force les enfants aborigènes en les retirant de leur famille ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Les Générations volées (Stolen Generations)",
     incorrect_answers: ["La politique de l'Australie blanche", "La Solution du Pacifique", "Le Plan Colombo"],
@@ -7442,7 +7446,7 @@ questions_data = [
   {
     content: "RAMSI (Regional Assistance Mission to Solomon Islands) était une mission internationale de maintien de la paix dirigée par quel pays ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Nouvelle-Zélande", "Les Nations Unies", "Les États-Unis"],
@@ -7451,7 +7455,7 @@ questions_data = [
   {
     content: "La 'politique de l'Australie blanche', abolie progressivement après la Seconde Guerre mondiale, visait à restreindre quoi ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "L'immigration des non-Européens",
     incorrect_answers: ["Le droit de vote des Aborigènes", "Les investissements étrangers", "Les mariages mixtes"],
@@ -7460,7 +7464,7 @@ questions_data = [
   {
     content: "Quel pays est au cœur de la rivalité géopolitique entre la Chine et Taïwan dans le Pacifique, les deux cherchant à obtenir sa reconnaissance diplomatique ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Les nations insulaires du Pacifique (ex: Îles Salomon, Kiribati)",
     incorrect_answers: ["L'Australie", "La Nouvelle-Zélande", "La Papouasie-Nouvelle-Guinée"],
@@ -7469,7 +7473,7 @@ questions_data = [
   {
     content: "Quel est le principal enjeu géopolitique du détroit de Torres, qui sépare l'Australie de la Nouvelle-Guinée ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "La gestion de la frontière et des droits traditionnels",
     incorrect_answers: ["La présence de pirates", "La dispute sur la souveraineté des îles", "La construction d'un pont"],
@@ -7478,7 +7482,7 @@ questions_data = [
   {
     content: "En 2000, un coup d'État civil à Fidji a été mené par George Speight pour quelles raisons principales ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Pour renforcer la suprématie politique des indigènes iTaukei",
     incorrect_answers: ["Pour protester contre la corruption", "Pour instaurer une république islamique", "Pour nationaliser l'industrie sucrière"],
@@ -7487,7 +7491,7 @@ questions_data = [
   {
     content: "L'Indonésie fait face à un mouvement séparatiste de longue date dans quelle région de l'île de Nouvelle-Guinée ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "La Papouasie occidentale",
     incorrect_answers: ["Aceh", "Les Moluques", "Le Timor oriental"],
@@ -7496,7 +7500,7 @@ questions_data = [
   {
     content: "Le 'Pacific Islands Forum Fisheries Agency' (FFA) a été créé pour aider les nations insulaires à gérer et conserver quelle ressource précieuse ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Les stocks de thon",
     incorrect_answers: ["Les récifs coralliens", "Les minéraux des fonds marins", "Les réserves d'eau douce"],
@@ -7505,7 +7509,7 @@ questions_data = [
   {
     content: "Quelle crise constitutionnelle australienne de 1975 a vu le gouverneur général démettre de ses fonctions le Premier ministre élu ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "La crise constitutionnelle de 1975 ('The Dismissal')",
     incorrect_answers: ["L'affaire Mabo", "Le schisme du parti travailliste", "L'affaire des 'spy papers'"],
@@ -7514,7 +7518,7 @@ questions_data = [
   {
     content: "Quel pays du Pacifique a connu une 'guerre civile' de faible intensité connue sous le nom de 'Tanna Wars' dans les années 1980 ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Vanuatu",
     incorrect_answers: ["Fidji", "Îles Salomon", "Papouasie-Nouvelle-Guinée"],
@@ -7523,7 +7527,7 @@ questions_data = [
   {
     content: "Quel pays, en libre association avec les États-Unis, abrite le site d'essais de missiles balistiques Ronald Reagan ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Les Îles Marshall",
     incorrect_answers: ["Palaos", "La Micronésie", "Guam"],
@@ -7532,7 +7536,7 @@ questions_data = [
   {
     content: "La 'Canberra Commission on the Elimination of Nuclear Weapons' a été une initiative de quel pays en 1995 ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Nouvelle-Zélande", "Le Japon", "Le Canada"],
@@ -7541,7 +7545,7 @@ questions_data = [
   {
     content: "Quelle décision de la Haute Cour d'Australie en 1992 a annulé la doctrine de 'terra nullius' et reconnu pour la première fois les titres fonciers autochtones ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "La décision Mabo (Mabo v Queensland)",
     incorrect_answers: ["La décision Wik", "La décision Koowarta", "La décision Franklin Dam"],
@@ -7550,7 +7554,7 @@ questions_data = [
   {
     content: "Le 'Traité de Rabaul' de 1947 est un accord informel qui a influencé la politique étrangère de quel pays pendant la Guerre Froide ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Nouvelle-Zélande", "L'Indonésie", "Les Philippines"],
@@ -7559,7 +7563,7 @@ questions_data = [
   {
     content: "La constitution de quel pays du Pacifique contient une 'clause d'incapacité', utilisée pour démettre des présidents lors de crises politiques ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Nauru",
     incorrect_answers: ["Palaos", "Kiribati", "Vanuatu"],
@@ -7568,7 +7572,7 @@ questions_data = [
   {
     content: "Quel pays a été le premier au monde à accorder le droit de vote aux femmes en 1893 ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "La Nouvelle-Zélande",
     incorrect_answers: ["L'Australie", "La Finlande", "Le Royaume-Uni"],
@@ -7577,7 +7581,7 @@ questions_data = [
   {
     content: "Le 'groupe de pointe mélanésien' (MSG) est une organisation sous-régionale visant à promouvoir la coopération. Quel en est un membre observateur controversé ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Le Mouvement uni pour la libération de la Papouasie occidentale (ULMWP)",
     incorrect_answers: ["Le Timor oriental", "La Nouvelle-Calédonie (FLNKS)", "L'Indonésie"],
@@ -7586,7 +7590,7 @@ questions_data = [
   {
     content: "La 'crise des lettres d'or' ('Gold Letter Crisis') en 1987 à Palaos était liée à la pression pour approuver quel accord avec les États-Unis ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Le Pacte de libre association (Compact of Free Association)",
     incorrect_answers: ["Un accord sur l'établissement d'une base navale", "Un traité d'extradition", "Un accord de pêche"],
@@ -7595,7 +7599,7 @@ questions_data = [
   {
     content: "Quel scandale politique a éclaté en Australie en 2004, impliquant des allégations d'espionnage contre le cabinet du Timor oriental pendant les négociations sur les frontières maritimes ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "L'affaire des écoutes du Timor oriental (Australia-East Timor spying scandal)",
     incorrect_answers: ["L'affaire 'Children Overboard'", "L'affaire AWB", "Le scandale de l'huile de Mórcomo"],
@@ -7604,7 +7608,7 @@ questions_data = [
   {
     content: "La 'doctrine Howard', du nom d'un Premier ministre australien, affirmait le droit de l'Australie à mener quoi dans la région ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Des frappes préventives contre des menaces terroristes",
     incorrect_answers: ["Des interventions humanitaires sans l'aval de l'ONU", "Un blocus économique contre les États en faillite", "L'annexion de territoires non réclamés"],
@@ -7613,19 +7617,19 @@ questions_data = [
   {
     content: "Le 'Fono' est le nom du parlement national de quel pays polynésien ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Océanie",
     correct_answer: "Samoa (et Tokelau)",
     incorrect_answers: ["Tonga", "Tuvalu", "Niue"],
     contexte: "Le Fono samoan a été le théâtre d'une crise constitutionnelle majeure en 2021, lorsque le parti au pouvoir a refusé de céder le pouvoir après une défaite électorale."
   },
 
-  # AFRIQUE - CONFLITS - GEOPO
+  # AFRIQUE - GEOPOLITIQUE
 
   {
     content: "Quel système de ségrégation raciale a été officiellement mis en place en Afrique du Sud de 1948 à 1991 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "L'apartheid",
     incorrect_answers: ["La ségrégation", "Le colonialisme", "L'esclavage"],
@@ -7634,7 +7638,7 @@ questions_data = [
   {
     content: "Quel leader anti-apartheid est devenu le premier président noir d'Afrique du Sud en 1994 après 27 ans de prison ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Nelson Mandela",
     incorrect_answers: ["Desmond Tutu", "F.W. de Klerk", "Thabo Mbeki"],
@@ -7643,7 +7647,7 @@ questions_data = [
   {
     content: "Quel génocide de 1994 a vu le massacre d'environ 800 000 Tutsis et Hutus modérés par des extrémistes Hutus ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le génocide au Rwanda",
     incorrect_answers: ["Le génocide arménien", "Le génocide au Darfour", "Le génocide cambodgien"],
@@ -7652,7 +7656,7 @@ questions_data = [
   {
     content: "Quelle est la principale organisation intergouvernementale panafricaine, dont le siège est à Addis-Abeba ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "L'Union Africaine (UA)",
     incorrect_answers: ["L'ONU", "La CEDEAO", "L'Union Européenne"],
@@ -7661,7 +7665,7 @@ questions_data = [
   {
     content: "Quel pays a été le premier d'Afrique subsaharienne à obtenir son indépendance en 1957, sous la direction de Kwame Nkrumah ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le Ghana",
     incorrect_answers: ["Le Nigeria", "Le Kenya", "L'Éthiopie"],
@@ -7670,7 +7674,7 @@ questions_data = [
   {
     content: "Le 'Printemps arabe' de 2011 a commencé dans quel pays d'Afrique du Nord, entraînant la chute du président Ben Ali ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "La Tunisie",
     incorrect_answers: ["L'Égypte", "La Libye", "Le Maroc"],
@@ -7679,7 +7683,7 @@ questions_data = [
   {
     content: "Quelle guerre a opposé la France à un mouvement de libération nationale de 1954 à 1962, menant à l'indépendance du pays ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "La Guerre d'Algérie",
     incorrect_answers: ["La Guerre d'Indochine", "La Crise de Suez", "La Guerre du Maroc"],
@@ -7688,7 +7692,7 @@ questions_data = [
   {
     content: "Quel désert, le plus grand du monde, est une zone d'instabilité géopolitique et de lutte contre les groupes djihadistes ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le Sahara",
     incorrect_answers: ["Le Kalahari", "Le Namib", "Le Gobi"],
@@ -7697,7 +7701,7 @@ questions_data = [
   {
     content: "Quel pays a été dirigé par le colonel Mouammar Kadhafi pendant 42 ans avant son renversement et sa mort en 2011 ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "La Libye",
     incorrect_answers: ["L'Égypte", "L'Algérie", "Le Soudan"],
@@ -7706,7 +7710,7 @@ questions_data = [
   {
     content: "Boko Haram est un groupe terroriste islamiste qui sévit principalement dans quel pays ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le Nigeria",
     incorrect_answers: ["La Somalie", "Le Mali", "Le Kenya"],
@@ -7715,7 +7719,7 @@ questions_data = [
   {
     content: "Quel pays est le plus jeune du monde, ayant obtenu son indépendance du Soudan en 2011 après des décennies de guerre civile ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le Soudan du Sud",
     incorrect_answers: ["L'Érythrée", "La Namibie", "Le Kosovo"],
@@ -7724,7 +7728,7 @@ questions_data = [
   {
     content: "Quel fleuve est au cœur de tensions géopolitiques entre l'Égypte, le Soudan et l'Éthiopie en raison de la construction d'un grand barrage ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le Nil",
     incorrect_answers: ["Le Congo", "Le Niger", "Le Zambèze"],
@@ -7733,7 +7737,7 @@ questions_data = [
   {
     content: "La 'Conférence de Berlin' de 1884-1885 a formalisé quoi ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le partage de l'Afrique entre les puissances coloniales européennes",
     incorrect_answers: ["L'abolition de l'esclavage", "La création de l'ONU", "La fin de la Première Guerre mondiale"],
@@ -7742,7 +7746,7 @@ questions_data = [
   {
     content: "Quel pays a été fondé par des esclaves américains affranchis au 19e siècle ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le Liberia",
     incorrect_answers: ["La Sierra Leone", "Le Ghana", "Le Sénégal"],
@@ -7751,7 +7755,7 @@ questions_data = [
   {
     content: "Quel mouvement idéologique prône l'unité et la solidarité des peuples africains, et a été porté par des leaders comme Kwame Nkrumah ?",
     difficulty: "facile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le panafricanisme",
     incorrect_answers: ["Le socialisme", "Le communisme", "Le nationalisme"],
@@ -7760,7 +7764,7 @@ questions_data = [
   {
     content: "La guerre du Biafra (1967-1970) était une tentative de sécession d'une région de quel pays ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le Nigeria",
     incorrect_answers: ["Le Cameroun", "Le Ghana", "L'Éthiopie"],
@@ -7769,7 +7773,7 @@ questions_data = [
   {
     content: "Comment nomme-t-on les deux conflits qui ont ravagé la République Démocratique du Congo de 1996 à 2003, impliquant de nombreux pays voisins ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "La Première et la Deuxième Guerre du Congo",
     incorrect_answers: ["La Guerre du Kivu", "La Crise Congolaise", "La Guerre des Grands Lacs"],
@@ -7778,7 +7782,7 @@ questions_data = [
   {
     content: "Quel pays a été le théâtre de l'intervention américaine 'Black Hawk Down' en 1993, lors d'une mission de maintien de la paix de l'ONU ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "La Somalie",
     incorrect_answers: ["Le Soudan", "L'Éthiopie", "Le Kenya"],
@@ -7787,7 +7791,7 @@ questions_data = [
   {
     content: "La CEDEAO (Communauté Économique des États de l'Afrique de l'Ouest) est une organisation régionale qui intervient souvent dans quoi ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "La résolution de crises politiques et de coups d'État",
     incorrect_answers: ["La gestion de la monnaie unique", "La lutte contre la piraterie", "La protection de l'environnement"],
@@ -7796,7 +7800,7 @@ questions_data = [
   {
     content: "Quel territoire désertique est au cœur d'un conflit de souveraineté entre le Maroc et le Front Polisario soutenu par l'Algérie ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le Sahara Occidental",
     incorrect_answers: ["Le Sinaï", "Le Darfour", "Le Caprivi"],
@@ -7805,7 +7809,7 @@ questions_data = [
   {
     content: "Quelle politique économique, promue par le FMI et la Banque Mondiale dans les années 1980-1990, a eu des conséquences sociales profondes en Afrique ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Les Programmes d'Ajustement Structurel (PAS)",
     incorrect_answers: ["Le Plan Marshall", "La Négritude", "Le Socialisme Africain"],
@@ -7814,7 +7818,7 @@ questions_data = [
   {
     content: "Quel leader a dirigé le Zimbabwe de son indépendance en 1980 jusqu'à sa démission forcée en 2017 ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Robert Mugabe",
     incorrect_answers: ["Morgan Tsvangirai", "Joshua Nkomo", "Emmerson Mnangagwa"],
@@ -7823,7 +7827,7 @@ questions_data = [
   {
     content: "La 'Françafrique' est un terme péjoratif désignant quoi ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le réseau d'influence politique, économique et militaire de la France dans ses anciennes colonies",
     incorrect_answers: ["Une alliance culturelle francophone", "Un programme d'aide au développement", "Une zone de libre-échange"],
@@ -7832,7 +7836,7 @@ questions_data = [
   {
     content: "Quel pays a connu une guerre civile de 1991 à 2002, tristement célèbre pour l'utilisation de 'diamants de sang' pour financer le conflit ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "La Sierra Leone",
     incorrect_answers: ["Le Liberia", "L'Angola", "La République Démocratique du Congo"],
@@ -7841,7 +7845,7 @@ questions_data = [
   {
     content: "Le conflit du Darfour, qui a débuté en 2003, a opposé des groupes rebelles à des milices soutenues par le gouvernement. Dans quel pays se situe le Darfour ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le Soudan",
     incorrect_answers: ["Le Tchad", "La Libye", "Le Soudan du Sud"],
@@ -7850,7 +7854,7 @@ questions_data = [
   {
     content: "Quel pays a été le seul à ne jamais avoir été colonisé, repoussant une invasion italienne à la bataille d'Adoua en 1896 ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "L'Éthiopie",
     incorrect_answers: ["Le Liberia", "L'Égypte", "Le Maroc"],
@@ -7859,7 +7863,7 @@ questions_data = [
   {
     content: "La 'Négritude' était un mouvement littéraire et politique fondé par des intellectuels noirs francophones. Qui en était l'une des figures de proue ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Léopold Sédar Senghor",
     incorrect_answers: ["Kwame Nkrumah", "Jomo Kenyatta", "Patrice Lumumba"],
@@ -7868,7 +7872,7 @@ questions_data = [
   {
     content: "Quelle organisation politique et paramilitaire a été créée par Nelson Mandela et d'autres pour lutter contre l'apartheid ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le Congrès National Africain (ANC)",
     incorrect_answers: ["Le Congrès Panafricaniste d'Azanie (PAC)", "Le Parti de la Liberté Inkatha (IFP)", "Le Parti National"],
@@ -7877,7 +7881,7 @@ questions_data = [
   {
     content: "La Crise de Suez en 1956 a été déclenchée par la nationalisation du canal par quel leader égyptien ?",
     difficulty: "intermédiaire",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Gamal Abdel Nasser",
     incorrect_answers: ["Anouar el-Sadate", "Hosni Moubarak", "Le roi Farouk"],
@@ -7886,7 +7890,7 @@ questions_data = [
   {
     content: "Les Accords d'Arusha, signés en 1993, visaient à mettre fin à la guerre civile et à partager le pouvoir dans quel pays ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Le Rwanda",
     incorrect_answers: ["Le Burundi", "L'Ouganda", "La Tanzanie"],
@@ -7895,7 +7899,7 @@ questions_data = [
   {
     content: "Quelle guerre a opposé l'Éthiopie et la Somalie en 1977-1978 pour le contrôle d'une région frontalière ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "La Guerre de l'Ogaden",
     incorrect_answers: ["La Guerre d'indépendance de l'Érythrée", "La Guerre du Shaba", "La Guerre civile éthiopienne"],
@@ -7904,7 +7908,7 @@ questions_data = [
   {
     content: "Quel pays d'Afrique australe a connu une longue guerre civile après son indépendance du Portugal, opposant le MPLA (soutenu par l'URSS) à l'UNITA (soutenue par les USA et l'Afrique du Sud) ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "L'Angola",
     incorrect_answers: ["Le Mozambique", "La Guinée-Bissau", "Le Cap-Vert"],
@@ -7913,7 +7917,7 @@ questions_data = [
   {
     content: "La 'Commission Vérité et Réconciliation', présidée par l'archevêque Desmond Tutu, a été mise en place dans quel pays pour faire face aux crimes du passé ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "L'Afrique du Sud",
     incorrect_answers: ["Le Rwanda", "Le Liberia", "La Sierra Leone"],
@@ -7922,7 +7926,7 @@ questions_data = [
   {
     content: "Le 'Katanga' est une riche province minière qui a tenté de faire sécession de quel pays juste après son indépendance en 1960 ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "La République Démocratique du Congo (alors Congo-Léopoldville)",
     incorrect_answers: ["La Zambie", "L'Angola", "Le Congo-Brazzaville"],
@@ -7931,7 +7935,7 @@ questions_data = [
   {
     content: "La Cour Pénale Internationale (CPI) a été critiquée par certains dirigeants africains pour...",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Cibler de manière disproportionnée des dirigeants africains",
     incorrect_answers: ["Être trop lente dans ses jugements", "Manquer de pouvoir coercitif", "Avoir son siège en Europe"],
@@ -7940,7 +7944,7 @@ questions_data = [
   {
     content: "Quel pays a connu la 'Révolution de Zanzibar' en 1964, qui a renversé le sultanat arabe et conduit à son union avec le Tanganyika ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "La Tanzanie (formée par l'union)",
     incorrect_answers: ["Le Kenya", "Oman", "Les Comores"],
@@ -7949,7 +7953,7 @@ questions_data = [
   {
     content: "L'Ujamaa, ou 'socialisme africain', était la politique économique et sociale de quel leader et pays ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Julius Nyerere en Tanzanie",
     incorrect_answers: ["Léopold Senghor au Sénégal", "Sékou Touré en Guinée", "Jomo Kenyatta au Kenya"],
@@ -7958,7 +7962,7 @@ questions_data = [
   {
     content: "Le procès de Rivonia (1963-1964) a condamné à la prison à vie plusieurs leaders de la lutte anti-apartheid. Qui était l'accusé le plus célèbre ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "Nelson Mandela",
     incorrect_answers: ["Walter Sisulu", "Govan Mbeki", "Ahmed Kathrada"],
@@ -7967,7 +7971,7 @@ questions_data = [
   {
     content: "Quelle bataille de 1988 en Angola, impliquant les forces cubaines, angolaises et sud-africaines, est considérée comme un tournant ayant accéléré la fin de l'apartheid ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "La bataille de Cuito Cuanavale",
     incorrect_answers: ["La bataille de Cassinga", "La bataille du Pont 14", "L'opération Savannah"],
@@ -7976,21 +7980,21 @@ questions_data = [
   {
     content: "La 'Guerre des Sables' de 1963 était un conflit frontalier qui a opposé quels pays d'Afrique ?",
     difficulty: "difficile",
-    category: "CONFLITS, POLITIQUE ET GEOPOLITIQUE",
+    category: "Géopolitique",
     region: "Afrique",
     correct_answer: "L'Algérie et le Maroc",
     incorrect_answers: ["La Tunisie et la Libye", "L'Égypte et la Libye", "L'Algérie et la Tunisie"],
     contexte: "Ce conflit, né de revendications territoriales marocaines sur des zones du Sahara algérien, a jeté les bases d'une longue rivalité régionale."
   },
 
-  # ETHNIES, LANGUES, RELIGIONS, COUTUMES
+  # Cultures
 
-  # EUROPE - ETHNIES, LANGUES, RELIGIONS, COUTUMES via Gemini 2.5 Pro (VERIFEES)
+  # EUROPE - Cultures via Gemini 2.5 Pro (VERIFEES)
 
   {
     content: "Quelle est la religion majoritaire dans des pays comme l'Espagne, l'Italie et la Pologne ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Le Catholicisme",
     incorrect_answers: ["Le Protestantisme", "L'Orthodoxie", "L'Islam"],
@@ -7999,7 +8003,7 @@ questions_data = [
   {
     content: "Quelle famille de langues regroupe le français, l'espagnol, l'italien et le portugais ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Les langues romanes",
     incorrect_answers: ["Les langues germaniques", "Les langues slaves", "Les langues celtiques"],
@@ -8008,7 +8012,7 @@ questions_data = [
   {
     content: "Quelle famille de langues regroupe l'allemand, l'anglais et le suédois ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Les langues germaniques",
     incorrect_answers: ["Les langues romanes", "Les langues slaves", "Les langues finno-ougriennes"],
@@ -8017,7 +8021,7 @@ questions_data = [
   {
     content: "L'Oktoberfest est une célèbre fête de la bière qui a lieu chaque année dans quelle ville allemande ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Munich",
     incorrect_answers: ["Berlin", "Hambourg", "Cologne"],
@@ -8026,7 +8030,7 @@ questions_data = [
   {
     content: "Quelle religion est majoritaire en Grèce, en Russie et en Serbie ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Le Christianisme orthodoxe",
     incorrect_answers: ["Le Catholicisme", "Le Protestantisme", "Le Judaïsme"],
@@ -8035,7 +8039,7 @@ questions_data = [
   {
     content: "Le sauna est une tradition de bain de vapeur profondément ancrée dans la culture de quel pays nordique ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "La Finlande",
     incorrect_answers: ["L'Allemagne", "Le Royaume-Uni", "La Biélorussie"],
@@ -8044,7 +8048,7 @@ questions_data = [
   {
     content: "Le flamenco est une danse et une musique traditionnelles de quelle région d'Espagne ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'Andalousie",
     incorrect_answers: ["La Catalogne", "Le Pays Basque", "La Galice"],
@@ -8053,7 +8057,7 @@ questions_data = [
   {
     content: "Quelle est la principale branche du christianisme en Scandinavie et au nord de l'Allemagne ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Le Protestantisme",
     incorrect_answers: ["Le Catholicisme", "Les Coptes", "L'Orthodoxie"],
@@ -8062,7 +8066,7 @@ questions_data = [
   {
     content: "La cornemuse est l'instrument de musique emblématique de quel pays ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'Écosse",
     incorrect_answers: ["L'Irlande", "Le Pays de Galles", "La France (Bretagne)"],
@@ -8071,7 +8075,7 @@ questions_data = [
   {
     content: "Le russe, le polonais et le tchèque appartiennent à quelle grande famille de langues ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Les langues slaves",
     incorrect_answers: ["Les langues germaniques", "Les langues romanes", "Les langues baltes"],
@@ -8080,7 +8084,7 @@ questions_data = [
   {
     content: "La corrida, ou course de taureaux, est une tradition controversée principalement associée à quel pays ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'Espagne",
     incorrect_answers: ["Le Portugal", "L'Italie", "La France"],
@@ -8089,7 +8093,7 @@ questions_data = [
   {
     content: "Quel peuple autochtone vit principalement dans le nord de la Norvège, de la Suède, de la Finlande et en Russie ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Les Lapons",
     incorrect_answers: ["Les Basques", "Les Bretons", "Les Inuits"],
@@ -8098,7 +8102,7 @@ questions_data = [
   {
     content: "La fête de la Saint-Patrick, célébrée avec des défilés et la couleur verte, est la fête nationale de quel pays ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'Irlande",
     incorrect_answers: ["L'Écosse", "Le Royaume-Uni", "Les États-Unis"],
@@ -8107,7 +8111,7 @@ questions_data = [
   {
     content: "Le 'fado' est un genre musical mélancolique, chanté avec une guitare portugaise, typique de quelle ville ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Lisbonne",
     incorrect_answers: ["Porto", "Madrid", "Barcelone"],
@@ -8116,7 +8120,7 @@ questions_data = [
   {
     content: "Quel alphabet est utilisé pour écrire le russe, le serbe et le bulgare ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'alphabet cyrillique",
     incorrect_answers: ["L'alphabet latin", "L'alphabet grec", "L'alphabet arabe"],
@@ -8125,7 +8129,7 @@ questions_data = [
   {
     content: "La langue basque (Euskara), parlée dans les Pyrénées, est unique en Europe parce que...",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Elle n'a aucun lien de parenté avec d'autres langues",
     incorrect_answers: ["Elle n'a pas de forme écrite", "Plus de 10M de personnes l'utilisent", "Elle descend directement du latin"],
@@ -8134,7 +8138,7 @@ questions_data = [
   {
     content: "Les Roms sont un groupe ethnique nomade originaire de quelle région ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'Inde",
     incorrect_answers: ["L'Égypte", "La Roumanie", "La Perse"],
@@ -8143,7 +8147,7 @@ questions_data = [
   {
     content: "Le hongrois, le finnois et l'estonien appartiennent à quelle famille de langues non indo-européenne ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Les langues finno-ougriennes",
     incorrect_answers: ["Les langues turques", "Les langues sémitiques", "Les langues baltes"],
@@ -8152,7 +8156,7 @@ questions_data = [
   {
     content: "Le 'Walpurgisnacht', célébré avec des feux de joie, est une fête traditionnelle dans quels pays pour accueillir le printemps ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'Allemagne et la Suède",
     incorrect_answers: ["L'Espagne et le Portugal", "La Grèce et l'Italie", "L'Irlande et l'Écosse"],
@@ -8161,7 +8165,7 @@ questions_data = [
   {
     content: "La division entre catholiques et protestants a été au cœur d'un long conflit politique en quel lieu ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'Irlande du Nord",
     incorrect_answers: ["La Suisse", "Les Pays-Bas", "L'Allemagne"],
@@ -8170,7 +8174,7 @@ questions_data = [
   {
     content: "Quelle est la plus grande religion minoritaire en France et en Allemagne ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'Islam",
     incorrect_answers: ["Le Judaïsme", "Le Bouddhisme", "L'Hindouisme"],
@@ -8179,7 +8183,7 @@ questions_data = [
   {
     content: "Le 'schisme de 1054' a officiellement divisé quelles deux grandes branches du christianisme ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'Église catholique  et l'Église orthodoxe ",
     incorrect_answers: ["Le Catholicisme et le Protestantisme", "L'Arianisme et le Catholicisme", "Le Sunnisme et le Chiisme"],
@@ -8188,7 +8192,7 @@ questions_data = [
   {
     content: "Les langues gaéliques font partie de quelle famille linguistique ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Les langues celtiques",
     incorrect_answers: ["Les langues germaniques", "Les langues romanes", "Les langues nordiques"],
@@ -8197,7 +8201,7 @@ questions_data = [
   {
     content: "Le 'Midsommar' est une fête majeure en Suède célébrant quoi ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Le solstice d'été",
     incorrect_answers: ["Le début du printemps", "La fête nationale", "Les récoltes d'automne"],
@@ -8206,7 +8210,7 @@ questions_data = [
   {
     content: "La Sorabe est une langue minoritaire slave parlée dans quelle région d'Allemagne ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "La Lusace (Saxe et Brandebourg)",
     incorrect_answers: ["La Bavière", "La Forêt-Noire", "La Frise"],
@@ -8215,7 +8219,7 @@ questions_data = [
   {
     content: "La 'Sinterklaas', une fête où Saint Nicolas distribue des cadeaux, est une tradition majeure dans quel pays ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Les Pays-Bas",
     incorrect_answers: ["L'Allemagne", "La Pologne", "La Norvège"],
@@ -8224,7 +8228,7 @@ questions_data = [
   {
     content: "En Suisse, quelle n'est PAS l'une des quatre langues nationales ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'anglais",
     incorrect_answers: ["L'allemand", "Le français", "Le romanche"],
@@ -8233,7 +8237,7 @@ questions_data = [
   {
     content: "Le 'Krampus' est une figure folklorique bestiale qui accompagne Saint Nicolas pour punir les enfants désobéissants, dans quelle région alpine ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'Autriche et la Bavière",
     incorrect_answers: ["La Suisse", "La France", "L'Italie du Nord"],
@@ -8242,7 +8246,7 @@ questions_data = [
   {
     content: "Quelle est la religion d'État de l'Islande, du Danemark et de la Norvège ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Le luthéranisme",
     incorrect_answers: ["Le catholicisme", "Aucune", "L'orthodoxie"],
@@ -8251,7 +8255,7 @@ questions_data = [
   {
     content: "Le frison est une langue germanique minoritaire parlée principalement dans quelle région des Pays-Bas ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "La Frise (Fryslân)",
     incorrect_answers: ["La Hollande", "La Zélande", "Le Brabant"],
@@ -8260,7 +8264,7 @@ questions_data = [
   {
     content: "La 'Tarentelle' est une danse folklorique rapide du sud de l'Italie qui, selon la légende, était censée guérir quoi ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "La morsure d'une tarentule",
     incorrect_answers: ["Le chagrin d'amour", "La peste", "La folie"],
@@ -8269,7 +8273,7 @@ questions_data = [
   {
     content: "Les Cathares étaient les adeptes d'un mouvement chrétien considéré comme hérétique et anéanti lors d'une croisade. Dans quelle région de France vivaient-ils ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Le Languedoc",
     incorrect_answers: ["La Bretagne", "La Provence", "La Normandie"],
@@ -8278,7 +8282,7 @@ questions_data = [
   {
     content: "Quel est l'un des seuls pays d'Europe à majorité musulmane ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'Albanie",
     incorrect_answers: ["La Serbie", "La Bulgarie", "La Grèce"],
@@ -8287,7 +8291,7 @@ questions_data = [
   {
     content: "Le ladin et le frioulan sont deux langues romanes minoritaires parlées dans quelle région montagneuse d'Italie ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Les Dolomites et le Frioul",
     incorrect_answers: ["La Sicile", "La Sardaigne", "La Toscane"],
@@ -8296,7 +8300,7 @@ questions_data = [
   {
     content: "La 'Sizain', ou chant polyphonique géorgien, est unique et a été reconnue par l'UNESCO. Qu'est-ce qui la caractérise ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Une technique de yodel et des harmonies complexes",
     incorrect_answers: ["L'utilisation d'un seul instrument", "Le chant à une seule voix", "Des paroles uniquement religieuses"],
@@ -8305,7 +8309,7 @@ questions_data = [
   {
     content: "L'aroumain est une langue romane orientale parlée par des communautés dispersées dans quelle région ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Les Balkans (Grèce, Albanie, Macédoine du Nord)",
     incorrect_answers: ["L'Espagne", "Le sud de la France", "La Roumanie"],
@@ -8314,7 +8318,7 @@ questions_data = [
   {
     content: "Le 'calcio storico' est une forme ancienne et violente de football jouée chaque année dans quelle ville italienne ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "Florence",
     incorrect_answers: ["Rome", "Sienne", "Vérone"],
@@ -8323,7 +8327,7 @@ questions_data = [
   {
     content: "Les Vieux-croyants sont un groupe religieux qui s'est séparé de l'Église orthodoxe de quel pays au 17e siècle ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "La Russie",
     incorrect_answers: ["La Grèce", "La Serbie", "La Roumanie"],
@@ -8332,19 +8336,19 @@ questions_data = [
   {
     content: "Le manx, une langue celtique, a connu une renaissance après la mort de son dernier locuteur natif en 1974. Sur quelle île est-elle parlée ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Europe",
     correct_answer: "L'île de Man",
     incorrect_answers: ["L'île de Wight", "Les Hébrides", "Les îles Anglo-Normandes"],
     contexte: "L'île de Man, une dépendance de la Couronne britannique, a mené des efforts couronnés de succès pour faire revivre sa langue indigène."
   },
 
-  # AFRIQUE - Ethnies, langues, religions, coutumes (VERIFIEES)
+  # AFRIQUE - Cultures (VERIFIEES)
 
   {
     content: "Quelle est la religion majoritaire en Afrique du Nord, notamment en Égypte, en Algérie et au Maroc ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "L'Islam",
     incorrect_answers: ["Le Christianisme", "Le Judaïsme", "L'Animisme"],
@@ -8353,7 +8357,7 @@ questions_data = [
   {
     content: "Le swahili est une langue bantoue largement parlée dans quelle région d'Afrique ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "L'Afrique de l'Est",
     incorrect_answers: ["L'Afrique de l'Ouest", "L'Afrique du Nord", "L'Afrique australe"],
@@ -8362,7 +8366,7 @@ questions_data = [
   {
     content: "Quel groupe ethnique est principalement associé à la région du KwaZulu-Natal en Afrique du Sud ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Les Zoulous",
     incorrect_answers: ["Les Xhosa", "Les Sotho", "Les Afrikaners"],
@@ -8371,7 +8375,7 @@ questions_data = [
   {
     content: "Quelle religion est majoritaire dans la majeure partie de l'Afrique subsaharienne ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Le Christianisme",
     incorrect_answers: ["L'Islam", "L'Animisme", "L'Hindouisme"],
@@ -8380,7 +8384,7 @@ questions_data = [
   {
     content: "L'arabe est la langue officielle de nombreux pays situés dans quelle grande région africaine ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "L'Afrique du Nord",
     incorrect_answers: ["L'Afrique de l'Ouest", "L'Afrique Centrale", "L'Afrique australe"],
@@ -8389,7 +8393,7 @@ questions_data = [
   {
     content: "Les Massaïs sont un groupe ethnique semi-nomade célèbre pour ses guerriers et son élevage de bétail. Dans quels deux pays vivent-ils principalement ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Le Kenya et la Tanzanie",
     incorrect_answers: ["L'Éthiopie et la Somalie", "L'Afrique du Sud et le Zimbabwe", "Le Nigeria et le Ghana"],
@@ -8398,7 +8402,7 @@ questions_data = [
   {
     content: "Le 'fufu' (ou 'ugali') est un aliment de base, une sorte de pâte ou de purée, consommé dans de vastes régions de quelle partie de l'Afrique ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "L'Afrique de l'Ouest et Centrale",
     incorrect_answers: ["L'Afrique du Nord", "L'Afrique australe", "La Corne de l'Afrique"],
@@ -8407,7 +8411,7 @@ questions_data = [
   {
     content: "Quelle langue est la langue officielle de l'Angola et du Mozambique ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Le portugais",
     incorrect_answers: ["L'espagnol", "Le français", "L'anglais"],
@@ -8416,7 +8420,7 @@ questions_data = [
   {
     content: "La culture du vaudou est une culture traditionnelle originaire de quelle région d'Afrique ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "L'Afrique de l'Ouest (notamment le Bénin et le Togo)",
     incorrect_answers: ["L'Afrique de l'Est", "L'Afrique du Nord", "L'Afrique Centrale"],
@@ -8425,7 +8429,7 @@ questions_data = [
   {
     content: "Les Berbères (Amazighs) sont le peuple autochtone de quelle région ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "L'Afrique du Nord (Maghreb)",
     incorrect_answers: ["Le Sahel", "La Corne de l'Afrique", "L'Afrique de l'Ouest"],
@@ -8434,7 +8438,7 @@ questions_data = [
   {
     content: "Le 'kente' est un tissu coloré aux motifs complexes, tissé à la main par quel groupe ethnique ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Les Ashantis (au Ghana)",
     incorrect_answers: ["Les Yorubas (au Nigeria)", "Les Zoulous (en Afrique du Sud)", "Les Wolofs (au Sénégal)"],
@@ -8443,7 +8447,7 @@ questions_data = [
   {
     content: "Quel instrument de musique, une harpe-luth à 21 cordes, est emblématique de la culture mandingue en Afrique de l'Ouest ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "La kora",
     incorrect_answers: ["Le djembé", "Le balafon", "La mbira"],
@@ -8452,7 +8456,7 @@ questions_data = [
   {
     content: "Quelle grande famille linguistique regroupe des centaines de langues parlées dans la majeure partie de l'Afrique subsaharienne, dont le zoulou et le swahili ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Les langues bantoues",
     incorrect_answers: ["Les langues nilo-sahariennes", "Les langues afro-asiatiques", "Les langues khoïsan"],
@@ -8461,7 +8465,7 @@ questions_data = [
   {
     content: "L'injera, une grande crêpe aigre, est l'aliment de base et le plat national de quels deux pays de la Corne de l'Afrique ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "L'Éthiopie et l'Érythrée",
     incorrect_answers: ["La Somalie et Djibouti", "Le Soudan et le Soudan du Sud", "Le Kenya et la Tanzanie"],
@@ -8470,7 +8474,7 @@ questions_data = [
   {
     content: "Quelle langue européenne est largement utilisée comme langue officielle et de communication en Afrique de l'Ouest et Centrale ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Le français",
     incorrect_answers: ["L'anglais", "Le portugais", "L'espagnol"],
@@ -8479,7 +8483,7 @@ questions_data = [
   {
     content: "Les Xhosa sont un groupe ethnique d'Afrique du Sud. Leur langue est célèbre pour...",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Ses consonnes à clics",
     incorrect_answers: ["N'avoir que trois voyelles", "Être une langue tonale", "N'avoir pas de pluriel"],
@@ -8488,7 +8492,7 @@ questions_data = [
   {
     content: "L'Église éthiopienne orthodoxe est l'une des plus anciennes Églises chrétiennes du monde. Quelle est sa particularité ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Elle a son propre pape et des traditions juives",
     incorrect_answers: ["Elle ne reconnaît pas Jésus", "Elle n'utilise pas de croix", "Ses services sont en latin"],
@@ -8497,7 +8501,7 @@ questions_data = [
   {
     content: "Le 'wolof' est la langue principale de quel pays d'Afrique de l'Ouest ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Le Sénégal",
     incorrect_answers: ["Le Nigeria", "Le Ghana", "La Côte d'Ivoire"],
@@ -8506,7 +8510,7 @@ questions_data = [
   {
     content: "Le 'braai' est une coutume sociale importante en Afrique du Sud. De quoi s'agit-il ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Un barbecue",
     incorrect_answers: ["Une danse traditionnelle", "Une cérémonie de mariage", "La lecture pour aveugles"],
@@ -8515,7 +8519,7 @@ questions_data = [
   {
     content: "Quel peuple nomade du Sahara et du Sahel est célèbre pour ses hommes portant un voile indigo, les 'hommes bleus' ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Les Touaregs",
     incorrect_answers: ["Les Peuls", "Les Berbères", "Les Maures"],
@@ -8524,7 +8528,7 @@ questions_data = [
   {
     content: "L'afrikaans est une langue germanique dérivée principalement de quelle langue européenne ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Le néerlandais",
     incorrect_answers: ["L'allemand", "L'anglais", "Le français"],
@@ -8533,7 +8537,7 @@ questions_data = [
   {
     content: "Le 'Grand Zimbabwe' était la capitale d'un grand royaume médiéval construit par quel peuple ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Le peuple Shona",
     incorrect_answers: ["Le peuple Zoulou", "Le peuple Swazi", "Le peuple Ndebele"],
@@ -8542,7 +8546,7 @@ questions_data = [
   {
     content: "Le 'Nollywood' est le surnom de l'industrie cinématographique prolifique de quel pays ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Le Nigeria",
     incorrect_answers: ["L'Afrique du Sud", "La Namibie", "L'Égypte"],
@@ -8551,7 +8555,7 @@ questions_data = [
   {
     content: "Les Dogons sont un peuple du Mali célèbre pour...",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Leurs connaissances astronomiques et leurs masques de cérémonie",
     incorrect_answers: ["Leurs pyramides en terre", "Leurs compétences en navigation", "Leur musique polyphonique"],
@@ -8560,7 +8564,7 @@ questions_data = [
   {
     content: "La religion rastafari, bien que développée en Jamaïque, vénère quel empereur éthiopien comme une figure messianique ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Haïlé Sélassié Ier",
     incorrect_answers: ["Ménélik II", "Théodros II", "Bob Marley"],
@@ -8569,7 +8573,7 @@ questions_data = [
   {
     content: "Le 'lobola' ou 'dot' est une coutume dans de nombreuses cultures d'Afrique australe. Qu'est-ce que c'est ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Le prix de la fiancée, souvent payé en bétail",
     incorrect_answers: ["Un rite de passage à l'âge adulte", "Une cérémonie de funérailles", "Un festival des récoltes"],
@@ -8578,7 +8582,7 @@ questions_data = [
   {
     content: "Les Yorubas sont l'un des plus grands groupes ethniques d'Afrique, vivant principalement dans quels deux pays ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Le Nigeria et le Bénin",
     incorrect_answers: ["Le Ghana et le Togo", "Le Cameroun et le Gabon", "Le Sénégal et la Gambie"],
@@ -8587,7 +8591,7 @@ questions_data = [
   {
     content: "Quel est le seul pays d'Afrique où l'espagnol est une langue officielle ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "La Guinée Équatoriale",
     incorrect_answers: ["Le Sahara Occidental", "Le Maroc", "L'Angola"],
@@ -8596,7 +8600,7 @@ questions_data = [
   {
     content: "Les Coptes sont la principale minorité religieuse de quel pays ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "L'Égypte",
     incorrect_answers: ["L'Éthiopie", "Le Soudan", "La Libye"],
@@ -8605,7 +8609,7 @@ questions_data = [
   {
     content: "Les San (ou Bochimans) sont un peuple indigène d'Afrique australe connu pour...",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Leur mode de vie de chasseurs-cueilleurs et leurs langues à clics",
     incorrect_answers: ["Leur agriculture en terrasses", "Leurs empires centralisés", "Leur tradition de momification"],
@@ -8614,7 +8618,7 @@ questions_data = [
   {
     content: "L'amharique est la langue de travail officielle et une langue sémitique parlée dans quel pays ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "L'Éthiopie",
     incorrect_answers: ["L'Érythrée", "La Somalie", "Le Soudan"],
@@ -8623,7 +8627,7 @@ questions_data = [
   {
     content: "Le 'griot' est une figure sociale importante en Afrique de l'Ouest. Quel est son rôle ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Un poète, musicien et gardien de la tradition orale",
     incorrect_answers: ["Un chef de guerre", "Un prêtre animiste", "Un juge de village"],
@@ -8632,7 +8636,7 @@ questions_data = [
   {
     content: "Les Pygmées sont des peuples de chasseurs-cueilleurs caractérisés par leur petite taille, qui vivent principalement dans...",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "La forêt tropicale du bassin du Congo",
     incorrect_answers: ["Le désert du Kalahari", "Les hauts plateaux éthiopiens", "La savane d'Afrique de l'Est"],
@@ -8641,7 +8645,7 @@ questions_data = [
   {
     content: "Quelle est la particularité du calendrier éthiopien ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Il compte 13 mois et a environ 7 ans de retard sur le calendrier grégorien",
     incorrect_answers: ["Il est purement lunaire", "Il ne compte que 10 mois", "Il n'est pas utilisé en Ethiopie"],
@@ -8650,7 +8654,7 @@ questions_data = [
   {
     content: "Le malgache, la langue de Madagascar, n'est pas apparentée aux langues africaines mais à quelle famille de langues ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Les langues austronésiennes (comme le malais)",
     incorrect_answers: ["Les langues bantoues", "Les langues indo-européennes", "Les langues sémitiques"],
@@ -8659,7 +8663,7 @@ questions_data = [
   {
     content: "La 'Cérémonie du thé' est une coutume majeure au Japon, mais quel pays africain a une cérémonie du thé tout aussi complexe et socialement importante ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "La Mauritanie (et une grande partie du Sahel)",
     incorrect_answers: ["Le Rwanda", "L'Afrique du Sud", "Le Kenya"],
@@ -8668,7 +8672,7 @@ questions_data = [
   {
     content: "Les 'falashas' ou 'Beta Israel' sont une communauté juive originaire de quel pays ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "L'Éthiopie",
     incorrect_answers: ["Le Maroc", "La Tunisie", "L'Afrique du Sud"],
@@ -8677,7 +8681,7 @@ questions_data = [
   {
     content: "L'art des bronzes d'Ifé et du Bénin, d'une grande sophistication technique, est associé à quels peuples et pays ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Les peuples Yoruba et Edo (Nigeria)",
     incorrect_answers: ["Les peuples Ashanti et Fanti (Ghana)", "Les peuples Bamoun et Bamiléké (Cameroun)", "Les peuples Dogon et Bambara (Mali)"],
@@ -8686,7 +8690,7 @@ questions_data = [
   {
     content: "Les langues khoïsan, parlées par les San et les Khoikhoi, sont presque uniques au monde en raison de leur utilisation intensive de quoi ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "Les consonnes à clics comme phonèmes de base",
     incorrect_answers: ["Un système de voyelles à 12 tons", "L'absence de verbes", "Une grammaire basée sur les gestes"],
@@ -8695,19 +8699,19 @@ questions_data = [
   {
     content: "Le 'Zar' est un culte de possession spirituelle pratiqué principalement par les femmes dans quels pays ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Afrique",
     correct_answer: "L'Égypte, le Soudan et l'Éthiopie",
     incorrect_answers: ["Le Nigeria, le Ghana et le Bénin", "L'Afrique du Sud, le Lesotho et Eswatini", "Le Maroc, l'Algérie et la Tunisie"],
     contexte: "À travers des cérémonies de musique et de danse, les adeptes cherchent à apaiser les esprits qui les possèdent pour guérir des maladies."
   },
 
-  # AMERIQUE - Ethnies, langues, religions, coutumes
+  # Amérique - CULTURES
 
   {
     content: "Quelle est la religion majoritaire sur le continent américain, introduite par la colonisation européenne ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le Christianisme",
     incorrect_answers: ["L'Islam", "Le Judaïsme", "Les religions autochtones"],
@@ -8716,7 +8720,7 @@ questions_data = [
   {
     content: "Quelle langue romane est la plus parlée en Amérique du Sud ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "L'espagnol",
     incorrect_answers: ["Le portugais", "Le français", "L'italien"],
@@ -8725,7 +8729,7 @@ questions_data = [
   {
     content: "Quelle langue germanique est la langue la plus parlée aux États-Unis et au Canada ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "L'anglais",
     incorrect_answers: ["L'allemand", "Le néerlandais", "Le français"],
@@ -8734,7 +8738,7 @@ questions_data = [
   {
     content: "Thanksgiving (Action de grâce) est une fête majeure célébrée principalement dans quels deux pays ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Les États-Unis et le Canada",
     incorrect_answers: ["Le Mexique et le Brésil", "Le Royaume-Uni et l'Australie", "L'Argentine et le Chili"],
@@ -8743,7 +8747,7 @@ questions_data = [
   {
     content: "Le Carnaval de Rio, avec ses défilés de samba grandioses, est une célébration célèbre dans quel pays ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le Brésil",
     incorrect_answers: ["L'Argentine", "La Colombie", "Le Mexique"],
@@ -8752,7 +8756,7 @@ questions_data = [
   {
     content: "Quelle langue romane est la langue officielle du Brésil ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le portugais",
     incorrect_answers: ["L'espagnol", "Le français", "L'italien"],
@@ -8761,7 +8765,7 @@ questions_data = [
   {
     content: "Le 'Día de los Muertos' (Jour des Morts) est une fête colorée célébrant les défunts, principalement associée à quel pays ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le Mexique",
     incorrect_answers: ["L'Espagne", "Le Pérou", "La Colombie"],
@@ -8770,7 +8774,7 @@ questions_data = [
   {
     content: "Les Inuits sont le peuple autochtone des régions arctiques de quels territoires ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le Canada, le Groenland et l'Alaska",
     incorrect_answers: ["La Patagonie", "La Sibérie", "La Scandinavie"],
@@ -8779,7 +8783,7 @@ questions_data = [
   {
     content: "La 'Pampa' est une vaste plaine associée à la figure du 'gaucho', le cow-boy de quel pays ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "L'Argentine",
     incorrect_answers: ["Le Brésil", "Le Mexique", "Les États-Unis"],
@@ -8788,7 +8792,7 @@ questions_data = [
   {
     content: "Quelle langue est, aux côtés de l'anglais, l'une des deux langues officielles du Canada ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le français",
     incorrect_answers: ["L'espagnol", "L'allemand", "Le gaélique"],
@@ -8797,7 +8801,7 @@ questions_data = [
   {
     content: "La 'Santería' et le 'Candomblé' sont des religions syncrétiques qui mélangent le catholicisme avec les croyances traditionnelles de quel groupe ethnique ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Les Yorubas (d'Afrique de l'Ouest)",
     incorrect_answers: ["Les Incas", "Les Aztèques", "Les Mayas"],
@@ -8806,7 +8810,7 @@ questions_data = [
   {
     content: "Le 'pow-wow' est un rassemblement social et cérémoniel important pour quels peuples ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Les peuples autochtones d'Amérique du Nord (Amérindiens)",
     incorrect_answers: ["Les Maoris", "Les Samis", "Les Aborigènes d'Australie"],
@@ -8815,7 +8819,7 @@ questions_data = [
   {
     content: "La 'Mardi Gras' est une grande célébration de carnaval qui a lieu dans quelle ville américaine, célèbre pour son héritage français ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "La Nouvelle-Orléans (New Orleans)",
     incorrect_answers: ["Miami", "Las Vegas", "Chicago"],
@@ -8824,7 +8828,7 @@ questions_data = [
   {
     content: "Le 'hockey sur glace' est considéré comme le sport national de quel pays ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le Canada",
     incorrect_answers: ["Les États-Unis", "La Russie", "La Suède"],
@@ -8833,7 +8837,7 @@ questions_data = [
   {
     content: "Le Quechua est une langue indigène encore largement parlée dans quelle chaîne de montagnes ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "La Cordillère des Andes",
     incorrect_answers: ["Les Montagnes Rocheuses", "La Sierra Madre", "Les Appalaches"],
@@ -8842,7 +8846,7 @@ questions_data = [
   {
     content: "Les Mennonites et les Amish sont des communautés religieuses anabaptistes qui parlent un dialecte de quelle langue ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "L'allemand (allemand de Pennsylvanie)",
     incorrect_answers: ["Le néerlandais", "L'anglais", "Le suisse allemand"],
@@ -8851,7 +8855,7 @@ questions_data = [
   {
     content: "La Capoeira est un art martial afro-brésilien qui combine des éléments de danse et d'acrobatie. Par qui a-t-elle été développée ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Par les esclaves africains au Brésil",
     incorrect_answers: ["Par les indigènes d'Amazonie", "Par les immigrants portugais", "Par les moines bouddhistes"],
@@ -8860,7 +8864,7 @@ questions_data = [
   {
     content: "Quelle est la deuxième langue la plus parlée aux États-Unis ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "L'espagnol",
     incorrect_answers: ["Le chinois", "Le français", "L'allemand"],
@@ -8869,7 +8873,7 @@ questions_data = [
   {
     content: "Le 'calypso' et le 'soca' sont des genres musicaux qui trouvent leur origine dans quel pays insulaire des Caraïbes ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Trinité-et-Tobago",
     incorrect_answers: ["La Jamaïque", "Cuba", "Haïti"],
@@ -8878,7 +8882,7 @@ questions_data = [
   {
     content: "Le peuple 'Garifuna', qui a une culture et une langue uniques, est issu du métissage entre quels groupes ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Les Arawaks, les Kalinagos et les Africains",
     incorrect_answers: ["Les Espagnols et les Mayas", "Les Français et les Aztèques", "Les Incas et les Portugais"],
@@ -8887,7 +8891,7 @@ questions_data = [
   {
     content: "Le 'vaudou haïtien' est une religion syncrétique qui combine les croyances d'Afrique de l'Ouest avec quel autre système de croyance ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le Catholicisme romain",
     incorrect_answers: ["Le Protestantisme", "L'Islam", "Le Judaïsme"],
@@ -8896,7 +8900,7 @@ questions_data = [
   {
     content: "Les 'cinco de Mayo' est une fête qui commémore une victoire militaire mexicaine contre quelle puissance européenne ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "La France",
     incorrect_answers: ["L'Espagne", "L'Angleterre", "L'Autriche"],
@@ -8905,7 +8909,7 @@ questions_data = [
   {
     content: "Quel peuple autochtone a formé un grand empire dans les Andes avant l'arrivée des Espagnols ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Les Incas",
     incorrect_answers: ["Les Aztèques", "Les Mayas", "Les Mapuches"],
@@ -8914,7 +8918,7 @@ questions_data = [
   {
     content: "Le protestantisme évangélique connaît une croissance très rapide, en particulier dans quelle région des Amériques ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "L'Amérique centrale et le Brésil",
     incorrect_answers: ["Le Canada", "Les Caraïbes", "L'Argentine"],
@@ -8923,7 +8927,7 @@ questions_data = [
   {
     content: "Le créole haïtien est une langue basée principalement sur quelle langue européenne ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le français",
     incorrect_answers: ["L'espagnol", "Le portugais", "L'anglais"],
@@ -8932,7 +8936,7 @@ questions_data = [
   {
     content: "La 'Pachamama' est une divinité importante, représentant la Terre-Mère, pour quels peuples ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Les peuples andins (Quechuas, Aymaras)",
     incorrect_answers: ["Les peuples amazoniens", "Les peuples d'Amérique du Nord", "Les peuples des Caraïbes"],
@@ -8941,7 +8945,7 @@ questions_data = [
   {
     content: "Le 'reggae' est un style musical mondialement connu qui a émergé dans quel pays des Caraïbes ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "La Jamaïque",
     incorrect_answers: ["Cuba", "Haïti", "Trinité-et-Tobago"],
@@ -8950,7 +8954,7 @@ questions_data = [
   {
     content: "Quel groupe indigène était dominant dans la vallée de Mexico au moment de l'arrivée des conquistadors espagnols ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Les Aztèques",
     incorrect_answers: ["Les Mayas", "Les Incas", "Les Zapotèques"],
@@ -8959,7 +8963,7 @@ questions_data = [
   {
     content: "La 'cabane à sucre' est une tradition printanière associée à la récolte de la sève d'érable dans quelle province canadienne ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le Québec",
     incorrect_answers: ["L'Ontario", "La Colombie-Britannique", "L'Alberta"],
@@ -8968,7 +8972,7 @@ questions_data = [
   {
     content: "Le 'Spanglish' est un sociolecte qui mélange quelles deux langues ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "L'espagnol (Spanish) et l'anglais (English)",
     incorrect_answers: ["L'espagnol et le portugais", "L'espagnol et le français", "L'espagnol et le néerlandais"],
@@ -8977,7 +8981,7 @@ questions_data = [
   {
     content: "Le peuple 'Mapuche' est le principal groupe indigène du sud de quels deux pays ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le Chili et l'Argentine",
     incorrect_answers: ["Le Pérou et la Bolivie", "Le Brésil et le Paraguay", "L'Équateur et la Colombie"],
@@ -8986,7 +8990,7 @@ questions_data = [
   {
     content: "Le 'Gullah' ou 'Geechee' est une langue créole parlée par des communautés afro-américaines dans quelle région des États-Unis ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Les 'Lowcountry' de Caroline du Sud et de Géorgie",
     incorrect_answers: ["La Louisiane", "Le delta du Mississippi", "Les Appalaches"],
@@ -8995,7 +8999,7 @@ questions_data = [
   {
     content: "La civilisation 'maya', connue pour son écriture, son art et son astronomie, a prospéré dans une région qui couvre le sud du Mexique et quels autres pays ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le Guatemala, le Belize, le Honduras et le Salvador",
     incorrect_answers: ["Le Costa Rica et le Panama", "Le Nicaragua et le Honduras", "Cuba et la Jamaïque"],
@@ -9004,7 +9008,7 @@ questions_data = [
   {
     content: "Quelle est la religion non chrétienne la plus pratiquée aux États-Unis ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le Judaïsme",
     incorrect_answers: ["L'Islam", "Le Bouddhisme", "L'Hindouisme"],
@@ -9013,7 +9017,7 @@ questions_data = [
   {
     content: "Le 'Guarani' est une langue amérindienne qui a le statut de langue officielle aux côtés de l'espagnol dans quel pays ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Le Paraguay",
     incorrect_answers: ["L'Uruguay", "La Bolivie", "L'Argentine"],
@@ -9022,7 +9026,7 @@ questions_data = [
   {
     content: "Les 'Métis' au Canada sont un groupe autochtone reconnu, issu de l'union de quels peuples ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Des colons européens (principalement français) et des femmes des Premières Nations",
     incorrect_answers: ["Des Inuits et des Européens", "Des Africains et des Européens", "Des Asiatiques et des Européens"],
@@ -9031,7 +9035,7 @@ questions_data = [
   {
     content: "Quelle coutume de potlatch, impliquant des festins et des dons de cadeaux somptueux, était une caractéristique centrale des sociétés autochtones de quelle région ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "La côte du Pacifique Nord-Ouest (Colombie-Britannique, Alaska)",
     incorrect_answers: ["Les Grandes Plaines", "L'Amazonie", "Les Andes"],
@@ -9040,7 +9044,7 @@ questions_data = [
   {
     content: "Le 'Lunfardo' est un argot qui s'est développé à la fin du 19e siècle dans la classe ouvrière de quelle ville, avec une forte influence italienne ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Buenos Aires",
     incorrect_answers: ["São Paulo", "New York", "Montréal"],
@@ -9049,7 +9053,7 @@ questions_data = [
   {
     content: "Quelle est la plus grande communauté religieuse au Canada après le christianisme ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "Les personnes sans affiliation religieuse ('sans religion')",
     incorrect_answers: ["L'Islam", "Le Judaïsme", "L'Hindouisme"],
@@ -9058,19 +9062,19 @@ questions_data = [
   {
     content: "La 'Mormon Corridor' est une région où la majorité des habitants sont membres de l'Église de Jésus-Christ des Saints des Derniers Jours. Elle s'étend principalement dans quel État américain ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Amérique",
     correct_answer: "L'Utah",
     incorrect_answers: ["Le Texas", "La Californie", "La Floride"],
     contexte: "Cette région a été colonisée par les pionniers mormons au 19e siècle, sous la direction de Brigham Young."
   },
 
-  # ASIE - Ethnies, langues, religions, coutumes
+  # ASIE - Cultures
 
 {
     content: "Quelle est la religion majoritaire en Inde, connue pour ses concepts de karma et de réincarnation ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'Hindouisme",
     incorrect_answers: ["Le Bouddhisme", "L'Islam", "Le Sikhisme"],
@@ -9079,7 +9083,7 @@ questions_data = [
   {
     content: "Quelle religion, fondée par Siddhartha Gautama, est prédominante en Thaïlande, au Cambodge et au Myanmar ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Le Bouddhisme",
     incorrect_answers: ["L'Hindouisme", "Le Shintoïsme", "Le Jaïnisme"],
@@ -9088,7 +9092,7 @@ questions_data = [
   {
     content: "Quelle est la religion la plus pratiquée en Indonésie, le plus grand pays musulman du monde ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'Islam",
     incorrect_answers: ["Le Bouddhisme", "Le Christianisme", "L'Hindouisme"],
@@ -9097,7 +9101,7 @@ questions_data = [
   {
     content: "Le 'kimono' est un vêtement traditionnel emblématique de quel pays ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Le Japon",
     incorrect_answers: ["La Chine", "La Corée", "Le Vietnam"],
@@ -9106,7 +9110,7 @@ questions_data = [
   {
     content: "Le 'hanbok' est le vêtement traditionnel coloré de quel pays de la péninsule asiatique ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "La Corée",
     incorrect_answers: ["Le Japon", "La Chine", "La Thaïlande"],
@@ -9115,7 +9119,7 @@ questions_data = [
   {
     content: "Quel animal est considéré comme sacré dans la religion hindoue ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "La vache",
     incorrect_answers: ["Le singe", "Le tigre", "L'éléphant"],
@@ -9124,7 +9128,7 @@ questions_data = [
   {
     content: "Quelle est la langue la plus parlée au monde en termes de locuteurs natifs ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Le mandarin",
     incorrect_answers: ["L'anglais", "L'hindi", "L'espagnol"],
@@ -9133,7 +9137,7 @@ questions_data = [
   {
     content: "La fête de 'Diwali', le festival des lumières, est l'une des fêtes les plus importantes de quelle religion ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'Hindouisme",
     incorrect_answers: ["Le Bouddhisme", "L'Islam", "Le Shintoïsme"],
@@ -9142,7 +9146,7 @@ questions_data = [
   {
     content: "Les 'baguettes' sont les principaux ustensiles de repas dans de nombreux pays de quelle région ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'Asie de l'Est",
     incorrect_answers: ["L'Asie du Sud", "Le Moyen-Orient", "L'Asie Centrale"],
@@ -9151,7 +9155,7 @@ questions_data = [
   {
     content: "Le 'shintoïsme' est la religion ethnique indigène de quel pays ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Le Japon",
     incorrect_answers: ["La Chine", "La Thaïlande", "L'Inde"],
@@ -9160,7 +9164,7 @@ questions_data = [
   {
     content: "Quelle ville sainte, destination du pèlerinage du 'Hajj', se trouve en Arabie Saoudite ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "La Mecque",
     incorrect_answers: ["Jérusalem", "Médine", "Dubaï"],
@@ -9169,7 +9173,7 @@ questions_data = [
   {
     content: "Le 'sari' est un vêtement féminin drapé, traditionnel de quel pays ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'Inde",
     incorrect_answers: ["La Thaïlande", "Le Japon", "L'Indonésie"],
@@ -9178,7 +9182,7 @@ questions_data = [
   {
     content: "Le 'Ramadan' est un mois de jeûne, de prière et de réflexion observé par les adeptes de quelle religion ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'Islam",
     incorrect_answers: ["Le Judaïsme", "L'Hindouisme", "Le Bouddhisme"],
@@ -9187,7 +9191,7 @@ questions_data = [
   {
     content: "Quel groupe ethnique constitue la majorité de la population chinoise ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Les Hans",
     incorrect_answers: ["Les Mongols", "Les Tibétains", "Les Ouïghours"],
@@ -9196,7 +9200,7 @@ questions_data = [
   {
     content: "Le 'yoga', une pratique spirituelle et physique, a ses origines dans quel pays ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'Inde",
     incorrect_answers: ["La Chine", "Le Japon", "La Thaïlande"],
@@ -9205,7 +9209,7 @@ questions_data = [
   {
     content: "Le sikhisme est une religion monothéiste fondée au 15e siècle dans quelle région de l'Inde ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Le Pendjab",
     incorrect_answers: ["Le Cachemire", "Le Rajasthan", "Le Bengale"],
@@ -9214,7 +9218,7 @@ questions_data = [
   {
     content: "La 'Cérémonie du thé' (Chanoyu) est un rituel traditionnel et esthétique de quel pays ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Le Japon",
     incorrect_answers: ["La Chine", "L'Inde", "Le Sri Lanka"],
@@ -9223,7 +9227,7 @@ questions_data = [
   {
     content: "Quelle langue a donné naissance à de nombreuses langues d'Asie du Sud et du Sud-Est, et est la langue des textes sacrés de l'hindouisme ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Le sanskrit",
     incorrect_answers: ["Le pali", "Le tamoul", "Le prakrit"],
@@ -9232,7 +9236,7 @@ questions_data = [
   {
     content: "Le 'Songkran' est le festival du Nouvel An traditionnel de quel pays, célèbre pour ses batailles d'eau géantes ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "La Thaïlande",
     incorrect_answers: ["Le Vietnam", "L'Indonésie", "Les Philippines"],
@@ -9241,7 +9245,7 @@ questions_data = [
   {
     content: "Le 'judaïsme' est la religion principale de quel pays du Moyen-Orient ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Israël",
     incorrect_answers: ["Le Liban", "La Jordanie", "La Syrie"],
@@ -9250,7 +9254,7 @@ questions_data = [
   {
     content: "Le 'Dalai Lama' est le chef spirituel de quelle branche du bouddhisme ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Le bouddhisme tibétain",
     incorrect_answers: ["Le bouddhisme zen", "Le bouddhisme theravada", "Le bouddhisme mahayana"],
@@ -9259,7 +9263,7 @@ questions_data = [
   {
     content: "Les Bédouins sont un peuple nomade qui vit traditionnellement dans quel type d'environnement ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Les déserts du Moyen-Orient",
     incorrect_answers: ["Les jungles d'Asie du Sud-Est", "Les steppes d'Asie centrale", "Les montagnes de l'Himalaya"],
@@ -9268,7 +9272,7 @@ questions_data = [
   {
     content: "Le 'système des castes' est une hiérarchie sociale traditionnelle associée à quelle religion et pays ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'Hindouisme, en Inde",
     incorrect_answers: ["Le Bouddhisme, en Thaïlande", "L'Islam, en Indonésie", "Le Shintoïsme, au Japon"],
@@ -9277,7 +9281,7 @@ questions_data = [
   {
     content: "Quelle est la langue officielle du Pakistan, bien que l'anglais soit également largement utilisé ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'ourdou",
     incorrect_answers: ["Le pendjabi", "Le pachto", "Le sindhi"],
@@ -9286,7 +9290,7 @@ questions_data = [
   {
     content: "Les Ouïghours sont un groupe ethnique turcophone, majoritairement musulman, qui vit principalement dans quelle région de Chine ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Le Xinjiang",
     incorrect_answers: ["Le Tibet", "La Mongolie-Intérieure", "Le Yunnan"],
@@ -9295,7 +9299,7 @@ questions_data = [
   {
     content: "Le 'kebaya' est une blouse traditionnelle portée par les femmes dans quels pays d'Asie du Sud-Est ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'Indonésie et la Malaisie",
     incorrect_answers: ["Le Vietnam et la Thaïlande", "Les Philippines et le Cambodge", "Le Japon et la Corée"],
@@ -9304,7 +9308,7 @@ questions_data = [
   {
     content: "Quelle est la principale différence entre l'Islam sunnite et l'Islam chiite ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "La succession du prophète Mahomet",
     incorrect_answers: ["Le nombre de prières quotidiennes", "Le livre saint utilisé", "L'interdiction de l'alcool"],
@@ -9313,7 +9317,7 @@ questions_data = [
   {
     content: "Le 'Galungan' est une fête balinaise importante qui célèbre la victoire du 'dharma' (le bien) sur l' 'adharma' (le mal). Quelle religion est pratiquée à Bali ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'Hindouisme",
     incorrect_answers: ["Le Bouddhisme", "L'Animisme", "L'Islam"],
@@ -9322,7 +9326,7 @@ questions_data = [
   {
     content: "Le 'sumo' est un sport de lutte traditionnel et un rituel religieux de quel pays ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Le Japon",
     incorrect_answers: ["La Chine", "La Mongolie", "La Corée"],
@@ -9331,7 +9335,7 @@ questions_data = [
   {
     content: "Le zoroastrisme, l'une des plus anciennes religions monothéistes du monde, est originaire de quelle région ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'ancienne Perse (Iran)",
     incorrect_answers: ["L'Inde", "La Mésopotamie", "L'Égypte"],
@@ -9340,7 +9344,7 @@ questions_data = [
   {
     content: "Le 'Gamelan' est un ensemble musical traditionnel composé principalement d'instruments de percussion comme des gongs et des métallophones. D'où vient-il ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Les îles de Java et Bali (Indonésie)",
     incorrect_answers: ["La Thaïlande", "Le Cambodge", "Les Philippines"],
@@ -9349,7 +9353,7 @@ questions_data = [
   {
     content: "Le 'jaïnisme' est une religion ancienne de l'Inde qui met un accent extrême sur quel principe ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "La non-violence (Ahimsa) envers tous les êtres vivants",
     incorrect_answers: ["Le polythéisme", "Le sacrifice d'animaux", "La conquête militaire"],
@@ -9358,7 +9362,7 @@ questions_data = [
   {
     content: "Quelle est la particularité des langues dravidiennes (comme le tamoul, le télougou) parlées dans le sud de l'Inde ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Elles ne sont pas apparentées à la famille indo-européenne",
     incorrect_answers: ["Elles n'ont pas de voyelles", "Elles sont parlées par plus d'un milliard de personnes", "Elles utilisent un alphabet idéographique"],
@@ -9367,7 +9371,7 @@ questions_data = [
   {
     content: "Les Druzes sont une communauté religieuse ésotérique et fermée, vivant principalement au Liban, en Syrie et en Israël. De quelle religion se sont-ils séparés ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "De l'Islam chiite (ismaélisme)",
     incorrect_answers: ["Du Christianisme orthodoxe", "Du Judaïsme", "Du Zoroastrisme"],
@@ -9376,7 +9380,7 @@ questions_data = [
   {
     content: "Le 'théâtre d'ombres' (Wayang Kulit) est une forme d'art traditionnel sophistiqué utilisant des marionnettes en cuir. Dans quel pays est-il le plus emblématique ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'Indonésie (Java et Bali)",
     incorrect_answers: ["La Chine", "La Thaïlande", "L'Inde"],
@@ -9385,7 +9389,7 @@ questions_data = [
   {
     content: "Les Aïnous sont le peuple autochtone de quelle île du nord du Japon ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Hokkaido",
     incorrect_answers: ["Okinawa", "Shikoku", "Kyushu"],
@@ -9394,7 +9398,7 @@ questions_data = [
   {
     content: "Le 'Yarsanisme' est une religion syncrétique pratiquée par certains Kurdes en Iran et en Irak, qui croient en quoi ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "La réincarnation et les manifestations successives de la divinité",
     incorrect_answers: ["Un seul prophète après Mahomet", "La stricte observance de la charia", "L'absence totale de divinité"],
@@ -9403,7 +9407,7 @@ questions_data = [
   {
     content: "Quelle langue sémitique, autrefois la lingua franca du Moyen-Orient et parlée par Jésus, est encore utilisée par les communautés assyriennes ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'araméen",
     incorrect_answers: ["L'hébreu", "Le phénicien", "L'akkadien"],
@@ -9412,7 +9416,7 @@ questions_data = [
   {
     content: "Les 'Hazaras' sont un groupe ethnique de langue persane en Afghanistan, leur confession religieuse a conduit à leur persécution, quelle est-elle ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "L'Islam chiite",
     incorrect_answers: ["L'Islam sunnite", "Le Bouddhisme", "Le Zoroastrisme"],
@@ -9421,19 +9425,19 @@ questions_data = [
   {
     content: "Le 'Bön' est une religion tibétaine qui a précédé et influencé quelle autre grande religion de la région ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Asie",
     correct_answer: "Le bouddhisme",
     incorrect_answers: ["L'Hindouisme", "Le Taoïsme", "Le Jaïnisme"],
     contexte: "Bien que le Bön ait intégré de nombreux aspects du bouddhisme, il conserve ses propres divinités et rituels chamaniques."
   },
 
-  # OCEANIE - Ethnies, langues, religions, coutumes (VERIFIEES)
+  # Océanie  - CULTURES (VERIFIEES)
 
   {
     content: "Quel est le nom du peuple autochtone de la Nouvelle-Zélande, célèbre pour sa danse du haka ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Les Maoris",
     incorrect_answers: ["Les Aborigènes", "Les Samis", "Les Inuits"],
@@ -9442,7 +9446,7 @@ questions_data = [
   {
     content: "Quel est le nom du peuple autochtone de l'Australie ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Les Aborigènes",
     incorrect_answers: ["Les Maoris", "Les Papous", "Les Kanaks"],
@@ -9451,7 +9455,7 @@ questions_data = [
   {
     content: "Quelle est la langue la plus parlée en Australie et en Nouvelle-Zélande ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "L'anglais",
     incorrect_answers: ["Le français", "Le maori", "Le néerlandais"],
@@ -9460,7 +9464,7 @@ questions_data = [
   {
     content: "Quelle est la religion la plus répandue en Océanie ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Le Christianisme",
     incorrect_answers: ["Le Bouddhisme", "L'Islam", "L'Hindouisme"],
@@ -9469,7 +9473,7 @@ questions_data = [
   {
     content: "Le 'luau' est un festin traditionnel accompagné de musique et de danses, originaire de quelle île polynésienne ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Hawaï",
     incorrect_answers: ["Tahiti", "Fidji", "Samoa"],
@@ -9478,7 +9482,7 @@ questions_data = [
   {
     content: "Le didgeridoo est un instrument à vent emblématique de quel groupe autochtone ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Les Aborigènes d'Australie",
     incorrect_answers: ["Les Maoris", "Les Papous", "Les Hawaïens"],
@@ -9487,7 +9491,7 @@ questions_data = [
   {
     content: "Le 'surf' est un sport et un mode de vie qui a été popularisé dans le monde entier à partir de quelle région ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Hawaï et l'Australie",
     incorrect_answers: ["La Nouvelle-Zélande et Fidji", "Tahiti et Samoa", "Le Japon et la Californie"],
@@ -9496,7 +9500,7 @@ questions_data = [
   {
     content: "L'Océanie est traditionnellement divisée en trois grandes régions culturelles. Laquelle des suivantes n'en est pas une ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "L'Australasie",
     incorrect_answers: ["La Polynésie", "La Mélanésie", "La Micronésie"],
@@ -9505,7 +9509,7 @@ questions_data = [
   {
     content: "Le 'barbecue' (ou 'barbie') est une coutume sociale extrêmement populaire dans quel pays ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "L'Australie",
     incorrect_answers: ["La Papouasie-Nouvelle-Guinée", "Fidji", "Les Samoa"],
@@ -9514,7 +9518,7 @@ questions_data = [
   {
     content: "Le 'haka' est une danse traditionnelle et un chant de guerre de quel peuple ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Les Maoris",
     incorrect_answers: ["Les Samoans", "Les Tongiens", "Les Fidjiens"],
@@ -9523,7 +9527,7 @@ questions_data = [
   {
     content: "Quel sport est considéré comme une véritable 'religion' en Australie, en particulier dans l'État de Victoria ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Le football australien",
     incorrect_answers: ["Le football", "Le rugby à XV", "Le cricket"],
@@ -9532,7 +9536,7 @@ questions_data = [
   {
     content: "Quelle langue polynésienne est une langue officielle de la Nouvelle-Zélande, aux côtés de l'anglais ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Le maori",
     incorrect_answers: ["Le samoan", "Le tongien", "Le tahitien"],
@@ -9541,7 +9545,7 @@ questions_data = [
   {
     content: "Le rugby est le sport national de facto dans de nombreux pays du Pacifique, y compris la Nouvelle-Zélande, Fidji, Samoa et quel autre royaume ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Tonga",
     incorrect_answers: ["Vanuatu", "Kiribati", "Palaos"],
@@ -9550,7 +9554,7 @@ questions_data = [
   {
     content: "Le 'boomerang' est un objet de chasse et de jeu associé à quel peuple ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Les Aborigènes d'Australie",
     incorrect_answers: ["Les Maoris", "Les Papous", "Les Hawaïens"],
@@ -9559,7 +9563,7 @@ questions_data = [
   {
     content: "L'Anzac Day, le 25 avril, est un jour de commémoration important en Australie et en Nouvelle-Zélande. Que commémore-t-il ?",
     difficulty: "facile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Les soldats morts au combat (Australian and New Zealand Army Corps)",
     incorrect_answers: ["L'indépendance nationale", "La signature d'un traité de paix", "La découverte du pays"],
@@ -9568,7 +9572,7 @@ questions_data = [
   {
     content: "La 'kava' (ou 'yaqona') est une boisson traditionnelle à effet relaxant, consommée lors de cérémonies importantes dans quel pays ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Fidji",
     incorrect_answers: ["L'Australie", "La Nouvelle-Zélande", "Hawaï"],
@@ -9577,7 +9581,7 @@ questions_data = [
   {
     content: "Le 'Temps du Rêve' (Dreamtime) est un concept spirituel central pour quel peuple ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Les Aborigènes d'Australie",
     incorrect_answers: ["Les Maoris", "Les Rapa Nui (Île de Pâques)", "Les Samoans"],
@@ -9586,7 +9590,7 @@ questions_data = [
   {
     content: "Quel pays d'Océanie possède la plus grande diversité linguistique au monde, avec plus de 800 langues distinctes ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "La Papouasie-Nouvelle-Guinée",
     incorrect_answers: ["L'Australie", "L'Indonésie", "La Nouvelle-Zélande"],
@@ -9595,7 +9599,7 @@ questions_data = [
   {
     content: "Le 'tok pisin' est une langue créole parlée comme lingua franca dans quel pays ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "La Papouasie-Nouvelle-Guinée",
     incorrect_answers: ["Les Îles Salomon", "Vanuatu", "Fidji"],
@@ -9604,7 +9608,7 @@ questions_data = [
   {
     content: "Le 'tapu' (ou 'tabu') est un concept polynésien important qui signifie quoi ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Sacré ou interdit",
     incorrect_answers: ["Bienvenue", "Famille", "Océan"],
@@ -9613,7 +9617,7 @@ questions_data = [
   {
     content: "Quel groupe ethnique est le plus important en Nouvelle-Calédonie ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Les Kanaks",
     incorrect_answers: ["Les Caldoches (Européens)", "Les Wallisiens", "Les Tahitiens"],
@@ -9622,7 +9626,7 @@ questions_data = [
   {
     content: "Le 'tā moko' est l'art traditionnel du tatouage facial pratiqué par quel peuple ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Les Maoris",
     incorrect_answers: ["Les Aborigènes", "Les Papous", "Les Fidjiens"],
@@ -9631,7 +9635,7 @@ questions_data = [
   {
     content: "Quelle est la principale minorité ethnique à Fidji, dont la présence a été une source de tensions politiques ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Les Indo-Fidjiens",
     incorrect_answers: ["Les Chinois", "Les Européens", "Les Polynésiens"],
@@ -9640,7 +9644,7 @@ questions_data = [
   {
     content: "Le 'umu' (ou 'hāngi') est une méthode de cuisson traditionnelle en Océanie qui utilise...",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Un four en terre avec des pierres chaudes",
     incorrect_answers: ["Des feuilles de bananier sur un feu ouvert", "De l'eau de mer bouillante", "La fumaison à froid"],
@@ -9649,7 +9653,7 @@ questions_data = [
   {
     content: "Le 'cargo cult' est un mouvement religieux qui a émergé en Mélanésie après quel événement ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Le contact avec les soldats de la Seconde Guerre mondiale",
     incorrect_answers: ["L'arrivée des missionnaires chrétiens", "Des éruptions volcaniques", "L'indépendance nationale"],
@@ -9658,7 +9662,7 @@ questions_data = [
   {
     content: "Les statues 'moai' de l'Île de Pâques ont été sculptées par quel peuple polynésien ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Le peuple Rapa Nui",
     incorrect_answers: ["Les Maoris", "Les Hawaïens", "Les Tahitiens"],
@@ -9667,7 +9671,7 @@ questions_data = [
   {
     content: "Le Bislama est une langue créole à base d'anglais, l'une des langues officielles de quel pays ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Vanuatu",
     incorrect_answers: ["Fidji", "Le Maroc", "La Papouasie-Nouvelle-Guinée"],
@@ -9676,7 +9680,7 @@ questions_data = [
   {
     content: "Quelle est la religion la plus pratiquée par les Indo-Fidjiens ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "L'Hindouisme",
     incorrect_answers: ["L'Islam", "Le Christianisme", "Le Sikhisme"],
@@ -9685,7 +9689,7 @@ questions_data = [
   {
     content: "L'Emu et le kangourou figurent sur les armoiries de l'Australie. Pourquoi ont-ils été choisis ?",
     difficulty: "intermédiaire",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Ils ne peuvent pas reculer facilement",
     incorrect_answers: ["Ce sont les animaux les plus communs", "Ils sont sacrés pour les Aborigènes", "Ils n'existent nulle part ailleurs"],
@@ -9694,7 +9698,7 @@ questions_data = [
   {
     content: "Le 'fa'afafine' à Samoa est un exemple de...",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Un troisième genre culturel",
     incorrect_answers: ["Un chef de tribu", "Une cérémonie de mariage", "Un plat traditionnel"],
@@ -9703,7 +9707,7 @@ questions_data = [
   {
     content: "Quelle est la particularité linguistique des langues aborigènes australiennes en ce qui concerne les chiffres ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Souvent pas de mot pour les nombres au-delà de 2 ou 3",
     incorrect_answers: ["Elles utilisent un système en base 20", "Des mots différents pour compter les humains et les animaux", "Elles n'ont pas de nombres impairs"],
@@ -9712,7 +9716,7 @@ questions_data = [
   {
     content: "La 'Maison des esprits' (ou 'haus tambaran') est un lieu de culte et de réunion pour les hommes dans quelle région ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "La région du fleuve Sepik en Papouasie-Nouvelle-Guinée",
     incorrect_answers: ["L'Outback australien", "L'Île du Nord de la Nouvelle-Zélande", "Les îles de la Société"],
@@ -9721,7 +9725,7 @@ questions_data = [
   {
     content: "Le 'marn grook' est un jeu de balle aborigène qui aurait influencé le développement de quel sport moderne ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Le football australien",
     incorrect_answers: ["Le rugby", "Le cricket", "Le football (soccer)"],
@@ -9730,7 +9734,7 @@ questions_data = [
   {
     content: "Le 'Rattenfest' (Festival du Rat) à Kirkstall, en Australie, est une coutume locale qui implique...",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Le lancer de rats morts dans un concours de distance",
     incorrect_answers: ["L'adoration de rats sacrés", "Une course de rats de compagnie", "La dégustation de plats à base de rats"],
@@ -9739,7 +9743,7 @@ questions_data = [
   {
     content: "Le 'mana' est un concept polynésien fondamental qui se réfère à...",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Une force ou un pouvoir spirituel",
     incorrect_answers: ["Un code de l'honneur", "Une lignée généalogique", "La terre ancestrale"],
@@ -9748,7 +9752,7 @@ questions_data = [
   {
     content: "La religion du Prince Philip est un 'cargo cult' pratiqué sur l'île de Tanna. Dans quel pays se trouve cette île ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Vanuatu",
     incorrect_answers: ["Fidji", "Les Îles Salomon", "La Papouasie-Nouvelle-Guinée"],
@@ -9757,7 +9761,7 @@ questions_data = [
   {
     content: "Le 'pidgin' nigérian est une lingua franca, mais quel est le seul pays au monde où une langue pidgin (le tok pisin) a le statut de langue officielle ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "La Papouasie-Nouvelle-Guinée",
     incorrect_answers: ["Le Nigeria", "La Sierra Leone", "Haïti"],
@@ -9766,7 +9770,7 @@ questions_data = [
   {
     content: "Les 'Palawa' sont le peuple aborigène de quelle île australienne ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "La Tasmanie",
     incorrect_answers: ["L'île Kangourou", "L'île Walibi", "L'île Fraser"],
@@ -9775,7 +9779,7 @@ questions_data = [
   {
     content: "Le 'kiri' ou don de nattes finement tressées, est la forme de richesse la plus prestigieuse dans quelle culture polynésienne ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "La culture tongienne",
     incorrect_answers: ["La culture hawaïenne", "La culture maorie", "La culture tahitienne"],
@@ -9784,7 +9788,7 @@ questions_data = [
   {
     content: "La langue des signes néo-zélandaise (NZSL) est une langue officielle du pays. Quelle est sa particularité ?",
     difficulty: "difficile",
-    category: "Ethnies, langues, religions, coutumes",
+    category: "Cultures",
     region: "Océanie",
     correct_answer: "Elle est complètement différente des autres langues des signes anglosaxonnes",
     incorrect_answers: ["Elle n'a pas de signes pour les couleurs", "Elle est uniquement utilisée par les Maoris", "Elle est basée sur la langue des signes australienne"],

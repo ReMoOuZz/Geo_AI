@@ -1,0 +1,11 @@
+<h1>Hello la show du game_controller</h1>
+
+
+<% @questions.each do |q| %>
+  <p><%= q.content %></p>
+
+  <% answers = [q.correct_answer] + q.incorrect_answers %>
+  <% answers.shuffle.each do |answer| %>
+    <p><%= answer %></p>
+  <% end %>
+<% end %>
