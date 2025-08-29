@@ -1,39 +1,36 @@
-<div class="d-flex min-vh-100 justify-content-center align-items-center" style="background-image: url('https://static-cse.canva.com/blob/1149387/BlueandGreyWorldMapChartPresentation.png'); background-size: cover, background-position: center; ">
-
-  <div class="container shadow p-3">
-    <% @chat.messages.drop(2).each do |message|
-    #@chat.messages.each do |message| %>
+<div class="quiz-wrapper">
+  <div class="quiz-card">
+    <% @chat.messages.drop(2).each do |message| %>
       <% if message.role == "user" %>
-      <div class="container">
-        <p><span class="fw-bold text-primary">Proposition</span>: <%= message.content.capitalize %></p>
-      </div>
+        <div class="quiz-message user">
+          <p><span class="fw-bold text-primary">Proposition</span>: <%= message.content.capitalize %></p>
+        </div>
       <% elsif message.role == "assistant" %>
-      <div class="container">
-        <p><span class="fw-bold text-danger">Question:</span> <%= raw(render_markdown message.content) %></p>
-      </div>
-      <% end  %>
-    <%end %>
+        <div class="quiz-message assistant">
+          <p><span class="fw-bold text-danger">Question :</span> <%= raw(render_markdown message.content) %></p>
+        </div>
+      <% end %>
+    <% end %>
 
     <div data-controller="actionquiz"
          data-actionquiz-total-value="<%= Quiz::TOTAL %>"
          data-actionquiz-messagesnumber-value="<%= @response_count %>">
 
-        <%= simple_form_for [@chat, @user_message], data:{ actionquiz_target: "form" } do |f| %>
-
-          <%= f.input :content,
+      <%= simple_form_for [@chat, @user_message], data:{ actionquiz_target: "form" } do |f| %>
+        <%= f.input :content,
           placeholder: "Votre réponse...",
           label:false,
           input_html: {
-          data: { action: "keyup->actionquiz#enterValidation", actionquiz_target: "input" }
+            class: "quiz-input",
+            data: { action: "keyup->actionquiz#enterValidation", actionquiz_target: "input" }
           } %>
 
-          <%= f.button :submit, class:"btn btn-success rounded-3" %>
-        <% end %>
+        <%= f.button :submit, "Envoyer", class:"btn btn-success rounded-3 quiz-btn" %>
+      <% end %>
 
-        <div data-actionquiz-target="replace" class="d-none d-flex justify-content-center ">
-          <%= link_to "Resultats", quiz_path(@quiz), class: "text-white btn btn-primary rounded-3 p-3 fw-bold"%>
-        </div>
-
+      <div data-actionquiz-target="replace" class="d-none d-flex justify-content-center mt-3">
+        <%= link_to "Résultats", quiz_path(@quiz), class: "text-white btn btn-primary rounded-3 p-3 fw-bold"%>
+      </div>
     </div>
   </div>
 </div>

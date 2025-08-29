@@ -13,7 +13,10 @@
   </head>
 
   <body>
+  <% unless controller_name == "pages" && action_name != "home" %>
+
     <%=render "shared/navbar"%>
+     <% end %>
       <main class="gb-page">
         <div class="home-green">
           <div class="home-blue">
