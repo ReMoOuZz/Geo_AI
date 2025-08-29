@@ -10,15 +10,20 @@ export default class extends Controller {
     this.answerShown = false
     this.submitted = false
     this.autoSubmitting = false
-    this.remaining = this.durationValue || 15
+    this.remaining = this.durationValue || 10
     this.renderTimer()
     this.startTimer()
 
     this.answerTarget.classList.add("result_container_hidden")
     this.questionTarget.classList.remove("quiz-container-hidden")
     this.timerContainerTarget.classList.remove("quiz-toolbar-hidden")
+
+    console.log("[question-response] connect", this.element)
   }
-  disconnect() { this.stopTimer() }
+  disconnect() {
+     this.stopTimer()
+    console.log("[question-response] disconnect", this.element)
+  }
 
   startTimer() {
     this.interval = setInterval(() => {
@@ -62,7 +67,7 @@ export default class extends Controller {
       this.answerTarget.classList.remove("result_container_hidden")
       this.timerContainerTarget.classList.add("quiz-toolbar-hidden")
       this.answerShown = true
-      setTimeout(() => this.submitNow(), 6000);
+      setTimeout(() => this.submitNow(), 5000);
     }
   }
 
