@@ -1,8 +1,8 @@
 <div class="d-flex min-vh-100 justify-content-center align-items-center" style="background-image: url('https://static-cse.canva.com/blob/1149387/BlueandGreyWorldMapChartPresentation.png'); background-size: cover, background-position: center; ">
 
   <div class="auth-container">
-    <div class="brand-box">GeoAI</div>
-    <h2>Log in</h2>
+    <div class="brand-box">GeoBattle</div>
+    <h2>Je me connecte</h2>
 
     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="form-inputs">
@@ -12,7 +12,7 @@
       </div>
 
       <div class="form-actions">
-        <%= f.button :submit, "Log in", class: "btn" %>
+        <%= f.button :submit, "Se connecter", class: "btn" %>
       </div>
     <% end %>
 

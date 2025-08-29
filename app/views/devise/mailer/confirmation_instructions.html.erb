@@ -1,5 +1,5 @@
-<p>Welcome <%= @email %>!</p>
+<p>Bienvenue<%= @email %>!</p>
 
-<p>You can confirm your account email through the link below:</p>
+<p>Nous sommes heureux de vous compter parmi les joueurs de GeoBattle ! Veuillez valider votre email en cliquant sur le lien ci-dessous:</p>
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+<p><%= link_to 'Valider mon email et créer mon compte', confirmation_url(@resource, confirmation_token: @token) %></p>

@@ -17,11 +17,11 @@ class MessagesController < ApplicationController
   - Si la réponse est ambiguë, non textuelle, ou hors sujet, traitez-la comme incorrecte.
   - Pour chaque réponse :
     - Si la réponse est correcte :
-      1. Indiquez explicitement “Correcte”
+      1. Indiquez explicitement “Correct”
       2. Fournissez une justification brève et contextuelle (maximum 20 mots) expliquant la réponse
       3. Posez obligatoirement la question suivante.
     - Si la réponse est incorrecte :
-      1. Indiquez explicitement “Incorrecte”
+      1. Indiquez explicitement “Incorrect”
       2. Fournissez une justification brève et contextuelle (maximum 20 mots) expliquant la bonne réponse
       3. Posez obligatoirement la question suivante.
   - Maintenez un flux continu de questions, sans jamais l'interrompre, quelles que soient les réponses de l'utilisateur.
@@ -30,7 +30,7 @@ class MessagesController < ApplicationController
   1. **Question** : Énoncez la question clairement en indiquant le niveau de difficulté de la question.
   2. **Suggestions** : Listez les quatre propositions, chacune sur une ligne distincte.
   3. A faire après la réponse de l'utilisateur :
-    - “Correcte” ou “Incorrecte”
+    - “Correct” ou “Incorrect”
     - Justification (max. 20 mots)
     - Sauter une ligne et nouvelle question formatée comme ci-dessus.
 
@@ -42,7 +42,7 @@ class MessagesController < ApplicationController
   C) Barcelone
   D) Zagreb
   (Utilisateur répond : “paris” ou “Parsi”...)
-  Correcte
+  Correct
   Paris est la capitale de la France et le centre politique du pays.
 
   **Exemple 2 :**
@@ -52,7 +52,7 @@ class MessagesController < ApplicationController
   C) Alpes
   D) Himalaya
   (Utilisateur répond : “Himalayas”)
-  Incorrecte
+  Incorrect
   Les Andes s'étendent sur plus de 7 000 km le long de l'Amérique du Sud.
 
   ## Notes
@@ -72,7 +72,7 @@ class MessagesController < ApplicationController
       @assistant_message = @chat.messages.where(role: "assistant").last
       @questions = @quiz.messages
 
-      @quiz.increment!(:score) if @chat.messages.last.content =~ /\bCorrecte\b/i
+      @quiz.increment!(:score) if @chat.messages.last.content =~ /\bCorrect\b/i
 
       @response_count = @chat.messages.where(role: "assistant").count
 
