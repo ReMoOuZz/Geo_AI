@@ -29,17 +29,9 @@
       <span class="label">Statistiques</span>
     <% end %>
 
-    <%= link_to pages_friends_path, class: "gb-sideitem" do %>
-      <i class="fa-solid fa-users"></i>
-      <span class="label">Vos amis</span>
-    <% end %>
-
-    <%= link_to "#", class: "gb-sideitem" do %>
+    <%= link_to destroy_user_session_path, class: "gb-sideitem" do %>
       <i class="fa-solid fa-right-from-bracket"></i>
       <span class="label">Déconnexion</span>
     <% end %>
   </nav>
 </aside>
-
-
-

@@ -28,19 +28,20 @@
 
 }
 
-.navbar-icon {
+/* FR: conteneur des icônes à droite */
+.navbar-icons {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 5vw;
+  gap: 16px;          /* espace entre icônes */
+  margin-right: 45px; /* petit recul du bord droit */
 }
 
 .gb-icon {
-  color: white;
-  font-size: 1,5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
   text-decoration: none;
 }
 
-.gb-icon:hover {
-  color: #FFD966;
-}
+.gb-icon:hover { color: #FFD966; }

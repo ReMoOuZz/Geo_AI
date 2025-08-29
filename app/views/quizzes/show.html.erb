@@ -1,29 +1,29 @@
+<div class="results-outer">
+  <div class="results-card" data-controller="quiz-results"
+       data-quiz-results-score-value="<%= @quiz.score %>"
+       data-quiz-results-total-value="<%= @total %>">
 
-    <div class="quiz-results-page" data-controller="quiz-results" data-quiz-results-score-value="<%=@quiz.score%>" data-quiz-results-total-value="<%=@total%>">
-      <div class="results-container">
-        <div class="stars">
-          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-        </div>
 
-        <div class="trophy" data-quiz-results-target="trophy"></div>
-        <div class="congratulations">Félicitations !</div>
+    <div class="trophy" data-quiz-results-target="trophy"></div>
+    <div class="congratulations">Félicitations !</div>
 
-        <h1 class="score-display">
-          <span data-quiz-results-target="scoreDipslay"><%= @quiz.score %></span>
-          /
-          <span id="total"><%= @total %></span>
-        </h1>
 
-        <div class="percentage" id="percentage">
-          <%=((@quiz.score.to_f / @total) * 100).round %>%
-        </div>
-
-        <div class="message" data-quiz-results-target="message">
-        Excelent !!! Tu es vraiment bon en Géographie !
-        </div>
-
-        <%=link_to "Nouveau Quiz", root_path, class: "restart-btn" %>
-      </div>
+    <div class="stars">
+      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
     </div>
+
+    <h1 class="score-display">
+      <span data-quiz-results-target="scoreDisplay"><%= @quiz.score %></span>
+      /
+      <span id="total"><%= @total %></span>
+    </h1>
+
+    <div class="message" data-quiz-results-target="message">
+      Excellent !!! Tu es vraiment bon en Géographie !
+    </div>
+
+    <%= link_to "Commence Ton Geo Battle!", new_game_path, class: "start-btn" %>
+  </div>
+</div>

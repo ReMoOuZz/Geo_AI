@@ -1,5 +1,4 @@
 
-
 <aside class="gb-sidebar">
 
 <div class="gb-sidebar_logo">
@@ -10,7 +9,7 @@
 </div>
 
   <div class="gb-sidebar__avatar">
-    <%= image_tag "avatar.png", alt: "Profil", class: "gb-avatar" %>
+    <%= image_tag "avatar3.png", alt: "Profil", class: "gb-avatar" %>
   </div>
 
 
@@ -36,7 +35,7 @@
       <span class="label">Vos amis</span>
     <% end %>
 
-    <%= link_to "#", class: "gb-sideitem" do %>
+    <%= link_to destroy_user_session_path, class: "gb-sideitem" do %>
       <i class="fa-solid fa-right-from-bracket"></i>
       <span class="label">Déconnexion</span>
     <% end %>
@@ -45,14 +44,39 @@
 
 
 
+
 <div class="profile-container">
   <div class="profile-card">
-    <%= image_tag "avatar2.png", alt: "Avatar", class: "profile-avatar" %>
-    <h3>Geo Ninja</h3>
-    <p>Mot de passe</p>
-    <p>Email</p>
-    <p>Nombres de badges : -</p>
-    <p>Ranking : -</p>
+    <div class="profile-avatar-wrap">
+      <%= image_tag "avatar3.png", alt: "Avatar", class: "profile-avatar" %>
+      <i class="fa-solid fa-pen-to-square edit-icon avatar-edit"></i>
+    </div>
+
+    <hr class="profile-sep">
+
+    <div class="profile-field profile-field--name">
+      <span class="profile-name">Geo Ninja</span>
+      <i class="fa-solid fa-pen-to-square edit-icon"></i>
+    </div>
+
+    <div class="profile-field">
+      <span class="profile-label">Mot de passe</span>
+      <i class="fa-solid fa-pen-to-square edit-icon"></i>
+    </div>
+
+    <div class="profile-field">
+      <span class="profile-label">Email</span>
+      <i class="fa-solid fa-pen-to-square edit-icon"></i>
+    </div>
+
+    <hr class="profile-sep">
+
+    <ul class="profile-stats">
+      <li>Nombres de badges : -</li>
+      <li>Ranking : -</li>
+      <li>Evolution ranking (+ / -)</li>
+    </ul>
+
     <button class="btn-save">Enregistrer</button>
   </div>
 </div>

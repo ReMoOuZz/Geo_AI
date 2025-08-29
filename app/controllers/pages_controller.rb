@@ -8,4 +8,5 @@ class PagesController < ApplicationController
 
   def stats
   end
+
 end
