@@ -20,8 +20,8 @@
 Question.destroy_all
 
 questions_data = [
-  # SEEDS Drapeaux (60) via Claude Sonnet 4.0
 
+  # SEEDS Drapeaux (60) via Claude Sonnet 4.0
   # 60 questions sur Europe, Océanie, Amérique, Asie, Afrique
 
   {
@@ -1457,7 +1457,8 @@ questions_data = [
     contexte: "Ce drapeau utilise les couleurs panarabes, représentant l'unité des nations arabes. Chaque couleur symbolise une dynastie ou une époque historique."
   },
 
-  # AMERIQUE - Drapeaux
+  # Amérique - Drapeaux
+
   {
     content: "Ce drapeau a 13 bandes rouges et blanches et un canton bleu avec 50 étoiles. De quel pays s'agit-il ?",
     difficulty: "facile",
@@ -1774,7 +1775,7 @@ questions_data = [
     contexte: "Le soleil levant symbolise l'aube d'une nouvelle ère. Le noir représente les ancêtres africains, le bleu l'espoir, et le rouge l'énergie."
   },
 
-  # OCEANIE - Drapeaux
+  # Océanie - DRAPEAUX (NON VERIFIEES)
 
   {
     content: "Quel pays a un drapeau bleu avec l'Union Jack et une grande étoile à sept branches sous le canton ?",
@@ -3104,7 +3105,7 @@ questions_data = [
   {
     content: "Le golfe de Botnie est la partie la plus septentrionale de quelle mer ?",
     difficulty: "difficile",
-    category: "Géopolitique",
+    category: "Hydrographie et reliefs",
     region: "Europe",
     correct_answer: "La Mer Baltique",
     incorrect_answers: ["La Mer du Nord", "La Mer de Barents", "La Mer Blanche"],
@@ -3165,7 +3166,7 @@ questions_data = [
     contexte: "Situés en Thessalie, ces piliers de grès sont un site du patrimoine mondial de l'UNESCO, combinant merveille naturelle et réalisation humaine."
   },
 
-  # AMERIQUE - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
+  # Amérique - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
 
   {
     content: "Quel est le plus long fleuve d'Amérique du Sud, et le plus puissant du monde en termes de débit ?",
@@ -3528,7 +3529,7 @@ questions_data = [
     contexte: "Le Salvador est le plus petit pays d'Amérique centrale et ne possède qu'une côte sur l'océan Pacifique."
   },
 
-  # OCEANIE - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
+  # Océanie - RELIEFS, FLEUVES ET OCEANS via GEMINI 2.5 Flash (NON VERIFIEES)
 
   {
     content: "Quel est le plus grand système de récifs coralliens du monde, visible depuis l'espace, situé au large de la côte australienne ?",
@@ -4256,7 +4257,7 @@ questions_data = [
 
   # Régions et villes du monde
 
-  # OCEANIE - Régions et villes du monde via GEMINI 2.5 Pro (NON VERIFIEES)
+  # Océanie - Régions et villes du monde via GEMINI 2.5 Pro (NON VERIFIEES)
 
   {
     content: "Quelle est la capitale de l'Australie ?",
@@ -4655,7 +4656,7 @@ questions_data = [
     contexte: "Ces territoires sont administrés par l'Australie mais sont géographiquement plus proches de l'Asie."
   },
 
-  # Amérique - Régions et villes du monde via GEMINI 2.5 Flash (NON VERIFIEES)
+  # Amérique - Régions et villes du monde via GEMINI 2.5 Pro (NON VERIFIEES)
 
   {
     content: "Quelle est la capitale des États-Unis ?",
@@ -6118,7 +6119,7 @@ questions_data = [
 
   # Géopolitique via Gemini 2.5 Pro
 
-  # EUROPE (NON VERIFEES)
+  # EUROPE - Géopolitique (NON VERIFEES)
 
   {
     content: "Quelle organisation politique et économique, regroupant 27 pays, utilise l'euro comme monnaie commune pour la plupart de ses membres ?",
@@ -6526,7 +6527,7 @@ questions_data = [
     contexte: "Ce groupe, issu du mouvement étudiant radical, a mené des attentats, des enlèvements et des assassinats contre ce qu'il considérait comme le système capitaliste et impérialiste."
   },
 
-  # ASIE - CONFLITS GEOPO
+  # ASIE - GEOPOLITIQUE
   {
     content: "Quel conflit a opposé le Nord communiste et le Sud soutenu par les États-Unis, divisant le pays au niveau du 38e parallèle de 1950 à 1953 ?",
     difficulty: "facile",
@@ -6914,12 +6915,15 @@ questions_data = [
     incorrect_answers: ["La Norvège", "Le Danemark", "La France"],
     contexte: "Les 'Cod Wars' (Guerres de la morue) des années 1950-1970 ont vu l'Islande étendre progressivement ses eaux territoriales, provoquant des affrontements avec les chalutiers britanniques."
   },
+
+  # Amérique - GEOPOLITIQUE (VERIFIEES)
+
   {
     content: "Quelle guerre a opposé les 13 colonies britanniques à la Grande-Bretagne, menant à la création des États-Unis d'Amérique ?",
     difficulty: "facile",
     category: "Géopolitique",
     region: "Amérique",
-    correct_answer: "La Guerre d'indépendance américaine (Révolution américaine)",
+    correct_answer: "La Guerre d'indépendance américaine",
     incorrect_answers: ["La Guerre de 1812", "La Guerre de Sécession", "La Guerre de Sept Ans"],
     contexte: "Ce conflit, qui a eu lieu de 1775 à 1783, a abouti au Traité de Paris et à la reconnaissance de l'indépendance des États-Unis."
   },
@@ -6928,7 +6932,7 @@ questions_data = [
     difficulty: "facile",
     category: "Géopolitique",
     region: "Amérique",
-    correct_answer: "La Guerre de Sécession (Guerre Civile Américaine)",
+    correct_answer: "La Guerre de Sécession",
     incorrect_answers: ["La Révolution américaine", "La Guerre américano-mexicaine", "La Conquête de l'Ouest"],
     contexte: "Cette guerre a abouti à l'abolition de l'esclavage, à la préservation de l'Union et a affirmé la suprématie du gouvernement fédéral."
   },
@@ -6946,7 +6950,7 @@ questions_data = [
     difficulty: "facile",
     category: "Géopolitique",
     region: "Amérique",
-    correct_answer: "L'ALENA (Accord de Libre-Échange Nord-Américain)",
+    correct_answer: "L'ALENA",
     incorrect_answers: ["Le MERCOSUR", "L'Union Européenne", "L'APEC"],
     contexte: "Signé en 1994, l'ALENA a créé l'une des plus grandes zones de libre-échange du monde. Il a été remplacé par l'ACEUM (Accord Canada–États-Unis–Mexique)."
   },
@@ -7005,7 +7009,7 @@ questions_data = [
     contexte: "Le coup d'État de 1973, soutenu par la CIA, a marqué le début d'un régime autoritaire caractérisé par la répression politique et des réformes économiques néolibérales."
   },
   {
-    content: "Quel terme désigne la politique de ségrégation raciale qui a existé aux États-Unis, en particulier dans les États du Sud, jusqu'aux années 1960 ?",
+    content: "Quel terme désigne la politique de discrimination raciale qui a existé aux États-Unis, en particulier dans les États du Sud, jusqu'aux années 1960 ?",
     difficulty: "facile",
     category: "Géopolitique",
     region: "Amérique",
@@ -7042,7 +7046,7 @@ questions_data = [
   },
   {
     content: "Quel pays d'Amérique centrale a été dirigé par la dynastie des Somoza pendant plus de 40 ans avant la révolution sandiniste de 1979 ?",
-    difficulty: "facile",
+    difficulty: "intermédiaire",
     category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Le Nicaragua",
@@ -7051,7 +7055,7 @@ questions_data = [
   },
   {
     content: "Quelle tentative d'invasion de Cuba par des exilés cubains, soutenue par la CIA, a échoué lamentablement en 1961 ?",
-    difficulty: "intermédiaire",
+    difficulty: "facile",
     category: "Géopolitique",
     region: "Amérique",
     correct_answer: "Le débarquement de la baie des Cochons",
@@ -7072,8 +7076,8 @@ questions_data = [
     difficulty: "intermédiaire",
     category: "Géopolitique",
     region: "Amérique",
-    correct_answer: "La Guerre des Malouines (Falklands War)",
-    incorrect_answers: ["La Guerre du Chaco", "La Guerre du Pacifique", "La Guerre de la Triple-Alliance"],
+    correct_answer: "La Guerre des Malouines",
+    incorrect_answers: ["La Guerre du Chaco", "La Guerre du Pacifique", "La Guerre des Caraïbes"],
     contexte: "Le conflit a commencé par une invasion argentine et s'est terminé par une victoire britannique, mais la revendication de souveraineté argentine persiste."
   },
   {
@@ -7099,7 +7103,7 @@ questions_data = [
     difficulty: "intermédiaire",
     category: "Géopolitique",
     region: "Amérique",
-    correct_answer: "La politique de bon voisinage (Good Neighbor Policy)",
+    correct_answer: "La politique de bon voisinage",
     incorrect_answers: ["La doctrine Monroe", "La diplomatie du dollar", "La politique du Big Stick"],
     contexte: "Cette politique a mis fin à l'occupation de plusieurs pays par les Marines américains, mais n'a pas empêché l'influence économique et politique."
   },
@@ -7266,7 +7270,7 @@ questions_data = [
     contexte: "Justifiée par la lutte contre le trafic de drogue et la protection des citoyens américains, cette invasion a été controversée sur le plan du droit international."
   },
 
-  # OCEANIE - CONFLITS - GEOPO
+  # Océanie - GEOPOLITIQUE
 
   {
     content: "Quel pacte de sécurité mutuelle lie l'Australie, la Nouvelle-Zélande et les États-Unis depuis 1951 ?",
@@ -7620,7 +7624,7 @@ questions_data = [
     contexte: "Le Fono samoan a été le théâtre d'une crise constitutionnelle majeure en 2021, lorsque le parti au pouvoir a refusé de céder le pouvoir après une défaite électorale."
   },
 
-  # AFRIQUE - CONFLITS - GEOPO
+  # AFRIQUE - GEOPOLITIQUE
 
   {
     content: "Quel système de ségrégation raciale a été officiellement mis en place en Afrique du Sud de 1948 à 1991 ?",
@@ -8702,7 +8706,7 @@ questions_data = [
     contexte: "À travers des cérémonies de musique et de danse, les adeptes cherchent à apaiser les esprits qui les possèdent pour guérir des maladies."
   },
 
-  # AMERIQUE - Cultures
+  # Amérique - CULTURES
 
   {
     content: "Quelle est la religion majoritaire sur le continent américain, introduite par la colonisation européenne ?",
@@ -9428,7 +9432,7 @@ questions_data = [
     contexte: "Bien que le Bön ait intégré de nombreux aspects du bouddhisme, il conserve ses propres divinités et rituels chamaniques."
   },
 
-  # OCEANIE - Cultures (VERIFIEES)
+  # Océanie  - CULTURES (VERIFIEES)
 
   {
     content: "Quel est le nom du peuple autochtone de la Nouvelle-Zélande, célèbre pour sa danse du haka ?",

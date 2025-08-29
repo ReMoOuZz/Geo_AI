@@ -1,5 +1,13 @@
+<nav class="navbar navbar-expand gb-navbar fixed-top">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <%= link_to root_path, class: "navbar-brand d-flex align-items-center" do %>
+          <%= image_tag "logo.png", alt: "GeoBattle", height: 48, class: "brand-logo" %>
+        <% end %>
+        <%= link_to pages_profile_path, class: "gb-icon" do %>
+            <i class="fa-solid fa-user"></i>
+          <% end %>
 <div class="home-content">
-  <h1 class="geo-title">GeoBattle</h1>
+  <h1 class="geo-title">Geo Battle</h1>
   <p class="geo-subtitle">Testez vos connaissances en géographie</p>
   <div class="geo-buttons">
     <%= link_to "Commencer", chats_path, data: { turbo_method: :post }, class: "btn btn-start" %>

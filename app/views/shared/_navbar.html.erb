@@ -4,15 +4,18 @@
         <%= link_to root_path, class: "navbar-brand d-flex align-items-center" do %>
           <%= image_tag "logo.png", alt: "GeoBattle", height: 48, class: "brand-logo" %>
         <% end %>
-
-
-        <div class="d-flex align-items-center">
-          <%= link_to "#", class: "gb-icon" do %>
-            <i class="fa-solid fa-award"></i>
-          <% end %>
-          <%= link_to "#", class: "gb-icon" do %>
+        
+        <%= link_to pages_profile_path, class: "gb-icon" do %>
             <i class="fa-solid fa-user"></i>
           <% end %>
+          <% if user_signed_in? %>
+            <%= link_to destroy_user_session_path, class: "dropdown-item gb-icon", data: {turbo_method: :delete} do %>
+              <i class="fa-solid fa-right-from-bracket"></i>
+            <% end %>
+          <% else %>
+            <%= link_to new_user_session_path, class: "nav-link gb-icon" do %>
+              <i class="fa-solid fa-right-to-bracket"></i>
+             <% end %>
+          <% end %>
         </div>
-      </div>
     </nav>

@@ -18,6 +18,9 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
   get "profile", to: "pages#profile", as: :pages_profile
+  get "stats", to: "pages#stats", as: :pages_stats
+  get "rewards", to: "pages#rewards", as: :pages_rewards
+  get "friends", to: "pages#friends", as: :pages_friends
   get "about", to: "pages#about", as: :pages_about
   get 'test_question', to: 'user_answers#show' #temporaire pour tester le controlleur answer/question
 
