@@ -63,44 +63,69 @@
   width: 100%;
   max-width: 300px;
   margin: 16px auto 0;
+}
 
+.geo-buttons-secondary {
+  margin-top: 40px;
 }
 
 .geo-buttons .btn {
-  width: 100%;
+  width: 160%;
   border-radius: 25px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.geo-buttons .btn:not(.btn-test) {
+  width: 80%;
+}
+
 .btn-start {
-  background: #FFD966;
+  background: #FFEC99;
   color: #1B8EAD;
   border: none;
   box-shadow: inset 0 0 0 rgba(0,0,0,0);
 }
 
 .btn-start:hover {
-  background: #FFD966;
+  background: #ffffff;
   color: #1B8EAD;
   box-shadow: inset 0 2px 6px rgba(0,0,0,0.25);
 }
 
 
 .btn-about {
+  background: #FFEC99;
+  color: #1B8EAD;
+  border: none;
+  box-shadow: inset 0 0 0 rgba(0,0,0,0);
+
+}
+
+.btn-about:hover {
+  background: #ffffff;
+  color: #1B8EAD;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.btn-test {
+  width: 40px;
   background: #FFFFFF;
   color: #1B8EAD;
   border: none;
   box-shadow: inset 0 0 0 rgba(0,0,0,0);
+  padding: 10px 24px;
+  width: 300px;
 }
 
-.btn-about:hover {
-  background: #FFFFFF;
-  color: #1B8EAD;
-  box-shadow: inset 0 2px 6px rgba(0,0,0,0.15);
+.btn-test:hover {
+  background: #1B8EAD;
+  color: #ffffff;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.25);
+  border: 1px solid #fff;
 }
 
 .home-content {

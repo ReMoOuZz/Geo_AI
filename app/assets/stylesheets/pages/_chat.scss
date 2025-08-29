@@ -62,16 +62,5 @@
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-}
-
-.quiz-btn:hover {
-  background: #40916c;  /* чуть темнее при наведении */
-  transform: translateY(-2px); /* лёгкий подскок */
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-}
-
-.quiz-btn:active {
-  transform: translateY(0); /* возвращаем обратно при клике */
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
 }

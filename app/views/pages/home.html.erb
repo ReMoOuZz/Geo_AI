@@ -2,8 +2,12 @@
 <div class="home-content">
   <h1 class="geo-title">Geo Battle</h1>
   <p class="geo-subtitle">Testez vos connaissances en géographie</p>
-  <div class="geo-buttons">
-    <%= link_to "Commencer", chats_path, data: { turbo_method: :post }, class: "btn btn-start" %>
-    <%= link_to "A propos de GeoBattle", "#", class: "btn btn-about" %>
-  </div>
+ <div class="geo-buttons">
+  <%= link_to "Lancer votre IA pour tester votre niveau", chats_path, data: { turbo_method: :post }, class: "btn btn-test" %>
+</div>
+
+<div class="geo-buttons geo-buttons-secondary">
+  <%= link_to "Commencer le jeu", new_game_path, class: "btn btn-start" %>
+  <%= link_to "À propos de GeoBattle", "#", class: "btn btn-about" %>
+</div>
 </div>
