@@ -1,3 +1,10 @@
+.gb-navbar img {
+  height: 130px;
+  width: auto;
+  margin-left: 36px;
+
+}
+
 .home-green {
   background-color: #6BDFA7;
   height: 100vh;
@@ -7,8 +14,6 @@
   justify-content: stretch;
   padding: 20px;
 }
-
-
 
 .home-blue {
   background-color: #1B8EAD;
@@ -25,8 +30,8 @@
   background-position: center;
   background-size: cover;
 
-  width: 882px;
-  height: 68vh;
+  width: 80%;
+  height: 75vh;
 
 
 }
@@ -37,6 +42,7 @@
   font-family: Poppins;
   font-weight: 700;
   color: #fff;
+  text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.5);
 }
 
 
@@ -44,6 +50,7 @@
   font-size: 1.5rem;
   color: #fff;
   margin-bottom: 2rem;
+  text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.5);
 }
 
 
@@ -53,20 +60,17 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
-
   width: 100%;
   max-width: 300px;
-
   margin: 16px auto 0;
 
 }
 
 .geo-buttons .btn {
-  width: 100%;           
+  width: 100%;
   border-radius: 25px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
-
   display: flex;
   align-items: center;
   justify-content: center;

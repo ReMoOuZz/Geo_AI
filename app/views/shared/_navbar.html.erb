@@ -4,12 +4,8 @@
         <%= link_to root_path, class: "navbar-brand d-flex align-items-center" do %>
           <%= image_tag "logo.png", alt: "GeoBattle", height: 48, class: "brand-logo" %>
         <% end %>
-
-        <div class="navbar-icon">
-          <%= link_to "#", class: "gb-icon" do %>
-            <i class="fa-solid fa-award"></i>
-          <% end %>
-          <%= link_to "#", class: "gb-icon" do %>
+        
+        <%= link_to pages_profile_path, class: "gb-icon" do %>
             <i class="fa-solid fa-user"></i>
           <% end %>
           <% if user_signed_in? %>
@@ -22,5 +18,4 @@
              <% end %>
           <% end %>
         </div>
-      </div>
     </nav>
