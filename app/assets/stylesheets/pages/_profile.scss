@@ -5,6 +5,7 @@
   grid-template-columns: 420px 1fr;
   gap: 32px;
   padding: 32px 40px;
+  margin-left: 4rem;
 
   align-items: center;
 }
@@ -191,4 +192,10 @@
   .reward-grid {
     grid-template-columns: repeat(2, var(--hex-w));
   }
+}
+
+.reward-ico img {
+  width: 35px; 
+  height: 35px;
+  object-fit: contain;
 }
