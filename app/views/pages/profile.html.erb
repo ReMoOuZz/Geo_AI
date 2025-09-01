@@ -1,40 +1,32 @@
-
 <aside class="gb-sidebar">
-
-<div class="gb-sidebar_logo">
-  <%= link_to root_path do %>
-    <%= image_tag "littlelogo.png", alt: "GeoBattle small logo", class: "gb-logo small" %>
-    <%= image_tag "logo.png",        alt: "GeoBattle big logo",   class: "gb-logo big" %>
-  <% end %>
-</div>
+  <div class="gb-sidebar_logo">
+    <%= link_to root_path do %>
+      <%= image_tag "littlelogo.png", alt: "GeoBattle small logo", class: "gb-logo small" %>
+      <%= image_tag "logo.png",        alt: "GeoBattle big logo",   class: "gb-logo big" %>
+    <% end %>
+  </div>
 
   <div class="gb-sidebar__avatar">
     <%= image_tag "avatar3.png", alt: "Profil", class: "gb-avatar" %>
   </div>
 
-
-
-<nav class="gb-sidebar__menu">
+  <nav class="gb-sidebar__menu">
     <%= link_to pages_profile_path, class: "gb-sideitem active" do %>
       <i class="fa-solid fa-user"></i>
       <span class="label">Profil</span>
     <% end %>
-
     <%= link_to pages_rewards_path, class: "gb-sideitem" do %>
       <i class="fa-solid fa-trophy"></i>
       <span class="label">Recompences</span>
     <% end %>
-
     <%= link_to pages_stats_path, class: "gb-sideitem" do %>
       <i class="fa-solid fa-chart-simple"></i>
       <span class="label">Statistiques</span>
     <% end %>
-
     <%= link_to pages_friends_path, class: "gb-sideitem" do %>
       <i class="fa-solid fa-users"></i>
       <span class="label">Vos amis</span>
     <% end %>
-
     <%= link_to destroy_user_session_path, class: "gb-sideitem" do %>
       <i class="fa-solid fa-right-from-bracket"></i>
       <span class="label">Déconnexion</span>
@@ -42,41 +34,113 @@
   </nav>
 </aside>
 
+<div class="rewards-layout">
+  <div class="profile-container">
+    <div class="profile-card">
+      <div class="profile-avatar-wrap">
+        <%= image_tag "avatar3.png", alt: "Avatar", class: "profile-avatar" %>
+        <i class="fa-solid fa-pen-to-square edit-icon avatar-edit"></i>
+      </div>
 
+      <hr class="profile-sep">
 
+      <div class="profile-field profile-field--name">
+        <span class="profile-name">Geo Ninja</span>
+        <i class="fa-solid fa-pen-to-square edit-icon"></i>
+      </div>
 
-<div class="profile-container">
-  <div class="profile-card">
-    <div class="profile-avatar-wrap">
-      <%= image_tag "avatar3.png", alt: "Avatar", class: "profile-avatar" %>
-      <i class="fa-solid fa-pen-to-square edit-icon avatar-edit"></i>
+      <div class="profile-field">
+        <span class="profile-label">Mot de passe</span>
+        <i class="fa-solid fa-pen-to-square edit-icon"></i>
+      </div>
+
+      <div class="profile-field">
+        <span class="profile-label">Email</span>
+        <i class="fa-solid fa-pen-to-square edit-icon"></i>
+      </div>
+
+      <hr class="profile-sep">
+
+      <ul class="profile-stats">
+        <li>Nombres de badges : -</li>
+        <li>Ranking : -</li>
+        <li>Evolution ranking (+ / -)</li>
+      </ul>
+
+      <button class="btn-save">Enregistrer</button>
+    </div>
+  </div>
+
+  <div class="rewards-right">
+  <div class="reward-grid">
+    <div class="reward-card">
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
+        <i class="fa-solid fa-gem" style="color: #74009eff;"></i>
+      </div>
+      <div class="reward-text">0 diamant de brut</div>
     </div>
 
-    <hr class="profile-sep">
-
-    <div class="profile-field profile-field--name">
-      <span class="profile-name">Geo Ninja</span>
-      <i class="fa-solid fa-pen-to-square edit-icon"></i>
+    <div class="reward-card">
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
+        <i class="fa-solid fa-gem" style="color: #74009eff;"></i>
+      </div>
+      <div class="reward-text">0 diamant de brut</div>
     </div>
 
-    <div class="profile-field">
-      <span class="profile-label">Mot de passe</span>
-      <i class="fa-solid fa-pen-to-square edit-icon"></i>
+    <div class="reward-card">
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
+        <i class="fa-solid fa-medal" style="color: #0031e3ff;"></i>
+      </div>
+      <div class="reward-text">12 médailles d’Argent</div>
     </div>
 
-    <div class="profile-field">
-      <span class="profile-label">Email</span>
-      <i class="fa-solid fa-pen-to-square edit-icon"></i>
+    <div class="reward-card">
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
+        <i class="fa-solid fa-award" style="color: #03c000ff;"></i>
+      </div>
+      <div class="reward-text">7 médailles de Bronze</div>
     </div>
 
-    <hr class="profile-sep">
+    <div class="reward-card">
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
+        <i class="fa-solid fa-poo" style="color: #a5ec0cff;"></i>
+      </div>
+      <div class="reward-text">6 crottes</div>
+    </div>
 
-    <ul class="profile-stats">
-      <li>Nombres de badges : -</li>
-      <li>Ranking : -</li>
-      <li>Evolution ranking (+ / -)</li>
-    </ul>
+    <div class="reward-card">
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
+        <i class="fa-solid fa-trophy" style="color: #74009eff;"></i>
+      </div>
+      <div class="reward-text">5 médailles d’Or</div>
+    </div>
 
-    <button class="btn-save">Enregistrer</button>
+    <div class="reward-card">
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
+        <i class="fa-solid fa-medal" style="color: #002a9eff;"></i>
+      </div>
+      <div class="reward-text">12 médailles d’Argent</div>
+    </div>
+
+    <div class="reward-card">
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
+        <i class="fa-solid fa-award" style="color: #009e0bff;"></i>
+      </div>
+      <div class="reward-text">7 médailles de Bronze</div>
+    </div>
+
+    <div class="reward-card">
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
+        <i class="fa-solid fa-poo" style="color: #9e005aff;"></i>
+      </div>
+      <div class="reward-text">6 crottes</div>
+    </div>
+
+    <div class="reward-card">
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
+        <i class="fa-solid fa-mountain-sun" style="color: #009e67ff;"></i>
+      </div>
+      <div class="reward-text">Nouveaux</div>
+    </div>
   </div>
 </div>
