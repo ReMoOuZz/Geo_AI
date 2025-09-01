@@ -9,8 +9,8 @@
         <%= f.input :password, required: true, hint: ("#{@minimum_password_length} caractères minimum" if @minimum_password_length), input_html: { autocomplete: "new-password" } %>
         <%= f.input :password_confirmation, required: true, input_html: { autocomplete: "new-password" } %>
 
-    <!-- Possibilité de choisir entre sa photo perso ou un avatar avec du JS à faire -->
-    <!-- <%= f.input :photo, required: true, as: :file %> -->
+    <!-- Possibilité de choisir entre sa photo perso ou un avatar avec du JS à faire
+     <%= f.input :photo, required: true, as: :file %>
 
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Choisissez un avatar personnalisé
@@ -28,28 +28,45 @@
                     <div class="col-md-4 ms-auto">
                       <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375464/Avatar_F_1_ovljm4.png" id="avatar1"/><label for="avatar1"></label>
                     </div>
-                    <div class="col-md-4 ms-auto">Avatar</div>
-                    <div class="col-md-4 ms-auto">Avatar</div>
+                    <div class="col-md-4 ms-auto">
+                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756392132/Avatar_F_4_whsizu.png" id="avatar2"/><label for="avatar2"></label>
+                    </div>
+                    <div class="col-md-4 ms-auto">
+                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375459/Avatar_H_1_erb2fz.png" id="avatar3"/><label for="avatar3"></label>
+                    </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-4 ms-auto">Avatar</div>
-                    <div class="col-md-4 ms-auto">Avatar</div>
-                    <div class="col-md-4 ms-auto">Avatar</div>
+                    <div class="col-md-4 ms-auto">
+                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375464/Avatar_F_1_ovljm4.png" id="avatar1"/><label for="avatar1"></label>
+                    </div>
+                    <div class="col-md-4 ms-auto">
+                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756392132/Avatar_F_4_whsizu.png" id="avatar2"/><label for="avatar2"></label>
+                    </div>
+                    <div class="col-md-4 ms-auto">
+                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375459/Avatar_H_1_erb2fz.png" id="avatar3"/><label for="avatar3"></label>
+                    </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-4 ms-auto">Avatar</div>
-                    <div class="col-md-4 ms-auto">Avatar</div>
-                    <div class="col-md-4 ms-auto">Avatar</div>
+                    <div class="col-md-4 ms-auto">
+                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375464/Avatar_F_1_ovljm4.png" id="avatar1"/><label for="avatar1"></label>
+                    </div>
+                    <div class="col-md-4 ms-auto">
+                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756392132/Avatar_F_4_whsizu.png" id="avatar2"/><label for="avatar2"></label>
+                    </div>
+                    <div class="col-md-4 ms-auto">
+                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375459/Avatar_H_1_erb2fz.png" id="avatar3"/><label for="avatar3"></label>
+                    </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-4 ms-auto">Avatar</div>
-                    <div class="col-md-4 ms-auto">Avatar</div>
-                    <div class="col-md-4 ms-auto">Avatar</div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4 ms-auto">Avatar</div>
-                    <div class="col-md-4 ms-auto">Avatar</div>
-                    <div class="col-md-4 ms-auto">Avatar</div>
+                   <div class="col-md-4 ms-auto">
+                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375464/Avatar_F_1_ovljm4.png" id="avatar1"/><label for="avatar1"></label>
+                    </div>
+                    <div class="col-md-4 ms-auto">
+                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756392132/Avatar_F_4_whsizu.png" id="avatar2"/><label for="avatar2"></label>
+                    </div>
+                    <div class="col-md-4 ms-auto">
+                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375459/Avatar_H_1_erb2fz.png" id="avatar3"/><label for="avatar3"></label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -59,7 +76,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="form-actions">
         <%= f.button :submit, "S'enregistrer", class: "btn" %>
@@ -139,7 +156,21 @@
     border-radius: 50%;
   }
 
+  input#avatar2[type=checkbox]+label {
+    background-image: url(https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756392132/Avatar_F_4_whsizu.png);
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    padding: 0 0 0 0px;
+    border-radius: 50%;
+  }
+
   input#avatar1:checked+label {
+    border: 3px solid gold;
+  }
+
+  input#avatar2:checked+label {
     border: 3px solid gold;
   }
   </style>
