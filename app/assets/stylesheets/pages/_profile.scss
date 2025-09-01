@@ -125,9 +125,10 @@
 }
 
 :root {
-  --hex-w: 98px;
+  --hex-w: 98px; /* ширина грани */
   --hex-gap: 20px;
 }
+
 
 .reward-grid {
   display: grid;
@@ -136,11 +137,15 @@
   justify-content: center;
 }
 
+
 .reward-card {
   width: var(--hex-w);
-  height: calc(var(--hex-w) * 1.142857);
+  height: calc(var(--hex-w) * 0.866); /* исправляем коэффициент */
   background: #ffffff;
-  clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+  clip-path: polygon(
+    25% 0%, 75% 0%, 100% 50%,
+    75% 100%, 25% 100%, 0% 50%
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,7 +155,6 @@
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .reward-card:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0,0,0,0.18);
@@ -188,5 +192,3 @@
     grid-template-columns: repeat(2, var(--hex-w));
   }
 }
-
-
