@@ -24,10 +24,7 @@
       <i class="fa-solid fa-chart-simple"></i>
       <span class="label">Statistiques</span>
     <% end %>
-    <%= link_to pages_friends_path, class: "gb-sideitem" do %>
-      <i class="fa-solid fa-users"></i>
-      <span class="label">Vos amis</span>
-    <% end %>
+
     <%= link_to destroy_user_session_path, class: "gb-sideitem" do %>
       <i class="fa-solid fa-right-from-bracket"></i>
       <span class="label">Déconnexion</span>
@@ -75,73 +72,73 @@
   <div class="rewards-right">
   <div class="reward-grid">
     <div class="reward-card">
-      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
-        <i class="fa-solid fa-gem" style="color: #74009eff;"></i>
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title=" Un diamant pour chaque fois que tu as 100% de bonnes réponses quiz difficile">
+        <i class="fa-solid fa-gem" style="color: #0051f2ff;"></i>
+      </div>
+      <div class="reward-text"> tu as 0 diamant brut</div>
+    </div>
+
+    <div class="reward-card">
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="Une medaille pour chaque fois que tu as 80 % de bonnes réponses quiz difficile">
+      <i class="fa-solid fa-medal" style="color: #FFD43B;"></i>
       </div>
       <div class="reward-text">0 diamant de brut</div>
     </div>
 
     <div class="reward-card">
-      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
-        <i class="fa-solid fa-gem" style="color: #74009eff;"></i>
-      </div>
-      <div class="reward-text">0 diamant de brut</div>
-    </div>
-
-    <div class="reward-card">
-      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
-        <i class="fa-solid fa-medal" style="color: #0031e3ff;"></i>
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="Une medaille pour chaque fois que tu as 80 % de bonnes réponses quiz intermédiaire">
+       <i class="fa-solid fa-medal" style="color: #858585ff;"></i>
       </div>
       <div class="reward-text">12 médailles d’Argent</div>
     </div>
 
     <div class="reward-card">
-      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
-        <i class="fa-solid fa-award" style="color: #03c000ff;"></i>
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="Une medaille pour chaque fois que tu as 80 % de bonnes réponses quiz facile">
+        <i class="fa-solid fa-award" style="color: #fc8a1fff;"></i>
       </div>
       <div class="reward-text">7 médailles de Bronze</div>
     </div>
 
     <div class="reward-card">
-      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
-        <i class="fa-solid fa-poo" style="color: #a5ec0cff;"></i>
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title=" Un badge a chaque fois que tu as 30% ou moins de bonnes réponses à n’importe quel quiz">
+        <i class="fa-solid fa-poo" style="color: #6e4500ff;"></i>
       </div>
       <div class="reward-text">6 crottes</div>
     </div>
 
     <div class="reward-card">
-      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
-        <i class="fa-solid fa-trophy" style="color: #74009eff;"></i>
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="Un badge a chaque fois que tu as 80% ou plus dans des questions de reliefs">
+       <i class="fa-solid fa-person-hiking" style="color: #017452;"></i>
       </div>
       <div class="reward-text">5 médailles d’Or</div>
     </div>
 
     <div class="reward-card">
-      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
-        <i class="fa-solid fa-medal" style="color: #002a9eff;"></i>
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="Un badge a chaque fois que tu as 80% ou plus dans des questions de drapeaux">
+        <i class="fa-solid fa-flag" style="color: #ff0000;"></i>
       </div>
       <div class="reward-text">12 médailles d’Argent</div>
     </div>
 
     <div class="reward-card">
-      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
-        <i class="fa-solid fa-award" style="color: #009e0bff;"></i>
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="Un badge a chaque fois que tu as 80% ou plus dans des questions de capitales">
+        <i class="fa-solid fa-building-columns" style="color: #B197FC;"></i>
       </div>
       <div class="reward-text">7 médailles de Bronze</div>
     </div>
 
     <div class="reward-card">
-      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
-        <i class="fa-solid fa-poo" style="color: #9e005aff;"></i>
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="Un badge a chaque fois que tu as 80% dans des questions géopolitiques">
+        <i class="fa-solid fa-helmet-un" style="color: #b10196ff;"></i>
       </div>
       <div class="reward-text">6 crottes</div>
     </div>
 
     <div class="reward-card">
-      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="on peux mettre autant de texte qu'on veux">
-        <i class="fa-solid fa-mountain-sun" style="color: #009e67ff;"></i>
+      <div class="reward-ico" data-bs-toggle="tooltip" data-bs-placement="top" title="TU T'ES VRAIMENT CHIE DESSUS">
+        <i class="fa-solid fa-poo" style="color: #2b1b00ff;"></i>
       </div>
-      <div class="reward-text">Nouveaux</div>
+      <div class="reward-text">GROS CACA</div>
     </div>
   </div>
 </div>
