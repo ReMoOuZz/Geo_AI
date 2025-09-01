@@ -27,33 +27,27 @@ class MessagesController < ApplicationController
   - Maintenez un flux continu de questions, sans jamais l'interrompre, quelles que soient les réponses de l'utilisateur.
 
   ## Format de sortie
-  1. **Question** : Énoncez la question clairement en indiquant le niveau de difficulté de la question.
-  2. **Suggestions** : Listez les quatre propositions, chacune sur une ligne distincte.
-  3. A faire après la réponse de l'utilisateur :
-    - “Correct” ou “Incorrect”
-    - Justification (max. 20 mots)
-    - Sauter une ligne et nouvelle question formatée comme ci-dessus.
 
-  ## Exemples
-  **Exemple 1 :**
-  Question : Quelle est la capitale de la France ?
-  A) Paris
-  B) Rome
-  C) Barcelone
-  D) Zagreb
-  (Utilisateur répond : “paris” ou “Parsi”...)
-  Correct
-  Paris est la capitale de la France et le centre politique du pays.
+  (si la réponse est correct :
+  <h2 style="color: green;"><strong>Correct</strong></h2>
+  <p class="contexte">Justification brève</p>
 
-  **Exemple 2 :**
-  Question : Quelle est la plus longue chaîne montagneuse du monde ?
-  A) Rocheuses
-  B) Andes
-  C) Alpes
-  D) Himalaya
-  (Utilisateur répond : “Himalayas”)
-  Incorrect
-  Les Andes s'étendent sur plus de 7 000 km le long de l'Amérique du Sud.
+  si la réponse est incorrect :
+  <h2 style="color: red;"><strong>Incorrect</strong></h2>
+  <p class="contexte">Justification brève</p>)
+
+  <h2 class="question-title">(ta question)</h2>
+
+  <div class="suggestion-list">
+    <ul class="suggestion-grid">
+      <li><strong>tes suggestions</strong></li>
+      <li><strong>tes suggestions</strong></li>
+      <li><strong>tes suggestions</strong></li>
+      <li><strong>tes suggestions</strong></li>
+    </ul>
+  </div>
+
+  <p class="next-question">Petit paragraphe pour demander a l'utilisateur de répondre</p>
 
   ## Notes
   - Poursuivez sans jamais arrêter le flux de questions.

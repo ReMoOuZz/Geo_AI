@@ -7,7 +7,7 @@
         </div>
       <% elsif message.role == "assistant" %>
         <div class="quiz-message assistant">
-          <p><span class="fw-bold text-danger">Question :</span> <%= raw(render_markdown message.content) %></p>
+          <p><%= raw(render_markdown message.content) %></p>
         </div>
       <% end %>
     <% end %>
@@ -17,15 +17,17 @@
          data-actionquiz-messagesnumber-value="<%= @response_count %>">
 
       <%= simple_form_for [@chat, @user_message], data:{ actionquiz_target: "form" } do |f| %>
-        <%= f.input :content,
-          placeholder: "Votre réponse...",
-          label:false,
-          input_html: {
-            class: "quiz-input",
-            data: { action: "keyup->actionquiz#enterValidation", actionquiz_target: "input" }
-          } %>
-
-        <%= f.button :submit, "Envoyer", class:"btn btn-success rounded-3 quiz-btn" %>
+        <div class="input-group mb-3">
+          <%= f.input :content,
+            placeholder: "Votre réponse...",
+            wrapper: false,
+            label:false,
+            input_html: {
+              class: "form-control ",
+              data: { action: "keyup->actionquiz#enterValidation", actionquiz_target: "input" }
+            } %>
+          <%= f.button :submit, "Répondre", class:"btn btn-success", style: "color: white; font-weight: bold", wrapper: false  %>
+        </div>
       <% end %>
 
       <div data-actionquiz-target="replace" class="d-none d-flex justify-content-center mt-3">

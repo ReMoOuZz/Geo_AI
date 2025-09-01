@@ -15,7 +15,6 @@ export default class extends Controller {
           this.formTarget.classList.add('d-none');
           this.replaceTarget.classList.remove('d-none');
         }
-        this.element.scrollIntoView({behavior: "smooth", block: "center"})
         this.inputTarget.focus();
       }, 50);
     }
