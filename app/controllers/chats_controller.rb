@@ -66,7 +66,7 @@ class ChatsController < ApplicationController
 
   def create
     @quiz = Quiz.create!(score: 0) # ajouter les autres params si nécessaire
-    @chat = Chat.new(title: "Quiz test", quiz: @quiz, user: current_user, model_id: "gpt-4.1-nano")
+    @chat = Chat.new(title: "Quiz test", quiz: @quiz, user: current_user, model_id: "gpt-5-chat-latest")
     if @chat.save!
       @response = @chat.with_instructions(SYSTEM_PROMPT).ask("Quelle est la capitale de la France")
       @message = @chat.messages.where(role: "assistant").last
