@@ -15,6 +15,8 @@ class UserAnswersController < ApplicationController
       @user_response = @user_answer.content
 
       @is_correct = check_answer(@user_response)
+      @user_answer.is_correct = @is_correct
+      @user_answer.save!
       set_score
 
       if @is_correct
