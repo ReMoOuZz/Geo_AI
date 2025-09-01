@@ -1,5 +1,3 @@
-
-
 <aside class="gb-sidebar">
 
   <div class="gb-sidebar_logo">
@@ -10,8 +8,6 @@
   <div class="gb-sidebar__avatar">
     <%= image_tag "avatar.png", alt: "Profil", class: "gb-avatar" %>
   </div>
-
-
 
   <nav class="gb-sidebar__menu">
     <%= link_to pages_profile_path, class: "gb-sideitem active" do %>
@@ -35,3 +31,37 @@
     <% end %>
   </nav>
 </aside>
+
+<div class="parent stats-container">
+
+  <div class="div1 card">
+    <h1 class="title">Statistiques</h1>
+    <h3>Retrouvez toutes les informations sur vos performances</h3>
+    <div class="global">Taux général de bonnes réponses :</div>
+  </div>
+
+  <div class="div2 card">
+    <h2>Statistiques par catégorie</h2>
+    <div>Drapeaux : X %</div>
+    <div>Reliefs : Y %</div>
+    <div>Catégorie géopolitique : etc... </div>
+    <div>Catégorie Régions et villes du monde</div>
+    <div>Catégorie cultures :</div>
+  </div>
+
+  <div class="div3 card">
+    <h2>Statistiques par difficulté</h2>
+    <div>Niveau facile : </div>
+    <div>Niveau intermédiaire :</div>
+    <div>Niveau difficile :</div>
+  </div>
+
+  <div class="div4 card">
+    <h2>Statistiques par région</h2>
+    <div>Afrique :</div>
+    <div>Amérique :</div>
+    <div>Asie :</div>
+    <div>Europe :</div>
+    <div>Océanie :</div>
+  </div>
+</div>
