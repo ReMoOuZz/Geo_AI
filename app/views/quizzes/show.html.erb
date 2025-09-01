@@ -5,7 +5,7 @@
 
     <div class="trophy" data-quiz-results-target="trophy">
     </div>
-    <% if @quiz.score > (Quiz::TOTAL*0.8) %>
+    <% if @quiz.score >= (Quiz::TOTAL*0.8) %>
       <div class="congratulations">Félicitations !</div>
     <% elsif @quiz.score >= (Quiz::TOTAL * 0.6) %>
       <div class="congratulations">Pas mal !</div>
