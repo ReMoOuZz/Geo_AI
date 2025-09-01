@@ -10,16 +10,14 @@
   </div>
 
   <nav class="gb-sidebar__menu">
+   <%= link_to root_path, class: "gb-sideitem" do %>
+      <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+      <span class="label">Home page</span>
+    <% end %>
     <%= link_to pages_profile_path, class: "gb-sideitem active" do %>
       <i class="fa-solid fa-user"></i>
       <span class="label">Profil</span>
     <% end %>
-
-    <%= link_to pages_rewards_path, class: "gb-sideitem" do %>
-      <i class="fa-solid fa-trophy"></i>
-      <span class="label">Recompences</span>
-    <% end %>
-
     <%= link_to pages_stats_path, class: "gb-sideitem" do %>
       <i class="fa-solid fa-chart-simple"></i>
       <span class="label">Statistiques</span>
