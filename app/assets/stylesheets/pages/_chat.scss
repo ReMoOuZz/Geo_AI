@@ -1,8 +1,8 @@
 .quiz-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: calc(100vh - 60px);
+  align-items: flex-end;
+  height: 80vh;
   width: 100%;
   padding: 20px;
 }
@@ -12,8 +12,7 @@
   border-radius: 16px;
   padding: 32px;
   width: 80%;
-  max-width: 82%;
-  height: 70%;
+  max-height: 100%;
   overflow-y: auto;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   display: flex;
@@ -22,45 +21,79 @@
 }
 
 
-.quiz-input {
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 8px 12px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-  font-size: 1rem;
-  transition: all 0.2s ease;
-  backdrop-filter: blur(4px);
-  margin-bottom: 40px;
-}
+// .quiz-input {
+//   width: 100%;
+//   border: none;
+//   outline: none;
+//   padding: 8px 12px;
+//   border-radius: 12px;
+//   background: rgba(255, 255, 255, 0.4);
+//   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+//   font-size: 1rem;
+//   transition: all 0.2s ease;
+//   backdrop-filter: blur(4px);
+//   margin-bottom: 40px;
+// }
 
-.quiz-input:focus {
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  border: 2px solid #258DB6;
-}
+// .quiz-input:focus {
+//   background: rgba(255, 255, 255, 0.3);
+//   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+//   border: 2px solid #258DB6;
+// }
 
 .quiz-message {
   margin-bottom: 16px;
 }
 
 
-.quiz-btn {
-  display: inline-block;
-  width: 30%;
-  padding: 12px 20px;
-  margin-top: 0px;
-  margin-bottom: 10px;
+// .quiz-btn {
+//   display: inline-block;
+//   width: 30%;
+//   padding: 12px 20px;
+//   margin-top: 0px;
+//   margin-bottom: 10px;
+//   border: none;
+//   border-radius: 12px;
+//   background: #5DD19B;
+//   color: #fff;
+//   font-size: 1rem;
+//   font-weight: 600;
+//   cursor: pointer;
+//   transition: all 0.2s ease;
+//   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+//   border-radius: 20px;
+// }
+
+.question-title {
+  margin-bottom: 1em;
+}
+
+.suggestion-grid {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  gap: 12px;
+  grid-template-rows: 50px 50px;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.suggestion-grid li {
+  background-color: #6bdfa7;
   border: none;
   border-radius: 12px;
-  background: #5DD19B;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
+  padding: 0.5em;
+  font-size: 20px;
+}
+
+.contexte {
+  font-size: 20px;
+}
+
+.next-question {
+  font-size: 20px;
+}
+
+.user {
+  font-size: 20px;
 }

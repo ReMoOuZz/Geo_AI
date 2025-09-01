@@ -29,33 +29,19 @@ class ChatsController < ApplicationController
   - Maintenez un flux continu de questions, sans jamais l'interrompre, quelles que soient les réponses de l'utilisateur.
 
   ## Format de sortie
-  1. **Question** : Énoncez la question clairement en indiquant le niveau de difficulté de la question.
-  2. **Suggestions** : Listez les quatre propositions, chacune sur une ligne distincte.
-  3. A faire après la réponse de l'utilisateur :
-    - “Correct” ou “Incorrect”
-    - Justification (max. 20 mots)
-    - Sauter une ligne et nouvelle question formatée comme ci-dessus.
 
-  ## Exemples
-  **Exemple 1 :**
-  Question : Quelle est la capitale de la France ?
-  A) Paris
-  B) Rome
-  C) Barcelone
-  D) Zagreb
-  (Utilisateur répond : “paris” ou “Parsi”...)
-  Correct
-  Paris est la capitale de la France et le centre politique du pays.
+  <h2 class="question-title">(ta question)</h2>
 
-  **Exemple 2 :**
-  Question : Quelle est la plus longue chaîne montagneuse du monde ?
-  A) Rocheuses
-  B) Andes
-  C) Alpes
-  D) Himalaya
-  (Utilisateur répond : “Himalayas”)
-  Incorrect
-  Les Andes s'étendent sur plus de 7 000 km le long de l'Amérique du Sud.
+  <div class="suggestion-list">
+    <ul class="suggestion-grid">
+      <li><strong>tes suggestions</strong></li>
+      <li><strong>tes suggestions</strong></li>
+      <li><strong>tes suggestions</strong></li>
+      <li><strong>tes suggestions</strong></li>
+    </ul>
+  </div>
+
+  <p class="next-question">Petit paragraphe pour demander a l'utilisateur de répondre</p>
 
   ## Notes
   - Poursuivez sans jamais arrêter le flux de questions.
@@ -66,7 +52,7 @@ class ChatsController < ApplicationController
 
   def create
     @quiz = Quiz.create!(score: 0) # ajouter les autres params si nécessaire
-    @chat = Chat.new(title: "Quiz test", quiz: @quiz, user: current_user, model_id: "gpt-4.1-nano")
+    @chat = Chat.new(title: "Quiz test", quiz: @quiz, user: current_user, model_id: "gpt-5-chat-latest")
     if @chat.save!
       @response = @chat.with_instructions(SYSTEM_PROMPT).ask("Quelle est la capitale de la France")
       @message = @chat.messages.where(role: "assistant").last

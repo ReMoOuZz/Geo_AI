@@ -33,7 +33,7 @@
   margin-bottom: 1em;
 }
 
-.button_zone_container input[type="radio"] {
+.button_zone_container input[type="checkbox"] {
   display: none;
 }
 
@@ -102,12 +102,13 @@
   text-align: center;
   font-weight: 700;
   box-shadow: 2px 6px 6px 0px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease;
   cursor: pointer;
 }
 
-.button_zone_container input[type="radio"]:checked + label {
+.button_zone_container input[type="checkbox"]:checked + label {
   box-shadow:
-  inset 2px 8px 12px rgba(0,0,0,0.4),   /* ombre interne principale */
+  inset 2px 8px 12px rgba(0,0,0,0.4),
   inset -2px -4px 6px rgba(255,255,255,0.3);
 }
 

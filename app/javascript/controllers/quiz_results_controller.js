@@ -20,15 +20,17 @@ export default class extends Controller {
       console.log("percentage:", percentage)
 
       if(percentage >= 80) {
-        this.trophyTarget.innerHTML = '<i class="fa-solid fa-trophy" style="color: #FFD43B;"></i>'
-        this.messageTarget.textContent = "Excellent ! tu  maîtrise la géographie !"
+        this.trophyTarget.innerHTML = '<i class="fa-solid fa-medal" style="color: #FFD43B;"></i>'
+        this.messageTarget.textContent = "Tu maîtrises la géographie. Nous te recommandons de jouer à GeoBattle en mode difficile"
       } else if (percentage >= 60) {
         this.trophyTarget.innerHTML = '<i class="fa-solid fa-medal" style="color: #c0c0c0;"></i>'
-        this.messageTarget.textContent = "Bien joué ! Continue comme ça !"
+        this.messageTarget.textContent = "Tu n'es plus un débutant, tu peux commencer à jouer à GeoBattle en mode intermédiaire"
+      } else if (percentage >= 40) {
+        this.trophyTarget.innerHTML = '<i class="fa-solid fa-medal" style="color: #977106ff;"></i>'
+        this.messageTarget.textContent = "Il te faut davantage d'entraînement en mode débutant sur GeoBattle !"
       } else {
-        this.trophyTarget.innerHTML = '<i class="fa-solid fa-medal" style="color: #614e1a;"></i>'
-        this.messageTarget.textContent = "Pas mal ! Un peu de révision et ce sera parfait !"
-        
+        this.trophyTarget.innerHTML = '<i class="fa-solid fa-poop" style="color: #614e1a;"></i>'
+        this.messageTarget.textContent = "Il te manque un peu de connaissances en géographie, tout n'est pas perdu, il faut t'entrainer !"
       }
   }
 }

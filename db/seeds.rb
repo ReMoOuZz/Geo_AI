@@ -16,8 +16,18 @@
 # region : Europe, Océanie, Amérique, Afrique, Asie (un array de 5 continents)
 # 1 correct_answer (string d'une bonne réponse)
 # 3 incorrect_answers (un array de 3 mauvaises réponses)
-# Contexte : texte de 25 mots max expliquant la bonne réponse  Propose moi 150questions sur la catégorie "Hydrographie et reliefs"
+# Contexte : texte de 25 mots max expliquant la bonne réponse
+# Propose moi 150questions sur la catégorie "Hydrographie et reliefs"
+
+puts "Suppression des utilisateurs..."
+User.destroy_all
+# user1 = User.create!(email: "antoine@mail.com", pseudo: "Cauchix", password: "secret")
+puts "Utilisateurs supprimés"
+
+puts "Suppression des questions..."
 Question.destroy_all
+
+puts "Création des questions..."
 
 questions_data = [
 
@@ -9071,7 +9081,7 @@ questions_data = [
 
   # ASIE - Cultures
 
-{
+  {
     content: "Quelle est la religion majoritaire en Inde, connue pour ses concepts de karma et de réincarnation ?",
     difficulty: "facile",
     category: "Cultures",
@@ -9807,3 +9817,7 @@ questions_data.each_with_index do |data, index|
     contexte: data[:contexte]
   )
 end
+
+puts "Questions créées"
+
+puts "Seeding terminé"

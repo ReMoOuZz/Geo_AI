@@ -3,16 +3,25 @@
        data-quiz-results-score-value="<%= @quiz.score %>"
        data-quiz-results-total-value="<%= @total %>">
 
+    <div class="trophy" data-quiz-results-target="trophy">
+    </div>
+    <% if @quiz.score > (Quiz::TOTAL*0.8) %>
+      <div class="congratulations">Félicitations !</div>
+    <% elsif @quiz.score >= (Quiz::TOTAL * 0.6) %>
+      <div class="congratulations">Pas mal !</div>
+    <% elsif @quiz.score >= (Quiz::TOTAL*0.4) %>
+      <div class="congratulations">Tu peux mieux faire !</div>
+    <% elsif @quiz.score < (Quiz::TOTAL*0.4) %>
+      <div class="congratulations">Aïe Aïe Aïe !</div>
+    <% end %>
 
-    <div class="trophy" data-quiz-results-target="trophy"></div>
-    <div class="congratulations">Félicitations !</div>
-
-
+<!--
     <div class="stars">
       <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
       <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
       <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
     </div>
+-->
 
     <h1 class="score-display">
       <span data-quiz-results-target="scoreDisplay"><%= @quiz.score %></span>
@@ -21,9 +30,9 @@
     </h1>
 
     <div class="message" data-quiz-results-target="message">
-      Excellent !!! Tu es vraiment bon en Géographie !
+
     </div>
 
-    <%= link_to "Commence Ton Geo Battle!", new_game_path, class: "start-btn" %>
+    <%= link_to "Je lance un GeoBattle!", new_game_path, class: "start-btn" %>
   </div>
 </div>

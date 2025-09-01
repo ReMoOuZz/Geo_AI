@@ -24,7 +24,7 @@ class UserAnswersController < ApplicationController
         @score.save
       end
 
-      if @user_answer.game_question.order == 2
+      if @user_answer.game_question.order == 10
         redirect_to game_score_path(@game, @score)
       else
         new_question
@@ -42,12 +42,11 @@ class UserAnswersController < ApplicationController
   end
 
   def new_question
-    @find_question = Question.where(
-      difficulty: @game.difficulty,
-      category: @game.category,
-      region: @game.region
-      # game_type: @game.game_type
-    ).order("RANDOM()").first
+
+    questions = Question.where(difficulty: @game.difficulty, region: @game.region)
+    questions = Question.where(category: @game.category) unless @game.category == "random"
+
+    @find_question = questions.order("RANDOM()").first
 
     GameQuestion.create!(
     game: @game,
