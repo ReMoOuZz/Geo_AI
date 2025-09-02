@@ -43,8 +43,8 @@ class UserAnswersController < ApplicationController
 
   def new_question
 
-      questions = Question.where(difficulty: @game.difficulty, region: @game.region)
-      questions = questions.where(category: @game.category ) unless @game.category == "random"
+      questions = Question.where(difficulty: @game.difficulty, category: @game.category)
+      questions = questions.where(region: @game.region ) unless @game.region == "random"
 
       @find_question = questions.sample
 
