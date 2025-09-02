@@ -1,0 +1,50 @@
+
+.about-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.about-box {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  color: #0b2630;
+}
+
+.about-title {
+  font-size: 44px;
+  font-weight: 800;
+  margin: 0 0 16px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+
+.about-line {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  text-decoration: none;
+  text-underline-offset: 6px;
+}
+
+
+.about-quote {
+  margin: 22px 0 0;
+  font-size: 22px;
+
+  text-underline-offset: 6px;
+}
+
+.about-source {
+  margin: 6px 0 0;
+  font-size: 20px;
+  font-weight: 700;
+
+  text-underline-offset: 6px;
+}
