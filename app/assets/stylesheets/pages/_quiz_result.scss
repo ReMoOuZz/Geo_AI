@@ -8,7 +8,7 @@
 
 .results-card {
   background: rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
+  border-radius: 14px;
   padding: 32px 28px;
   max-width: 420px;
   width: 100%;
@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  font-size: 28px;
 }
 
 .results-card .stars {
@@ -92,19 +93,17 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 20px;
+  padding: 8px 20px;
   min-width: 180px;
-  border-radius: 9999px;
-  background: #5DD19B;
+  border-radius: 18px;
+  background: #1db76f;
   color: #ffffff;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   box-shadow: 0 8px 18px rgba(27,142,173,.28);
-  transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
 }
 .results-card .start-btn:hover {
   filter: brightness(1.03);
-  transform: translateY(-1px);
   box-shadow: 0 10px 22px rgba(27,142,173,.32);
 }
 

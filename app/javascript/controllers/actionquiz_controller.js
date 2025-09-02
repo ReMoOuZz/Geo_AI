@@ -14,6 +14,7 @@ export default class extends Controller {
         if (this.messagesnumberValue > this.totalValue) {
           this.formTarget.classList.add('d-none');
           this.replaceTarget.classList.remove('d-none');
+          this.scrollToElement(this.replaceTarget)
         }
         this.inputTarget.focus();
       }, 50);
@@ -24,5 +25,9 @@ export default class extends Controller {
         event.preventDefault();
         this.formTarget.requestSubmit();
       }
+    }
+
+    scrollToElement(el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }

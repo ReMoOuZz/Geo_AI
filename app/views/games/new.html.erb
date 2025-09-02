@@ -1,4 +1,5 @@
 <div class="container d-flex flex-column justify-content-center align-items-center" >
+
   <%= form_with model: @game do |f| %>
 
     <div class="game_card" data-controller="setup-game">
@@ -23,7 +24,7 @@
         ]),
         { prompt: "Choisir" },
         class: "select_game_newregion" %>
-        <input name="game[region]" type="radio" class="button" id="random" value="Random">
+        <input name="game[region]" type="checkbox" class="button" id="random" value="random">
         <label for="random">Random</label>
       </div>
 

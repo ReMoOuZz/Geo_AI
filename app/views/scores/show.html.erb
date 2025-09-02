@@ -1,1 +1,124 @@
-<h1>Coucou la show de score</h1>
+<%
+    game = @score.game
+    total_questions = game.game_questions.count
+    correct_answers = @score.value
+    percentage = total_questions > 0 ? (correct_answers.to_f / total_questions * 100).round : 0
+    incorrect_questions = game.game_questions.joins(:user_answers)
+        .where(user_answers: { user: current_user, is_correct: false })
+%>
+
+<div class="score-container" 
+     data-controller="score-results" 
+     data-score-results-percentage-value="<%= percentage %>" 
+     data-score-results-correct-value="<%= correct_answers %>" 
+     data-score-results-total-value="<%= total_questions %>">
+        
+    <!-- Container 1: Trophée + Message + Pourcentage -->
+    <div class="score-wrapper">
+        <div class="score-summary">
+            <div class="trophy" data-score-results-target="trophy">
+            </div>
+            
+            
+            <div class="score-display">
+                <span class="score-text" data-score-results-target="scoreText"><%= percentage %>%</span>
+                <div class="score-label">de réussite</div>
+            </div>
+        </div>
+            <h1 class="score-message" data-score-results-target="message"></h1>
+        <div class="badges-obtains">
+            <p>Badges obtenus</p>
+            <span class="achv-ico poop" data-bs-toggle="tooltip" data-bs-placement="top" title="TU T'ES VRAIMENT CHIE DESSUS"><i class="fa-solid fa-poo-storm" style="color: #7e702a;"></i></span>
+            <span class="achv-ico red" data-bs-toggle="tooltip" data-bs-placement="top" title="Un badge a chaque fois que tu as 80% ou plus dans des questions de drapeaux"><i class="fa-solid fa-flag" style="color: #e11414;"></i></span>
+            <span class="achv-ico green" data-bs-toggle="tooltip" data-bs-placement="top" title="Un badge a chaque fois que tu as 80% ou plus dans des questions de reliefs" ><i class="fa-solid fa-person-hiking" style="color: #32b38c;"></i></span>
+            <span class="achv-ico bronze" data-bs-toggle="tooltip" data-bs-placement="top" title="Une medaille pour chaque fois que tu as 80 % de bonnes réponses quiz facile"><i class="fa-solid fa-medal" style="color: #9a7f1fff;"></i></span>
+        </div>
+            
+    
+
+    <div class="category-info">
+            <div class="category-tags">
+                <% if game.category.present? %>
+                    <span data-score-results-target="categoryIcon" data-category="<%= game.category.downcase %>"><%= game.category.capitalize %></span>
+                <% end %>
+                <% if game.difficulty.present? %>
+                    <span data-score-results-target="difficultyIcon" data-difficulty="<%= game.difficulty.downcase %>"><%= game.difficulty.capitalize %></span>
+                <% end %>
+                <% if game.region.present? %>
+                    <span data-score-results-target="regionIcon" data-region="<%= game.region.downcase %>"><%= game.region.capitalize %></span>
+                <% end %>
+            </div>
+        </div>
+        <div class="action-buttons">
+            <%= link_to "Recommencer", new_game_path, class: "btn btn-succes" %>
+            <%= link_to "Menu principal", root_path, class: "btn" %>
+        </div>
+</div>
+    
+    <!-- Container 2: Stats + Détails -->
+    <div class="score-details-container">
+        <!-- Stats des réponses -->
+        <div class="score-stats">
+            <div class="progress-item">
+                <div class="progress-header">
+                    <span class="progress-label">
+                        <i class="fa-solid fa-circle-check" style="color: #4CAF50;"></i>
+                        Bonnes réponses
+                    </span>
+                    <span class="progress-value" data-score-results-target="correctCount">0</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar progress-correct" data-score-results-target="correctBar"></div>
+                </div>
+            </div>
+            
+            <div class="progress-item">
+                <div class="progress-header">
+                    <span class="progress-label">
+                        <i class="fa-solid fa-circle-xmark" style="color: #e74c3c;"></i>
+                        Mauvaises réponses
+                    </span>
+                    <span class="progress-value" data-score-results-target="incorrectCount">0</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar progress-incorrect" data-score-results-target="incorrectBar"></div>
+                </div>
+            </div>
+        </div>
+                
+        <!-- Questions incorrectes -->
+        <% if incorrect_questions.any? %>
+            <div class="incorrect-questions">
+                <h4 class="title-questions">Questions ratées</h4>
+                <div class="carousel-container" data-controller="question-carousel" data-question-carousel-total-value="<%= incorrect_questions.count %>">
+                    <div class="carousel-wrapper">
+                        <% incorrect_questions.each_with_index do |question, index| %>
+                            <div class="question-item <%= 'active' if index == 0 %>" data-question-carousel-target="slide" data-slide-index="<%= index %>">
+                                <div class="question-text">
+                                    <i class="fa-solid fa-circle-question" style="color: #FF0000"></i> <%= question.content %>
+                                </div>
+                                <div class="correct-answer">
+                                    <i class="fa-solid fa-circle-check" style="color: #63E6BE;"></i> <%= question.correct_answer %>
+                                </div>
+                                <% if question.contexte.present? %>
+                                    <div class="question-context">
+                                        <i class="fa-solid fa-lightbulb" style="color: #FFD43B;"></i> <%= question.contexte %>
+                                    </div>
+                                <% end %>
+                            </div>
+                        <% end %>
+                    </div>
+                    
+                    <!-- Navigation du carousel -->
+                    <div class="carousel-nav">
+                        <button data-action="click->question-carousel#previous" class="nav-btn prev-btn">❮</button>
+                        <span class="slide-counter" data-question-carousel-target="counter">1 / <%= incorrect_questions.count %></span>
+                        <button data-action="click->question-carousel#next" class="nav-btn next-btn">❯</button>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>
+
+

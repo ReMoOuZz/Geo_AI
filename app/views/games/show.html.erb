@@ -16,6 +16,15 @@
     </div>
   </div>
   <div class="quiz-toolbar quiz-toolbar-hidden" data-question-response-target="timerContainer">
-    Temps restant : <span data-question-response-target="timer">--:--</span>
+    <div
+      class="progress"
+      role="progressbar"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="0"
+      aria-label="Timer">
+      <div class="progress_bar" data-question-response-target="progressBar"></div>
+    </div>
+    <%# <span class="time" data-question-response-target="timer"></span> %>
   </div>
 </div>
