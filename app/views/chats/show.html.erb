@@ -1,13 +1,13 @@
 <div class="quiz-wrapper">
   <div class="quiz-card">
-    <% @chat.messages.drop(2).each do |message| %>
+    <% @messages.each do |message| %>
       <% if message.role == "user" %>
         <div class="quiz-message user">
           <p><span class="fw-bold text-primary">Proposition</span>: <%= message.content.capitalize %></p>
         </div>
       <% elsif message.role == "assistant" %>
         <div class="quiz-message assistant">
-          <p><%= raw(render_markdown message.content) %></p>
+          <p><%= message.content.html_safe %></p>
         </div>
       <% end %>
     <% end %>
@@ -31,7 +31,11 @@
       <% end %>
 
       <div data-actionquiz-target="replace" class="d-none d-flex justify-content-center mt-3">
-        <%= link_to "Résultats", quiz_path(@quiz), class: "text-white btn btn-primary rounded-3 p-3 fw-bold"%>
+        <%= link_to "Résultats", quiz_path(@quiz),
+        class: "text-white btn btn-primary rounded-3 p-3 fw-bold",
+        data: { actionquiz_target: "result" }
+        %>
+
       </div>
     </div>
   </div>
