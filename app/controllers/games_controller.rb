@@ -11,9 +11,10 @@ class GamesController < ApplicationController
       @score = Score.create!(game: @game, user: @user)
 
       questions = Question.where(difficulty: @game.difficulty, region: @game.region)
-      questions = Question.where(category: @game.category) unless @game.category == "random"
+      questions = questions.where(category: @game.category ) unless @game.category == "random"
 
-      @find_question = questions.order("RANDOM()").first
+      @find_question = questions.sample
+
 
       GameQuestion.create!(
         game: @game,
