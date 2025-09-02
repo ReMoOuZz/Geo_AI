@@ -5615,9 +5615,9 @@ questions_data = [
     difficulty: "intermédiaire",
     category: "Régions et villes du monde",
     region: "Europe",
-    correct_answer: "Santorin",
-    incorrect_answers: ["Florence", "Milan", "Turin"],
-    contexte: "Bien que proche de la frontière italienne et historiquement liée à l'Italie, Nice est une ville française sur la Côte d'Azur."
+    correct_answer: "Locarno",
+    incorrect_answers: ["Florence", "Milan", "Aoste"],
+    contexte: "Locarno est située au sud de la Suisse , dans la région du Tessin, à la frontière avec l'Italie."
   },
   {
     content: "La Transylvanie, une région célèbre pour la légende de Dracula, se trouve dans quel pays ?",
