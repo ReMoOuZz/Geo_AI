@@ -9,7 +9,6 @@ export default class extends Controller {
   }
 
   connect() {
-    console.log("score connecté")
     const percentage = this.percentageValue
     const correct = this.correctValue
     const incorrect = this.totalValue - correct
@@ -134,8 +133,6 @@ export default class extends Controller {
     if (!this.hasRegionIconTarget) return
 
     const region = this.regionIconTarget.dataset.region
-    console.log("Région reçue:", region)
-    console.log("Type de région:", typeof region)
     let icon = ""
 
     if (region === "amérique") {
@@ -149,7 +146,6 @@ export default class extends Controller {
     } else if (region === "océanie") {
       icon = '<i class="fa-solid fa-earth-oceania" style="color: #1d302a;"></i> '
     }
-    console.log("Icône générée:", icon)
     this.regionIconTarget.innerHTML = icon + this.regionIconTarget.textContent
   }
 }
