@@ -9,13 +9,8 @@ export default class extends Controller {
   }
 
   connect() {
-    console.log("Quiz resultats connecté")
-    console.log("Score:", this.scoreValue, "Total:", this.totalValue)
-
       const score = this.scoreValue
-      console.log("Score:", score)
       const total = this.totalValue
-      console.log("Total:", total)
       const percentage = Math.round((score / total) * 100)
       console.log("percentage:", percentage)
 
