@@ -2,7 +2,7 @@
   <div class="gb-sidebar_logo">
     <%= link_to root_path do %>
       <%= image_tag "littlelogo.png", alt: "GeoBattle small logo", class: "gb-logo small" %>
-      <%= image_tag "logo.png",        alt: "GeoBattle big logo",   class: "gb-logo big" %>
+      <%= image_tag "logo.png", alt: "GeoBattle big logo", class: "gb-logo big" %>
     <% end %>
   </div>
 
@@ -11,26 +11,37 @@
   </div>
 
   <nav class="gb-sidebar__menu">
-
-   <%= link_to root_path, class: "gb-sideitem" do %>
+    <%= link_to root_path, class: "gb-sideitem" do %>
       <i class="fa-solid fa-house" style="color: #ffffff;"></i>
       <span class="label">Home page</span>
     <% end %>
+
     <%= link_to pages_profile_path, class: "gb-sideitem active" do %>
       <i class="fa-solid fa-user"></i>
       <span class="label">Profil</span>
     <% end %>
+
     <%= link_to pages_stats_path, class: "gb-sideitem" do %>
       <i class="fa-solid fa-chart-simple"></i>
       <span class="label">Statistiques</span>
     <% end %>
 
-    <%= link_to destroy_user_session_path, class: "gb-sideitem" do %>
-      <i class="fa-solid fa-right-from-bracket"></i>
-      <span class="label">Déconnexion</span>
+    <% if user_signed_in? %>
+      <%= link_to destroy_user_session_path,
+                  class: "gb-sideitem",
+                  data: { turbo_method: :delete, turbo_confirm: "Se déconnecter ?" } do %>
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <span class="label">Déconnexion</span>
+      <% end %>
+    <% else %>
+      <%= link_to new_user_session_path, class: "gb-sideitem" do %>
+        <i class="fa-solid fa-right-to-bracket"></i>
+        <span class="label">Se connecter</span>
+      <% end %>
     <% end %>
   </nav>
 </aside>
+
 
 <div class="rewards-layout">
   <div class="profile-container">
