@@ -100,10 +100,10 @@ export default class extends Controller {
 
     if (difficulty === "facile") {
       icon = '<i class="fa-solid fa-leaf" style="color: #63E6BE;"></i> '
-    } else if (difficulty === "intermediaire") {
+    } else if (difficulty === "intermédiaire") {
       icon = '<i class="fa-solid fa-fire" style="color: #FFA500;"></i> '
     } else if (difficulty === "difficile") {
-      icon = '<i class="fa-solid fa-skull" style="color: #f44336;"></i> '
+      icon = '<i class="fa-solid fa-skull" style="color: #1d302a;"></i> '
     }
 
     this.difficultyIconTarget.innerHTML = icon + this.difficultyIconTarget.textContent
@@ -115,16 +115,16 @@ export default class extends Controller {
     const category = this.categoryIconTarget.dataset.category
     let icon = ""
 
-    if (category === "Régions et villes du monde") {
-      icon = '<i class="fa-solid fa-city" style="color: #FFD43B;"></i> '
-    } else if (category === "Géopolitique") {
-      icon = '<i class="fa-solid fa-landmark" style="color: #63E6BE;"></i> '
-    } else if (category === "Drapeaux") {
-      icon = '<i class="fa-solid fa-flag" style="color: #63E6BE;"></i> '
+    if (category === "régions et villes du monde") {
+      icon = '<i class="fa-solid fa-city" style="color: #1d302a;"></i> '
+    } else if (category === "géopolitique") {
+      icon = '<i class="fa-solid fa-landmark" style="color: #1d302a;"></i> '
+    } else if (category === "drapeaux") {
+      icon = '<i class="fa-solid fa-flag" style="color: #1d302a;"></i> '
     } else if (category === "cultures") {
-      icon = '<i class="fa-solid fa-masks-theater" style="color: #f3c316;"></i> '
-    } else if (category === "Hydrographie et reliefs") {
-      icon = '<i class="fa-solid fa-globe" style="color: #63E6BE;"></i> '
+      icon = '<i class="fa-solid fa-masks-theater" style="color: #1d302a;"></i> '
+    } else if (category === "hydrographie et reliefs") {
+      icon = '<i class="fa-solid fa-globe" style="color: #1d302a;"></i> '
     }
 
     this.categoryIconTarget.innerHTML = icon + this.categoryIconTarget.textContent
