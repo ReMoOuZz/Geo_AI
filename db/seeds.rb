@@ -678,7 +678,7 @@ questions_data = [
     region: "Europe",
     correct_answer: "Allemagne",
     incorrect_answers: ["Belgique", "Autriche", "Espagne"],
-    contexte: "Lcouleurs du drapeau proviennent des uniformes des soldats durant les guerres napoléoniennes."
+    contexte: "Les couleurs du drapeau proviennent des uniformes des soldats durant les guerres napoléoniennes."
   },
   {
     content: "Quel pays est représenté par un drapeau aux bandes verticales verte, blanche et rouge ?",
@@ -741,7 +741,7 @@ questions_data = [
     region: "Europe",
     correct_answer: "Belgique",
     incorrect_answers: ["Allemagne", "France", "Roumanie"],
-    contexte: "Les couleurs du drapeau belge sont celles du duché de Brabant. L'ordre vertical a été adopté pour se distinguer du drapeau allemand."
+    contexte: "Les couleurs du drapeau belge sont celles du duché de Brabant. L'ordre vertical a été adopté pour se distinguer de l'Allemagne."
   },
   {
     content: "Ce drapeau est rouge avec une croix scandinave blanche. À quel pays appartient-il ?",
@@ -951,7 +951,7 @@ questions_data = [
     contexte: "Les couleurs et le blason symbolisent la double suzeraineté de la France et de l'évêque d'Urgell, garantissant l'indépendance de la principauté."
   },
   {
-    content: "Ce drapeau est identique à celui de la Roumanie, mais avec un blason (aigle tenant une croix) au centre de la bande jaune. De quel pays s'agit-il ?",
+    content: "Ce drapeau est identique à celui de la Roumanie, mais avec un blason d'aigle au centre de la bande jaune. De quel pays s'agit-il ?",
     difficulty: "difficile",
     category: "Drapeaux",
     region: "Europe",
@@ -2852,7 +2852,7 @@ questions_data = [
     contexte: "L'Atlantique a joué un rôle crucial dans l'histoire de l'exploration, du commerce et de la migration européenne."
   },
   {
-    content: "Le Rhin, un fleuve majeur, prend sa source dans quel pays avant de traverser l'Allemagne et les Pays-Bas ?",
+    content: "Le Rhin, prend sa source dans quel pays avant de traverser l'Allemagne et les Pays-Bas ?",
     difficulty: "facile",
     category: "Hydrographie et reliefs",
     region: "Europe",
@@ -5615,9 +5615,9 @@ questions_data = [
     difficulty: "intermédiaire",
     category: "Régions et villes du monde",
     region: "Europe",
-    correct_answer: "Santorin",
-    incorrect_answers: ["Florence", "Milan", "Turin"],
-    contexte: "Bien que proche de la frontière italienne et historiquement liée à l'Italie, Nice est une ville française sur la Côte d'Azur."
+    correct_answer: "Locarno",
+    incorrect_answers: ["Florence", "Milan", "Aoste"],
+    contexte: "Locarno est située au sud de la Suisse , dans la région du Tessin, à la frontière avec l'Italie."
   },
   {
     content: "La Transylvanie, une région célèbre pour la légende de Dracula, se trouve dans quel pays ?",
@@ -5710,7 +5710,7 @@ questions_data = [
     contexte: "Ljubljana est réputée pour ses nombreux espaces verts, son centre-ville piétonnier et son château qui surplombe la ville."
   },
   {
-    content: "Vaduz est la capitale de quelle très petite principauté germanophone ?",
+    content: "Vaduz est la capitale de quelle principauté ?",
     difficulty: "difficile",
     category: "Régions et villes du monde",
     region: "Europe",
@@ -5728,7 +5728,7 @@ questions_data = [
     contexte: "Riga est la plus grande ville des États baltes et son centre historique est célèbre pour son architecture Art nouveau."
   },
   {
-    content: "Andorre-la-Vieille est la capitale de quel micro-État situé dans les Pyrénées ?",
+    content: "Andorre-la-Vieille est la capitale de quel micro-État ?",
     difficulty: "difficile",
     category: "Régions et villes du monde",
     region: "Europe",

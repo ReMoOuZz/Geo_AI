@@ -12,7 +12,7 @@ export default class extends Controller {
       const score = this.scoreValue
       const total = this.totalValue
       const percentage = Math.round((score / total) * 100)
-      console.log("percentage:", percentage)
+      
 
       if(percentage >= 100) {
         this.trophyTarget.innerHTML = '<i class="fa-solid fa-gem" style="color: #41D8CB; font-size: 5rem"></i>'

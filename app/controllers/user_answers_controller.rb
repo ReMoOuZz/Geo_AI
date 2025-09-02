@@ -31,7 +31,7 @@ class UserAnswersController < ApplicationController
         redirect_to game_path(@game)
       end
     else
-      render :new, status:  :unprocessable_entity
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -42,24 +42,23 @@ class UserAnswersController < ApplicationController
   end
 
   def new_question
-
     questions = Question.where(difficulty: @game.difficulty, region: @game.region)
     questions = Question.where(category: @game.category) unless @game.category == "random"
 
     @find_question = questions.order("RANDOM()").first
 
     GameQuestion.create!(
-    game: @game,
-    order: @game_question.order += 1,
-    content: @find_question.content,
-    correct_answer: @find_question.correct_answer,
-    incorrect_answers: @find_question.incorrect_answers,
-    difficulty: @find_question.difficulty,
-    category: @find_question.category,
-    contexte: @find_question.contexte,
-    region: @find_question.region
-    # game_type: @find_question.game_type
-  )
+      game: @game,
+      order: @game_question.order += 1,
+      content: @find_question.content,
+      correct_answer: @find_question.correct_answer,
+      incorrect_answers: @find_question.incorrect_answers,
+      difficulty: @find_question.difficulty,
+      category: @find_question.category,
+      contexte: @find_question.contexte,
+      region: @find_question.region
+      # game_type: @find_question.game_type
+    )
   end
 
   def limit_questions
@@ -67,7 +66,6 @@ class UserAnswersController < ApplicationController
       redirect_to game_score_path(@game, @score); return
     end
   end
-
 
   def set_score
     @score = Score.find_by(user: current_user, game: @game)
