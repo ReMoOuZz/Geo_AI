@@ -33,7 +33,7 @@ SYSTEM_PROMPT = <<-PROMPT
   ## Format de sortie
 
   <div class="chat-container">
-    <div class =" border-top borde-2 pb-2">
+    <div class =" border-top border-2 pt-2">
       <h2 class="question-title">(ta question)</h2>
       <div class="suggestion-list">
         <ul class="suggestion-grid">
