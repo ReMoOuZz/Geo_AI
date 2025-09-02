@@ -123,7 +123,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: #FFEC99;
-  height: 300px;
+  height: 350px;
   width: 750px;
   border-radius: 20px;
   box-shadow: 2px 6px 6px 0px rgba(0,0,0,0.2);
@@ -136,11 +136,26 @@
 
 .result_container h2 {
   font-weight: bold;
-  color: #04c363;
+  color: black;
 }
 
 .result_container p {
   margin: O;
+  font-weight : bold
+}
+
+.answer-true {
+  margin: O;
+  font-weight : bold;
+  font-size: 25px;
+  color: #04c363
+}
+
+.answer-false {
+  margin: O;
+  font-weight : bold;
+  font-size: 25px;
+  color: red;
 }
 
 .response_container {
@@ -154,7 +169,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .quiz-toolbar-hidden {

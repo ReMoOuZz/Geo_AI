@@ -9,7 +9,7 @@ export default class extends Controller {
   }
 
   connect() {
-    console.log("Quiz resultats connecté")
+    console.log("Quiz résultats connecté")
     console.log("Score:", this.scoreValue, "Total:", this.totalValue)
 
       const score = this.scoreValue

@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="question-response"
 export default class extends Controller {
-  static targets = ["timer", "answer", "question", "timerContainer"]
+  static targets = ["timer", "answer", "question", "timerContainer", "correctAnswer"]
   static values = { duration: Number }
 
   connect() {
@@ -36,6 +36,7 @@ export default class extends Controller {
     if (this.interval) {
       clearInterval(this.interval)
       this.interval = null
+      this.answerTarget.insertAdjacentHTML("afterbegin", `<div class="answer-false">Temps écoulé !</div>`)
     }
   }
 
@@ -51,6 +52,23 @@ export default class extends Controller {
     if (this.autoSubmitting) return
     event.preventDefault()
     this.stopTimer()
+    const rigthAnswer = this.correctAnswerTarget.innerText.trim()
+    console.log(this.correctAnswerTarget.innerText.trim())
+    const data = new FormData(document.querySelector("form"))
+    const rawData = data.get('user_answer[content]')
+    if (rawData != null) {
+      const userAnswer = data.get('user_answer[content]').trim()
+      console.log(userAnswer)
+      let result = ""
+      if (userAnswer === rigthAnswer){
+        result = "Bonne réponse ! Bravo ! "
+      } else {
+        result = "C'est faux !"
+      }
+      this.answerTarget.insertAdjacentHTML("afterbegin", `<div class="answer-${(userAnswer === rigthAnswer)}">${result}</div>`)
+    } else {
+      this.answerTarget.insertAdjacentHTML("afterbegin", `<div class="answer-false">Vous n'avez pas choisi de réponse</div>`)
+    }
     this.showAnswerAndSubmitLater()
   }
 
@@ -62,7 +80,7 @@ export default class extends Controller {
       this.answerTarget.classList.remove("result_container_hidden")
       this.timerContainerTarget.classList.add("quiz-toolbar-hidden")
       this.answerShown = true
-      setTimeout(() => this.submitNow(), 5000);
+      setTimeout(() => this.submitNow(), 7500);
     }
   }
 

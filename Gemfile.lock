@@ -160,10 +160,6 @@ GEM
       sassc (~> 2.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    hotwire-livereload (2.0.0)
-      actioncable (>= 7.0.0)
-      listen (>= 3.0.0)
-      railties (>= 7.0.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     importmap-rails (2.2.2)
@@ -183,9 +179,6 @@ GEM
       rexml (>= 3.3.9)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    listen (3.9.0)
-      rb-fsevent (~> 0.10, >= 0.10.3)
-      rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.7.0)
     loofah (2.24.1)
       crass (~> 1.0.2)
@@ -288,9 +281,6 @@ GEM
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
     rake (13.3.0)
-    rb-fsevent (0.11.2)
-    rb-inotify (0.11.1)
-      ffi (~> 1.0)
     rdoc (6.14.2)
       erb
       psych (>= 4.0.0)
@@ -386,7 +376,6 @@ DEPENDENCIES
   devise
   dotenv-rails
   font-awesome-sass (~> 6.1)
-  hotwire-livereload
   importmap-rails
   jbuilder
   kramdown
