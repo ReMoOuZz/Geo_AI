@@ -48,7 +48,11 @@
   <div class="div1 card">
     <h1 class="title">Statistiques</h1>
     <h3>Retrouvez toutes les informations sur vos performances</h3>
-    <div class="global">Taux général de bonnes réponses :</div>
+    <div class="global">
+      <p>Nombre de bonnes réponses: <%= @correct.count %></p>
+      <p>Nombre de mauvaises réponses: <%= @incorrect.count %></p>
+      <p>Pourcentage global: <%= number_to_percentage(@total_correct, precision: 1) %> de bonnes réponses</p>
+    </div>
   </div>
 
   <div class="div2 card">
@@ -76,3 +80,5 @@
     <div>Océanie :</div>
   </div>
 </div>
+
+<%= console %>
