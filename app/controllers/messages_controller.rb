@@ -40,7 +40,7 @@ SYSTEM_PROMPT = <<-PROMPT
     <h2 style="color: red;"><strong>Incorrect</strong></h2>
     <p class="contexte">Justification brève</p>)
 
-    <div class="border-top border-2 pt-2">
+    <div class="border-top border-2 pt-2 question">
       <h2 class="question-title">(ta question)</h2>
       <div class="suggestion-list">
         <ul class="suggestion-grid">
