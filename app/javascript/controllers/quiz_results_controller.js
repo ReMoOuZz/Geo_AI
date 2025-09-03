@@ -25,10 +25,10 @@ export default class extends Controller {
         this.messageTarget.textContent = "Tu n'es plus un débutant, tu peux commencer à jouer à GeoBattle en mode intermédiaire"
       } else if (percentage >= 40) {
         this.trophyTarget.innerHTML = '<i class="fa-solid fa-medal bronze" style="color: #CE8946; font-size: 5rem"></i>'
-        this.messageTarget.textContent = "Il te faut davantage d'entraînement en mode débutant sur GeoBattle !"
+        this.messageTarget.textContent = "Tu es sur la bonne voie, persévère et continue en mode débutant sur GeoBattle !"
       } else {
         this.trophyTarget.innerHTML = '<i class="fa-solid fa-poop poop" style="color: #614e1a; font-size: 5rem"></i>'
-        this.messageTarget.textContent = "Il te manque un peu de connaissances en géographie, tout n'est pas perdu, il faut t'entrainer !"
+        this.messageTarget.textContent = "Il te manque un peu de connaissances en géographie, il faut t'entrainer ! Commence par le mode facile"
       }
   }
 }
