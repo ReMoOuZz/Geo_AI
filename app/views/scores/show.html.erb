@@ -59,11 +59,11 @@
                 end
             end
             
-            # Badge Serial Crotteur (si applicable)
-            # failed_games = current_user.scores.joins(:game).where("scores.value < ?", 3).count
-            # if failed_games >= 5
-            #     earned_badges << "Serial Crotteur"
-            # end
+            Badge Serial Crotteur (si applicable)
+            failed_games = current_user.scores.joins(:game).where("scores.value < ?", 3).count
+            if failed_games == 5
+                earned_badges << "Serial Crotteur"
+            end
         %>
        <div class="badges-obtains">
             <p>Badges obtenus</p>
