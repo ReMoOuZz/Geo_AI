@@ -57,7 +57,10 @@
 
   <div class="div2 card">
     <h2>Statistiques par catégorie</h2>
-    <div>Drapeaux : X %</div>
+    <div>
+      <p>Drapeaux :</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_cat.count %>, <%= @total_correct_hr %>% de réussite</p>
+    </div>
     <div>Reliefs : Y %</div>
     <div>Catégorie géopolitique : etc... </div>
     <div>Catégorie Régions et villes du monde</div>
