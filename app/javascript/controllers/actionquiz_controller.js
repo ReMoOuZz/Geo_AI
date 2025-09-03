@@ -14,6 +14,8 @@ export default class extends Controller {
         if (this.messagesnumberValue > this.totalValue) {
           this.formTarget.classList.add('d-none');
           this.replaceTarget.classList.remove('d-none');
+          this.hideLastQuestion()
+          console.log("fin du game")
           this.scrollToElement(this.replaceTarget)
         }
         this.inputTarget.focus();
@@ -29,5 +31,11 @@ export default class extends Controller {
 
     scrollToElement(el) {
       el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+
+    hideLastQuestion(){
+      const questions = document.querySelectorAll(".question")
+      console.log("coucou")
+      questions[questions.length - 1].classList.add("d-none")
     }
   }
