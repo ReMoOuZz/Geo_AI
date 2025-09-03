@@ -42,7 +42,7 @@
   max-width: 600px;
 }
 
-/* Заголовки */
+
 .geo-title {
   font-size: 4.5rem;
   font-family: Poppins, sans-serif;
@@ -51,13 +51,13 @@
   text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.5);
 }
 .geo-subtitle {
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 2.2vw, 1.8rem);
   color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.5);
+  text-align: center;
 }
 
-/* Контейнер кнопок */
 .geo-buttons-main {
   display: flex;
   flex-direction: column;
@@ -66,7 +66,7 @@
   margin-top: 40px;
 }
 
-/* Кнопки без Bootstrap-конфликтов */
+
 .gb-btn {
   display: inline-flex;
   align-items: center;
@@ -106,7 +106,7 @@
   box-shadow: inset 0 2px 6px rgba(0,0,0,0.25);
 }
 
-/* Кнопка "À propos" */
+
 .gb-btn-about {
   display: inline-flex;
   align-items: center;

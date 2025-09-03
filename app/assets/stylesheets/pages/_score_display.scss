@@ -7,7 +7,6 @@
   margin: 20px auto;
   max-width: none;
   width: 100%;
-  min-height: calc(100vh - 40px)
 }
 .score-message {
   text-align: center;
@@ -79,22 +78,34 @@
   margin-top: 0;
 }
 
+.badges-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .achv-ico {
   display: inline-block;
+  justify-content: center;
   font-size: 32px;
   margin: 0 8px;
   padding: 12px;
-  border-radius: 50%;
-  background: #F8F9FA;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease;
   cursor: pointer;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  line-height: 1;
 }
 
-.achv-ico:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
+// .achv-ico:hover {
+//   transform: translateY(-2px);
+//   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+//   border: none;
+//   outline: none;
+// }
 // .score-display {
 //   background: white;
 //   border-radius: 12px;
@@ -157,7 +168,7 @@
   display: flex;
   flex-direction: row;
   gap: 30px;
-  padding: 20px;
+  padding: 10px;
   justify-content: center;
   text-align: center;
 }

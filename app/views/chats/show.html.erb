@@ -16,12 +16,13 @@
          data-actionquiz-total-value="<%= Quiz::TOTAL %>"
          data-actionquiz-messagesnumber-value="<%= @response_count %>">
 
-      <%= simple_form_for [@chat, @user_message], data:{ actionquiz_target: "form" } do |f| %>
+      <%= simple_form_for [@chat, @user_message], html: { novalidate: false }, data:{ actionquiz_target: "form" } do |f| %>
         <div class="input-group mb-3">
           <%= f.input :content,
             placeholder: "Votre réponse...",
             wrapper: false,
-            label:false,
+            label: false,
+            required: true,
             input_html: {
               class: "form-control ",
               data: { action: "keyup->actionquiz#enterValidation", actionquiz_target: "input" }
