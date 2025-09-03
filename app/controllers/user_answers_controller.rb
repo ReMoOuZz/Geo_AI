@@ -27,8 +27,8 @@ class UserAnswersController < ApplicationController
       if @user_answer.game_question.order == 10
         redirect_to game_score_path(@game, @score)
       else
-        new_question
-        redirect_to game_path(@game)
+        # new_question
+        redirect_to game_path(@game, order:  @game_question.order + 1)
       end
     else
       render :new, status: :unprocessable_entity
@@ -41,24 +41,23 @@ class UserAnswersController < ApplicationController
     user_response.to_s.strip.downcase == @game_question.correct_answer.to_s.strip.downcase
   end
 
-  def new_question
-    questions = Question.where(difficulty: @game.difficulty, category: @game.category)
-    questions = questions.where(region: @game.region) unless @game.region == "random"
-    @find_question = questions.sample
+  # def new_question
+  #   questions = Question.where(difficulty: @game.difficulty, category: @game.category)
+  #   questions = questions.where(region: @game.region) unless @game.region == "random"
+  #   @find_question = @game.questions.where(order = @game_question.order + 1)
 
-    GameQuestion.create!(
-      game: @game,
-      order: @game_question.order += 1,
-      content: @find_question.content,
-      correct_answer: @find_question.correct_answer,
-      incorrect_answers: @find_question.incorrect_answers,
-      difficulty: @find_question.difficulty,
-      category: @find_question.category,
-      contexte: @find_question.contexte,
-      region: @find_question.region
-      # game_type: @find_question.game_type
-    )
-  end
+  # GameQuestion.create!(
+      # game: @game,
+      # order: @game_question.order += 1,
+      # content: @find_question.content,
+      # correct_answer: @find_question.correct_answer,
+      # incorrect_answers: @find_question.incorrect_answers,
+      # difficulty: @find_question.difficulty,
+      # category: @find_question.category,
+      # contexte: @find_question.contexte,
+      # region: @find_question.region
+      # game_type: @find_question.game_type    )
+  # end
 
   def limit_questions
     if @user_answer.game_question.order == 2
