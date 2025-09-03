@@ -1,12 +1,14 @@
 <div class="home-content">
   <h1 class="geo-title">GeoBattle</h1>
   <p class="geo-subtitle">Voulez-vous devenir un maître en geographie?</p>
-  <p class="geo-subtitle">Venez prouver votre niveau.</p>
+  <p class="geo-subtitle">Venez prouver votre niveau !</p>
 
   <div class="geo-buttons-main">
-    <%= link_to "Affronter notre IA", chats_path,
-        data: { turbo_method: :post },
-        class: "gb-btn gb-btn--test" %>
+    <%if !user_signed_in? || (user_signed_in? && current_user.quizzes.empty?)%>
+      <%= link_to "Affronter notre IA", chats_path,
+          data: { turbo_method: :post },
+          class: "gb-btn gb-btn--test" %>
+    <% end %>
 
     <% if user_signed_in? %>
       <%= link_to "Commencer le jeu", new_game_path,
