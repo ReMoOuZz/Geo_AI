@@ -58,30 +58,64 @@
   <div class="div2 card">
     <h2>Statistiques par catégorie</h2>
     <div>
-      <p>Drapeaux :</p>
-      <p>Nombre de bonnes réponses: <%=  @correct_in_cat.count %>, <%= @total_correct_hr %>% de réussite</p>
+      <p>Drapeaux:</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_cat_dp.count %>, <%= @total_correct_dp %>% de réussite</p>
     </div>
-    <div>Reliefs : Y %</div>
-    <div>Catégorie géopolitique : etc... </div>
-    <div>Catégorie Régions et villes du monde</div>
-    <div>Catégorie cultures :</div>
+    <div>
+      <p>Hydrographie et reliefs:</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_cat_hr.count %>, <%= @total_correct_hr %>% de réussite</p>
+    </div>
+    <div>
+      <p>Géopolitique:</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_cat_gp.count %>, <%= @total_correct_gp %>% de réussite</p>
+    </div>
+    <div>
+      <p>Régions et villes du monde:</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_cat_rv.count %>, <%= @total_correct_rv %>% de réussite</p>
+    </div>
+    <div>
+      <p>Cultures:</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_cat_cl.count %>, <%= @total_correct_cl %>% de réussite</p>
+    </div>
   </div>
 
   <div class="div3 card">
     <h2>Statistiques par difficulté</h2>
-    <div>Niveau facile : </div>
-    <div>Niveau intermédiaire :</div>
-    <div>Niveau difficile :</div>
+    <div>
+      <p>Niveau facile:</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_dif_f.count %>, <%= @total_correct_dif_f %>% de réussite</p>
+    </div>
+    <div>
+      <p>Niveau intermédiaire:</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_dif_i.count %>, <%= @total_correct_dif_i %>% de réussite</p>
+    </div>
+    <div>
+      <p>Niveau difficile:</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_dif_d.count %>, <%= @total_correct_dif_d %>% de réussite</p>
+    </div>
   </div>
 
   <div class="div4 card">
     <h2>Statistiques par région</h2>
-    <div>Afrique :</div>
-    <div>Amérique :</div>
-    <div>Asie :</div>
-    <div>Europe :</div>
-    <div>Océanie :</div>
+    <div>
+      <p>Europe:</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_reg_eu.count %>, <%= @total_correct_reg_eu %>% de réussite</p>
+    </div>
+    <div>
+      <p>Amérique:</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_reg_am.count %>, <%= @total_correct_reg_am %>% de réussite</p>
+    </div>
+    <div>
+      <p>Asie:</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_reg_as.count %>, <%= @total_correct_reg_as %>% de réussite</p>
+    </div>
+    <div>
+      <p>Afrique:</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_reg_af.count %>, <%= @total_correct_reg_af %>% de réussite</p>
+    </div>
+    <div>
+      <p>Océanie:</p>
+      <p>Nombre de bonnes réponses: <%=  @correct_in_reg_oc.count %>, <%= @total_correct_reg_oc %>% de réussite</p>
+    </div>
   </div>
 </div>
-
-<%= console %>
