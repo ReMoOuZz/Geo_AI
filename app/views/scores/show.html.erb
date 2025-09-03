@@ -54,14 +54,16 @@
                 earned_badges << "Capitaliste"
                 when "Géopolitique"
                 earned_badges << "Diplomate"
+                when "Cultures"
+                earned_badges << "Culturiste"
                 end
             end
             
             # Badge Serial Crotteur (si applicable)
-            failed_games = current_user.scores.joins(:game).where("scores.value < ?", 3).count
-            if failed_games >= 5
-                earned_badges << "Serial Crotteur"
-            end
+            # failed_games = current_user.scores.joins(:game).where("scores.value < ?", 3).count
+            # if failed_games >= 5
+            #     earned_badges << "Serial Crotteur"
+            # end
         %>
        <div class="badges-obtains">
             <p>Badges obtenus</p>
@@ -76,9 +78,9 @@
                         <% when "Médaille d'argent" %>
                             <i class="fa-solid fa-medal" style="color: #757575ff;"></i>
                         <% when "Médaille de bronze" %>
-                            <i class="fa-solid fa-medal" style="color: #9a7f1fff;"></i></span>
+                            <i class="fa-solid fa-medal" style="color: #9a7f1fff;"></i>
                         <% when "Poop" %>
-                            <i class="fa-solid fa-poo" style="color: #513c1f;"></i></span>
+                            <i class="fa-solid fa-poo" style="color: #513c1f;"></i>
                         <% when "Montagnard" %>
                             <i class="fa-solid fa-person-hiking" style="color: #32b38c;"></i>
                         <% when "Roi de la colline" %>
@@ -87,8 +89,8 @@
                             <i class="fa-solid fa-building-columns" style="color: #B197FC;"></i>
                         <% when "Diplomate" %>
                             <i class="fa-solid fa-helmet-un" style="color: #b10196ff;"></i>
-                        <% when "Serial Crotteur" %>
-                            <i class="fa-solid fa-poo" style="color: #2b1b00ff;"></i>
+                        <% when "Culturiste" %>
+                            <i class="fa-solid fa-language" style="color: #ffffffff;"></i>
                         <% end %>
                     </span>
                 <% end %>
