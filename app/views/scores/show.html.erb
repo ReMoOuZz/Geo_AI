@@ -26,22 +26,73 @@
             </div>
         </div>
             <h1 class="score-message" data-score-results-target="message"></h1>
-        <div class="badges-obtains">
+        <%
+            # Calcule badges obtenus quiz
+            earned_badges = []
+            
+            # Badges de perf
+            if percentage == 100
+                earned_badges << "Diamant"
+            elsif percentage >= 80
+                earned_badges << "Médaille d'or"
+            elsif percentage >= 60
+                earned_badges << "Médaille d'argent"
+            elsif percentage >= 30
+                earned_badges << "Médaille de bronze"
+            else
+                earned_badges << "Poop"
+            end
+            
+            # Badges thématiques
+            if percentage >= 80
+                case game.category
+                when "Hydrographie et reliefs"
+                earned_badges << "Montagnard"
+                when "Drapeaux"
+                earned_badges << "Roi de la colline"
+                when "Régions et villes du monde"
+                earned_badges << "Capitaliste"
+                when "Géopolitique"
+                earned_badges << "Diplomate"
+                end
+            end
+            
+            # Badge Serial Crotteur (si applicable)
+            failed_games = current_user.scores.joins(:game).where("scores.value < ?", 3).count
+            if failed_games >= 5
+                earned_badges << "Serial Crotteur"
+            end
+        %>
+       <div class="badges-obtains">
             <p>Badges obtenus</p>
-                <div class="badges-icons">
-                    <span class="achv-ico poop" data-bs-toggle="tooltip" data-bs-placement="top" title="TU T'ES VRAIMENT CHIE DESSUS">
-                    <i class="fa-solid fa-poo-storm" style="color: #7e702a;"></i>
+            <div class="badges-icons">
+                <% earned_badges.each do |badge_name| %>
+                    <span class="achv-ico" title="<%= badge_name %>">
+                        <% case badge_name %>
+                        <% when "Diamant" %>
+                            <i class="fa-solid fa-gem" style="color: #74C0FC;"></i>
+                        <% when "Médaille d'or" %>
+                            <i class="fa-solid fa-medal" style="color: #FFD43B;"></i>
+                        <% when "Médaille d'argent" %>
+                            <i class="fa-solid fa-medal" style="color: #757575ff;"></i>
+                        <% when "Médaille de bronze" %>
+                            <i class="fa-solid fa-medal" style="color: #9a7f1fff;"></i></span>
+                        <% when "Poop" %>
+                            <i class="fa-solid fa-poo" style="color: #513c1f;"></i></span>
+                        <% when "Montagnard" %>
+                            <i class="fa-solid fa-person-hiking" style="color: #32b38c;"></i>
+                        <% when "Roi de la colline" %>
+                            <i class="fa-solid fa-flag" style="color: #e11414;"></i>
+                        <% when "Capitaliste" %>
+                            <i class="fa-solid fa-building-columns" style="color: #B197FC;"></i>
+                        <% when "Diplomate" %>
+                            <i class="fa-solid fa-helmet-un" style="color: #b10196ff;"></i>
+                        <% when "Serial Crotteur" %>
+                            <i class="fa-solid fa-poo" style="color: #2b1b00ff;"></i>
+                        <% end %>
                     </span>
-                    <span class="achv-ico red" data-bs-toggle="tooltip" data-bs-placement="top" title="Un badge a chaque fois que tu as 80% ou plus dans des questions de drapeaux">
-                    <i class="fa-solid fa-flag" style="color: #e11414;"></i>
-                    </span>
-                    <span class="achv-ico green" data-bs-toggle="tooltip" data-bs-placement="top" title="Un badge a chaque fois que tu as 80% ou plus dans des questions de reliefs" >
-                    <i class="fa-solid fa-person-hiking" style="color: #32b38c;"></i>
-                    </span>
-                    <span class="achv-ico bronze" data-bs-toggle="tooltip" data-bs-placement="top" title="Une medaille pour chaque fois que tu as 80 % de bonnes réponses quiz facile">
-                    <i class="fa-solid fa-medal" style="color: #9a7f1fff;"></i>
-                    </span>
-                </div>
+                <% end %>
+            </div>
         </div>
             
     
