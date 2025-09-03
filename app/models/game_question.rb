@@ -2,7 +2,7 @@ class GameQuestion < ApplicationRecord
   belongs_to :game
   has_many :user_answers
 
-  after_create_commit :broadcast_replace_to_game
+  # after_create_commit :broadcast_replace_to_game
 
   private
 

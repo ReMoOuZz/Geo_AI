@@ -33,9 +33,28 @@
 }
 
 .results-card .trophy {
-  font-size: 26px;
-  color: #8D7B2F;
-  margin-bottom: 4px;
+  font-size: 70px;
+  color: #a9692a;
+}
+
+.results-card .diamond {
+  font-size: 70px;
+  color: #41D8CB;
+}
+
+.results-card .gold {
+  font-size: 70px;
+  color: #E6BE1B;
+}
+
+.results-card .silver {
+  font-size: 70px;
+  color: #7f7d7d96;
+}
+
+.results-card .poop {
+  font-size: 70px;
+  color: #614e1a;
 }
 
 .results-card .congratulations {
@@ -115,7 +134,6 @@
   padding: 10px 26px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.9);
-
   margin: 6px auto;
 }
 

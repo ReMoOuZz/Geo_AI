@@ -1,5 +1,4 @@
 class GamesController < ApplicationController
-
   def new
     @game = Game.new
   end
@@ -11,25 +10,25 @@ class GamesController < ApplicationController
       @score = Score.create!(game: @game, user: @user)
 
       questions = Question.where(difficulty: @game.difficulty, category: @game.category)
-      questions = questions.where(region: @game.region ) unless @game.region == "random"
+      questions = questions.where(region: @game.region) unless @game.region == "random"
 
-      @find_question = questions.sample
+      selected_questions = questions.shuffle.sample(10)
 
+      selected_questions.shuffle.each_with_index do |question, index|
+        GameQuestion.create!(
+          game: @game,
+          order: index + 1,
+          content: question.content,
+          correct_answer: question.correct_answer,
+          incorrect_answers: question.incorrect_answers,
+          difficulty: question.difficulty,
+          category: question.category,
+          contexte: question.contexte,
+          region: question.region
+        )
+      end
 
-      GameQuestion.create!(
-        game: @game,
-        order: 1,
-        content: @find_question.content,
-        correct_answer: @find_question.correct_answer,
-        incorrect_answers: @find_question.incorrect_answers,
-        difficulty: @find_question.difficulty,
-        category: @find_question.category,
-        contexte: @find_question.contexte,
-        region: @find_question.region
-        # game_type: @find_question.game_type
-      )
-
-      redirect_to game_path(@game)
+      redirect_to game_path(@game, order: 1)
     else
       render :new, status: :unprocessable_entity
     end
@@ -38,7 +37,7 @@ class GamesController < ApplicationController
   def show
     @game = Game.find(params[:id])
     @user_answer = UserAnswer.new
-    @questions = @game.game_questions
+    @question = @game.game_questions.find_by(order: params[:order])
   end
 
   private

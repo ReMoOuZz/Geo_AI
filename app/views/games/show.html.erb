@@ -2,16 +2,15 @@
 
 <div class="container d-flex flex-column justify-content-center align-items-center" data-controller="question-response">
 
-    <%= render "user_answers/replace_question", game_question: @questions.last, game: @game, user_answer: UserAnswer.new %>
+    <%= render "user_answers/replace_question", game_question: @question, game: @game, user_answer: UserAnswer.new %>
 
   <div class="result_container result_container_hidden" data-question-response-target="answer">
     <div class="response_container">
-      <h2>Contexte :</h2>
       <div class="question_title">
-        <p data-question-response-target="correctAnswer"><%= @game.game_questions.last.correct_answer %></p>
-        <div class="contexte_container">
-          <p><%= @game.game_questions.last.contexte %></p>
-        </div>
+      <p data-question-response-target="correctAnswer"><%= @question.correct_answer %></p>
+      <div class="contexte_container">
+        <p><%= @question.contexte %></p>
+      </div>
       </div>
     </div>
   </div>
