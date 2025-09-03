@@ -14,14 +14,14 @@ export default class extends Controller {
     const incorrect = this.totalValue - correct
     const total = this.totalValue
 
-    
+
     if (percentage == 100) {
       this.trophyTarget.innerHTML = '<i class="fa-solid fa-gem" style="color: #74C0FC;"></i>'
       this.messageTarget.textContent = "Parfait !"
     } else if (percentage >= 80) {
       this.trophyTarget.innerHTML = '<i class="fa-solid fa-medal" style="color: #FFD43B;"></i>'
       this.messageTarget.textContent = "Excellent"
-    } else if (percentage >= 70) {
+    } else if (percentage >= 60) {
       this.trophyTarget.innerHTML = '<i class="fa-solid fa-medal" style="color: #757575ff;"></i>'
       this.messageTarget.textContent = "Pas mal du tout !"
     } else if (percentage >= 30) {
@@ -32,7 +32,7 @@ export default class extends Controller {
       this.messageTarget.textContent = "T'es sérieux ?!"
     }
 
-    
+
     this.animateCounters(correct, incorrect, total)
     this.animateProgressBars(correct, incorrect, total)
     this.setDifficultyIcon()
@@ -45,12 +45,12 @@ export default class extends Controller {
     this.animateNumber(this.incorrectCountTarget, incorrect)
   }
 
-  
+
   animateProgressBars(correct, incorrect, total) {
     const correctPercentage = total > 0 ? (correct / total) * 100 : 0
     const incorrectPercentage = total > 0 ? (incorrect / total) * 100 : 0
 
-  
+
     setTimeout(() => {
       this.animateProgressBar(this.correctBarTarget, correctPercentage)
     }, 300)
@@ -63,7 +63,7 @@ export default class extends Controller {
 
   animateProgressBar(element, targetPercentage) {
     let currentWidth = 0
-    const increment = targetPercentage / 60 
+    const increment = targetPercentage / 60
 
     const timer = setInterval(() => {
       currentWidth += increment
@@ -73,7 +73,7 @@ export default class extends Controller {
       } else {
         element.style.width = currentWidth + '%'
       }
-    }, 16) 
+    }, 16)
   }
 
   animateNumber(element, target) {
