@@ -2888,7 +2888,7 @@ questions_data = [
     contexte: "La Tamise est le plus long fleuve d'Angleterre et a été au cœur de l'histoire et du développement de Londres."
   },
   {
-    content: "La mer du Nord est une mer de l'océan Atlantique située entre quels deux territoires ?",
+    content: "La mer du Nord est située entre quels territoires ?",
     difficulty: "facile",
     category: "Hydrographie et reliefs",
     region: "Europe",
