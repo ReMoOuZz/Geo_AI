@@ -201,9 +201,9 @@
   transition: width .25s linear;
   background: linear-gradient(90deg, #22c55e, #16a34a);
   animation:
-  timerShrink var(--duration, 10s) linear forwards,
+  timerShrink var(--duration, 15s) linear forwards,
   barColor 3s linear forwards var(--delay, 5s),
-  pulse 1s ease-in-out infinite var(--delay, 7s)
+  pulse 1s ease-in-out infinite var(--delay, 10s)
 }
 
 @keyframes timerShrink {
