@@ -11,7 +11,7 @@
   background: rgba(255, 255, 255, 0.244);
   border-radius: 16px;
   padding: 32px;
-  width: 80%;
+  width: 55%;
   max-height: 100%;
   overflow-y: auto;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -20,49 +20,9 @@
   justify-content: space-between;
 }
 
-
-// .quiz-input {
-//   width: 100%;
-//   border: none;
-//   outline: none;
-//   padding: 8px 12px;
-//   border-radius: 12px;
-//   background: rgba(255, 255, 255, 0.4);
-//   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-//   font-size: 1rem;
-//   transition: all 0.2s ease;
-//   backdrop-filter: blur(4px);
-//   margin-bottom: 40px;
-// }
-
-// .quiz-input:focus {
-//   background: rgba(255, 255, 255, 0.3);
-//   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-//   border: 2px solid #258DB6;
-// }
-
 .quiz-message {
   margin-bottom: 16px;
 }
-
-
-// .quiz-btn {
-//   display: inline-block;
-//   width: 30%;
-//   padding: 12px 20px;
-//   margin-top: 0px;
-//   margin-bottom: 10px;
-//   border: none;
-//   border-radius: 12px;
-//   background: #5DD19B;
-//   color: #fff;
-//   font-size: 1rem;
-//   font-weight: 600;
-//   cursor: pointer;
-//   transition: all 0.2s ease;
-//   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-//   border-radius: 20px;
-// }
 
 .question-title {
   margin-bottom: 1em;
@@ -95,5 +55,14 @@
 }
 
 .user {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
   font-size: 20px;
+}
+
+.user p {
+  background-color: white;
+  padding: 0.5em 1em;
+  border-radius: 25px;
 }

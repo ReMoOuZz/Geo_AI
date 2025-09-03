@@ -1,29 +1,24 @@
-
-
 <aside class="gb-sidebar">
-
-<div class="gb-sidebar_logo">
-  <%= link_to root_path do %>
-    <%= image_tag "littlelogo.png", alt: "GeoBattle small logo", class: "gb-logo small" %>
-    <%= image_tag "logo.png",        alt: "GeoBattle big logo",   class: "gb-logo big" %>
-  <% end %>
-</div>
-
-  <div class="gb-sidebar__avatar">
-    <%= image_tag "avatar.png", alt: "Profil", class: "gb-avatar" %>
+  <div class="gb-sidebar_logo">
+    <%= link_to root_path do %>
+      <%= image_tag "littlelogo.png", alt: "GeoBattle small logo", class: "gb-logo small" %>
+      <%= image_tag "logo.png", alt: "GeoBattle big logo", class: "gb-logo big" %>
+    <% end %>
   </div>
 
-
+  <div class="gb-sidebar__avatar">
+    <%= image_tag "avatar3.png", alt: "Profil", class: "gb-avatar" %>
+  </div>
 
   <nav class="gb-sidebar__menu">
+    <%= link_to root_path, class: "gb-sideitem" do %>
+      <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+      <span class="label">Home page</span>
+    <% end %>
+
     <%= link_to pages_profile_path, class: "gb-sideitem active" do %>
       <i class="fa-solid fa-user"></i>
       <span class="label">Profil</span>
-    <% end %>
-
-    <%= link_to pages_rewards_path, class: "gb-sideitem" do %>
-      <i class="fa-solid fa-trophy"></i>
-      <span class="label">Recompences</span>
     <% end %>
 
     <%= link_to pages_stats_path, class: "gb-sideitem" do %>
@@ -31,14 +26,21 @@
       <span class="label">Statistiques</span>
     <% end %>
 
-    <%= link_to destroy_user_session_path, class: "gb-sideitem" do %>
-      <i class="fa-solid fa-right-from-bracket"></i>
-      <span class="label">Déconnexion</span>
+    <% if user_signed_in? %>
+      <%= link_to destroy_user_session_path,
+                  class: "gb-sideitem",
+                  data: { turbo_method: :delete, turbo_confirm: "Se déconnecter ?" } do %>
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <span class="label">Déconnexion</span>
+      <% end %>
+    <% else %>
+      <%= link_to new_user_session_path, class: "gb-sideitem" do %>
+        <i class="fa-solid fa-right-to-bracket"></i>
+        <span class="label">Se connecter</span>
+      <% end %>
     <% end %>
   </nav>
 </aside>
-
-
 
 <section class="achv">
 
@@ -70,7 +72,7 @@
       </li>
     </ul>
 
- 
+
     <ul class="achv-col">
       <li class="achv-card achv-card--right">
         <span class="achv-ico green"><i class="fa-solid fa-person-hiking" style="color: #32b38c;"></i></span>
