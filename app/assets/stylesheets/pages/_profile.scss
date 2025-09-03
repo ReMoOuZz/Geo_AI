@@ -130,7 +130,6 @@
   --hex-gap: 20px;
 }
 
-
 .reward-grid {
   display: grid;
   grid-template-columns: repeat(3, var(--hex-w));
@@ -138,28 +137,117 @@
   justify-content: center;
 }
 
-
+/* ---------- БЕЙДЖ — ЗОЛОТАЯ МЕДАЛЬ ---------- */
 .reward-card {
+  position: relative;
   width: var(--hex-w);
-  height: calc(var(--hex-w) * 0.866); /* исправляем коэффициент */
-  background: #ffffff;
-  clip-path: polygon(
-    25% 0%, 75% 0%, 100% 50%,
-    75% 100%, 25% 100%, 0% 50%
-  );
+  height: calc(var(--hex-w) * 0.866);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  /* кант + внутренний обод для «массы» */
+  border: 1px solid #e8c76b;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.35),   /* светлая кромка */
+    inset 0 10px 18px rgba(182,145,58,0.18),  /* тёплая внутренняя тень */
+    0 6px 12px rgba(0,0,0,0.15);              /* отрыв от фона */
+
+  /* лёгкое золото в покое */
+  background:
+    conic-gradient(from 140deg at 50% 50%,
+      rgba(255,255,255,0.10) 0deg,
+      rgba(255,255,255,0.00) 60deg,
+      rgba(0,0,0,0.05) 120deg,
+      rgba(255,255,255,0.08) 180deg,
+      rgba(0,0,0,0.05) 240deg,
+      rgba(255,255,255,0.00) 300deg,
+      rgba(255,255,255,0.10) 360deg
+    ),
+    linear-gradient(135deg, #f7f1d5 0%, #f0db93 55%, #d4b464 100%);
+  background-blend-mode: soft-light, normal;
+
+  filter: saturate(1.02);
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease, background .25s ease;
+  will-change: transform, filter;
 }
+
+/* скользящий блик */
+.reward-card::before {
+  content: "";
+  position: absolute;
+  inset: -12% -28%;
+  background: linear-gradient(115deg,
+    rgba(255,255,255,0) 38%,
+    rgba(255,255,255,0.22) 50%,
+    rgba(255,255,255,0) 62%
+  );
+  transform: translateX(-35%) rotate(8deg);
+  opacity: 0;
+  transition: opacity .25s ease, transform .6s ease;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  will-change: transform, opacity;
+}
+
+/* мягкие лучи/сияние */
+.reward-card::after {
+  content: "";
+  position: absolute;
+  inset: -4%;
+  background:
+    radial-gradient(60% 60% at 30% 25%,
+      rgba(255,255,255,0.30) 0%,
+      rgba(255,255,255,0.08) 35%,
+      rgba(255,255,255,0) 60%
+    ),
+    conic-gradient(from 200deg at 70% 70%,
+      rgba(255,255,255,0.16) 0deg,
+      rgba(255,255,255,0.00) 40deg,
+      rgba(255,255,255,0.12) 80deg,
+      rgba(255,255,255,0.00) 120deg,
+      rgba(255,255,255,0.10) 160deg,
+      rgba(255,255,255,0.00) 200deg,
+      rgba(255,255,255,0.16) 240deg,
+      rgba(255,255,255,0.00) 360deg
+    );
+  opacity: .16;
+  transform: rotate(-3deg);
+  transition: opacity .25s ease, filter .25s ease, transform .6s ease;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  will-change: opacity, transform, filter;
+}
+
+/* hover — ощущение «падает свет» */
 .reward-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.45),
+    inset 0 12px 22px rgba(182,145,58,0.22),
+    0 10px 24px rgba(0,0,0,0.22);
+  filter: saturate(1.08) contrast(1.03);
 }
+
+.reward-card:hover::before {
+  opacity: .85;
+  transform: translateX(20%) rotate(8deg);
+}
+
+.reward-card:hover::after {
+  opacity: .34;
+  filter: brightness(1.05);
+  transform: rotate(0deg);
+}
+
+/* поддержка старого Safari для clip-path (опционально) */
+@supports (-webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)) {
+  .reward-card { -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); }
+}
+/* ---------- /БЕЙДЖ ---------- */
 
 .reward-ico {
   width: 34px;
@@ -168,7 +256,7 @@
   display: grid;
   place-items: center;
   color: #1B8EAD;
-  font-size: 16px;
+  font-size: 28px;
   margin-bottom: 8px;
 }
 
@@ -182,6 +270,7 @@
   word-wrap: break-word;
   white-space: normal;
 }
+
 @media (min-width: 1200px) {
   .reward-grid {
     grid-template-columns: repeat(4, var(--hex-w));
@@ -195,7 +284,7 @@
 }
 
 .reward-ico img {
-  width: 35px; 
+  width: 35px;
   height: 35px;
   object-fit: contain;
 }
