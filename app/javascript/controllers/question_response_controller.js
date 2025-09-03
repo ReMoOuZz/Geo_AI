@@ -10,7 +10,7 @@ export default class extends Controller {
     this.answerShown = false
     this.submitted = false
     this.autoSubmitting = false
-    this.total = this.durationValue || 10
+    this.total = this.durationValue || 15
     this.remaining = this.total
     this.renderTimer()
     this.startTimer()

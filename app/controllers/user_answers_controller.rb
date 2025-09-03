@@ -28,7 +28,7 @@ class UserAnswersController < ApplicationController
         redirect_to game_score_path(@game, @score)
       else
         # new_question
-        redirect_to game_path(@game, order:  @game_question.order + 1)
+        redirect_to game_path(@game, order: @game_question.order + 1)
       end
     else
       render :new, status: :unprocessable_entity
