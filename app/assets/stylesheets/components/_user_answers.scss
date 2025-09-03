@@ -192,7 +192,7 @@
   border-radius: 999px;
   overflow: hidden;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  animation: pulse 1s ease-in-out infinite var(--delay, 7s);
+  animation: pulse 1s ease-in-out infinite var(--delay, 12s);
 }
 
 .progress_bar {
@@ -202,8 +202,8 @@
   background: linear-gradient(90deg, #22c55e, #16a34a);
   animation:
   timerShrink var(--duration, 15s) linear forwards,
-  barColor 3s linear forwards var(--delay, 5s),
-  pulse 1s ease-in-out infinite var(--delay, 10s)
+  barColor 3s linear forwards var(--delay, 10s),
+  pulse 1s ease-in-out infinite var(--delay, 12s);
 }
 
 @keyframes timerShrink {
