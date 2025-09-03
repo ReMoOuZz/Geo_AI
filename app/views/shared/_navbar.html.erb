@@ -6,13 +6,11 @@
     <% end %>
 
     <div class="navbar-icons d-flex align-items-center ms-auto">
-
-      <%= link_to pages_profile_path, class: "gb-icon" do %>
-        <i class="fa-solid fa-user"></i>
-      <% end %>
-
-
       <% if user_signed_in? %>
+        <%= link_to pages_profile_path, class: "gb-icon" do %>
+          <i class="fa-solid fa-user"></i>
+        <% end %>
+
         <%= link_to destroy_user_session_path, class: "gb-icon", data: { turbo_method: :delete } do %>
           <i class="fa-solid fa-right-from-bracket"></i>
         <% end %>
