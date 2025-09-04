@@ -46,97 +46,125 @@
 
 <div class="parent">
 
-  <div class="cat-stats card">
+  <div class="title cat-title">
     <h2>Catégorie</h2>
+  </div>
 
+  <div class="cat-stats card">
     <div class="card-content">
       <div class="card-inner">
-        <div class="card-front"><h4><i class="fa-solid fa-flag" style="color: #ff0000ff;"></i> </h4></div>
+        <div class="card-front"><h4><i id="icon" class="fa-solid fa-flag" style="color: #FF0000;"></i> </h4></div>
         <div class="card-back">
-          <p>Bonnes réponses: <%=  @correct_in_cat_dp.count %></p>
-          <p><%= number_to_percentage(@total_correct_dp, precision: 0) %> de réussite</p>
+          <div class="left-card-content"><p>Drapeaux</p></div>
+          <div class="right-card-content">
+            <p>Bonnes réponses: <%=  @correct_in_cat_dp.count %></p>
+            <p><%= number_to_percentage(@total_correct_dp, precision: 0) %> de réussite</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="card-content">
       <div class="card-inner">
-        <div class="card-front"><h4><i class="fa-solid fa-globe" style="color: #0849b9ff;"></i></h4></div>
+        <div class="card-front"><h4><i id="icon" class="fa-solid fa-person-hiking" style="color: #017452;"></i></h4></div>
         <div class="card-back">
-          <p>Bonnes réponses: <%=  @correct_in_cat_hr.count %></p>
-          <p><%= number_to_percentage(@total_correct_hr, precision: 0) %> de réussite</p>
+          <div class="left-card-content"><p>Hydrographie et reliefs</p></div>
+          <div class="right-card-content">
+            <p>Bonnes réponses: <%=  @correct_in_cat_hr.count %></p>
+            <p><%= number_to_percentage(@total_correct_hr, precision: 0) %> de réussite</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="card-content">
       <div class="card-inner">
-        <div class="card-front"><h4><i class="fa-solid fa-landmark" style="color: #f8f409ff;"></i></h4></div>
+        <div class="card-front"><h4><i id="icon" class="fa-solid fa-helmet-un" style="color: #b10196ff;"></i></h4></div>
         <div class="card-back">
-          <p>Bonnes réponses: <%=  @correct_in_cat_gp.count %></p>
-          <p><%= number_to_percentage(@total_correct_gp, precision: 0) %> de réussite</p>
+          <div class="left-card-content"><p>Géopolitique</p></div>
+          <div class="right-card-content">
+            <p>Bonnes réponses: <%=  @correct_in_cat_gp.count %></p>
+            <p><%= number_to_percentage(@total_correct_gp, precision: 0) %> de réussite</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="card-content">
       <div class="card-inner">
-        <div class="card-front"><h4><i class="fa-solid fa-city" style="color: #077451ff;"></i></h4></div>
+        <div class="card-front"><h4><i id="icon" class="fa-solid fa-building-columns" style="color: #B197FC;"></i></h4></div>
         <div class="card-back">
-          <p>Bonnes réponses: <%=  @correct_in_cat_rv.count %></p>
-          <p><%= number_to_percentage(@total_correct_rv, precision: 0) %> de réussite</p>
+          <div class="left-card-content"><p>Régions et villes du monde</p></div>
+          <div class="right-card-content">
+            <p>Bonnes réponses: <%=  @correct_in_cat_rv.count %></p>
+            <p><%= number_to_percentage(@total_correct_rv, precision: 0) %> de réussite</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="card-content">
       <div class="card-inner">
-        <div class="card-front"><h4><i class="fa-solid fa-masks-theater" style="color: #c957a5ff;"></i></h4></div>
+        <div class="card-front"><h4><i id="icon" class="fa-solid fa-language"></i></h4></div>
         <div class="card-back">
-          <p>Bonnes réponses: <%=  @correct_in_cat_cl.count %></p>
-          <p><%= number_to_percentage(@total_correct_cl, precision: 0) %> de réussite</p>
+          <div class="left-card-content"><p>Cultures</p></div>
+          <div class="right-card-content">
+            <p>Bonnes réponses: <%=  @correct_in_cat_cl.count %></p>
+            <p><%= number_to_percentage(@total_correct_cl, precision: 0) %> de réussite</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="diff-stats card">
+  <div class="title" diff-title>
     <h2>Difficulté</h2>
+  </div>
 
+  <div class="diff-stats card">
     <div class="card-content">
       <div class="card-inner">
-        <div class="card-front"><h4><i class="fa-solid fa-leaf" style="color: #63E6BE;"></i></h4></div>
+        <div class="card-front"><h4><i id="icon" class="fa-solid fa-leaf" style="color: #63E6BE;"></i></h4></div>
         <div class="card-back">
-          <p>Bonnes réponses: <%=  @correct_in_dif_f.count %></p>
-          <p><%= number_to_percentage(@total_correct_dif_f, precision: 0) %> de réussite</p>
+          <div class="left-card-content"><p>Facile</p></div>
+          <div class="right-card-content">
+            <p>Bonnes réponses: <%=  @correct_in_dif_f.count %></p>
+            <p><%= number_to_percentage(@total_correct_dif_f, precision: 0) %> de réussite</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="card-content">
       <div class="card-inner">
-        <div class="card-front"><h4><i class="fa-solid fa-fire" style="color: #FFA500;"></i></h4></div>
+        <div class="card-front"><h4><i id="icon" class="fa-solid fa-fire" style="color: #FFA500;"></i></h4></div>
         <div class="card-back">
-          <p>Bonnes réponses: <%=  @correct_in_dif_i.count %></p>
-          <p><%= number_to_percentage(@total_correct_dif_i, precision: 0) %> de réussite</p>
+          <div class="left-card-content"><p>Intermédiaire</p></div>
+          <div class="right-card-content">
+            <p>Bonnes réponses: <%=  @correct_in_dif_i.count %></p>
+            <p><%= number_to_percentage(@total_correct_dif_i, precision: 0) %> de réussite</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="card-content">
       <div class="card-inner">
-        <div class="card-front"><h4><i class="fa-solid fa-skull" style="color: #1d302a;"></i></h4></div>
+        <div class="card-front"><h4><i id="icon" class="fa-solid fa-skull" style="color: #1d302a;"></i></h4></div>
         <div class="card-back">
-          <p>Bonnes réponses: <%=  @correct_in_dif_d.count %></p>
-          <p><%= number_to_percentage(@total_correct_dif_d, precision: 0) %> de réussite</p>
+          <div class="left-card-content"><p>Difficile</p></div>
+          <div class="right-card-content">
+            <p>Bonnes réponses: <%=  @correct_in_dif_d.count %></p>
+            <p><%= number_to_percentage(@total_correct_dif_d, precision: 0) %> de réussite</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="all-stats card-content">
+    <div class="all-stats card-content" >
       <div class="card-inner">
-        <div class="card-front"><h4>Résumé</h4></div>
-        <div class="card-back">
+        <div class="card-front" id="all-stats"><h2>Résumé</h2></div>
+        <div class="card-back" id="all-stats-back">
           <p style="color: green">Bonnes réponses: <%= @correct.count %></p>
           <p style="color: red">Mauvaises réponses: <%= @incorrect.count %></p>
           <p><%= number_to_percentage(@total_correct, precision: 0) %> de bonnes réponses</p>
@@ -145,55 +173,72 @@
     </div>
   </div>
 
-  <div class="reg-stats card">
+  <div class="title reg-title">
     <h2>Région</h2>
+  </div>
 
+  <div class="reg-stats card">
     <div class="card-content">
       <div class="card-inner">
-        <div class="card-front"><h4><i class="fa-solid fa-earth-europe" style="color: #0296ffff;"></i></h4></div>
+        <div class="card-front"><h4><i id="icon" class="fa-solid fa-earth-europe" style="color: #0296ffff;"></i></h4></div>
         <div class="card-back">
-          <p>Bonnes réponses: <%= @correct_in_reg_eu.count %></p>
-          <p><%= number_to_percentage(@total_correct_reg_eu, precision: 0) %> de réussite</p>
+          <div class="left-card-content"><p>Europe</p></div>
+          <div class="right-card-content">
+            <p>Bonnes réponses: <%= @correct_in_reg_eu.count %></p>
+            <p><%= number_to_percentage(@total_correct_reg_eu, precision: 0) %> de réussite</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="card-content">
       <div class="card-inner">
-        <div class="card-front"><h4><i class="fa-solid fa-earth-americas" style="color: #0296ffff;"></i></h4></div>
+        <div class="card-front"><h4><i id="icon" class="fa-solid fa-earth-americas" style="color: #0296ffff;"></i></h4></div>
         <div class="card-back">
-          <p>Bonnes réponses: <%=  @correct_in_reg_am.count %></p>
-          <p><%= number_to_percentage(@total_correct_reg_am, precision: 0) %> de réussite</p>
+          <div class="left-card-content"><p>Amérique</p></div>
+          <div class="right-card-content">
+            <p>Bonnes réponses: <%=  @correct_in_reg_am.count %></p>
+            <p><%= number_to_percentage(@total_correct_reg_am, precision: 0) %> de réussite</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="card-content">
       <div class="card-inner">
-        <div class="card-front"><h4><i class="fa-solid fa-earth-asia" style="color: #0296ffff;"></i></h4></div>
+        <div class="card-front"><h4><i id="icon" class="fa-solid fa-earth-asia" style="color: #0296ffff;"></i></h4></div>
         <div class="card-back">
-          <p>Bonnes réponses: <%=  @correct_in_reg_as.count %></p>
-          <p><%= number_to_percentage(@total_correct_reg_as, precision: 0) %> de réussite</p>
+          <div class="left-card-content"><p>Asie</p></div>
+          <div class="right-card-content">
+            <p>Bonnes réponses: <%=  @correct_in_reg_as.count %></p>
+            <p><%= number_to_percentage(@total_correct_reg_as, precision: 0) %> de réussite</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="card-content">
       <div class="card-inner">
-        <div class="card-front"><h4><i class="fa-solid fa-earth-africa" style="color: #0296ffff;"></i></h4></div>
+        <div class="card-front"><h4><i id="icon" class="fa-solid fa-earth-africa" style="color: #0296ffff;"></i></h4></div>
         <div class="card-back">
-          <p>Bonnes réponses: <%=  @correct_in_reg_af.count %></p>
-          <p><%= number_to_percentage(@total_correct_reg_af, precision: 0) %> de réussite</p>
+          <div class="left-card-content"><p>Afrique</p></div>
+          <div class="right-card-content">
+            <p>Bonnes réponses: <%=  @correct_in_reg_af.count %></p>
+            <p><%= number_to_percentage(@total_correct_reg_af, precision: 0) %> de réussite</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="card-content">
       <div class="card-inner">
-        <div class="card-front"><h4><i class="fa-solid fa-earth-oceania" style="color: #0296ffff;"></i></h4></div>
+        <div class="card-front"><h4><i id="icon" class="fa-solid fa-earth-oceania" style="color: #0296ffff;"></i></h4></div>
         <div class="card-back">
-          <p>Bonnes réponses: <%=  @correct_in_reg_oc.count %></p>
-          <p><%= number_to_percentage(@total_correct_reg_oc, precision: 0) %> de réussite</p>
+          <div class="left-card-content"><p>Océanie</p></div>
+          <div class="right-card-content">
+            <p>Bonnes réponses: <%=  @correct_in_reg_oc.count %></p>
+            <p><%= number_to_percentage(@total_correct_reg_oc, precision: 0) %> de réussite</p>
+          </div>
         </div>
       </div>
     </div>
