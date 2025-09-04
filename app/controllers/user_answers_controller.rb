@@ -24,7 +24,7 @@ class UserAnswersController < ApplicationController
         @score.save
       end
 
-      if @user_answer.game_question.order == 10
+      if @user_answer.game_question.order == 5
         redirect_to game_score_path(@game, @score)
       else
         # new_question
