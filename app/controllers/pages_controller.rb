@@ -12,7 +12,7 @@ class PagesController < ApplicationController
 
     @answers = @user.user_answers
     @correct = @answers.joins(:game_question).where(is_correct: true)
-    @incorrect = @answers.joins(:game_question).where(is_correct: false || nil)
+    @incorrect = @answers.joins(:game_question).where(is_correct: false)
 
     correct = @correct.count
     incorrect = @incorrect.count

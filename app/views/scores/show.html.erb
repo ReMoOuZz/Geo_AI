@@ -7,19 +7,19 @@
         .where(user_answers: { user: current_user, is_correct: false })
 %>
 
-<div class="score-container" 
-     data-controller="score-results" 
-     data-score-results-percentage-value="<%= percentage %>" 
-     data-score-results-correct-value="<%= correct_answers %>" 
+<div class="score-container"
+     data-controller="score-results"
+     data-score-results-percentage-value="<%= percentage %>"
+     data-score-results-correct-value="<%= correct_answers %>"
      data-score-results-total-value="<%= total_questions %>">
-        
+
     <!-- Container 1: Trophée + Message + Pourcentage -->
     <div class="score-wrapper">
         <div class="score-summary">
             <div class="trophy" data-score-results-target="trophy">
             </div>
-            
-            
+
+
             <div class="score-display">
                 <span class="score-text" data-score-results-target="scoreText"><%= percentage %>%</span>
                 <div class="score-label">de réussite</div>
@@ -29,7 +29,7 @@
         <%
             # Calcule badges obtenus quiz
             earned_badges = []
-            
+
             # Badges de perf
             if percentage == 100
                 earned_badges << "Diamant"
@@ -42,7 +42,7 @@
             else
                 earned_badges << "Poop"
             end
-            
+
             # Badges thématiques
             if percentage >= 80
                 case game.category
@@ -58,8 +58,8 @@
                 earned_badges << "Culturiste"
                 end
             end
-            
-            Badge Serial Crotteur (si applicable)
+
+            # Badge Serial Crotteur (si applicable)
             failed_games = current_user.scores.joins(:game).where("scores.value < ?", 3).count
             if failed_games == 5
                 earned_badges << "Serial Crotteur"
@@ -96,8 +96,8 @@
                 <% end %>
             </div>
         </div>
-            
-    
+
+
 
     <div class="category-info">
             <div class="category-tags">
@@ -117,7 +117,7 @@
             <%= link_to "Menu principal", root_path, class: "btn" %>
         </div>
 </div>
-    
+
     <!-- Container 2: Stats + Détails -->
     <div class="score-details-container">
         <!-- Stats des réponses -->
@@ -134,7 +134,7 @@
                     <div class="score-progress-bar score-progress-correct" data-score-results-target="correctBar"></div>
                 </div>
             </div>
-            
+
             <div class="score-progress-item">
                 <div class="score-progress-header">
                     <span class="score-progress-label">
@@ -148,7 +148,7 @@
                 </div>
             </div>
         </div>
-                
+
         <!-- Questions incorrectes -->
         <% if incorrect_questions.any? %>
             <div class="incorrect-questions">
@@ -171,7 +171,7 @@
                             </div>
                         <% end %>
                     </div>
-                    
+
                     <!-- Navigation du carousel -->
                     <div class="carousel-nav">
                         <button data-action="click->question-carousel#previous" class="nav-btn prev-btn">❮</button>
@@ -183,5 +183,3 @@
         <% end %>
     </div>
 </div>
-
-
