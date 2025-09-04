@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="question-response"
 export default class extends Controller {
-  static targets = ["timer", "answer", "question", "timerContainer", "progressBar", "correctAnswer"]
+  static targets = ["timer", "answer", "question", "timerContainer", "progressBar", "correctAnswer", "skip", "questionNumer"]
   static values = { duration: Number }
 
   connect() {
@@ -72,12 +72,10 @@ export default class extends Controller {
     event.preventDefault()
     this.stopTimer()
     const rigthAnswer = this.correctAnswerTarget.innerText.trim()
-    console.log(this.correctAnswerTarget.innerText.trim())
     const data = new FormData(document.querySelector("form"))
     const rawData = data.get('user_answer[content]')
     if (rawData != null) {
       const userAnswer = data.get('user_answer[content]').trim()
-      console.log(userAnswer)
       let result = ""
       if (userAnswer === rigthAnswer){
         result = "Bonne réponse ! Bravo ! "
@@ -101,6 +99,13 @@ export default class extends Controller {
       this.answerShown = true
       setTimeout(() => this.submitNow(), 7500);
     }
+  }
+
+  skip(event) {
+    event.preventDefault()
+    this.stopTimer()
+    this.answerShown = true
+    this.submitNow()
   }
 
   submitNow() {
