@@ -27,7 +27,10 @@
               class: "form-control ",
               data: { action: "keyup->actionquiz#enterValidation", actionquiz_target: "input" }
             } %>
-          <%= f.button :submit, "Répondre", class:"btn btn-success", style: "color: white; font-weight: bold", wrapper: false  %>
+          <button type="submit" class="btn btn-success btn-with-spinner" style="color: white; font-weight: bold">
+            <div class="btn-spinner planet-spinner"></div>
+            <span class="btn-text">Envoyer</span>
+          </button>
         </div>
       <% end %>
 

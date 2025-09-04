@@ -11,6 +11,9 @@ export default class extends Controller {
 
     connect() {
       setTimeout(() => {
+        this.formTarget.addEventListener('submit', () => {
+          this.startLoading();
+        })
         if (this.messagesnumberValue > this.totalValue) {
           this.formTarget.classList.add('d-none');
           this.replaceTarget.classList.remove('d-none');
@@ -20,14 +23,25 @@ export default class extends Controller {
         }
         this.inputTarget.focus();
       }, 50);
+      
     }
 
     enterValidation(event) {
       if (event.key === "Enter") {
         event.preventDefault();
+        this.startLoading(); // pour validation enter
         this.formTarget.requestSubmit();
       }
     }
+    // demaragare spinner
+    startLoading() {
+      const submitBtn = this.formTarget.querySelector('button[type="submit"]');
+      if (submitBtn) {
+        submitBtn.classList.add('loading');
+        submitBtn.disabled = true;
+      }
+    }
+    
 
     scrollToElement(el) {
       el.scrollIntoView({ behavior: "smooth", block: "center" });
