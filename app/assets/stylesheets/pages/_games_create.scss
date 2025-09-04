@@ -55,7 +55,7 @@
 
 .button_game_mode_container input[type="radio"]:checked + label {
   box-shadow:
-  inset 2px 8px 12px rgba(0,0,0,0.4),   /* ombre interne principale */
+  inset 2px 8px 12px rgba(0,0,0,0.4),
   inset -2px -4px 6px rgba(255,255,255,0.3);
 }
 
@@ -136,6 +136,5 @@
 }
 
 .disable {
-  pointer-events: none;
   opacity: 0.6;
 }
