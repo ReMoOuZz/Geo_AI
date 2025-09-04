@@ -10,20 +10,29 @@
 
 
 .about-box {
-  width: 100%;
-  max-width: 900px;
-  text-align: center;
-  color: #0b2630;
+  height: 650px;
+  width: 600px;
+  padding: 2em;
+  background-color: #ffec99;
+  border-radius: 12px;
+  vertical-align: center;
+  box-shadow: 2px 6px 6px 0px rgba(0,0,0,0.2);
 }
+
+// .about-box {
+//  width: 100%;
+//  max-width: 900px;
+//  text-align: center;
+//  color: #0b2630;
+// }
 
 .about-title {
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 800;
   margin: 0 0 16px;
-  text-decoration: underline;
   text-underline-offset: 6px;
+  text-align: center;
 }
-
 
 .about-line {
   font-size: 20px;
@@ -31,13 +40,14 @@
   margin: 0;
   text-decoration: none;
   text-underline-offset: 6px;
+  text-align: justify;
 }
 
 
 .about-quote {
   margin: 22px 0 0;
   font-size: 22px;
-
+  text-align: center;
   text-underline-offset: 6px;
 }
 
@@ -45,6 +55,7 @@
   margin: 6px 0 0;
   font-size: 20px;
   font-weight: 700;
-
+  text-align: center;
   text-underline-offset: 6px;
+  line-height: 1;
 }
