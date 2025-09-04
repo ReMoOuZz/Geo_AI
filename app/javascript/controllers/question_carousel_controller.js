@@ -12,17 +12,23 @@ export default class extends Controller {
   next() {
     if (this.currentIndex < this.totalValue - 1) {
       this.currentIndex++
+    } else {
+      // Sinon (si on est sur la dernière), on revient à la première.
+      this.currentIndex = 0
+    }
       this.updateSlides()
     }
-  }
 
   previous() {
     if (this.currentIndex > 0) {
       this.currentIndex--
+    } else {
+      // Sinon (si on est sur la première), on va à la dernière.
+      this.currentIndex = this.totalValue - 1
+    }
       this.updateSlides()
     }
-  }
-
+  
   updateSlides() {
     this.slideTargets.forEach((slide, index) => {
       slide.classList.toggle('active', index === this.currentIndex)

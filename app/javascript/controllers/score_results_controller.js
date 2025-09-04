@@ -29,7 +29,7 @@ export default class extends Controller {
       this.messageTarget.textContent = "Encore un peu de travail !"
     } else {
       this.trophyTarget.innerHTML = '<i class="fa-solid fa-poo" style="color: #513c1f;"></i>'
-      this.messageTarget.textContent = "T'es sérieux ?!"
+      this.messageTarget.textContent = "Allez, remotive-toi !"
     }
 
 
