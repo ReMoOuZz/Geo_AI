@@ -1,6 +1,6 @@
 <%
     game = @score.game
-    total_questions = game.game_questions.count
+    total_questions = game.game_questions.count - 5
     correct_answers = @score.value
     percentage = total_questions > 0 ? (correct_answers.to_f / total_questions * 100).round : 0
     incorrect_questions = game.game_questions.joins(:user_answers)
