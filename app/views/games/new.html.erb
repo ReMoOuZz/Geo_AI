@@ -4,14 +4,17 @@
 
     <div class="game_card" data-controller="setup-game">
 
-      <p>Mode de jeu</p>
-      <div class="button_game_mode_container">
-        <input name="game[game_type]" type="radio" class="button" id="solo" value="Solo">
-        <label for="solo">Solo</label>
-        <input name="game[game_type]" type="radio" class="button" id="multi" value="Multijoueur" disabled>
-        <label class="disable" for="multi" data-bs-toggle="tooltip" data-bs-placement="top" title="Bientôt disponible">Multi</label>
-      </div>
+<p>Mode de jeu</p>
+<div class="button_game_mode_container">
+  <input name="game[game_type]" type="radio" class="button" id="solo" value="Solo">
+  <label for="solo">Solo</label>
 
+  <input name="game[game_type]" type="radio" class="button" id="multi" value="Multijoueur" disabled>
+  <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="top" title="Bientôt disponible">
+    <label class="disable" for="multi">Multi</label>
+
+
+</div>
       <p>Zone</p>
       <div class="button_zone_container">
         <%= f.select :region,
