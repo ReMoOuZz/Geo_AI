@@ -29,7 +29,6 @@ export default class extends Controller {
       this.updateSlides()
     }
   
-
   updateSlides() {
     this.slideTargets.forEach((slide, index) => {
       slide.classList.toggle('active', index === this.currentIndex)
