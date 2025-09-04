@@ -54,7 +54,7 @@
       <hr class="profile-sep">
 
       <div class="profile-field profile-field--name">
-        <span class="profile-name">Geo Ninja</span>
+        <span class="profile-name">Cauchix</span>
         <i class="fa-solid fa-pen-to-square edit-icon"></i>
       </div>
 
@@ -82,68 +82,71 @@
 
   <div class="rewards-right">
   <div class="reward-grid">
-    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="100% de bonnes réponses ">
+    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top"title="Tu as <%= current_user.badges.count %> diamant(s) - 100% de bonnes réponses">
       <div class="reward-ico" >
         <i class="fa-solid fa-gem" style="color: #0051f2ff;"></i>
       </div>
     </div>
 
-    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="80% de bonnes réponses">
-      <div class="reward-ico" >
-      <i class="fa-solid fa-medal" style="color: #b29015ff;"></i>
-      </div>
-    </div>
+    <div class="reward-card"
+     data-bs-toggle="tooltip"
+     data-bs-placement="top"
+     title="Tu as <%= current_user.badges.count %> medaille(s) d'or - 80% de bonnes réponses">
+  <div class="reward-ico">
+    <i class="fa-solid fa-medal" style="color: #b89600ff;"></i>
+  </div>
+</div>
 
-    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="60% de bonnes réponses">
+    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Tu as <%= current_user.badges.count %> medaille(s) d'argent - 60% de bonnes réponses">
       <div class="reward-ico">
        <i class="fa-solid fa-medal" style="color: #858585ff;"></i>
       </div>
     </div>
 
-    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="30 % de bonnes réponses">
+    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Tu as <%= current_user.badges.count %> medaille(s) de bronze - 30 % de bonnes réponses">
       <div class="reward-ico">
-        <i class="fa-solid fa-award" style="color: #fc8a1fff;"></i>
+        <i class="fa-solid fa-medal" style="color: #fc8a1fff;"></i>
       </div>
     </div>
 
-    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Moins de 30% de bonnes réponse">
+    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Tu as <%= current_user.badges.count %> medaille(s) pooh - Moins de 30% de bonnes réponse">
       <div class="reward-ico">
         <i class="fa-solid fa-poo" style="color: #6e4500ff;"></i>
       </div>
     </div>
 
-    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="MONTAGNARD: 80% dans la catégorie Reliefs">
+    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Tu as <%= current_user.badges.count %> badge(s) MONTAGNARD: 80% dans la catégorie Reliefs">
       <div class="reward-ico">
        <i class="fa-solid fa-person-hiking" style="color: #017452;"></i>
       </div>
     </div>
 
-    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="ROI DE LA COLLINE: 80% dans la catégorie Drapeaux">
+    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Tu as <%= current_user.badges.count %> badge(s) ROI DE LA COLLINE: 80% dans la catégorie Drapeaux">
       <div class="reward-ico">
         <i class="fa-solid fa-flag" style="color: #ff0000;"></i>
       </div>
     </div>
 
-    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="CAPITALISTE: 80% dans la catégorie Capitales">
+    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Tu as <%= current_user.badges.count %> badge(s) CAPITALISTE: 80% dans la catégorie Capitales">
       <div class="reward-ico">
         <i class="fa-solid fa-building-columns" style="color: #B197FC;"></i>
       </div>
     </div>
 
-    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="CULTURISTE: 80% dans la catégorie Cultures">
+    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Tu as <%= current_user.badges.count %> badge(s) CULTURISTE: 80% dans la catégorie Cultures">
       <div class="reward-ico">
-        <i class="fa-solid fa-language" style="color: #ffffffff;"></i>
+        <i class="fa-solid fa-language"></i>
       </div>
     </div>
 
-    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="DIPLOMATE: 80% dans la catégorie Géopolitique">
+    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Tu as <%= current_user.badges.count %> badge(s) DIPLOMATE: 80% dans la catégorie Géopolitique">
       <div class="reward-ico">
         <i class="fa-solid fa-helmet-un" style="color: #b10196ff;"></i>
       </div>
 
     </div>
 
-    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="SERIAL CROTTEUR: Tu as échoué 5 fois ou plus ">
+    <div class="reward-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Tu as <%= current_user.badges.count %> badge(s) SERIAL CROTTEUR: Tu as échoué 5 fois ou plus ">
       <div class="reward-ico">
         <i class="fa-solid fa-poo" style="color: #2b1b00ff;"></i>
       </div>
