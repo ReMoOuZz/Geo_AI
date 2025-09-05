@@ -11,9 +11,11 @@
     <% end %>
 
     <% if user_signed_in? %>
-      <%= link_to "Commencer le jeu", new_game_path,
-          class: "gb-btn gb-btn--start" %>
-    <% else %>
+      <% if current_user.quizzes.any? %>
+        <%= link_to "Commencer le jeu", new_game_path,
+            class: "gb-btn gb-btn--start" %>
+      <% end %>
+      <% else %>
       <%= link_to "Commencer le jeu", new_user_session_path,
           class: "gb-btn gb-btn--start" %>
     <% end %>
