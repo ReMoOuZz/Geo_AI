@@ -244,3 +244,36 @@
 .skip-context:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 1366px) {
+  .quiz-container {
+    margin-bottom: clamp(10px, 25px, 30px);
+    width: clamp(50%, 70%, 90%);
+    max-height: 74vh;
+    gap: 0;
+  }
+  .quiz-container form {
+    width: clamp(50%, 70%, 90%);
+  }
+  .content_question {
+    width: 100%;
+    height: clamp(20%, 30%, 40% );
+    overflow: scroll;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .answers-grid {
+    gap: 20px;
+  }
+  .answers_container label{
+    overflow: scroll;
+    font-size: 16px;
+  }
+  .submit_container {
+    margin-top: 20px;
+  }
+  .response_btn {
+    height: 50px;
+    font-size: 18px;
+  }
+}
