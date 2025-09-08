@@ -130,3 +130,21 @@
 .card-back p {
   font-weight: bold;
 }
+
+@media (max-width: 1366px) {
+  .parent {
+    margin-top: 0
+  }
+  .card-back {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .parent {
+    margin-left: 3%;
+  }
+  .card-back {
+    font-size: 10px;
+  }
+}
