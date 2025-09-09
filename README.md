@@ -152,4 +152,4 @@ Routes of interest (`config/routes.rb`):
 
 ## License
 
-Copyright © The project authors. All rights reserved.
+Copyright © ReMoOuZz, Shestua, Cauchix, and NOoOmade. All rights reserved.
