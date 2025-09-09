@@ -138,3 +138,37 @@
 .disable {
   opacity: 0.6;
 }
+
+@media (max-width: 1366px) {
+  .game_card {
+  height: 80vh;
+  width: 450px;
+  }
+  .game_card p {
+    margin: 10px 10px 15px;
+  }
+  .game_card select {
+    margin: 0 8px;
+  }
+  #game_region {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .game_card {
+    height: 80vh;
+    width: 400px;
+  }
+  .game_card p {
+    font-size: 20px;
+    margin: 10px;
+    text-underline-offset: 5px;
+  }
+  .game_card select {
+    margin: 8px;
+  }
+  #game_region {
+    margin: 0;
+  }
+}
