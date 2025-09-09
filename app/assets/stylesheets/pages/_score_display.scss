@@ -1,3 +1,10 @@
+body.scores.show.scores-show {
+  .home-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .score-container {
   display: flex;
   gap: 30px;

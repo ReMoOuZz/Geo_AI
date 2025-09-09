@@ -13,7 +13,7 @@ export default class extends Controller {
     this.total = this.durationValue || 15
     this.remaining = this.total
     this.renderTimer()
-    // this.startTimer()
+    this.startTimer()
     this.progressBarTarget.style.setProperty('--duration', `${this.total}s`);
     this.answerTarget.classList.add("result_container_hidden")
     this.timerContainerTarget.classList.remove("quiz-toolbar-hidden")
