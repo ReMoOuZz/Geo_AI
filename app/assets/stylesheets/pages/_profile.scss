@@ -269,6 +269,30 @@
   white-space: normal;
 }
 
+.reward-ico img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+@media (max-width: 1366px) {
+  .profile-container {
+    margin-top: 0;
+  }
+  .rewards-layout {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .profile-container {
+    margin-top: 0;
+  }
+  .rewards-layout {
+    margin-left: 0;
+  }
+}
+
 @media (min-width: 1200px) {
   .reward-grid {
     grid-template-columns: repeat(4, var(--hex-w));
@@ -279,10 +303,4 @@
   .reward-grid {
     grid-template-columns: repeat(2, var(--hex-w));
   }
-}
-
-.reward-ico img {
-  width: 35px;
-  height: 35px;
-  object-fit: contain;
 }
