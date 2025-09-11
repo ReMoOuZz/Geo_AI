@@ -25,74 +25,19 @@
             </div>
         </div>
             <h1 class="score-message" data-score-results-target="message"></h1>
-        <%
-            # Calcule badges obtenus quiz
-            earned_badges = []
 
-            # Badges de perf
-            if percentage == 100
-                earned_badges << "Diamant"
-            elsif percentage >= 80
-                earned_badges << "Médaille d'or"
-            elsif percentage >= 60
-                earned_badges << "Médaille d'argent"
-            elsif percentage >= 30
-                earned_badges << "Médaille de bronze"
-            else
-                earned_badges << "Poop"
-            end
-
-            # Badges thématiques
-            if percentage >= 80
-                case game.category
-                when "Hydrographie et reliefs"
-                earned_badges << "Montagnard"
-                when "Drapeaux"
-                earned_badges << "Roi de la colline"
-                when "Régions et villes du monde"
-                earned_badges << "Capitaliste"
-                when "Géopolitique"
-                earned_badges << "Diplomate"
-                when "Cultures"
-                earned_badges << "Culturiste"
-                end
-            end
-
-            # Badge Serial Crotteur (si applicable)
-            failed_games = current_user.scores.joins(:game).where("scores.value < ?", 3).count
-            if failed_games == 5
-                earned_badges << "Serial Crotteur"
-            end
-        %>
        <div class="badges-obtains">
-            <p>Badges obtenus</p>
+          <p>Badges obtenus</p>
             <div class="badges-icons">
-                <% earned_badges.each do |badge_name| %>
-                    <span class="achv-ico" title="<%= badge_name %>">
-                        <% case badge_name %>
-                        <% when "Diamant" %>
-                            <i class="fa-solid fa-gem" style="color: #74C0FC;"></i>
-                        <% when "Médaille d'or" %>
-                            <i class="fa-solid fa-medal" style="color: #FFD43B;"></i>
-                        <% when "Médaille d'argent" %>
-                            <i class="fa-solid fa-medal" style="color: #757575ff;"></i>
-                        <% when "Médaille de bronze" %>
-                            <i class="fa-solid fa-medal" style="color: #9a7f1fff;"></i>
-                        <% when "Poop" %>
-                            <i class="fa-solid fa-poo" style="color: #513c1f;"></i>
-                        <% when "Montagnard" %>
-                            <i class="fa-solid fa-person-hiking" style="color: #017452;"></i>
-                        <% when "Roi de la colline" %>
-                            <i class="fa-solid fa-flag" style="color: #FF0000;"></i>
-                        <% when "Capitaliste" %>
-                            <i class="fa-solid fa-building-columns" style="color: #B197FC;"></i>
-                        <% when "Diplomate" %>
-                            <i class="fa-solid fa-helmet-un" style="color: #b10196ff;"></i>
-                        <% when "Culturiste" %>
-                            <i class="fa-solid fa-language"></i>
-                        <% end %>
-                    </span>
+              <% if @awarded_badges.present? %>
+                <% @awarded_badges.each do |badge| %>
+                  <span class="achv-ico" data-badge="<%= badge.name.parameterize%>" title="<%= badge.name %>">
+                    <i class="fa-solid <%= badge.icon %>"></i>
+                  </span>
                 <% end %>
+              <% else %>
+                <span class="no-badge">Aucun badge gagné cette partie</span>
+              <% end %>
             </div>
         </div>
 
