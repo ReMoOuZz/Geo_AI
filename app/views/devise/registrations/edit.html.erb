@@ -4,6 +4,11 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
+     <% if resource.persisted? && resource.photo.attached? %>
+    <%= image_tag resource.photo, class: "gb-avatar" %>
+    <% end %>
+    <%= f.input :photo, as: :file, label: "Changer ma photo" %>
+    <%= f.input :pseudo, required: false %>
     <%= f.input :email, required: true, autofocus: true %>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>

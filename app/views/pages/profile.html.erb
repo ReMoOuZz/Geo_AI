@@ -7,7 +7,11 @@
   </div>
 
   <div class="gb-sidebar__avatar">
-    <%= image_tag "avatar3.png", alt: "Profil", class: "gb-avatar" %>
+    <% if current_user&.photo&.attached? %>
+      <%= image_tag current_user.photo, alt: "Profil", class: "gb-avatar" %>
+    <% else %>
+      <%= image_tag "avatar3.png", alt: "Profil", class: "gb-avatar" %>
+    <% end %>
   </div>
 
   <nav class="gb-sidebar__menu">
@@ -47,25 +51,37 @@
   <div class="profile-container">
     <div class="profile-card">
       <div class="profile-avatar-wrap">
-        <%= image_tag "avatar3.png", alt: "Avatar", class: "profile-avatar" %>
-        <i class="fa-solid fa-pen-to-square edit-icon avatar-edit"></i>
+        <% if current_user&.photo&.attached? %>
+          <%= image_tag current_user.photo, alt: "Avatar", class: "profile-avatar" %>
+        <% else %>
+          <%= image_tag "avatar3.png", alt: "Avatar", class: "profile-avatar" %>
+        <% end %>
+        <%= link_to edit_user_registration_path(anchor: 'user-avatar'), class: 'edit-link', title: 'Modifier mon avatar' do %>
+          <i class="fa-solid fa-pen-to-square edit-icon avatar-edit"></i>
+        <% end %>
       </div>
 
       <hr class="profile-sep">
 
       <div class="profile-field profile-field--name">
-        <span class="profile-name">Cauchix</span>
-        <i class="fa-solid fa-pen-to-square edit-icon"></i>
+        <span class="profile-name"><%= current_user.pseudo %></span>
+        <%= link_to edit_user_registration_path(anchor: 'user-pseudo'), class: 'edit-link', title: 'Modifier mon pseudo' do %>
+          <i class="fa-solid fa-pen-to-square edit-icon"></i>
+        <% end %>
       </div>
 
       <div class="profile-field">
         <span class="profile-label">Mot de passe</span>
-        <i class="fa-solid fa-pen-to-square edit-icon"></i>
+        <%= link_to edit_user_registration_path(anchor: 'user-password'), class: 'edit-link', title: 'Modifier mon mot de passe' do %>
+          <i class="fa-solid fa-pen-to-square edit-icon"></i>
+        <% end %>
       </div>
 
       <div class="profile-field">
         <span class="profile-label">Email</span>
-        <i class="fa-solid fa-pen-to-square edit-icon"></i>
+        <%= link_to edit_user_registration_path(anchor: 'user-email'), class: 'edit-link', title: 'Modifier mon email' do %>
+          <i class="fa-solid fa-pen-to-square edit-icon"></i>
+        <% end %>
       </div>
 
       <hr class="profile-sep">
