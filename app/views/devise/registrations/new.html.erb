@@ -1,178 +1,32 @@
-  <div class="auth-container">
-    <div class="brand-box">GeoBattle</div>
-    <h2>Je crée mon compte</h2>
-    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-      <%= f.error_notification %>
-      <div class="form-inputs">
-        <%= f.input :pseudo, required: true, autofocus: true, input_html: { autocomplete: "pseudo" } %>
-        <%= f.input :photo, as: :file, label: "Photo de profil" %>
-        <%= f.input :email, required: true, autofocus: true, input_html: { autocomplete: "email" } %>
-        <%= f.input :password, required: true, hint: ("#{@minimum_password_length} caractères minimum" if @minimum_password_length), input_html: { autocomplete: "new-password" } %>
-        <%= f.input :password_confirmation, required: true, input_html: { autocomplete: "new-password" } %>
+<div class="container my-4">
+  <div class="brand-box mb-2">GeoBattle</div>
+  <h2 class="mb-3 f-bold">Je crée mon compte</h2>
 
-    <!-- Possibilité de choisir entre sa photo perso ou un avatar avec du JS à faire
-     <%= f.input :photo, required: true, as: :file %>
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= f.error_notification %>
 
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Choisissez un avatar personnalisé
-        </button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Choisissez votre avatar</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-4 ms-auto">
-                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375464/Avatar_F_1_ovljm4.png" id="avatar1"/><label for="avatar1"></label>
-                    </div>
-                    <div class="col-md-4 ms-auto">
-                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756392132/Avatar_F_4_whsizu.png" id="avatar2"/><label for="avatar2"></label>
-                    </div>
-                    <div class="col-md-4 ms-auto">
-                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375459/Avatar_H_1_erb2fz.png" id="avatar3"/><label for="avatar3"></label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4 ms-auto">
-                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375464/Avatar_F_1_ovljm4.png" id="avatar1"/><label for="avatar1"></label>
-                    </div>
-                    <div class="col-md-4 ms-auto">
-                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756392132/Avatar_F_4_whsizu.png" id="avatar2"/><label for="avatar2"></label>
-                    </div>
-                    <div class="col-md-4 ms-auto">
-                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375459/Avatar_H_1_erb2fz.png" id="avatar3"/><label for="avatar3"></label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4 ms-auto">
-                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375464/Avatar_F_1_ovljm4.png" id="avatar1"/><label for="avatar1"></label>
-                    </div>
-                    <div class="col-md-4 ms-auto">
-                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756392132/Avatar_F_4_whsizu.png" id="avatar2"/><label for="avatar2"></label>
-                    </div>
-                    <div class="col-md-4 ms-auto">
-                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375459/Avatar_H_1_erb2fz.png" id="avatar3"/><label for="avatar3"></label>
-                    </div>
-                  </div>
-                  <div class="row">
-                   <div class="col-md-4 ms-auto">
-                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375464/Avatar_F_1_ovljm4.png" id="avatar1"/><label for="avatar1"></label>
-                    </div>
-                    <div class="col-md-4 ms-auto">
-                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756392132/Avatar_F_4_whsizu.png" id="avatar2"/><label for="avatar2"></label>
-                    </div>
-                    <div class="col-md-4 ms-auto">
-                      <input type="checkbox" name='user[avatar]' value="https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375459/Avatar_H_1_erb2fz.png" id="avatar3"/><label for="avatar3"></label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div> -->
+    <div class="two-col-under-1366">
+      <div class="card p-3">
+        <div class="form-inputs">
+          <%= f.input :pseudo, required: true, autofocus: true, input_html: { autocomplete: "pseudo" }, wrapper_html: { class: "mb-3" } %>
+          <%= f.input :photo, as: :file, label: "Photo de profil", wrapper_html: { class: "mb-3" } %>
+          <%= f.input :email, required: true, input_html: { autocomplete: "email" }, wrapper_html: { class: "mb-3" } %>
+        </div>
       </div>
-      <div class="form-actions">
-        <%= f.button :submit, "S'enregistrer", class: "btn" %>
+
+      <div class="card p-3">
+        <div class="form-inputs">
+          <%= f.input :password, required: true, hint: ("#{@minimum_password_length} caractères minimum" if @minimum_password_length), input_html: { autocomplete: "new-password" }, wrapper_html: { class: "mb-3" } %>
+          <%= f.input :password_confirmation, required: true, input_html: { autocomplete: "new-password" }, wrapper_html: { class: "mb-3" } %>
+        </div>
+        <div class="form-actions d-grid d-sm-flex gap-2">
+          <%= f.button :submit, "S'enregistrer", class: "btn btn-success" %>
+        </div>
       </div>
-    <% end %>
-    <div class="links">
-      <%= render "devise/shared/links" %>
     </div>
+  <% end %>
+
+  <div class="links mt-3">
+    <%= render "devise/shared/links", class: "btn btn-primary" %>
   </div>
-  <style>
-
-  .auth-container {
-    max-width: 400px;
-    margin: 80px auto;
-    padding: 30px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    text-align: center;
-    font-family: sans-serif;
-  }
-  .brand-box {
-    display: inline-block;
-    background: #20C997;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 8px 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  .auth-container h2 {
-    margin-bottom: 20px;
-  }
-  .form-inputs {
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  input[type="email"],
-  input[type="password"],
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 6px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-  }
-  .btn {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    background: #20C997;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  .btn:hover {
-    background: #198F6E;
-  }
-  .links {
-    margin-top: 15px;
-    font-size: 14px;
-  }
-
-  input[type=checkbox] {
-  display: none;
-  }
-
-  input#avatar1[type=checkbox]+label {
-    background-image: url(https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756375464/Avatar_F_1_ovljm4.png);
-    background-position: center;
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    padding: 0 0 0 0px;
-    border-radius: 50%;
-  }
-
-  input#avatar2[type=checkbox]+label {
-    background-image: url(https://res.cloudinary.com/dl1ywiiiu/image/upload/v1756392132/Avatar_F_4_whsizu.png);
-    background-position: center;
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    padding: 0 0 0 0px;
-    border-radius: 50%;
-  }
-
-  input#avatar1:checked+label {
-    border: 3px solid gold;
-  }
-
-  input#avatar2:checked+label {
-    border: 3px solid gold;
-  }
-  </style>
 </div>
