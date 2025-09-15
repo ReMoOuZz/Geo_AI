@@ -1,35 +1,64 @@
-<h2>Modifier<%= resource_name.to_s.humanize %></h2>
+<div class="container my-4">
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, multipart: true }) do |f| %>
+    <%= f.error_notification %>
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= f.error_notification %>
+    <div class="two-col-under-1366">
+      <div class="card p-3">
+        <% if resource.persisted? && resource.photo.attached? %>
+          <%= image_tag resource.photo, class: "gb-avatar mb-3" %>
+        <% end %>
 
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
+        <div class="form-inputs">
+          <label for="photo_input" class="form-label fw-bold mb-3">Modifier mon profil</label>
+          <%= f.input :photo,
+                as: :file,
+                label: false,
+                input_html: { id: "photo_input", accept: "image/*" },
+                wrapper_html: { class: "mb-3" } %>
 
-    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-      <p>En attente de confirmation pour: <%= resource.unconfirmed_email %></p>
-    <% end %>
+          <%= f.input :pseudo, required: false, wrapper_html: { class: "mb-3" } %>
+          <%= f.input :email, required: true, autofocus: true, wrapper_html: { class: "mb-3" } %>
 
-    <%= f.input :password,
-                hint: "Laisser vide si vous ne souhaitez pas le changer",
-                required: false,
-                input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation,
-                required: false,
-                input_html: { autocomplete: "new-password" } %>
-    <%= f.input :current_password,
-                hint: "Nous avons besoin de votre mot de passe actuel pour valider",
-                required: true,
-                input_html: { autocomplete: "current-password" } %>
-  </div>
+          <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+            <p>En attente de confirmation pour: <%= resource.unconfirmed_email %></p>
+          <% end %>
+        </div>
+      </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Mettre à jour" %>
-  </div>
-<% end %>
+      <div class="card p-3">
+        <div class="form-inputs">
+          <%= f.input :current_password,
+                      label: "Mot de passe actuel",
+                      hint: "Nous avons besoin de votre mot de passe actuel pour valider",
+                      required: true,
+                      input_html: { autocomplete: "current-password" },
+                      wrapper_html: { class: "mb-3" } %>
 
-<h3>Supprimer mon compte</h3>
+          <p class="my-3 fw-bold">Modifier mon mot de passe</p>
 
-<div>Vous nous quittez ?<%= button_to "Supprimer mon compte", registration_path(resource_name), data: { confirm: "Êtes-vous sûr ?", turbo_confirm: "Êtes-vous sûr ?" }, method: :delete %></div>
+          <%= f.input :password,
+                      label: "Mot de passe",
+                      hint: "Laisser vide si vous ne souhaitez pas le changer",
+                      required: false,
+                      input_html: { autocomplete: "new-password" },
+                      wrapper_html: { class: "mb-3" } %>
 
-<%= link_to "Retour", :back %>
+          <%= f.input :password_confirmation,
+                      label: "Confirmer votre mot de passe",
+                      required: false,
+                      input_html: { autocomplete: "new-password" },
+                      wrapper_html: { class: "mb-3" } %>
+        </div>
+
+        <div class="form-actions d-grid d-sm-flex gap-2">
+          <%= f.button :submit, "Mettre à jour", class: "btn btn-success" %>
+          <%= button_to "Supprimer mon compte",
+                registration_path(resource_name),
+                data: { confirm: "Êtes-vous sûr ?", turbo_confirm: "Êtes-vous sûr ?" },
+                method: :delete,
+                class: "btn btn-danger" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -7,7 +7,11 @@
   </div>
 
   <div class="gb-sidebar__avatar">
-    <%= image_tag "avatar3.png", alt: "Profil", class: "gb-avatar" %>
+    <% if current_user&.photo&.attached? %>
+      <%= image_tag current_user.photo, alt: "Profil", class: "gb-avatar" %>
+    <% else %>
+      <%= image_tag "avatar3.png", alt: "Profil", class: "gb-avatar" %>
+    <% end %>
   </div>
 
   <nav class="gb-sidebar__menu">

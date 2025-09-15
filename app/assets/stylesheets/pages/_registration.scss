@@ -1,0 +1,62 @@
+body.registrations.new.registrations-new {
+  .home-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body.sessions.new.sessions-new {
+  .home-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .auth-container {
+    width: 350px;
+  }
+}
+
+body.registrations.edit.registrations-edit {
+  .home-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gb-avatar {
+    margin: 0 0 10px;
+  }
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.edit-registration-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.two-col-under-1366 {
+  display: block;
+}
+
+@media (max-width: 1366px) {
+  .two-col-under-1366 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+.brand-box {
+  display: inline-block;
+  background: #20c997;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
