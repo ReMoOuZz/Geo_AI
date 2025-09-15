@@ -25,6 +25,8 @@ class UserAnswersController < ApplicationController
       end
 
       if @user_answer.game_question.order == 10
+        awarded = BadgeAwarder.award_for(@score)
+        flash[:awarded_badge_ids] = awarded.map(&:id)
         redirect_to game_score_path(@game, @score)
       else
         # new_question

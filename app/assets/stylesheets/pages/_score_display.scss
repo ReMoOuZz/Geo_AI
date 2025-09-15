@@ -106,18 +106,17 @@ body.scores.show.scores-show {
   line-height: 1;
 }
 
-// .achv-ico:hover {
-//   transform: translateY(-2px);
-//   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-//   border: none;
-//   outline: none;
-// }
-// .score-display {
-//   background: white;
-//   border-radius: 12px;
-//   padding: 16px;
-//   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-// }
+.achv-ico[data-badge="diamant"] i { color: #74C0FC }
+.achv-ico[data-badge="medaille-d-or"] i { color: #FFD43B }
+.achv-ico[data-badge="medaille-d-argent"] i { color: #757575ff }
+.achv-ico[data-badge="medaille-de-bronze"] i { color: #9a7f1fff }
+.achv-ico[data-badge="poop"] i { color:  #513c1f }
+.achv-ico[data-badge="montagnard"] i { color:  #017452}
+.achv-ico[data-badge="roi-de-la-colline"] i { color: #FF0000 }
+.achv-ico[data-badge="capitaliste"] i { color: #B197FC }
+.achv-ico[data-badge="diplomate"] i { color: #b10196ff }
+.achv-ico[data-badge="culturiste"] i { color: #74C0FC }
+.achv-ico[data-badge="serial-crotteur"] i { color: #7e702a }
 
 .score-display .score-text {
   font-size: 28px;
@@ -395,8 +394,6 @@ body.scores.show.scores-show {
 .score-progress-incorrect {
   background: linear-gradient(45deg, #ff6b6b, #e74c3c);
 }
-
-
 
 @keyframes gentle-bounce {
 
